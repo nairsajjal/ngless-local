@@ -1,0 +1,7 @@
+encoding	file	gcContent	maxSeqLen	minSeqLen	nonATCGFraction	numBasepairs	numSeqs
+Solexa (64 offset)	sample/sample.pair.1.fq.gz	0.3918918918918919	36	8	3.896103896103896e-2	77	3
+Solexa (64 offset)	sample/sample.pair.2.fq.gz	0.3918918918918919	36	8	3.896103896103896e-2	77	3
+Solexa (64 offset)	sample/sample.single.fq.gz	0.3918918918918919	36	8	3.896103896103896e-2	77	3
+Solexa (64 offset)	preproc.lno7.pairs.1	0.38333333333333336	33	30	4.7619047619047616e-2	63	2
+Solexa (64 offset)	preproc.lno7.pairs.2	0.38333333333333336	33	30	4.7619047619047616e-2	63	2
+Solexa (64 offset)	preproc.lno7.singles	0.38333333333333336	33	30	4.7619047619047616e-2	63	2
