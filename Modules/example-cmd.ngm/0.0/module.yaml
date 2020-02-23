@@ -1,0 +1,47 @@
+version: '0.0.0'
+name: 'Test tool'
+functions:
+    -
+        nglName: "testing"
+        arg0: './command.sh'
+        arg1:
+            atype: 'readset'
+            filetype: "fq1"
+            can_gzip: true
+        additional:
+            -
+                atype: 'flag'
+                name: 'verbose'
+                def: true
+            -
+                atype: 'option'
+                name: 'testing'
+                allowed:
+                    - 'one'
+                    - 'two'
+                    - 'three'
+            -
+                atype: 'flag'
+                name: 'alternative'
+                def: true
+                when-true: "--alternative=yes"
+            -
+                atype: 'flag'
+                name: 'alternative2'
+                when-true:
+                    - "--alternative2=yes"
+                    - "--other"
+    -
+        nglName: "testing2"
+        arg0: './command.sh'
+        arg1:
+            atype: 'readset'
+            filetype: "fq1"
+            can_gzip: true
+init:
+    init_cmd: './check.sh'
+    init_args:
+        - "one"
+        - "two"
+
+

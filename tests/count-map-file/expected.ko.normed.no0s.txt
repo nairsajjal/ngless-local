@@ -1,0 +1,2 @@
+	basic.sam
+NA	0.002

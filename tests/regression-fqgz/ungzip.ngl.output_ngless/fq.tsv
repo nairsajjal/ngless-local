@@ -1,0 +1,2 @@
+encoding	file	gcContent	maxSeqLen	minSeqLen	nonATCGFraction	numBasepairs	numSeqs
+Solexa (64 offset)	input.fq.gz	0.29241675089463764	75	75	2.3813333333333332e-2	75000	1000

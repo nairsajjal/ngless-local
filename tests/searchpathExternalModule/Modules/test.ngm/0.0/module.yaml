@@ -1,0 +1,41 @@
+version: '0.0.0'
+name: 'Test tool'
+functions:
+    -
+        nglName: "testing_searchpath_string"
+        arg0: './command_string.sh'
+
+        arg1:
+            atype: str
+
+        additional:
+            -
+                name: ref
+                atype: str
+            -
+                name: ref2
+                atype: str
+            -
+                name: string
+                atype: str
+
+    -
+        nglName: "testing_searchpath_path"
+        arg0: './command_path.sh'
+
+        arg1:
+            atype: str
+            expand_searchpath: true
+
+        additional:
+            -
+                name: ref
+                atype: str
+                expand_searchpath: true
+            -
+                name: ref2
+                atype: str
+                expand_searchpath: true
+            -
+                name: string
+                atype: str

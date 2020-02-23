@@ -1,0 +1,8 @@
+ngless '1.1'
+import "example" version "1.0"
+
+input = fastq('sample.fq')
+example(input)
+
+print(EXAMPLE_HELLO)
+print("\n")

@@ -1,0 +1,5 @@
+	sample.fq
+A	7
+B	12
+C	2
+D	4

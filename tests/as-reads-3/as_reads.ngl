@@ -1,0 +1,15 @@
+ngless '1.1'
+write(as_reads(samfile('input.sam')),
+        ofile='output.fq')
+
+write(as_reads(samfile('input.sam')),
+        ofile='output.interleaved.fq',
+        format_flags={interleaved})
+
+write(fastq('expected.interleaved.fq',
+                interleaved=True),
+    ofile='output.uninterleaved.fq')
+
+write(fastq('interleaved.with_12.fq',
+                interleaved=True),
+    ofile='output.uninterleaved_with_12.fq')

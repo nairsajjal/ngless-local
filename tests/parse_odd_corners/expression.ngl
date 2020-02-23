@@ -1,0 +1,9 @@
+
+# Ngless used to choke if first line was not "ngless"
+# Ignoring comments seems more natural & allows having a she-bang line
+
+ngless "1.1"
+
+line0 = readlines('input.txt')[0]
+print(line0)
+print("\n")

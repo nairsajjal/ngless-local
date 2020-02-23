@@ -1,0 +1,5 @@
+ngless '1.1'
+mapped = samfile('input.sam')
+mapped_size20 = select(mapped) using |mread|:
+    mread = mread.filter(min_match_size=20, action={unmatch})
+write(mapped_size20, ofile='output.size20.sam')

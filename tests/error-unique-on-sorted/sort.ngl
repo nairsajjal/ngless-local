@@ -1,0 +1,6 @@
+ngless '1.1'
+import "samtools" version "0.0"
+to_sort = samfile('input.bam')
+sorted = samtools_sort(to_sort)
+sorted = select(sorted, keep_if=[{unique}])
+write(sorted, ofile='output.bam')

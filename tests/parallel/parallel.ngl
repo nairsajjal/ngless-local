@@ -1,0 +1,22 @@
+ngless "1.1"
+import "parallel" version "0.6"
+
+allsamples = readlines('input.txt')
+sample = lock1(allsamples)
+input = fastq(sample)
+mapped = map(input, fafile='ref.fna')
+counts = count(mapped, features=['seqname'])
+
+collect(counts,
+    current=sample,
+    allneeded=allsamples,
+    ofile='output.tsv',
+    auto_comments=[{script}])
+ 
+
+collect(count(mapped, features=['seqname']),
+    current=sample,
+    allneeded=allsamples,
+    ofile='compressed.tsv.gz',
+    auto_comments=[{script}])
+ 
