@@ -1,0 +1,2187 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:08.173593115 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Modules 8065
+  interface hash: 32438d6afb343d2d41dee96b61b3e774
+  ABI hash: d7b04bae20d952778746efecd6f653cd
+  export-list hash: e612fb66accb36645cea5fb0c9541754
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 47f32591d707fa8c72d305dafcb08476
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Modules.knownModules
+  Modules.loadedModules
+  Modules.registerModule
+  Language.ModInfo{Language.LocalModInfo Language.ModInfo modName modVersion}
+  Modules.ArgCheck{Modules.ArgCheckFileReadable Modules.ArgCheckFileWritable Modules.ArgCheckMinVersion Modules.ArgCheckSymbol Modules.ArgDeprecated}
+  Modules.ArgInformation{Modules.ArgInformation argChecks argName argRequired argType}
+  Modules.ExternalReference{Modules.ExternalPackagedReference Modules.ExternalReference erefName faFile geneMapFile gtfFile refData}
+  Modules.Function{Modules.Function funcAllowsAutoComprehension funcArgChecks funcArgType funcChecks funcKwArgs funcName funcRetType}
+  Modules.FunctionCheck{Modules.FunctionCheckMinNGLessVersion Modules.FunctionCheckNGLVersionIncompatibleChange Modules.FunctionCheckReturnAssigned}
+  Modules.Module{Modules.Module modCitations modConstants modFunctions modInfo modPath modReferences modTransform runFunction}
+  Modules.Reference{Modules.Reference refAlias refHasFunctionalMap refHasGff refName refUrl refVersionedName}
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language NGLess
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.FindModules Utils.LockFile Utils.Samtools
+                     Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      process-1.6.5.0 profunctors-5.3 random-1.1 reflection-2.1.5
+                      regex-1.0.2.0 regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  Expression adc8def6a4b7257bb12aef607cf99238
+  FuncName 441672d7eb62c1c87f9948f9c78adad7
+  LocalModInfo 191b8e963efa01dbec2e1ccee2d19329
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  ModInfo d7f124fd1704f8a7309c0e06610b0f29
+  NGLType d78124de7a35dac4710fa19fa17820a5
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOVoid 3470f22180b45ca3e315b9326994ee3f
+  modName d7f124fd1704f8a7309c0e06610b0f29
+  modVersion d7f124fd1704f8a7309c0e06610b0f29
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+import  -/  Utils.FindModules 0239874974bcf1bffe3c330f14489c2d
+  exports: 38dbebafd5be405e23fc36612cbd18c9
+  listKnownModules fbfd6e1d0cb8e30b858a91bcb581767b
+import  -/  aeson-1.4.6.0:Data.Aeson ce3c7d2cd8d8c223f7b849dd159257fc
+import  -/  aeson-1.4.6.0:Data.Aeson.Types.FromJSON 0023f1949cd17736c516e676c103650c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.IORef e8e1ce7d64831ebb3853a1cd9fb4e228
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.IORef c4811a8ca9fa1f2f983a2e196af9a59c
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO.Unsafe e8c0e3a0a9cf9814796832fe86e2e8a6
+import  -/  data-default-0.7.1.1:Data.Default 28ff829d0df079ea9196504813a6384a
+import  -/  data-default-class-0.1.2.0:Data.Default.Class 5d2b5ee799bd958772a020a8cf8dab3e
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  template-haskell-2.14.0.0:Language.Haskell.TH 65179fa9ee2cdf5538d25f579a2dccbf
+import  -/  template-haskell-2.14.0.0:Language.Haskell.TH.Lib.Internal 5e27a3b1015ea34b4fe22fc33b09fd59
+import  -/  template-haskell-2.14.0.0:Language.Haskell.TH.Syntax a0ab554fccac17884decfc8e73bb11e9
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+5ea81178a37f2cc1f71e0dfed7af0657
+  $fDefaultModule :: Data.Default.Class.Default Modules.Module
+  DFunId
+  {- Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Modules.$fDefaultModule_$cdef
+                  `cast`
+                (Sym (Data.Default.Class.N:Default[0] <Modules.Module>_N)) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  $fDefaultModule_$cdef :: Modules.Module
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "builtin.default"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 case Data.Text.Show.unpackCString#
+                        "0.0"# of dt1 { Data.Text.Internal.Text ipv3 ipv4 ipv5 ->
+                 Modules.Module
+                   (Language.ModInfo dt dt1)
+                   (GHC.CString.unpackCString# "<internal>"#)
+                   (GHC.Types.[] @ Data.Text.Internal.Text)
+                   (GHC.Types.[] @ (Data.Text.Internal.Text, Language.NGLessObject))
+                   (GHC.Types.[] @ Modules.ExternalReference)
+                   (GHC.Types.[] @ Modules.Function)
+                   (NGLess.NGError.$fApplicativeNGLessIO5
+                      @ [(GHC.Types.Int, Language.Expression)])
+                     `cast`
+                   (<[(GHC.Types.Int, Language.Expression)]>_R
+                    ->_R (<GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <[(GHC.Types.Int,
+                                           Language.Expression)]>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                  <GHC.Types.IO>_R
+                                                                                  <[(GHC.Types.Int,
+                                                                                     Language.Expression)]>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <[(GHC.Types.Int,
+                                                                                                                                                       Language.Expression)]>_N))
+                   (\ (ds :: Data.Text.Internal.Text)
+                      (ds1 :: Language.NGLessObject)
+                      (ds2 :: NGLess.KwArgsValues)
+                      (eta1 :: GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                      (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    (# eta2, Language.NGOVoid #))
+                     `cast`
+                   (<Data.Text.Internal.Text>_R
+                    ->_R <Language.NGLessObject>_R
+                    ->_R <NGLess.KwArgsValues>_R
+                    ->_R (<GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                <GHC.Types.IO>_R
+                                                                                <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N)) } }) -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fEqArgCheck :: GHC.Classes.Eq Modules.ArgCheck
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ArgCheck
+                  Modules.$fEqArgCheck_$c==
+                  Modules.$fEqArgCheck_$c/= -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fEqArgCheck_$c/= ::
+    Modules.ArgCheck -> Modules.ArgCheck -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Modules.ArgCheck) (y :: Modules.ArgCheck) ->
+                 case Modules.$fEqArgCheck_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fEqArgCheck_$c== ::
+    Modules.ArgCheck -> Modules.ArgCheck -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Modules.ArgCheck) (ds1 :: Modules.ArgCheck) ->
+                 case ds of wild {
+                   Modules.ArgCheckSymbol a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.ArgCheckSymbol b1
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ Data.Text.Internal.Text
+                             Data.Text.$fEqText
+                             a1
+                             b1 }
+                   Modules.ArgCheckFileReadable
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.ArgCheckFileReadable -> GHC.Types.True }
+                   Modules.ArgCheckFileWritable
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.ArgCheckFileWritable -> GHC.Types.True }
+                   Modules.ArgCheckMinVersion a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.ArgCheckMinVersion b1
+                        -> case a1 of ww3 { (,) ww4 ww5 ->
+                           case b1 of ww6 { (,) ww7 ww8 ->
+                           case ww4 of wild2 { GHC.Types.I# x ->
+                           case ww7 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.==# x y of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1# -> GHC.Classes.eqInt ww5 ww8 } } } } } }
+                   Modules.ArgDeprecated a1 a2
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.ArgDeprecated b1 b2
+                        -> case a1 of ww3 { (,) ww4 ww5 ->
+                           case b1 of ww6 { (,) ww7 ww8 ->
+                           case ww4 of wild2 { GHC.Types.I# x ->
+                           case ww7 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.==# x y of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case ww5 of wild4 { GHC.Types.I# x1 ->
+                                case ww8 of wild5 { GHC.Types.I# y1 ->
+                                case GHC.Prim.==# x1 y1 of lwild1 {
+                                  DEFAULT -> GHC.Types.False
+                                  1# -> Data.Text.$fEqText_$c== a2 b2 } } } } } } } } } }) -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fEqArgInformation :: GHC.Classes.Eq Modules.ArgInformation
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ArgInformation
+                  Modules.$fEqArgInformation_$c==
+                  Modules.$fEqArgInformation_$c/= -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fEqArgInformation_$c/= ::
+    Modules.ArgInformation -> Modules.ArgInformation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)SSL),1*U(U(U,U,U),U,U,1*U)><S(S(LLS)SSL),1*U(U(U,U,U),U,U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Modules.ArgInformation) (y :: Modules.ArgInformation) ->
+                 case Modules.$fEqArgInformation_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fEqArgInformation_$c== ::
+    Modules.ArgInformation -> Modules.ArgInformation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)SSL),1*U(U(U,U,U),U,U,1*U)><S(S(LLS)SSL),1*U(U(U,U,U),U,U,1*U)>,
+     Unfolding: (\ (ds :: Modules.ArgInformation)
+                   (ds1 :: Modules.ArgInformation) ->
+                 case ds of wild { Modules.ArgInformation a1 a2 a3 a4 ->
+                 case ds1 of wild1 { Modules.ArgInformation b1 b2 b3 b4 ->
+                 case a1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b1 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt2 dt5 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             dt
+                             (GHC.Prim.int2Word# dt1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# dt2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> let {
+                             $j :: GHC.Types.Bool <join 0>
+                             = case Language.$fEqNGLType_$c== a3 b3 of wild6 {
+                                 GHC.Types.False -> GHC.Types.False
+                                 GHC.Types.True
+                                 -> GHC.Classes.$fEq[]_$c==
+                                      @ Modules.ArgCheck
+                                      Modules.$fEqArgCheck
+                                      a4
+                                      b4 }
+                           } in
+                           case a2 of wild6 {
+                             GHC.Types.False
+                             -> case b2 of wild7 {
+                                  GHC.Types.False -> $j GHC.Types.True -> GHC.Types.False }
+                             GHC.Types.True
+                             -> case b2 of wild7 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True -> $j } } } } } } } } }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fEqExternalReference :: GHC.Classes.Eq Modules.ExternalReference
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ExternalReference
+                  Modules.$fEqExternalReference_$c==
+                  Modules.$fEqExternalReference_$c/= -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fEqExternalReference_$c/= ::
+    Modules.ExternalReference
+    -> Modules.ExternalReference -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Modules.ExternalReference)
+                   (y :: Modules.ExternalReference) ->
+                 case Modules.$fEqExternalReference_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fEqExternalReference_$c== ::
+    Modules.ExternalReference
+    -> Modules.ExternalReference -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Modules.ExternalReference)
+                   (ds1 :: Modules.ExternalReference) ->
+                 case ds of wild {
+                   Modules.ExternalReference a1 a2 a3 a4
+                   -> case ds1 of wild1 {
+                        Modules.ExternalReference b1 b2 b3 b4
+                        -> case a1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                           case b1 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                           case GHC.Prim.==# dt2 dt5 of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.ByteArray#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Int# #)}
+                                       dt
+                                       (GHC.Prim.int2Word# dt1)
+                                       dt3
+                                       (GHC.Prim.int2Word# dt4)
+                                       (GHC.Prim.int2Word# dt2)
+                                       GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                                case GHC.Prim.narrow32Int# ds3 of wild4 {
+                                  DEFAULT -> GHC.Types.False
+                                  0#
+                                  -> case GHC.Base.eqString a2 b2 of wild6 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> let {
+                                            $j :: GHC.Types.Bool <join 0>
+                                            = case a4 of wild7 {
+                                                GHC.Maybe.Nothing
+                                                -> case b4 of wild8 {
+                                                     GHC.Maybe.Nothing -> GHC.Types.True
+                                                     GHC.Maybe.Just ipv -> GHC.Types.False }
+                                                GHC.Maybe.Just a7
+                                                -> case b4 of wild8 {
+                                                     GHC.Maybe.Nothing -> GHC.Types.False
+                                                     GHC.Maybe.Just b7
+                                                     -> GHC.Base.eqString a7 b7 } }
+                                          } in
+                                          case a3 of wild7 {
+                                            GHC.Maybe.Nothing
+                                            -> case b3 of wild8 {
+                                                 GHC.Maybe.Nothing -> $j
+                                                 GHC.Maybe.Just ipv -> GHC.Types.False }
+                                            GHC.Maybe.Just a7
+                                            -> case b3 of wild8 {
+                                                 GHC.Maybe.Nothing -> GHC.Types.False
+                                                 GHC.Maybe.Just b7
+                                                 -> case GHC.Base.eqString a7 b7 of wild9 {
+                                                      GHC.Types.False -> GHC.Types.False
+                                                      GHC.Types.True -> $j } } } } } } } } }
+                        Modules.ExternalPackagedReference ipv -> GHC.Types.False }
+                   Modules.ExternalPackagedReference a1
+                   -> case ds1 of wild1 {
+                        Modules.ExternalReference ipv ipv1 ipv2 ipv3 -> GHC.Types.False
+                        Modules.ExternalPackagedReference b1
+                        -> Modules.$fEqExternalReference_$c==1 a1 b1 } }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fEqExternalReference_$c==1 ::
+    Modules.Reference -> Modules.Reference -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)LLLLL),1*U(1*U(U,U,U),1*U,1*U(U,U,U),1*U,1*U,1*U)><S(S(LLS)LLLLL),1*U(1*U(U,U,U),1*U,1*U(U,U,U),1*U,1*U,1*U)>,
+     Unfolding: (\ (ds :: Modules.Reference)
+                   (ds1 :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference a1 a2 a3 a4 a5 a6 ->
+                 case ds1 of wild1 { Modules.Reference b1 b2 b3 b4 b5 b6 ->
+                 case a1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b1 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt2 dt5 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             dt
+                             (GHC.Prim.int2Word# dt1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# dt2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> let {
+                             $j :: GHC.Types.Bool <join 0>
+                             = case a3 of wild6 { Data.Text.Internal.Text dt7 dt8 dt9 ->
+                               case b3 of wild7 { Data.Text.Internal.Text dt10 dt11 dt12 ->
+                               case GHC.Prim.==# dt9 dt12 of lwild1 {
+                                 DEFAULT -> GHC.Types.False
+                                 1#
+                                 -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                                   -> GHC.Prim.Word#
+                                                                   -> GHC.Prim.ByteArray#
+                                                                   -> GHC.Prim.Word#
+                                                                   -> GHC.Prim.Word#
+                                                                   -> GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld
+                                                                   -> (# GHC.Prim.State#
+                                                                           GHC.Prim.RealWorld,
+                                                                         GHC.Prim.Int# #)}
+                                           dt7
+                                           (GHC.Prim.int2Word# dt8)
+                                           dt10
+                                           (GHC.Prim.int2Word# dt11)
+                                           (GHC.Prim.int2Word# dt9)
+                                           GHC.Prim.realWorld# of wild8 { (#,#) ds5 ds6 ->
+                                    case GHC.Prim.narrow32Int# ds6 of wild9 {
+                                      DEFAULT -> GHC.Types.False
+                                      0#
+                                      -> let {
+                                           $j1 :: GHC.Types.Bool <join 0>
+                                           = case a5 of wild10 {
+                                               GHC.Types.False
+                                               -> case b5 of wild11 {
+                                                    GHC.Types.False
+                                                    -> GHC.Classes.$fEqBool_$c== a6 b6
+                                                    GHC.Types.True -> GHC.Types.False }
+                                               GHC.Types.True
+                                               -> case b5 of wild11 {
+                                                    GHC.Types.False -> GHC.Types.False
+                                                    GHC.Types.True
+                                                    -> GHC.Classes.$fEqBool_$c== a6 b6 } }
+                                         } in
+                                         case a4 of wild10 {
+                                           GHC.Maybe.Nothing
+                                           -> case b4 of wild11 {
+                                                GHC.Maybe.Nothing -> $j1
+                                                GHC.Maybe.Just ipv -> GHC.Types.False }
+                                           GHC.Maybe.Just a7
+                                           -> case b4 of wild11 {
+                                                GHC.Maybe.Nothing -> GHC.Types.False
+                                                GHC.Maybe.Just b7
+                                                -> case GHC.Base.eqString a7 b7 of wild12 {
+                                                     GHC.Types.False -> GHC.Types.False
+                                                     GHC.Types.True -> $j1 } } } } } } } }
+                           } in
+                           case a2 of wild6 {
+                             GHC.Maybe.Nothing
+                             -> case b2 of wild7 {
+                                  GHC.Maybe.Nothing -> $j GHC.Maybe.Just ipv -> GHC.Types.False }
+                             GHC.Maybe.Just a7
+                             -> case b2 of wild7 {
+                                  GHC.Maybe.Nothing -> GHC.Types.False
+                                  GHC.Maybe.Just b7
+                                  -> case a7 of wild8 { Data.Text.Internal.Text dt7 dt8 dt9 ->
+                                     case b7 of wild9 { Data.Text.Internal.Text dt10 dt11 dt12 ->
+                                     case GHC.Prim.==# dt9 dt12 of lwild1 {
+                                       DEFAULT -> GHC.Types.False
+                                       1#
+                                       -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                                         -> GHC.Prim.Word#
+                                                                         -> GHC.Prim.ByteArray#
+                                                                         -> GHC.Prim.Word#
+                                                                         -> GHC.Prim.Word#
+                                                                         -> GHC.Prim.State#
+                                                                              GHC.Prim.RealWorld
+                                                                         -> (# GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld,
+                                                                               GHC.Prim.Int# #)}
+                                                 dt7
+                                                 (GHC.Prim.int2Word# dt8)
+                                                 dt10
+                                                 (GHC.Prim.int2Word# dt11)
+                                                 (GHC.Prim.int2Word# dt9)
+                                                 GHC.Prim.realWorld# of wild10 { (#,#) ds5 ds6 ->
+                                          case GHC.Prim.narrow32Int# ds6 of wild11 {
+                                            DEFAULT -> GHC.Types.False
+                                            0# -> $j } } } } } } } } } } } } } }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fEqFunction :: GHC.Classes.Eq Modules.Function
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.Function
+                  Modules.$fEqFunction_$c==
+                  Modules.$fEqFunction_$c/= -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fEqFunctionCheck :: GHC.Classes.Eq Modules.FunctionCheck
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.FunctionCheck
+                  Modules.$fEqFunctionCheck_$c==
+                  Modules.$fEqFunctionCheck_$c/= -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fEqFunctionCheck_$c/= ::
+    Modules.FunctionCheck -> Modules.FunctionCheck -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Modules.FunctionCheck) (y :: Modules.FunctionCheck) ->
+                 case Modules.$fEqFunctionCheck_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fEqFunctionCheck_$c== ::
+    Modules.FunctionCheck -> Modules.FunctionCheck -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Modules.FunctionCheck)
+                   (ds1 :: Modules.FunctionCheck) ->
+                 case ds of wild {
+                   Modules.FunctionCheckMinNGLessVersion a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.FunctionCheckMinNGLessVersion b1
+                        -> case a1 of ww3 { (,) ww4 ww5 ->
+                           case b1 of ww6 { (,) ww7 ww8 ->
+                           case ww4 of wild2 { GHC.Types.I# x ->
+                           case ww7 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.==# x y of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1# -> GHC.Classes.eqInt ww5 ww8 } } } } } }
+                   Modules.FunctionCheckReturnAssigned
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.FunctionCheckReturnAssigned -> GHC.Types.True }
+                   Modules.FunctionCheckNGLVersionIncompatibleChange a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Modules.FunctionCheckNGLVersionIncompatibleChange b1
+                        -> case a1 of ww3 { (,) ww4 ww5 ->
+                           case b1 of ww6 { (,) ww7 ww8 ->
+                           case ww4 of wild2 { GHC.Types.I# x ->
+                           case ww7 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.==# x y of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1# -> GHC.Classes.eqInt ww5 ww8 } } } } } } }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fEqFunction_$c/= ::
+    Modules.Function -> Modules.Function -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)LLLLLL),1*U(1*U(U,U,U),1*U,1*U,1*U,1*U,1*U,1*U)><S(S(LLS)LLLLLL),1*U(1*U(U,U,U),1*U,1*U,U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Modules.Function) (y :: Modules.Function) ->
+                 case Modules.$fEqFunction_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fEqFunction_$c== ::
+    Modules.Function -> Modules.Function -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)LLLLLL),1*U(1*U(U,U,U),1*U,1*U,1*U,1*U,1*U,1*U)><S(S(LLS)LLLLLL),1*U(1*U(U,U,U),1*U,1*U,U,1*U,1*U,1*U)>,
+     Unfolding: (\ (ds :: Modules.Function) (ds1 :: Modules.Function) ->
+                 case ds of wild { Modules.Function a1 a2 a3 a4 a5 a6 a7 ->
+                 case ds1 of wild1 { Modules.Function b1 b2 b3 b4 b5 b6 b7 ->
+                 case a1
+                        `cast`
+                      (Language.N:FuncName[0]) of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b1
+                        `cast`
+                      (Language.N:FuncName[0]) of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt2 dt5 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             dt
+                             (GHC.Prim.int2Word# dt1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# dt2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> let {
+                             $j :: GHC.Types.Bool <join 0>
+                             = case GHC.Classes.$fEq[]_$c==
+                                      @ Modules.ArgCheck
+                                      Modules.$fEqArgCheck
+                                      a3
+                                      b3 of wild6 {
+                                 GHC.Types.False -> GHC.Types.False
+                                 GHC.Types.True
+                                 -> case Language.$fEqNGLType_$c== a4 b4 of wild7 {
+                                      GHC.Types.False -> GHC.Types.False
+                                      GHC.Types.True
+                                      -> case GHC.Classes.$fEq[]_$c==
+                                                @ Modules.ArgInformation
+                                                Modules.$fEqArgInformation
+                                                a5
+                                                b5 of wild8 {
+                                           GHC.Types.False -> GHC.Types.False
+                                           GHC.Types.True
+                                           -> case a6 of wild9 {
+                                                GHC.Types.False
+                                                -> case b6 of wild10 {
+                                                     GHC.Types.False
+                                                     -> GHC.Classes.$fEq[]_$c==
+                                                          @ Modules.FunctionCheck
+                                                          Modules.$fEqFunctionCheck
+                                                          a7
+                                                          b7
+                                                     GHC.Types.True -> GHC.Types.False }
+                                                GHC.Types.True
+                                                -> case b6 of wild10 {
+                                                     GHC.Types.False -> GHC.Types.False
+                                                     GHC.Types.True
+                                                     -> GHC.Classes.$fEq[]_$c==
+                                                          @ Modules.FunctionCheck
+                                                          Modules.$fEqFunctionCheck
+                                                          a7
+                                                          b7 } } } } }
+                           } in
+                           case a2 of wild6 {
+                             GHC.Maybe.Nothing
+                             -> case b2 of wild7 {
+                                  GHC.Maybe.Nothing -> $j GHC.Maybe.Just ipv -> GHC.Types.False }
+                             GHC.Maybe.Just a11
+                             -> case b2 of wild7 {
+                                  GHC.Maybe.Nothing -> GHC.Types.False
+                                  GHC.Maybe.Just b11
+                                  -> case Language.$fEqNGLType_$c== a11 b11 of wild8 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True -> $j } } } } } } } } } }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fEqReference :: GHC.Classes.Eq Modules.Reference
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.Reference
+                  Modules.$fEqExternalReference_$c==1
+                  Modules.$fEqReference_$c/= -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fEqReference_$c/= ::
+    Modules.Reference -> Modules.Reference -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)LLLLL),1*U(1*U(U,U,U),1*U,1*U(U,U,U),1*U,1*U,1*U)><S(S(LLS)LLLLL),1*U(1*U(U,U,U),1*U,1*U(U,U,U),1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Modules.Reference) (y :: Modules.Reference) ->
+                 case Modules.$fEqExternalReference_$c==1 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fFromJSONExternalReference ::
+    Data.Aeson.Types.FromJSON.FromJSON Modules.ExternalReference
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ExternalReference
+                  Modules.$fFromJSONExternalReference_$cparseJSON
+                  Modules.$fFromJSONExternalReference_$cparseJSONList -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fFromJSONExternalReference1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser [Modules.ExternalReference]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 Modules.$w$cparseJSONList ww1 ww2 ww3 }) -}
+960421f4ac60bd0ba8b337dde4004e7e
+  $fFromJSONExternalReference2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Modules.$fFromJSONExternalReference3) -}
+5282a9d575091b917a9f9b713859a749
+  $fFromJSONExternalReference3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("[]"#) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fFromJSONExternalReference4 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser Modules.ExternalReference
+  {- Arity: 1, Strictness: <L,U> -}
+0735271bcd7e91cd7720c31bc6a44201
+  $fFromJSONExternalReference5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Modules.$fFromJSONExternalReference6) -}
+8d73653e1f69727ee7caee5a6350c835
+  $fFromJSONExternalReference6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("external reference"#) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fFromJSONExternalReference_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser Modules.ExternalReference
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ Modules.ExternalReference
+                   Modules.$fFromJSONExternalReference5
+                   Modules.$fFromJSONExternalReference4) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fFromJSONExternalReference_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [Modules.ExternalReference]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [Modules.ExternalReference]
+                   Modules.$fFromJSONExternalReference2
+                   Modules.$fFromJSONExternalReference1) -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fShowArgCheck :: GHC.Show.Show Modules.ArgCheck
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ArgCheck
+                  Modules.$fShowArgCheck_$cshowsPrec
+                  Modules.$fShowArgCheck_$cshow
+                  Modules.$fShowArgCheck_$cshowList -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fShowArgCheck_$cshow :: Modules.ArgCheck -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Modules.ArgCheck) ->
+                 Modules.$fShowArgCheck_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fShowArgCheck_$cshowList :: [Modules.ArgCheck] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Modules.ArgCheck]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.ArgCheck
+                   (Modules.$fShowArgCheck_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+2a8aaf26348fbad4d70cb05dd401609a
+  $fShowArgCheck_$cshowsPrec ::
+    GHC.Types.Int -> Modules.ArgCheck -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fShowArgInformation :: GHC.Show.Show Modules.ArgInformation
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ArgInformation
+                  Modules.$fShowArgInformation_$cshowsPrec
+                  Modules.$fShowArgInformation_$cshow
+                  Modules.$fShowArgInformation_$cshowList -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fShowArgInformation_$cshow ::
+    Modules.ArgInformation -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(S(SSS)SSL),1*U(U(U,U,U),U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Modules.ArgInformation) ->
+                 Modules.$fShowArgInformation_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fShowArgInformation_$cshowList ::
+    [Modules.ArgInformation] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Modules.ArgInformation]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.ArgInformation
+                   (Modules.$fShowArgInformation_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ac86c28a801be7ef411fb2dc303275ef
+  $fShowArgInformation_$cshowsPrec ::
+    GHC.Types.Int -> Modules.ArgInformation -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(S(SSS)SSL),1*U(U(U,U,U),U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Modules.ArgInformation) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Modules.ArgInformation ww3 ww4 ww5 ww6 ->
+                 case ww3 of ww7 { Data.Text.Internal.Text ww8 ww9 ww10 ->
+                 Modules.$w$cshowsPrec ww1 ww8 ww9 ww10 ww4 ww5 ww6 } } }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fShowExternalReference :: GHC.Show.Show Modules.ExternalReference
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.ExternalReference
+                  Modules.$fShowExternalReference_$cshowsPrec
+                  Modules.$fShowExternalReference_$cshow
+                  Modules.$fShowExternalReference_$cshowList -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fShowExternalReference_$cshow ::
+    Modules.ExternalReference -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Modules.ExternalReference) ->
+                 Modules.$fShowExternalReference_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fShowExternalReference_$cshowList ::
+    [Modules.ExternalReference] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Modules.ExternalReference]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.ExternalReference
+                   (Modules.$fShowExternalReference_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $fShowExternalReference_$cshowsPrec ::
+    GHC.Types.Int -> Modules.ExternalReference -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Modules.ExternalReference) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Modules.$w$cshowsPrec1 ww1 w1 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fShowFunction :: GHC.Show.Show Modules.Function
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.Function
+                  Modules.$fShowFunction_$cshowsPrec
+                  Modules.$fShowFunction_$cshow
+                  Modules.$fShowFunction_$cshowList -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fShowFunctionCheck :: GHC.Show.Show Modules.FunctionCheck
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.FunctionCheck
+                  Modules.$fShowFunctionCheck_$cshowsPrec
+                  Modules.$fShowFunctionCheck_$cshow
+                  Modules.$fShowFunctionCheck_$cshowList -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fShowFunctionCheck_$cshow ::
+    Modules.FunctionCheck -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Modules.FunctionCheck) ->
+                 Modules.$fShowFunctionCheck_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fShowFunctionCheck_$cshowList ::
+    [Modules.FunctionCheck] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Modules.FunctionCheck]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.FunctionCheck
+                   (Modules.$fShowFunctionCheck_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ca664b640a26a091d6fcd77a022e7e98
+  $fShowFunctionCheck_$cshowsPrec ::
+    GHC.Types.Int -> Modules.FunctionCheck -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U> -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fShowFunction_$cshow :: Modules.Function -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U(U,U,U),1*U,U,1*U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Modules.Function) ->
+                 Modules.$fShowFunction_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fShowFunction_$cshowList :: [Modules.Function] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Modules.Function]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.Function
+                   (Modules.$fShowFunction_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ea8a515503aace5f77e7178c87cb63b2
+  $fShowFunction_$cshowsPrec ::
+    GHC.Types.Int -> Modules.Function -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(U(U,U,U),1*U,U,1*U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Modules.Function) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Modules.Function ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 Modules.$w$cshowsPrec2 ww1 ww3 ww4 ww5 ww6 ww7 ww8 ww9 } }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  $fShowModule :: GHC.Show.Show Modules.Module
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.Module
+                  Modules.$fShowModule_$cshowsPrec
+                  Modules.$fShowModule_$cshow
+                  Modules.$fShowModule_$cshowList -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  $fShowModule_$cshow :: Modules.Module -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SLLLLLLL),1*U(U,1*U,A,1*U,1*U,A,A,A)>,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Modules.Module) ->
+                 case w of ww { Modules.Module ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Modules.$w$cshow ww1 ww2 ww4 ww5 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  $fShowModule_$cshowList :: [Modules.Module] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Modules.Module]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.Module
+                   (\ (x :: Modules.Module) (s1 :: GHC.Base.String)[OneShot] ->
+                    case x of ww { Modules.Module ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (Modules.$w$cshow ww1 ww2 ww4 ww5)
+                      s1 })
+                   ls
+                   s) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  $fShowModule_$cshowsPrec ::
+    GHC.Types.Int -> Modules.Module -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,A><S(SLLLLLLL),1*U(U,1*U,A,1*U,1*U,A,A,A)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: Modules.Module)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (Modules.$fShowModule_$cshow x))
+                   s) -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fShowReference :: GHC.Show.Show Modules.Reference
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Modules.Reference
+                  Modules.$fShowReference_$cshowsPrec
+                  Modules.$fShowReference_$cshow
+                  Modules.$fShowReference_$cshowList -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fShowReference_$cshow :: Modules.Reference -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U(U,U,U),1*U,U(U,U,U),1*U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Modules.Reference) ->
+                 Modules.$fShowReference_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fShowReference_$cshowList :: [Modules.Reference] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Modules.Reference]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Modules.Reference
+                   (Modules.$fShowReference_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+9efd256689495bd8c9f4086f70ea12d5
+  $fShowReference_$cshowsPrec ::
+    GHC.Types.Int -> Modules.Reference -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(U(U,U,U),1*U,U(U,U,U),1*U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Modules.Reference) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Modules.Reference ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Modules.$w$cshowsPrec3 ww1 ww3 ww4 ww5 ww6 ww7 ww8 } }) -}
+21b2272be8338f91b54d6e7042c36687
+  $tc'ArgCheckFileReadable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14994400874810096485##
+                   5186366907181049120##
+                   Modules.$trModule
+                   Modules.$tc'ArgCheckFileReadable2
+                   0#
+                   Modules.$tc'ArgCheckFileReadable1) -}
+28e9b1783e451e030214b22d520372ef
+  $tc'ArgCheckFileReadable1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+92e4d6004d870d4b9839e64256bb7cef
+  $tc'ArgCheckFileReadable2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ArgCheckFileReadable3) -}
+2a0022442527f2b38ea7440f7c0e290e
+  $tc'ArgCheckFileReadable3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArgCheckFileReadable"#) -}
+49027b0462fac9a49c9d91da4eff4bf6
+  $tc'ArgCheckFileWritable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5628761223857412342##
+                   18225217522549362583##
+                   Modules.$trModule
+                   Modules.$tc'ArgCheckFileWritable1
+                   0#
+                   Modules.$tc'ArgCheckFileReadable1) -}
+9d54eec69484676ab5e8e59ac6f3acca
+  $tc'ArgCheckFileWritable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ArgCheckFileWritable2) -}
+8693b767f22d97a8c170f541524fc3cf
+  $tc'ArgCheckFileWritable2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArgCheckFileWritable"#) -}
+af00cd5b49d3f17810ad4fd53f263167
+  $tc'ArgCheckMinVersion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10880135868621851628##
+                   10540152251248049267##
+                   Modules.$trModule
+                   Modules.$tc'ArgCheckMinVersion2
+                   0#
+                   Modules.$tc'ArgCheckMinVersion1) -}
+69172462ed0ba287d43f2f59fb21d6a6
+  $tc'ArgCheckMinVersion1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d389e176aa478962dce5d7533f89ac1e
+  $tc'ArgCheckMinVersion2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ArgCheckMinVersion3) -}
+7958c3277beaf1d1f40c7e7f87dc33ce
+  $tc'ArgCheckMinVersion3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArgCheckMinVersion"#) -}
+331ace2a6cc487013ce6ccd20c53ce4d
+  $tc'ArgCheckSymbol :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13600645810360336384##
+                   3789725710026876901##
+                   Modules.$trModule
+                   Modules.$tc'ArgCheckSymbol2
+                   0#
+                   Modules.$tc'ArgCheckSymbol1) -}
+815b27fef4b62f6cde658a8078c00652
+  $tc'ArgCheckSymbol1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+68ab947bb7bbda9e899f87da363193f7
+  $tc'ArgCheckSymbol2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ArgCheckSymbol3) -}
+9d6a81db00ca536af517488a19d657ea
+  $tc'ArgCheckSymbol3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArgCheckSymbol"#) -}
+9bf44a28a3e6014e8c42b1a4f1dc6c03
+  $tc'ArgDeprecated :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13549378289896967994##
+                   14503692978206694679##
+                   Modules.$trModule
+                   Modules.$tc'ArgDeprecated2
+                   0#
+                   Modules.$tc'ArgDeprecated1) -}
+041ed47cde7a2fd9ae40e72328de9104
+  $tc'ArgDeprecated1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bfa9d2418e7588bd2e89c8ecafe904d1
+  $tc'ArgDeprecated2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ArgDeprecated3) -}
+3880eccae5735c4458568c71235ae2fa
+  $tc'ArgDeprecated3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArgDeprecated"#) -}
+3940bbb75c66cda524650e6dbbb87491
+  $tc'ArgInformation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5121548989659605503##
+                   4302860830865083648##
+                   Modules.$trModule
+                   Modules.$tc'ArgInformation2
+                   0#
+                   Modules.$tc'ArgInformation1) -}
+ef1c9d0816c1ae3c66621e123e0a3809
+  $tc'ArgInformation1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+33847211e6647d1e67e4523a5249426d
+  $tc'ArgInformation2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ArgInformation3) -}
+a09c648b7c8d2a6642e6ea05d0403839
+  $tc'ArgInformation3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ArgInformation"#) -}
+2ce8c2976686e831d6a9b84ea9576ce6
+  $tc'ExternalPackagedReference :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7092019680958343946##
+                   6892651699759248264##
+                   Modules.$trModule
+                   Modules.$tc'ExternalPackagedReference2
+                   0#
+                   Modules.$tc'ExternalPackagedReference1) -}
+072cc9e3ece11c79105b8f66e3dac4be
+  $tc'ExternalPackagedReference1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+8df0013b2519e2ac09b4d860797af2cc
+  $tc'ExternalPackagedReference2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Modules.$tc'ExternalPackagedReference3) -}
+bb691cd6bccaea84d40c948561f68558
+  $tc'ExternalPackagedReference3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ExternalPackagedReference"#) -}
+9a97959373261e49650067c4a2222061
+  $tc'ExternalReference :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6562161911428443558##
+                   15465963439610742286##
+                   Modules.$trModule
+                   Modules.$tc'ExternalReference2
+                   0#
+                   Modules.$tc'ExternalReference1) -}
+fa883b3ea3e6e6b9c89841cbc34fbbc9
+  $tc'ExternalReference1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2236b53f9077d60694d228371418636f
+  $tc'ExternalReference2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'ExternalReference3) -}
+c50ec2ee5558ccc9880ecc4d1fdef2d1
+  $tc'ExternalReference3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ExternalReference"#) -}
+bd6636c6d4834a9e8cd572c3438948ef
+  $tc'Function :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10885040869578571940##
+                   2081735115919298660##
+                   Modules.$trModule
+                   Modules.$tc'Function2
+                   0#
+                   Modules.$tc'Function1) -}
+1f052d453ebaab22cf9d8e35c8782043
+  $tc'Function1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3b0c886dce1ecf99c1e210848dbacd1e
+  $tc'Function2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'Function3) -}
+a6c1cfc4f7299abf21d435b3cd5dce39
+  $tc'Function3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Function"#) -}
+7e1d932a1d5126587a6cbb2bc25d7ea6
+  $tc'FunctionCheckMinNGLessVersion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10775235816696123849##
+                   7612098875851960641##
+                   Modules.$trModule
+                   Modules.$tc'FunctionCheckMinNGLessVersion2
+                   0#
+                   Modules.$tc'FunctionCheckMinNGLessVersion1) -}
+82d8e0218bb46a4ecc49630fdb613bbe
+  $tc'FunctionCheckMinNGLessVersion1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f9b4a4bb1eec12427b878966b6032fcf
+  $tc'FunctionCheckMinNGLessVersion2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Modules.$tc'FunctionCheckMinNGLessVersion3) -}
+6822a015693f1b2bffbf3278ab96758b
+  $tc'FunctionCheckMinNGLessVersion3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FunctionCheckMinNGLessVersion"#) -}
+aecdeed43e76686729aa6ca8a618ec8b
+  $tc'FunctionCheckNGLVersionIncompatibleChange :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4435607446097212851##
+                   9880562300892513445##
+                   Modules.$trModule
+                   Modules.$tc'FunctionCheckNGLVersionIncompatibleChange1
+                   0#
+                   Modules.$tc'FunctionCheckMinNGLessVersion1) -}
+1e74c2b211daf6c67a840d8e1edff0e4
+  $tc'FunctionCheckNGLVersionIncompatibleChange1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Modules.$tc'FunctionCheckNGLVersionIncompatibleChange2) -}
+f29a77feecc2d9d6bc8f4ed2aea7a1c2
+  $tc'FunctionCheckNGLVersionIncompatibleChange2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("'FunctionCheckNGLVersionIncompatibleChange"#) -}
+70d06f81cf5eca2ca85d10bbbcaf829b
+  $tc'FunctionCheckReturnAssigned :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14348150981503946666##
+                   5322045944445558893##
+                   Modules.$trModule
+                   Modules.$tc'FunctionCheckReturnAssigned2
+                   0#
+                   Modules.$tc'FunctionCheckReturnAssigned1) -}
+0f22e243320a13b905e9697c0bfb318b
+  $tc'FunctionCheckReturnAssigned1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+a4f0137dacfef3471d739bc19355c988
+  $tc'FunctionCheckReturnAssigned2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Modules.$tc'FunctionCheckReturnAssigned3) -}
+b37bbb42103ac9285b4cbd22c10e9823
+  $tc'FunctionCheckReturnAssigned3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FunctionCheckReturnAssigned"#) -}
+5b8a9de1fbe0964efea1f96799c92745
+  $tc'Module :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3714004903171724153##
+                   8380287414238891953##
+                   Modules.$trModule
+                   Modules.$tc'Module2
+                   0#
+                   Modules.$tc'Module1) -}
+3933906fc08310e6004d36e0620ba535
+  $tc'Module1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+430f951a875801e61077e020965eb3ae
+  $tc'Module2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'Module3) -}
+d97ecddebd917950576ae91a4ec94d7e
+  $tc'Module3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Module"#) -}
+765cadf59a2663b9a50daf8f57310ad3
+  $tc'Reference :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12519569604027558052##
+                   16714825845737582735##
+                   Modules.$trModule
+                   Modules.$tc'Reference2
+                   0#
+                   Modules.$tc'Reference1) -}
+1f18b9fb3b4e0e55f838a64fb2907018
+  $tc'Reference1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ac6fc3972d6b5e6479708d0668435365
+  $tc'Reference2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tc'Reference3) -}
+3e088ae4c509c233305471cac8ecdd98
+  $tc'Reference3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Reference"#) -}
+b5c30a9e652b28e6f59195b00adf917b
+  $tcArgCheck :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15620373370856113623##
+                   5114316285095645256##
+                   Modules.$trModule
+                   Modules.$tcArgCheck1
+                   0#
+                   GHC.Types.krep$*) -}
+5960a13e55ac26db1df2a832e881f140
+  $tcArgCheck1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcArgCheck2) -}
+ef44d9466bc3ec3e7818f98acd426bdd
+  $tcArgCheck2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ArgCheck"#) -}
+2ab39f82f86e071f566b1b3cd8608c8f
+  $tcArgInformation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1463284304428983855##
+                   3942838742112899605##
+                   Modules.$trModule
+                   Modules.$tcArgInformation1
+                   0#
+                   GHC.Types.krep$*) -}
+5febfd738dbb8f3e418c587995e713c3
+  $tcArgInformation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcArgInformation2) -}
+6ecc379022539911d62ce590cc377c69
+  $tcArgInformation2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ArgInformation"#) -}
+3c2aa39980effaa24788c273b46bcc95
+  $tcExternalReference :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8108290583682348358##
+                   441117717730678971##
+                   Modules.$trModule
+                   Modules.$tcExternalReference1
+                   0#
+                   GHC.Types.krep$*) -}
+5bd9ea1e2bb5e6f23452eaa2a14abd51
+  $tcExternalReference1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcExternalReference2) -}
+a809e1d94c1012276a397cf69eba07ce
+  $tcExternalReference2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ExternalReference"#) -}
+f5fcdbbdb119a7efc755b721decd9ba9
+  $tcFunction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16509650245414363847##
+                   18124741220768493042##
+                   Modules.$trModule
+                   Modules.$tcFunction1
+                   0#
+                   GHC.Types.krep$*) -}
+54df937689028b4ead99849bffaa4dec
+  $tcFunction1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcFunction2) -}
+99582d8de4d8f2280445a093a7c4d9ab
+  $tcFunction2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Function"#) -}
+c3ecb5d250ff4bee080a61360e213642
+  $tcFunctionCheck :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   396363140105036804##
+                   13808573150159621576##
+                   Modules.$trModule
+                   Modules.$tcFunctionCheck1
+                   0#
+                   GHC.Types.krep$*) -}
+3a19ab23bbf83e5044a4a95032078995
+  $tcFunctionCheck1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcFunctionCheck2) -}
+999cd8e5fcbdbbcb10c1bf00b79ee8c7
+  $tcFunctionCheck2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FunctionCheck"#) -}
+2ad2556bac61925a7c69b4d971ca4227
+  $tcModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11326844037051346236##
+                   10301566395015425659##
+                   Modules.$trModule
+                   Modules.$tcModule1
+                   0#
+                   GHC.Types.krep$*) -}
+28e77190874cc4fb0b6531ee06d55ed3
+  $tcModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcModule2) -}
+cfb1981c56ee69c47ec2e84d38bf33d1
+  $tcModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Module"#) -}
+578dbde2da0e2ba3578aa5d19890cba6
+  $tcReference :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4993919793017131449##
+                   14940189045745589384##
+                   Modules.$trModule
+                   Modules.$tcReference1
+                   0#
+                   GHC.Types.krep$*) -}
+e1c6c807c42a5d62f5625577cb400ceb
+  $tcReference1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$tcReference2) -}
+0053414680d612962faa7aa264c7a3d4
+  $tcReference2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Reference"#) -}
+e5d057ede2587ac9b8e66b7936285704
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Modules.$trModule3
+                   Modules.$trModule1) -}
+9f9fa703919013ba9e7fb086eac24995
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$trModule2) -}
+da8b29fbebce3d974ea5a74a8bc1cbe9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Modules"#) -}
+3f57cda82019971d9081973cb7b1f9d9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Modules.$trModule4) -}
+8ded60f8561407e99077b3e5f169f6f5
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $w$cparseJSONList ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [Modules.ExternalReference]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+8b7ca2f24919b82d7a219a92d1f2d78c
+  $w$cshow ::
+    Language.ModInfo
+    -> GHC.IO.FilePath
+    -> [(Data.Text.Internal.Text, Language.NGLessObject)]
+    -> [Modules.ExternalReference]
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <L,1*U><L,1*U><L,1*U><L,1*U>,
+     Inline: [2] -}
+fabe07f9f83eda8efc6532c2fcb7c2d8
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Bool
+    -> Language.NGLType
+    -> [Modules.ArgCheck]
+    -> GHC.Show.ShowS
+  {- Arity: 7, Strictness: <S,U><L,U><L,U><L,U><L,U><L,1*U><L,U>,
+     Inline: [2] -}
+7a41f30803a01ec657fe6cc2348bb18d
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int# -> Modules.ExternalReference -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2] -}
+2ecdc575dad4bd142d4f85537f7e34fc
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> Language.FuncName
+    -> GHC.Maybe.Maybe Language.NGLType
+    -> [Modules.ArgCheck]
+    -> Language.NGLType
+    -> [Modules.ArgInformation]
+    -> GHC.Types.Bool
+    -> [Modules.FunctionCheck]
+    -> GHC.Show.ShowS
+  {- Arity: 8,
+     Strictness: <S,U><L,U(U,U,U)><L,1*U><L,U><L,1*U><L,U><L,U><L,U>,
+     Inline: [2] -}
+32fc5e7856df3cf01802f081f0393dd5
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+    -> GHC.Maybe.Maybe Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Maybe.Maybe GHC.IO.FilePath
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Show.ShowS
+  {- Arity: 7,
+     Strictness: <S,U><L,U(U,U,U)><L,1*U><L,U(U,U,U)><L,1*U><L,U><L,U>,
+     Inline: [2] -}
+2a8aaf26348fbad4d70cb05dd401609a
+  data ArgCheck
+    = ArgCheckSymbol [Data.Text.Internal.Text]
+    | ArgCheckFileReadable
+    | ArgCheckFileWritable
+    | ArgCheckMinVersion (GHC.Types.Int, GHC.Types.Int)
+    | ArgDeprecated (GHC.Types.Int, GHC.Types.Int)
+                    Data.Text.Internal.Text
+ac86c28a801be7ef411fb2dc303275ef
+  data ArgInformation
+    = ArgInformation {argName :: !Data.Text.Internal.Text,
+                      argRequired :: !GHC.Types.Bool,
+                      argType :: !Language.NGLType,
+                      argChecks :: [Modules.ArgCheck]}
+7a41f30803a01ec657fe6cc2348bb18d
+  data ExternalReference
+    = ExternalReference {erefName :: Data.Text.Internal.Text,
+                         faFile :: GHC.IO.FilePath,
+                         gtfFile :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                         geneMapFile :: GHC.Maybe.Maybe GHC.IO.FilePath}
+    | ExternalPackagedReference {refData :: Modules.Reference}
+ea8a515503aace5f77e7178c87cb63b2
+  data Function
+    = Function {funcName :: Language.FuncName,
+                funcArgType :: GHC.Maybe.Maybe Language.NGLType,
+                funcArgChecks :: [Modules.ArgCheck],
+                funcRetType :: Language.NGLType,
+                funcKwArgs :: [Modules.ArgInformation],
+                funcAllowsAutoComprehension :: GHC.Types.Bool,
+                funcChecks :: [Modules.FunctionCheck]}
+ca664b640a26a091d6fcd77a022e7e98
+  data FunctionCheck
+    = FunctionCheckMinNGLessVersion (GHC.Types.Int, GHC.Types.Int)
+    | FunctionCheckReturnAssigned
+    | FunctionCheckNGLVersionIncompatibleChange (GHC.Types.Int,
+                                                 GHC.Types.Int)
+5ea81178a37f2cc1f71e0dfed7af0657
+  data Module
+    = Module {modInfo :: !Language.ModInfo,
+              modPath :: GHC.IO.FilePath,
+              modCitations :: [Data.Text.Internal.Text],
+              modConstants :: [(Data.Text.Internal.Text, Language.NGLessObject)],
+              modReferences :: [Modules.ExternalReference],
+              modFunctions :: [Modules.Function],
+              modTransform :: [(GHC.Types.Int, Language.Expression)]
+                              -> NGLess.NGError.NGLessIO [(GHC.Types.Int, Language.Expression)],
+              runFunction :: Data.Text.Internal.Text
+                             -> Language.NGLessObject
+                             -> NGLess.KwArgsValues
+                             -> NGLess.NGError.NGLessIO Language.NGLessObject}
+9efd256689495bd8c9f4086f70ea12d5
+  data Reference
+    = Reference {refName :: Data.Text.Internal.Text,
+                 refAlias :: GHC.Maybe.Maybe Data.Text.Internal.Text,
+                 refVersionedName :: Data.Text.Internal.Text,
+                 refUrl :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                 refHasGff :: GHC.Types.Bool,
+                 refHasFunctionalMap :: GHC.Types.Bool}
+ac86c28a801be7ef411fb2dc303275ef
+  argChecks :: Modules.ArgInformation -> [Modules.ArgCheck]
+  RecSel Left Modules.ArgInformation
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ArgInformation) ->
+                 case ds of wild { Modules.ArgInformation ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+ac86c28a801be7ef411fb2dc303275ef
+  argName :: Modules.ArgInformation -> Data.Text.Internal.Text
+  RecSel Left Modules.ArgInformation
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(U(U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ArgInformation) ->
+                 case ds of wild { Modules.ArgInformation ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+ac86c28a801be7ef411fb2dc303275ef
+  argRequired :: Modules.ArgInformation -> GHC.Types.Bool
+  RecSel Left Modules.ArgInformation
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ArgInformation) ->
+                 case ds of wild { Modules.ArgInformation ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+ac86c28a801be7ef411fb2dc303275ef
+  argType :: Modules.ArgInformation -> Language.NGLType
+  RecSel Left Modules.ArgInformation
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ArgInformation) ->
+                 case ds of wild { Modules.ArgInformation ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  erefName :: Modules.ExternalReference -> Data.Text.Internal.Text
+  RecSel Left Modules.ExternalReference
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ExternalReference) ->
+                 case ds of wild {
+                   Modules.ExternalReference ds1 ds2 ds3 ds4 -> ds1
+                   Modules.ExternalPackagedReference ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.Text.Internal.Text
+                        "erefName"# }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  faFile :: Modules.ExternalReference -> GHC.IO.FilePath
+  RecSel Left Modules.ExternalReference
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ExternalReference) ->
+                 case ds of wild {
+                   Modules.ExternalReference ds1 ds2 ds3 ds4 -> ds2
+                   Modules.ExternalPackagedReference ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.IO.FilePath
+                        "faFile"# }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcAllowsAutoComprehension :: Modules.Function -> GHC.Types.Bool
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSL),1*U(A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds6 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcArgChecks :: Modules.Function -> [Modules.ArgCheck]
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds3 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcArgType :: Modules.Function -> GHC.Maybe.Maybe Language.NGLType
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLL),1*U(A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds2 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcChecks :: Modules.Function -> [Modules.FunctionCheck]
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLS),1*U(A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds7 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcKwArgs :: Modules.Function -> [Modules.ArgInformation]
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLL),1*U(A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds5 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcName :: Modules.Function -> Language.FuncName
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLL),1*U(1*U(U,U,U),A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds1 }) -}
+ea8a515503aace5f77e7178c87cb63b2
+  funcRetType :: Modules.Function -> Language.NGLType
+  RecSel Left Modules.Function
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLL),1*U(A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Function) ->
+                 case ds of wild { Modules.Function ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds4 }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  geneMapFile ::
+    Modules.ExternalReference -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left Modules.ExternalReference
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ExternalReference) ->
+                 case ds of wild {
+                   Modules.ExternalReference ds1 ds2 ds3 ds4 -> ds4
+                   Modules.ExternalPackagedReference ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "geneMapFile"# }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  gtfFile ::
+    Modules.ExternalReference -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left Modules.ExternalReference
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ExternalReference) ->
+                 case ds of wild {
+                   Modules.ExternalReference ds1 ds2 ds3 ds4 -> ds3
+                   Modules.ExternalPackagedReference ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "gtfFile"# }) -}
+a144d72d8d4ef606e4d95aac2f01e214
+  knownModules :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules15
+                   Modules.knownModules1) -}
+6295cea9073050a048054fd99c63899f
+  knownModules1 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules14
+                   Modules.knownModules2) -}
+8203f3dd28f2e82b9f77a09d318e2bb2
+  knownModules10 :: Data.Text.Internal.Text
+dca41850349a42bb06087b87ed4fade2
+  knownModules11 :: Data.Text.Internal.Text
+6b95c192681dd74d4699f0c040ee9231
+  knownModules12 :: Data.Text.Internal.Text
+19054ec5ea482f7c641a57191ab8f4d8
+  knownModules13 :: Data.Text.Internal.Text
+b85dc9e13c9ea4e81d461e4c7ad73164
+  knownModules14 :: Data.Text.Internal.Text
+0405eefaa64d823a53ba32c656583631
+  knownModules15 :: Data.Text.Internal.Text
+b05af8f3ecff5e0a0ec706c4aa4b8be3
+  knownModules2 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules13
+                   Modules.knownModules3) -}
+c8b294d7843a31e51739e7f375883b5b
+  knownModules3 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules12
+                   Modules.knownModules4) -}
+58ed8581d34f960ef9e07f7879f4bae3
+  knownModules4 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules11
+                   Modules.knownModules5) -}
+c0edcb5afbe6820313f23b605e5eb8fb
+  knownModules5 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules10
+                   Modules.knownModules6) -}
+1a77aaca1256f4477fec021fb95799ee
+  knownModules6 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules9
+                   Modules.knownModules7) -}
+8899408d94e7968c0fe34fd308dcd0ec
+  knownModules7 :: [Data.Text.Internal.Text]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Data.Text.Internal.Text
+                   Modules.knownModules8
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+9d1ac1ebaadb1ae2f65ba4e8224fc0cb
+  knownModules8 :: Data.Text.Internal.Text
+b9453fe1450bf7474b0653ad5d10c2eb
+  knownModules9 :: Data.Text.Internal.Text
+838ee0cd9914b71703bcd77a428ab74f
+  loadedModules :: NGLess.NGError.NGLessIO [Modules.Module]
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Modules.loadedModules1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <[Modules.Module]>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <[Modules.Module]>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <[Modules.Module]>_N)) -}
+392c00aeb4ff4af500cffcfb311020f5
+  loadedModules1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [Modules.Module] #)
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.STRef.readSTRef1
+                   @ GHC.Prim.RealWorld
+                   @ [Modules.Module]
+                   Modules.loadedModulesRef
+                     `cast`
+                   (GHC.IORef.N:IORef[0] <[Modules.Module]>_N)
+                   eta) -}
+030bf07ed1d4dc83daa28e268c7c3ca0
+  loadedModulesRef :: GHC.IORef.IORef [Modules.Module]
+  {- Inline: -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modCitations :: Modules.Module -> [Data.Text.Internal.Text]
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLL),1*U(A,A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds3 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modConstants ::
+    Modules.Module
+    -> [(Data.Text.Internal.Text, Language.NGLessObject)]
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLL),1*U(A,A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds4 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modFunctions :: Modules.Module -> [Modules.Function]
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLL),1*U(A,A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds6 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modInfo :: Modules.Module -> Language.ModInfo
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds1 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modPath :: Modules.Module -> GHC.IO.FilePath
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLL),1*U(A,1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds2 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modReferences :: Modules.Module -> [Modules.ExternalReference]
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLL),1*U(A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds5 }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  modTransform ::
+    Modules.Module
+    -> [(GHC.Types.Int, Language.Expression)]
+    -> NGLess.NGError.NGLessIO [(GHC.Types.Int, Language.Expression)]
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSL),1*U(A,A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds7 }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  refAlias ::
+    Modules.Reference -> GHC.Maybe.Maybe Data.Text.Internal.Text
+  RecSel Left Modules.Reference
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds2 }) -}
+7a41f30803a01ec657fe6cc2348bb18d
+  refData :: Modules.ExternalReference -> Modules.Reference
+  RecSel Left Modules.ExternalReference
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.ExternalReference) ->
+                 case ds of wild {
+                   Modules.ExternalReference ipv ipv1 ipv2 ipv3
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Modules.Reference
+                        "refData"#
+                   Modules.ExternalPackagedReference ds1 -> ds1 }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  refHasFunctionalMap :: Modules.Reference -> GHC.Types.Bool
+  RecSel Left Modules.Reference
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLS),1*U(A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds6 }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  refHasGff :: Modules.Reference -> GHC.Types.Bool
+  RecSel Left Modules.Reference
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSL),1*U(A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds5 }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  refName :: Modules.Reference -> Data.Text.Internal.Text
+  RecSel Left Modules.Reference
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(1*U(U,U,U),A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds1 }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  refUrl :: Modules.Reference -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left Modules.Reference
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLL),1*U(A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds4 }) -}
+9efd256689495bd8c9f4086f70ea12d5
+  refVersionedName :: Modules.Reference -> Data.Text.Internal.Text
+  RecSel Left Modules.Reference
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLL),1*U(A,A,1*U(U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Reference) ->
+                 case ds of wild { Modules.Reference ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds3 }) -}
+c8ea6ed0035eb69fd5734472519c108d
+  registerModule :: Modules.Module -> NGLess.NGError.NGLessIO ()
+  {- Arity: 3, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Modules.registerModule1
+                  `cast`
+                (<Modules.Module>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R
+                                                          <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+cb183ed059c0bc8efa45e1b6b31a977b
+  registerModule1 ::
+    Modules.Module
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (m :: Modules.Module)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Modules.loadedModulesRef
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <[Modules.Module]>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [Modules.Module]
+                        var#
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [Modules.Module]
+                        var#
+                        (GHC.Types.: @ Modules.Module m ipv1)
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } } }) -}
+5ea81178a37f2cc1f71e0dfed7af0657
+  runFunction ::
+    Modules.Module
+    -> Data.Text.Internal.Text
+    -> Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  RecSel Left Modules.Module
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLS),1*U(A,A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Modules.Module) ->
+                 case ds of wild { Modules.Module ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds8 }) -}
+instance Data.Default.Class.Default [Modules.Module]
+  = Modules.$fDefaultModule
+instance GHC.Classes.Eq [Modules.ArgCheck] = Modules.$fEqArgCheck
+instance GHC.Classes.Eq [Modules.ArgInformation]
+  = Modules.$fEqArgInformation
+instance GHC.Classes.Eq [Modules.ExternalReference]
+  = Modules.$fEqExternalReference
+instance GHC.Classes.Eq [Modules.Function] = Modules.$fEqFunction
+instance GHC.Classes.Eq [Modules.FunctionCheck]
+  = Modules.$fEqFunctionCheck
+instance GHC.Classes.Eq [Modules.Reference] = Modules.$fEqReference
+instance Data.Aeson.Types.FromJSON.FromJSON [Modules.ExternalReference]
+  = Modules.$fFromJSONExternalReference
+instance GHC.Show.Show [Modules.ArgCheck] = Modules.$fShowArgCheck
+instance GHC.Show.Show [Modules.ArgInformation]
+  = Modules.$fShowArgInformation
+instance GHC.Show.Show [Modules.ExternalReference]
+  = Modules.$fShowExternalReference
+instance GHC.Show.Show [Modules.Function] = Modules.$fShowFunction
+instance GHC.Show.Show [Modules.FunctionCheck]
+  = Modules.$fShowFunctionCheck
+instance GHC.Show.Show [Modules.Module] = Modules.$fShowModule
+instance GHC.Show.Show [Modules.Reference]
+  = Modules.$fShowReference
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

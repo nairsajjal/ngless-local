@@ -1,0 +1,1032 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:59.668982254 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Tokens 8065
+  interface hash: 3a32fc3b81446006ba6e3884b5ddd1d7
+  ABI hash: 1e58ca25affc855bc66d58c418f9a343
+  export-list hash: 7ede13df7182b1b995635de29175c11b
+  orphan hash: 5c9331a47a4ee0dba56131eaaa2b6d29
+  flag hash: 50ba487d23aeb79026c6de06b700ddf6
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tokens.tokenize
+  Tokens.Token{Tokens.TBop Tokens.TConstant Tokens.TExpr Tokens.TIndent Tokens.TNewLine Tokens.TOperator Tokens.TReserved Tokens.TWord}
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.LockFile Utils.Samtools Utils.Utils
+                     Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0 diagrams-core-1.4.2
+                      diagrams-lib-1.4.3 diagrams-solve-0.1.1 diagrams-svg-1.4.3
+                      directory-1.3.3.0 distributive-0.6.1 dlist-0.8.0.7
+                      dual-tree-0.2.2.1 errors-2.3.0 exceptions-0.10.4 extra-1.6.18
+                      file-embed-0.0.11.1 filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1 hashable-1.2.7.0
+                      hostname-1.0 inline-c-0.7.0.1 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.3 intervals-0.8.1 kan-extensions-5.2
+                      lens-4.17.1 linear-1.20.9 lzma-0.0.0.3 lzma-conduit-1.2.1
+                      monad-loops-0.4.3 mono-traversable-1.0.15.1 monoid-extras-0.5.1
+                      mtl-2.2.2 newtype-generics-0.5.4 old-locale-1.0.0.7
+                      old-time-1.1.0.3 optparse-applicative-0.14.3.0 parsec-3.1.14.0
+                      parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0
+                      profunctors-5.3 random-1.1 reflection-2.1.5 regex-1.0.2.0
+                      regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  BOp 082be4a718fd86899f5b7f01bed2cf9a
+  BOpAdd 883c3d29b2fcbc87259c89a43b4c0da3
+  BOpEQ e7cd3bb0cd4f65a11a1242f3891d1dd2
+  BOpGT 6c4ebb5e00c07ea1a168bdb25331e25d
+  BOpGTE 66d8a5dbec68bc11f3d8ac356d4fd75e
+  BOpLT efffe19041efe96e15c29e1b76d8babe
+  BOpLTE 757abdb965c9346d42ce17c336a0c9aa
+  BOpMul bac8d40d3aa02908bc5417974decf60e
+  BOpNEQ cdce5886e235a3de3dcf71fc80c8349f
+  BOpPathAppend 993bf55f405744f7a1bdc78b6026b1fc
+  BuiltinConstant df58b1abf5535a0feb227c294c839942
+  ConstBool e8c69dda06d722ad76d6ee5b57016100
+  ConstDouble 142b08f1af0256b592f97ccf5fd10c52
+  ConstInt 8a960333f4a81e1ab77c58419b086b64
+  ConstStr 1facc51f598e05827c5695d189d62844
+  ConstSymbol a46ef274d615207b4535b4c02ac882bf
+  Expression adc8def6a4b7257bb12aef607cf99238
+  Variable 9b44f8caef4ce199ec53dca15d83da61
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGLess 416e5726ee4c4987c25367d545064990
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:Text.Read 87f80fc2538a174aea915dd98f74fc0a
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  parsec-3.1.14.0:Text.Parsec 910a140bed9f7f39441be2c58b47b50d
+import  -/  parsec-3.1.14.0:Text.Parsec.Char 5f79ae8a66cd56cc3e9de95a73a6457b
+import  -/  parsec-3.1.14.0:Text.Parsec.Combinator 9f0dfaf3c33cd24f50f8b77c45207f44
+import  -/  parsec-3.1.14.0:Text.Parsec.Pos 7a42c582e9cb3ad44b1eb1fc1086ee98
+import  -/  parsec-3.1.14.0:Text.Parsec.Prim 6664c73a6cce2d8784e815400ed57096
+import  -/  parsec-3.1.14.0:Text.Parsec.Text 2a026d50a8facdd6eb030e21a24adcca
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+75f9c6258f6936e797d314f23c548cda
+  $fEqToken :: GHC.Classes.Eq Tokens.Token
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Tokens.Token Tokens.$fEqToken_$c== Tokens.$fEqToken_$c/= -}
+75f9c6258f6936e797d314f23c548cda
+  $fEqToken_$c/= :: Tokens.Token -> Tokens.Token -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x2 :: Tokens.Token) (y :: Tokens.Token) ->
+                 case Tokens.$fEqToken_$c== x2 y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+75f9c6258f6936e797d314f23c548cda
+  $fEqToken_$c== :: Tokens.Token -> Tokens.Token -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Tokens.Token) (ds1 :: Tokens.Token) ->
+                 case ds of wild {
+                   Tokens.TExpr a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TExpr b1 -> Language.$fEqBlock_$c==1 a1 b1 }
+                   Tokens.TBop a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TBop b1 -> Language.$fEqBOp_$c== a1 b1 }
+                   Tokens.TReserved a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TReserved b1 -> Data.Text.$fEqText_$c== a1 b1 }
+                   Tokens.TConstant a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TConstant b1 -> Data.Text.$fEqText_$c== a1 b1 }
+                   Tokens.TWord a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TWord b1 -> Data.Text.$fEqText_$c== a1 b1 }
+                   Tokens.TOperator a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TOperator b1 -> GHC.Classes.eqChar a1 b1 }
+                   Tokens.TNewLine
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Tokens.TNewLine -> GHC.Types.True }
+                   Tokens.TIndent a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Tokens.TIndent b1 -> GHC.Classes.eqInt a1 b1 } }) -}
+75f9c6258f6936e797d314f23c548cda
+  $fShowToken :: GHC.Show.Show Tokens.Token
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Tokens.Token
+                  Tokens.$fShowToken_$cshowsPrec
+                  Tokens.$fShowToken_$cshow
+                  Tokens.$fShowToken_$cshowList -}
+75f9c6258f6936e797d314f23c548cda
+  $fShowToken_$cshow :: Tokens.Token -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x2 :: Tokens.Token) ->
+                 Tokens.$fShowToken_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x2
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+75f9c6258f6936e797d314f23c548cda
+  $fShowToken_$cshowList :: [Tokens.Token] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Tokens.Token]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Tokens.Token
+                   (Tokens.$fShowToken_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+75f9c6258f6936e797d314f23c548cda
+  $fShowToken_$cshowsPrec ::
+    GHC.Types.Int -> Tokens.Token -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+d662fb232b3bd1a5739184666eb12153
+  $s$fStreamTextmChar0 ::
+    Text.Parsec.Prim.Stream
+      Data.Text.Internal.Text
+      Data.Functor.Identity.Identity
+      GHC.Types.Char
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Text.Internal.Text
+                  @ Data.Functor.Identity.Identity
+                  @ GHC.Types.Char
+                  Data.Functor.Identity.$fMonadIdentity
+                  Data.Text.uncons
+                    `cast`
+                  (<Data.Text.Internal.Text>_R
+                   ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                 <GHC.Maybe.Maybe (GHC.Types.Char, Data.Text.Internal.Text)>_R)) -}
+f56c6176b98a36ec595d3abf2be4090b
+  $seof1 ::
+    Text.Parsec.Prim.State Data.Text.Internal.Text u
+    -> (()
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (()
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ u
+                   @ b
+                   (w2 :: Text.Parsec.Prim.State Data.Text.Internal.Text u)
+                   (w3 :: ()
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w5 :: ()
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w6 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 Text.Parsec.Combinator.$weof
+                   @ Data.Text.Internal.Text
+                   @ Data.Functor.Identity.Identity
+                   @ GHC.Types.Char
+                   @ u
+                   Data.Functor.Identity.$fMonadIdentity_$c>>=
+                   Data.Text.uncons
+                     `cast`
+                   (<Data.Text.Internal.Text>_R
+                    ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                  <GHC.Maybe.Maybe (GHC.Types.Char, Data.Text.Internal.Text)>_R))
+                   GHC.Show.$fShowChar
+                   @ b
+                   w2
+                   w3
+                   w4
+                   w5
+                   w6) -}
+8c2df17cc5675b57f0446d1b72b1a1ff
+  $tc'TBop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4980433554642457447##
+                   15050841657067982713##
+                   Tokens.$trModule
+                   Tokens.$tc'TBop2
+                   0#
+                   Tokens.$tc'TBop1) -}
+7dc298f631dcde9d05a4a1fc8d2a497d
+  $tc'TBop1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3f97d5926d7eff5c8b89a41b267b2549
+  $tc'TBop2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TBop3) -}
+465eb6c8f84764e9da081553d8507aa4
+  $tc'TBop3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TBop"#) -}
+20cdace71466eeb209b8cb3e8e1cff47
+  $tc'TConstant :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12295628043881130278##
+                   16472011941249137079##
+                   Tokens.$trModule
+                   Tokens.$tc'TConstant2
+                   0#
+                   Tokens.$tc'TConstant1) -}
+a62161c7107340765882c0a0933b7f30
+  $tc'TConstant1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5989e9addf6f6066a0b804cdc9230544
+  $tc'TConstant2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TConstant3) -}
+0e26af1ec9a29d12386d34b0efb0818a
+  $tc'TConstant3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TConstant"#) -}
+4e1b4e63b506ad6b5623355e75d3d28f
+  $tc'TExpr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   512854726641875360##
+                   6335396882570761651##
+                   Tokens.$trModule
+                   Tokens.$tc'TExpr2
+                   0#
+                   Tokens.$tc'TExpr1) -}
+a439f6412e275e9fc0bfa03b1feebbb2
+  $tc'TExpr1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+72d24e2402e9a4cb63784a1db87d8604
+  $tc'TExpr2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TExpr3) -}
+a22eae07396b637b66707bcb6a9db257
+  $tc'TExpr3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TExpr"#) -}
+6275ccc11d7892cfcb5d8583f0325989
+  $tc'TIndent :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4542911795964025128##
+                   14692515834355887461##
+                   Tokens.$trModule
+                   Tokens.$tc'TIndent2
+                   0#
+                   Tokens.$tc'TIndent1) -}
+9de6ee8bccb7db7271b22c584f824250
+  $tc'TIndent1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ce6cd5fd0dd4eda42a34758a2a85ec68
+  $tc'TIndent2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TIndent3) -}
+cd26548682aee0fe1d0a74d0e79dc00a
+  $tc'TIndent3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TIndent"#) -}
+e3a841efbb6d4595171572d710bd0000
+  $tc'TNewLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13106328247415476693##
+                   7949868916670026390##
+                   Tokens.$trModule
+                   Tokens.$tc'TNewLine2
+                   0#
+                   Tokens.$tc'TNewLine1) -}
+c5803dfac48ad05e15001bb24685f854
+  $tc'TNewLine1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+4a387086f63abddc136de94bafbbc055
+  $tc'TNewLine2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TNewLine3) -}
+7bc587384762d9bef2f35e997b408bbd
+  $tc'TNewLine3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TNewLine"#) -}
+b3e0d11558d4d05ed5d11cefec91b7ef
+  $tc'TOperator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18237185441599881005##
+                   9877068743106511502##
+                   Tokens.$trModule
+                   Tokens.$tc'TOperator2
+                   0#
+                   Tokens.$tc'TOperator1) -}
+0c2b8a12593294ae4a24a8b300c50ce4
+  $tc'TOperator1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0c66da902936d77a6d565cc729459804
+  $tc'TOperator2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TOperator3) -}
+84ccfeec13921ac43218f8f5ac6bb95c
+  $tc'TOperator3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TOperator"#) -}
+dc1605e0249dfb4d94d31fd0905d6cc5
+  $tc'TReserved :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6940616211048091068##
+                   18306162785866791396##
+                   Tokens.$trModule
+                   Tokens.$tc'TReserved1
+                   0#
+                   Tokens.$tc'TConstant1) -}
+1fd43034b9a8eb09b1aa5ef086f5f9f9
+  $tc'TReserved1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TReserved2) -}
+6d69659c7fa3e5964827ffb56f98aee6
+  $tc'TReserved2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TReserved"#) -}
+4688d8dd77e458c19dcf2b99db83202b
+  $tc'TWord :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14420075952220038092##
+                   16649493186795806915##
+                   Tokens.$trModule
+                   Tokens.$tc'TWord1
+                   0#
+                   Tokens.$tc'TConstant1) -}
+e2c2973ae58cce822af9ed6a84652a66
+  $tc'TWord1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tc'TWord2) -}
+473b0b6e5f6a7c80776a2651b1fa704d
+  $tc'TWord2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TWord"#) -}
+1fbbf9981447b6fbc0c4ff845a17e89a
+  $tcToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9237471004003216670##
+                   14236745470833651094##
+                   Tokens.$trModule
+                   Tokens.$tcToken1
+                   0#
+                   GHC.Types.krep$*) -}
+b586869636671f1268a1724476fe41ba
+  $tcToken1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$tcToken2) -}
+f99636575ba88959ca19e7685902d8fb
+  $tcToken2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Token"#) -}
+9f625c0e0388959da67a2ee85f75310c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Tokens.$trModule3
+                   Tokens.$trModule1) -}
+eb6642bc982535338c8221ad01e9de81
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$trModule2) -}
+6cef369dbaa8a952033043e6bd127ed1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tokens"#) -}
+7511108a2ee90c65c5021a2cd9131f12
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Tokens.$trModule4) -}
+d9bc4f51a364089ad68334b77cf738c3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+8be4629e09619c522d7a52b02180092f
+  $wtokenizer ::
+    Text.Parsec.Prim.State Data.Text.Internal.Text u
+    -> ((Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token))
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U,U(U,U,U),U)><C(C(C(S))),1*C1(C1(C1(U)))>,
+     Inline: [2],
+     Unfolding: (\ @ u
+                   @ b1
+                   (w :: Text.Parsec.Prim.State Data.Text.Internal.Text u)
+                   (w1 :: (Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token))
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 w1
+                   (GHC.Tuple.(,)
+                      @ Text.Parsec.Pos.SourcePos
+                      @ Tokens.Token
+                      (case w of wild { Text.Parsec.Prim.State ds ds1 ds2 -> ds1 }))
+                   w
+                   (case w of wild { Text.Parsec.Prim.State ds ds1 ds2 ->
+                    case ds1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                    case GHC.Classes.$fOrd[]_$s$ccompare1 ww4 ww4 of wild1 { DEFAULT ->
+                    Text.Parsec.Error.ParseError
+                      ww3
+                      (GHC.Types.[] @ Text.Parsec.Error.Message) } } })) -}
+75f9c6258f6936e797d314f23c548cda
+  data Token
+    = TExpr Language.Expression
+    | TBop Language.BOp
+    | TReserved Data.Text.Internal.Text
+    | TConstant Data.Text.Internal.Text
+    | TWord Data.Text.Internal.Text
+    | TOperator GHC.Types.Char
+    | TNewLine
+    | TIndent GHC.Types.Int
+ffab48c7903cf0bdeb07f04b439b5bb9
+  tokenize ::
+    GHC.Base.String
+    -> Data.Text.Internal.Text
+    -> NGLess.NGError.NGLess
+         [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (inname :: GHC.Base.String)
+                   (input :: Data.Text.Internal.Text) ->
+                 let {
+                   $j :: Text.Parsec.Error.ParseError
+                         -> NGLess.NGError.NGLess
+                              [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                     <join 1> {- Arity: 1, Strictness: <L,1*U(U(1*U,U,U),1*U)> -}
+                   = \ (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                     Data.Either.Left
+                       @ NGLess.NGError.NGError
+                       @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                       (case err of ww1 { Text.Parsec.Error.ParseError ww2 ww3 ->
+                        case ww2 of ww4 { Text.Parsec.Pos.SourcePos ww5 ww6 ww7 ->
+                        case Text.Parsec.Error.$w$cshow ww5 ww6 ww7 ww3 of dt { DEFAULT ->
+                        NGLess.NGError.NGError NGLess.NGError.ScriptError dt } } })
+                 } in
+                 case (Text.Parsec.Prim.$fApplicativeParsecT1
+                         @ Data.Text.Internal.Text
+                         @ ()
+                         @ Data.Functor.Identity.Identity
+                         @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                         @ ()
+                         (Tokens.tokenize1 @ ())
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <Data.Text.Internal.Text>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <[(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R))
+                         (Tokens.$seof1 @ ())
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <Data.Text.Internal.Text>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <()>_R))
+                         @ (Text.Parsec.Prim.Consumed
+                              (Data.Functor.Identity.Identity
+                                 (Text.Parsec.Prim.Reply
+                                    Data.Text.Internal.Text
+                                    ()
+                                    [(Text.Parsec.Pos.SourcePos, Tokens.Token)])))
+                         (Text.Parsec.Prim.State
+                            @ Data.Text.Internal.Text
+                            @ ()
+                            input
+                            (Text.Parsec.Pos.SourcePos inname 1# 1#)
+                            GHC.Tuple.())
+                         (\ (a1 :: [(Text.Parsec.Pos.SourcePos, Tokens.Token)])
+                            (s' :: Text.Parsec.Prim.State Data.Text.Internal.Text ())[OneShot]
+                            (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                          Text.Parsec.Prim.Consumed
+                            @ (Data.Functor.Identity.Identity
+                                 (Text.Parsec.Prim.Reply
+                                    Data.Text.Internal.Text
+                                    ()
+                                    [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))
+                            (case s' of dt { Text.Parsec.Prim.State ipv ipv1 ipv2 ->
+                             (Text.Parsec.Prim.Ok
+                                @ Data.Text.Internal.Text
+                                @ ()
+                                @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                                a1
+                                dt
+                                err)
+                               `cast`
+                             (Sym (Data.Functor.Identity.N:Identity[0]
+                                       <Text.Parsec.Prim.Reply
+                                          Data.Text.Internal.Text
+                                          ()
+                                          [(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R)) }))
+                           `cast`
+                         (<[(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R
+                          ->_R <Text.Parsec.Prim.State Data.Text.Internal.Text ()>_R
+                          ->_R <Text.Parsec.Error.ParseError>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Parsec.Prim.Consumed
+                                           (Data.Functor.Identity.Identity
+                                              (Text.Parsec.Prim.Reply
+                                                 Data.Text.Internal.Text
+                                                 ()
+                                                 [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))>_R))
+                         (\ (err :: Text.Parsec.Error.ParseError) ->
+                          Text.Parsec.Prim.Consumed
+                            @ (Data.Functor.Identity.Identity
+                                 (Text.Parsec.Prim.Reply
+                                    Data.Text.Internal.Text
+                                    ()
+                                    [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))
+                            (Text.Parsec.Prim.Error
+                               @ Data.Text.Internal.Text
+                               @ ()
+                               @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                               err)
+                              `cast`
+                            (Sym (Data.Functor.Identity.N:Identity[0]
+                                      <Text.Parsec.Prim.Reply
+                                         Data.Text.Internal.Text
+                                         ()
+                                         [(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R)))
+                           `cast`
+                         (<Text.Parsec.Error.ParseError>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Parsec.Prim.Consumed
+                                           (Data.Functor.Identity.Identity
+                                              (Text.Parsec.Prim.Reply
+                                                 Data.Text.Internal.Text
+                                                 ()
+                                                 [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))>_R))
+                         (\ (a1 :: [(Text.Parsec.Pos.SourcePos, Tokens.Token)])
+                            (s' :: Text.Parsec.Prim.State Data.Text.Internal.Text ())[OneShot]
+                            (err :: Text.Parsec.Error.ParseError)[OneShot] ->
+                          case s' of dt { Text.Parsec.Prim.State ipv ipv1 ipv2 ->
+                          (Text.Parsec.Prim.Empty
+                             @ (Data.Functor.Identity.Identity
+                                  (Text.Parsec.Prim.Reply
+                                     Data.Text.Internal.Text
+                                     ()
+                                     [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))
+                             (Text.Parsec.Prim.Ok
+                                @ Data.Text.Internal.Text
+                                @ ()
+                                @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                                a1
+                                dt
+                                err)
+                               `cast`
+                             (Sym (Data.Functor.Identity.N:Identity[0]
+                                       <Text.Parsec.Prim.Reply
+                                          Data.Text.Internal.Text
+                                          ()
+                                          [(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R)))
+                            `cast`
+                          (Sym (Data.Functor.Identity.N:Identity[0]
+                                    <Text.Parsec.Prim.Consumed
+                                       (Data.Functor.Identity.Identity
+                                          (Text.Parsec.Prim.Reply
+                                             Data.Text.Internal.Text
+                                             ()
+                                             [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))>_R)) })
+                         (\ (err :: Text.Parsec.Error.ParseError) ->
+                          Text.Parsec.Prim.Empty
+                            @ (Data.Functor.Identity.Identity
+                                 (Text.Parsec.Prim.Reply
+                                    Data.Text.Internal.Text
+                                    ()
+                                    [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))
+                            (Text.Parsec.Prim.Error
+                               @ Data.Text.Internal.Text
+                               @ ()
+                               @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                               err)
+                              `cast`
+                            (Sym (Data.Functor.Identity.N:Identity[0]
+                                      <Text.Parsec.Prim.Reply
+                                         Data.Text.Internal.Text
+                                         ()
+                                         [(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R)))
+                           `cast`
+                         (<Text.Parsec.Error.ParseError>_R
+                          ->_R Sym (Data.Functor.Identity.N:Identity[0]
+                                        <Text.Parsec.Prim.Consumed
+                                           (Data.Functor.Identity.Identity
+                                              (Text.Parsec.Prim.Reply
+                                                 Data.Text.Internal.Text
+                                                 ()
+                                                 [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))>_R)))
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <Text.Parsec.Prim.Consumed
+                              (Data.Functor.Identity.Identity
+                                 (Text.Parsec.Prim.Reply
+                                    Data.Text.Internal.Text
+                                    ()
+                                    [(Text.Parsec.Pos.SourcePos, Tokens.Token)]))>_R) of wild {
+                   Text.Parsec.Prim.Consumed r
+                   -> case r `cast`
+                           (Data.Functor.Identity.N:Identity[0]
+                                <Text.Parsec.Prim.Reply
+                                   Data.Text.Internal.Text
+                                   ()
+                                   [(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R) of wild1 {
+                        Text.Parsec.Prim.Ok x2 ds ds1
+                        -> Data.Either.Right
+                             @ NGLess.NGError.NGError
+                             @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                             x2
+                        Text.Parsec.Prim.Error err -> $j err }
+                   Text.Parsec.Prim.Empty r
+                   -> case r `cast`
+                           (Data.Functor.Identity.N:Identity[0]
+                                <Text.Parsec.Prim.Reply
+                                   Data.Text.Internal.Text
+                                   ()
+                                   [(Text.Parsec.Pos.SourcePos, Tokens.Token)]>_R) of wild1 {
+                        Text.Parsec.Prim.Ok x2 ds ds1
+                        -> Data.Either.Right
+                             @ NGLess.NGError.NGError
+                             @ [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                             x2
+                        Text.Parsec.Prim.Error err -> $j err } }) -}
+9c869d91c483e271ee27a7ba49a1caf0
+  tokenize1 ::
+    Text.Parsec.Prim.State Data.Text.Internal.Text u
+    -> ([(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ([(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,A>,
+     Unfolding: InlineRule (5, True, True)
+                (\ @ u
+                   @ b
+                   (w1 :: Text.Parsec.Prim.State Data.Text.Internal.Text u)
+                   (w2 :: [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w3 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w4 :: [(Text.Parsec.Pos.SourcePos, Tokens.Token)]
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b)
+                   (w5 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b) ->
+                 Text.Parsec.Prim.$wmany
+                   @ Data.Text.Internal.Text
+                   @ u
+                   @ Data.Functor.Identity.Identity
+                   @ (Text.Parsec.Pos.SourcePos, Tokens.Token)
+                   (Tokens.tokenize2 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <Data.Text.Internal.Text>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <(Text.Parsec.Pos.SourcePos, Tokens.Token)>_R))
+                   @ b
+                   w1
+                   w2
+                   w3
+                   w4) -}
+8d9f1c40b8210addfb094ef815955b7c
+  tokenize2 ::
+    Text.Parsec.Prim.State Data.Text.Internal.Text u
+    -> ((Text.Parsec.Pos.SourcePos, Tokens.Token)
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> ((Text.Parsec.Pos.SourcePos, Tokens.Token)
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Unfolding: (\ @ u ->
+                 Text.Parsec.Prim.$fAlternativeParsecT2
+                   @ Data.Text.Internal.Text
+                   @ u
+                   @ Data.Functor.Identity.Identity
+                   @ Tokens.Token
+                   @ (Text.Parsec.Pos.SourcePos, Tokens.Token)
+                   (Tokens.tokenize4 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <Data.Text.Internal.Text>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token)>_R))
+                   (Tokens.tokenize3 @ u)
+                     `cast`
+                   (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                             <Data.Text.Internal.Text>_R
+                             <u>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <Tokens.Token>_R))) -}
+d162c788b0e927b1fc0b3965499dba95
+  tokenize3 ::
+    Text.Parsec.Prim.State Data.Text.Internal.Text u
+    -> (Tokens.Token
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Tokens.Token
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Strictness: <L,U(U(U,U,U),U(U,U,U),U)><L,U><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+80433a2cace80b456cb2332430540713
+  tokenize4 ::
+    Text.Parsec.Prim.State Data.Text.Internal.Text u
+    -> ((Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token))
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> ((Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token))
+        -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(U,U(U,U,U),U)><L,A><L,A><C(C(C(S))),1*C1(C1(C1(U)))><L,A>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, True)
+                (\ @ u
+                   @ b1
+                   (w :: Text.Parsec.Prim.State Data.Text.Internal.Text u)
+                   (w1 :: (Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token))
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w2 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w3 :: (Tokens.Token -> (Text.Parsec.Pos.SourcePos, Tokens.Token))
+                          -> Text.Parsec.Prim.State Data.Text.Internal.Text u
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1)
+                   (w4 :: Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1) ->
+                 Tokens.$wtokenizer @ u @ b1 w w3) -}
+instance GHC.Classes.Eq [Tokens.Token] = Tokens.$fEqToken
+instance GHC.Show.Show [Tokens.Token] = Tokens.$fShowToken
+"SPEC/Tokens $fStreamTextmChar0 @ Identity" [orphan] forall (v :: GHC.Base.Monad
+                                                                    Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStreamTextmChar0 @ Data.Functor.Identity.Identity
+                                      v
+  = Tokens.$s$fStreamTextmChar0
+"SPEC/Tokens eof1 @ Text @ Identity @ Char _" [orphan] [2] forall @ u
+                                                                  (w1 :: GHC.Show.Show
+                                                                           GHC.Types.Char)
+                                                                  (w :: Text.Parsec.Prim.Stream
+                                                                          Data.Text.Internal.Text
+                                                                          Data.Functor.Identity.Identity
+                                                                          GHC.Types.Char)
+  Text.Parsec.Combinator.eof1 @ Data.Text.Internal.Text
+                              @ Data.Functor.Identity.Identity
+                              @ GHC.Types.Char
+                              @ u
+                              w
+                              w1
+  = Tokens.$seof1 @ u
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

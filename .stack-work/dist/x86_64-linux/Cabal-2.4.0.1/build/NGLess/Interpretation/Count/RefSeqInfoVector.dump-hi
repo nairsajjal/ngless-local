@@ -1,0 +1,1509 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:28.981135663 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Interpretation.Count.RefSeqInfoVector 8065
+  interface hash: d16dc487e31c14dbc7e74c8079305746
+  ABI hash: f3abaa9b3145aacc86aa2995b6754d0c
+  export-list hash: 8483f302d29bf8420caa846ee7e5f792
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: fdbd7bc0fe701fb431d8bc9d3b4c3621
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Interpretation.Count.RefSeqInfoVector.fromList
+  Interpretation.Count.RefSeqInfoVector.insert
+  Interpretation.Count.RefSeqInfoVector.length
+  Interpretation.Count.RefSeqInfoVector.lookup
+  Interpretation.Count.RefSeqInfoVector.newRefSeqInfoVector
+  Interpretation.Count.RefSeqInfoVector.retrieveName
+  Interpretation.Count.RefSeqInfoVector.retrieveSize
+  Interpretation.Count.RefSeqInfoVector.retrieveSizeIO
+  Interpretation.Count.RefSeqInfoVector.sort
+  Interpretation.Count.RefSeqInfoVector.unsafeFreeze
+  Interpretation.Count.RefSeqInfoVector.unsafeThaw
+  Interpretation.Count.RefSeqInfoVector.writeSizeIO
+  Interpretation.Count.RefSeqInfoVector.RefSeqInfo{Interpretation.Count.RefSeqInfoVector.RefSeqInfo rsiName rsiSize}
+  Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+  Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+module dependencies:
+package dependencies: ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 attoparsec-0.13.2.3 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 charset-0.3.7.1 colour-2.3.5 containers-0.6.0.1
+                      deepseq-1.4.4.0 exceptions-0.10.4 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      hashable-1.2.7.0 inline-c-0.7.0.1 inline-c-cpp-0.3.0.3
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 mtl-2.2.2
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      safe-exceptions-0.1.7.0 scientific-0.3.6.2 stm-2.5.0.0
+                      template-haskell-2.14.0.0 text-1.2.3.1 transformers-0.5.6.2
+                      unordered-containers-0.2.10.0 vector-0.12.0.3
+orphans: stm-2.5.0.0:Control.Monad.STM
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show colour-2.3.5:Data.Colour
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         vector-0.12.0.3:Data.Vector.Storable
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Monoid 12b87658decc811c5251626260c01aeb
+import  -/  base-4.12.0.0:Foreign.C.Types 35a1d321965626990bdd0f18683810e2
+import  -/  base-4.12.0.0:Foreign.ForeignPtr 15fb130c685785f2cc5b27560bbb1bc3
+import  -/  base-4.12.0.0:Foreign.ForeignPtr.Imp d6c8b5202b07302adeb3215dda4ff036
+import  -/  base-4.12.0.0:Foreign.Ptr d73fd0b9772a485c35f8296dd7001ea9
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.ForeignPtr a366688a9d891310204c68557f57d2c1
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.Ptr 68f634dc6eacf2af10dbc7ca1b1e41cb
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO.Unsafe e8c0e3a0a9cf9814796832fe86e2e8a6
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Unsafe 776fbb495c4caeeff10435741858143b
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  inline-c-0.7.0.1:Language.C.Inline 15cdffd711c89901cb85f27a80d5bc1f
+import  -/  inline-c-0.7.0.1:Language.C.Inline.Context a15a127b8f223e268729c844d02d13f5
+import  -/  inline-c-0.7.0.1:Language.C.Inline.Unsafe c2e7fdfdb71e44c1806d86cf97c74299
+import  -/  inline-c-cpp-0.3.0.3:Language.C.Inline.Cpp a34ab183d78ba0c9e599f992353a5a1d
+import  -/  inline-c-cpp-0.3.0.3:Language.C.Inline.Cpp.Exceptions e82fd330b975f5e862bd49fa5fe67d66
+import  -/  safe-exceptions-0.1.7.0:Control.Exception.Safe 975b00595f726e0e14d8017ad275adbc
+30ed88bdb5726ff411a055afd37b2e77
+  $fEqRefSeqInfo ::
+    GHC.Classes.Eq Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+                  Interpretation.Count.RefSeqInfoVector.$fEqRefSeqInfo_$c==
+                  Interpretation.Count.RefSeqInfoVector.$fEqRefSeqInfo_$c/= -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fEqRefSeqInfo_$c/= ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSS),1*U(U,U,U,U,U)><S(SLSSS),1*U(U,U,U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fEqRefSeqInfo_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fEqRefSeqInfo_$c== ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSS),1*U(U,U,U,U,U)><S(SLSSS),1*U(U,U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (w1 :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case w of ww { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ww1 ww2 ww3 ww4 ww5 ->
+                 case w1 of ww6 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ww7 ww8 ww9 ww10 ww11 ->
+                 Interpretation.Count.RefSeqInfoVector.$w$c==
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11 } }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fNFDataRefSeqInfo ::
+    Control.DeepSeq.NFData
+      Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Interpretation.Count.RefSeqInfoVector.$fNFDataRefSeqInfo_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Interpretation.Count.RefSeqInfoVector.RefSeqInfo>_N)) -}
+91b9b8cf913eed2129d07171f48159c6
+  $fNFDataRefSeqInfoVector ::
+    Control.DeepSeq.NFData
+      Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Interpretation.Count.RefSeqInfoVector.$fNFDataRefSeqInfoVector_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector>_N)) -}
+91b9b8cf913eed2129d07171f48159c6
+  $fNFDataRefSeqInfoVector_$crnf ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector) ->
+                 case ds
+                        `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0]) of ds1 { GHC.ForeignPtr.ForeignPtr ipv ipv1 ->
+                 GHC.Tuple.() }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fNFDataRefSeqInfo_$crnf ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case ds of ds1 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ipv ipv1 ipv2 ipv3 ipv4 ->
+                 GHC.Tuple.() }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo ::
+    GHC.Classes.Ord Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+                  Interpretation.Count.RefSeqInfoVector.$fEqRefSeqInfo
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$c<
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$c<=
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$c>
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$c>=
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$cmax
+                  Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$cmin -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$c< ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,A)><S(SLSSL),1*U(U,U,U,U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$c<= ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,A)><S(SLSSL),1*U(U,U,U,U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$c> ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,A)><S(SLSSL),1*U(U,U,U,U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$c>= ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,A)><S(SLSSL),1*U(U,U,U,U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$ccompare ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,A)><S(SLSSL),1*U(U,U,U,U,A)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (w1 :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case w of ww { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ww1 ww2 ww3 ww4 ww5 ->
+                 case w1 of ww6 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ww7 ww8 ww9 ww10 ww11 ->
+                 Data.ByteString.Internal.$wcompareBytes
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww7
+                   ww8
+                   ww9
+                   ww10 } }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$cmax ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,U)><S(SLSSL),1*U(U,U,U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fOrdRefSeqInfo_$cmin ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLSSL),1*U(U,U,U,U,U)><S(SLSSL),1*U(U,U,U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+                   (y :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fShowRefSeqInfo ::
+    GHC.Show.Show Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+                  Interpretation.Count.RefSeqInfoVector.$fShowRefSeqInfo_$cshowsPrec
+                  Interpretation.Count.RefSeqInfoVector.$fShowRefSeqInfo_$cshow
+                  Interpretation.Count.RefSeqInfoVector.$fShowRefSeqInfo_$cshowList -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fShowRefSeqInfo_$cshow ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SLSSS),1*U(U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 Interpretation.Count.RefSeqInfoVector.$fShowRefSeqInfo_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fShowRefSeqInfo_$cshowList ::
+    [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpretation.Count.RefSeqInfoVector.RefSeqInfo])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+                   (Interpretation.Count.RefSeqInfoVector.$fShowRefSeqInfo_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+30ed88bdb5726ff411a055afd37b2e77
+  $fShowRefSeqInfo_$cshowsPrec ::
+    GHC.Types.Int
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(SLSSS),1*U(U,U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ww3 ww4 ww5 ww6 ww7 ->
+                 Interpretation.Count.RefSeqInfoVector.$w$cshowsPrec
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } }) -}
+cd145ed08321dcb137f5242ad6c5ccee
+  $tc'RefSeqInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16863787442283433345##
+                   6360132284475950450##
+                   Interpretation.Count.RefSeqInfoVector.$trModule
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfo2
+                   0#
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfo1) -}
+c31dfe19c00a69de7a4344287fe300df
+  $tc'RefSeqInfo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1d882d6f63c56a17a5e8b00bbb946cdc
+  $tc'RefSeqInfo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfo3) -}
+cef7b9f597c7e54be86f02023fafe464
+  $tc'RefSeqInfo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RefSeqInfo"#) -}
+285af8e42f060e1c65c65a1aa5936643
+  $tc'RefSeqInfoVector :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4838331554752753095##
+                   2814511396545787868##
+                   Interpretation.Count.RefSeqInfoVector.$trModule
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfoVector2
+                   0#
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfoVector1) -}
+1c0d4fd67a3d631aae58b031a0563047
+  $tc'RefSeqInfoVector1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7120ce79373f150922c4d1a6ce6345d1
+  $tc'RefSeqInfoVector2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfoVector3) -}
+f76467da629267999843ef3e282c2d5a
+  $tc'RefSeqInfoVector3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RefSeqInfoVector"#) -}
+8c2d6bb845d1e779575ac096cd15fd20
+  $tc'RefSeqInfoVectorMutable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8521119756138452293##
+                   3825666916316229005##
+                   Interpretation.Count.RefSeqInfoVector.$trModule
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfoVectorMutable2
+                   0#
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfoVectorMutable1) -}
+90baa504897e6aaf57f105917b5f4b8f
+  $tc'RefSeqInfoVectorMutable1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+637fd2955297672061b08c00886f15ad
+  $tc'RefSeqInfoVectorMutable2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$tc'RefSeqInfoVectorMutable3) -}
+6132421b25462eef42ba97a4f29179eb
+  $tc'RefSeqInfoVectorMutable3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RefSeqInfoVectorMutable"#) -}
+9d0d2ea95f8a7cdfec19962d04ac6666
+  $tcRefSeqInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9577405453430435476##
+                   8370456276488699109##
+                   Interpretation.Count.RefSeqInfoVector.$trModule
+                   Interpretation.Count.RefSeqInfoVector.$tcRefSeqInfo1
+                   0#
+                   GHC.Types.krep$*) -}
+aff2071edcfb7a8ec4bbdb53cf80ffd8
+  $tcRefSeqInfo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$tcRefSeqInfo2) -}
+ec4095414de479ba960e3b1244230c48
+  $tcRefSeqInfo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RefSeqInfo"#) -}
+af3cca202c6752cd12fa464b6094c03d
+  $tcRefSeqInfoVector :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   973114156344206835##
+                   11750480991976106730##
+                   Interpretation.Count.RefSeqInfoVector.$trModule
+                   Interpretation.Count.RefSeqInfoVector.$tcRefSeqInfoVector1
+                   0#
+                   GHC.Types.krep$*) -}
+539d77bb48670e00e1c515757f5eeb93
+  $tcRefSeqInfoVector1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$tcRefSeqInfoVector2) -}
+a0fb684a00398d70fbd22307cfcc4f74
+  $tcRefSeqInfoVector2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RefSeqInfoVector"#) -}
+d88225ade77ec6380585f8c85cf2449a
+  $tcRefSeqInfoVectorMutable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8224893554097342945##
+                   7194600386135413833##
+                   Interpretation.Count.RefSeqInfoVector.$trModule
+                   Interpretation.Count.RefSeqInfoVector.$tcRefSeqInfoVectorMutable1
+                   0#
+                   GHC.Types.krep$*) -}
+26c7e60e5cc20796f6e23c52c2e80065
+  $tcRefSeqInfoVectorMutable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$tcRefSeqInfoVectorMutable2) -}
+85d0cb7d35a18697eddd59fd3c1c7326
+  $tcRefSeqInfoVectorMutable2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RefSeqInfoVectorMutable"#) -}
+f02489e2c11f31c76dc351c2f3e9047d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpretation.Count.RefSeqInfoVector.$trModule3
+                   Interpretation.Count.RefSeqInfoVector.$trModule1) -}
+f3df57c4bc851e452871a5f3edd0ba13
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$trModule2) -}
+7df4e03fb6f20ffb63eb7c28016ce600
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Interpretation.Count.RefSeqInfoVector"#) -}
+a1cbaeef6218110b8addc0cc96c4f7f7
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.RefSeqInfoVector.$trModule4) -}
+82a78c8fd3f738dc1925eb43071ca1dc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+f78b0203613e660f06fa689a92049f2c
+  $w$c== ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Double#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Double#
+    -> GHC.Types.Bool
+  {- Arity: 10, HasNoCafRefs,
+     Strictness: <L,U><L,U><L,U><S,U><L,U><L,U><L,U><L,U><S,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Double#)
+                   (ww5 :: GHC.Prim.Addr#)
+                   (ww6 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww7 :: GHC.Prim.Int#)
+                   (ww8 :: GHC.Prim.Int#)
+                   (ww9 :: GHC.Prim.Double#) ->
+                 case GHC.Prim./=# ww3 ww8 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.eqAddr# ww ww5 of lwild1 {
+                        DEFAULT
+                        -> case Data.ByteString.Internal.$wcompareBytes
+                                  ww
+                                  ww1
+                                  ww2
+                                  ww3
+                                  ww5
+                                  ww6
+                                  ww7
+                                  ww8 of wild3 {
+                             DEFAULT -> GHC.Types.False
+                             GHC.Types.EQ
+                             -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==## ww4 ww9) }
+                        1#
+                        -> case GHC.Prim.==# ww2 ww7 of lwild2 {
+                             DEFAULT
+                             -> case Data.ByteString.Internal.$wcompareBytes
+                                       ww
+                                       ww1
+                                       ww2
+                                       ww3
+                                       ww5
+                                       ww6
+                                       ww7
+                                       ww8 of wild4 {
+                                  DEFAULT -> GHC.Types.False
+                                  GHC.Types.EQ
+                                  -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==## ww4 ww9) }
+                             1#
+                             -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==## ww4 ww9) } }
+                   1# -> GHC.Types.False }) -}
+8f9a725779d632109873a984e50bfe51
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Double#
+    -> GHC.Show.ShowS
+  {- Arity: 6, Strictness: <S,U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Double#) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "RefSeqInfo {"#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   f2 :: GHC.Prim.Addr# = "rsiName = "#
+                 } in
+                 let {
+                   f3 :: [GHC.Types.Char] = GHC.CString.unpackCString# f2
+                 } in
+                 let {
+                   f4 :: GHC.Prim.Addr# = "rsiSize = "#
+                 } in
+                 let {
+                   f5 :: [GHC.Types.Char] = GHC.CString.unpackCString# f4
+                 } in
+                 let {
+                   f6 :: GHC.Base.String -> GHC.Base.String
+                   = GHC.Float.$w$sshowSignedFloat
+                       GHC.Float.$fShowDouble2
+                       (GHC.Types.I# 0#)
+                       ww5
+                 } in
+                 let {
+                   g :: GHC.Prim.Addr# = "}"#
+                 } in
+                 let {
+                   g1 :: [GHC.Types.Char] = GHC.CString.unpackCString# g
+                 } in
+                 let {
+                   g2 :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       f3
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.$fShow(,)3
+                          (GHC.Show.showLitString
+                             (Data.ByteString.Internal.$wunpackAppendCharsLazy
+                                ww1
+                                ww2
+                                ww3
+                                ww4
+                                (GHC.Types.[] @ GHC.Types.Char))
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   GHC.Show.showCommaSpace1
+                                   (GHC.Base.++
+                                      @ GHC.Types.Char
+                                      f5
+                                      (f6 (GHC.Base.++ @ GHC.Types.Char g1 x)))))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char f1 (g2 x)
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           f1
+                           (g2 (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }) -}
+c4ad71d6795c12c3a64a1b828f74a0d6
+  $winsert ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Double#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 8, Strictness: <S,U><L,U><S,U><L,U><S,U><S,U><S,U><S,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Addr#)
+                   (ww3 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Double#)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Language.C.Inline.Cpp.Exceptions.handleForeignCatch1
+                        @ ()
+                        (\ (exTypePtr :: GHC.Ptr.Ptr Foreign.C.Types.CInt)
+                           (msgPtr :: GHC.Ptr.Ptr Foreign.C.String.CString)[OneShot]
+                           (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case exTypePtr of ds { GHC.Ptr.Ptr ds1 ->
+                         case msgPtr of ds2 { GHC.Ptr.Ptr ds3 ->
+                         case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Int#
+                                                                                  -> GHC.Prim.Double#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld #)}
+                                ds1
+                                ds3
+                                ww
+                                (GHC.Prim.plusAddr# ww2 ww4)
+                                ww5
+                                ww6
+                                s of wild { Unit# ds4 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww3
+                                ds4 of s' { DEFAULT ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww1
+                                s' of s'1 { DEFAULT ->
+                         (# s'1, GHC.Tuple.() #) } } } } })
+                          `cast`
+                        (<GHC.Ptr.Ptr Foreign.C.Types.CInt>_R
+                         ->_R <GHC.Ptr.Ptr Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left x
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ ()
+                        (case Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$ctoException
+                                x of wild1 { GHC.Exception.Type.SomeException e1 $dException1 e2 ->
+                         case Data.Typeable.Internal.sameTypeRep
+                                @ *
+                                @ *
+                                @ e1
+                                @ GHC.IO.Exception.SomeAsyncException
+                                (GHC.Exception.Type.$p1Exception @ e1 $dException1)
+                                  `cast`
+                                (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                                GHC.IO.Exception.$fExceptionAllocationLimitExceeded6 of wild2 {
+                           GHC.Types.False -> wild1
+                           GHC.Types.True
+                           -> case e2
+                                     `cast`
+                                   (UnsafeCo representational e1 GHC.IO.Exception.SomeAsyncException) of wild3 { GHC.IO.Exception.SomeAsyncException e4 $dException ds ->
+                              Control.Exception.Safe.$fExceptionSyncExceptionWrapper_$ctoException
+                                (Control.Exception.Safe.SyncExceptionWrapper
+                                   @ Language.C.Inline.Cpp.Exceptions.CppException
+                                   (GHC.Exception.Type.C:Exception
+                                      @ Language.C.Inline.Cpp.Exceptions.CppException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException7
+                                        `cast`
+                                      (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Language.C.Inline.Cpp.Exceptions.CppException>_N)
+                                      Language.C.Inline.Cpp.Exceptions.$fShowCppException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$ctoException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$cfromException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$cshow)
+                                   x) } } })
+                        ipv
+                   Data.Either.Right y -> (# ipv, y #) } }) -}
+812791eb9abb09071ed32d8dfea5566c
+  $wlookup ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Maybe.Maybe GHC.Types.Int
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,U><L,U><S,U><L,U><S,U><S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Addr#)
+                   (ww3 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Foreign.C.Types.CInt #)
+                        (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.noDuplicate#
+                                @ GHC.Prim.RealWorld
+                                s of s' { DEFAULT ->
+                         case {__pkg_ccall NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                               -> GHC.Prim.Addr#
+                                                                               -> GHC.Prim.Int#
+                                                                               -> GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld
+                                                                               -> (# GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld,
+                                                                                     GHC.Prim.Int# #)}
+                                ww
+                                (GHC.Prim.plusAddr# ww2 ww4)
+                                ww5
+                                s' of wild { (#,#) ds ds1 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww3
+                                ds of s'1 { DEFAULT ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww1
+                                s'1 of s'2 { DEFAULT ->
+                         (# s'2,
+                            (GHC.Int.I32# (GHC.Prim.narrow32Int# ds1))
+                              `cast`
+                            (Sym (Foreign.C.Types.N:CInt[0])) #) } } } }) of ds { (#,#) ipv ipv1 ->
+                 case ipv1
+                        `cast`
+                      (Foreign.C.Types.N:CInt[0]) of wild { GHC.Int.I32# x ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Maybe.Just @ GHC.Types.Int (GHC.Types.I# wild1)
+                   -1# -> GHC.Maybe.Nothing @ GHC.Types.Int } } }) -}
+a73a13abe75a37eea7dfe65f93fe5f35
+  $wretrieveName ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 3, Strictness: <S,U><L,U><S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             Data.ByteString.Internal.ByteString #)
+                        (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Int.$w$ctoEnum1 ww2 of ww3 { DEFAULT ->
+                         case {__pkg_ccall NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                               -> GHC.Prim.Int#
+                                                                               -> GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld
+                                                                               -> (# GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld,
+                                                                                     GHC.Prim.Addr# #)}
+                                ww
+                                ww3
+                                s of wild { (#,#) ds ds1 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww1
+                                ds of s' { DEFAULT ->
+                         case {__pkg_ccall bytestring-0.10.8.2 GHC.Prim.Addr#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Word# #)}
+                                ds1
+                                s' of wild1 { (#,#) ds4 ds5 ->
+                         Data.ByteString.$wpackCStringLen
+                           ds1
+                           (GHC.Prim.word2Int# ds5)
+                           ds4 } } } }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+796fec10d7b9aa185f6ee8a2b455660b
+  $wwriteSizeIO ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Double#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 5, Strictness: <S,U><L,U><S,U><S,U><S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Double#)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Int.$w$ctoEnum1 ww2 of ww4 { DEFAULT ->
+                 case Language.C.Inline.Cpp.Exceptions.handleForeignCatch1
+                        @ ()
+                        (\ (exTypePtr :: GHC.Ptr.Ptr Foreign.C.Types.CInt)
+                           (msgPtr :: GHC.Ptr.Ptr Foreign.C.String.CString)[OneShot]
+                           (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case exTypePtr of ds { GHC.Ptr.Ptr ds1 ->
+                         case msgPtr of ds2 { GHC.Ptr.Ptr ds3 ->
+                         case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Int#
+                                                                                  -> GHC.Prim.Double#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld #)}
+                                ds1
+                                ds3
+                                ww
+                                ww4
+                                ww3
+                                s of wild { Unit# ds4 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww1
+                                ds4 of s' { DEFAULT ->
+                         (# s', GHC.Tuple.() #) } } } })
+                          `cast`
+                        (<GHC.Ptr.Ptr Foreign.C.Types.CInt>_R
+                         ->_R <GHC.Ptr.Ptr Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   Data.Either.Left x
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ ()
+                        (case Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$ctoException
+                                x of wild1 { GHC.Exception.Type.SomeException e1 $dException1 e2 ->
+                         case Data.Typeable.Internal.sameTypeRep
+                                @ *
+                                @ *
+                                @ e1
+                                @ GHC.IO.Exception.SomeAsyncException
+                                (GHC.Exception.Type.$p1Exception @ e1 $dException1)
+                                  `cast`
+                                (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                                GHC.IO.Exception.$fExceptionAllocationLimitExceeded6 of wild2 {
+                           GHC.Types.False -> wild1
+                           GHC.Types.True
+                           -> case e2
+                                     `cast`
+                                   (UnsafeCo representational e1 GHC.IO.Exception.SomeAsyncException) of wild3 { GHC.IO.Exception.SomeAsyncException e4 $dException ds ->
+                              Control.Exception.Safe.$fExceptionSyncExceptionWrapper_$ctoException
+                                (Control.Exception.Safe.SyncExceptionWrapper
+                                   @ Language.C.Inline.Cpp.Exceptions.CppException
+                                   (GHC.Exception.Type.C:Exception
+                                      @ Language.C.Inline.Cpp.Exceptions.CppException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException7
+                                        `cast`
+                                      (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Language.C.Inline.Cpp.Exceptions.CppException>_N)
+                                      Language.C.Inline.Cpp.Exceptions.$fShowCppException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$ctoException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$cfromException
+                                      Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$cshow)
+                                   x) } } })
+                        ipv
+                   Data.Either.Right y -> (# ipv, y #) } } }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  data RefSeqInfo
+    = RefSeqInfo {rsiName :: {-# UNPACK #-}Data.ByteString.Internal.ByteString,
+                  rsiSize :: {-# UNPACK #-}GHC.Types.Double}
+91b9b8cf913eed2129d07171f48159c6
+  newtype RefSeqInfoVector
+    = RefSeqInfoVector (GHC.ForeignPtr.ForeignPtr ())
+f04e89b965bfe6760ad1d3fa315ac520
+  newtype RefSeqInfoVectorMutable
+    = RefSeqInfoVectorMutable (GHC.ForeignPtr.ForeignPtr ())
+640fa09e21242d2d637f28196e73e8f5
+  fromList ::
+    [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+    -> Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (entries :: [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector #)
+                        (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case Interpretation.Count.RefSeqInfoVector.fromList1
+                                s of ds1 { (#,#) ipv ipv1 ->
+                         let {
+                           exit :: GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                         Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector #)
+                             <join 1> {- Arity: 1, Strictness: <S,U> -}
+                           = \ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                             case ipv1
+                                    `cast`
+                                  (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]) of wild { GHC.ForeignPtr.ForeignPtr fo ds2 ->
+                             case {__pkg_ccall NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                                   -> GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld
+                                                                                   -> (# GHC.Prim.State#
+                                                                                           GHC.Prim.RealWorld #)}
+                                    fo
+                                    eta of wild1 { Unit# ds ->
+                             case GHC.Prim.touch#
+                                    @ 'GHC.Types.LiftedRep
+                                    @ GHC.ForeignPtr.ForeignPtrContents
+                                    ds2
+                                    ds of s' { DEFAULT ->
+                             (# s',
+                                wild
+                                  `cast`
+                                (Sym (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0])) #) } } }
+                         } in
+                         case entries of wild {
+                           [] -> exit ipv
+                           : y ys
+                           -> case y of wild1 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo dt dt1 dt2 dt3 dt4 ->
+                              case ipv1
+                                     `cast`
+                                   (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]) of ww { GHC.ForeignPtr.ForeignPtr ww1 ww2 ->
+                              case Interpretation.Count.RefSeqInfoVector.$winsert
+                                     ww1
+                                     ww2
+                                     dt
+                                     dt1
+                                     dt2
+                                     dt3
+                                     dt4
+                                     ipv of ds2 { (#,#) ipv2 ipv3 ->
+                              letrec {
+                                go :: [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                            Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector #)
+                                  <join 2> {- Arity: 2, Strictness: <S,1*U><S,U> -}
+                                = \ (ds :: [Interpretation.Count.RefSeqInfoVector.RefSeqInfo])
+                                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                  case ds of wild2 {
+                                    [] -> exit eta
+                                    : y1 ys1
+                                    -> case y1 of wild3 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo dt5 dt6 dt7 dt8 dt9 ->
+                                       case Interpretation.Count.RefSeqInfoVector.$winsert
+                                              ww1
+                                              ww2
+                                              dt5
+                                              dt6
+                                              dt7
+                                              dt8
+                                              dt9
+                                              eta of ds3 { (#,#) ipv4 ipv5 ->
+                                       go ys1 ipv4 } } }
+                              } in
+                              go ys ipv2 } } } } }) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+a4d40a4b2641f9ba08eee3bca49313dc
+  fromList1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (Foreign.Marshal.Alloc.allocaBytesAligned
+                         @ (GHC.Ptr.Ptr ())
+                         @ (GHC.Ptr.Ptr (), ())
+                         Foreign.Storable.$fStorableDouble5
+                         Foreign.Storable.$fStorableDouble5
+                         (\ (ptr :: GHC.Ptr.Ptr (GHC.Ptr.Ptr ()))[OneShot]
+                            (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case Language.C.Inline.Cpp.Exceptions.handleForeignCatch1
+                                 @ ()
+                                 (\ (exTypePtr :: GHC.Ptr.Ptr Foreign.C.Types.CInt)
+                                    (msgPtr :: GHC.Ptr.Ptr Foreign.C.String.CString)[OneShot]
+                                    (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                  case exTypePtr of ds { GHC.Ptr.Ptr ds1 ->
+                                  case msgPtr of ds2 { GHC.Ptr.Ptr ds3 ->
+                                  case ptr of ds4 { GHC.Ptr.Ptr ds5 ->
+                                  case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.State#
+                                                                                                GHC.Prim.RealWorld
+                                                                                           -> (# GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld #)}
+                                         ds1
+                                         ds3
+                                         ds5
+                                         eta of wild { Unit# ds6 ->
+                                  (# ds6, GHC.Tuple.() #) } } } })
+                                   `cast`
+                                 (<GHC.Ptr.Ptr Foreign.C.Types.CInt>_R
+                                  ->_R <GHC.Ptr.Ptr Foreign.C.String.CString>_R
+                                  ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                                 s1 of ds1 { (#,#) ipv ipv1 ->
+                          case ipv1 of wild {
+                            Data.Either.Left x
+                            -> case GHC.Prim.raiseIO#
+                                      @ GHC.Exception.Type.SomeException
+                                      @ ()
+                                      (case Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$ctoException
+                                              x of wild1 { GHC.Exception.Type.SomeException e1 $dException1 e2 ->
+                                       case Data.Typeable.Internal.sameTypeRep
+                                              @ *
+                                              @ *
+                                              @ e1
+                                              @ GHC.IO.Exception.SomeAsyncException
+                                              (GHC.Exception.Type.$p1Exception @ e1 $dException1)
+                                                `cast`
+                                              (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                                              GHC.IO.Exception.$fExceptionAllocationLimitExceeded6 of wild2 {
+                                         GHC.Types.False -> wild1
+                                         GHC.Types.True
+                                         -> case e2
+                                                   `cast`
+                                                 (UnsafeCo representational e1 GHC.IO.Exception.SomeAsyncException) of wild3 { GHC.IO.Exception.SomeAsyncException e4 $dException ds ->
+                                            Control.Exception.Safe.$fExceptionSyncExceptionWrapper_$ctoException
+                                              (Control.Exception.Safe.SyncExceptionWrapper
+                                                 @ Language.C.Inline.Cpp.Exceptions.CppException
+                                                 (GHC.Exception.Type.C:Exception
+                                                    @ Language.C.Inline.Cpp.Exceptions.CppException
+                                                    Language.C.Inline.Cpp.Exceptions.$fExceptionCppException7
+                                                      `cast`
+                                                    (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Language.C.Inline.Cpp.Exceptions.CppException>_N)
+                                                    Language.C.Inline.Cpp.Exceptions.$fShowCppException
+                                                    Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$ctoException
+                                                    Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$cfromException
+                                                    Language.C.Inline.Cpp.Exceptions.$fExceptionCppException_$cshow)
+                                                 x) } } })
+                                      ipv
+                               ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                         (GHC.Ptr.Ptr (), ()) #)
+                               of {}
+                            Data.Either.Right y
+                            -> case ptr of wild1 { GHC.Ptr.Ptr a1 ->
+                               case GHC.Prim.readAddrOffAddr#
+                                      @ GHC.Prim.RealWorld
+                                      a1
+                                      0#
+                                      ipv of ds2 { (#,#) ipv2 ipv3 ->
+                               (# ipv2, (GHC.Ptr.Ptr @ () ipv3, y) #) } } } })
+                           `cast`
+                         (<GHC.Ptr.Ptr (GHC.Ptr.Ptr ())>_R
+                          ->_R Sym (GHC.Types.N:IO[0] <(GHC.Ptr.Ptr (), ())>_R)))
+                        `cast`
+                      (GHC.Types.N:IO[0] <(GHC.Ptr.Ptr (), ())>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) x ds ->
+                 case ds of wild1 { () ->
+                 case x of ww2 { GHC.Ptr.Ptr ww3 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.ForeignPtr.$winsertCFinalizer
+                        @ ()
+                        ipv3
+                        __label "rsiv_free" (function)
+                        0#
+                        __NULL
+                        ww3
+                        GHC.Tuple.()
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 (# ipv4,
+                    (GHC.ForeignPtr.ForeignPtr
+                       @ ()
+                       ww3
+                       (GHC.ForeignPtr.PlainForeignPtr ipv3))
+                      `cast`
+                    (Sym (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0])) #) } } } } } }) -}
+2ceb4abe4784301f6edbdbfbcbf8805a
+  insert ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Types.Double
+    -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <S(SL),1*U(U,U)><S(SLSS),1*U(U,U,U,U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.insert1
+                  `cast`
+                (<Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R
+                 ->_R <Data.ByteString.Internal.ByteString>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+eb7006b263cf3add85f365e57bd792e0
+  insert1 ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <S(SL),1*U(U,U)><S(SLSS),1*U(U,U,U,U)><S(S),1*U(U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable)
+                   (w1 :: Data.ByteString.Internal.ByteString)
+                   (w2 :: GHC.Types.Double)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]) of ww { GHC.ForeignPtr.ForeignPtr ww1 ww2 ->
+                 case w1 of ww3 { Data.ByteString.Internal.PS ww4 ww5 ww6 ww7 ->
+                 case w2 of ww8 { GHC.Types.D# ww9 ->
+                 Interpretation.Count.RefSeqInfoVector.$winsert
+                   ww1
+                   ww2
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww9
+                   w3 } } }) -}
+25978116151a9b09bc13ba2f3495a7fd
+  length ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+    -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(U,U)>m,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector) ->
+                 case w `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0]) of ww { GHC.ForeignPtr.ForeignPtr ww1 ww2 ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Foreign.C.Types.CUInt #)
+                        (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.noDuplicate#
+                                @ GHC.Prim.RealWorld
+                                s of s' { DEFAULT ->
+                         case {__pkg_ccall NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                               -> GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld
+                                                                               -> (# GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld,
+                                                                                     GHC.Prim.Word# #)}
+                                ww1
+                                s' of wild { (#,#) ds ds1 ->
+                         case GHC.Prim.touch#
+                                @ 'GHC.Types.LiftedRep
+                                @ GHC.ForeignPtr.ForeignPtrContents
+                                ww2
+                                ds of s'1 { DEFAULT ->
+                         (# s'1,
+                            (GHC.Word.W32# (GHC.Prim.narrow32Word# ds1))
+                              `cast`
+                            (Nth:3
+                                 (Nth:3
+                                      (<GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                       ->_R ((#,#)
+                                               <'GHC.Types.TupleRep '[]>_R
+                                               <'GHC.Types.LiftedRep>_R
+                                               <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                               (Sym (Foreign.C.Types.N:CUInt[0])))_R))) #) } } }) of ds { (#,#) ipv ipv1 ->
+                 case ipv1
+                        `cast`
+                      (Foreign.C.Types.N:CUInt[0]) of wild { GHC.Word.W32# x# ->
+                 GHC.Types.I# (GHC.Prim.word2Int# x#) } } }) -}
+6a8991fb59dc1ac0b818a489347dfe95
+  lookup ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SLSS),1*U(U,U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector)
+                   (w1 :: Data.ByteString.Internal.ByteString) ->
+                 case w `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0]) of ww { GHC.ForeignPtr.ForeignPtr ww1 ww2 ->
+                 case w1 of ww3 { Data.ByteString.Internal.PS ww4 ww5 ww6 ww7 ->
+                 Interpretation.Count.RefSeqInfoVector.$wlookup
+                   ww1
+                   ww2
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } }) -}
+be165c93b805ba57b8857df821611ec0
+  newRefSeqInfoVector ::
+    GHC.Types.IO
+      Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.fromList1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R)) -}
+c01a9516d61d989a9ef6d732ce29b475
+  retrieveName ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+    -> GHC.Types.Int -> Data.ByteString.Internal.ByteString
+  {- Arity: 2, Strictness: <S(SL),1*U(U,U)><S(S),1*U(U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector)
+                   (w1 :: GHC.Types.Int) ->
+                 case w `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0]) of ww { GHC.ForeignPtr.ForeignPtr ww1 ww2 ->
+                 case w1 of ww3 { GHC.Types.I# ww4 ->
+                 Interpretation.Count.RefSeqInfoVector.$wretrieveName
+                   ww1
+                   ww2
+                   ww4 } }) -}
+3aedb95d5db8fe163d2e3613b7a364bf
+  retrieveSize ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+    -> GHC.Types.Int -> GHC.Types.Double
+  {- Arity: 2, Strictness: <S(SL),1*U(U,U)><S(S),1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector)
+                   (ix :: GHC.Types.Int) ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+                        (Interpretation.Count.RefSeqInfoVector.retrieveSize1
+                           ds
+                             `cast`
+                           (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0] ; Sym (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]))
+                           ix) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+691da3c8865e5ef0c676ab8a4df92215
+  retrieveSize1 ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 3, Strictness: <S(SL),1*U(U,U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable)
+                   (ix :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds
+                        `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]) of wild { GHC.ForeignPtr.ForeignPtr fo ds1 ->
+                 case ix of ww { GHC.Types.I# ww1 ->
+                 case GHC.Int.$w$ctoEnum1 ww1 of ww2 { DEFAULT ->
+                 case {__pkg_ccall NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                       -> GHC.Prim.Int#
+                                                                       -> GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                       -> (# GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld,
+                                                                             GHC.Prim.Double# #)}
+                        fo
+                        ww2
+                        eta of wild1 { (#,#) ds2 ds3 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        ds1
+                        ds2 of s' { DEFAULT ->
+                 (# s', GHC.Types.D# ds3 #) } } } } }) -}
+c465b055ae85b41fe58ec53e75b86ca4
+  retrieveSizeIO ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Types.Int -> GHC.Types.IO GHC.Types.Double
+  {- Arity: 3, Strictness: <S(SL),1*U(U,U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.retrieveSize1
+                  `cast`
+                (<Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R)) -}
+30ed88bdb5726ff411a055afd37b2e77
+  rsiName ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> Data.ByteString.Internal.ByteString
+  RecSel Left Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLSSL),1*U(U,U,U,U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case ds of wild { Interpretation.Count.RefSeqInfoVector.RefSeqInfo dt dt1 dt2 dt3 dt4 ->
+                 Data.ByteString.Internal.PS dt dt1 dt2 dt3 }) -}
+30ed88bdb5726ff411a055afd37b2e77
+  rsiSize ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> GHC.Types.Double
+  RecSel Left Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLLS),1*U(A,A,A,A,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case ds of wild { Interpretation.Count.RefSeqInfoVector.RefSeqInfo dt dt1 dt2 dt3 dt4 ->
+                 GHC.Types.D# dt4 }) -}
+f991a54da55197f1559787ac0e9001c0
+  sort ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(SL),1*U(U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.sort1
+                  `cast`
+                (<Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+992f7a436ff2bf5a24eba14d0d38f81a
+  sort1 ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(SL),1*U(U,U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds
+                        `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]) of wild { GHC.ForeignPtr.ForeignPtr fo ds1 ->
+                 case {__pkg_ccall NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.Addr#
+                                                                       -> GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                       -> (# GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld #)}
+                        fo
+                        s of wild1 { Unit# ds2 ->
+                 case GHC.Prim.touch#
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.ForeignPtr.ForeignPtrContents
+                        ds1
+                        ds2 of s' { DEFAULT ->
+                 (# s', GHC.Tuple.() #) } } }) -}
+8949e57df2027681931748a4ad3be801
+  unsafeFreeze ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Types.IO
+         Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.unsafeFreeze1
+                  `cast`
+                (<Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector>_R)) -}
+02f57764783828975806fd156cb52405
+  unsafeFreeze1 ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s,
+                    ds
+                      `cast`
+                    (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0] ; Sym (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0])) #)) -}
+8d3e1f5527af4b9dbafac8f6af033f20
+  unsafeThaw ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+    -> GHC.Types.IO
+         Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.unsafeThaw1
+                  `cast`
+                (<Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R)) -}
+68286fe359ca0d9ef7c694602756640e
+  unsafeThaw1 ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s,
+                    ds
+                      `cast`
+                    (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVector[0] ; Sym (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0])) #)) -}
+c1ae975df1a02595c7e61d93017a68c2
+  writeSizeIO ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Types.Int -> GHC.Types.Double -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <S(SL),1*U(U,U)><S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpretation.Count.RefSeqInfoVector.writeSizeIO1
+                  `cast`
+                (<Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+fe9cdec0730b2d78c2ed2b7df4dfb648
+  writeSizeIO1 ::
+    Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable
+    -> GHC.Types.Int
+    -> GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <S(SL),1*U(U,U)><S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Interpretation.Count.RefSeqInfoVector.RefSeqInfoVectorMutable)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Double)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w `cast`
+                      (Interpretation.Count.RefSeqInfoVector.N:RefSeqInfoVectorMutable[0]) of ww { GHC.ForeignPtr.ForeignPtr ww1 ww2 ->
+                 case w1 of ww3 { GHC.Types.I# ww4 ->
+                 case w2 of ww5 { GHC.Types.D# ww6 ->
+                 Interpretation.Count.RefSeqInfoVector.$wwriteSizeIO
+                   ww1
+                   ww2
+                   ww4
+                   ww6
+                   w3 } } }) -}
+instance GHC.Classes.Eq [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+  = Interpretation.Count.RefSeqInfoVector.$fEqRefSeqInfo
+instance Control.DeepSeq.NFData [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+  = Interpretation.Count.RefSeqInfoVector.$fNFDataRefSeqInfo
+instance Control.DeepSeq.NFData [Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector]
+  = Interpretation.Count.RefSeqInfoVector.$fNFDataRefSeqInfoVector
+instance GHC.Classes.Ord [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+  = Interpretation.Count.RefSeqInfoVector.$fOrdRefSeqInfo
+instance GHC.Show.Show [Interpretation.Count.RefSeqInfoVector.RefSeqInfo]
+  = Interpretation.Count.RefSeqInfoVector.$fShowRefSeqInfo
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

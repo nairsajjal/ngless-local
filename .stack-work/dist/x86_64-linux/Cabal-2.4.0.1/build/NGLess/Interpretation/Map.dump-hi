@@ -1,0 +1,703 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:39.586565715 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Interpretation.Map 8065
+  interface hash: ba3980060566e5467ea5153d18d44629
+  ABI hash: 43709d166b34f752ef0ce0d53c37f992
+  export-list hash: 990bb5c71d52c6db8d69b312de7e13db
+  orphan hash: b2639967c95f9bc15c459c3ba148a89a
+  flag hash: a3d7595c94254e50f30f5db57b00f47a
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpretation.Map.executeMap
+  Interpretation.Map.executeMapStats
+  Interpretation.Map.executeMergeSams
+module dependencies: CmdArgs Configuration Data.FastQ Data.Fasta
+                     Data.Sam Dependencies.Embedded Dependencies.Versions FileManagement
+                     FileOrStream Language Modules NGLess NGLess.NGError
+                     NGLess.NGLEnvironment Output Paths_NGLess ReferenceDatabases
+                     StandardModules.Mappers.Bwa StandardModules.Mappers.Minimap2
+                     StandardModules.Mappers.Soap Utils.Conduit Utils.FindModules
+                     Utils.LockFile Utils.Network Utils.Process Utils.ProgressBar
+                     Utils.Samtools Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0
+                      asn1-encoding-0.9.6 asn1-parse-0.9.5 asn1-types-0.3.3 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 basement-0.0.11
+                      bifunctors-5.5.6 binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      case-insensitive-1.2.0.11 cereal-0.5.8.1 cereal-conduit-0.8.0
+                      charset-0.3.7.1 colour-2.3.5 comonad-5.0.6 conduit-1.3.1.2
+                      conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 configurator-0.3.0.0 connection-0.3.1
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      cookie-0.4.5 cryptonite-0.25 data-default-0.7.1.1
+                      data-default-class-0.1.2.0 data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1
+                      filemanip-0.3.6.3 filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1 hashable-1.2.7.0
+                      hostname-1.0 hourglass-0.2.12 http-client-0.6.4
+                      http-client-tls-0.3.5.3 http-conduit-2.3.7.3 http-types-0.12.3
+                      inline-c-0.7.0.1 integer-gmp-1.0.2.0 integer-logarithms-1.0.3
+                      intervals-0.8.1 kan-extensions-5.2 lens-4.17.1 linear-1.20.9
+                      lzma-0.0.0.3 lzma-conduit-1.2.1 memory-0.14.18 monad-loops-0.4.3
+                      mono-traversable-1.0.15.1 monoid-extras-0.5.1 mtl-2.2.2
+                      network-2.8.0.1 network-uri-2.6.1.0 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pem-0.2.4 pqueue-1.4.1.2
+                      pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0 profunctors-5.3
+                      random-1.1 reflection-2.1.5 regex-1.0.2.0 regex-base-0.93.2
+                      regex-compat-0.95.1 regex-pcre-builtin-0.94.5.8.8.35
+                      regex-posix-0.95.2 regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3
+                      resourcet-1.2.2 safe-0.3.18 safe-exceptions-0.1.7.0 safeio-0.0.5.0
+                      scientific-0.3.6.2 semigroupoids-5.3.4 socks-0.6.1 split-0.2.3.3
+                      stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 tar-conduit-0.3.2
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.3.1.0
+                      time-1.8.0.2 time-compat-1.9.2.2 time-locale-compat-0.1.1.5
+                      tls-1.4.1 transformers-0.5.6.2 transformers-base-0.4.5.2
+                      transformers-compat-0.6.5 typed-process-0.2.6.0 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 x509-1.7.5
+                      x509-store-1.6.7 x509-system-1.6.6 x509-validation-1.6.11
+                      zlib-0.6.2.1 zstd-0.1.1.2
+orphans: http-client-0.6.4:Network.HTTP.Client.Request
+         network-2.8.0.1:Network.Socket basement-0.0.11:Basement.UArray.Base
+         basement-0.0.11:Basement.Block
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         MissingH-1.4.1.0:System.IO.HVFS pqueue-1.4.1.2:Data.PQueue.Prio.Min
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         basement-0.0.11:Basement.Block.Base
+                         basement-0.0.11:Basement.Bounded basement-0.0.11:Basement.Monad
+                         basement-0.0.11:Basement.MutableBuilder
+                         basement-0.0.11:Basement.Nat basement-0.0.11:Basement.NonEmpty
+                         basement-0.0.11:Basement.Numerical.Subtractive
+                         basement-0.0.11:Basement.PrimType basement-0.0.11:Basement.String
+                         basement-0.0.11:Basement.String.Encoding.ASCII7
+                         basement-0.0.11:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.11:Basement.String.Encoding.UTF16
+                         basement-0.0.11:Basement.String.Encoding.UTF32
+                         basement-0.0.11:Basement.Types.OffsetSize
+                         basement-0.0.11:Basement.UArray.Base
+                         basement-0.0.11:Basement.UTF8.Base
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         http-client-0.6.4:Network.HTTP.Client
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         network-uri-2.6.1.0:Network.URI
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Configuration 9a82cb30f48ec6255155f5c7391fb6c7
+  exports: 9fc785b50aa90792bcf0bc8c48c96a09
+  nConfIndexStorePath b4545dc36df17a7adccb3e6be807ab85
+import  -/  Data.FastQ 683044f508718e436592cbb72ea87fc2
+  ReadSet 4c8ae3e110e39629ec05639a3c18db8c
+import  -/  Data.Fasta f03f0a1b425415387a21462123a258b7
+  exports: 74b0608c84b835126f8f5252ed73316c
+  faConduit 8a42ad043739228d1e7c31e4600dde24
+  faWriteC 87cb3a3cb7a7813e8f93b53b10aa832e
+  faseqLength 35dd98717771d69be69214d162b95494
+  seqheader b6b63abdbd036ca59255a661789aa379
+import  -/  Data.Sam 3fcb5a09f87798583b9f6366498e011d
+  exports: cca2af82b8ff0df9f542f45f0746f94b
+  SamGroup 8c9bb3dd5f71648483a88dbf3d48f4f6
+  SamHeader f85f7ae0f9d834d6080b61027ca92b45
+  SamLine 01f7dabca6fb8c4cde05c4a9c121515e
+  encodeSamLine 357aff79e10a2b23bad0dcc9dad7b943
+  isAligned 6a34bf38530a48942c0cae62b809802a
+  isFirstInPair c31b582f5b8f6b102dcc6383bed09e4d
+  isSecondInPair 0e7f4e54af3f8167c1db2201974fcdf6
+  matchSize 7c047e83a26b508ddb5e03051224591e
+  readSamGroupsC' b9cbb2fcefdf8f9b139055b3a12a1c95
+  samIntTag 0b825daed5be8a8e94b7a068005953d6
+  samQName 01f7dabca6fb8c4cde05c4a9c121515e
+  samStatsC 9e16e59dcf03a561e5265b7350211a41
+  samStatsC' b4ae00d42cd4a80793fc8de4dbdbf021
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  expandPath e7d1d8d7c110d7299883fabd335485b5
+  makeNGLTempFile f8997243f49d682cc3f193c23e0f01b5
+  openNGLTempFile 2b9c3d55dae96aea37a5265a4ee4d09e
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  File d8a44142e424df6efefa301d68916382
+  asSamStream 6f64757c58491603efc4aa3bd9b5887a
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOCounts 2f11e851e821c66c37fbdbe68821316f
+  NGOList 488dd32aa90ff5894de15c18619c34df
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOReadSet c3ec807d5d7afc041d47d76cd179ed0b
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+  lookupBoolOrScriptErrorDef ffe642effd69bd9a48ab477563baaa98
+  lookupIntegerOrScriptErrorDef 34ade76886baf18c528fabb1196f99bb
+  lookupStringListOrScriptErrorDef b1abc6462818ea3664f4047b3a58bf06
+  lookupStringOrScriptErrorDef 091ee7c11152f594797c474536503c77
+  stringOrTypeError 5b029483db59fc3cf043cd5fbc4379a1
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  runNGLess a41ed825730df1edb93a7b2b931843fe
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  NGLVersion c4336e12104b9327e88a42025f58523f
+  nglConfiguration 539294010c83651951422c2571efcf9e
+  nglEnvironment 56dd9663bd034f7047cca99f322e3b64
+  ngleMappersActive d80a43c5bae03fd7eefc640474197c79
+  ngleVersion d80a43c5bae03fd7eefc640474197c79
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  DebugOutput 66928311a72e96e4202c735d87d527fd
+  InfoOutput c7754f0807be19d61fb420c2d9984424
+  MappingInfo 1a016fdfa433de3ddaf29867aec18c0c
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+  outputMappedSetStatistics b998324afb361c0b2858ccd75ff7eaf9
+import  -/  ReferenceDatabases 472b1e2142d90187a98ec8875a7625af
+  exports: 394ca0e96191075ef609b36ee8fd4f48
+  ReferenceFilePaths 7912d29dcca1557cbce12b5e9898b303
+  ensureDataPresent af4e72fca67ec57b83faf68808cd555a
+import  -/  StandardModules.Mappers.Bwa fc5a58da6c2ca1a2d0d79c9cf8dbc653
+  exports: 90cca195145f7c1ba4c6dca8cdb046fc
+  callMapper 7af5fb3b3ddc7d8450708872c42fc419
+  createIndex 07de11b250a85e59620ef4e0e90f9ee1
+  hasValidIndex cbf914e2c20b45131944710f6d9fbaa4
+import  -/  StandardModules.Mappers.Minimap2 afb22d3b5b100b18f1ddbd678caf34a1
+  exports: a59fd2ca3e6868e2adeeceaf3af558cb
+  callMapper d1371b131c3460e40409903cd9953432
+  createIndex 13ee651f3c4b98493a42a8f09cd1f66b
+  hasValidIndex 7cbcb1252323af8cfbb40a904002f2ab
+import  -/  StandardModules.Mappers.Soap 6da763c07b15c5b0de1f0a3231a757f3
+  exports: 31a0cc33415495e04badc1ea5339a43b
+  callMapper 76170e2a4504d1ede90805547605e9b5
+  createIndex 1e4eb0c6b76e7ce165bb4def37fbe1eb
+  hasValidIndex beea4096674b0752c63b939008048e2e
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine ac33b1a48ce77fc02979f39021c406e3
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  linesC 74def1591ec8f05f38349accac761045
+  linesVC 5f60b94589835a466cc14354f9554195
+  zipSink2 7f397b4901b51927bb0c46a13df6df26
+import  -/  Utils.LockFile 773af50f4e27251bc75ff4a12d55914b
+  exports: 1b4d56278fbcc510ef86d7b3b0367e3c
+  IfLockedRetry 905042acf55d85b70c427e4b6d63ca02
+  LockParameters b2a10fc8a87de550817767f11b73deee
+  lockFname e67f21cbfdfced696ccc5d612034dd8c
+  maxAge e67f21cbfdfced696ccc5d612034dd8c
+  mtimeUpdate e67f21cbfdfced696ccc5d612034dd8c
+  nrLockRetries ff2dfeb33e425d365d68bb261b5df08e
+  timeBetweenRetries ff2dfeb33e425d365d68bb261b5df08e
+  whenExistsStrategy e67f21cbfdfced696ccc5d612034dd8c
+  withLockFile e5de88b696a8f22285940a6e4cc6e123
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+  allSame 40cad5086287ca763e1d068d1ee83fb8
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:Data.Void 7d507f34fb7b7291298961d8e654089b
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Exception 77722984940ee6ccf9e2f7dab10b83a4
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.IO.Handle.Text 182a34cefe4f282196178eec37b94471
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  base-4.12.0.0:System.IO.Error 4554cd72d03d7e89c9020f2d00a768a1
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Utils d2a921b831bbb50309f9f422b2ce43e3
+import  -/  conduit-extra-1.3.4:Data.Conduit.Binary c81ebc9541e9b8e064aeb9f939263ed9
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  extra-1.6.18:Control.Monad.Extra 142829a227ff93cd2299d6da6c4e4ba9
+import  -/  filemanip-0.3.6.3:System.FilePath.Glob 3f7fde1ce0f3c7bdd55e5990921808de
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  safeio-0.0.5.0:System.IO.SafeWrite d7756aa6dd46103e1e3f96abe2c18fe3
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.Class ce71df227db199c1d525fc0992381112
+import  -/  unix-2.7.2.2:System.Posix.Files 4964480523a26dfeb9c75fd7d0d8d434
+import  -/  unix-compat-0.5.2:System.PosixCompat.Files 055da40c1177671ab4c78178932c0d91
+f0e09d0d324970793f85d657fadebff6
+  $ssinkVectorNC ::
+    GHC.Types.Int
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         Data.Sam.SamGroup
+         o
+         NGLess.NGError.NGLessIO
+         (Data.Vector.Vector Data.Sam.SamGroup)
+  {- Arity: 1, Strictness: <L,U(U)> -}
+966f24827cf2233aa3c229911911760a
+  $tc'FaFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12829058712247281896##
+                   8358447825862568032##
+                   Interpretation.Map.$trModule
+                   Interpretation.Map.$tc'FaFile2
+                   0#
+                   Interpretation.Map.$tc'FaFile1) -}
+3212e1e7e979fe60c63553cae127e0fc
+  $tc'FaFile1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f2cd1829d0276dd960e0d6b7844b5efd
+  $tc'FaFile2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Map.$tc'FaFile3) -}
+9612429c2b7c6bcbe08cb3c8d5ad8bae
+  $tc'FaFile3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FaFile"#) -}
+d83dc185f87af97182c9b79a164b2fd6
+  $tc'MSBestOnly :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2283592054814380218##
+                   14486619326613345750##
+                   Interpretation.Map.$trModule
+                   Interpretation.Map.$tc'MSBestOnly2
+                   0#
+                   Interpretation.Map.$tc'MSBestOnly1) -}
+2ad370990a2f39d462c0f6f217f26be5
+  $tc'MSBestOnly1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+858479828b376ecb3b0cbbde040e2871
+  $tc'MSBestOnly2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Map.$tc'MSBestOnly3) -}
+b6ba19f91000e9959a8f5ecc99a96773
+  $tc'MSBestOnly3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MSBestOnly"#) -}
+6b53a8a3437f6abae8835d1a37acb64b
+  $tc'PackagedReference :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17767675980142939349##
+                   2621535022431152060##
+                   Interpretation.Map.$trModule
+                   Interpretation.Map.$tc'PackagedReference2
+                   0#
+                   Interpretation.Map.$tc'PackagedReference1) -}
+121a42018d74b300e354d5970c83a00a
+  $tc'PackagedReference1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b8cc29f199706a06131dfe85fe5621cf
+  $tc'PackagedReference2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Map.$tc'PackagedReference3) -}
+090e6b07825268f1b3afbba5c1ac36da
+  $tc'PackagedReference3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PackagedReference"#) -}
+d5204041cfad406131b0a93543136d10
+  $tcMapper :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12111221024231560757##
+                   4392121572261727619##
+                   Interpretation.Map.$trModule
+                   Interpretation.Map.$tcMapper1
+                   0#
+                   GHC.Types.krep$*) -}
+2e0a038db57c85e176e3034bed443e04
+  $tcMapper1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Map.$tcMapper2) -}
+1e96d3fcf9b0a4fda184577c6a997afd
+  $tcMapper2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Mapper"#) -}
+ba39fbfe6dc37b7983a06a403be8f53b
+  $tcMergeStrategy :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17746799795414476166##
+                   13533504599648931223##
+                   Interpretation.Map.$trModule
+                   Interpretation.Map.$tcMergeStrategy1
+                   0#
+                   GHC.Types.krep$*) -}
+2ea186bfa6fe8edae489ea0e4ff49a3e
+  $tcMergeStrategy1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Map.$tcMergeStrategy2) -}
+5f75b605abff2bc1656f14cfe247be45
+  $tcMergeStrategy2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MergeStrategy"#) -}
+8b037953b0524627ab0954d3a1a327cd
+  $tcReferenceInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11997075074272245296##
+                   1656755679150236546##
+                   Interpretation.Map.$trModule
+                   Interpretation.Map.$tcReferenceInfo1
+                   0#
+                   GHC.Types.krep$*) -}
+d6589482f7fc7b0d1ff8d42fada4e7be
+  $tcReferenceInfo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Map.$tcReferenceInfo2) -}
+6bd989b9416ddf97cde8007674f52203
+  $tcReferenceInfo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ReferenceInfo"#) -}
+aa063cfc4f8e3f3305b899a579df89af
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpretation.Map.$trModule3
+                   Interpretation.Map.$trModule1) -}
+5061bc52c5402779f21713642baf3117
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Map.$trModule2) -}
+505645531747aab62f661eb216f5fee6
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Interpretation.Map"#) -}
+08b54b69b6bd625e4a8426ca2e2e7ad0
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Map.$trModule4) -}
+4bd3b5aa7a87cdb80e0398c0337662a9
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+ced781efebb0e8a173738135210cef97
+  $wexecuteMapStats ::
+    Language.NGLessObject
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+422c191b07ff7642116aff922c0bb248
+  $wexecuteMergeSams ::
+    Language.NGLessObject
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+cf6faeb4ca027158b70022441df5ae22
+  data Mapper
+    = Mapper {createIndex :: GHC.IO.FilePath
+                             -> NGLess.NGError.NGLessIO (),
+              hasValidIndex :: GHC.IO.FilePath
+                               -> NGLess.NGError.NGLessIO GHC.Types.Bool,
+              callMapper :: forall a.
+                            GHC.IO.FilePath
+                            -> Data.FastQ.ReadSet
+                            -> [GHC.Base.String]
+                            -> Data.Conduit.Internal.Conduit.ConduitT
+                                 Data.ByteString.Internal.ByteString
+                                 Data.Void.Void
+                                 NGLess.NGError.NGLessIO
+                                 a
+                            -> NGLess.NGError.NGLessIO a}
+4771264c866784488b3a991d5f57c7a4
+  data MergeStrategy = MSBestOnly
+f64e2ce96611eeb13170be4d3fdf4a2b
+  data ReferenceInfo
+    = PackagedReference Data.Text.Internal.Text
+    | FaFile GHC.IO.FilePath
+cf6faeb4ca027158b70022441df5ae22
+  callMapper ::
+    Interpretation.Map.Mapper
+    -> forall a.
+       GHC.IO.FilePath
+       -> Data.FastQ.ReadSet
+       -> [GHC.Base.String]
+       -> Data.Conduit.Internal.Conduit.ConduitT
+            Data.ByteString.Internal.ByteString
+            Data.Void.Void
+            NGLess.NGError.NGLessIO
+            a
+       -> NGLess.NGError.NGLessIO a
+  RecSel Left Interpretation.Map.Mapper
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (dk :: Interpretation.Map.Mapper) @ a ->
+                 case dk of wild { Interpretation.Map.Mapper ds ds1 ds2 ->
+                 ds2 @ a }) -}
+cf6faeb4ca027158b70022441df5ae22
+  createIndex ::
+    Interpretation.Map.Mapper
+    -> GHC.IO.FilePath -> NGLess.NGError.NGLessIO ()
+  RecSel Left Interpretation.Map.Mapper
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Map.Mapper) ->
+                 case ds of wild { Interpretation.Map.Mapper ds1 ds2 ds3 ->
+                 ds1 }) -}
+83012dcaf6878776377813a17b799d79
+  executeMap ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+5ca51a4058cfd36d9e09e6912e864192
+  executeMapStats ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <S,1*U><L,A>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: Language.NGLessObject) (w1 :: NGLess.KwArgsValues) ->
+                 Interpretation.Map.$wexecuteMapStats w) -}
+e03650c2c27c8f0816c1f85ab5806392
+  executeMergeSams ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <S,1*U><L,A>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: Language.NGLessObject) (w1 :: NGLess.KwArgsValues) ->
+                 Interpretation.Map.$wexecuteMergeSams w) -}
+cf6faeb4ca027158b70022441df5ae22
+  hasValidIndex ::
+    Interpretation.Map.Mapper
+    -> GHC.IO.FilePath -> NGLess.NGError.NGLessIO GHC.Types.Bool
+  RecSel Left Interpretation.Map.Mapper
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Map.Mapper) ->
+                 case ds of wild { Interpretation.Map.Mapper ds1 ds2 ds3 ->
+                 ds2 }) -}
+"SPEC/Interpretation.Map sinkVectorNC @ Vector @ SamGroup @ NGLessIO _" [orphan] forall @ o
+                                                                                        ($dPrimMonad :: Control.Monad.Primitive.PrimMonad
+                                                                                                          NGLess.NGError.NGLessIO)
+                                                                                        ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                                                       Data.Vector.Vector
+                                                                                                       Data.Sam.SamGroup)
+  Data.Conduit.Combinators.sinkVectorNC @ Data.Vector.Vector
+                                        @ [Data.Sam.SamLine]
+                                        @ NGLess.NGError.NGLessIO
+                                        @ o
+                                        $dVector
+                                        $dPrimMonad
+  = Interpretation.Map.$ssinkVectorNC @ o
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

@@ -1,0 +1,2282 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:50.229164499 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Interpretation.Count 8065
+  interface hash: 6a2dab9f681fbca5ea467dbb68f4f5b1
+  ABI hash: 10ca3f7d1cd8593474b7f5a2e4888d0c
+  export-list hash: 60a2a8e76a2304095a366196542a3362
+  orphan hash: 8232bddc337b508b6349549d50b179d7
+  flag hash: 7eadb156ddb8bb05f9a45f101b1309fa
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpretation.Count.annotationRule
+  Interpretation.Count.executeCount
+  Interpretation.Count.executeCountCheck
+  Interpretation.Count.loadAnnotator
+  Interpretation.Count.loadFunctionalMap
+  Interpretation.Count.performCount
+  Interpretation.Count.AnnotationIntersectionMode{Interpretation.Count.IntersectNonEmpty Interpretation.Count.IntersectStrict Interpretation.Count.IntersectUnion}
+  Interpretation.Count.AnnotationMode{Interpretation.Count.AnnotateFunctionalMap Interpretation.Count.AnnotateGFF Interpretation.Count.AnnotateSeqName}
+  Interpretation.Count.Annotator{Interpretation.Count.GFFAnnotator Interpretation.Count.GeneMapAnnotator Interpretation.Count.SeqNameAnnotator}
+  Interpretation.Count.CountOpts{Interpretation.Count.CountOpts optAnnotationMode optDelim optFeatures optIncludeMinus1 optIntersectMode optMMMethod optMinCount optNormMode optStrandMode optSubFeatures}
+  Interpretation.Count.MMMethod{Interpretation.Count.MM1OverN Interpretation.Count.MMCountAll Interpretation.Count.MMDist1 Interpretation.Count.MMUniqueOnly}
+  Interpretation.Count.NMode{Interpretation.Count.NMFpkm Interpretation.Count.NMNormed Interpretation.Count.NMRaw Interpretation.Count.NMScaled}
+  Interpretation.Count.StrandMode{Interpretation.Count.SMAntisense Interpretation.Count.SMBoth Interpretation.Count.SMSense}
+  Interpretation.Count.RefSeqInfoVector.RefSeqInfo{Interpretation.Count.RefSeqInfoVector.RefSeqInfo rsiName rsiSize}
+module dependencies: CmdArgs Configuration Data.FastQ Data.GFF
+                     Data.Sam Dependencies.Embedded Dependencies.Versions FileManagement
+                     FileOrStream Interpretation.Count.RefSeqInfoVector Language Modules
+                     NGLess NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     ReferenceDatabases StandardModules.Mappers.Bwa Utils.Conduit
+                     Utils.FindModules Utils.IntGroups Utils.LockFile Utils.Network
+                     Utils.Process Utils.ProgressBar Utils.Samtools Utils.Suggestion
+                     Utils.Utils Utils.Vector Version
+package dependencies: IntervalMap-0.6.1.1 JuicyPixels-3.3.4
+                      MissingH-1.4.1.0 StateVar-1.2 active-0.2.0.14 adjunctions-4.4
+                      aeson-1.4.6.0 ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 asn1-encoding-0.9.6 asn1-parse-0.9.5 asn1-types-0.3.3
+                      async-2.2.2 attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 basement-0.0.11
+                      bifunctors-5.5.6 binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bytestring-lexing-0.5.0.2 bzlib-conduit-0.3.0.2
+                      call-stack-0.1.0 case-insensitive-1.2.0.11 cereal-0.5.8.1
+                      cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5 comonad-5.0.6
+                      conduit-1.3.1.2 conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 configurator-0.3.0.0 connection-0.3.1
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      cookie-0.4.5 cryptonite-0.25 data-default-0.7.1.1
+                      data-default-class-0.1.2.0 data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 double-conversion-2.0.2.0 dual-tree-0.2.2.1
+                      edit-distance-0.2.2.1 errors-2.3.0 exceptions-0.10.4 extra-1.6.18
+                      file-embed-0.0.11.1 filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1 hashable-1.2.7.0
+                      hostname-1.0 hourglass-0.2.12 http-client-0.6.4
+                      http-client-tls-0.3.5.3 http-conduit-2.3.7.3 http-types-0.12.3
+                      inline-c-0.7.0.1 inline-c-cpp-0.3.0.3 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.3 intervals-0.8.1 kan-extensions-5.2
+                      lens-4.17.1 linear-1.20.9 lzma-0.0.0.3 lzma-conduit-1.2.1
+                      memory-0.14.18 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 network-2.8.0.1 network-uri-2.6.1.0
+                      newtype-generics-0.5.4 old-locale-1.0.0.7 old-time-1.1.0.3
+                      optparse-applicative-0.14.3.0 parsec-3.1.14.0 parsers-0.12.10
+                      pem-0.2.4 pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0
+                      profunctors-5.3 random-1.1 reflection-2.1.5 regex-1.0.2.0
+                      regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safe-exceptions-0.1.7.0 safeio-0.0.5.0
+                      scientific-0.3.6.2 semigroupoids-5.3.4 socks-0.6.1 split-0.2.3.3
+                      stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 tar-conduit-0.3.2
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.3.1.0
+                      time-1.8.0.2 time-compat-1.9.2.2 time-locale-compat-0.1.1.5
+                      tls-1.4.1 transformers-0.5.6.2 transformers-base-0.4.5.2
+                      transformers-compat-0.6.5 typed-process-0.2.6.0 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 x509-1.7.5
+                      x509-store-1.6.7 x509-system-1.6.6 x509-validation-1.6.11
+                      zlib-0.6.2.1 zstd-0.1.1.2
+orphans: MissingH-1.4.1.0:System.IO.HVFS
+         http-client-0.6.4:Network.HTTP.Client.Request
+         network-2.8.0.1:Network.Socket basement-0.0.11:Basement.UArray.Base
+         basement-0.0.11:Basement.Block
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         vector-0.12.0.3:Data.Vector.Unboxed stm-2.5.0.0:Control.Monad.STM
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show colour-2.3.5:Data.Colour
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         basement-0.0.11:Basement.Block.Base
+                         basement-0.0.11:Basement.Bounded basement-0.0.11:Basement.Monad
+                         basement-0.0.11:Basement.MutableBuilder
+                         basement-0.0.11:Basement.Nat basement-0.0.11:Basement.NonEmpty
+                         basement-0.0.11:Basement.Numerical.Subtractive
+                         basement-0.0.11:Basement.PrimType basement-0.0.11:Basement.String
+                         basement-0.0.11:Basement.String.Encoding.ASCII7
+                         basement-0.0.11:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.11:Basement.String.Encoding.UTF16
+                         basement-0.0.11:Basement.String.Encoding.UTF32
+                         basement-0.0.11:Basement.Types.OffsetSize
+                         basement-0.0.11:Basement.UArray.Base
+                         basement-0.0.11:Basement.UTF8.Base
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         http-client-0.6.4:Network.HTTP.Client
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         network-uri-2.6.1.0:Network.URI
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  IntervalMap-0.6.1.1:Data.IntervalMap.Generic.Base d94befec90ba228b60709d9a868f685b
+import  -/  IntervalMap-0.6.1.1:Data.IntervalMap.Generic.Strict 49b7c27a4c5236598c29ad73f8bd5d52
+import  -/  IntervalMap-0.6.1.1:Data.IntervalMap.Interval 249bdb4007b27729efd995165c628d99
+import  -/  IntervalMap-0.6.1.1:Data.IntervalMap.Strict 7ccacf6bd61319b92b16c537ae292578
+import  -/  Data.GFF 8e2f6cfddf3ce36da24ed6b43d77139b
+  exports: 24c3a6d1bc84dbbad42aabcd86ff58ff
+  GffLine 92f00a6e862ebbdf7a331491620f9b62
+  GffNegStrand 0c6238176af68cf955ef236ed787d9bf
+  GffPosStrand f1ea747c1cd5bfdf810ceb857379b64e
+  GffStrand 81195a9fb05ef50792659320b0a4d2fb
+  GffUnStranded d7fef7df2e17c0e04da82a2b8e149540
+  gffAttrs 92f00a6e862ebbdf7a331491620f9b62
+  gffEnd 92f00a6e862ebbdf7a331491620f9b62
+  gffSeqId 92f00a6e862ebbdf7a331491620f9b62
+  gffStart 92f00a6e862ebbdf7a331491620f9b62
+  gffStrand 92f00a6e862ebbdf7a331491620f9b62
+  gffType 92f00a6e862ebbdf7a331491620f9b62
+  readGffLine 5a3d5c7f240eb4affa7c4ac4e8c23b61
+import  -/  Data.Sam 3fcb5a09f87798583b9f6366498e011d
+  exports: cca2af82b8ff0df9f542f45f0746f94b
+  SamLine 0d6b1e41e587b53ef700f890907df42e
+  SamLine 01f7dabca6fb8c4cde05c4a9c121515e
+  isAligned 6a34bf38530a48942c0cae62b809802a
+  isPositive f0e9b49f99d7d2a5ad8cae4a8920b637
+  isSamHeaderString 65a4dceed70d7bae59d35b345f0a2c64
+  readSamGroupsC' b9cbb2fcefdf8f9b139055b3a12a1c95
+  samLength f344e908e530c2511cd252a2768a65c4
+  samPos 01f7dabca6fb8c4cde05c4a9c121515e
+  samRName 01f7dabca6fb8c4cde05c4a9c121515e
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  expandPath e7d1d8d7c110d7299883fabd335485b5
+  makeNGLTempFile f8997243f49d682cc3f193c23e0f01b5
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  File d8a44142e424df6efefa301d68916382
+  FileOrStream ca3cea85429310d5271321cc14b5abc8
+  asSamStream 6f64757c58491603efc4aa3bd9b5887a
+import  -/  Interpretation.Count.RefSeqInfoVector f3abaa9b3145aacc86aa2995b6754d0c
+  exports: 8483f302d29bf8420caa846ee7e5f792
+  RefSeqInfo 8639859e17b560dd43307a5262afd60d
+  RefSeqInfo 30ed88bdb5726ff411a055afd37b2e77
+  RefSeqInfoVector 91b9b8cf913eed2129d07171f48159c6
+  RefSeqInfoVectorMutable f04e89b965bfe6760ad1d3fa315ac520
+  fromList 640fa09e21242d2d637f28196e73e8f5
+  insert 2ceb4abe4784301f6edbdbfbcbf8805a
+  length 25978116151a9b09bc13ba2f3495a7fd
+  lookup 6a8991fb59dc1ac0b818a489347dfe95
+  newRefSeqInfoVector be165c93b805ba57b8857df821611ec0
+  retrieveName c01a9516d61d989a9ef6d732ce29b475
+  retrieveSize 3aedb95d5db8fe163d2e3613b7a364bf
+  retrieveSizeIO c465b055ae85b41fe58ec53e75b86ca4
+  rsiName 30ed88bdb5726ff411a055afd37b2e77
+  rsiSize 30ed88bdb5726ff411a055afd37b2e77
+  sort f991a54da55197f1559787ac0e9001c0
+  unsafeFreeze 8949e57df2027681931748a4ad3be801
+  unsafeThaw 8d3e1f5527af4b9dbafac8f6af033f20
+  writeSizeIO c1ae975df1a02595c7e61d93017a68c2
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOCounts 2f11e851e821c66c37fbdbe68821316f
+  NGOInteger 395b0ce4eb20fbcf334f84acb2d7ff1d
+  NGOList 488dd32aa90ff5894de15c18619c34df
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOString 155e4815cffdc2c6617b34a2d52b7659
+  NGOVoid 3470f22180b45ca3e315b9326994ee3f
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+  decodeSymbolOrError 1fa33d0017c91baa13be4377853a0728
+  lookupBoolOrScriptErrorDef ffe642effd69bd9a48ab477563baaa98
+  lookupIntegerOrScriptErrorDef 34ade76886baf18c528fabb1196f99bb
+  lookupStringOrScriptErrorDef 091ee7c11152f594797c474536503c77
+  lookupSymbolOrScriptErrorDef a240a0fb0565b0f33a8458942701be2b
+  stringOrTypeError 5b029483db59fc3cf043cd5fbc4379a1
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  DataError b451375c347fcacf369c527855d02cf0
+  NGError a376f3cfcfb76b5fb7a76f3cdc4bd9d1
+  NGLess 416e5726ee4c4987c25367d545064990
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  runNGLess a41ed825730df1edb93a7b2b931843fe
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  NGLVersion c4336e12104b9327e88a42025f58523f
+  nglEnvironment 56dd9663bd034f7047cca99f322e3b64
+  ngleVersion d80a43c5bae03fd7eefc640474197c79
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  InfoOutput c7754f0807be19d61fb420c2d9984424
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  outputListLno e992d3c80a311d9fdf828c472b95b98f
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  ReferenceDatabases 472b1e2142d90187a98ec8875a7625af
+  exports: 394ca0e96191075ef609b36ee8fd4f48
+  ReferenceFilePaths 7912d29dcca1557cbce12b5e9898b303
+  ensureDataPresent af4e72fca67ec57b83faf68808cd555a
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine ac33b1a48ce77fc02979f39021c406e3
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  linesC 74def1591ec8f05f38349accac761045
+  unwrapByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+import  -/  Utils.IntGroups 8e3a980a77c84e1e1b631a9de7a01563
+  exports: 4ff34ca084a81e7b298012dfbb790d6d
+  IntGroups 5613b755fafcb122427a6574f65b3005
+  empty 9a457a193ce7957ea8ffcbdc3606a985
+  forM_ e15a1ef9397ebdd9df839c56bbd99fe9
+  fromList a63434fb359c9b9a174fc6309fe97369
+  null 5ec844a0d5532b4af5eebcc85a11e5c8
+import  -/  Utils.Suggestion 559e2395dd1103e80283d24b7e6fd048
+  exports: cc5fd4d32efb666b1cbe2686b5c39e5e
+  Suggestion 2c28ffe66da3dd5e8ebcf53d8d6e2743
+  findSuggestion ae232bc8a8bbf03bebc28db96d4a2b35
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+  mapMaybeM cc9488cea6752045089aba9c53d05946
+import  -/  Utils.Vector 5a19fcc9929de2aa222b9c331256d2a5
+  exports: 80988af34b6a3a14d73a505b40412fce
+  unsafeIncrement 15b3d819c922f3e53e161702fd99d287
+  unsafeIncrement' e38f8a2c84587270f3fdc60277954c71
+  withVector 0be52535355c52ebacc2e0abb91dfeb1
+import  -/  base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:Data.Void 7d507f34fb7b7291298961d8e654089b
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Conc a58be285a0644f0fcf5703314b511833
+import  -/  base-4.12.0.0:GHC.Conc.Sync 275e94c5ede09d3593e4c106b892e4f5
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Float ccb68fbeaab348f60d11c8132d51af5d
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder.Internal 8258443d95d94e3caaed55a182aaa9c6
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Utils d2a921b831bbb50309f9f422b2ce43e3
+import  -/  containers-0.6.0.1:Data.Map.Internal fbf8d1bed47de2b3b48e26c406ee4050
+import  -/  containers-0.6.0.1:Data.Map.Strict cdbeca9dfcd61c917272d3c2b8a5e4c8
+import  -/  containers-0.6.0.1:Data.Map.Strict.Internal b2139318e1c1e3d44818931d9d007d9f
+import  -/  containers-0.6.0.1:Data.Set afd5ab7eac5658da18a4fffc2d1b683c
+import  -/  containers-0.6.0.1:Data.Set.Internal 37b649a82b62d074262d73d43076b8c8
+import  -/  convertible-1.1.1.0:Data.Convertible 923da950f8480d959e498627f8b7fcc0
+import  -/  convertible-1.1.1.0:Data.Convertible.Base c334af313483d4f13b5f2a30a031fbd4
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  double-conversion-2.0.2.0:Data.Double.Conversion.ByteString 1fb5ca8eda6921f3fba93b334b6dbfea
+import  -/  errors-2.3.0:Control.Error 10aa1520c30e6d4e074c4d9fbf0cd44a
+import  -/  errors-2.3.0:Control.Error.Util 51c7a01d0b759ba60a147d445df06bed
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  strict-0.3.2:Data.Strict.Tuple 6275b92f93ca2de7da589810fe97c5ed
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Encoding 7ce1a7bbcff1af07caf6c914233ce5e8
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.Class ce71df227db199c1d525fc0992381112
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed 5733715c11577ecd2bc59749298e28f2
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Base 311d017e8e964b88d4827a5ad52e1e15
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Mutable 692d6e5c74ab0fb1d5a9b9ead57292d3
+import  -/  vector-algorithms-0.8.0.3:Data.Vector.Algorithms.Intro b8c88657108fc70a0fa289a9ac843572
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+48ac1858189b8ea4cec71af482f477fe
+  $fEqAnnotationIntersectionMode ::
+    GHC.Classes.Eq Interpretation.Count.AnnotationIntersectionMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.AnnotationIntersectionMode
+                  Interpretation.Count.$fEqAnnotationIntersectionMode_$c==
+                  Interpretation.Count.$fEqAnnotationIntersectionMode_$c/= -}
+48ac1858189b8ea4cec71af482f477fe
+  $fEqAnnotationIntersectionMode_$c/= ::
+    Interpretation.Count.AnnotationIntersectionMode
+    -> Interpretation.Count.AnnotationIntersectionMode
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Count.AnnotationIntersectionMode)
+                   (y :: Interpretation.Count.AnnotationIntersectionMode) ->
+                 case x of wild {
+                   Interpretation.Count.IntersectUnion
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.IntersectUnion -> GHC.Types.False }
+                   Interpretation.Count.IntersectStrict
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.IntersectStrict -> GHC.Types.False }
+                   Interpretation.Count.IntersectNonEmpty
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.IntersectNonEmpty -> GHC.Types.False } }) -}
+48ac1858189b8ea4cec71af482f477fe
+  $fEqAnnotationIntersectionMode_$c== ::
+    Interpretation.Count.AnnotationIntersectionMode
+    -> Interpretation.Count.AnnotationIntersectionMode
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Count.AnnotationIntersectionMode)
+                   (ds1 :: Interpretation.Count.AnnotationIntersectionMode) ->
+                 case ds of wild {
+                   Interpretation.Count.IntersectUnion
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.IntersectUnion -> GHC.Types.True }
+                   Interpretation.Count.IntersectStrict
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.IntersectStrict -> GHC.Types.True }
+                   Interpretation.Count.IntersectNonEmpty
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.IntersectNonEmpty -> GHC.Types.True } }) -}
+37ce61fcf2bf834c871c111906b1f4a3
+  $fEqAnnotationMode ::
+    GHC.Classes.Eq Interpretation.Count.AnnotationMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.AnnotationMode
+                  Interpretation.Count.$fEqAnnotationMode_$c==
+                  Interpretation.Count.$fEqAnnotationMode_$c/= -}
+37ce61fcf2bf834c871c111906b1f4a3
+  $fEqAnnotationMode_$c/= ::
+    Interpretation.Count.AnnotationMode
+    -> Interpretation.Count.AnnotationMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Count.AnnotationMode)
+                   (y :: Interpretation.Count.AnnotationMode) ->
+                 case x of wild {
+                   Interpretation.Count.AnnotateSeqName
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.AnnotateSeqName -> GHC.Types.False }
+                   Interpretation.Count.AnnotateGFF a1
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.AnnotateGFF b1
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } }
+                   Interpretation.Count.AnnotateFunctionalMap a1
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.AnnotateFunctionalMap b1
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+37ce61fcf2bf834c871c111906b1f4a3
+  $fEqAnnotationMode_$c== ::
+    Interpretation.Count.AnnotationMode
+    -> Interpretation.Count.AnnotationMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Interpretation.Count.AnnotationMode)
+                   (ds1 :: Interpretation.Count.AnnotationMode) ->
+                 case ds of wild {
+                   Interpretation.Count.AnnotateSeqName
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.AnnotateSeqName -> GHC.Types.True }
+                   Interpretation.Count.AnnotateGFF a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.AnnotateGFF b1 -> GHC.Base.eqString a1 b1 }
+                   Interpretation.Count.AnnotateFunctionalMap a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.AnnotateFunctionalMap b1
+                        -> GHC.Base.eqString a1 b1 } }) -}
+7e8282abad52c1617bbdf8035e681ef1
+  $fEqMMMethod :: GHC.Classes.Eq Interpretation.Count.MMMethod
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.MMMethod
+                  Interpretation.Count.$fEqMMMethod_$c==
+                  Interpretation.Count.$fEqMMMethod_$c/= -}
+7e8282abad52c1617bbdf8035e681ef1
+  $fEqMMMethod_$c/= ::
+    Interpretation.Count.MMMethod
+    -> Interpretation.Count.MMMethod -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Count.MMMethod)
+                   (y :: Interpretation.Count.MMMethod) ->
+                 case x of wild {
+                   Interpretation.Count.MMCountAll
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.MMCountAll -> GHC.Types.False }
+                   Interpretation.Count.MM1OverN
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.MM1OverN -> GHC.Types.False }
+                   Interpretation.Count.MMDist1
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.MMDist1 -> GHC.Types.False }
+                   Interpretation.Count.MMUniqueOnly
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.MMUniqueOnly -> GHC.Types.False } }) -}
+7e8282abad52c1617bbdf8035e681ef1
+  $fEqMMMethod_$c== ::
+    Interpretation.Count.MMMethod
+    -> Interpretation.Count.MMMethod -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Interpretation.Count.MMMethod)
+                   (ds1 :: Interpretation.Count.MMMethod) ->
+                 case ds of wild {
+                   Interpretation.Count.MMCountAll
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.MMCountAll -> GHC.Types.True }
+                   Interpretation.Count.MM1OverN
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.MM1OverN -> GHC.Types.True }
+                   Interpretation.Count.MMDist1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.MMDist1 -> GHC.Types.True }
+                   Interpretation.Count.MMUniqueOnly
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.MMUniqueOnly -> GHC.Types.True } }) -}
+a58d0a64f4b5a6224c5494abfb8f2fe3
+  $fEqNMode :: GHC.Classes.Eq Interpretation.Count.NMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.NMode
+                  Interpretation.Count.$fEqNMode_$c==
+                  Interpretation.Count.$fEqNMode_$c/= -}
+a58d0a64f4b5a6224c5494abfb8f2fe3
+  $fEqNMode_$c/= ::
+    Interpretation.Count.NMode
+    -> Interpretation.Count.NMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Count.NMode)
+                   (y :: Interpretation.Count.NMode) ->
+                 case x of wild {
+                   Interpretation.Count.NMRaw
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.NMRaw -> GHC.Types.False }
+                   Interpretation.Count.NMNormed
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.NMNormed -> GHC.Types.False }
+                   Interpretation.Count.NMScaled
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.NMScaled -> GHC.Types.False }
+                   Interpretation.Count.NMFpkm
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.NMFpkm -> GHC.Types.False } }) -}
+a58d0a64f4b5a6224c5494abfb8f2fe3
+  $fEqNMode_$c== ::
+    Interpretation.Count.NMode
+    -> Interpretation.Count.NMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Interpretation.Count.NMode)
+                   (ds1 :: Interpretation.Count.NMode) ->
+                 case ds of wild {
+                   Interpretation.Count.NMRaw
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.NMRaw -> GHC.Types.True }
+                   Interpretation.Count.NMNormed
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.NMNormed -> GHC.Types.True }
+                   Interpretation.Count.NMScaled
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.NMScaled -> GHC.Types.True }
+                   Interpretation.Count.NMFpkm
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.NMFpkm -> GHC.Types.True } }) -}
+78a5754cb4194fd5cd8d0aa5a2c1d3a6
+  $fEqStrandMode :: GHC.Classes.Eq Interpretation.Count.StrandMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.StrandMode
+                  Interpretation.Count.$fEqStrandMode_$c==
+                  Interpretation.Count.$fEqStrandMode_$c/= -}
+78a5754cb4194fd5cd8d0aa5a2c1d3a6
+  $fEqStrandMode_$c/= ::
+    Interpretation.Count.StrandMode
+    -> Interpretation.Count.StrandMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Count.StrandMode)
+                   (y :: Interpretation.Count.StrandMode) ->
+                 case x of wild {
+                   Interpretation.Count.SMBoth
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.SMBoth -> GHC.Types.False }
+                   Interpretation.Count.SMSense
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.SMSense -> GHC.Types.False }
+                   Interpretation.Count.SMAntisense
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Count.SMAntisense -> GHC.Types.False } }) -}
+78a5754cb4194fd5cd8d0aa5a2c1d3a6
+  $fEqStrandMode_$c== ::
+    Interpretation.Count.StrandMode
+    -> Interpretation.Count.StrandMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Count.StrandMode)
+                   (ds1 :: Interpretation.Count.StrandMode) ->
+                 case ds of wild {
+                   Interpretation.Count.SMBoth
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.SMBoth -> GHC.Types.True }
+                   Interpretation.Count.SMSense
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.SMSense -> GHC.Types.True }
+                   Interpretation.Count.SMAntisense
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Count.SMAntisense -> GHC.Types.True } }) -}
+326d58bdf894156887ab5538e3b56ca6
+  $fNFDataAnnotator ::
+    Control.DeepSeq.NFData Interpretation.Count.Annotator
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Interpretation.Count.$fNFDataAnnotator_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Interpretation.Count.Annotator>_N)) -}
+90b8b11ad7859e3f8849205e64137249
+  $fNFDataAnnotator1 :: [GHC.Types.Int] -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: [GHC.Types.Int]) ->
+                 letrec {
+                   go :: [GHC.Types.Int] -> () <join 1> {- Arity: 1 -}
+                   = \ (ds :: [GHC.Types.Int]) ->
+                     case ds of wild {
+                       [] -> GHC.Tuple.()
+                       : x xs -> case x of ds1 { GHC.Types.I# ipv -> go xs } }
+                 } in
+                 go eta) -}
+326d58bdf894156887ab5538e3b56ca6
+  $fNFDataAnnotator_$crnf :: Interpretation.Count.Annotator -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Interpretation.Count.Annotator) ->
+                 case ds of wild {
+                   Interpretation.Count.SeqNameAnnotator m
+                   -> case m of wild1 {
+                        GHC.Maybe.Nothing -> GHC.Tuple.()
+                        GHC.Maybe.Just x
+                        -> Interpretation.Count.RefSeqInfoVector.$fNFDataRefSeqInfoVector_$crnf
+                             x }
+                   Interpretation.Count.GFFAnnotator amap headers szmap
+                   -> case amap of amap1 { DEFAULT ->
+                      letrec {
+                        go :: [Data.ByteString.Internal.ByteString] -> ()
+                          <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds1 :: [Data.ByteString.Internal.ByteString]) ->
+                          case ds1 of wild1 {
+                            [] -> GHC.Tuple.()
+                            : x xs
+                            -> case x of wild2 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                               go xs } }
+                      } in
+                      go headers }
+                   Interpretation.Count.GeneMapAnnotator ds1 amap szmap
+                   -> case ds1 of ds2 { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                      case Data.Map.Internal.$fNFDataMap_$crnf
+                             @ Data.ByteString.Internal.ByteString
+                             @ [GHC.Types.Int]
+                             Data.ByteString.Internal.$fNFDataByteString_$crnf
+                               `cast`
+                             (Sym (Control.DeepSeq.N:NFData[0]
+                                       <Data.ByteString.Internal.ByteString>_N))
+                             Interpretation.Count.$fNFDataAnnotator1
+                               `cast`
+                             (Sym (Control.DeepSeq.N:NFData[0] <[GHC.Types.Int]>_N))
+                             amap of wild1 { () ->
+                      Interpretation.Count.RefSeqInfoVector.$fNFDataRefSeqInfoVector_$crnf
+                        szmap } } }) -}
+48ac1858189b8ea4cec71af482f477fe
+  $fShowAnnotationIntersectionMode ::
+    GHC.Show.Show Interpretation.Count.AnnotationIntersectionMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Count.AnnotationIntersectionMode
+                  Interpretation.Count.$fShowAnnotationIntersectionMode_$cshowsPrec
+                  Interpretation.Count.$fShowAnnotationIntersectionMode_$cshow
+                  Interpretation.Count.$fShowAnnotationIntersectionMode_$cshowList -}
+48ac1858189b8ea4cec71af482f477fe
+  $fShowAnnotationIntersectionMode_$cshow ::
+    Interpretation.Count.AnnotationIntersectionMode -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Interpretation.Count.AnnotationIntersectionMode) ->
+                 case x of wild {
+                   Interpretation.Count.IntersectUnion
+                   -> GHC.CString.unpackCString# "IntersectUnion"#
+                   Interpretation.Count.IntersectStrict
+                   -> GHC.CString.unpackCString# "IntersectStrict"#
+                   Interpretation.Count.IntersectNonEmpty
+                   -> GHC.CString.unpackCString# "IntersectNonEmpty"# }) -}
+48ac1858189b8ea4cec71af482f477fe
+  $fShowAnnotationIntersectionMode_$cshowList ::
+    [Interpretation.Count.AnnotationIntersectionMode] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpretation.Count.AnnotationIntersectionMode])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpretation.Count.AnnotationIntersectionMode
+                   (Interpretation.Count.$fShowAnnotationIntersectionMode_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+48ac1858189b8ea4cec71af482f477fe
+  $fShowAnnotationIntersectionMode_$cshowsPrec ::
+    GHC.Types.Int
+    -> Interpretation.Count.AnnotationIntersectionMode
+    -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Interpretation.Count.AnnotationIntersectionMode) ->
+                 Interpretation.Count.$w$cshowsPrec w1) -}
+8bb8d3d4b063b3125969c30db2aa67ec
+  $s!1 ::
+    Data.Vector.Unboxed.Base.Vector GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S(SSS),1*U(U,U,U)><S(S),1*U(U)>m,
+     Inline: [1] (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (v1 :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                   (i :: GHC.Types.Int) ->
+                 let {
+                   file :: GHC.Prim.Addr# = "./Data/Vector/Generic.hs"#
+                 } in
+                 case i of wild { GHC.Types.I# x ->
+                 case GHC.Prim.>=# x 0# of lwild {
+                   DEFAULT
+                   -> case v1
+                             `cast`
+                           (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv1 ipv2 ->
+                      Data.Vector.Internal.Check.checkError
+                        @ GHC.Types.Int
+                        (GHC.CString.unpackCString# file)
+                        (GHC.Types.I# 245#)
+                        Data.Vector.Internal.Check.Bounds
+                        (GHC.CString.unpackCString# "(!)"#)
+                        (Data.Vector.Internal.Check.checkIndex_msg# x ipv1) }
+                   1#
+                   -> case v1
+                             `cast`
+                           (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv1 ipv2 ->
+                      case GHC.Prim.<# x ipv1 of lwild1 {
+                        DEFAULT
+                        -> Data.Vector.Internal.Check.checkError
+                             @ GHC.Types.Int
+                             (GHC.CString.unpackCString# file)
+                             (GHC.Types.I# 245#)
+                             Data.Vector.Internal.Check.Bounds
+                             (GHC.CString.unpackCString# "(!)"#)
+                             (Data.Vector.Internal.Check.checkIndex_msg# x ipv1)
+                        1#
+                        -> case GHC.Prim.indexIntArray#
+                                  ipv2
+                                  (GHC.Prim.+# ipv x) of wild2 { DEFAULT ->
+                           GHC.Types.I# wild2 } } } } }) -}
+28e8617901536623f8eea14402773391
+  $s$fEqInterval ::
+    GHC.Classes.Eq (Data.IntervalMap.Interval.Interval GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                  (Data.IntervalMap.Interval.$fEqInterval_$c==
+                     @ GHC.Types.Int
+                     GHC.Classes.$fEqInt)
+                  Interpretation.Count.$s$fEqInterval_$s$fEqInterval_$c/= -}
+49826c4e55efe2bddad9d69faadca9c2
+  $s$fEqInterval_$s$fEqInterval_$c/= ::
+    Data.IntervalMap.Interval.Interval GHC.Types.Int
+    -> Data.IntervalMap.Interval.Interval GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                   (y :: Data.IntervalMap.Interval.Interval GHC.Types.Int) ->
+                 case x of wild {
+                   Data.IntervalMap.Interval.IntervalCO a1 a2
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.IntervalMap.Interval.IntervalCO b1 b2
+                        -> case GHC.Classes.eqInt a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True
+                             -> case GHC.Classes.eqInt a2 b2 of wild4 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True -> GHC.Types.False } } }
+                   Data.IntervalMap.Interval.ClosedInterval a1 a2
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.IntervalMap.Interval.ClosedInterval b1 b2
+                        -> case GHC.Classes.eqInt a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True
+                             -> case GHC.Classes.eqInt a2 b2 of wild4 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True -> GHC.Types.False } } }
+                   Data.IntervalMap.Interval.OpenInterval a1 a2
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.IntervalMap.Interval.OpenInterval b1 b2
+                        -> case GHC.Classes.eqInt a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True
+                             -> case GHC.Classes.eqInt a2 b2 of wild4 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True -> GHC.Types.False } } }
+                   Data.IntervalMap.Interval.IntervalOC a1 a2
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.IntervalMap.Interval.IntervalOC b1 b2
+                        -> case GHC.Classes.eqInt a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True
+                             -> case GHC.Classes.eqInt a2 b2 of wild4 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True -> GHC.Types.False } } } }) -}
+0fb9b3c759b905b6ddc4eb8e8b381057
+  $s$fIntervalIntervala ::
+    Data.IntervalMap.Generic.Interval.Interval
+      (Data.IntervalMap.Interval.Interval GHC.Types.Int) GHC.Types.Int
+  {- HasNoCafRefs, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                  @ GHC.Types.Int
+                  GHC.Classes.$fOrdInt
+                  (Data.IntervalMap.Interval.lowerBound @ GHC.Types.Int)
+                  (Data.IntervalMap.Interval.upperBound @ GHC.Types.Int)
+                  (Data.IntervalMap.Interval.leftClosed @ GHC.Types.Int)
+                  (Data.IntervalMap.Interval.rightClosed @ GHC.Types.Int)
+                  (Data.IntervalMap.Interval.before
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (\ (r :: Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                     (l :: Data.IntervalMap.Interval.Interval GHC.Types.Int) ->
+                   Data.IntervalMap.Interval.before
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt
+                     l
+                     r)
+                  (Data.IntervalMap.Interval.subsumes
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.overlaps
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.below
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.above
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.inside
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.isEmpty
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (\ (a1 :: Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                     (b :: Data.IntervalMap.Interval.Interval GHC.Types.Int) ->
+                   case Data.IntervalMap.Interval.compareU
+                          @ GHC.Types.Int
+                          GHC.Classes.$fOrdInt
+                          a1
+                          b of wild {
+                     DEFAULT -> wild
+                     GHC.Types.EQ
+                     -> Data.IntervalMap.Interval.compareL
+                          @ GHC.Types.Int
+                          GHC.Classes.$fOrdInt
+                          a1
+                          b }) -}
+191a3d300e50dd050dbd6dd332ae5a61
+  $s$fNFDataVector_$crnf ::
+    Data.Vector.Vector Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+    -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSL),1*U(U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: Data.Vector.Vector
+                            Interpretation.Count.RefSeqInfoVector.RefSeqInfo) ->
+                 case w1 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 letrec {
+                   $wrnfAll :: GHC.Prim.Int# -> ()
+                     <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                   = \ (ww4 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.<# ww4 ww2 of lwild {
+                       DEFAULT -> GHC.Tuple.()
+                       1#
+                       -> case GHC.Prim.indexArray#
+                                 @ Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+                                 ww3
+                                 ww4 of ds2 { Unit# ipv ->
+                          case ipv of ds1 { Interpretation.Count.RefSeqInfoVector.RefSeqInfo ipv1 ipv2 ipv3 ipv4 ipv5 ->
+                          $wrnfAll (GHC.Prim.+# ww4 1#) } } }
+                 } in
+                 $wrnfAll ww1 }) -}
+44ee50dbc13cce0875999772a11ef747
+  $s$fOrd(,)_$ccompare ::
+    (GHC.Types.Int, Data.ByteString.Internal.ByteString)
+    -> (GHC.Types.Int, Data.ByteString.Internal.ByteString)
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U,U,U,U))><S(S(S)L),1*U(1*U(U),1*U(U,U,U,U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w2 :: (GHC.Types.Int, Data.ByteString.Internal.ByteString))
+                   (w3 :: (GHC.Types.Int, Data.ByteString.Internal.ByteString)) ->
+                 case w2 of ww9 { (,) ww10 ww11 ->
+                 case w3 of ww12 { (,) ww13 ww14 ->
+                 case ww10 of wild { GHC.Types.I# x# ->
+                 case ww13 of wild1 { GHC.Types.I# y# ->
+                 case GHC.Prim.<# x# y# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# x# y# of lwild1 {
+                        DEFAULT -> GHC.Types.GT
+                        1# -> Data.ByteString.Internal.compareBytes ww11 ww14 }
+                   1# -> GHC.Types.LT } } } } }) -}
+11ce18df8d563fea3542500cdaf76ac6
+  $s$fOrdInterval ::
+    GHC.Classes.Ord (Data.IntervalMap.Interval.Interval GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                  Interpretation.Count.$s$fEqInterval
+                  (\ (a1 :: Data.IntervalMap.Interval.Interval GHC.Types.Int)
+                     (b :: Data.IntervalMap.Interval.Interval GHC.Types.Int) ->
+                   case Data.IntervalMap.Interval.compareL
+                          @ GHC.Types.Int
+                          GHC.Classes.$fOrdInt
+                          a1
+                          b of wild {
+                     DEFAULT -> wild
+                     GHC.Types.EQ
+                     -> Data.IntervalMap.Interval.compareU
+                          @ GHC.Types.Int
+                          GHC.Classes.$fOrdInt
+                          a1
+                          b })
+                  (Data.IntervalMap.Interval.$fOrdInterval_$c<
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.$fOrdInterval_$c<=
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.$fOrdInterval_$c>
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.$fOrdInterval_$c>=
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.$fOrdInterval_$cmax
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt)
+                  (Data.IntervalMap.Interval.$fOrdInterval_$cmin
+                     @ GHC.Types.Int
+                     GHC.Classes.$fOrdInt) -}
+2e529a4f1cf4019c82e4a5e4d7036cb4
+  $sfromList ::
+    [(Data.ByteString.Internal.ByteString, a)]
+    -> Data.Map.Internal.Map Data.ByteString.Internal.ByteString a
+  {- Arity: 1, Strictness: <S,1*U> -}
+124a91389d4927d4d910e81588a18fac
+  $sfromList1 ::
+    [GHC.Types.Int] -> Data.Set.Internal.Set GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U> -}
+18b904c983c870745d25d1a68ff7d6cf
+  $ssinkVectorNC ::
+    GHC.Types.Int
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         Utils.Conduit.ByteLine
+         o
+         NGLess.NGError.NGLessIO
+         (Data.Vector.Vector Utils.Conduit.ByteLine)
+  {- Arity: 1, Strictness: <L,U(U)> -}
+dd0c4bb929d18246ab8b8f5925f96dab
+  $ssinkVectorNC1 ::
+    GHC.Types.Int
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         (GHC.Types.Int, Utils.Conduit.ByteLine)
+         o
+         NGLess.NGError.NGLessIO
+         (Data.Vector.Vector (GHC.Types.Int, Utils.Conduit.ByteLine))
+  {- Arity: 1, Strictness: <L,U(U)> -}
+bed5dab550ad1a45cb52c99a9fc60b47
+  $tc'AnnotateFunctionalMap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8979660077667762788##
+                   10974189350249014763##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'AnnotateFunctionalMap2
+                   0#
+                   Interpretation.Count.$tc'AnnotateFunctionalMap1) -}
+db8b3e95f16e8699127b5a6053eda4a0
+  $tc'AnnotateFunctionalMap1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0d8b324cedf26167acf05faff4ca356b
+  $tc'AnnotateFunctionalMap2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'AnnotateFunctionalMap3) -}
+a5a1c2e11caa628e1ecd2958e203e340
+  $tc'AnnotateFunctionalMap3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AnnotateFunctionalMap"#) -}
+a9e06de1b575ff5143d4dac4d6fd220d
+  $tc'AnnotateGFF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8473092023624276598##
+                   11842851059958799735##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'AnnotateGFF1
+                   0#
+                   Interpretation.Count.$tc'AnnotateFunctionalMap1) -}
+5800b467c88ea4a3db8837caaab60abf
+  $tc'AnnotateGFF1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'AnnotateGFF2) -}
+b89903b1b1a9ca1b8006bd4621dc76be
+  $tc'AnnotateGFF2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AnnotateGFF"#) -}
+a8068e4305ca90efbe49562812c7b16c
+  $tc'AnnotateSeqName :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3614151059862648542##
+                   5570557102058699551##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'AnnotateSeqName2
+                   0#
+                   Interpretation.Count.$tc'AnnotateSeqName1) -}
+fdbc20c8f65234411e2081800a7ce748
+  $tc'AnnotateSeqName1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+b7f5e9a1811ec7a7cab08dfc81b5f876
+  $tc'AnnotateSeqName2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'AnnotateSeqName3) -}
+cefdd444124915a21793a6d7d7474a05
+  $tc'AnnotateSeqName3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AnnotateSeqName"#) -}
+32ca9f2b2b790b78907cbeb016eb0baf
+  $tc'CountOpts :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10314656336773157375##
+                   10711918092072263046##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'CountOpts2
+                   0#
+                   Interpretation.Count.$tc'CountOpts1) -}
+25e0f7a0607622f7b5116f1557379750
+  $tc'CountOpts1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1d81f616b94e3f9477243ca7db78fdee
+  $tc'CountOpts2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'CountOpts3) -}
+2993a6652beb47233da80f02ac954315
+  $tc'CountOpts3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CountOpts"#) -}
+9c9239b33ddf95da62302fb957f24418
+  $tc'GFFAnnotator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7254286686252147874##
+                   15734245811656240798##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'GFFAnnotator2
+                   0#
+                   Interpretation.Count.$tc'GFFAnnotator1) -}
+0cd5a14cb7059ab8b570369071f3abfb
+  $tc'GFFAnnotator1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c1455fbd6d086ff68555023e1671d7f6
+  $tc'GFFAnnotator2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'GFFAnnotator3) -}
+a071816eadb9e6758f294dbd28291894
+  $tc'GFFAnnotator3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GFFAnnotator"#) -}
+db02767cfbcb85b4b9de92d0e2ca8e5d
+  $tc'GeneMapAnnotator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7361316046450941553##
+                   8895009449235981892##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'GeneMapAnnotator2
+                   0#
+                   Interpretation.Count.$tc'GeneMapAnnotator1) -}
+9c3f30e8d0aa2ffb52fe7553a1f394ef
+  $tc'GeneMapAnnotator1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+75313f907ccd06a4e9d531e93ce6de7c
+  $tc'GeneMapAnnotator2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'GeneMapAnnotator3) -}
+066fcd814883bce73361b03ce74c5f50
+  $tc'GeneMapAnnotator3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GeneMapAnnotator"#) -}
+644614a9a0ec3f39a2aa98a8b67d20f4
+  $tc'GffLoadingState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1781346444773155512##
+                   16234253685568931241##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'GffLoadingState2
+                   0#
+                   Interpretation.Count.$tc'GffLoadingState1) -}
+32fb25dafeeec01f15f1849e578a86f7
+  $tc'GffLoadingState1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ca2da6928d99db41572baeb070543291
+  $tc'GffLoadingState2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'GffLoadingState3) -}
+eb9b8adea352b7b5a75342b2e505300c
+  $tc'GffLoadingState3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GffLoadingState"#) -}
+3ef77dad4138b3bd3bbfcb94a929b204
+  $tc'IntersectNonEmpty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9549388305871817472##
+                   12656669446322436933##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'IntersectNonEmpty2
+                   0#
+                   Interpretation.Count.$tc'IntersectNonEmpty1) -}
+71fc2854bc5bed11da922af1ed1b7c53
+  $tc'IntersectNonEmpty1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+99c8ff35b4a272cae70c541605183876
+  $tc'IntersectNonEmpty2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'IntersectNonEmpty3) -}
+357b5b686b5460a97622274c80477833
+  $tc'IntersectNonEmpty3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IntersectNonEmpty"#) -}
+37956ebd4c0ca04cf70993224511de63
+  $tc'IntersectStrict :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14293879149505790734##
+                   11871122655984199283##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'IntersectStrict1
+                   0#
+                   Interpretation.Count.$tc'IntersectNonEmpty1) -}
+ada0d3303c591ab935511fb51db3969d
+  $tc'IntersectStrict1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'IntersectStrict2) -}
+615dabebd631d38c47aec0521952ce6a
+  $tc'IntersectStrict2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IntersectStrict"#) -}
+192617c06390e1ff1a49b924fd9477a4
+  $tc'IntersectUnion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4203951439795072471##
+                   9424939729955748569##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'IntersectUnion1
+                   0#
+                   Interpretation.Count.$tc'IntersectNonEmpty1) -}
+38da73bfe46a32b9a78bfdf5343e64e0
+  $tc'IntersectUnion1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'IntersectUnion2) -}
+e5f9d2474f1e8079c24d866b9aeb60e1
+  $tc'IntersectUnion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IntersectUnion"#) -}
+d9ae0ede5365f1248e70518df8c87832
+  $tc'LoadFunctionalMapState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10947395528782523073##
+                   13867248691288458095##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'LoadFunctionalMapState2
+                   0#
+                   Interpretation.Count.$tc'LoadFunctionalMapState1) -}
+0fbd103b41c22e143abac782b9d88187
+  $tc'LoadFunctionalMapState1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a449ae137f60a0a254eea5064c3a77d9
+  $tc'LoadFunctionalMapState2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'LoadFunctionalMapState3) -}
+f284d4a78d1cb51090ed2a89edd3f1c6
+  $tc'LoadFunctionalMapState3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LoadFunctionalMapState"#) -}
+e45f08c313d327bc51838cc25f53d3a7
+  $tc'MM1OverN :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8245149454114651400##
+                   12670192168478575329##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'MM1OverN2
+                   0#
+                   Interpretation.Count.$tc'MM1OverN1) -}
+88162039ded5660ae396fc28bcc7a0aa
+  $tc'MM1OverN1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+dc7d9157b2d07e2f5ffd0dcacf825430
+  $tc'MM1OverN2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'MM1OverN3) -}
+a9458be54ba9545b090d2f09030cae12
+  $tc'MM1OverN3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MM1OverN"#) -}
+505a8691a316500d77d06b823e0468c3
+  $tc'MMCountAll :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3418298559565921657##
+                   16702176567729855409##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'MMCountAll1
+                   0#
+                   Interpretation.Count.$tc'MM1OverN1) -}
+c76ca507ce5a9d5976b9d7a833678231
+  $tc'MMCountAll1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'MMCountAll2) -}
+56daaff3cbb04281082140c8e34ae7a5
+  $tc'MMCountAll2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MMCountAll"#) -}
+71fd7a107fee0a7ff46ab451514d3be1
+  $tc'MMDist1 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2227086959401918303##
+                   1034482254626146123##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'MMDist2
+                   0#
+                   Interpretation.Count.$tc'MM1OverN1) -}
+e9cbeee8e544770ccd20f3f1c53ce19e
+  $tc'MMDist2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tc'MMDist3) -}
+fb430e018a94455f512eed4f50226c66
+  $tc'MMDist3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MMDist1"#) -}
+4707a1fcdb0c7679928b0e7d651f652f
+  $tc'MMUniqueOnly :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11231976487508840268##
+                   8492764407786164986##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'MMUniqueOnly1
+                   0#
+                   Interpretation.Count.$tc'MM1OverN1) -}
+e0464eeac13f35f155aa4e76611bfd8c
+  $tc'MMUniqueOnly1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'MMUniqueOnly2) -}
+5ee26a3d2a94f722784ce2a439138ba6
+  $tc'MMUniqueOnly2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MMUniqueOnly"#) -}
+af3ec35547364ec798a236d975ad37db
+  $tc'NMFpkm :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10156678984104899950##
+                   912916533095761866##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'NMFpkm2
+                   0#
+                   Interpretation.Count.$tc'NMFpkm1) -}
+4ee31f875d2558e1e53f1b979770d812
+  $tc'NMFpkm1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+55950789995cdc8afb88d73664e1a514
+  $tc'NMFpkm2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tc'NMFpkm3) -}
+26c6dff91e306f663623c8bde6d6dfcf
+  $tc'NMFpkm3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NMFpkm"#) -}
+480e67cd3a27075e354f5dbb2595a593
+  $tc'NMNormed :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16662652559157293928##
+                   3248501673540909851##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'NMNormed1
+                   0#
+                   Interpretation.Count.$tc'NMFpkm1) -}
+6993ee567c0503b8afba05749ee6c1e1
+  $tc'NMNormed1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'NMNormed2) -}
+b6893070315da63c4b30a68b57988e12
+  $tc'NMNormed2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NMNormed"#) -}
+d014095e0d585ffff82063843267158b
+  $tc'NMRaw :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11162608400361535985##
+                   3567285024156677887##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'NMRaw1
+                   0#
+                   Interpretation.Count.$tc'NMFpkm1) -}
+85ab1b6ce2d702c39ed59a0740668662
+  $tc'NMRaw1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tc'NMRaw2) -}
+17200d3014a141777d480eae3f870425
+  $tc'NMRaw2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NMRaw"#) -}
+d913392300af069a306f1f8fa6837872
+  $tc'NMScaled :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4999275747797189562##
+                   2407841461510984848##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'NMScaled1
+                   0#
+                   Interpretation.Count.$tc'NMFpkm1) -}
+f70fa727a0256ee9217eb55ead81b1d1
+  $tc'NMScaled1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'NMScaled2) -}
+45a8588dbd077aa763569e49dc5509bf
+  $tc'NMScaled2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NMScaled"#) -}
+5d05836db901e35581381c9aeb1ddb11
+  $tc'SMAntisense :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2716536594556285078##
+                   10317565128821940278##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'SMAntisense2
+                   0#
+                   Interpretation.Count.$tc'SMAntisense1) -}
+e988c8aadc7ed3a9ac544c24e513465e
+  $tc'SMAntisense1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+482f67923ad79198d951eeeecedaa542
+  $tc'SMAntisense2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'SMAntisense3) -}
+81519708a31237bc73f0411151aa4986
+  $tc'SMAntisense3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SMAntisense"#) -}
+99655974ad8177bb2aec69a8802ccb24
+  $tc'SMBoth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8216036667463619636##
+                   16532267738423554547##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'SMBoth1
+                   0#
+                   Interpretation.Count.$tc'SMAntisense1) -}
+fb6af8aef6fe03b3172648ee6ae09d84
+  $tc'SMBoth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tc'SMBoth2) -}
+e3a0a3913828f0ae03c9e9e4e7e593b6
+  $tc'SMBoth2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SMBoth"#) -}
+760ea7452a1e27c3651cee6e84aa86d2
+  $tc'SMSense :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5915291906534909642##
+                   733264725658187845##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'SMSense1
+                   0#
+                   Interpretation.Count.$tc'SMAntisense1) -}
+0f22d2189c9bc2b15f3b4cb1c1af9d8f
+  $tc'SMSense1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tc'SMSense2) -}
+9e27ca730cdf9b08f0fb1ea3a9eb99c8
+  $tc'SMSense2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SMSense"#) -}
+c3717afd20be918d66e92490a8fee177
+  $tc'SeqNameAnnotator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8529543453465162766##
+                   13126259933422546530##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tc'SeqNameAnnotator2
+                   0#
+                   Interpretation.Count.$tc'SeqNameAnnotator1) -}
+3461a0a730cf6e044324794021f2b82d
+  $tc'SeqNameAnnotator1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+208c9503798c8992b8969fa04b4dd1d6
+  $tc'SeqNameAnnotator2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tc'SeqNameAnnotator3) -}
+e905e55036582f7a1b8cef57baeb2682
+  $tc'SeqNameAnnotator3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SeqNameAnnotator"#) -}
+c4d7a75fc11d23f28cbf00864ba67c11
+  $tcAnnotationIntersectionMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5839240384052710042##
+                   2197513990720624107##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcAnnotationIntersectionMode1
+                   0#
+                   GHC.Types.krep$*) -}
+c169ce220c6cacb5dced3cce4242f497
+  $tcAnnotationIntersectionMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcAnnotationIntersectionMode2) -}
+8f0b74f033f8bd800cfc5c91bd135e4a
+  $tcAnnotationIntersectionMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AnnotationIntersectionMode"#) -}
+c5cdcfc68f97e880bbf4f7e1d21f00f0
+  $tcAnnotationMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15762942665493493907##
+                   2494994005188638070##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcAnnotationMode1
+                   0#
+                   GHC.Types.krep$*) -}
+3b69ffcdee39d16487a61d9c3cfc8522
+  $tcAnnotationMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcAnnotationMode2) -}
+73f0418a8c562d3e61195ddfdc1873ab
+  $tcAnnotationMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AnnotationMode"#) -}
+a18218e4bd8b09d02d658c416c634a17
+  $tcAnnotator :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7149365591700055879##
+                   11079946480265699049##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcAnnotator1
+                   0#
+                   GHC.Types.krep$*) -}
+780692f0f4555803dfc4c2a7175a2ef2
+  $tcAnnotator1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcAnnotator2) -}
+09a5acab5757751e69c9cddde247b280
+  $tcAnnotator2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Annotator"#) -}
+5031d8a2506c60009b4de521a32817cd
+  $tcCountOpts :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6330037466347358094##
+                   9774861249015611873##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcCountOpts1
+                   0#
+                   GHC.Types.krep$*) -}
+c80d080de07830fd15f5225bfc9279a1
+  $tcCountOpts1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcCountOpts2) -}
+64060918a42c1bb29761c8c82c8bdf61
+  $tcCountOpts2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CountOpts"#) -}
+6bc8031e17cdb8a04dcc227e39f942f3
+  $tcGffLoadingState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3568899296245608521##
+                   9572802130232429829##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcGffLoadingState1
+                   0#
+                   GHC.Types.krep$*) -}
+dba51b6e63c2993c3147a684880852dc
+  $tcGffLoadingState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcGffLoadingState2) -}
+2d58c25b863905fdbbbbee6b6daffa33
+  $tcGffLoadingState2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GffLoadingState"#) -}
+6911faa6487cc717491437ca93aefd88
+  $tcLoadFunctionalMapState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6899359746840229093##
+                   13517286716114360228##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcLoadFunctionalMapState1
+                   0#
+                   GHC.Types.krep$*) -}
+23aee8efbe9e5517e970954bf3681858
+  $tcLoadFunctionalMapState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcLoadFunctionalMapState2) -}
+7be33b52e6eaf671729971428488f04e
+  $tcLoadFunctionalMapState2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LoadFunctionalMapState"#) -}
+26f7cd18e9690a922e8755e629e27245
+  $tcMMMethod :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11100974213568207335##
+                   8516360094998163782##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcMMMethod1
+                   0#
+                   GHC.Types.krep$*) -}
+4e109bf3c7e095ed4357201ff84d7d29
+  $tcMMMethod1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tcMMMethod2) -}
+f6ffe7b8dd722fd7e1fede5718535b8c
+  $tcMMMethod2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MMMethod"#) -}
+9eb2cac0df5b17834a53e3b488a005aa
+  $tcNMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3251254970451173429##
+                   15798545165607574971##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcNMode1
+                   0#
+                   GHC.Types.krep$*) -}
+d0c9225b516e12a9adfdf1d33669e894
+  $tcNMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$tcNMode2) -}
+c8783dd837716825dfac0adc1d04f8a8
+  $tcNMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NMode"#) -}
+4f14e578217df2f487dff7c791db2881
+  $tcStrandMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7673271924117846450##
+                   11517760855156517365##
+                   Interpretation.Count.$trModule
+                   Interpretation.Count.$tcStrandMode1
+                   0#
+                   GHC.Types.krep$*) -}
+edd76a82806f04f685487c4f0488c416
+  $tcStrandMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Count.$tcStrandMode2) -}
+11b353f8f66b8770001795f5e0a775c6
+  $tcStrandMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("StrandMode"#) -}
+232ffc5b85a7c125f10af308ce8ea1f1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpretation.Count.$trModule3
+                   Interpretation.Count.$trModule1) -}
+1094fe229f6df06687dd6cc7e0741fb5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$trModule2) -}
+5a18c1702b2831451321343ee0201e28
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Interpretation.Count"#) -}
+9ef28a429d3f91a06b10e4597a875c13
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Count.$trModule4) -}
+378b0cf6d400de23746a3e2c722f0c87
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+48ac1858189b8ea4cec71af482f477fe
+  $w$cshowsPrec ::
+    Interpretation.Count.AnnotationIntersectionMode -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Interpretation.Count.AnnotationIntersectionMode) ->
+                 case w of wild {
+                   Interpretation.Count.IntersectUnion
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "IntersectUnion"#)
+                   Interpretation.Count.IntersectStrict
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "IntersectStrict"#)
+                   Interpretation.Count.IntersectNonEmpty
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "IntersectNonEmpty"#) }) -}
+c5ea7e30a4515fd53a00514b48e14c6f
+  $w$s^ :: GHC.Types.Double -> GHC.Prim.Int# -> GHC.Prim.Double#
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>, Inline: [1],
+     Unfolding: (\ (w :: GHC.Types.Double) (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# ww 0# of lwild {
+                   DEFAULT
+                   -> case ww of wild {
+                        DEFAULT
+                        -> case w of ww1 { GHC.Types.D# ww2 ->
+                           letrec {
+                             $wf :: GHC.Prim.Double# -> GHC.Prim.Int# -> GHC.Prim.Double#
+                               <join 2> {- Arity: 2, Strictness: <S,U><S,U>, Inline: [2] -}
+                             = \ (ww3 :: GHC.Prim.Double#) (ww4 :: GHC.Prim.Int#) ->
+                               case GHC.Prim.remInt# ww4 2# of wild1 {
+                                 DEFAULT
+                                 -> case ww4 of wild2 {
+                                      DEFAULT
+                                      -> letrec {
+                                           $wg1 :: GHC.Prim.Double#
+                                                   -> GHC.Prim.Int#
+                                                   -> GHC.Prim.Double#
+                                                   -> GHC.Prim.Double#
+                                             <join 3> {- Arity: 3, Strictness: <S,U><S,U><S,U>,
+                                                         Inline: [2] -}
+                                           = \ (ww5 :: GHC.Prim.Double#)
+                                               (ww6 :: GHC.Prim.Int#)
+                                               (ww7 :: GHC.Prim.Double#) ->
+                                             case GHC.Prim.remInt# ww6 2# of wild3 {
+                                               DEFAULT
+                                               -> case ww6 of wild4 {
+                                                    DEFAULT
+                                                    -> $wg1
+                                                         (GHC.Prim.*## ww5 ww5)
+                                                         (GHC.Prim.quotInt# wild4 2#)
+                                                         (GHC.Prim.*## ww5 ww7)
+                                                    1# -> GHC.Prim.*## ww5 ww7 }
+                                               0#
+                                               -> $wg1
+                                                    (GHC.Prim.*## ww5 ww5)
+                                                    (GHC.Prim.quotInt# ww6 2#)
+                                                    ww7 }
+                                         } in
+                                         $wg1
+                                           (GHC.Prim.*## ww3 ww3)
+                                           (GHC.Prim.quotInt# wild2 2#)
+                                           ww3
+                                      1# -> ww3 }
+                                 0# -> $wf (GHC.Prim.*## ww3 ww3) (GHC.Prim.quotInt# ww4 2#) }
+                           } in
+                           $wf ww2 wild }
+                        0# -> 1.0## }
+                   1#
+                   -> case GHC.Err.errorWithoutStackTrace
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Double
+                             (GHC.CString.unpackCString# "Negative exponent"#)
+                      ret_ty GHC.Prim.Double#
+                      of {} }) -}
+ea44d1d3106383e3f036e5231211cc8d
+  $w$sgo1 ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map Data.ByteString.Internal.ByteString a1
+    -> Data.Map.Internal.Map Data.ByteString.Internal.ByteString a1
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><S,1*U><S,1*U>,
+     Inline: [2] -}
+b97838986d7923920ba8f51833fcc866
+  $w$sgo8 ::
+    (GHC.Maybe.Maybe a1 -> GHC.Maybe.Maybe a1)
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Data.ByteString.Internal.ByteString a1
+    -> Data.Map.Internal.Map Data.ByteString.Internal.ByteString a1
+  {- Arity: 6, Strictness: <C(S),1*C1(U)><L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+e0529429d0f1ed1941ab63d23f66005c
+  $w$sinsert ::
+    GHC.Prim.Int#
+    -> Data.Set.Internal.Set GHC.Types.Int
+    -> Data.Set.Internal.Set GHC.Types.Int
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Data.Set.Internal.Set GHC.Types.Int) ->
+                 letrec {
+                   $w$sgo3 :: GHC.Types.Int
+                              -> GHC.Prim.Int#
+                              -> Data.Set.Internal.Set GHC.Types.Int
+                              -> Data.Set.Internal.Set GHC.Types.Int
+                     {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [2] -}
+                   = \ (w1 :: GHC.Types.Int)
+                       (ww1 :: GHC.Prim.Int#)
+                       (w2 :: Data.Set.Internal.Set GHC.Types.Int) ->
+                     case w2 of wild {
+                       Data.Set.Internal.Bin dt y l r
+                       -> case y of wild1 { GHC.Types.I# y# ->
+                          case GHC.Prim.<# ww1 y# of lwild {
+                            DEFAULT
+                            -> case GHC.Prim.==# ww1 y# of lwild1 {
+                                 DEFAULT
+                                 -> case $w$sgo3 w1 ww1 r of r' { DEFAULT ->
+                                    case GHC.Prim.reallyUnsafePtrEquality#
+                                           @ (Data.Set.Internal.Set GHC.Types.Int)
+                                           r'
+                                           r of wild2 {
+                                      DEFAULT
+                                      -> Data.Set.Internal.balanceR @ GHC.Types.Int wild1 l r'
+                                      1# -> wild } }
+                                 1#
+                                 -> case GHC.Magic.lazy
+                                           @ GHC.Types.Int
+                                           w1 of wild2 { GHC.Types.I# ipv ->
+                                    case GHC.Prim.reallyUnsafePtrEquality#
+                                           @ GHC.Types.Int
+                                           w1
+                                           wild1 of wild3 {
+                                      DEFAULT -> Data.Set.Internal.Bin @ GHC.Types.Int dt wild2 l r
+                                      1# -> wild } } }
+                            1#
+                            -> case $w$sgo3 w1 ww1 l of l' { DEFAULT ->
+                               case GHC.Prim.reallyUnsafePtrEquality#
+                                      @ (Data.Set.Internal.Set GHC.Types.Int)
+                                      l'
+                                      l of wild2 {
+                                 DEFAULT -> Data.Set.Internal.balanceL @ GHC.Types.Int wild1 l' r
+                                 1# -> wild } } } }
+                       Data.Set.Internal.Tip
+                       -> case GHC.Magic.lazy
+                                 @ GHC.Types.Int
+                                 w1 of dt { GHC.Types.I# ipv ->
+                          Data.Set.Internal.Bin
+                            @ GHC.Types.Int
+                            1#
+                            dt
+                            (Data.Set.Internal.Tip @ GHC.Types.Int)
+                            (Data.Set.Internal.Tip @ GHC.Types.Int) } }
+                 } in
+                 $w$sgo3 (GHC.Types.I# ww) ww w) -}
+c4c7af3a8c36f2b69ae733e1ec768f1a
+  $wannotationRule ::
+    Interpretation.Count.AnnotationIntersectionMode
+    -> Interpretation.Count.GffIMMap
+    -> Data.GFF.GffStrand
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> [Interpretation.Count.AnnotationInfo]
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [2] -}
+9012c4f8c134ad64b3e01cf0adf95aed
+  $wexecuteCountCheck ::
+    NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 1, Strictness: <L,U>, Inline: [2] -}
+693ee8e65f746c8a72d60b47fc58838b
+  $wgo13 ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Data.ByteString.Internal.ByteString a
+    -> GHC.Maybe.Maybe a
+  {- Arity: 5, HasNoCafRefs, Strictness: <L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+e4e5c09757a8fac12570d1050c56f413
+  type AnnotationInfo =
+    Data.Strict.Tuple.Pair Data.GFF.GffStrand GHC.Types.Int
+48ac1858189b8ea4cec71af482f477fe
+  data AnnotationIntersectionMode
+    = IntersectUnion | IntersectStrict | IntersectNonEmpty
+37ce61fcf2bf834c871c111906b1f4a3
+  data AnnotationMode
+    = AnnotateSeqName
+    | AnnotateGFF GHC.IO.FilePath
+    | AnnotateFunctionalMap GHC.IO.FilePath
+49469de38649a6553ef3146adb6a2528
+  type AnnotationRule =
+    Interpretation.Count.GffIMMap
+    -> Data.GFF.GffStrand
+    -> (GHC.Types.Int, GHC.Types.Int)
+    -> [Interpretation.Count.AnnotationInfo]
+326d58bdf894156887ab5538e3b56ca6
+  data Annotator
+    = SeqNameAnnotator (GHC.Maybe.Maybe
+                          Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector)
+    | GFFAnnotator Interpretation.Count.GFFAnnotationMap
+                   [Data.ByteString.Internal.ByteString]
+                   !(Data.Vector.Unboxed.Base.Vector GHC.Types.Double)
+    | GeneMapAnnotator Data.ByteString.Internal.ByteString
+                       Interpretation.Count.GeneMapAnnotation
+                       Interpretation.Count.RefSeqInfoVector.RefSeqInfoVector
+4c865909faff1167c6cbed9c53c83588
+  data CountOpts
+    = CountOpts {optFeatures :: [Data.ByteString.Internal.ByteString],
+                 optSubFeatures :: GHC.Maybe.Maybe
+                                     [Data.ByteString.Internal.ByteString],
+                 optAnnotationMode :: !Interpretation.Count.AnnotationMode,
+                 optIntersectMode :: Interpretation.Count.AnnotationRule,
+                 optStrandMode :: !Interpretation.Count.StrandMode,
+                 optMinCount :: {-# UNPACK #-}GHC.Types.Double,
+                 optMMMethod :: !Interpretation.Count.MMMethod,
+                 optDelim :: !Data.ByteString.Internal.ByteString,
+                 optNormMode :: !Interpretation.Count.NMode,
+                 optIncludeMinus1 :: !GHC.Types.Bool}
+2ce03ce895b4fb057151ac186814ece7
+  type GFFAnnotationMap =
+    Data.Map.Internal.Map
+      Data.ByteString.Internal.ByteString Interpretation.Count.GffIMMap
+5544fef780350e45cb2ca478e7f2a0bf
+  type GeneMapAnnotation =
+    Data.Map.Internal.Map
+      Data.ByteString.Internal.ByteString [GHC.Types.Int]
+34982ae54a52888686fbd18e4fd9da0d
+  type GffIMMap =
+    Data.IntervalMap.Strict.IntervalMap
+      GHC.Types.Int [Interpretation.Count.AnnotationInfo]
+6bc3c01f7e5ea1c64dbe983979aae368
+  data GffLoadingState
+    = GffLoadingState {-# UNPACK #-}GHC.Types.Int
+                      !Interpretation.Count.GFFAnnotationMap
+                      !(Data.Map.Internal.Map
+                          Data.ByteString.Internal.ByteString GHC.Types.Int)
+                      !(Data.Map.Internal.Map
+                          Data.ByteString.Internal.ByteString GHC.Types.Double)
+51c7a297a990e47a18a235e3c30f80dc
+  data LoadFunctionalMapState
+    = LoadFunctionalMapState {-# UNPACK #-}GHC.Types.Int
+                             !(Data.Map.Internal.Map
+                                 Data.ByteString.Internal.ByteString [GHC.Types.Int])
+                             !(Data.Map.Internal.Map
+                                 Data.ByteString.Internal.ByteString GHC.Types.Int)
+7e8282abad52c1617bbdf8035e681ef1
+  data MMMethod = MMCountAll | MM1OverN | MMDist1 | MMUniqueOnly
+a58d0a64f4b5a6224c5494abfb8f2fe3
+  data NMode = NMRaw | NMNormed | NMScaled | NMFpkm
+78a5754cb4194fd5cd8d0aa5a2c1d3a6
+  data StrandMode = SMBoth | SMSense | SMAntisense
+4124a78b05fd7627f9a590c7791ace1e
+  annotationRule ::
+    Interpretation.Count.AnnotationIntersectionMode
+    -> Interpretation.Count.AnnotationRule
+  {- Arity: 4,
+     Strictness: <S,1*U><L,U><L,U><S(S(S)S(S)),1*U(1*U(U),1*U(U))>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Interpretation.Count.AnnotationIntersectionMode)
+                   (w1 :: Interpretation.Count.GffIMMap)
+                   (w2 :: Data.GFF.GffStrand)
+                   (w3 :: (GHC.Types.Int, GHC.Types.Int)) ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 Interpretation.Count.$wannotationRule w w1 w2 ww4 ww6 } } }) -}
+29a4e0baabd52961e1025f27c603df02
+  executeCount ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+13e62ddcbd45e951b9ed95bd9edd303c
+  executeCountCheck ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <L,A><L,U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: Language.NGLessObject) (w1 :: NGLess.KwArgsValues) ->
+                 Interpretation.Count.$wexecuteCountCheck w1) -}
+454bf99344c386dabcc9537770302652
+  loadAnnotator ::
+    Interpretation.Count.AnnotationMode
+    -> Interpretation.Count.CountOpts
+    -> NGLess.NGError.NGLessIO [Interpretation.Count.Annotator]
+  {- Arity: 2, Strictness: <S,1*U><L,U(U,U,A,A,A,A,A,A,A,A)> -}
+d9925374de4e721a5cd0ad4d71c53375
+  loadFunctionalMap ::
+    GHC.IO.FilePath
+    -> [Data.ByteString.Internal.ByteString]
+    -> NGLess.NGError.NGLessIO [Interpretation.Count.Annotator]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+4c865909faff1167c6cbed9c53c83588
+  optAnnotationMode ::
+    Interpretation.Count.CountOpts
+    -> Interpretation.Count.AnnotationMode
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLLL),1*U(A,A,U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds3 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optDelim ::
+    Interpretation.Count.CountOpts
+    -> Data.ByteString.Internal.ByteString
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSLL),1*U(A,A,A,A,A,A,A,U(U,U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds7 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optFeatures ::
+    Interpretation.Count.CountOpts
+    -> [Data.ByteString.Internal.ByteString]
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds1 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optIncludeMinus1 ::
+    Interpretation.Count.CountOpts -> GHC.Types.Bool
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds9 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optIntersectMode ::
+    Interpretation.Count.CountOpts
+    -> Interpretation.Count.AnnotationRule
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLLL),1*U(A,A,A,1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds4 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optMMMethod ::
+    Interpretation.Count.CountOpts -> Interpretation.Count.MMMethod
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLLL),1*U(A,A,A,A,A,A,U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds6 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optMinCount :: Interpretation.Count.CountOpts -> GHC.Types.Double
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLLL),1*U(A,A,A,A,A,U,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 GHC.Types.D# dt }) -}
+4c865909faff1167c6cbed9c53c83588
+  optNormMode ::
+    Interpretation.Count.CountOpts -> Interpretation.Count.NMode
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds8 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optStrandMode ::
+    Interpretation.Count.CountOpts -> Interpretation.Count.StrandMode
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLLL),1*U(A,A,A,A,U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds5 }) -}
+4c865909faff1167c6cbed9c53c83588
+  optSubFeatures ::
+    Interpretation.Count.CountOpts
+    -> GHC.Maybe.Maybe [Data.ByteString.Internal.ByteString]
+  RecSel Left Interpretation.Count.CountOpts
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLLL),1*U(A,1*U,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpretation.Count.CountOpts) ->
+                 case ds of wild { Interpretation.Count.CountOpts ds1 ds2 ds3 ds4 ds5 dt ds6 ds7 ds8 ds9 ->
+                 ds2 }) -}
+85d8214c97553b7c55ff2544e726ae69
+  performCount ::
+    FileOrStream.FileOrStream
+    -> Data.Text.Internal.Text
+    -> [Interpretation.Count.Annotator]
+    -> Interpretation.Count.CountOpts
+    -> NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 4,
+     Strictness: <L,U><L,U(U,U,U)><L,U><L,U(A,A,A,C(C1(C1(U))),U,U,U,U,U,U)> -}
+instance GHC.Classes.Eq [Interpretation.Count.AnnotationIntersectionMode]
+  = Interpretation.Count.$fEqAnnotationIntersectionMode
+instance GHC.Classes.Eq [Interpretation.Count.AnnotationMode]
+  = Interpretation.Count.$fEqAnnotationMode
+instance GHC.Classes.Eq [Interpretation.Count.MMMethod]
+  = Interpretation.Count.$fEqMMMethod
+instance GHC.Classes.Eq [Interpretation.Count.NMode]
+  = Interpretation.Count.$fEqNMode
+instance GHC.Classes.Eq [Interpretation.Count.StrandMode]
+  = Interpretation.Count.$fEqStrandMode
+instance Control.DeepSeq.NFData [Interpretation.Count.Annotator]
+  = Interpretation.Count.$fNFDataAnnotator
+instance GHC.Show.Show [Interpretation.Count.AnnotationIntersectionMode]
+  = Interpretation.Count.$fShowAnnotationIntersectionMode
+"SPEC/Interpretation.Count ! @ Vector @ Int" [orphan] [1] forall ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                                Data.Vector.Unboxed.Base.Vector
+                                                                                GHC.Types.Int)
+  Data.Vector.Generic.! @ Data.Vector.Unboxed.Base.Vector
+                        @ GHC.Types.Int
+                        $dVector
+  = Interpretation.Count.$s!1
+"SPEC/Interpretation.Count $fEqInterval @ Int" [orphan] forall (v :: GHC.Classes.Eq
+                                                                       GHC.Types.Int)
+  Data.IntervalMap.Interval.$fEqInterval @ GHC.Types.Int v
+  = Interpretation.Count.$s$fEqInterval
+"SPEC/Interpretation.Count $fEqInterval_$c/= @ Int" [orphan] forall ($dEq :: GHC.Classes.Eq
+                                                                               GHC.Types.Int)
+  Data.IntervalMap.Interval.$fEqInterval_$c/= @ GHC.Types.Int $dEq
+  = Interpretation.Count.$s$fEqInterval_$s$fEqInterval_$c/=
+"SPEC/Interpretation.Count $fIntervalIntervala @ Int" [orphan] forall (v :: GHC.Classes.Ord
+                                                                              GHC.Types.Int)
+  Data.IntervalMap.Generic.Interval.$fIntervalIntervala @ GHC.Types.Int
+                                                        v
+  = Interpretation.Count.$s$fIntervalIntervala
+"SPEC/Interpretation.Count $fNFDataVector_$crnf @ RefSeqInfo" [orphan] [2] forall (w :: Control.DeepSeq.NFData
+                                                                                          Interpretation.Count.RefSeqInfoVector.RefSeqInfo)
+  Data.Vector.$fNFDataVector_$crnf @ Interpretation.Count.RefSeqInfoVector.RefSeqInfo
+                                   w
+  = Interpretation.Count.$s$fNFDataVector_$crnf
+"SPEC/Interpretation.Count $fOrd(,)_$ccompare @ Int @ ByteString" [orphan] [2] forall (w1 :: GHC.Classes.Ord
+                                                                                               Data.ByteString.Internal.ByteString)
+                                                                                      (w :: GHC.Classes.Ord
+                                                                                              GHC.Types.Int)
+  GHC.Classes.$fOrd(,)_$ccompare @ GHC.Types.Int
+                                 @ Data.ByteString.Internal.ByteString
+                                 w
+                                 w1
+  = Interpretation.Count.$s$fOrd(,)_$ccompare
+"SPEC/Interpretation.Count $fOrdInterval @ Int" [orphan] forall (v :: GHC.Classes.Ord
+                                                                        GHC.Types.Int)
+  Data.IntervalMap.Interval.$fOrdInterval @ GHC.Types.Int v
+  = Interpretation.Count.$s$fOrdInterval
+"SPEC/Interpretation.Count fromList @ ByteString _" [orphan] forall @ a
+                                                                    ($dOrd :: GHC.Classes.Ord
+                                                                                Data.ByteString.Internal.ByteString)
+  Data.Map.Strict.Internal.fromList @ Data.ByteString.Internal.ByteString
+                                    @ a
+                                    $dOrd
+  = Interpretation.Count.$sfromList @ a
+"SPEC/Interpretation.Count fromList @ Int" [orphan] forall ($dOrd :: GHC.Classes.Ord
+                                                                       GHC.Types.Int)
+  Data.Set.Internal.fromList @ GHC.Types.Int $dOrd
+  = Interpretation.Count.$sfromList1
+"SPEC/Interpretation.Count sinkVectorNC @ Vector @ (Int,
+                                                   ByteLine) @ NGLessIO _" [orphan] forall @ o
+                                                                                                                                                    ($dPrimMonad :: Control.Monad.Primitive.PrimMonad
+                                                                                                                                                                      NGLess.NGError.NGLessIO)
+                                                                                                                                                    ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                                                                                                                   Data.Vector.Vector
+                                                                                                                                                                   (GHC.Types.Int,
+                                                                                                                                                                    Utils.Conduit.ByteLine))
+  Data.Conduit.Combinators.sinkVectorNC @ Data.Vector.Vector
+                                        @ (GHC.Types.Int, Utils.Conduit.ByteLine)
+                                        @ NGLess.NGError.NGLessIO
+                                        @ o
+                                        $dVector
+                                        $dPrimMonad
+  = Interpretation.Count.$ssinkVectorNC1 @ o
+"SPEC/Interpretation.Count sinkVectorNC @ Vector @ ByteLine @ NGLessIO _" [orphan] forall @ o
+                                                                                          ($dPrimMonad :: Control.Monad.Primitive.PrimMonad
+                                                                                                            NGLess.NGError.NGLessIO)
+                                                                                          ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                                                         Data.Vector.Vector
+                                                                                                         Utils.Conduit.ByteLine)
+  Data.Conduit.Combinators.sinkVectorNC @ Data.Vector.Vector
+                                        @ Utils.Conduit.ByteLine
+                                        @ NGLess.NGError.NGLessIO
+                                        @ o
+                                        $dVector
+                                        $dPrimMonad
+  = Interpretation.Count.$ssinkVectorNC @ o
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

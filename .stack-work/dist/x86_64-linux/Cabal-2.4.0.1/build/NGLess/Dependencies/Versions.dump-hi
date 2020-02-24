@@ -1,0 +1,96 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:28.431011652 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Dependencies.Versions 8065
+  interface hash: 55c801a751dc6f171d0b8a6e5806fc58
+  ABI hash: 04c7bd829a0fda9e091b63e4ee01ab9d
+  export-list hash: b7498a980b7bee80efd9c37dee825339
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0dd3e2524193db66c144385238511734
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Dependencies.Versions.bwaVersion
+  Dependencies.Versions.megahitVersion
+  Dependencies.Versions.minimap2Version
+  Dependencies.Versions.prodigalVersion
+  Dependencies.Versions.samtoolsVersion
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+c45480ffbed17304b8a2694998773035
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Dependencies.Versions.$trModule3
+                   Dependencies.Versions.$trModule1) -}
+eb6e4aba6e3e8ca34590570158a3cc92
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Dependencies.Versions.$trModule2) -}
+96d1a0ccf41679a0bea86b8922dc5a0b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Dependencies.Versions"#) -}
+0e800725e69c054e87195e5020148dcf
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Dependencies.Versions.$trModule4) -}
+14971b81c4bce7ec3ba889c3f45f2a0f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+82ed7d25ae759e0c3713638b13fc819d
+  bwaVersion :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Dependencies.Versions.bwaVersion1) -}
+fa2ef134b40af77a9abc2e180bc04e72
+  bwaVersion1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("0.7.17"#) -}
+407f5f57a5f5ac8b5175d0bc9935a8d5
+  megahitVersion :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Dependencies.Versions.megahitVersion1) -}
+48a2d1b4405f801bb1097924dac848e1
+  megahitVersion1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("1.1.4"#) -}
+96e303a5f7c1404acb1ae09dee061cd6
+  minimap2Version :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Dependencies.Versions.minimap2Version1) -}
+a667b48104c451b0ebe5d49f8dea3f23
+  minimap2Version1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("2.16"#) -}
+ad56281b39439e93436a1e84eca7fa65
+  prodigalVersion :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Dependencies.Versions.prodigalVersion1) -}
+99de2c5a521c54848ab80670ad5e8c46
+  prodigalVersion1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("2.6.3"#) -}
+452f0881ed11ec841eb2e52892c666ec
+  samtoolsVersion :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Dependencies.Versions.samtoolsVersion1) -}
+3ee18a0c0271547c75672cf32402802b
+  samtoolsVersion1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("1.6"#) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

@@ -1,0 +1,2059 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:30.666872137 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError [family instance module] 8065
+  interface hash: 205469dd8de35d8745292023a13d524a
+  ABI hash: 9175c652eec68d1a195f3eb2d7471cb5
+  export-list hash: 500bdef9411bf7c9c4e288fc5b605d1e
+  orphan hash: 7b68b12f6ec443d2387206ce4ef9ecc2
+  flag hash: fd62a2610491eac428bb710b6481b796
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  NGLess.NGError.runNGLess
+  NGLess.NGError.testNGLessIO
+  NGLess.NGError.throwDataError
+  NGLess.NGError.throwGenericError
+  NGLess.NGError.throwScriptError
+  NGLess.NGError.throwShouldNotOccur
+  NGLess.NGError.throwSystemError
+  NGLess.NGError.NGError{NGLess.NGError.NGError}
+  NGLess.NGError.NGErrorType{NGLess.NGError.DataError NGLess.NGError.GenericError NGLess.NGError.NoErrorExit NGLess.NGError.ScriptError NGLess.NGError.ShouldNotOccur NGLess.NGError.SystemError}
+  NGLess.NGError.NGLess
+  NGLess.NGError.NGLessIO{NGLess.NGError.NGLessIO unwrapNGLessIO}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      containers-0.6.0.1 deepseq-1.4.4.0 exceptions-0.10.4
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 integer-gmp-1.0.2.0 mtl-2.2.2
+                      primitive-0.6.4.0 resourcet-1.2.2 stm-2.5.0.0
+                      template-haskell-2.14.0.0 transformers-0.5.6.2
+                      unliftio-core-0.1.2.0
+orphans: stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+import  -/  base-4.12.0.0:Control.Exception 041da5b6267cf6b639ff5716d5b299a9
+import  -/  base-4.12.0.0:Control.Monad.Fail e3390d20cbc1146ebe051d327f964e5d
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Exception.Type 98b0fca1a406b013cbf2a34ff23be207
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  exceptions-0.10.4:Control.Monad.Catch 85f48efbbcf90183fbe41164b686a061
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  primitive-0.6.4.0:Control.Monad.Primitive d6c3e52d4f48d2121d48cda39ba84e40
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource.Internal 501d62f3c9254d0531a3c1329c03910f
+import  -/  unliftio-core-0.1.2.0:Control.Monad.IO.Unlift f8f4d10cc7b67433826b7a5b824acd4c
+f1fd902a0de985a61e8d9110730dfc21
+  $fApplicativeNGLessIO ::
+    GHC.Base.Applicative NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fFunctorNGLessIO
+                  NGLess.NGError.$fApplicativeNGLessIO5
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N))
+                  (\ @ a @ b -> NGLess.NGError.$fApplicativeNGLessIO4 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (NGLess.NGError.N:NGLessIO[0]) <a -> b>_N
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N))
+                  (\ @ a @ b @ c ->
+                   NGLess.NGError.$fApplicativeNGLessIO3 @ c @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <c>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <c>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <c>_N))
+                  (\ @ a @ b -> NGLess.NGError.$fApplicativeNGLessIO2 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N))
+                  NGLess.NGError.$fApplicativeNGLessIO1
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+b17d868a66248610d877fd36b37db7ad
+  $fApplicativeNGLessIO1 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   (w2 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (w3 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO b)
+                   (w4 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (w2
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         w4)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (w3
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <b>_N)
+                         w4)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, ipv1 #) } }) -}
+947ec4c94b3e8050491be557db140e6e
+  $fApplicativeNGLessIO2 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (w1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (w2 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO b)
+                   (w3 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (w1
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         w3)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds { (#,#) ipv ipv1 ->
+                 (w2
+                    `cast`
+                  (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                       <GHC.Types.IO>_R <b>_N)
+                    w3)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv }) -}
+0d8646fbfbef8822b351eaab92898a7f
+  $fApplicativeNGLessIO3 ::
+    (a -> b -> c)
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, c #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*C1(C1(U))><C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ c
+                   @ b
+                   @ a
+                   (w1 :: a -> b -> c)
+                   (w2 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (w3 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO b)
+                   (w4 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (w2
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         w4)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (w3
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <b>_N)
+                         w4)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, w1 ipv1 ipv3 #) } }) -}
+266be676f79446dc23e025d6ae66a6b4
+  $fApplicativeNGLessIO4 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT
+      GHC.Types.IO (a -> b)
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (ds :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO (a -> b))
+                   (ds1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                             GHC.Types.IO a)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (ds
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a -> b>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a -> b>_R)
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case (ds1
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, ipv1 ipv3 #) } }) -}
+413e47a64106106b90a1ed1fc5f72f72
+  $fApplicativeNGLessIO5 ::
+    a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (eta :: a)
+                   (eta1 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# eta2, eta #)) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fEqNGError :: GHC.Classes.Eq NGLess.NGError.NGError
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGError
+                  NGLess.NGError.$fEqNGError_$c==
+                  NGLess.NGError.$fEqNGError_$c/= -}
+d92c3e92452b362aa18b280880e1b593
+  $fEqNGErrorType :: GHC.Classes.Eq NGLess.NGError.NGErrorType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGErrorType
+                  NGLess.NGError.$fEqNGErrorType_$c==
+                  NGLess.NGError.$fEqNGErrorType_$c/= -}
+d92c3e92452b362aa18b280880e1b593
+  $fEqNGErrorType_$c/= ::
+    NGLess.NGError.NGErrorType
+    -> NGLess.NGError.NGErrorType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: NGLess.NGError.NGErrorType)
+                   (y :: NGLess.NGError.NGErrorType) ->
+                 case x of wild {
+                   NGLess.NGError.ShouldNotOccur
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        NGLess.NGError.ShouldNotOccur -> GHC.Types.False }
+                   NGLess.NGError.ScriptError
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        NGLess.NGError.ScriptError -> GHC.Types.False }
+                   NGLess.NGError.DataError
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        NGLess.NGError.DataError -> GHC.Types.False }
+                   NGLess.NGError.SystemError
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        NGLess.NGError.SystemError -> GHC.Types.False }
+                   NGLess.NGError.GenericError
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        NGLess.NGError.GenericError -> GHC.Types.False }
+                   NGLess.NGError.NoErrorExit
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        NGLess.NGError.NoErrorExit -> GHC.Types.False } }) -}
+d92c3e92452b362aa18b280880e1b593
+  $fEqNGErrorType_$c== ::
+    NGLess.NGError.NGErrorType
+    -> NGLess.NGError.NGErrorType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: NGLess.NGError.NGErrorType)
+                   (ds1 :: NGLess.NGError.NGErrorType) ->
+                 case ds of wild {
+                   NGLess.NGError.ShouldNotOccur
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.ShouldNotOccur -> GHC.Types.True }
+                   NGLess.NGError.ScriptError
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.ScriptError -> GHC.Types.True }
+                   NGLess.NGError.DataError
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.DataError -> GHC.Types.True }
+                   NGLess.NGError.SystemError
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.SystemError -> GHC.Types.True }
+                   NGLess.NGError.GenericError
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.GenericError -> GHC.Types.True }
+                   NGLess.NGError.NoErrorExit
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.NoErrorExit -> GHC.Types.True } }) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fEqNGError_$c/= ::
+    NGLess.NGError.NGError -> NGLess.NGError.NGError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(U,U)><S(SS),1*U(U,U)>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: NGLess.NGError.NGError) (y :: NGLess.NGError.NGError) ->
+                 case NGLess.NGError.$fEqNGError_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fEqNGError_$c== ::
+    NGLess.NGError.NGError -> NGLess.NGError.NGError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(U,U)><S(SS),1*U(U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: NGLess.NGError.NGError) (w1 :: NGLess.NGError.NGError) ->
+                 case w of ww { NGLess.NGError.NGError ww1 ww2 ->
+                 case w1 of ww3 { NGLess.NGError.NGError ww4 ww5 ->
+                 case ww1 of wild {
+                   NGLess.NGError.ShouldNotOccur
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.ShouldNotOccur -> GHC.Base.eqString ww2 ww5 }
+                   NGLess.NGError.ScriptError
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.ScriptError -> GHC.Base.eqString ww2 ww5 }
+                   NGLess.NGError.DataError
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.DataError -> GHC.Base.eqString ww2 ww5 }
+                   NGLess.NGError.SystemError
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.SystemError -> GHC.Base.eqString ww2 ww5 }
+                   NGLess.NGError.GenericError
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.GenericError -> GHC.Base.eqString ww2 ww5 }
+                   NGLess.NGError.NoErrorExit
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        NGLess.NGError.NoErrorExit -> GHC.Base.eqString ww2 ww5 } } } }) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fExceptionNGError ::
+    GHC.Exception.Type.Exception NGLess.NGError.NGError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGError
+                  NGLess.NGError.$fExceptionNGError1
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <NGLess.NGError.NGError>_N)
+                  NGLess.NGError.$fShowNGError
+                  NGLess.NGError.$fExceptionNGError_$ctoException
+                  NGLess.NGError.$fExceptionNGError_$cfromException
+                  NGLess.NGError.$fExceptionNGError_$cshow -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fExceptionNGError1 ::
+    Data.Typeable.Internal.TypeRep NGLess.NGError.NGError
+  {- Unfolding: (case Data.Typeable.Internal.$wmkTrCon
+                        @ *
+                        @ NGLess.NGError.NGError
+                        13407444954519078563##
+                        6037745128591129631##
+                        NGLess.NGError.$trModule
+                        NGLess.NGError.$fExceptionNGError2
+                        0#
+                        GHC.Types.krep$*
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.SomeTypeRep) of ww7 { (#,,,,#) ww8 ww9 ww10 ww11 ww12 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ NGLess.NGError.NGError
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12 }) -}
+2d603ee87d6828e9ad2ed4b54e4bfa04
+  $fExceptionNGError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   NGLess.NGError.$fExceptionNGError3) -}
+2063f9c17ab1a1ebf6d6267d15b91dcb
+  $fExceptionNGError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGError"#) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fExceptionNGError_$cfromException ::
+    GHC.Exception.Type.SomeException
+    -> GHC.Maybe.Maybe NGLess.NGError.NGError
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.Type.SomeException) ->
+                 case ds of wild { GHC.Exception.Type.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.sameTypeRep
+                        @ *
+                        @ *
+                        @ e1
+                        @ NGLess.NGError.NGError
+                        (GHC.Exception.Type.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                        NGLess.NGError.$fExceptionNGError1 of wild1 {
+                   GHC.Types.False -> GHC.Maybe.Nothing @ NGLess.NGError.NGError
+                   GHC.Types.True
+                   -> (GHC.Maybe.Just @ e1 e2)
+                        `cast`
+                      (GHC.Maybe.Maybe
+                         (UnsafeCo representational e1 NGLess.NGError.NGError))_R } }) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fExceptionNGError_$cshow ::
+    NGLess.NGError.NGError -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SS),1*U(U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: NGLess.NGError.NGError) ->
+                 NGLess.NGError.$fExceptionNGError_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fExceptionNGError_$cshowsPrec ::
+    GHC.Types.Int -> NGLess.NGError.NGError -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(SS),1*U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: NGLess.NGError.NGError) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { NGLess.NGError.NGError ww3 ww4 ->
+                 NGLess.NGError.$w$cshowsPrec ww1 ww3 ww4 } }) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fExceptionNGError_$ctoException ::
+    NGLess.NGError.NGError -> GHC.Exception.Type.SomeException
+  {- Arity: 1 -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fFunctorNGLessIO :: GHC.Base.Functor NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  (\ @ a @ b -> NGLess.NGError.$fFunctorNGLessIO2 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N))
+                  NGLess.NGError.$fFunctorNGLessIO1
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+9a86151355aba3870ac469bd5c2f500d
+  $fFunctorNGLessIO1 ::
+    a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><C(C(S(SL))),1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   (x :: a)
+                   (eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                             GHC.Types.IO b)
+                   (eta1 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (eta
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <b>_N)
+                         eta1)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv, x #) }) -}
+064e5c25df7d8175d0a25e270fd60f44
+  $fFunctorNGLessIO2 ::
+    (a -> b)
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (f :: a -> b)
+                   (ds :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (ds
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv, f ipv1 #) }) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadCatchNGLessIO ::
+    Control.Monad.Catch.MonadCatch NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadThrowNGLessIO
+                  NGLess.NGError.$fMonadCatchNGLessIO1
+                    `cast`
+                  (forall (e :: <*>_N) (a :: <*>_N).
+                   <GHC.Exception.Type.Exception e>_R
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R (<e>_R ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+d410a901df2f9024818f52b900672454
+  $fMonadCatchNGLessIO1 ::
+    GHC.Exception.Type.Exception e =>
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> (e
+        -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a)
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,1*C1(C1(U))><L,1*C1(C1(C1(U)))><L,U><S,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ e
+                   @ a
+                   ($dException :: GHC.Exception.Type.Exception e)
+                   (ds :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (c :: e
+                         -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ a
+                   @ GHC.Exception.Type.SomeException
+                   (ds
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                         <GHC.Types.IO>_R <a>_N)
+                      r)
+                     `cast`
+                   (GHC.Types.N:IO[0] <a>_R)
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot] ->
+                    case GHC.Exception.Type.fromException @ e $dException e1 of wild {
+                      GHC.Maybe.Nothing
+                      -> GHC.Prim.raiseIO# @ GHC.Exception.Type.SomeException @ a e1
+                      GHC.Maybe.Just e'
+                      -> ((c e')
+                            `cast`
+                          (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                               <GHC.Types.IO>_R <a>_N)
+                            r)
+                           `cast`
+                         (GHC.Types.N:IO[0] <a>_R) })
+                   eta) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadErrorNGErrorNGLessIO ::
+    Control.Monad.Error.Class.MonadError
+      NGLess.NGError.NGError NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGError
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadNGLessIO
+                  NGLess.NGError.$fMonadErrorNGErrorNGLessIO1
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <NGLess.NGError.NGError>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N))
+                  NGLess.NGError.$fMonadErrorNGErrorNGLessIO_$ccatchError -}
+e29d29754841bd7c85f1e964a68f7ba3
+  $fMonadErrorNGErrorNGLessIO1 ::
+    NGLess.NGError.NGError
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, Strictness: <B,U><B,A><B,U>x,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (x :: NGLess.NGError.NGError)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.raiseIO#
+                   @ GHC.Exception.Type.SomeException
+                   @ a
+                   (NGLess.NGError.$fExceptionNGError_$ctoException x)
+                   eta1) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadErrorNGErrorNGLessIO_$ccatchError ::
+    NGLess.NGError.NGLessIO a
+    -> (NGLess.NGError.NGError -> NGLess.NGError.NGLessIO a)
+    -> NGLess.NGError.NGLessIO a
+  {- Strictness: x -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadFailNGLessIO ::
+    Control.Monad.Fail.MonadFail NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadNGLessIO
+                  NGLess.NGError.$fMonadFailNGLessIO1
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Base.String>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+7698cdf56974b29356fc3e187654ea99
+  $fMonadFailNGLessIO1 ::
+    GHC.Base.String
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, Strictness: <B,1*U><B,A><B,U>x, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (w :: GHC.Base.String)
+                   (w1 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 NGLess.NGError.$w$cfail @ a w w2) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadIONGLessIO ::
+    Control.Monad.IO.Class.MonadIO NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadNGLessIO
+                  NGLess.NGError.$fMonadIONGLessIO1
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Types.IO a>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R
+                                 <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N) -}
+7fdf12d502eb560392d2c8aa078b22c3
+  $fMonadIONGLessIO1 ::
+    GHC.Types.IO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   (eta :: GHC.Types.IO a)
+                   (ds :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                 eta) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadMaskNGLessIO ::
+    Control.Monad.Catch.MonadMask NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadCatchNGLessIO
+                  NGLess.NGError.$fMonadMaskNGLessIO3
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <(forall a. NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a)
+                    -> NGLess.NGError.NGLessIO b>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N))
+                  NGLess.NGError.$fMonadMaskNGLessIO2
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <(forall a. NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a)
+                    -> NGLess.NGError.NGLessIO b>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N))
+                  (\ @ a @ b @ c -> NGLess.NGError.$fMonadMaskNGLessIO1 @ b @ a @ c)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R (<a>_R
+                         ->_R <Control.Monad.Catch.ExitCase b>_R
+                         ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <c>_N)
+                   ->_R (<a>_R ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N)
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <(b,
+                                         c)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                             <GHC.Types.IO>_R
+                                                             <(b,
+                                                               c)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(b,
+                                                                                                             c)>_N)) -}
+1fe5f6dee5650d3af392aa22607bf936
+  $fMonadMaskNGLessIO1 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> (a
+        -> Control.Monad.Catch.ExitCase b
+        -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO c)
+    -> (a
+        -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b)
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, (b, c) #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(C(U(U,U)))><L,C(C1(C1(C1(U(U,U)))))><L,C(C1(U))><L,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   @ c
+                   (w1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (w2 :: a
+                          -> Control.Monad.Catch.ExitCase b
+                          -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO c)
+                   (w3 :: a
+                          -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b)
+                   (w4 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                 Control.Monad.Catch.$fMonadMaskIO1
+                   @ a
+                   @ b
+                   @ c
+                   (w1
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                         <GHC.Types.IO>_R <a>_N)
+                      w4)
+                   (\ (resource :: a) (exitCase :: Control.Monad.Catch.ExitCase b) ->
+                    (w2 resource exitCase)
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                         <GHC.Types.IO>_R <c>_N)
+                      w4)
+                   (\ (resource :: a) ->
+                    (w3 resource)
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                         <GHC.Types.IO>_R <b>_N)
+                      w4)) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadMaskNGLessIO2 ::
+    ((forall a. NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a)
+     -> NGLess.NGError.NGLessIO b)
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: (\ @ b
+                   (ds :: (forall a.
+                           NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a)
+                          -> NGLess.NGError.NGLessIO b)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds2 {
+                   DEFAULT
+                   -> GHC.Prim.maskUninterruptible#
+                        @ b
+                        ((ds
+                            (\ @ a
+                               (ds4 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO a)
+                               (eta2 :: GHC.IORef.IORef
+                                          Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                               (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                             GHC.Prim.maskAsyncExceptions#
+                               @ a
+                               (ds4
+                                  `cast`
+                                (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                     <GHC.Types.IO>_R <a>_N)
+                                  eta2)
+                                 `cast`
+                               (GHC.Types.N:IO[0] <a>_R)
+                               eta3)
+                              `cast`
+                            (forall (a :: <*>_N).
+                             Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                             ->_R (<GHC.IORef.IORef
+                                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                     <GHC.Types.IO>_R
+                                                                     <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)))
+                           `cast`
+                         (NGLess.NGError.N:NGLessIO[0] <b>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R <b>_N)
+                           eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   0#
+                   -> GHC.Prim.maskUninterruptible#
+                        @ b
+                        ((ds
+                            (\ @ a
+                               (ds4 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO a)
+                               (eta2 :: GHC.IORef.IORef
+                                          Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                               (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                             GHC.Prim.unmaskAsyncExceptions#
+                               @ a
+                               (ds4
+                                  `cast`
+                                (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                     <GHC.Types.IO>_R <a>_N)
+                                  eta2)
+                                 `cast`
+                               (GHC.Types.N:IO[0] <a>_R)
+                               eta3)
+                              `cast`
+                            (forall (a :: <*>_N).
+                             Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                             ->_R (<GHC.IORef.IORef
+                                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                     <GHC.Types.IO>_R
+                                                                     <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)))
+                           `cast`
+                         (NGLess.NGError.N:NGLessIO[0] <b>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R <b>_N)
+                           eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   1#
+                   -> ((ds
+                          (\ @ a
+                             (ds4 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                       GHC.Types.IO a)
+                             (eta2 :: GHC.IORef.IORef
+                                        Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                             (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                           GHC.Prim.maskUninterruptible#
+                             @ a
+                             (ds4
+                                `cast`
+                              (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                   <GHC.Types.IO>_R <a>_N)
+                                eta2)
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             eta3)
+                            `cast`
+                          (forall (a :: <*>_N).
+                           Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                           ->_R (<GHC.IORef.IORef
+                                    Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                 ->_R Sym (GHC.Types.N:IO[0]
+                                               <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)))
+                         `cast`
+                       (NGLess.NGError.N:NGLessIO[0] <b>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                 <GHC.Types.IO>_R <b>_N)
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv } }) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadMaskNGLessIO3 ::
+    ((forall a. NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a)
+     -> NGLess.NGError.NGLessIO b)
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: (\ @ b
+                   (ds :: (forall a.
+                           NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a)
+                          -> NGLess.NGError.NGLessIO b)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds2 {
+                   DEFAULT
+                   -> ((ds
+                          (\ @ a
+                             (ds4 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                       GHC.Types.IO a)
+                             (eta2 :: GHC.IORef.IORef
+                                        Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                             (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                           GHC.Prim.maskAsyncExceptions#
+                             @ a
+                             (ds4
+                                `cast`
+                              (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                   <GHC.Types.IO>_R <a>_N)
+                                eta2)
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             eta3)
+                            `cast`
+                          (forall (a :: <*>_N).
+                           Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                           ->_R (<GHC.IORef.IORef
+                                    Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                 ->_R Sym (GHC.Types.N:IO[0]
+                                               <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)))
+                         `cast`
+                       (NGLess.NGError.N:NGLessIO[0] <b>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                 <GHC.Types.IO>_R <b>_N)
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ b
+                        ((ds
+                            (\ @ a
+                               (ds4 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO a)
+                               (eta2 :: GHC.IORef.IORef
+                                          Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                               (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                             GHC.Prim.unmaskAsyncExceptions#
+                               @ a
+                               (ds4
+                                  `cast`
+                                (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                     <GHC.Types.IO>_R <a>_N)
+                                  eta2)
+                                 `cast`
+                               (GHC.Types.N:IO[0] <a>_R)
+                               eta3)
+                              `cast`
+                            (forall (a :: <*>_N).
+                             Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                             ->_R (<GHC.IORef.IORef
+                                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                   ->_R Sym (GHC.Types.N:IO[0]
+                                                 <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                     <GHC.Types.IO>_R
+                                                                     <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)))
+                           `cast`
+                         (NGLess.NGError.N:NGLessIO[0] <b>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R <b>_N)
+                           eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   1#
+                   -> ((ds
+                          (\ @ a
+                             (ds4 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                       GHC.Types.IO a)
+                             (eta2 :: GHC.IORef.IORef
+                                        Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                             (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                           GHC.Prim.maskUninterruptible#
+                             @ a
+                             (ds4
+                                `cast`
+                              (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                   <GHC.Types.IO>_R <a>_N)
+                                eta2)
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             eta3)
+                            `cast`
+                          (forall (a :: <*>_N).
+                           Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                           ->_R (<GHC.IORef.IORef
+                                    Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                 ->_R Sym (GHC.Types.N:IO[0]
+                                               <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)))
+                         `cast`
+                       (NGLess.NGError.N:NGLessIO[0] <b>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                 <GHC.Types.IO>_R <b>_N)
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv } }) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadNGLessIO :: GHC.Base.Monad NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fApplicativeNGLessIO
+                  (\ @ a @ b -> NGLess.NGError.$fMonadNGLessIO1 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R (<a>_R ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N)
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N))
+                  NGLess.NGError.$fMonadNGLessIO_$s$fMonadResourceT_$c>>
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N)
+                  NGLess.NGError.$fApplicativeNGLessIO5
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N))
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <[GHC.Types.Char]>_R
+                   ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N) -}
+fccc8326374b07414d708766fa1f92a5
+  $fMonadNGLessIO1 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> (a
+        -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b)
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (ds :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (f :: a
+                         -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (ds
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 ((f ipv1)
+                    `cast`
+                  (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                       <GHC.Types.IO>_R <b>_N)
+                    r)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv }) -}
+c28f3c0b7cbb75bd47cbdc1249f929eb
+  $fMonadNGLessIO_$s$fMonadResourceT_$c>> ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (k :: Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO b)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (m1
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (k `cast`
+                  (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                       <GHC.Types.IO>_R <b>_N)
+                    r)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv })
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                 ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                         GHC.Types.IO b>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                        <GHC.Types.IO>_R <b>_N)) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadResourceNGLessIO ::
+    Control.Monad.Trans.Resource.Internal.MonadResource
+      NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadIONGLessIO
+                  NGLess.NGError.$fMonadResourceNGLessIO1
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R
+                                 <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N) -}
+357e5a05a60817cd2e40aac96b814319
+  $fMonadResourceNGLessIO1 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   (eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                             GHC.Types.IO a)
+                   (eta1 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                 eta
+                   `cast`
+                 (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                      <GHC.Types.IO>_R <a>_N)
+                   eta1) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadThrowNGLessIO ::
+    Control.Monad.Catch.MonadThrow NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadNGLessIO
+                  NGLess.NGError.$fMonadThrowNGLessIO1
+                    `cast`
+                  (forall (e :: <*>_N) (a :: <*>_N).
+                   <GHC.Exception.Type.Exception e>_R
+                   ->_R <e>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                           <GHC.Types.IO>_R
+                                                           <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+8e87177ab7e22a4948d994f327d3be60
+  $fMonadThrowNGLessIO1 ::
+    GHC.Exception.Type.Exception e =>
+    e
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <B,1*U(A,A,1*C1(U),A,A)><B,U><B,A><B,U>x,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ e
+                   @ a
+                   ($dException :: GHC.Exception.Type.Exception e)
+                   (eta :: e)
+                   (eta1 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.IO.throwIO1 @ e @ a $dException eta eta2) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadUnliftIONGLessIO ::
+    Control.Monad.IO.Unlift.MonadUnliftIO NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadIONGLessIO
+                  NGLess.NGError.$fMonadUnliftIONGLessIO1
+                    `cast`
+                  ((<GHC.IORef.IORef
+                       Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Control.Monad.IO.Unlift.UnliftIO
+                                     NGLess.NGError.NGLessIO>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                              <GHC.Types.IO>_R
+                                                                              <Control.Monad.IO.Unlift.UnliftIO
+                                                                                 NGLess.NGError.NGLessIO>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Control.Monad.IO.Unlift.UnliftIO
+                                                                                                                                                     NGLess.NGError.NGLessIO>_N))
+                  NGLess.NGError.$fMonadUnliftIONGLessIO_$cwithRunInIO -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadUnliftIONGLessIO1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Control.Monad.IO.Unlift.UnliftIO NGLess.NGError.NGLessIO #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s,
+                    (\ @ a (ds :: NGLess.NGError.NGLessIO a) ->
+                     ds
+                       `cast`
+                     (NGLess.NGError.N:NGLessIO[0] <a>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                               <GHC.Types.IO>_R <a>_N)
+                       r)
+                      `cast`
+                    (Sym (Control.Monad.IO.Unlift.N:UnliftIO[0]
+                              <NGLess.NGError.NGLessIO>_R)) #)) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fMonadUnliftIONGLessIO_$cwithRunInIO ::
+    ((forall a. NGLess.NGError.NGLessIO a -> GHC.Types.IO a)
+     -> GHC.Types.IO b)
+    -> NGLess.NGError.NGLessIO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ b
+                   (ds :: (forall a. NGLess.NGError.NGLessIO a -> GHC.Types.IO a)
+                          -> GHC.Types.IO b)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (ds
+                    (\ @ a (ds1 :: NGLess.NGError.NGLessIO a) ->
+                     ds1
+                       `cast`
+                     (NGLess.NGError.N:NGLessIO[0] <a>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                               <GHC.Types.IO>_R <a>_N)
+                       r))
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   s)
+                  `cast`
+                (forall (b :: <*>_N).
+                 <(forall a. NGLess.NGError.NGLessIO a -> GHC.Types.IO a)
+                  -> GHC.Types.IO b>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                         <GHC.Types.IO>_R
+                                                         <b>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <b>_N)) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fNFDataNGError :: Control.DeepSeq.NFData NGLess.NGError.NGError
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                NGLess.NGError.$fNFDataNGError_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <NGLess.NGError.NGError>_N)) -}
+d92c3e92452b362aa18b280880e1b593
+  $fNFDataNGErrorType ::
+    Control.DeepSeq.NFData NGLess.NGError.NGErrorType
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                NGLess.NGError.$fNFDataNGErrorType_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <NGLess.NGError.NGErrorType>_N)) -}
+d92c3e92452b362aa18b280880e1b593
+  $fNFDataNGErrorType_$crnf :: NGLess.NGError.NGErrorType -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGError.NGErrorType) ->
+                 case ds of ds1 { DEFAULT -> GHC.Tuple.() }) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fNFDataNGError_$crnf :: NGLess.NGError.NGError -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGError.NGError) ->
+                 case ds of ds1 { NGLess.NGError.NGError ipv ipv1 ->
+                 GHC.Tuple.() }) -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fPrimMonadNGLessIO ::
+    Control.Monad.Primitive.PrimMonad NGLess.NGError.NGLessIO
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGLessIO
+                  NGLess.NGError.$fMonadNGLessIO
+                  NGLess.NGError.$fPrimMonadNGLessIO_$cprimitive -}
+f1fd902a0de985a61e8d9110730dfc21
+  $fPrimMonadNGLessIO_$cprimitive ::
+    (GHC.Prim.State#
+       (Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO)
+     -> (# GHC.Prim.State#
+             (Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO),
+           a #))
+    -> NGLess.NGError.NGLessIO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ @ a
+                   (act :: GHC.Prim.State#
+                             (Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO)
+                           -> (# GHC.Prim.State#
+                                   (Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO),
+                                 a #))
+                   (ds :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                 act)
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Prim.State#
+                    (Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO)
+                  -> (# GHC.Prim.State#
+                          (Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO),
+                        a #)>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R ((GHC.Prim.State#
+                                (NGLess.NGError.D:R:PrimStateNGLessIO[0] ; Control.Monad.Primitive.D:R:PrimStateIO[0]))_R
+                             ->_R ((#,#)
+                                     <'GHC.Types.TupleRep '[]>_R
+                                     <'GHC.Types.LiftedRep>_R
+                                     (GHC.Prim.State#
+                                        (NGLess.NGError.D:R:PrimStateNGLessIO[0] ; Control.Monad.Primitive.D:R:PrimStateIO[0]))_R
+                                     <a>_R)_R) ; Sym (GHC.Types.N:IO[0]
+                                                          <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                              <GHC.Types.IO>_R
+                                                                              <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fShowNGError :: GHC.Show.Show NGLess.NGError.NGError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGError
+                  NGLess.NGError.$fExceptionNGError_$cshowsPrec
+                  NGLess.NGError.$fExceptionNGError_$cshow
+                  NGLess.NGError.$fShowNGError_$cshowList -}
+d92c3e92452b362aa18b280880e1b593
+  $fShowNGErrorType :: GHC.Show.Show NGLess.NGError.NGErrorType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGError.NGErrorType
+                  NGLess.NGError.$fShowNGErrorType_$cshowsPrec
+                  NGLess.NGError.$fShowNGErrorType_$cshow
+                  NGLess.NGError.$fShowNGErrorType_$cshowList -}
+d92c3e92452b362aa18b280880e1b593
+  $fShowNGErrorType_$cshow ::
+    NGLess.NGError.NGErrorType -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: NGLess.NGError.NGErrorType) ->
+                 case x of wild {
+                   NGLess.NGError.ShouldNotOccur
+                   -> GHC.CString.unpackCString# "ShouldNotOccur"#
+                   NGLess.NGError.ScriptError
+                   -> GHC.CString.unpackCString# "ScriptError"#
+                   NGLess.NGError.DataError -> GHC.CString.unpackCString# "DataError"#
+                   NGLess.NGError.SystemError
+                   -> GHC.CString.unpackCString# "SystemError"#
+                   NGLess.NGError.GenericError
+                   -> GHC.CString.unpackCString# "GenericError"#
+                   NGLess.NGError.NoErrorExit
+                   -> GHC.CString.unpackCString# "NoErrorExit"# }) -}
+d92c3e92452b362aa18b280880e1b593
+  $fShowNGErrorType_$cshowList ::
+    [NGLess.NGError.NGErrorType] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [NGLess.NGError.NGErrorType]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ NGLess.NGError.NGErrorType
+                   (NGLess.NGError.$fShowNGErrorType_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+d92c3e92452b362aa18b280880e1b593
+  $fShowNGErrorType_$cshowsPrec ::
+    GHC.Types.Int -> NGLess.NGError.NGErrorType -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: NGLess.NGError.NGErrorType) ->
+                 NGLess.NGError.$w$cshowsPrec1 w1) -}
+9741b2ef5fc8e673ccaf43057baf92e8
+  $fShowNGError_$cshowList ::
+    [NGLess.NGError.NGError] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [NGLess.NGError.NGError]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ NGLess.NGError.NGError
+                   (NGLess.NGError.$fExceptionNGError_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+9e01aec3e19f24575556b7d6f7c79cc4
+  $tc'DataError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16416129977211729009##
+                   11310887996429066269##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'DataError2
+                   0#
+                   NGLess.NGError.$tc'DataError1) -}
+004b595d9c17e782cca1783965fb0837
+  $tc'DataError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+21f1f67d05de0f5949f6bdaf0aeb39e5
+  $tc'DataError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'DataError3) -}
+fbccfbd389f1918b3cd91c9f38f87672
+  $tc'DataError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DataError"#) -}
+21a7cb614c27f4ca8c6e2bfc8e7344ca
+  $tc'GenericError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6339321339158565617##
+                   9057771402539676992##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'GenericError1
+                   0#
+                   NGLess.NGError.$tc'DataError1) -}
+7276d1de0c37fdbf358c7834713e8b0a
+  $tc'GenericError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'GenericError2) -}
+80ada969adee17d5e262a7aa64a4b2b6
+  $tc'GenericError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GenericError"#) -}
+35e492393d3f144fa564f0c31cf7a2cb
+  $tc'NGError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15054389644064497172##
+                   11772816312133840768##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'NGError2
+                   0#
+                   NGLess.NGError.$tc'NGError1) -}
+9c097a36408623a36191bdeb36d1d9db
+  $tc'NGError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bcdaf51527a4ccd01f21a7c3af64f516
+  $tc'NGError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'NGError3) -}
+a4583a424b9243523f44a068c030741b
+  $tc'NGError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGError"#) -}
+1868aedf90c55f76a7de4602c6fc3b9d
+  $tc'NGLessIO :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6772058780265377255##
+                   6893803819461367732##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'NGLessIO2
+                   1#
+                   NGLess.NGError.$tc'NGLessIO1) -}
+06992f0f9a175624a27ed943ea4bf222
+  $tc'NGLessIO1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+8864e554274719e2635a853dd0f6d07d
+  $tc'NGLessIO2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'NGLessIO3) -}
+d40ee53b5ba6ca13d9d520f5813f6e9c
+  $tc'NGLessIO3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGLessIO"#) -}
+460f539675fe5eeffeda4e86a1ec96e8
+  $tc'NoErrorExit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   439592983639156138##
+                   17297980939826097134##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'NoErrorExit1
+                   0#
+                   NGLess.NGError.$tc'DataError1) -}
+ec74e7ebbf99a5a0881e74551e012bc5
+  $tc'NoErrorExit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'NoErrorExit2) -}
+fd20fcb66cdcc0c0ea9c27db8c6cbc91
+  $tc'NoErrorExit2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoErrorExit"#) -}
+f245908c8c0893d2691881bf7b008b13
+  $tc'ScriptError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1954070536957891255##
+                   12588309971090045042##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'ScriptError1
+                   0#
+                   NGLess.NGError.$tc'DataError1) -}
+1d3c9baa05e9553eda82fe3ca122b7da
+  $tc'ScriptError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'ScriptError2) -}
+d7003ae8bcc463f724b57c7c871a05c9
+  $tc'ScriptError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ScriptError"#) -}
+fcf9e7e686f2bc64b452323d9eb3facb
+  $tc'ShouldNotOccur :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9684450846276513645##
+                   12539056161975561837##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'ShouldNotOccur1
+                   0#
+                   NGLess.NGError.$tc'DataError1) -}
+3a44816f5b97f4f5109c04024fc6dfe2
+  $tc'ShouldNotOccur1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   NGLess.NGError.$tc'ShouldNotOccur2) -}
+11416aed2feaab5b0e11a029c9e8c21c
+  $tc'ShouldNotOccur2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ShouldNotOccur"#) -}
+0c4112de4fed765a4313de0f9d871823
+  $tc'SystemError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   208112452710398369##
+                   11117390951081187625##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tc'SystemError1
+                   0#
+                   NGLess.NGError.$tc'DataError1) -}
+35eb84e38f54119963976887badb364e
+  $tc'SystemError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tc'SystemError2) -}
+cc28495c21515afe7185150103fbdce4
+  $tc'SystemError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SystemError"#) -}
+f71687c1936ffb3c282557d3905f6544
+  $tcNGError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13407444954519078563##
+                   6037745128591129631##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$fExceptionNGError2
+                   0#
+                   GHC.Types.krep$*) -}
+86ae49baab9dfa246954662f8405075e
+  $tcNGErrorType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4561566487738223582##
+                   8280348257831800548##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tcNGErrorType1
+                   0#
+                   GHC.Types.krep$*) -}
+8177e50022047d0c5f9abdddfa28db73
+  $tcNGErrorType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tcNGErrorType2) -}
+ab7bc241e5a5cad9b2a30576c22fbaab
+  $tcNGErrorType2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGErrorType"#) -}
+1cc32831b8a62bdfe03fdb14d3f3d797
+  $tcNGLessIO :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17763509681851214104##
+                   3359135089520479922##
+                   NGLess.NGError.$trModule
+                   NGLess.NGError.$tcNGLessIO1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+7736dfb7af3c35f76bf5273f6be87a5c
+  $tcNGLessIO1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$tcNGLessIO2) -}
+d21a538dd77044339609a5c14b212b14
+  $tcNGLessIO2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLessIO"#) -}
+dff0f7131af9e0704b4ae07d564d1412
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   NGLess.NGError.$trModule3
+                   NGLess.NGError.$trModule1) -}
+984516ac4e6228616b6aa95ae45e0a04
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$trModule2) -}
+f17cb2e42f3bb396ad7015a2e246d504
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLess.NGError"#) -}
+d8a9c988a342a81081fef07612e88a8a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGError.$trModule4) -}
+1e717a35f0a03529526f03ade7ffa4ed
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+46582bfb9de207514ef826ae8595558a
+  $w$cfail ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 2, Strictness: <B,1*U><B,U>x, Inline: [2] -}
+bbd0f7a0c113f70dd6368a99443b2d2d
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> NGLess.NGError.NGErrorType -> GHC.Base.String -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: NGLess.NGError.NGErrorType)
+                   (ww2 :: GHC.Base.String) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "NGError "#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   f2 :: GHC.Base.String -> GHC.Base.String
+                   = case ww1 of wild {
+                       NGLess.NGError.ShouldNotOccur
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "ShouldNotOccur"#)
+                       NGLess.NGError.ScriptError
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "ScriptError"#)
+                       NGLess.NGError.DataError
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "DataError"#)
+                       NGLess.NGError.SystemError
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "SystemError"#)
+                       NGLess.NGError.GenericError
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "GenericError"#)
+                       NGLess.NGError.NoErrorExit
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "NoErrorExit"#) }
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       f1
+                       (f2
+                          (GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.showSpace1
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString
+                                   ww2
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 x)))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)) }) -}
+d92c3e92452b362aa18b280880e1b593
+  $w$cshowsPrec1 :: NGLess.NGError.NGErrorType -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: NGLess.NGError.NGErrorType) ->
+                 case w of wild {
+                   NGLess.NGError.ShouldNotOccur
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "ShouldNotOccur"#)
+                   NGLess.NGError.ScriptError
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "ScriptError"#)
+                   NGLess.NGError.DataError
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "DataError"#)
+                   NGLess.NGError.SystemError
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SystemError"#)
+                   NGLess.NGError.GenericError
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "GenericError"#)
+                   NGLess.NGError.NoErrorExit
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "NoErrorExit"#) }) -}
+46fe736038829bcbd020bbb1bba53c3a
+  $wrunNGLess ::
+    GHC.Base.Monad m =>
+    (forall a1. NGLess.NGError.NGError -> m a1)
+    -> Data.Either.Either NGLess.NGError.NGError a -> m a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,1*C1(U)><S,1*U>,
+     Inline: [2],
+     Unfolding: (\ @ m :: * -> *
+                   @ a
+                   (ww :: GHC.Base.Monad m)
+                   (ww1 :: forall a1. NGLess.NGError.NGError -> m a1)
+                   (w :: Data.Either.Either NGLess.NGError.NGError a) ->
+                 case w of wild {
+                   Data.Either.Left err -> ww1 @ a err
+                   Data.Either.Right v -> GHC.Base.return @ m ww @ a v }) -}
+f1fd902a0de985a61e8d9110730dfc21
+  axiom NGLess.NGError.D:R:PrimStateNGLessIO::
+      Control.Monad.Primitive.PrimState NGLess.NGError.NGLessIO
+        = Control.Monad.Primitive.PrimState GHC.Types.IO
+9741b2ef5fc8e673ccaf43057baf92e8
+  data NGError = NGError !NGLess.NGError.NGErrorType !GHC.Base.String
+d92c3e92452b362aa18b280880e1b593
+  data NGErrorType
+    = ShouldNotOccur
+    | ScriptError
+    | DataError
+    | SystemError
+    | GenericError
+    | NoErrorExit
+416e5726ee4c4987c25367d545064990
+  type NGLess = Data.Either.Either NGLess.NGError.NGError :: * -> *
+f1fd902a0de985a61e8d9110730dfc21
+  type role NGLessIO nominal
+  newtype NGLessIO a
+    = NGLessIO {unwrapNGLessIO :: Control.Monad.Trans.Resource.Internal.ResourceT
+                                    GHC.Types.IO a}
+a41ed825730df1edb93a7b2b931843fe
+  runNGLess ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    Data.Either.Either NGLess.NGError.NGError a -> m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(A,A,A,1*C1(U),A),1*C1(U),A)><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   (w :: Control.Monad.Error.Class.MonadError
+                           NGLess.NGError.NGError m)
+                   (w1 :: Data.Either.Either NGLess.NGError.NGError a) ->
+                 case w of ww { Control.Monad.Error.Class.C:MonadError ww1 ww2 ww3 ->
+                 NGLess.NGError.$wrunNGLess @ m @ a ww1 ww2 w1 }) -}
+e89cbb9187081d3497a1914ba53cbd6b
+  testNGLessIO :: NGLess.NGError.NGLessIO a -> GHC.Types.IO a
+  {- Arity: 1, Strictness: <L,C(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: NGLess.NGError.NGLessIO a) ->
+                 Control.Monad.Trans.Resource.$wrunResourceT
+                   @ GHC.Types.IO
+                   @ a
+                   Control.Monad.IO.Unlift.$fMonadUnliftIOIO_$cwithRunInIO
+                   ds `cast` (NGLess.NGError.N:NGLessIO[0] <a>_N)) -}
+c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwDataError ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Base.String -> m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      NGLess.NGError.NGError m)
+                   (eta :: GHC.Base.String) ->
+                 Control.Monad.Error.Class.throwError
+                   @ NGLess.NGError.NGError
+                   @ m
+                   $dMonadError
+                   @ a
+                   (case eta of dt { DEFAULT ->
+                    NGLess.NGError.NGError NGLess.NGError.DataError dt })) -}
+5fdddf54553b39a6f2f62e1658de6acb
+  throwGenericError ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Base.String -> m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      NGLess.NGError.NGError m)
+                   (eta :: GHC.Base.String) ->
+                 Control.Monad.Error.Class.throwError
+                   @ NGLess.NGError.NGError
+                   @ m
+                   $dMonadError
+                   @ a
+                   (case eta of dt { DEFAULT ->
+                    NGLess.NGError.NGError NGLess.NGError.GenericError dt })) -}
+96adea1584aa4db243e08c54da5ff3c3
+  throwScriptError ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Base.String -> m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      NGLess.NGError.NGError m)
+                   (eta :: GHC.Base.String) ->
+                 Control.Monad.Error.Class.throwError
+                   @ NGLess.NGError.NGError
+                   @ m
+                   $dMonadError
+                   @ a
+                   (case eta of dt { DEFAULT ->
+                    NGLess.NGError.NGError NGLess.NGError.ScriptError dt })) -}
+6b0f4fcf8b2bcdc53931daab853fb839
+  throwShouldNotOccur ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Base.String -> m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      NGLess.NGError.NGError m)
+                   (eta :: GHC.Base.String) ->
+                 Control.Monad.Error.Class.throwError
+                   @ NGLess.NGError.NGError
+                   @ m
+                   $dMonadError
+                   @ a
+                   (case eta of dt { DEFAULT ->
+                    NGLess.NGError.NGError NGLess.NGError.ShouldNotOccur dt })) -}
+fd7c6796a005f4e332b2d16e13db3f7f
+  throwSystemError ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Base.String -> m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                      NGLess.NGError.NGError m)
+                   (eta :: GHC.Base.String) ->
+                 Control.Monad.Error.Class.throwError
+                   @ NGLess.NGError.NGError
+                   @ m
+                   $dMonadError
+                   @ a
+                   (case eta of dt { DEFAULT ->
+                    NGLess.NGError.NGError NGLess.NGError.SystemError dt })) -}
+f1fd902a0de985a61e8d9110730dfc21
+  unwrapNGLessIO ::
+    NGLess.NGError.NGLessIO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  RecSel Left NGLess.NGError.NGLessIO
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGError.unwrapNGLessIO1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <NGLess.NGError.NGLessIO a>_R
+                 ->_R NGLess.NGError.N:NGLessIO[0] <a>_N) -}
+f1fd902a0de985a61e8d9110730dfc21
+  unwrapNGLessIO1 ::
+    NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: NGLess.NGError.NGLessIO a) -> ds) -}
+instance GHC.Base.Applicative [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fApplicativeNGLessIO
+instance GHC.Classes.Eq [NGLess.NGError.NGError]
+  = NGLess.NGError.$fEqNGError
+instance GHC.Classes.Eq [NGLess.NGError.NGErrorType]
+  = NGLess.NGError.$fEqNGErrorType
+instance GHC.Exception.Type.Exception [NGLess.NGError.NGError]
+  = NGLess.NGError.$fExceptionNGError
+instance GHC.Base.Functor [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fFunctorNGLessIO
+instance Control.Monad.Catch.MonadCatch [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadCatchNGLessIO
+instance Control.Monad.Error.Class.MonadError [NGLess.NGError.NGError,
+                                               NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadErrorNGErrorNGLessIO
+instance Control.Monad.Fail.MonadFail [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadFailNGLessIO
+instance Control.Monad.IO.Class.MonadIO [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadIONGLessIO
+instance Control.Monad.Catch.MonadMask [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadMaskNGLessIO
+instance GHC.Base.Monad [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadNGLessIO
+instance Control.Monad.Trans.Resource.Internal.MonadResource [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadResourceNGLessIO
+instance Control.Monad.Catch.MonadThrow [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadThrowNGLessIO
+instance Control.Monad.IO.Unlift.MonadUnliftIO [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fMonadUnliftIONGLessIO
+instance Control.DeepSeq.NFData [NGLess.NGError.NGError]
+  = NGLess.NGError.$fNFDataNGError
+instance Control.DeepSeq.NFData [NGLess.NGError.NGErrorType]
+  = NGLess.NGError.$fNFDataNGErrorType
+instance Control.Monad.Primitive.PrimMonad [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.$fPrimMonadNGLessIO
+instance GHC.Show.Show [NGLess.NGError.NGError]
+  = NGLess.NGError.$fShowNGError
+instance GHC.Show.Show [NGLess.NGError.NGErrorType]
+  = NGLess.NGError.$fShowNGErrorType
+family instance Control.Monad.Primitive.PrimState [NGLess.NGError.NGLessIO]
+  = NGLess.NGError.D:R:PrimStateNGLessIO
+"SPEC/NGLess.NGError $fMonadResourceT_$c>> @ IO" [orphan] forall ($dMonad :: GHC.Base.Monad
+                                                                               GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadResourceT_$c>> @ GHC.Types.IO
+                                                              $dMonad
+  = NGLess.NGError.$fMonadNGLessIO_$s$fMonadResourceT_$c>>
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

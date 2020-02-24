@@ -1,0 +1,217 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:32.517759244 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.Batch 8065
+  interface hash: e490a019357da6dbddc34abf4d5647f2
+  ABI hash: b4dbc3c48c83dfcb59dc7d1142646b55
+  export-list hash: e6a599b9777e5d0a5f581c44577ac844
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8c5b40462c7e0eb1a03172e2955ee20e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.Batch.getNcpus
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.Environment c54e0d0308e729fdace6bc37aa74bb52
+import  -/  base-4.12.0.0:Text.Read 87f80fc2538a174aea915dd98f74fc0a
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+087608f45484e09a335e20c2bf0633ff
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.Batch.$trModule3
+                   Utils.Batch.$trModule1) -}
+6ec9ad3782737788b5d78fd0677b232a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Batch.$trModule2) -}
+f7471229a53e9d33c16fd51643ef5197
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.Batch"#) -}
+637481b15d3bec9014b84011351397fe
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Batch.$trModule4) -}
+4fb7930e704970f0035e8117bae82b42
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+3ea08415add9d8926b8ec069d796470c
+  getNcpus :: GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int)
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Utils.Batch.getNcpus1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Maybe.Maybe GHC.Types.Int>_R)) -}
+94c5502b6978be1baddb45b7c03832e1
+  getNcpus1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.Types.Int #)
+  {- Arity: 1,
+     Unfolding: (Utils.Batch.getNcpus19
+                   @ GHC.Types.Int
+                   Utils.Batch.getNcpus2) -}
+9ea7bcfb5448c0bee043fa81e09b09fa
+  getNcpus10 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.Types.Int #)
+  {- Arity: 1,
+     Unfolding: (Utils.Batch.getNcpus9 Utils.Batch.getNcpus11) -}
+89ef5eb246e78de410765931176a3258
+  getNcpus11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Utils.Batch.getNcpus12) -}
+c05f7a05974f0dc1e288799bab3356cf
+  getNcpus12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LSB_DJOB_NUMPROC"#) -}
+47a0e35abf07131d7fa991cee9e852ad
+  getNcpus13 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.Types.Int #)
+  {- Arity: 1,
+     Unfolding: (Utils.Batch.getNcpus9 Utils.Batch.getNcpus14) -}
+0caae5b58dd2c351fea57019fc56982d
+  getNcpus14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Utils.Batch.getNcpus15) -}
+04cf31acb79806e20c6f53f5508fc635
+  getNcpus15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NSLOTS"#) -}
+0bcf091db898fa2a6849a7e68ae94ad2
+  getNcpus16 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.Types.Int #)
+  {- Arity: 1,
+     Unfolding: (Utils.Batch.getNcpus9 Utils.Batch.getNcpus17) -}
+231e2d27482409d83711fa83372e2b40
+  getNcpus17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Utils.Batch.getNcpus18) -}
+a12969fd14e14e61142d3d361e32b9d6
+  getNcpus18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("OMP_NUM_THREADS"#) -}
+3a71428313a068ee9ed7fb0d3219e751
+  getNcpus19 ::
+    [GHC.Types.IO (GHC.Maybe.Maybe a)]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Maybe.Maybe a #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U> -}
+d82c92aa3ebf9610116b74bce7703c33
+  getNcpus2 :: [GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int))
+                   Utils.Batch.getNcpus16
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Maybe.Maybe GHC.Types.Int>_R))
+                   Utils.Batch.getNcpus3) -}
+57f4940f87e57bcaad433b2bc248d187
+  getNcpus3 :: [GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int))
+                   Utils.Batch.getNcpus13
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Maybe.Maybe GHC.Types.Int>_R))
+                   Utils.Batch.getNcpus4) -}
+7ea25b697dc7e736686b466437ec813e
+  getNcpus4 :: [GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int))
+                   Utils.Batch.getNcpus10
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Maybe.Maybe GHC.Types.Int>_R))
+                   Utils.Batch.getNcpus5) -}
+a23909834a0506fb29dd9f8d4933e92c
+  getNcpus5 :: [GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int))
+                   Utils.Batch.getNcpus6
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Maybe.Maybe GHC.Types.Int>_R))
+                   (GHC.Types.[] @ (GHC.Types.IO (GHC.Maybe.Maybe GHC.Types.Int)))) -}
+be37c5de20248299cb24f4fb0f8886cc
+  getNcpus6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.Types.Int #)
+  {- Arity: 1,
+     Unfolding: (Utils.Batch.getNcpus9 Utils.Batch.getNcpus7) -}
+1e1a9304b2d404e3067b7758a852d1ee
+  getNcpus7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Utils.Batch.getNcpus8) -}
+2585193202dff9cec1d6daf56c39d88b
+  getNcpus8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SLURM_CPUS_PER_TASK"#) -}
+c0e16c14e5fa031df3ad5876067b8a22
+  getNcpus9 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.Types.Int #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (evar :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (GHC.Magic.noinline
+                         @ (GHC.Types.IO GHC.IO.Encoding.Types.TextEncoding)
+                         GHC.IO.Encoding.getForeignEncoding)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Foreign.charIsRepresentable3
+                        @ (GHC.Maybe.Maybe GHC.Base.String)
+                        ipv1
+                        evar
+                        System.Environment.getEnv3
+                          `cast`
+                        (<Foreign.C.String.CString>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Maybe.Maybe GHC.Base.String>_R))
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    case ipv3 of wild {
+                      GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ GHC.Types.Int
+                      GHC.Maybe.Just x
+                      -> case Text.Read.readEither8
+                                @ GHC.Types.Int
+                                (Text.ParserCombinators.ReadP.run
+                                   @ GHC.Types.Int
+                                   (GHC.Read.$fReadInt_$sreadNumber
+                                      GHC.Read.$fReadInt2
+                                      Text.ParserCombinators.ReadPrec.minPrec
+                                      @ GHC.Types.Int
+                                      (Text.Read.readEither7 @ GHC.Types.Int))
+                                   x) of wild1 {
+                           [] -> GHC.Maybe.Nothing @ GHC.Types.Int
+                           : x1 ds2
+                           -> case ds2 of wild2 {
+                                [] -> GHC.Maybe.Just @ GHC.Types.Int x1
+                                : ipv4 ipv5 -> GHC.Maybe.Nothing @ GHC.Types.Int } } } #) } }) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

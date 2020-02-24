@@ -1,0 +1,370 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:35.14820747 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.ProgressBar 8065
+  interface hash: 2240ed95630e87ea6e15bd0ad9f36802
+  ABI hash: b14d4e3a799e2a4d6fd9c4749bba4508
+  export-list hash: 5998ccd54ffa700b319308d617eecc67
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8c5b40462c7e0eb1a03172e2955ee20e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.ProgressBar.mkProgressBar
+  Utils.ProgressBar.updateProgressBar
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.IO.Handle.FD 57dd508e0260edfe7dfb9592eb9a6e63
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  base-4.12.0.0:Text.Printf d9e1f32eb8aa55bafa1cf4360210b275
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fEqProgressBar :: GHC.Classes.Eq Utils.ProgressBar.ProgressBar
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.ProgressBar.ProgressBar
+                  Utils.ProgressBar.$fEqProgressBar_$c==
+                  Utils.ProgressBar.$fEqProgressBar_$c/= -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fEqProgressBar_$c/= ::
+    Utils.ProgressBar.ProgressBar
+    -> Utils.ProgressBar.ProgressBar -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U,1*U(U,U),1*U(U),1*U)><S(SLLL),1*U(1*U,1*U(U,U),1*U(U),1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Utils.ProgressBar.ProgressBar)
+                   (y :: Utils.ProgressBar.ProgressBar) ->
+                 case Utils.ProgressBar.$fEqProgressBar_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fEqProgressBar_$c== ::
+    Utils.ProgressBar.ProgressBar
+    -> Utils.ProgressBar.ProgressBar -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U,1*U(U,U),1*U(U),1*U)><S(SLLL),1*U(1*U,1*U(U,U),1*U(U),1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Utils.ProgressBar.ProgressBar)
+                   (w1 :: Utils.ProgressBar.ProgressBar) ->
+                 case w of ww { Utils.ProgressBar.ProgressBar ww1 ww2 ww3 ww4 ->
+                 case w1 of ww5 { Utils.ProgressBar.ProgressBar ww6 ww7 ww8 ww9 ->
+                 Utils.ProgressBar.$w$c== ww1 ww2 ww3 ww4 ww6 ww7 ww8 ww9 } }) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fShowProgressBar :: GHC.Show.Show Utils.ProgressBar.ProgressBar
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.ProgressBar.ProgressBar
+                  Utils.ProgressBar.$fShowProgressBar_$cshowsPrec
+                  Utils.ProgressBar.$fShowProgressBar_$cshow
+                  Utils.ProgressBar.$fShowProgressBar_$cshowList -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fShowProgressBar_$cshow ::
+    Utils.ProgressBar.ProgressBar -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U(U,U),U(U),U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Utils.ProgressBar.ProgressBar) ->
+                 Utils.ProgressBar.$fShowProgressBar_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fShowProgressBar_$cshowList ::
+    [Utils.ProgressBar.ProgressBar] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Utils.ProgressBar.ProgressBar])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Utils.ProgressBar.ProgressBar
+                   (Utils.ProgressBar.$fShowProgressBar_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  $fShowProgressBar_$cshowsPrec ::
+    GHC.Types.Int -> Utils.ProgressBar.ProgressBar -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U,U(U,U),U(U),U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Utils.ProgressBar.ProgressBar) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Utils.ProgressBar.ProgressBar ww3 ww4 ww5 ww6 ->
+                 Utils.ProgressBar.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 } }) -}
+65ecc52028f20898d151c2cb6dce7426
+  $tc'ProgressBar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18058671663439334491##
+                   3111879441077227086##
+                   Utils.ProgressBar.$trModule
+                   Utils.ProgressBar.$tc'ProgressBar2
+                   0#
+                   Utils.ProgressBar.$tc'ProgressBar1) -}
+0af5bd6a94fac8eae5c1f13bb4629458
+  $tc'ProgressBar1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+428a9f7c1d429934e53250202e85d589
+  $tc'ProgressBar2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Utils.ProgressBar.$tc'ProgressBar3) -}
+2d5db016764575721011d50ed2465fa0
+  $tc'ProgressBar3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ProgressBar"#) -}
+8011430ac008c76725547fe309e4949c
+  $tcProgressBar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10605546817166446534##
+                   17176496320552893120##
+                   Utils.ProgressBar.$trModule
+                   Utils.ProgressBar.$tcProgressBar1
+                   0#
+                   GHC.Types.krep$*) -}
+a63d739df776377b8344f74279ec065b
+  $tcProgressBar1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.ProgressBar.$tcProgressBar2) -}
+192fe94f4f3b46505460ea3baab8ee5a
+  $tcProgressBar2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ProgressBar"#) -}
+d03b717665d3ae6deaf8364328a9d865
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.ProgressBar.$trModule3
+                   Utils.ProgressBar.$trModule1) -}
+90975a9516d52bf996a6428555b37874
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.ProgressBar.$trModule2) -}
+415bd9e5a2aa8a1a7b9e80fb07f5ffd7
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.ProgressBar"#) -}
+8b8c26fd86dd7b6ec8bb60ff8c6c150d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.ProgressBar.$trModule4) -}
+93156821ff89d0e1e103d20e39c3fc4a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+c064c9e29f62fdfd27d0a94a3f08f918
+  $w$c== ::
+    GHC.Base.String
+    -> GHC.Real.Rational
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+    -> GHC.Base.String
+    -> GHC.Real.Rational
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U)><L,1*U(U)><L,1*U><S,1*U><L,1*U(U,U)><L,1*U(U)><L,1*U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Real.Rational)
+                   (ww2 :: GHC.Types.Int)
+                   (ww3 :: GHC.Types.Bool)
+                   (ww4 :: GHC.Base.String)
+                   (ww5 :: GHC.Real.Rational)
+                   (ww6 :: GHC.Types.Int)
+                   (ww7 :: GHC.Types.Bool) ->
+                 case GHC.Base.eqString ww ww4 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case ww1 of wild1 { GHC.Real.:% a1 a2 ->
+                      case ww5 of wild2 { GHC.Real.:% b1 b2 ->
+                      case GHC.Integer.Type.eqInteger# a1 b1 of wild3 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case GHC.Integer.Type.eqInteger# a2 b2 of wild4 {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case ww2 of wild5 { GHC.Types.I# x ->
+                                case ww6 of wild6 { GHC.Types.I# y ->
+                                case GHC.Prim.==# x y of lwild {
+                                  DEFAULT -> GHC.Types.False
+                                  1# -> GHC.Classes.$fEqBool_$c== ww3 ww7 } } } } } } } }) -}
+cc9e26327ef41daefb3adf79d7fd6752
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Real.Rational
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+    -> GHC.Show.ShowS
+  {- Arity: 5, Strictness: <S,U><L,U><L,U(U,U)><L,U(U)><L,U>,
+     Inline: [2] -}
+1c91e05afc6ef423a11c5eb171617f44
+  $wupdateProgressBar ::
+    GHC.Base.String
+    -> GHC.Real.Rational
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+    -> GHC.Real.Rational
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Utils.ProgressBar.ProgressBar #)
+  {- Arity: 6,
+     Strictness: <L,U><L,U(U,U)><L,U(U)><S,1*U><L,1*U(U,U)><S,U>,
+     Inline: [2] -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  data ProgressBar
+    = ProgressBar {pbarName :: GHC.Base.String,
+                   cur :: GHC.Real.Rational,
+                   width :: GHC.Types.Int,
+                   pbarActive :: GHC.Types.Bool}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  cur :: Utils.ProgressBar.ProgressBar -> GHC.Real.Rational
+  RecSel Left Utils.ProgressBar.ProgressBar
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.ProgressBar.ProgressBar) ->
+                 case ds of wild { Utils.ProgressBar.ProgressBar ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+d85f49752addc81bfa6fd41eb18d03dd
+  mkProgressBar ::
+    GHC.Base.String
+    -> GHC.Types.Int -> GHC.Types.IO Utils.ProgressBar.ProgressBar
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.ProgressBar.mkProgressBar1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Utils.ProgressBar.ProgressBar>_R)) -}
+3f8e52a11d343770af69d4fc22fdbaad
+  mkProgressBar1 ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Utils.ProgressBar.ProgressBar #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (name :: GHC.Base.String)
+                   (w :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.hGetEcho5
+                        GHC.IO.Handle.FD.stdout
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Types.False -> (# ipv, Utils.ProgressBar.noProgress #)
+                   GHC.Types.True
+                   -> (# ipv,
+                         Utils.ProgressBar.ProgressBar
+                           name
+                           Utils.ProgressBar.mkProgressBar2
+                           w
+                           GHC.Types.True #) } }) -}
+94d5a288c2797d48a8874b9757972fbe
+  mkProgressBar2 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   Utils.ProgressBar.mkProgressBar_dt
+                   GHC.Real.$fEnumRatio1) -}
+d4c7d78ee3f9fdf17bba708d6fe0599e
+  mkProgressBar3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# -1#) -}
+4188836a64cfa1a1a4c8412cf55b920a
+  mkProgressBar_dt :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-1) -}
+709554b1a905469f4d78880469e6cf77
+  noProgress :: Utils.ProgressBar.ProgressBar
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Utils.ProgressBar.ProgressBar
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Utils.ProgressBar.mkProgressBar2
+                   Utils.ProgressBar.mkProgressBar3
+                   GHC.Types.False) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  pbarActive :: Utils.ProgressBar.ProgressBar -> GHC.Types.Bool
+  RecSel Left Utils.ProgressBar.ProgressBar
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.ProgressBar.ProgressBar) ->
+                 case ds of wild { Utils.ProgressBar.ProgressBar ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  pbarName :: Utils.ProgressBar.ProgressBar -> GHC.Base.String
+  RecSel Left Utils.ProgressBar.ProgressBar
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.ProgressBar.ProgressBar) ->
+                 case ds of wild { Utils.ProgressBar.ProgressBar ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+57cca148e410b2f373b33de82d426f0b
+  updateProgressBar ::
+    Utils.ProgressBar.ProgressBar
+    -> GHC.Real.Rational -> GHC.Types.IO Utils.ProgressBar.ProgressBar
+  {- Arity: 3,
+     Strictness: <S(LLLS),1*U(U,U(U,U),U(U),1*U)><L,1*U(U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.ProgressBar.updateProgressBar1
+                  `cast`
+                (<Utils.ProgressBar.ProgressBar>_R
+                 ->_R <GHC.Real.Rational>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Utils.ProgressBar.ProgressBar>_R)) -}
+db7aaddb2068b7f801a8fb6aacf4d22d
+  updateProgressBar1 ::
+    Utils.ProgressBar.ProgressBar
+    -> GHC.Real.Rational
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Utils.ProgressBar.ProgressBar #)
+  {- Arity: 3,
+     Strictness: <S(LLLS),1*U(U,U(U,U),U(U),1*U)><L,1*U(U,U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Utils.ProgressBar.ProgressBar)
+                   (w1 :: GHC.Real.Rational)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { Utils.ProgressBar.ProgressBar ww1 ww2 ww3 ww4 ->
+                 Utils.ProgressBar.$wupdateProgressBar ww1 ww2 ww3 ww4 w1 w2 }) -}
+ac75d9ff55b20d6e1f46b37b6dbd0445
+  width :: Utils.ProgressBar.ProgressBar -> GHC.Types.Int
+  RecSel Left Utils.ProgressBar.ProgressBar
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.ProgressBar.ProgressBar) ->
+                 case ds of wild { Utils.ProgressBar.ProgressBar ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+instance [safe] GHC.Classes.Eq [Utils.ProgressBar.ProgressBar]
+  = Utils.ProgressBar.$fEqProgressBar
+instance [safe] GHC.Show.Show [Utils.ProgressBar.ProgressBar]
+  = Utils.ProgressBar.$fShowProgressBar
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

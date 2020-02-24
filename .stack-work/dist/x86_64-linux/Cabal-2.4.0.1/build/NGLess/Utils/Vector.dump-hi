@@ -1,0 +1,611 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:39.780566897 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.Vector 8065
+  interface hash: 4d34a3972ff1514cded8681a6f22fc73
+  ABI hash: 5a19fcc9929de2aa222b9c331256d2a5
+  export-list hash: 80988af34b6a3a14d73a505b40412fce
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8c5b40462c7e0eb1a03172e2955ee20e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.Vector.binaryFindBy
+  Utils.Vector.binarySearch
+  Utils.Vector.binarySearchBy
+  Utils.Vector.binarySearchByExact
+  Utils.Vector.binarySearchByRange
+  Utils.Vector.sortParallel
+  Utils.Vector.unsafeIncrement
+  Utils.Vector.unsafeIncrement'
+  Utils.Vector.withVector
+module dependencies:
+package dependencies: array-0.5.3.0 async-2.2.2 base-4.12.0.0
+                      binary-0.8.6.0 bytestring-0.10.8.2 containers-0.6.0.1
+                      deepseq-1.4.4.0 ghc-prim-0.5.3 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      primitive-0.6.4.0 stm-2.5.0.0 text-1.2.3.1 transformers-0.5.6.2
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3
+orphans: stm-2.5.0.0:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+import  -/  async-2.2.2:Control.Concurrent.Async 539dde74c83d07130d3155c90555c63d
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  primitive-0.6.4.0:Control.Monad.Primitive d6c3e52d4f48d2121d48cda39ba84e40
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+import  -/  vector-0.12.0.3:Data.Vector.Generic.Mutable 10aed2510a17fa07f4f6b6e94b6c7eac
+import  -/  vector-0.12.0.3:Data.Vector.Mutable 19d2c8fd8f32780e96cd889699bc033c
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed 5733715c11577ecd2bc59749298e28f2
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Base 311d017e8e964b88d4827a5ad52e1e15
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Mutable 692d6e5c74ab0fb1d5a9b9ead57292d3
+import  -/  vector-algorithms-0.8.0.3:Data.Vector.Algorithms.Intro b8c88657108fc70a0fa289a9ac843572
+0749c0fea9f6ee65d02c7ece85ba8a78
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.Vector.$trModule3
+                   Utils.Vector.$trModule1) -}
+14746f610f3c431e4c55609df84c8b79
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Vector.$trModule2) -}
+90fa7ccdec4949a7ff30bc81b898276c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.Vector"#) -}
+bfb6244630036a89e1b644049f4f6d3a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Vector.$trModule4) -}
+f9b5cf6cf9833965367d3117a7b3d68b
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+731ed9c550528f2c34c9ebcaf6349cb8
+  $wbinaryFindBy ::
+    (a -> b -> GHC.Types.Ordering)
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# a
+    -> b
+    -> GHC.Maybe.Maybe a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><S,U><S,U><S,U><L,U>, Inline: [2],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b -> GHC.Types.Ordering)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# a)
+                   (w1 :: b) ->
+                 case Utils.Vector.$wbinarySearchByExact
+                        @ a
+                        @ b
+                        w
+                        ww
+                        ww1
+                        ww2
+                        w1 of wild {
+                   GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ a
+                   GHC.Maybe.Just x
+                   -> case x of wild1 { GHC.Types.I# y ->
+                      case GHC.Prim.indexArray#
+                             @ a
+                             ww2
+                             (GHC.Prim.+# ww y) of ds2 { Unit# ipv ->
+                      case ipv of vx { DEFAULT -> GHC.Maybe.Just @ a vx } } } }) -}
+2c02a55b265cbad10cb6fc9110c838d3
+  $wbinarySearch ::
+    GHC.Classes.Ord a =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> GHC.Prim.Array# a -> a -> GHC.Prim.Int#
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C(C1(U)),A,A,A,A,A,A)><L,U><S,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# a)
+                   (w1 :: a) ->
+                 let {
+                   w2 :: a -> a -> GHC.Types.Ordering = GHC.Classes.compare @ a w
+                 } in
+                 letrec {
+                   $wloop :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int#
+                     <join 2> {- Arity: 2, Strictness: <S,U><S,U>, Inline: [2] -}
+                   = \ (ww3 :: GHC.Prim.Int#) (ww4 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.==# ww3 ww4 of lwild {
+                       DEFAULT
+                       -> let {
+                            mid :: GHC.Prim.Int#
+                            = GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# ww3 ww4) 1#
+                          } in
+                          case w2
+                                 (case GHC.Prim.indexArray#
+                                         @ a
+                                         ww2
+                                         (GHC.Prim.+# ww mid) of ds2 { Unit# ipv ->
+                                  ipv })
+                                 w1 of wild {
+                            GHC.Types.LT -> $wloop (GHC.Prim.+# mid 1#) ww4
+                            GHC.Types.EQ -> $wloop ww3 mid
+                            GHC.Types.GT -> $wloop ww3 mid }
+                       1# -> ww3 }
+                 } in
+                 $wloop 0# ww1) -}
+d147d3bf62a5ab2f8a49c16e2af528ea
+  $wbinarySearchByExact ::
+    (a -> b -> GHC.Types.Ordering)
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# a
+    -> b
+    -> GHC.Maybe.Maybe GHC.Types.Int
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b -> GHC.Types.Ordering)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Array# a)
+                   (w1 :: b) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Maybe.Maybe GHC.Types.Int
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (ww3 :: GHC.Prim.Int#)[OneShot] ->
+                     case GHC.Prim.<# ww3 ww1 of lwild {
+                       DEFAULT -> GHC.Maybe.Nothing @ GHC.Types.Int
+                       1#
+                       -> case w (case GHC.Prim.indexArray#
+                                         @ a
+                                         ww2
+                                         (GHC.Prim.+# ww ww3) of ds2 { Unit# ipv ->
+                                  ipv })
+                                 w1 of wild {
+                            DEFAULT -> GHC.Maybe.Nothing @ GHC.Types.Int
+                            GHC.Types.EQ
+                            -> GHC.Maybe.Just @ GHC.Types.Int (GHC.Types.I# ww3) } }
+                 } in
+                 letrec {
+                   $wloop :: GHC.Prim.Int#
+                             -> GHC.Prim.Int# -> GHC.Maybe.Maybe GHC.Types.Int
+                     <join 2> {- Arity: 2, Strictness: <S,U><S,U>, Inline: [2] -}
+                   = \ (ww3 :: GHC.Prim.Int#) (ww4 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.==# ww3 ww4 of lwild {
+                       DEFAULT
+                       -> let {
+                            mid :: GHC.Prim.Int#
+                            = GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# ww3 ww4) 1#
+                          } in
+                          case w (case GHC.Prim.indexArray#
+                                         @ a
+                                         ww2
+                                         (GHC.Prim.+# ww mid) of ds2 { Unit# ipv ->
+                                  ipv })
+                                 w1 of wild {
+                            GHC.Types.LT -> $wloop (GHC.Prim.+# mid 1#) ww4
+                            GHC.Types.EQ -> $wloop ww3 mid
+                            GHC.Types.GT -> $wloop ww3 mid }
+                       1# -> $j ww3 }
+                 } in
+                 $wloop 0# ww1) -}
+eeca6133cfcc25c2d0c3762bb659602a
+  $wsortPByBounds ::
+    GHC.Classes.Ord e =>
+    GHC.Prim.Int#
+    -> Data.Vector.Mutable.IOVector e
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 6,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,C(C1(U)),C(C1(U)))><S,1*U><L,U(U,U,U)><S,U><S,U><S,U>,
+     Inline: [2] -}
+1e8e4074c6d66b0ba6310f819aab00b1
+  $wwithVector ::
+    (forall a1. GHC.Types.IO a1 -> m a1)
+    -> Data.Vector.Unboxed.Base.Unbox a =>
+       Data.Vector.Unboxed.Base.IOVector a
+       -> (Data.Vector.Unboxed.Base.Vector a -> b) -> m b
+  {- Arity: 4,
+     Strictness: <C(S),1*C1(U)><L,U(U(A,C(C1(U)),A,A,A,A,A,A),A)><L,U><L,C(U)>,
+     Inline: [2],
+     Unfolding: (\ @ m :: * -> *
+                   @ a
+                   @ b
+                   (ww :: forall a1. GHC.Types.IO a1 -> m a1)
+                   (w :: Data.Vector.Unboxed.Base.Unbox a)
+                   (w1 :: Data.Vector.Unboxed.Base.IOVector a)
+                   (w2 :: Data.Vector.Unboxed.Base.Vector a -> b) ->
+                 ww
+                   @ b
+                   (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    case (Data.Vector.Generic.Base.basicUnsafeFreeze
+                            @ Data.Vector.Unboxed.Base.Vector
+                            @ a
+                            (Data.Vector.Unboxed.Base.$p1Unbox @ a w)
+                            @ GHC.Types.IO
+                            Control.Monad.Primitive.$fPrimMonadIO
+                            w1
+                              `cast`
+                            (Sub (Sym (Data.Vector.Unboxed.Base.D:R:MutableVector[0])) (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0])) <a>_N))
+                           `cast`
+                         (GHC.Types.N:IO[0] <Data.Vector.Unboxed.Base.Vector a>_R)
+                           s of ds1 { (#,#) ipv ipv1 ->
+                    case w2 ipv1 of vx { DEFAULT -> (# ipv, vx #) } })
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <b>_R))) -}
+bf15a5c25fecf61eac14ac3624023141
+  binaryFindBy ::
+    (a -> b -> GHC.Types.Ordering)
+    -> Data.Vector.Vector a -> b -> GHC.Maybe.Maybe a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><S(SSS),1*U(U,U,U)><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (w :: a -> b -> GHC.Types.Ordering)
+                   (w1 :: Data.Vector.Vector a)
+                   (w2 :: b) ->
+                 case w1 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 Utils.Vector.$wbinaryFindBy @ a @ b w ww1 ww2 ww3 w2 }) -}
+6ddd6ff19fc8ddb809762b291294ee12
+  binarySearch ::
+    GHC.Classes.Ord a => Data.Vector.Vector a -> a -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C(C1(U)),A,A,A,A,A,A)><S(SSS),1*U(U,U,U)><L,U>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (w1 :: Data.Vector.Vector a)
+                   (w2 :: a) ->
+                 case w1 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 case Utils.Vector.$wbinarySearch
+                        @ a
+                        w
+                        ww1
+                        ww2
+                        ww3
+                        w2 of ww4 { DEFAULT ->
+                 GHC.Types.I# ww4 } }) -}
+b4fc78d92f5275d607ca67d858415be9
+  binarySearchBy ::
+    (a -> b -> GHC.Types.Ordering)
+    -> Data.Vector.Vector a -> b -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><S(LSL),1*U(U,U,U)><L,U>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (comp :: a -> b -> GHC.Types.Ordering)
+                   (v :: Data.Vector.Vector a)
+                   (eta :: b) ->
+                 case v of v2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                 Utils.Vector.binarySearchByRange
+                   @ a
+                   @ b
+                   (GHC.Types.I# 0#)
+                   (GHC.Types.I# ipv1)
+                   comp
+                   v2
+                   eta }) -}
+19f96dcc24bd33ad706addc457142023
+  binarySearchByExact ::
+    (a -> b -> GHC.Types.Ordering)
+    -> Data.Vector.Vector a -> b -> GHC.Maybe.Maybe GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><S(SSS),1*U(U,U,U)><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (w :: a -> b -> GHC.Types.Ordering)
+                   (w1 :: Data.Vector.Vector a)
+                   (w2 :: b) ->
+                 case w1 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 Utils.Vector.$wbinarySearchByExact @ a @ b w ww1 ww2 ww3 w2 }) -}
+60e07053e501d9b50fb8685019721ae8
+  binarySearchByRange ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> (a -> b -> GHC.Types.Ordering)
+    -> Data.Vector.Vector a
+    -> b
+    -> GHC.Types.Int
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><L,C(C1(U))><L,U(U,A,U)><L,U>m,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ b
+                   (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: a -> b -> GHC.Types.Ordering)
+                   (w3 :: Data.Vector.Vector a)
+                   (w4 :: b) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 letrec {
+                   $wloop :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.Int
+                     <join 2> {- Arity: 2, Strictness: <S,U><S,U>m, Inline: [2] -}
+                   = \ (ww4 :: GHC.Prim.Int#) (ww5 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.==# ww4 ww5 of lwild {
+                       DEFAULT
+                       -> let {
+                            mid :: GHC.Prim.Int#
+                            = GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# ww4 ww5) 1#
+                          } in
+                          case w2
+                                 (case w3 of wild { Data.Vector.Vector dt dt1 dt2 ->
+                                  case GHC.Prim.indexArray#
+                                         @ a
+                                         dt2
+                                         (GHC.Prim.+# dt mid) of ds2 { Unit# ipv ->
+                                  ipv } })
+                                 w4 of wild {
+                            GHC.Types.LT -> $wloop (GHC.Prim.+# mid 1#) ww5
+                            GHC.Types.EQ -> $wloop ww4 mid
+                            GHC.Types.GT -> $wloop ww4 mid }
+                       1# -> GHC.Types.I# ww4 }
+                 } in
+                 $wloop ww1 ww3 } }) -}
+9c9e8ac48e817a883a277556a7f1bf76
+  sortParallel ::
+    GHC.Classes.Ord e =>
+    GHC.Types.Int -> Data.Vector.Mutable.IOVector e -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,C(C1(U)),C(C1(U)))><S(S),1*U(1*U)><S(LSL),1*U(U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.Vector.sortParallel1
+                  `cast`
+                (forall (e :: <*>_N).
+                 <GHC.Classes.Ord e>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <Data.Vector.Mutable.IOVector e>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+63707dd0c4929f8c9481f89565fcdb87
+  sortParallel1 ::
+    GHC.Classes.Ord e =>
+    GHC.Types.Int
+    -> Data.Vector.Mutable.IOVector e
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,C(C1(U)),C(C1(U)))><S(S),1*U(1*U)><S(LSL),1*U(U,U,U)><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ e
+                   ($dOrd :: GHC.Classes.Ord e)
+                   (n :: GHC.Types.Int)
+                   (v :: Data.Vector.Mutable.IOVector e)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case v of wild { Data.Vector.Mutable.MVector dt dt1 dt2 ->
+                 Utils.Vector.sortParallel2
+                   @ e
+                   $dOrd
+                   n
+                   wild
+                   (GHC.Types.I# 0#)
+                   (GHC.Types.I# dt1)
+                   eta }) -}
+07ae357bcb6f90b987c5fd8e95516544
+  sortParallel2 ::
+    GHC.Classes.Ord e =>
+    GHC.Types.Int
+    -> Data.Vector.Mutable.IOVector e
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 6,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,A,C(C1(U)),C(C1(U)))><S(S),1*U(1*U)><L,U(U,U,U)><S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ e
+                   (w :: GHC.Classes.Ord e)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Data.Vector.Mutable.IOVector e)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: GHC.Types.Int)
+                   (w5 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w3 of ww2 { GHC.Types.I# ww3 ->
+                 case w4 of ww4 { GHC.Types.I# ww5 ->
+                 Utils.Vector.$wsortPByBounds @ e w ww1 w2 ww3 ww5 w5 } } }) -}
+15b3d819c922f3e53e161702fd99d287
+  unsafeIncrement ::
+    (GHC.Num.Num a, Control.Monad.Primitive.PrimMonad m,
+     Data.Vector.Unboxed.Base.Unbox a) =>
+    Data.Vector.Unboxed.Base.MVector
+      (Control.Monad.Primitive.PrimState m) a
+    -> GHC.Types.Int -> m ()
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A,A,A,A,1*C1(U))><S(S(LC(C(S))LLL)L),U(U(U,U,U,U,U),U)><L,1*U(1*U(1*U(A,A,A,A,A,A,1*C1(C1(C1(U))),C(C1(C1(C1(U)))),A,A,A,A,A),A,A,A,A,A,A,A),A)><L,U><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ a
+                   @ m :: * -> *
+                   ($dNum :: GHC.Num.Num a)
+                   ($dPrimMonad :: Control.Monad.Primitive.PrimMonad m)
+                   ($dUnbox :: Data.Vector.Unboxed.Base.Unbox a)
+                   (v :: Data.Vector.Unboxed.Base.MVector
+                           (Control.Monad.Primitive.PrimState m) a)
+                   (i :: GHC.Types.Int) ->
+                 let {
+                   inc :: a = GHC.Num.fromInteger @ a $dNum 1
+                 } in
+                 let {
+                   $dMVector :: Data.Vector.Generic.Base.Vector
+                                  Data.Vector.Unboxed.Base.Vector a
+                   = Data.Vector.Unboxed.Base.$p1Unbox @ a $dUnbox
+                 } in
+                 let {
+                   $dMVector1 :: Data.Vector.Generic.Mutable.Base.MVector
+                                   (Data.Vector.Generic.Base.Mutable
+                                      Data.Vector.Unboxed.Base.Vector)
+                                   a
+                   = Data.Vector.Generic.Base.$p1Vector
+                       @ Data.Vector.Unboxed.Base.Vector
+                       @ a
+                       $dMVector
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   (Control.Monad.Primitive.$p1PrimMonad @ m $dPrimMonad)
+                   @ a
+                   @ ()
+                   (Data.Vector.Generic.Mutable.Base.basicUnsafeRead
+                      @ Data.Vector.Unboxed.Base.MVector
+                      @ a
+                      $dMVector1
+                        `cast`
+                      (Data.Vector.Generic.Mutable.Base.MVector
+                         (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                      @ m
+                      $dPrimMonad
+                      v
+                      i)
+                   (\ (x :: a) ->
+                    Data.Vector.Generic.Mutable.Base.basicUnsafeWrite
+                      @ Data.Vector.Unboxed.Base.MVector
+                      @ a
+                      $dMVector1
+                        `cast`
+                      (Data.Vector.Generic.Mutable.Base.MVector
+                         (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                      @ m
+                      $dPrimMonad
+                      v
+                      i
+                      (GHC.Num.+ @ a $dNum x inc))) -}
+e38f8a2c84587270f3fdc60277954c71
+  unsafeIncrement' ::
+    (GHC.Num.Num a, Control.Monad.Primitive.PrimMonad m,
+     Data.Vector.Unboxed.Base.Unbox a) =>
+    Data.Vector.Unboxed.Base.MVector
+      (Control.Monad.Primitive.PrimState m) a
+    -> GHC.Types.Int -> a -> m ()
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A,A,A,A,A)><S(S(LC(C(S))LLL)L),U(U(U,U,U,U,U),U)><L,1*U(1*U(1*U(A,A,A,A,A,A,1*C1(C1(C1(U))),C(C1(C1(C1(U)))),A,A,A,A,A),A,A,A,A,A,A,A),A)><L,U><L,U><L,U>,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (6, False, False)
+                (\ @ a
+                   @ m :: * -> *
+                   ($dNum :: GHC.Num.Num a)
+                   ($dPrimMonad :: Control.Monad.Primitive.PrimMonad m)
+                   ($dUnbox :: Data.Vector.Unboxed.Base.Unbox a)
+                   (v :: Data.Vector.Unboxed.Base.MVector
+                           (Control.Monad.Primitive.PrimState m) a)
+                   (i :: GHC.Types.Int)
+                   (inc :: a) ->
+                 let {
+                   $dMVector :: Data.Vector.Generic.Base.Vector
+                                  Data.Vector.Unboxed.Base.Vector a
+                   = Data.Vector.Unboxed.Base.$p1Unbox @ a $dUnbox
+                 } in
+                 let {
+                   $dMVector1 :: Data.Vector.Generic.Mutable.Base.MVector
+                                   (Data.Vector.Generic.Base.Mutable
+                                      Data.Vector.Unboxed.Base.Vector)
+                                   a
+                   = Data.Vector.Generic.Base.$p1Vector
+                       @ Data.Vector.Unboxed.Base.Vector
+                       @ a
+                       $dMVector
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   (Control.Monad.Primitive.$p1PrimMonad @ m $dPrimMonad)
+                   @ a
+                   @ ()
+                   (Data.Vector.Generic.Mutable.Base.basicUnsafeRead
+                      @ Data.Vector.Unboxed.Base.MVector
+                      @ a
+                      $dMVector1
+                        `cast`
+                      (Data.Vector.Generic.Mutable.Base.MVector
+                         (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                      @ m
+                      $dPrimMonad
+                      v
+                      i)
+                   (\ (x :: a) ->
+                    Data.Vector.Generic.Mutable.Base.basicUnsafeWrite
+                      @ Data.Vector.Unboxed.Base.MVector
+                      @ a
+                      $dMVector1
+                        `cast`
+                      (Data.Vector.Generic.Mutable.Base.MVector
+                         (Data.Vector.Unboxed.Base.D:R:MutableVector[0]) <a>_N)_R
+                      @ m
+                      $dPrimMonad
+                      v
+                      i
+                      (GHC.Num.+ @ a $dNum x inc))) -}
+0be52535355c52ebacc2e0abb91dfeb1
+  withVector ::
+    (Control.Monad.IO.Class.MonadIO m,
+     Data.Vector.Unboxed.Base.Unbox a) =>
+    Data.Vector.Unboxed.Base.IOVector a
+    -> (Data.Vector.Unboxed.Base.Vector a -> b) -> m b
+  {- Arity: 4,
+     Strictness: <S(LC(S)),1*U(A,1*C1(U))><L,U(U(A,C(C1(U)),A,A,A,A,A,A),A)><L,U><L,C(U)>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   @ b
+                   (w :: Control.Monad.IO.Class.MonadIO m)
+                   (w1 :: Data.Vector.Unboxed.Base.Unbox a)
+                   (w2 :: Data.Vector.Unboxed.Base.IOVector a)
+                   (w3 :: Data.Vector.Unboxed.Base.Vector a -> b) ->
+                 case w of ww { Control.Monad.IO.Class.C:MonadIO ww1 ww2 ->
+                 Utils.Vector.$wwithVector @ m @ a @ b ww2 w1 w2 w3 }) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

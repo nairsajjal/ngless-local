@@ -1,0 +1,482 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:27.986655311 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Configuration 8065
+  interface hash: ab97d04f4c4b0f7ac64bdb2f6939091f
+  ABI hash: 9a82cb30f48ec6255155f5c7391fb6c7
+  export-list hash: 9fc785b50aa90792bcf0bc8c48c96a09
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c1434802767203904a3c1e9aac903914
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Configuration.guessConfiguration
+  Configuration.initConfiguration
+  CmdArgs.ColorSetting{CmdArgs.AutoColor CmdArgs.ForceColor CmdArgs.NoColor}
+  Configuration.NGLessConfiguration{Configuration.NGLessConfiguration nConfArgv nConfColor nConfCreateReportDirectory nConfDownloadBaseURL nConfGlobalDataDirectory nConfIndexStorePath nConfKeepTemporaryFiles nConfPrintHeader nConfReportDirectory nConfSearchPath nConfStrictThreads nConfSubsample nConfTemporaryDirectory nConfTrace nConfUserDataDirectory nConfUserDirectory nConfVerbosity}
+module dependencies: CmdArgs
+package dependencies: ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 attoparsec-0.13.2.3 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 colour-2.3.5 configurator-0.3.0.0
+                      containers-0.6.0.1 deepseq-1.4.4.0 directory-1.3.3.0
+                      filepath-1.4.2.1 ghc-prim-0.5.3 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3
+                      optparse-applicative-0.14.3.0 primitive-0.6.4.0 process-1.6.5.0
+                      scientific-0.3.6.2 text-1.2.3.1 time-1.8.0.2 transformers-0.5.6.2
+                      unix-2.7.2.2 unix-compat-0.5.2 unordered-containers-0.2.10.0
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         configurator-0.3.0.0:Data.Configurator.Instances
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array text-1.2.3.1:Data.Text
+                         text-1.2.3.1:Data.Text.Lazy
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+import  -/  CmdArgs eb1bc9aa30723b0d6340ab204ddf34f6
+  exports: 6efb1ddd7ec496d3ab4280357ebeda0a
+  AutoColor 867aeedaff759d6f8838d7b7c8343150
+  ColorSetting c652734eb1dce0646e897c1ea85489d8
+  DefaultMode 89cec944e5cf48a2cc3c6668e9582287
+  ForceColor 43cf78612c7e92d2551c79257e497b63
+  InlineScript 7b20d2b2c8a823ec79c6034c2b42f3ed
+  NGLessArgs 3668e3d51499f4405c08387ad3c13ff2
+  NGLessArgs 700f1aa62d3f1a512390613b67f2327d
+  NoColor a2ed3d5fde6ec8f4a8b1c6bc4a83b3a6
+  Normal 62088b15da28a2efe09335511a536fb1
+  Quiet a44d056ef7d1abb5797e10c5b1d7f9d8
+  ScriptFilePath f2828065668e870ae22b497f8c89ff79
+  Verbosity 9cd5af9d3ac9c8c9a78dc92bf30d1460
+  color 700f1aa62d3f1a512390613b67f2327d
+  config_files 2a41ffb966ad9e805bd2de6e09e13ff9
+  createReportDirectory 2a41ffb966ad9e805bd2de6e09e13ff9
+  debug_mode 2a41ffb966ad9e805bd2de6e09e13ff9
+  deprecationCheck 2a41ffb966ad9e805bd2de6e09e13ff9
+  experimentalFeatures 2a41ffb966ad9e805bd2de6e09e13ff9
+  exportCWL 2a41ffb966ad9e805bd2de6e09e13ff9
+  exportJSON 2a41ffb966ad9e805bd2de6e09e13ff9
+  extraArgs 2a41ffb966ad9e805bd2de6e09e13ff9
+  html_report_directory 2a41ffb966ad9e805bd2de6e09e13ff9
+  indexPath 2a41ffb966ad9e805bd2de6e09e13ff9
+  input 2a41ffb966ad9e805bd2de6e09e13ff9
+  keep_temporary_files 2a41ffb966ad9e805bd2de6e09e13ff9
+  mode 700f1aa62d3f1a512390613b67f2327d
+  nThreads 2a41ffb966ad9e805bd2de6e09e13ff9
+  no_header 2a41ffb966ad9e805bd2de6e09e13ff9
+  print_last 2a41ffb966ad9e805bd2de6e09e13ff9
+  quiet 700f1aa62d3f1a512390613b67f2327d
+  searchPath 2a41ffb966ad9e805bd2de6e09e13ff9
+  strictThreads 2a41ffb966ad9e805bd2de6e09e13ff9
+  subsampleMode 2a41ffb966ad9e805bd2de6e09e13ff9
+  temporary_directory 2a41ffb966ad9e805bd2de6e09e13ff9
+  trace_flag 2a41ffb966ad9e805bd2de6e09e13ff9
+  validateOnly 2a41ffb966ad9e805bd2de6e09e13ff9
+  verbosity 700f1aa62d3f1a512390613b67f2327d
+import  -/  base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.Environment c54e0d0308e729fdace6bc37aa74bb52
+import  -/  base-4.12.0.0:System.Environment.ExecutablePath c16a3542acf0a63526a1fc24ae590920
+import  -/  configurator-0.3.0.0:Data.Configurator e9d759bb40f0788f88f421ebb1287f68
+import  -/  configurator-0.3.0.0:Data.Configurator.Types.Internal 7c1a0cbd300d11732cdfbab2b51ce276
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+b4545dc36df17a7adccb3e6be807ab85
+  $fEqNGLessConfiguration ::
+    GHC.Classes.Eq Configuration.NGLessConfiguration
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Configuration.NGLessConfiguration
+                  Configuration.$fEqNGLessConfiguration_$c==
+                  Configuration.$fEqNGLessConfiguration_$c/= -}
+b4545dc36df17a7adccb3e6be807ab85
+  $fEqNGLessConfiguration_$c/= ::
+    Configuration.NGLessConfiguration
+    -> Configuration.NGLessConfiguration -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLLLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U)><S(SLLLLLLLLLLLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Configuration.NGLessConfiguration)
+                   (y :: Configuration.NGLessConfiguration) ->
+                 case Configuration.$fEqNGLessConfiguration_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  $fEqNGLessConfiguration_$c== ::
+    Configuration.NGLessConfiguration
+    -> Configuration.NGLessConfiguration -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLLLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U)><S(SLLLLLLLLLLLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U)> -}
+b4545dc36df17a7adccb3e6be807ab85
+  $fShowNGLessConfiguration ::
+    GHC.Show.Show Configuration.NGLessConfiguration
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Configuration.NGLessConfiguration
+                  Configuration.$fShowNGLessConfiguration_$cshowsPrec
+                  Configuration.$fShowNGLessConfiguration_$cshow
+                  Configuration.$fShowNGLessConfiguration_$cshowList -}
+b4545dc36df17a7adccb3e6be807ab85
+  $fShowNGLessConfiguration_$cshow ::
+    Configuration.NGLessConfiguration -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(U,U,U,U,U,U,U,U,U,U,1*U,U,U,U,1*U,U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Configuration.NGLessConfiguration) ->
+                 Configuration.$fShowNGLessConfiguration_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b4545dc36df17a7adccb3e6be807ab85
+  $fShowNGLessConfiguration_$cshowList ::
+    [Configuration.NGLessConfiguration] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Configuration.NGLessConfiguration])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Configuration.NGLessConfiguration
+                   (Configuration.$fShowNGLessConfiguration_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+b4545dc36df17a7adccb3e6be807ab85
+  $fShowNGLessConfiguration_$cshowsPrec ::
+    GHC.Types.Int
+    -> Configuration.NGLessConfiguration -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(U,U,U,U,U,U,U,U,U,U,1*U,U,U,U,1*U,U,1*U)> -}
+6ff7bdd2042b5ef36b326640f4742266
+  $tc'NGLessConfiguration :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2882364208131886298##
+                   1399756779622748951##
+                   Configuration.$trModule
+                   Configuration.$tc'NGLessConfiguration2
+                   0#
+                   Configuration.$tc'NGLessConfiguration1) -}
+cf7048477ab3d3f0478c3b5792fb8ce9
+  $tc'NGLessConfiguration1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c0ce40f51e1b9f74b0cfdd93e983264b
+  $tc'NGLessConfiguration2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Configuration.$tc'NGLessConfiguration3) -}
+90cd626977434ae74a47c2e36333bc1b
+  $tc'NGLessConfiguration3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGLessConfiguration"#) -}
+0550f9bcc536c22c4f4fdebb622b52ae
+  $tcNGLessConfiguration :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13104558944612710891##
+                   15820963977845222658##
+                   Configuration.$trModule
+                   Configuration.$tcNGLessConfiguration1
+                   0#
+                   GHC.Types.krep$*) -}
+3c953799ff9fddc1d36c8596ebd184e2
+  $tcNGLessConfiguration1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Configuration.$tcNGLessConfiguration2) -}
+b1dfbc0a44dfc161ea293cf6af6d468f
+  $tcNGLessConfiguration2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLessConfiguration"#) -}
+fcd8f628110310458843b45d015fb1d7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Configuration.$trModule3
+                   Configuration.$trModule1) -}
+4f8f94a703a4b84a27c74618c9f03f9a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Configuration.$trModule2) -}
+51746248720a9e951469f5e777f69c50
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Configuration"#) -}
+e2dc5bc44d4acaaf4d1998c4e52c508a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Configuration.$trModule4) -}
+245ff669e27220ebb1b0abc8e8cfa4b3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+b4545dc36df17a7adccb3e6be807ab85
+  data NGLessConfiguration
+    = NGLessConfiguration {nConfDownloadBaseURL :: GHC.IO.FilePath,
+                           nConfGlobalDataDirectory :: GHC.IO.FilePath,
+                           nConfUserDirectory :: GHC.IO.FilePath,
+                           nConfUserDataDirectory :: GHC.IO.FilePath,
+                           nConfTemporaryDirectory :: GHC.IO.FilePath,
+                           nConfKeepTemporaryFiles :: GHC.Types.Bool,
+                           nConfTrace :: GHC.Types.Bool,
+                           nConfStrictThreads :: GHC.Types.Bool,
+                           nConfCreateReportDirectory :: GHC.Types.Bool,
+                           nConfReportDirectory :: GHC.IO.FilePath,
+                           nConfColor :: CmdArgs.ColorSetting,
+                           nConfPrintHeader :: GHC.Types.Bool,
+                           nConfSubsample :: GHC.Types.Bool,
+                           nConfArgv :: [Data.Text.Internal.Text],
+                           nConfVerbosity :: CmdArgs.Verbosity,
+                           nConfSearchPath :: [GHC.IO.FilePath],
+                           nConfIndexStorePath :: GHC.Maybe.Maybe GHC.IO.FilePath}
+aace6713503e4348ad82cccc251d27ec
+  guessConfiguration ::
+    GHC.Types.IO Configuration.NGLessConfiguration
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Configuration.guessConfiguration1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <Configuration.NGLessConfiguration>_R)) -}
+aa327d001e9d81db8d7633ab93549246
+  guessConfiguration1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Configuration.NGLessConfiguration #)
+  {- Arity: 1, Strictness: <S,U> -}
+84f52c6239c9ad03b4d25232fc02ecf2
+  initConfiguration ::
+    CmdArgs.NGLessArgs
+    -> GHC.Types.IO Configuration.NGLessConfiguration
+  {- Arity: 2, Strictness: <L,U(U,1*U,1*U,1*U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Configuration.initConfiguration1
+                  `cast`
+                (<CmdArgs.NGLessArgs>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Configuration.NGLessConfiguration>_R)) -}
+4cdcab89ab5adf46796a9bc88ea118bd
+  initConfiguration1 ::
+    CmdArgs.NGLessArgs
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Configuration.NGLessConfiguration #)
+  {- Arity: 2, Strictness: <L,U(U,1*U,1*U,1*U)><S,U> -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfArgv ::
+    Configuration.NGLessConfiguration -> [Data.Text.Internal.Text]
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLSLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds14 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfColor ::
+    Configuration.NGLessConfiguration -> CmdArgs.ColorSetting
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLSLLLLLL),1*U(A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds11 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfCreateReportDirectory ::
+    Configuration.NGLessConfiguration -> GHC.Types.Bool
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLSLLLLLLLL),1*U(A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds9 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfDownloadBaseURL ::
+    Configuration.NGLessConfiguration -> GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds1 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfGlobalDataDirectory ::
+    Configuration.NGLessConfiguration -> GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLLLLLLLLLL),1*U(A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds2 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfIndexStorePath ::
+    Configuration.NGLessConfiguration
+    -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds17 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfKeepTemporaryFiles ::
+    Configuration.NGLessConfiguration -> GHC.Types.Bool
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLLLLLLLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds6 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfPrintHeader ::
+    Configuration.NGLessConfiguration -> GHC.Types.Bool
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLSLLLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds12 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfReportDirectory ::
+    Configuration.NGLessConfiguration -> GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLSLLLLLLL),1*U(A,A,A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds10 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfSearchPath ::
+    Configuration.NGLessConfiguration -> [GHC.IO.FilePath]
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds16 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfStrictThreads ::
+    Configuration.NGLessConfiguration -> GHC.Types.Bool
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSLLLLLLLLL),1*U(A,A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds8 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfSubsample ::
+    Configuration.NGLessConfiguration -> GHC.Types.Bool
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLSLLLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds13 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfTemporaryDirectory ::
+    Configuration.NGLessConfiguration -> GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLLLLLLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds5 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfTrace :: Configuration.NGLessConfiguration -> GHC.Types.Bool
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLLLLLLLLLL),1*U(A,A,A,A,A,A,1*U,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds7 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfUserDataDirectory ::
+    Configuration.NGLessConfiguration -> GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLLLLLLLLLL),1*U(A,A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds4 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfUserDirectory ::
+    Configuration.NGLessConfiguration -> GHC.IO.FilePath
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLLLLLLLLLL),1*U(A,A,1*U,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds3 }) -}
+b4545dc36df17a7adccb3e6be807ab85
+  nConfVerbosity ::
+    Configuration.NGLessConfiguration -> CmdArgs.Verbosity
+  RecSel Left Configuration.NGLessConfiguration
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLLLLLLSLL),1*U(A,A,A,A,A,A,A,A,A,A,A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Configuration.NGLessConfiguration) ->
+                 case ds of wild { Configuration.NGLessConfiguration ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 ds15 }) -}
+instance GHC.Classes.Eq [Configuration.NGLessConfiguration]
+  = Configuration.$fEqNGLessConfiguration
+instance GHC.Show.Show [Configuration.NGLessConfiguration]
+  = Configuration.$fShowNGLessConfiguration
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

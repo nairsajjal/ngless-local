@@ -1,0 +1,116 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:52.719842454 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Version 8065
+  interface hash: 38178f858e3265f773b65e4d7b1335bd
+  ABI hash: fc1102948027063307711d441adc78f8
+  export-list hash: 10a6e26f2b3d3ed3669c8e90486ec28d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 46b8378e320a08f0ccf48ef09794507a
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Version.compilationDateStr
+  Version.dateStr
+  Version.embeddedStr
+  Version.gitHashStr
+  Version.versionStr
+module dependencies: Paths_NGLess
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      base-compat-0.10.5 deepseq-1.4.4.0 directory-1.3.3.0
+                      filepath-1.4.2.1 ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1
+                      integer-gmp-1.0.2.0 pretty-1.1.3.6 process-1.6.5.0
+                      template-haskell-2.14.0.0 time-1.8.0.2 unix-2.7.2.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+import  -/  Paths_NGLess 226870bf7ad2a0b1b87c533a68c6f8e2
+  exports: 004e293bf57e99054fcf90ee7abc1c2b
+  version 2f206756203a77e08529c368a7cda31d
+import  -/  base-4.12.0.0:Data.Version b91365c9d28e06272e2a2db7656d57ee
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  gitrev-1.3.1:Development.GitRev ac0bb910119a22028ead81922b85286c
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+dbe2174ca4b1141f212284dc4c6f0330
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Version.$trModule3
+                   Version.$trModule1) -}
+4d739d2c9b54ca11aa03ed7206df2195
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Version.$trModule2) -}
+811c7653510d40236eb2478260167437
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Version"#) -}
+da1ec9ae41c842fe5ec785fe376e1aa2
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Version.$trModule4) -}
+035c250b20357241cc00e7f787c31991
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+e1dd6e61e13576149d0aa1762c372ba4
+  compilationDateStr :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Version.compilationDateStr1) -}
+2d2be3fd31adb290cc872e9e716fbae9
+  compilationDateStr1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Feb 24 2020"#) -}
+a057453d878902471bfff4cffc1cf95e
+  dateStr :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# Version.dateStr1) -}
+5e2d2d4e68c15c69ca746af84a0393aa
+  dateStr1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("January 25 2020"#) -}
+7c32d0bbe6f9c15755e3d03d03849abb
+  embeddedStr :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# Version.embeddedStr1) -}
+e8fb3df5ba12d7c3279c7d751ce45349
+  embeddedStr1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("No"#) -}
+16a154a1c3a8f432d45700efff0b7ba8
+  gitHashStr :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# Version.gitHashStr1) -}
+ae68f9141659e53fbebd8b34e258fd66
+  gitHashStr1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("ff7077ca30c7eb25a6bedba5b837a73414c5c0d1"#) -}
+bd4be69e439c364c5501b5b7c3a61d2f
+  versionStr :: GHC.Base.String
+  {- Unfolding: (Data.Version.$wshowVersion
+                   Paths_NGLess.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

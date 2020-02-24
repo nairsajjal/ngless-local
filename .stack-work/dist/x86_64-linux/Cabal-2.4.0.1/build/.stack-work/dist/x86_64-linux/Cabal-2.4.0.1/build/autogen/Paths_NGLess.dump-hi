@@ -1,0 +1,374 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:32.435220554 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Paths_NGLess 8065
+  interface hash: c04ff7101f4a4a6bf5403a76aa02a403
+  ABI hash: 226870bf7ad2a0b1b87c533a68c6f8e2
+  export-list hash: 004e293bf57e99054fcf90ee7abc1c2b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b517f7f4e208249794a731eebbcfe6c4
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_NGLess.getBinDir
+  Paths_NGLess.getDataDir
+  Paths_NGLess.getDataFileName
+  Paths_NGLess.getDynLibDir
+  Paths_NGLess.getLibDir
+  Paths_NGLess.getLibexecDir
+  Paths_NGLess.getSysconfDir
+  Paths_NGLess.version
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Control.Exception 041da5b6267cf6b639ff5716d5b299a9
+import  -/  base-4.12.0.0:Data.Version b91365c9d28e06272e2a2db7656d57ee
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Exception 77722984940ee6ccf9e2f7dab10b83a4
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.Environment c54e0d0308e729fdace6bc37aa74bb52
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+3a35c29107ce1cf636e3054642bb5e32
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_NGLess.$trModule3
+                   Paths_NGLess.$trModule1) -}
+ca89b33765611a71b51c69abaaea2211
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_NGLess.$trModule2) -}
+16c1cb5ec2eff425f192678c14c49c81
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Paths_NGLess"#) -}
+b1503f7da6ccf5230a0fab4ef2bafaa4
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Paths_NGLess.$trModule4) -}
+46ca72d72c9bde6ea74a2d1f6f0cda1e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+16036af02baa6f19b7aa3c7724e1e986
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+f2a29c5614ffad96a31a0a6310eb54e5
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   (System.Environment.getEnv1
+                      (GHC.CString.unpackCString# "NGLess_bindir"#))
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ GHC.Base.String
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> (# eta1,
+                            GHC.CString.unpackCString#
+                              "/home/sajjal/Desktop/ngless-local/.stack-work/install/x86_64-linux/lts-14.20/8.6.5/bin"# #) } })
+                   eta) -}
+6de95c91885133cbae0ec5add2a847a1
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+0e4a331263b9ad381f7f24c4810a367f
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   (System.Environment.getEnv1
+                      (GHC.CString.unpackCString# "NGLess_datadir"#))
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ GHC.Base.String
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> (# eta1,
+                            GHC.CString.unpackCString#
+                              "/home/sajjal/Desktop/ngless-local/.stack-work/install/x86_64-linux/lts-14.20/8.6.5/share/x86_64-linux-ghc-8.6.5/NGLess-1.1.0"# #) } })
+                   eta) -}
+11784d88b9e39ec332d8dcf08b22994d
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+45dde8bac616d6d7afbaa451c65b297e
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Paths_NGLess.getDataDir1 s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString# "/"# name) #) }) -}
+0c05946c4d6c367585ef5c5ecf6c445c
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+10bacdce7470c6bddb2aee0ca2220b14
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   (System.Environment.getEnv1
+                      (GHC.CString.unpackCString# "NGLess_dynlibdir"#))
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ GHC.Base.String
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> (# eta1,
+                            GHC.CString.unpackCString#
+                              "/home/sajjal/Desktop/ngless-local/.stack-work/install/x86_64-linux/lts-14.20/8.6.5/lib/x86_64-linux-ghc-8.6.5"# #) } })
+                   eta) -}
+00f133e4c8adfb4278d25f5da67e8872
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+e12fb0037b573204aedb83177f7e3d11
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   (System.Environment.getEnv1
+                      (GHC.CString.unpackCString# "NGLess_libdir"#))
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ GHC.Base.String
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> (# eta1,
+                            GHC.CString.unpackCString#
+                              "/home/sajjal/Desktop/ngless-local/.stack-work/install/x86_64-linux/lts-14.20/8.6.5/lib/x86_64-linux-ghc-8.6.5/NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"# #) } })
+                   eta) -}
+71f556e45c555709b32bcd7eea4247aa
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+78860c559a121974049d20b0ecce4507
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   (System.Environment.getEnv1
+                      (GHC.CString.unpackCString# "NGLess_libexecdir"#))
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ GHC.Base.String
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> (# eta1,
+                            GHC.CString.unpackCString#
+                              "/home/sajjal/Desktop/ngless-local/.stack-work/install/x86_64-linux/lts-14.20/8.6.5/libexec/x86_64-linux-ghc-8.6.5/NGLess-1.1.0"# #) } })
+                   eta) -}
+6162be56a34bedfcf40d600c148df6c1
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_NGLess.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+e67f75c4e05e4ae89c324c8d0f26dd43
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.Type.SomeException
+                   (System.Environment.getEnv1
+                      (GHC.CString.unpackCString# "NGLess_sysconfdir"#))
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ GHC.Base.String
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> (# eta1,
+                            GHC.CString.unpackCString#
+                              "/home/sajjal/Desktop/ngless-local/.stack-work/install/x86_64-linux/lts-14.20/8.6.5/etc"# #) } })
+                   eta) -}
+2f206756203a77e08529c368a7cda31d
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_NGLess.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+d6dd5f8c1e52f0552aae4e7375cf7eae
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_NGLess.version5
+                   Paths_NGLess.version2) -}
+ecb2dc436697f084c6500be5c5c6f58f
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_NGLess.version5
+                   Paths_NGLess.version3) -}
+3ec7217d7f2dc93fa7c0cb55e80a0508
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_NGLess.version4
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+2f04ffb3b2eab6ea2cec767e6be04cc8
+  version4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+5ce3d07436d08100bada9a1cc4ac2639
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

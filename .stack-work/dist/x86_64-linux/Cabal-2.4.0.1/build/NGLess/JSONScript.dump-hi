@@ -1,0 +1,1023 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:11.357691447 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:JSONScript 8065
+  interface hash: 72000683ff8131ef68ffcdfc2c9a2dea
+  ABI hash: 4004ee02b9bfffa8da56a68210fc2249
+  export-list hash: 07fcd88f65ac17f60579326e03a9e8f8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1eeb64675462c8857e1c8221480d5248
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  JSONScript.writeScriptJSON
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.LockFile Utils.Samtools Utils.Utils
+                     Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0 diagrams-core-1.4.2
+                      diagrams-lib-1.4.3 diagrams-solve-0.1.1 diagrams-svg-1.4.3
+                      directory-1.3.3.0 distributive-0.6.1 dlist-0.8.0.7
+                      dual-tree-0.2.2.1 errors-2.3.0 exceptions-0.10.4 extra-1.6.18
+                      file-embed-0.0.11.1 filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1 hashable-1.2.7.0
+                      hostname-1.0 inline-c-0.7.0.1 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.3 intervals-0.8.1 kan-extensions-5.2
+                      lens-4.17.1 linear-1.20.9 lzma-0.0.0.3 lzma-conduit-1.2.1
+                      monad-loops-0.4.3 mono-traversable-1.0.15.1 monoid-extras-0.5.1
+                      mtl-2.2.2 newtype-generics-0.5.4 old-locale-1.0.0.7
+                      old-time-1.1.0.3 optparse-applicative-0.14.3.0 parsec-3.1.14.0
+                      parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0
+                      profunctors-5.3 random-1.1 reflection-2.1.5 regex-1.0.2.0
+                      regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  Assignment 4c0195db0fce84d2e9e704269e836114
+  BOp 082be4a718fd86899f5b7f01bed2cf9a
+  BOpAdd 883c3d29b2fcbc87259c89a43b4c0da3
+  BOpEQ e7cd3bb0cd4f65a11a1242f3891d1dd2
+  BOpGT 6c4ebb5e00c07ea1a168bdb25331e25d
+  BOpGTE 66d8a5dbec68bc11f3d8ac356d4fd75e
+  BOpLT efffe19041efe96e15c29e1b76d8babe
+  BOpLTE 757abdb965c9346d42ce17c336a0c9aa
+  BOpMul bac8d40d3aa02908bc5417974decf60e
+  BOpNEQ cdce5886e235a3de3dcf71fc80c8349f
+  BOpPathAppend 993bf55f405744f7a1bdc78b6026b1fc
+  BinaryOp 96aebef7d64d3dee5736581d4fd6e787
+  Block b24cb7195615293a75c1fd31f7a228f2
+  BuiltinConstant df58b1abf5535a0feb227c294c839942
+  Condition 5ee65797fc128c25b56f8d9e376f1857
+  ConstBool e8c69dda06d722ad76d6ee5b57016100
+  ConstDouble 142b08f1af0256b592f97ccf5fd10c52
+  ConstInt 8a960333f4a81e1ab77c58419b086b64
+  ConstStr 1facc51f598e05827c5695d189d62844
+  ConstSymbol a46ef274d615207b4535b4c02ac882bf
+  Continue 6677476ef496f2cb77a1ffee0eaf1832
+  Discard f62cf359094cb85b59e3d728c5b82948
+  Expression adc8def6a4b7257bb12aef607cf99238
+  FuncName a3f44134039f1915698a791072d2c89e
+  FunctionCall 23e51bd4b17fae101afcee641d2d9aa8
+  Header 8cf973723c5aa6873311b104c4d82099
+  Header 74bc5fb9a818f3ea1f170e1e0af29d3b
+  IndexExpression 1b396d3ca8c8b8b8954b5ee9745fd162
+  IndexOne f52ed1b667b98a95d0a7a81716ddc6ac
+  IndexTwo 3e1dd14fe87dffa8c8b07b12dd664278
+  LenThresholdDiscard fd3da8aa7b002fe2c64616e448888400
+  ListExpression f5bec8e812d8b6e40f97bd422cace1cd
+  LocalModInfo 191b8e963efa01dbec2e1ccee2d19329
+  Lookup 9af0655858caf9a44c41b1765edc7910
+  MethodCall 009cfcd1ea42375ebf8583c67b0f9ceb
+  MethodName 3a7b3929a7abcd9627c07af2ab496db6
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  Optimized f5901d6f38fa97c9d12fea16c9f226ff
+  Script 76fe0974e0c66dd0b2f466e0c453166d
+  Sequence 629f5460e2af1b50496e5ea307340818
+  SubstrimReassign 043be440a5735a40f05ee2b71df3f294
+  UOp 72ea05232a2f0c6e38ace4b9bd98df0d
+  UOpLen 4e5294a23d580f449388441e0a81293a
+  UOpMinus 2419d9dd30d69f546f66aaac135a2324
+  UOpNot f1ca7c78563a1a142a90cc650fd11173
+  UnaryOp 7ddfad96d4b058dc5f939d4cf881cf4f
+  Variable 9b44f8caef4ce199ec53dca15d83da61
+  nglBody 76fe0974e0c66dd0b2f466e0c453166d
+  nglHeader 76fe0974e0c66dd0b2f466e0c453166d
+import  -/  aeson-1.4.6.0:Data.Aeson ce3c7d2cd8d8c223f7b849dd159257fc
+import  -/  aeson-1.4.6.0:Data.Aeson.Types 0463ab7e5836c8b82a8ba45dfedd17d9
+import  -/  aeson-1.4.6.0:Data.Aeson.Types.Internal 135c5529ac1dd8a681627079bcf6a760
+import  -/  aeson-1.4.6.0:Data.Aeson.Types.ToJSON 994495c280615b9bc7dede02f4e9a6ff
+import  -/  base-4.12.0.0:Control.Arrow cda881e865dd3141fb08ed18f2efcca7
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  safeio-0.0.5.0:System.IO.SafeWrite d7756aa6dd46103e1e3f96abe2c18fe3
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+da874d711f2bd755fdf3bc5f476c5d23
+  $fToJSONEncExpression ::
+    Data.Aeson.Types.ToJSON.ToJSON JSONScript.EncExpression
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ JSONScript.EncExpression
+                  JSONScript.$fToJSONEncExpression_$ctoJSON
+                  JSONScript.$fToJSONEncExpression_$ctoEncoding
+                  JSONScript.$fToJSONEncExpression_$ctoJSONList
+                  JSONScript.$fToJSONEncExpression_$ctoEncodingList -}
+da874d711f2bd755fdf3bc5f476c5d23
+  $fToJSONEncExpression_$ctoEncoding ::
+    JSONScript.EncExpression -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: JSONScript.EncExpression) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (JSONScript.toJSONEx x `cast` (JSONScript.N:EncExpression[0])))
+                  `cast`
+                (<JSONScript.EncExpression>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+da874d711f2bd755fdf3bc5f476c5d23
+  $fToJSONEncExpression_$ctoEncodingList ::
+    [JSONScript.EncExpression] -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ JSONScript.EncExpression
+                   JSONScript.$fToJSONEncExpression_$ctoEncoding) -}
+da874d711f2bd755fdf3bc5f476c5d23
+  $fToJSONEncExpression_$ctoJSON ::
+    JSONScript.EncExpression -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: JSONScript.EncExpression) ->
+                 JSONScript.toJSONEx ds `cast` (JSONScript.N:EncExpression[0])) -}
+da874d711f2bd755fdf3bc5f476c5d23
+  $fToJSONEncExpression_$ctoJSONList ::
+    [JSONScript.EncExpression] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [JSONScript.EncExpression]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ JSONScript.EncExpression
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ JSONScript.EncExpression
+                                     c
+                                     JSONScript.$fToJSONEncExpression_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+18d22c96dcd0880df69497028f3cbd2d
+  $fToJSONEncHeader ::
+    Data.Aeson.Types.ToJSON.ToJSON JSONScript.EncHeader
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ JSONScript.EncHeader
+                  JSONScript.$fToJSONEncHeader_$ctoJSON
+                  JSONScript.$fToJSONEncHeader_$ctoEncoding
+                  JSONScript.$fToJSONEncHeader_$ctoJSONList
+                  JSONScript.$fToJSONEncHeader_$ctoEncodingList -}
+18d22c96dcd0880df69497028f3cbd2d
+  $fToJSONEncHeader_$ctoEncoding ::
+    JSONScript.EncHeader -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S(S(SSS)S),1*U(1*U(U,U,U),1*U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: JSONScript.EncHeader) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (JSONScript.$fToJSONEncHeader_$ctoJSON x))
+                  `cast`
+                (<JSONScript.EncHeader>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+18d22c96dcd0880df69497028f3cbd2d
+  $fToJSONEncHeader_$ctoEncodingList ::
+    [JSONScript.EncHeader] -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ JSONScript.EncHeader
+                   JSONScript.$fToJSONEncHeader_$ctoEncoding) -}
+18d22c96dcd0880df69497028f3cbd2d
+  $fToJSONEncHeader_$ctoJSON ::
+    JSONScript.EncHeader -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S(S(SSS)S),1*U(1*U(U,U,U),1*U)>m1,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: JSONScript.EncHeader) ->
+                 case w `cast`
+                      (JSONScript.N:EncHeader[0]) of ww { Language.Header ww1 ww2 ->
+                 case ww1 of ww3 { Data.Text.Internal.Text ww4 ww5 ww6 ->
+                 case JSONScript.$w$ctoJSON ww4 ww5 ww6 ww2 of ww7 { Unit# ww8 ->
+                 Data.Aeson.Types.Internal.Object ww8 } } }) -}
+18d22c96dcd0880df69497028f3cbd2d
+  $fToJSONEncHeader_$ctoJSONList ::
+    [JSONScript.EncHeader] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [JSONScript.EncHeader]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ JSONScript.EncHeader
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ JSONScript.EncHeader
+                                     c
+                                     JSONScript.$fToJSONEncHeader_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+f8135f39131d22405d3fb09301b3782d
+  $tc'EncExpression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10247316681715867460##
+                   14731259164903333296##
+                   JSONScript.$trModule
+                   JSONScript.$tc'EncExpression2
+                   0#
+                   JSONScript.$tc'EncExpression1) -}
+42a57b4480c7bb8839c288a983937b1a
+  $tc'EncExpression1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a91d44084ca0dc589afe19c774481bff
+  $tc'EncExpression2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JSONScript.$tc'EncExpression3) -}
+8b44c0a052d2fa5b2dc7ccc5a015f0ad
+  $tc'EncExpression3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EncExpression"#) -}
+e36d0e17bc5f8c52d96fae23415ef042
+  $tc'EncHeader :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13139573835274551958##
+                   16907863273258084631##
+                   JSONScript.$trModule
+                   JSONScript.$tc'EncHeader2
+                   0#
+                   JSONScript.$tc'EncHeader1) -}
+728284884fd3a3e75d965217339f0dc6
+  $tc'EncHeader1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5893854ab27d3bdbdcf6b51ee5e26e12
+  $tc'EncHeader2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JSONScript.$tc'EncHeader3) -}
+fcb81391bd2e5147ceb53c3748b34879
+  $tc'EncHeader3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EncHeader"#) -}
+402f244c9646e81f8885b8a5b238d386
+  $tcEncExpression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13511098228526823839##
+                   7788868549802311233##
+                   JSONScript.$trModule
+                   JSONScript.$tcEncExpression1
+                   0#
+                   GHC.Types.krep$*) -}
+c4f333b138dee9b03e3eb892018a6a16
+  $tcEncExpression1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JSONScript.$tcEncExpression2) -}
+440a73f436a2b4cb9f3b190390e5ac75
+  $tcEncExpression2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("EncExpression"#) -}
+ac61067fc01066ee83999a5f5be33402
+  $tcEncHeader :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14951859899751712107##
+                   7463765468095521887##
+                   JSONScript.$trModule
+                   JSONScript.$tcEncHeader1
+                   0#
+                   GHC.Types.krep$*) -}
+005864d803f9e8e78edd890d1b756dff
+  $tcEncHeader1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JSONScript.$tcEncHeader2) -}
+a858b9efeb8799bf9a8a3053a0b3c4a8
+  $tcEncHeader2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("EncHeader"#) -}
+9886f343b142f2e4abc2799eda931adb
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   JSONScript.$trModule3
+                   JSONScript.$trModule1) -}
+e132f96e7afd6895618686037fd94f72
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JSONScript.$trModule2) -}
+8d2a42b885738b3bcecaac672a25e8e7
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JSONScript"#) -}
+7e194cc34e16f2a32f73384e4d19f680
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JSONScript.$trModule4) -}
+f2e830f41720cbb1d84b16b9e86526e3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+b0e6c9938a85671eb151fe87e1b68e2d
+  $w$ctoJSON ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> [Language.ModInfo]
+    -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: [Language.ModInfo]) ->
+                 case Data.Text.Show.unpackCString#
+                        "ngless-version"# of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                 case Data.Aeson.Types.Internal.$w$sunsafeInsert
+                        @ Data.Aeson.Types.Internal.Value
+                        ww5
+                        ww6
+                        ww7
+                        (Data.Aeson.Types.Internal.String
+                           (Data.Text.Internal.Text ww ww1 ww2))
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of z23 { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             Data.Vector.Vector Data.Aeson.Types.Internal.Value #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newArray#
+                                @ Data.Aeson.Types.Internal.Value
+                                @ (Control.Monad.Primitive.PrimState
+                                     (GHC.ST.ST GHC.Prim.RealWorld))
+                                0#
+                                (Data.Vector.Mutable.uninitialised
+                                   @ Data.Aeson.Types.Internal.Value)
+                                s1
+                                  `cast`
+                                (GHC.Prim.State#
+                                   (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                             (Nth:0
+                                                  (Nth:2
+                                                       (<GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                                        ->_R ((#,#)
+                                                                <'GHC.Types.TupleRep '[]>_R
+                                                                <'GHC.Types.LiftedRep>_R
+                                                                <GHC.Prim.State#
+                                                                   GHC.Prim.RealWorld>_R
+                                                                (Data.Vector.Generic.Base.Mutable
+                                                                   <Data.Vector.Vector>_N
+                                                                   (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                        <GHC.Prim.RealWorld>_N)
+                                                                   <Data.Aeson.Types.Internal.Value>_N)_R)_R))))))_R of ds1 { (#,#) ipv ipv1 ->
+                         letrec {
+                           $s$wfoldlM_loop :: GHC.Prim.State# GHC.Prim.RealWorld
+                                              -> [Data.Aeson.Types.Internal.Value]
+                                              -> GHC.Prim.Int#
+                                              -> GHC.Prim.MutableArray#
+                                                   GHC.Prim.RealWorld
+                                                   Data.Aeson.Types.Internal.Value
+                                              -> GHC.Prim.Int#
+                                              -> GHC.Prim.Int#
+                                              -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                    Data.Vector.Vector
+                                                      Data.Aeson.Types.Internal.Value #)
+                             <join 6> {- Arity: 6,
+                                         Strictness: <S,U><S,1*U><L,U><S,U><L,U><L,U> -}
+                           = \ (sc :: GHC.Prim.State# GHC.Prim.RealWorld)
+                               (sc1 :: [Data.Aeson.Types.Internal.Value])
+                               (sc2 :: GHC.Prim.Int#)
+                               (sc3 :: GHC.Prim.MutableArray#
+                                         GHC.Prim.RealWorld Data.Aeson.Types.Internal.Value)
+                               (sc4 :: GHC.Prim.Int#)
+                               (sc5 :: GHC.Prim.Int#) ->
+                             case sc1 of wild {
+                               []
+                               -> case GHC.Prim.unsafeFreezeArray#
+                                         @ (Control.Monad.Primitive.PrimState
+                                              (GHC.ST.ST GHC.Prim.RealWorld))
+                                         @ Data.Aeson.Types.Internal.Value
+                                         sc3
+                                           `cast`
+                                         (GHC.Prim.MutableArray#
+                                            (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                      <GHC.Prim.RealWorld>_N))
+                                            <Data.Aeson.Types.Internal.Value>_R)_R
+                                         sc
+                                           `cast`
+                                         (GHC.Prim.State#
+                                            (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                      (Nth:0
+                                                           (Nth:2
+                                                                (Nth:3
+                                                                     (<GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld>_R
+                                                                      ->_R ((#,#)
+                                                                              <'GHC.Types.TupleRep
+                                                                                 '[]>_R
+                                                                              <'GHC.Types.LiftedRep>_R
+                                                                              <GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld>_R
+                                                                              (Data.Vector.Generic.Base.Mutable
+                                                                                 <Data.Vector.Vector>_N
+                                                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                           <GHC.Prim.RealWorld>_N))
+                                                                                 <Data.Aeson.Types.Internal.Value>_N)_R)_R)))))))_R of ds2 { (#,#) ipv2 ipv3 ->
+                                  (# ipv2
+                                       `cast`
+                                     (GHC.Prim.State#
+                                        (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                             <GHC.Prim.RealWorld>_N))_R,
+                                     Data.Vector.Vector
+                                       @ Data.Aeson.Types.Internal.Value
+                                       sc5
+                                       sc2
+                                       ipv3 #) }
+                               : x xs1
+                               -> let {
+                                    y :: GHC.Prim.Int# = GHC.Prim.+# sc2 1#
+                                  } in
+                                  case GHC.Prim.<# sc4 y of lwild {
+                                    DEFAULT
+                                    -> case GHC.Prim.writeArray#
+                                              @ (Control.Monad.Primitive.PrimState
+                                                   (GHC.ST.ST GHC.Prim.RealWorld))
+                                              @ Data.Aeson.Types.Internal.Value
+                                              sc3
+                                                `cast`
+                                              (GHC.Prim.MutableArray#
+                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N))
+                                                 <Data.Aeson.Types.Internal.Value>_R)_R
+                                              (GHC.Prim.+# sc5 sc2)
+                                              x
+                                              sc
+                                                `cast`
+                                              (GHC.Prim.State#
+                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N)))_R of s'# { DEFAULT ->
+                                       $s$wfoldlM_loop
+                                         s'#
+                                           `cast`
+                                         (GHC.Prim.State#
+                                            (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                 <GHC.Prim.RealWorld>_N))_R
+                                         xs1
+                                         y
+                                         sc3
+                                         sc4
+                                         sc5 }
+                                    1#
+                                    -> case GHC.Prim.<=# sc4 1# of lwild1 {
+                                         DEFAULT
+                                         -> let {
+                                              y2 :: GHC.Prim.Int# = GHC.Prim.-# y sc4
+                                            } in
+                                            case GHC.Prim.<=# sc4 y2 of lwild2 {
+                                              DEFAULT
+                                              -> let {
+                                                   n# :: GHC.Prim.Int# = GHC.Prim.*# 2# sc4
+                                                 } in
+                                                 case GHC.Prim.newArray#
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        n#
+                                                        (Data.Vector.Mutable.uninitialised
+                                                           @ Data.Aeson.Types.Internal.Value)
+                                                        sc
+                                                          `cast`
+                                                        (GHC.Prim.State#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv2 ipv3 ->
+                                                 case GHC.Prim.copyMutableArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        sc3
+                                                          `cast`
+                                                        (GHC.Prim.MutableArray#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N))
+                                                           <Data.Aeson.Types.Internal.Value>_R)_R
+                                                        sc5
+                                                        ipv3
+                                                        0#
+                                                        sc4
+                                                        ipv2 of s'# { DEFAULT ->
+                                                 case GHC.Prim.writeArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        ipv3
+                                                        sc2
+                                                        x
+                                                        s'# of s'#1 { DEFAULT ->
+                                                 $s$wfoldlM_loop
+                                                   s'#1
+                                                     `cast`
+                                                   (GHC.Prim.State#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N))_R
+                                                   xs1
+                                                   y
+                                                   ipv3
+                                                     `cast`
+                                                   (GHC.Prim.MutableArray#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N)
+                                                      <Data.Aeson.Types.Internal.Value>_R)_R
+                                                   n#
+                                                   0# } } }
+                                              1#
+                                              -> let {
+                                                   n# :: GHC.Prim.Int# = GHC.Prim.+# sc4 y2
+                                                 } in
+                                                 case GHC.Prim.newArray#
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        n#
+                                                        (Data.Vector.Mutable.uninitialised
+                                                           @ Data.Aeson.Types.Internal.Value)
+                                                        sc
+                                                          `cast`
+                                                        (GHC.Prim.State#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv2 ipv3 ->
+                                                 case GHC.Prim.copyMutableArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        sc3
+                                                          `cast`
+                                                        (GHC.Prim.MutableArray#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N))
+                                                           <Data.Aeson.Types.Internal.Value>_R)_R
+                                                        sc5
+                                                        ipv3
+                                                        0#
+                                                        sc4
+                                                        ipv2 of s'# { DEFAULT ->
+                                                 case GHC.Prim.writeArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        ipv3
+                                                        sc2
+                                                        x
+                                                        s'# of s'#1 { DEFAULT ->
+                                                 $s$wfoldlM_loop
+                                                   s'#1
+                                                     `cast`
+                                                   (GHC.Prim.State#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N))_R
+                                                   xs1
+                                                   y
+                                                   ipv3
+                                                     `cast`
+                                                   (GHC.Prim.MutableArray#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N)
+                                                      <Data.Aeson.Types.Internal.Value>_R)_R
+                                                   n#
+                                                   0# } } } }
+                                         1#
+                                         -> let {
+                                              y2 :: GHC.Prim.Int# = GHC.Prim.-# y sc4
+                                            } in
+                                            case GHC.Prim.<=# 1# y2 of lwild2 {
+                                              DEFAULT
+                                              -> let {
+                                                   n# :: GHC.Prim.Int# = GHC.Prim.+# sc4 1#
+                                                 } in
+                                                 case GHC.Prim.newArray#
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        n#
+                                                        (Data.Vector.Mutable.uninitialised
+                                                           @ Data.Aeson.Types.Internal.Value)
+                                                        sc
+                                                          `cast`
+                                                        (GHC.Prim.State#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv2 ipv3 ->
+                                                 case GHC.Prim.copyMutableArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        sc3
+                                                          `cast`
+                                                        (GHC.Prim.MutableArray#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N))
+                                                           <Data.Aeson.Types.Internal.Value>_R)_R
+                                                        sc5
+                                                        ipv3
+                                                        0#
+                                                        sc4
+                                                        ipv2 of s'# { DEFAULT ->
+                                                 case GHC.Prim.writeArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        ipv3
+                                                        sc2
+                                                        x
+                                                        s'# of s'#1 { DEFAULT ->
+                                                 $s$wfoldlM_loop
+                                                   s'#1
+                                                     `cast`
+                                                   (GHC.Prim.State#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N))_R
+                                                   xs1
+                                                   y
+                                                   ipv3
+                                                     `cast`
+                                                   (GHC.Prim.MutableArray#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N)
+                                                      <Data.Aeson.Types.Internal.Value>_R)_R
+                                                   n#
+                                                   0# } } }
+                                              1#
+                                              -> let {
+                                                   n# :: GHC.Prim.Int# = GHC.Prim.+# sc4 y2
+                                                 } in
+                                                 case GHC.Prim.newArray#
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        n#
+                                                        (Data.Vector.Mutable.uninitialised
+                                                           @ Data.Aeson.Types.Internal.Value)
+                                                        sc
+                                                          `cast`
+                                                        (GHC.Prim.State#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N)))_R of ds2 { (#,#) ipv2 ipv3 ->
+                                                 case GHC.Prim.copyMutableArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        sc3
+                                                          `cast`
+                                                        (GHC.Prim.MutableArray#
+                                                           (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                     <GHC.Prim.RealWorld>_N))
+                                                           <Data.Aeson.Types.Internal.Value>_R)_R
+                                                        sc5
+                                                        ipv3
+                                                        0#
+                                                        sc4
+                                                        ipv2 of s'# { DEFAULT ->
+                                                 case GHC.Prim.writeArray#
+                                                        @ (Control.Monad.Primitive.PrimState
+                                                             (GHC.ST.ST GHC.Prim.RealWorld))
+                                                        @ Data.Aeson.Types.Internal.Value
+                                                        ipv3
+                                                        sc2
+                                                        x
+                                                        s'# of s'#1 { DEFAULT ->
+                                                 $s$wfoldlM_loop
+                                                   s'#1
+                                                     `cast`
+                                                   (GHC.Prim.State#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N))_R
+                                                   xs1
+                                                   y
+                                                   ipv3
+                                                     `cast`
+                                                   (GHC.Prim.MutableArray#
+                                                      (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                           <GHC.Prim.RealWorld>_N)
+                                                      <Data.Aeson.Types.Internal.Value>_R)_R
+                                                   n#
+                                                   0# } } } } } } }
+                         } in
+                         $s$wfoldlM_loop
+                           ipv
+                             `cast`
+                           (GHC.Prim.State#
+                              (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                   (Nth:0
+                                        (Nth:2
+                                             (Nth:3
+                                                  (<GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                                   ->_R ((#,#)
+                                                           <'GHC.Types.TupleRep '[]>_R
+                                                           <'GHC.Types.LiftedRep>_R
+                                                           <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                                           (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                            (GHC.ST.ST
+                                                                                                               GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N))_R))))))_R
+                           (GHC.Base.map
+                              @ Language.ModInfo
+                              @ Data.Aeson.Types.Internal.Value
+                              JSONScript.encodeMod
+                              ww3)
+                           0#
+                           ipv1
+                             `cast`
+                           (GHC.Prim.MutableArray#
+                              (Nth:0
+                                   (Nth:3
+                                        (Nth:3
+                                             (<GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                              ->_R ((#,#)
+                                                      <'GHC.Types.TupleRep '[]>_R
+                                                      <'GHC.Types.LiftedRep>_R
+                                                      <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                                      (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                       (GHC.ST.ST
+                                                                                                          GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N))_R)) ; Sub (Data.Vector.D:R:MutableVector[0]) (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                                                                                                                                                         <GHC.Prim.RealWorld>_N) <Data.Aeson.Types.Internal.Value>_N))
+                              (Nth:1
+                                   (Nth:3
+                                        (Nth:3
+                                             (<GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                              ->_R ((#,#)
+                                                      <'GHC.Types.TupleRep '[]>_R
+                                                      <'GHC.Types.LiftedRep>_R
+                                                      <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                                                      (Sub (Sym (Data.Vector.D:R:MutableVector[0])) <Control.Monad.Primitive.PrimState
+                                                                                                       (GHC.ST.ST
+                                                                                                          GHC.Prim.RealWorld)>_N <Data.Aeson.Types.Internal.Value>_N))_R)) ; Sub (Data.Vector.D:R:MutableVector[0]) (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                                                                                                                                                                         <GHC.Prim.RealWorld>_N) <Data.Aeson.Types.Internal.Value>_N)))_R
+                           0#
+                           0# }) of ds1 { (#,#) ipv1 ipv2 ->
+                 case ipv2 of dt { Data.Vector.Vector ipv ipv4 ipv5 ->
+                 case Data.Text.Show.unpackCString#
+                        "modules"# of ww8 { Data.Text.Internal.Text ww9 ww10 ww11 ->
+                 case Data.Aeson.Types.Internal.$w$sunsafeInsert
+                        @ Data.Aeson.Types.Internal.Value
+                        ww9
+                        ww10
+                        ww11
+                        (Data.Aeson.Types.Internal.Array dt)
+                        z23 of dt1 { DEFAULT ->
+                 (# dt1 #) } } } } } }) -}
+1fa11506dc2f83db5c028e1236df44d7
+  $wencodeMod ::
+    Language.ModInfo -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+da874d711f2bd755fdf3bc5f476c5d23
+  newtype EncExpression = EncExpression Language.Expression
+18d22c96dcd0880df69497028f3cbd2d
+  newtype EncHeader = EncHeader Language.Header
+4637de08528885cb3e69bdbf19f355d7
+  encodeMod :: Language.ModInfo -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m1, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.ModInfo) ->
+                 case JSONScript.$wencodeMod w of ww { Unit# ww1 ->
+                 Data.Aeson.Types.Internal.Object ww1 }) -}
+b3ab29e0094101909bd6d4c68011d40f
+  toJSONEx :: Language.Expression -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U> -}
+1f4dc9b5f7f71b081e78167b71670270
+  writeScriptJSON ::
+    GHC.IO.FilePath
+    -> Language.Script -> Language.Script -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,U(U,U)><L,U(A,U)> -}
+instance Data.Aeson.Types.ToJSON.ToJSON [JSONScript.EncExpression]
+  = JSONScript.$fToJSONEncExpression
+instance Data.Aeson.Types.ToJSON.ToJSON [JSONScript.EncHeader]
+  = JSONScript.$fToJSONEncHeader
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

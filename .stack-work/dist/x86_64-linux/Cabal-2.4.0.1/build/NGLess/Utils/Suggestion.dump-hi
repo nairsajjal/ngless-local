@@ -1,0 +1,391 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:35.400536373 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.Suggestion 8065
+  interface hash: 6abb2c51cfa986c8053c41c2a168a766
+  ABI hash: 559e2395dd1103e80283d24b7e6fd048
+  export-list hash: cc5fd4d32efb666b1cbe2686b5c39e5e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8c5b40462c7e0eb1a03172e2955ee20e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.Suggestion.checkFileReadable
+  Utils.Suggestion.findSuggestion
+  Utils.Suggestion.suggestionMessage
+  Utils.Suggestion.Suggestion{Utils.Suggestion.Suggestion}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0* binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 deepseq-1.4.4.0
+                      directory-1.3.3.0 edit-distance-0.2.2.1 filepath-1.4.2.1
+                      ghc-prim-0.5.3 integer-gmp-1.0.2.0 text-1.2.3.1* time-1.8.0.2
+                      unix-2.7.2.2
+orphans: text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         text-1.2.3.1:Data.Text
+import  -/  base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO.Error 4554cd72d03d7e89c9020f2d00a768a1
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  directory-1.3.3.0:System.Directory.Internal.Common 3b368d8e99bb39505fb42af412fa2d5c
+import  -/  edit-distance-0.2.2.1:Text.EditDistance 4b439d75ded0f40b1db89a5e191b462e
+import  -/  edit-distance-0.2.2.1:Text.EditDistance.EditCosts a1a9e8111e0a2cfc7104cc898fa673bb
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fEqSuggestion :: GHC.Classes.Eq Utils.Suggestion.Suggestion
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.Suggestion.Suggestion
+                  Utils.Suggestion.$fEqSuggestion_$c==
+                  Utils.Suggestion.$fEqSuggestion_$c/= -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fEqSuggestion_$c/= ::
+    Utils.Suggestion.Suggestion
+    -> Utils.Suggestion.Suggestion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)S),1*U(U(U,U,U),U(U,U,U))><S(S(LLS)S),1*U(U(U,U,U),U(U,U,U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Utils.Suggestion.Suggestion)
+                   (y :: Utils.Suggestion.Suggestion) ->
+                 case Utils.Suggestion.$fEqSuggestion_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fEqSuggestion_$c== ::
+    Utils.Suggestion.Suggestion
+    -> Utils.Suggestion.Suggestion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)S),1*U(U(U,U,U),U(U,U,U))><S(S(LLS)S),1*U(U(U,U,U),U(U,U,U))>,
+     Unfolding: (\ (ds :: Utils.Suggestion.Suggestion)
+                   (ds1 :: Utils.Suggestion.Suggestion) ->
+                 case ds of wild { Utils.Suggestion.Suggestion a1 a2 ->
+                 case ds1 of wild1 { Utils.Suggestion.Suggestion b1 b2 ->
+                 case a1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b1 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt2 dt5 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             dt
+                             (GHC.Prim.int2Word# dt1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# dt2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> case a2 of wild6 { Data.Text.Internal.Text dt7 dt8 dt9 ->
+                           case b2 of wild7 { Data.Text.Internal.Text dt10 dt11 dt12 ->
+                           case GHC.Prim.==# dt9 dt12 of lwild1 {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.ByteArray#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.Word#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Int# #)}
+                                       dt7
+                                       (GHC.Prim.int2Word# dt8)
+                                       dt10
+                                       (GHC.Prim.int2Word# dt11)
+                                       (GHC.Prim.int2Word# dt9)
+                                       GHC.Prim.realWorld# of wild8 { (#,#) ds5 ds6 ->
+                                case GHC.Prim.narrow32Int# ds6 of wild9 {
+                                  DEFAULT -> GHC.Types.False
+                                  0# -> GHC.Types.True } } } } } } } } } } } }) -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fShowSuggestion :: GHC.Show.Show Utils.Suggestion.Suggestion
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.Suggestion.Suggestion
+                  Utils.Suggestion.$fShowSuggestion_$cshowsPrec
+                  Utils.Suggestion.$fShowSuggestion_$cshow
+                  Utils.Suggestion.$fShowSuggestion_$cshowList -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fShowSuggestion_$cshow ::
+    Utils.Suggestion.Suggestion -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(S(SSS)S(SSS)),1*U(U(U,U,U),U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Utils.Suggestion.Suggestion) ->
+                 Utils.Suggestion.$fShowSuggestion_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fShowSuggestion_$cshowList ::
+    [Utils.Suggestion.Suggestion] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Utils.Suggestion.Suggestion]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Utils.Suggestion.Suggestion
+                   (Utils.Suggestion.$fShowSuggestion_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  $fShowSuggestion_$cshowsPrec ::
+    GHC.Types.Int -> Utils.Suggestion.Suggestion -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(S(SSS)S(SSS)),1*U(U(U,U,U),U(U,U,U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Utils.Suggestion.Suggestion) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Utils.Suggestion.Suggestion ww3 ww4 ->
+                 case ww3 of ww5 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                 case ww4 of ww9 { Data.Text.Internal.Text ww10 ww11 ww12 ->
+                 Utils.Suggestion.$w$cshowsPrec
+                   ww1
+                   ww6
+                   ww7
+                   ww8
+                   ww10
+                   ww11
+                   ww12 } } } }) -}
+6b5fab69287969f142db2211215707d1
+  $tc'Suggestion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   307259201166250975##
+                   3707443852028600301##
+                   Utils.Suggestion.$trModule
+                   Utils.Suggestion.$tc'Suggestion2
+                   0#
+                   Utils.Suggestion.$tc'Suggestion1) -}
+8063166327c903a73a625b7326b82adf
+  $tc'Suggestion1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+995145f8d37bd16643df7366e7ac2aa1
+  $tc'Suggestion2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Suggestion.$tc'Suggestion3) -}
+306e05ce88fa77303ceae342676571ee
+  $tc'Suggestion3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Suggestion"#) -}
+1506f81a0cfb1d1a9442a71b7a840616
+  $tcSuggestion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15487103154569114494##
+                   17928802343823019084##
+                   Utils.Suggestion.$trModule
+                   Utils.Suggestion.$tcSuggestion1
+                   0#
+                   GHC.Types.krep$*) -}
+370387ecc27a28cf4eca7d7279e3fb84
+  $tcSuggestion1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Suggestion.$tcSuggestion2) -}
+517d1a3c7e74f6ae43e6aa00e19e6eaa
+  $tcSuggestion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Suggestion"#) -}
+76ecf6f708b4900b5a9b310e23470c32
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.Suggestion.$trModule3
+                   Utils.Suggestion.$trModule1) -}
+086b7bf8f1725739dce5745b3a860cb5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Suggestion.$trModule2) -}
+768a8467fed24671b8261fbc8b824138
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.Suggestion"#) -}
+4a86dd7132dee6a0dad68bae845aab14
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Suggestion.$trModule4) -}
+a7399349a8f9e99fcc71e4b16a25bf90
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+4eb25c269caf2cab579720ae9f54daad
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Show.ShowS
+  {- Arity: 7, Strictness: <S,U><L,U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.ByteArray#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.ByteArray#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Int#) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "Suggestion "#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   b2 :: Data.Text.Internal.Text = Data.Text.Internal.Text ww4 ww5 ww6
+                 } in
+                 let {
+                   b1 :: Data.Text.Internal.Text = Data.Text.Internal.Text ww1 ww2 ww3
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++
+                        @ GHC.Types.Char
+                        f1
+                        (case Data.Text.Show.$w$cshowsPrec
+                                b1
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showSpace1
+                                   (case Data.Text.Show.$w$cshowsPrec b2 x of ww7 { (#,#) ww8 ww9 ->
+                                    GHC.Types.:
+                                      @ GHC.Types.Char
+                                      ww8
+                                      ww9 })) of ww7 { (#,#) ww8 ww9 ->
+                         GHC.Types.: @ GHC.Types.Char ww8 ww9 })
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           f1
+                           (case Data.Text.Show.$w$cshowsPrec
+                                   b1
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (case Data.Text.Show.$w$cshowsPrec
+                                              b2
+                                              (GHC.Types.:
+                                                 @ GHC.Types.Char
+                                                 GHC.Show.$fShow(,)2
+                                                 x) of ww7 { (#,#) ww8 ww9 ->
+                                       GHC.Types.:
+                                         @ GHC.Types.Char
+                                         ww8
+                                         ww9 })) of ww7 { (#,#) ww8 ww9 ->
+                            GHC.Types.: @ GHC.Types.Char ww8 ww9 })) }) -}
+224e4e7e6d5037b36e2c3e7378ffd8a0
+  data Suggestion
+    = Suggestion !Data.Text.Internal.Text !Data.Text.Internal.Text
+52f01d1c4143e5add7e4ffda18354434
+  checkFileReadable ::
+    GHC.IO.FilePath
+    -> GHC.Types.IO (GHC.Maybe.Maybe Data.Text.Internal.Text)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.Suggestion.checkFileReadable1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Maybe.Maybe Data.Text.Internal.Text>_R)) -}
+0fe404e60d754b84e23d12cc022171dd
+  checkFileReadable1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe Data.Text.Internal.Text #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+ae232bc8a8bbf03bebc28db96d4a2b35
+  findSuggestion ::
+    Data.Text.Internal.Text
+    -> [Data.Text.Internal.Text]
+    -> GHC.Maybe.Maybe Utils.Suggestion.Suggestion
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,U> -}
+b2d3103f67fb55a2ce0dbda236c2c9b9
+  suggestionMessage ::
+    Data.Text.Internal.Text
+    -> [Data.Text.Internal.Text] -> Data.Text.Internal.Text
+  {- Arity: 2, Strictness: <L,U(U,U,U)><S,U>,
+     Unfolding: (\ (used :: Data.Text.Internal.Text)
+                   (valid :: [Data.Text.Internal.Text]) ->
+                 case Utils.Suggestion.findSuggestion used valid of wild {
+                   GHC.Maybe.Nothing -> Data.Text.Internal.empty_
+                   GHC.Maybe.Just ds
+                   -> case ds of wild1 { Utils.Suggestion.Suggestion suggestion reason ->
+                      Data.Text.concat
+                        (GHC.Types.:
+                           @ Data.Text.Internal.Text
+                           (Data.Text.Show.unpackCString# "Did you mean '"#)
+                           (GHC.Types.:
+                              @ Data.Text.Internal.Text
+                              suggestion
+                              (GHC.Types.:
+                                 @ Data.Text.Internal.Text
+                                 (Data.Text.Show.unpackCString# "' ("#)
+                                 (GHC.Types.:
+                                    @ Data.Text.Internal.Text
+                                    reason
+                                    (GHC.Types.:
+                                       @ Data.Text.Internal.Text
+                                       (Data.Text.Show.unpackCString# ")?"#)
+                                       (GHC.Types.[] @ Data.Text.Internal.Text)))))) } }) -}
+instance [safe] GHC.Classes.Eq [Utils.Suggestion.Suggestion]
+  = Utils.Suggestion.$fEqSuggestion
+instance [safe] GHC.Show.Show [Utils.Suggestion.Suggestion]
+  = Utils.Suggestion.$fShowSuggestion
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

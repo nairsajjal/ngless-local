@@ -1,0 +1,1245 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:53.59259106 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:FileManagement 8065
+  interface hash: 4d198028d0ab1e1e7cf66c768f84d245
+  ABI hash: fb22fc32ebd4079eedfab3004822d35c
+  export-list hash: 0035e3f895add6fcbe2da0a7224ccae1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 651dffe1c9c6e21797859472ac88a0e8
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  FileManagement.bwaBin
+  FileManagement.createTempDir
+  FileManagement.ensureCompressionIsOneOf
+  FileManagement.expandPath
+  FileManagement.inferCompression
+  FileManagement.makeNGLTempFile
+  FileManagement.megahitBin
+  FileManagement.minimap2Bin
+  FileManagement.openNGLTempFile
+  FileManagement.openNGLTempFile'
+  FileManagement.prodigalBin
+  FileManagement.removeIfTemporary
+  FileManagement.samtoolsBin
+  FileManagement.setupHtmlViewer
+  FileManagement.takeBaseNameNoExtensions
+  FileManagement.Compression{FileManagement.BZ2Compression FileManagement.GzipCompression FileManagement.NoCompression FileManagement.XZCompression FileManagement.ZStdCompression}
+  FileManagement.InstallMode{FileManagement.Root FileManagement.User}
+module dependencies: CmdArgs Configuration Data.FastQ
+                     Dependencies.Embedded NGLess.NGError NGLess.NGLEnvironment Output
+                     Paths_NGLess Utils.Conduit Utils.LockFile Utils.Utils Utils.Vector
+                     Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0 diagrams-core-1.4.2
+                      diagrams-lib-1.4.3 diagrams-solve-0.1.1 diagrams-svg-1.4.3
+                      directory-1.3.3.0 distributive-0.6.1 dlist-0.8.0.7
+                      dual-tree-0.2.2.1 exceptions-0.10.4 extra-1.6.18
+                      file-embed-0.0.11.1 filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1 hashable-1.2.7.0
+                      hostname-1.0 inline-c-0.7.0.1 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.3 intervals-0.8.1 kan-extensions-5.2
+                      lens-4.17.1 linear-1.20.9 lzma-0.0.0.3 lzma-conduit-1.2.1
+                      monad-loops-0.4.3 mono-traversable-1.0.15.1 monoid-extras-0.5.1
+                      mtl-2.2.2 newtype-generics-0.5.4 old-locale-1.0.0.7
+                      old-time-1.1.0.3 optparse-applicative-0.14.3.0 parsec-3.1.14.0
+                      parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0
+                      profunctors-5.3 random-1.1 reflection-2.1.5 regex-1.0.2.0
+                      regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4 split-0.2.3.3
+                      stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 svg-builder-0.1.1 tagged-0.8.6
+                      tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  MissingH-1.4.1.0:Data.List.Utils a5d3124a702dde141b1748ec65eff7c8
+import  -/  MissingH-1.4.1.0:Data.String.Utils 3c6f5fb5c65d71601de716632d6af8e7
+import  -/  Configuration 9a82cb30f48ec6255155f5c7391fb6c7
+  exports: 9fc785b50aa90792bcf0bc8c48c96a09
+  nConfKeepTemporaryFiles b4545dc36df17a7adccb3e6be807ab85
+  nConfSearchPath b4545dc36df17a7adccb3e6be807ab85
+  nConfTemporaryDirectory b4545dc36df17a7adccb3e6be807ab85
+  nConfUserDirectory b4545dc36df17a7adccb3e6be807ab85
+import  -/  Dependencies.Embedded 95ea6366f8a7cda5a3b7261282735bb9
+  exports: a2cf22bb00af99c8a3de0eab313006f2
+  bwaData 84c8ec7412d860269429b56ac46fffc1
+  megahitData 99d184fd313598d8a08d32bad1992bea
+  minimap2Data 769e6b36fc8d332eefa01e5d2fae5253
+  prodigalData 7866e526a9853d32992a2410f9462a4f
+  samtoolsData 3a8a7392a1cc500ddf90c112e8d885e8
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  throwSystemError fd7c6796a005f4e332b2d16e13db3f7f
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  nglConfiguration 539294010c83651951422c2571efcf9e
+  nglEnvironment 56dd9663bd034f7047cca99f322e3b64
+  ngleTemporaryFilesCreated d80a43c5bae03fd7eefc640474197c79
+  updateNglEnvironment 3c9480db8a054505942b2c2a455873f8
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  DebugOutput 66928311a72e96e4202c735d87d527fd
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  Utils.LockFile 773af50f4e27251bc75ff4a12d55914b
+  exports: 1b4d56278fbcc510ef86d7b3b0367e3c
+  IfLockedRetry 905042acf55d85b70c427e4b6d63ca02
+  LockParameters b2a10fc8a87de550817767f11b73deee
+  lockFname e67f21cbfdfced696ccc5d612034dd8c
+  maxAge e67f21cbfdfced696ccc5d612034dd8c
+  mtimeUpdate e67f21cbfdfced696ccc5d612034dd8c
+  nrLockRetries ff2dfeb33e425d365d68bb261b5df08e
+  removeFileIfExists 92b7543a0e928c94816df66531afce97
+  timeBetweenRetries ff2dfeb33e425d365d68bb261b5df08e
+  whenExistsStrategy e67f21cbfdfced696ccc5d612034dd8c
+  withLockFile e5de88b696a8f22285940a6e4cc6e123
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+import  -/  Version fc1102948027063307711d441adc78f8
+  exports: 10a6e26f2b3d3ed3669c8e90486ec28d
+  versionStr bd4be69e439c364c5501b5b7c3a61d2f
+import  -/  base-4.12.0.0:Control.Exception 041da5b6267cf6b639ff5716d5b299a9
+import  -/  base-4.12.0.0:Control.Exception.Base 28f76dc5daa23d33c2b03285506ae9fc
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Exception 77722984940ee6ccf9e2f7dab10b83a4
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.IO.Handle.Types 8909e00409cd23d4e66395a7e93f216d
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.Environment c54e0d0308e729fdace6bc37aa74bb52
+import  -/  base-4.12.0.0:System.Environment.ExecutablePath c16a3542acf0a63526a1fc24ae590920
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  base-4.12.0.0:System.IO.Error 4554cd72d03d7e89c9020f2d00a768a1
+import  -/  base-4.12.0.0:System.Posix.Internals bd782c32a9c5e6a1b61046d4eae44ffe
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  bytestring-0.10.8.2:Data.ByteString.Unsafe 776fbb495c4caeeff10435741858143b
+import  -/  conduit-1.3.1.2:Conduit d5a5608acaae4ca1c4cff12dbab13410
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  directory-1.3.3.0:System.Directory.Internal.Common 3b368d8e99bb39505fb42af412fa2d5c
+import  -/  file-embed-0.0.11.1:Data.FileEmbed 2172433cdaa3a4d58bd59fbdae8c9aec
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  regex-1.0.2.0:Text.RE.REOptions 62452540c585703269b1af35b2f7b314
+import  -/  regex-1.0.2.0:Text.RE.TDFA.String d1f23a575c3e821fa5318f6bffa10e4e
+import  -/  regex-1.0.2.0:Text.RE.ZeInternals.SearchReplace.TDFA.String 5612bac8eb7085165500d36eeaf20d9a
+import  -/  regex-1.0.2.0:Text.RE.ZeInternals.SearchReplace.TDFAEdPrime ea32c1f7e5867be2a227861abce599fe
+import  -/  regex-1.0.2.0:Text.RE.ZeInternals.TDFA 1a7b7adf97e2a2fc81ce6b40998effc4
+import  -/  regex-1.0.2.0:Text.RE.ZeInternals.Types.Match 21272de14ecb0ec42de539a7438895f7
+import  -/  regex-1.0.2.0:Text.RE.ZeInternals.Types.SearchReplace f69f22eb658a543e73095a979e38f6dc
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource.Internal 501d62f3c9254d0531a3c1329c03910f
+import  -/  safeio-0.0.5.0:System.IO.SafeWrite d7756aa6dd46103e1e3f96abe2c18fe3
+import  -/  tar-0.5.1.1:Codec.Archive.Tar f97104bc79ede74966b56c76d781c54e
+import  -/  tar-0.5.1.1:Codec.Archive.Tar.Entry ec6f5b1540f6e1b82af656d4787ea5e1
+import  -/  tar-0.5.1.1:Codec.Archive.Tar.Read d7a0ad4d16301510f9447fdba284dd4d
+import  -/  tar-0.5.1.1:Codec.Archive.Tar.Types d265782f5a26ba7f1764cd9cfad87b82
+import  -/  unix-2.7.2.2:System.Posix.Files 4964480523a26dfeb9c75fd7d0d8d434
+import  -/  zlib-0.6.2.1:Codec.Compression.GZip dba9c25d429f7f124f1fe1202dccf821
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+addDependentFile "Html/htmllibs/bootstrap.min.css" 072e95329879934d29384b7a0b24345e
+addDependentFile "Html/htmllibs/nv.d3.js" cf79e4ceaff4aa0be79fa2f471e05a2b
+addDependentFile "Html/htmllibs/angular-animate.min.js" 87f2d2eb3b6a843ce918aaa8e5a4470f
+addDependentFile "Html/htmllibs/angular-sanitize.js" a9d446854016e322335e63fc3db80a16
+addDependentFile "Html/htmllibs/nv.d3.css" a36e441ae333c8fe085d74a847c97330
+addDependentFile "Html/htmllibs/d3.min.js" e6aceeb643f7e25a7fc309498ffda6ef
+addDependentFile "Html/htmllibs/angular.min.js" e594b8916dcf4ba77bab3bc897e13085
+addDependentFile "Html/htmllibs/bootstrap-theme.min.css" bc4ad5be1fd1afeee933dcb22484dccc
+addDependentFile "Html/htmllibs/jquery-latest.min.js" 8101d596b2b8fa35fe3a634ea342d7c3
+addDependentFile "Html/htmllibs/bootstrap-glyphicons.css" 4e99a55d216e622c9ed6b9708d8b8010
+addDependentFile "Html/htmllibs/bootstrap.min.js" c2e5221c3336abe0dff8568e73cd0dae
+addDependentFile "Html/fonts/glyphicons-halflings-regular.ttf" aa9c7490c2fd52cb96c729753cc4f2d5
+addDependentFile "Html/fonts/glyphicons-halflings-regular.woff" 7c4cbe928205c888831ba76548563ca3
+addDependentFile "Html/nglessMapStats.html" c1f63dd59e5966e78e53fe7d3ac8052f
+addDependentFile "Html/ngless.css" b7deac7267ef498a3e364aba5959d957
+addDependentFile "Html/index.html" d250e10c65557eefb2dd942e0ef50c0d
+addDependentFile "Html/perBaseQualScores.css" e2dfce33a1dc7a0df3c6b2e89dd35fca
+addDependentFile "Html/nglessQC.html" d550d214e66e7279f48a504c0f8df58b
+61356255a91f65a330c0bad97ae4a7c8
+  $fEqCompression :: GHC.Classes.Eq FileManagement.Compression
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ FileManagement.Compression
+                  FileManagement.$fEqCompression_$c==
+                  FileManagement.$fEqCompression_$c/= -}
+61356255a91f65a330c0bad97ae4a7c8
+  $fEqCompression_$c/= ::
+    FileManagement.Compression
+    -> FileManagement.Compression -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: FileManagement.Compression)
+                   (y :: FileManagement.Compression) ->
+                 case x of wild {
+                   FileManagement.NoCompression
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        FileManagement.NoCompression -> GHC.Types.False }
+                   FileManagement.GzipCompression
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        FileManagement.GzipCompression -> GHC.Types.False }
+                   FileManagement.BZ2Compression
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        FileManagement.BZ2Compression -> GHC.Types.False }
+                   FileManagement.XZCompression
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        FileManagement.XZCompression -> GHC.Types.False }
+                   FileManagement.ZStdCompression
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        FileManagement.ZStdCompression -> GHC.Types.False } }) -}
+61356255a91f65a330c0bad97ae4a7c8
+  $fEqCompression_$c== ::
+    FileManagement.Compression
+    -> FileManagement.Compression -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: FileManagement.Compression)
+                   (ds1 :: FileManagement.Compression) ->
+                 case ds of wild {
+                   FileManagement.NoCompression
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        FileManagement.NoCompression -> GHC.Types.True }
+                   FileManagement.GzipCompression
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        FileManagement.GzipCompression -> GHC.Types.True }
+                   FileManagement.BZ2Compression
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        FileManagement.BZ2Compression -> GHC.Types.True }
+                   FileManagement.XZCompression
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        FileManagement.XZCompression -> GHC.Types.True }
+                   FileManagement.ZStdCompression
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        FileManagement.ZStdCompression -> GHC.Types.True } }) -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fEqInstallMode :: GHC.Classes.Eq FileManagement.InstallMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ FileManagement.InstallMode
+                  FileManagement.$fEqInstallMode_$c==
+                  FileManagement.$fEqInstallMode_$c/= -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fEqInstallMode_$c/= ::
+    FileManagement.InstallMode
+    -> FileManagement.InstallMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: FileManagement.InstallMode)
+                   (y :: FileManagement.InstallMode) ->
+                 case x of wild {
+                   FileManagement.User
+                   -> case y of wild1 {
+                        FileManagement.User -> GHC.Types.False
+                        FileManagement.Root -> GHC.Types.True }
+                   FileManagement.Root
+                   -> case y of wild1 {
+                        FileManagement.User -> GHC.Types.True
+                        FileManagement.Root -> GHC.Types.False } }) -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fEqInstallMode_$c== ::
+    FileManagement.InstallMode
+    -> FileManagement.InstallMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: FileManagement.InstallMode)
+                   (ds1 :: FileManagement.InstallMode) ->
+                 case ds of wild {
+                   FileManagement.User
+                   -> case ds1 of wild1 {
+                        FileManagement.User -> GHC.Types.True
+                        FileManagement.Root -> GHC.Types.False }
+                   FileManagement.Root
+                   -> case ds1 of wild1 {
+                        FileManagement.User -> GHC.Types.False
+                        FileManagement.Root -> GHC.Types.True } }) -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fShowInstallMode :: GHC.Show.Show FileManagement.InstallMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ FileManagement.InstallMode
+                  FileManagement.$fShowInstallMode_$cshowsPrec
+                  FileManagement.$fShowInstallMode_$cshow
+                  FileManagement.$fShowInstallMode_$cshowList -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fShowInstallMode_$cshow ::
+    FileManagement.InstallMode -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: FileManagement.InstallMode) ->
+                 case x of wild {
+                   FileManagement.User -> GHC.CString.unpackCString# "User"#
+                   FileManagement.Root -> GHC.CString.unpackCString# "Root"# }) -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fShowInstallMode_$cshowList ::
+    [FileManagement.InstallMode] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [FileManagement.InstallMode])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ FileManagement.InstallMode
+                   FileManagement.$w$cshowsPrec
+                   ls
+                   s) -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $fShowInstallMode_$cshowsPrec ::
+    GHC.Types.Int -> FileManagement.InstallMode -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: FileManagement.InstallMode) ->
+                 FileManagement.$w$cshowsPrec w1) -}
+84393f127354c352b5fefea9c5a08f51
+  $tc'BZ2Compression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9468287305388713171##
+                   10349682218670579201##
+                   FileManagement.$trModule
+                   FileManagement.$tc'BZ2Compression2
+                   0#
+                   FileManagement.$tc'BZ2Compression1) -}
+0e7b4840ab8e6fdfb7e6dacca68d068b
+  $tc'BZ2Compression1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+cdd487bc08a926caaa632153250121c1
+  $tc'BZ2Compression2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   FileManagement.$tc'BZ2Compression3) -}
+1b9bb5d07cd421522fd7d79b4be90789
+  $tc'BZ2Compression3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BZ2Compression"#) -}
+1ac77d53928503c9cfd7edc29a57a00c
+  $tc'GzipCompression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11670186812200694982##
+                   1573667123627246795##
+                   FileManagement.$trModule
+                   FileManagement.$tc'GzipCompression1
+                   0#
+                   FileManagement.$tc'BZ2Compression1) -}
+5a13a49f2a3ded9f8ad02cb601f52eaa
+  $tc'GzipCompression1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   FileManagement.$tc'GzipCompression2) -}
+59e77a063a0b2d666d49ad2415dc6bf7
+  $tc'GzipCompression2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GzipCompression"#) -}
+32e3de09276e15b8e2bb1f74eb12f8ad
+  $tc'NoCompression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11146530908242650059##
+                   1237487216545404086##
+                   FileManagement.$trModule
+                   FileManagement.$tc'NoCompression1
+                   0#
+                   FileManagement.$tc'BZ2Compression1) -}
+31fc0e635efdb636149fb74cd61ffcaf
+  $tc'NoCompression1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$tc'NoCompression2) -}
+2acbac5aa69438df1e5d7f59572d69d2
+  $tc'NoCompression2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoCompression"#) -}
+bb498cd37ec54a10b7857df5962b4b7a
+  $tc'Root :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12591868945875398328##
+                   14723133535963866652##
+                   FileManagement.$trModule
+                   FileManagement.$tc'Root2
+                   0#
+                   FileManagement.$tc'Root1) -}
+ca978a22b84d65a4d1ff7185dacaa61f
+  $tc'Root1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d1c9bb7a37216e7b8023ea9c21035042
+  $tc'Root2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$tc'Root3) -}
+a9d30fd0c1aff7116987367318795f50
+  $tc'Root3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Root"#) -}
+9f9be51cd4102ef346b911d754cb2093
+  $tc'User :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9054856940169454689##
+                   3547908562228840043##
+                   FileManagement.$trModule
+                   FileManagement.$tc'User1
+                   0#
+                   FileManagement.$tc'Root1) -}
+89a44a8c6e3cee95c5d0c9d764444505
+  $tc'User1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$tc'User2) -}
+3f5419a8057d42b0bfc4c29743015fa8
+  $tc'User2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'User"#) -}
+268d35d009bbf91e6323892850fbe1ac
+  $tc'XZCompression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5782387346909528486##
+                   13545361708136791264##
+                   FileManagement.$trModule
+                   FileManagement.$tc'XZCompression1
+                   0#
+                   FileManagement.$tc'BZ2Compression1) -}
+465a4ab18db1d9236b9f69b9345af58e
+  $tc'XZCompression1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$tc'XZCompression2) -}
+a2f13603d008f4e5485d9f53f4119fa1
+  $tc'XZCompression2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'XZCompression"#) -}
+fa661c84b4b1452ceb52d423fcca03af
+  $tc'ZStdCompression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2842126775181059543##
+                   15745931367273083383##
+                   FileManagement.$trModule
+                   FileManagement.$tc'ZStdCompression1
+                   0#
+                   FileManagement.$tc'BZ2Compression1) -}
+c3676b2a258bdef49b3da6149c6523e1
+  $tc'ZStdCompression1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   FileManagement.$tc'ZStdCompression2) -}
+b0fce213e37a7cd3ac282211466d3c70
+  $tc'ZStdCompression2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ZStdCompression"#) -}
+e012b69e6d153d9573cc9e90acd29169
+  $tcCompression :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3822810156454110791##
+                   9366341297876932635##
+                   FileManagement.$trModule
+                   FileManagement.$tcCompression1
+                   0#
+                   GHC.Types.krep$*) -}
+72ea29c9066d10c730e75d887648498f
+  $tcCompression1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$tcCompression2) -}
+115c36821f717a6e7cf8b4e472e33cd0
+  $tcCompression2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Compression"#) -}
+4ece496a26caea50fdab0dcb3c4e5f7e
+  $tcInstallMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10027100450505931650##
+                   6079256568229902654##
+                   FileManagement.$trModule
+                   FileManagement.$tcInstallMode1
+                   0#
+                   GHC.Types.krep$*) -}
+0d0f7ed54f141a12edbf86f3fb0415e7
+  $tcInstallMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$tcInstallMode2) -}
+73e8eff9862a2105b3e81c092ac4520f
+  $tcInstallMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("InstallMode"#) -}
+ada38ec1fb42a08f58a6c8b137ddad34
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FileManagement.$trModule3
+                   FileManagement.$trModule1) -}
+ab54476826748865c9131c2ca3e56662
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$trModule2) -}
+a7b0e7cf4ebae5a2220b4e20e75941eb
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FileManagement"#) -}
+cde5187d24f0a50147d718ce41a3e1e0
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileManagement.$trModule4) -}
+ca56c21aa90a0b8be9a37cc18d689bae
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+0d9484105e34fc0966d37f6c5e57d39a
+  $w$cshowsPrec :: FileManagement.InstallMode -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: FileManagement.InstallMode) ->
+                 case w of wild {
+                   FileManagement.User
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "User"#)
+                   FileManagement.Root
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "Root"#) }) -}
+61356255a91f65a330c0bad97ae4a7c8
+  data Compression
+    = NoCompression
+    | GzipCompression
+    | BZ2Compression
+    | XZCompression
+    | ZStdCompression
+0d9484105e34fc0966d37f6c5e57d39a
+  data InstallMode = User | Root
+46502a694952c4fa03abaa2e6b5b71aa
+  bwaBin :: NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.bwaBin1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.IO.FilePath>_N)) -}
+fc4ac7fdced50b3510f86c1ba0a1eabe
+  bwaBin1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2,
+     Unfolding: (FileManagement.bwaBin5
+                   FileManagement.bwaBin3
+                   FileManagement.bwaBin2
+                   Dependencies.Embedded.bwaData1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Data.ByteString.Internal.ByteString>_R))) -}
+fa44ee7d4b29bd587647f098b4389edd
+  bwaBin2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "ngless-"#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Version.versionStr
+                      (GHC.CString.unpackCString# "-bwa"#))) -}
+c1a1b6e1091b2afd7d9ab9a2d70c43e8
+  bwaBin3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   FileManagement.bwaBin4) -}
+b6c6214bb47e356994951c0215aa18bd
+  bwaBin4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLESS_BWA_BIN"#) -}
+ce03c2b33b584770c4bbc867aa79c5d1
+  bwaBin5 ::
+    GHC.Base.String
+    -> GHC.IO.FilePath
+    -> GHC.Types.IO Data.ByteString.Internal.ByteString
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 5,
+     Strictness: <L,U><L,U><L,1*C1(U(U,1*U(U,U,U,U)))><L,U(U)><S,U> -}
+bedea80af9626dacdd0078a1c6ee35c8
+  createTempDir ::
+    GHC.Base.String
+    -> NGLess.NGError.NGLessIO
+         (Control.Monad.Trans.Resource.Internal.ReleaseKey, GHC.IO.FilePath)
+  {- Arity: 3, Strictness: <L,U><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.createTempDir1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <(Control.Monad.Trans.Resource.Internal.ReleaseKey,
+                                       GHC.IO.FilePath)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                         <GHC.Types.IO>_R
+                                                                         <(Control.Monad.Trans.Resource.Internal.ReleaseKey,
+                                                                           GHC.IO.FilePath)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(Control.Monad.Trans.Resource.Internal.ReleaseKey,
+                                                                                                                                       GHC.IO.FilePath)>_N)) -}
+bc035e117cc98614a5e9594a40ef0064
+  createTempDir1 ::
+    GHC.Base.String
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Control.Monad.Trans.Resource.Internal.ReleaseKey,
+           GHC.IO.FilePath) #)
+  {- Arity: 3, Strictness: <L,U><L,U(U)><S,U> -}
+01846459c0878172fcf10d0e810e8e7a
+  ensureCompressionIsOneOf ::
+    [FileManagement.Compression]
+    -> GHC.IO.FilePath -> NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+e7d1d8d7c110d7299883fabd335485b5
+  expandPath ::
+    GHC.IO.FilePath
+    -> NGLess.NGError.NGLessIO (GHC.Maybe.Maybe GHC.IO.FilePath)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.expandPath1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <GHC.Maybe.Maybe
+                                        GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                         <GHC.Types.IO>_R
+                                                                         <GHC.Maybe.Maybe
+                                                                            GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.Maybe.Maybe
+                                                                                                                                        GHC.IO.FilePath>_N)) -}
+79a04044247df733d782ee5859eff0ec
+  expandPath1 ::
+    GHC.IO.FilePath
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe GHC.IO.FilePath #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U> -}
+28ae7bcd282005d2c18ed97510c9d25a
+  inferCompression :: GHC.IO.FilePath -> FileManagement.Compression
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+f8997243f49d682cc3f193c23e0f01b5
+  makeNGLTempFile ::
+    GHC.IO.FilePath
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> (GHC.IO.Handle.Types.Handle -> NGLess.NGError.NGLessIO ())
+    -> NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,U><L,1*C1(C1(C1(U(U,A))))><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.makeNGLTempFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R <GHC.IO.Handle.Types.Handle -> NGLess.NGError.NGLessIO ()>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                       <GHC.Types.IO>_R
+                                                                       <GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.IO.FilePath>_N)) -}
+9054eb5449a1f191ca9b21915127c031
+  makeNGLTempFile1 ::
+    GHC.IO.FilePath
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> (GHC.IO.Handle.Types.Handle -> NGLess.NGError.NGLessIO ())
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,U><L,1*C1(C1(C1(U(U,A))))><L,U(U)><S,U>,
+     Unfolding: (\ (base :: GHC.IO.FilePath)
+                   (pre :: GHC.Base.String)
+                   (ext :: GHC.Base.String)
+                   (act :: GHC.IO.Handle.Types.Handle -> NGLess.NGError.NGLessIO ())
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case FileManagement.makeNGLTempFile2
+                        base
+                        pre
+                        ext
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) ds2 y ->
+                 case y of wild1 { (,) fpath h ->
+                 case ((act h)
+                         `cast`
+                       (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R <()>_N)
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <()>_R)
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.hClose1 h ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                 (# ipv4, fpath #) } } } } }) -}
+beb3ea237847c210e485f32b964f52ed
+  makeNGLTempFile2 ::
+    GHC.IO.FilePath
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Control.Monad.Trans.Resource.Internal.ReleaseKey,
+           (GHC.IO.FilePath, GHC.IO.Handle.Types.Handle)) #)
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U(U)><S,U> -}
+f437f59e7f98a6c2ffdabfbea25eb8ea
+  megahitBin :: NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.megahitBin1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.IO.FilePath>_N)) -}
+b586c7c50aa11af56af6d16b25d0db9c
+  megahitBin1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U(U)><S,U> -}
+ce74be2259d5be62060ef9e1abf3827c
+  minimap2Bin :: NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.minimap2Bin1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.IO.FilePath>_N)) -}
+e3de6f36bfbbf989b857aedf849b6352
+  minimap2Bin1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2,
+     Unfolding: (FileManagement.bwaBin5
+                   FileManagement.minimap2Bin3
+                   FileManagement.minimap2Bin2
+                   Dependencies.Embedded.minimap2Data1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Data.ByteString.Internal.ByteString>_R))) -}
+6049f65921e6d9dd5f6f295b60138e6d
+  minimap2Bin2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "ngless-"#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Version.versionStr
+                      (GHC.CString.unpackCString# "-minimap2"#))) -}
+2f1109a2711f87f155cdcac962415a82
+  minimap2Bin3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   FileManagement.minimap2Bin4) -}
+33b89b8e39c50f1d4a1b3288c69def2f
+  minimap2Bin4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLESS_MINIMAP2_BIN"#) -}
+2b9c3d55dae96aea37a5265a4ee4d09e
+  openNGLTempFile ::
+    GHC.IO.FilePath
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> NGLess.NGError.NGLessIO
+         (GHC.IO.FilePath, GHC.IO.Handle.Types.Handle)
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.openNGLTempFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <(GHC.IO.FilePath,
+                                       GHC.IO.Handle.Types.Handle)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                    <GHC.Types.IO>_R
+                                                                                    <(GHC.IO.FilePath,
+                                                                                      GHC.IO.Handle.Types.Handle)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(GHC.IO.FilePath,
+                                                                                                                                                             GHC.IO.Handle.Types.Handle)>_N)) -}
+b65a9959be03ebf7f801f543d0082718
+  openNGLTempFile' ::
+    GHC.IO.FilePath
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> NGLess.NGError.NGLessIO
+         (Control.Monad.Trans.Resource.Internal.ReleaseKey,
+          (GHC.IO.FilePath, GHC.IO.Handle.Types.Handle))
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.makeNGLTempFile2
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <(Control.Monad.Trans.Resource.Internal.ReleaseKey,
+                                       (GHC.IO.FilePath,
+                                        GHC.IO.Handle.Types.Handle))>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                      <GHC.Types.IO>_R
+                                                                                      <(Control.Monad.Trans.Resource.Internal.ReleaseKey,
+                                                                                        (GHC.IO.FilePath,
+                                                                                         GHC.IO.Handle.Types.Handle))>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(Control.Monad.Trans.Resource.Internal.ReleaseKey,
+                                                                                                                                                                 (GHC.IO.FilePath,
+                                                                                                                                                                  GHC.IO.Handle.Types.Handle))>_N)) -}
+565e7b8692aa397b785b4a09100ad60a
+  openNGLTempFile1 ::
+    GHC.IO.FilePath
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.IO.FilePath, GHC.IO.Handle.Types.Handle) #)
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U(U)><S,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ (base :: GHC.IO.FilePath)
+                   (pre :: GHC.Base.String)
+                   (ext :: GHC.Base.String)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case FileManagement.makeNGLTempFile2
+                        base
+                        pre
+                        ext
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Data.Tuple.snd
+                      @ Control.Monad.Trans.Resource.Internal.ReleaseKey
+                      @ (GHC.IO.FilePath, GHC.IO.Handle.Types.Handle)
+                      ipv1 #) }) -}
+3878febee25bd3fab82b84260f1f49b8
+  prodigalBin :: NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.prodigalBin1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.IO.FilePath>_N)) -}
+e3f19a7a2e7aa0681b31c29de762a12b
+  prodigalBin1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2,
+     Unfolding: (FileManagement.bwaBin5
+                   FileManagement.prodigalBin3
+                   FileManagement.prodigalBin2
+                   Dependencies.Embedded.prodigalData1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Data.ByteString.Internal.ByteString>_R))) -}
+bd7e63bb3085c899bf8c243a68f5ac22
+  prodigalBin2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "ngless-"#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Version.versionStr
+                      (GHC.CString.unpackCString# "-prodigal"#))) -}
+6130f2540525251a58b52b84af189e39
+  prodigalBin3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   FileManagement.prodigalBin4) -}
+f1c6b8170132536ff0caf5b25f112d6a
+  prodigalBin4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLESS_PRODIGAL_BIN"#) -}
+e68c66f295edf35288835c734f7a9cd2
+  removeIfTemporary :: GHC.IO.FilePath -> NGLess.NGError.NGLessIO ()
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>, Inline:,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.removeIfTemporary1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R
+                                                          <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+a2c39433c64cabb46c8df75b966fcc0d
+  removeIfTemporary1 ::
+    GHC.IO.FilePath
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (fp :: GHC.IO.FilePath)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case NGLess.NGLEnvironment.ngle
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <NGLess.NGLEnvironment.NGLEnvironment>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild1 { NGLess.NGLEnvironment.NGLEnvironment ds ds3 ds4 ds5 ds6 ds7 ->
+                 case ds7 of wild2 { Configuration.NGLessConfiguration ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ->
+                 case ds13 of wild3 {
+                   GHC.Types.False
+                   -> case ipv3 of wild4 { NGLess.NGLEnvironment.NGLEnvironment ds25 ds26 ds27 ds28 ds29 ds30 ->
+                      case GHC.List.elem
+                             @ GHC.IO.FilePath
+                             GHC.Classes.$fEq[]_$s$fEq[]1
+                             fp
+                             ds29 of wild5 {
+                        GHC.Types.False -> (# ipv2, GHC.Tuple.() #)
+                        GHC.Types.True
+                        -> case GHC.Prim.readMutVar#
+                                  @ GHC.Prim.RealWorld
+                                  @ NGLess.NGLEnvironment.NGLEnvironment
+                                  var#
+                                  ipv2 of ds31 { (#,#) ipv4 ipv5 ->
+                           case ipv5 of wild6 { NGLess.NGLEnvironment.NGLEnvironment ds32 ds33 ds34 ds35 ds36 ds37 ->
+                           case ((Output.outputListLno
+                                    Output.DebugOutput
+                                    ds33
+                                    (GHC.Types.:
+                                       @ GHC.Base.String
+                                       (GHC.CString.unpackCString# "Removing temporary file: "#)
+                                       (GHC.Types.:
+                                          @ GHC.Base.String
+                                          fp
+                                          (GHC.Types.[] @ GHC.Base.String))))
+                                   `cast`
+                                 (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                            <GHC.Types.IO>_R <()>_N)
+                                   eta)
+                                  `cast`
+                                (GHC.Types.N:IO[0] <()>_R)
+                                  ipv4 of ds38 { (#,#) ipv6 ipv7 ->
+                           case Utils.LockFile.removeFileIfExists1
+                                  fp
+                                  ipv6 of ds39 { (#,#) ipv8 ipv9 ->
+                           case GHC.Prim.readMutVar#
+                                  @ GHC.Prim.RealWorld
+                                  @ NGLess.NGLEnvironment.NGLEnvironment
+                                  var#
+                                  ipv8 of ds40 { (#,#) ipv10 ipv11 ->
+                           case ipv11 of wild7 { NGLess.NGLEnvironment.NGLEnvironment ds41 ds42 ds43 ds44 ds45 ds46 ->
+                           case GHC.Prim.writeMutVar#
+                                  @ GHC.Prim.RealWorld
+                                  @ NGLess.NGLEnvironment.NGLEnvironment
+                                  var#
+                                  (NGLess.NGLEnvironment.NGLEnvironment
+                                     ds41
+                                     ds42
+                                     ds43
+                                     ds44
+                                     (GHC.List.filter
+                                        @ [GHC.Types.Char]
+                                        (\ (ds47 :: GHC.IO.FilePath) ->
+                                         GHC.Classes.$fEq[]_$s$c/=1 ds47 fp)
+                                        ds45)
+                                     ds46)
+                                  ipv10 of s2# { DEFAULT ->
+                           (# s2#, GHC.Tuple.() #) } } } } } } } } }
+                   GHC.Types.True -> (# ipv2, GHC.Tuple.() #) } } } } } }) -}
+8226cfe366611c475183d61ac1757989
+  samtoolsBin :: NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.samtoolsBin1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <GHC.IO.FilePath>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <GHC.IO.FilePath>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.IO.FilePath>_N)) -}
+af4fe2100f29827b459a6df100125c88
+  samtoolsBin1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2,
+     Unfolding: (FileManagement.bwaBin5
+                   FileManagement.samtoolsBin3
+                   FileManagement.samtoolsBin2
+                   Dependencies.Embedded.samtoolsData1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Data.ByteString.Internal.ByteString>_R))) -}
+cff29995ec30330b363beee58e8d0284
+  samtoolsBin2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "ngless-"#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Version.versionStr
+                      (GHC.CString.unpackCString# "-samtools"#))) -}
+82e24ab992eee498b88078e9cf56eaf7
+  samtoolsBin3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   FileManagement.samtoolsBin4) -}
+001b74d2134447d6e73e8c5144184e66
+  samtoolsBin4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLESS_SAMTOOLS_BIN"#) -}
+2db7ffde7a020334b2de29328d433b76
+  setupHtmlViewer :: GHC.IO.FilePath -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileManagement.setupHtmlViewer1
+                  `cast`
+                (<GHC.IO.FilePath>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f1aa6bc95db427f25d586949a95e58fe
+  setupHtmlViewer1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+567a8509f5a872125a8f2f0f09ef04c7
+  takeBaseNameNoExtensions :: GHC.IO.FilePath -> GHC.IO.FilePath
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: GHC.IO.FilePath) ->
+                 case System.FilePath.Posix.splitExtensions
+                        (System.FilePath.Posix.takeBaseName x) of wild { (,) x1 ds1 ->
+                 x1 }) -}
+instance GHC.Classes.Eq [FileManagement.Compression]
+  = FileManagement.$fEqCompression
+instance GHC.Classes.Eq [FileManagement.InstallMode]
+  = FileManagement.$fEqInstallMode
+instance GHC.Show.Show [FileManagement.InstallMode]
+  = FileManagement.$fShowInstallMode
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

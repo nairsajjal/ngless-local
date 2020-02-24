@@ -1,0 +1,1013 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:31.446411673 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Data.GFF 8065
+  interface hash: 993056e3b9594330b3849b008b6a880b
+  ABI hash: 8e2f6cfddf3ce36da24ed6b43d77139b
+  export-list hash: 24c3a6d1bc84dbbad42aabcd86ff58ff
+  orphan hash: c6fffa183a626bc2d730f25e9fa82763
+  flag hash: 4e65c21709eec51ed3c0de8c22fced93
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.GFF.readGffLine
+  Data.GFF.GffLine{Data.GFF.GffLine gffAttrs gffEnd gffPhase gffScore gffSeqId gffSource gffStart gffStrand gffType}
+  Data.GFF.GffStrand{Data.GFF.GffNegStrand Data.GFF.GffPosStrand Data.GFF.GffUnStranded Data.GFF.GffUnknownStrand}
+module dependencies: NGLess.NGError
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      bytestring-0.10.8.2 bytestring-lexing-0.5.0.2 containers-0.6.0.1
+                      deepseq-1.4.4.0 exceptions-0.10.4 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0 mtl-2.2.2 primitive-0.6.4.0 resourcet-1.2.2
+                      stm-2.5.0.0 template-haskell-2.14.0.0 transformers-0.5.6.2
+                      unliftio-core-0.1.2.0
+orphans: stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGError 9741b2ef5fc8e673ccaf43057baf92e8
+  NGLess 416e5726ee4c4987c25367d545064990
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+import  -/  base-4.12.0.0:Control.Arrow cda881e865dd3141fb08ed18f2efcca7
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-lexing-0.5.0.2:Data.ByteString.Lex.Fractional 0eda529e163586ab7dc4cb93d56f852a
+import  -/  bytestring-lexing-0.5.0.2:Data.ByteString.Lex.Integral dc241d593425c8dc35e71cb822e43543
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand :: GHC.Enum.Enum Data.GFF.GffStrand
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.GFF.GffStrand
+                  Data.GFF.$fEnumGffStrand_$csucc
+                  Data.GFF.$fEnumGffStrand_$cpred
+                  Data.GFF.$fEnumGffStrand_$ctoEnum
+                  Data.GFF.$fEnumGffStrand_$cfromEnum
+                  Data.GFF.$fEnumGffStrand_$cenumFrom
+                  Data.GFF.$fEnumGffStrand_$cenumFromThen
+                  Data.GFF.$fEnumGffStrand_$cenumFromTo
+                  Data.GFF.$fEnumGffStrand_$cenumFromThenTo -}
+d45132d21b377d3e131111edfaaecd0c
+  $fEnumGffStrand1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Data.GFF.$fEnumGffStrand12
+                   Data.GFF.$fEnumGffStrand2
+                   GHC.Stack.Types.EmptyCallStack) -}
+faa7ab1ec30252c664ee79c5c161b6dd
+  $fEnumGffStrand10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.GFF.$fEnumGffStrand11) -}
+618da826b8dafbe9b414c895b7a34d0c
+  $fEnumGffStrand11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+b26b4c87a5b6920ebb60b8d034e1d062
+  $fEnumGffStrand12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.GFF.$fEnumGffStrand13) -}
+a5157ebe26ef561dd3fbc2f4ce75a06b
+  $fEnumGffStrand13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("error"#) -}
+66f0ec317852ba3c0bbe259df5121574
+  $fEnumGffStrand2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Data.GFF.$fEnumGffStrand10
+                   Data.GFF.$fEnumGffStrand8
+                   Data.GFF.$fEnumGffStrand6
+                   Data.GFF.$fEnumGffStrand5
+                   Data.GFF.$fEnumGffStrand4
+                   Data.GFF.$fEnumGffStrand5
+                   Data.GFF.$fEnumGffStrand3) -}
+893605fd541af131d362bcf46afde930
+  $fEnumGffStrand3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 37#) -}
+cfb66cce64f5ff560a36bbf77932ffaf
+  $fEnumGffStrand4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 33#) -}
+d14d4b5638785dfdb297e6e2dcb2657a
+  $fEnumGffStrand5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 27#) -}
+6412423a8f8295715c62385637b323ae
+  $fEnumGffStrand6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.GFF.$fEnumGffStrand7) -}
+8dd914a12b916283be3f485e298e6160
+  $fEnumGffStrand7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLess/Data/GFF.hs"#) -}
+b510e89f091cf81b00d6faf66ad15dc5
+  $fEnumGffStrand8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.GFF.$fEnumGffStrand9) -}
+2dba2e482a70608e1a9ce4c9880e3919
+  $fEnumGffStrand9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.GFF"#) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$cenumFrom ::
+    Data.GFF.GffStrand -> [Data.GFF.GffStrand]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Data.GFF.GffStrand) ->
+                 case a of wild {
+                   Data.GFF.GffPosStrand
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Data.GFF.GffStrand
+                            (GHC.Prim.tagToEnum# @ Data.GFF.GffStrand x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               3# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                      } in
+                      go 0#
+                   Data.GFF.GffNegStrand
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Data.GFF.GffStrand
+                            (GHC.Prim.tagToEnum# @ Data.GFF.GffStrand x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               3# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                      } in
+                      go 1#
+                   Data.GFF.GffUnknownStrand
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Data.GFF.GffStrand
+                            (GHC.Prim.tagToEnum# @ Data.GFF.GffStrand x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               3# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                      } in
+                      go 2#
+                   Data.GFF.GffUnStranded
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Data.GFF.GffStrand
+                            (GHC.Prim.tagToEnum# @ Data.GFF.GffStrand x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               3# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                      } in
+                      go 3# }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$cenumFromThen ::
+    Data.GFF.GffStrand -> Data.GFF.GffStrand -> [Data.GFF.GffStrand]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$cenumFromThenTo ::
+    Data.GFF.GffStrand
+    -> Data.GFF.GffStrand -> Data.GFF.GffStrand -> [Data.GFF.GffStrand]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$cenumFromTo ::
+    Data.GFF.GffStrand -> Data.GFF.GffStrand -> [Data.GFF.GffStrand]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Data.GFF.GffStrand)
+                   (y :: Data.GFF.GffStrand) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Data.GFF.GffPosStrand
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Data.GFF.GffStrand
+                                     (Data.GFF.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        0# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Data.GFF.GffStrand }
+                       Data.GFF.GffNegStrand
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Data.GFF.GffStrand
+                                     (Data.GFF.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        1# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Data.GFF.GffStrand }
+                       Data.GFF.GffUnknownStrand
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Data.GFF.GffStrand
+                                     (Data.GFF.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        2# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Data.GFF.GffStrand }
+                       Data.GFF.GffUnStranded
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Data.GFF.GffStrand]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Data.GFF.GffStrand
+                                     (Data.GFF.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        3# -> GHC.Types.[] @ Data.GFF.GffStrand })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Data.GFF.GffStrand } }
+                 } in
+                 case x of wild {
+                   Data.GFF.GffPosStrand -> $j 0#
+                   Data.GFF.GffNegStrand -> $j 1#
+                   Data.GFF.GffUnknownStrand -> $j 2#
+                   Data.GFF.GffUnStranded -> $j 3# }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$cfromEnum :: Data.GFF.GffStrand -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Data.GFF.GffStrand) ->
+                 case a of wild {
+                   Data.GFF.GffPosStrand -> GHC.Types.I# 0#
+                   Data.GFF.GffNegStrand -> GHC.Types.I# 1#
+                   Data.GFF.GffUnknownStrand -> GHC.Types.I# 2#
+                   Data.GFF.GffUnStranded -> GHC.Types.I# 3# }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$cpred :: Data.GFF.GffStrand -> Data.GFF.GffStrand
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Data.GFF.GffStrand) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Data.GFF.GffStrand
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum# @ Data.GFF.GffStrand (GHC.Prim.+# wild -1#)
+                       0#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ Data.GFF.GffStrand
+                            Data.GFF.$fEnumGffStrand1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "pred{GffStrand}: tried to take `pred' of first tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   Data.GFF.GffPosStrand -> $j 0#
+                   Data.GFF.GffNegStrand -> $j 1#
+                   Data.GFF.GffUnknownStrand -> $j 2#
+                   Data.GFF.GffUnStranded -> $j 3# }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$csucc :: Data.GFF.GffStrand -> Data.GFF.GffStrand
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Data.GFF.GffStrand) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Data.GFF.GffStrand
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum# @ Data.GFF.GffStrand (GHC.Prim.+# wild 1#)
+                       3#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ Data.GFF.GffStrand
+                            Data.GFF.$fEnumGffStrand1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "succ{GffStrand}: tried to take `succ' of last tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   Data.GFF.GffPosStrand -> $j 0#
+                   Data.GFF.GffNegStrand -> $j 1#
+                   Data.GFF.GffUnknownStrand -> $j 2#
+                   Data.GFF.GffUnStranded -> $j 3# }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEnumGffStrand_$ctoEnum :: GHC.Types.Int -> Data.GFF.GffStrand
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Data.GFF.$w$ctoEnum ww1 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fEqGffLine :: GHC.Classes.Eq Data.GFF.GffLine
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.GFF.GffLine
+                  Data.GFF.$fEqGffLine_$c==
+                  Data.GFF.$fEqGffLine_$c/= -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fEqGffLine_$c/= ::
+    Data.GFF.GffLine -> Data.GFF.GffLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)SSLLSSLS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U,U),U,U,U,U,U,U)><S(S(LLLS)SSLLSSLS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U,U),U,U,U,U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.GFF.GffLine) (y :: Data.GFF.GffLine) ->
+                 case Data.GFF.$fEqGffLine_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fEqGffLine_$c== ::
+    Data.GFF.GffLine -> Data.GFF.GffLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)SSLLSSLS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U,U),U,U,U,U,U,U)><S(S(LLLS)SSLLSSLS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U,U),U,U,U,U,U,U)> -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEqGffStrand :: GHC.Classes.Eq Data.GFF.GffStrand
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.GFF.GffStrand
+                  Data.GFF.$fEqGffStrand_$c==
+                  Data.GFF.$fEqGffStrand_$c/= -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEqGffStrand_$c/= ::
+    Data.GFF.GffStrand -> Data.GFF.GffStrand -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.GFF.GffStrand) (y :: Data.GFF.GffStrand) ->
+                 case x of wild {
+                   Data.GFF.GffPosStrand
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.GFF.GffPosStrand -> GHC.Types.False }
+                   Data.GFF.GffNegStrand
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.GFF.GffNegStrand -> GHC.Types.False }
+                   Data.GFF.GffUnknownStrand
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.GFF.GffUnknownStrand -> GHC.Types.False }
+                   Data.GFF.GffUnStranded
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Data.GFF.GffUnStranded -> GHC.Types.False } }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fEqGffStrand_$c== ::
+    Data.GFF.GffStrand -> Data.GFF.GffStrand -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Data.GFF.GffStrand)
+                   (ds1 :: Data.GFF.GffStrand) ->
+                 case ds of wild {
+                   Data.GFF.GffPosStrand
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.GFF.GffPosStrand -> GHC.Types.True }
+                   Data.GFF.GffNegStrand
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.GFF.GffNegStrand -> GHC.Types.True }
+                   Data.GFF.GffUnknownStrand
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.GFF.GffUnknownStrand -> GHC.Types.True }
+                   Data.GFF.GffUnStranded
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Data.GFF.GffUnStranded -> GHC.Types.True } }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fNFDataGffLine :: Control.DeepSeq.NFData Data.GFF.GffLine
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLS),1*U(A,A,A,A,A,U,A,A,U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Data.GFF.$fNFDataGffLine_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Data.GFF.GffLine>_N)) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fNFDataGffLine_$crnf :: Data.GFF.GffLine -> ()
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLS),1*U(A,A,A,A,A,U,A,A,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.GFF.GffLine) ->
+                 case w of ww { Data.GFF.GffLine ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 case ww6 of wild {
+                   GHC.Maybe.Nothing
+                   -> letrec {
+                        go :: [(Data.ByteString.Internal.ByteString,
+                                Data.ByteString.Internal.ByteString)]
+                              -> ()
+                          <join 1> {- Arity: 1, Strictness: <S,U> -}
+                        = \ (ds :: [(Data.ByteString.Internal.ByteString,
+                                     Data.ByteString.Internal.ByteString)]) ->
+                          case ds of wild1 {
+                            [] -> GHC.Tuple.()
+                            : x xs
+                            -> case x of wild2 { (,) x1 y ->
+                               case x1 of wild3 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                               case y of wild4 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                               go xs } } } }
+                      } in
+                      go ww9
+                   GHC.Maybe.Just x
+                   -> case x of ds1 { GHC.Types.F# ipv ->
+                      letrec {
+                        go :: [(Data.ByteString.Internal.ByteString,
+                                Data.ByteString.Internal.ByteString)]
+                              -> ()
+                          <join 1> {- Arity: 1, Strictness: <S,U> -}
+                        = \ (ds :: [(Data.ByteString.Internal.ByteString,
+                                     Data.ByteString.Internal.ByteString)]) ->
+                          case ds of wild1 {
+                            [] -> GHC.Tuple.()
+                            : x1 xs
+                            -> case x1 of wild2 { (,) x2 y ->
+                               case x2 of wild3 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                               case y of wild4 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                               go xs } } } }
+                      } in
+                      go ww9 } } }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fNFDataGffStrand :: Control.DeepSeq.NFData Data.GFF.GffStrand
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Data.GFF.$fNFDataGffStrand_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Data.GFF.GffStrand>_N)) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fNFDataGffStrand_$crnf :: Data.GFF.GffStrand -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffStrand) ->
+                 case ds of ds1 { DEFAULT -> GHC.Tuple.() }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fShowGffLine :: GHC.Show.Show Data.GFF.GffLine
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.GFF.GffLine
+                  Data.GFF.$fShowGffLine_$cshowsPrec
+                  Data.GFF.$fShowGffLine_$cshow
+                  Data.GFF.$fShowGffLine_$cshowList -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fShowGffLine_$cshow :: Data.GFF.GffLine -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S(SSSLLSSLS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U,U),U,U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.GFF.GffLine) ->
+                 Data.GFF.$fShowGffLine_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fShowGffLine_$cshowList :: [Data.GFF.GffLine] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.GFF.GffLine]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.GFF.GffLine
+                   (Data.GFF.$fShowGffLine_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+92f00a6e862ebbdf7a331491620f9b62
+  $fShowGffLine_$cshowsPrec ::
+    GHC.Types.Int -> Data.GFF.GffLine -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(SSSLLSSLS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U,U),U,U,U,U,U,U)> -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fShowGffStrand :: GHC.Show.Show Data.GFF.GffStrand
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.GFF.GffStrand
+                  Data.GFF.$fShowGffStrand_$cshowsPrec
+                  Data.GFF.$fShowGffStrand_$cshow
+                  Data.GFF.$fShowGffStrand_$cshowList -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fShowGffStrand_$cshow :: Data.GFF.GffStrand -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Data.GFF.GffStrand) ->
+                 case x of wild {
+                   Data.GFF.GffPosStrand -> GHC.CString.unpackCString# "GffPosStrand"#
+                   Data.GFF.GffNegStrand -> GHC.CString.unpackCString# "GffNegStrand"#
+                   Data.GFF.GffUnknownStrand
+                   -> GHC.CString.unpackCString# "GffUnknownStrand"#
+                   Data.GFF.GffUnStranded
+                   -> GHC.CString.unpackCString# "GffUnStranded"# }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fShowGffStrand_$cshowList ::
+    [Data.GFF.GffStrand] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.GFF.GffStrand]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.GFF.GffStrand
+                   (Data.GFF.$fShowGffStrand_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $fShowGffStrand_$cshowsPrec ::
+    GHC.Types.Int -> Data.GFF.GffStrand -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.GFF.GffStrand) ->
+                 Data.GFF.$w$cshowsPrec w1) -}
+faf5a570bfab0c60a4fd254381308755
+  $s$fEq(,) ::
+    GHC.Classes.Eq
+      (Data.ByteString.Internal.ByteString,
+       Data.ByteString.Internal.ByteString)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.ByteString.Internal.ByteString,
+                     Data.ByteString.Internal.ByteString)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ Data.ByteString.Internal.ByteString
+                     @ Data.ByteString.Internal.ByteString
+                     Data.ByteString.Internal.$fEqByteString
+                     Data.ByteString.Internal.$fEqByteString)
+                  Data.GFF.$s$fEq(,)_$s$fEq(,)_$c/= -}
+2968ca16b55c91627d44fe84421c1f4a
+  $s$fEq(,)_$s$fEq(,)_$c/= ::
+    (Data.ByteString.Internal.ByteString,
+     Data.ByteString.Internal.ByteString)
+    -> (Data.ByteString.Internal.ByteString,
+        Data.ByteString.Internal.ByteString)
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)L),1*U(1*U(U,U,U,U),1*U(U,U,U,U))><S(S(LLLS)L),1*U(1*U(U,U,U,U),1*U(U,U,U,U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: (Data.ByteString.Internal.ByteString,
+                          Data.ByteString.Internal.ByteString))
+                   (y :: (Data.ByteString.Internal.ByteString,
+                          Data.ByteString.Internal.ByteString)) ->
+                 case x of wild { (,) a1 a2 ->
+                 case y of wild1 { (,) b1 b2 ->
+                 case a1 of wild2 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case b1 of wild3 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                 let {
+                   $j :: GHC.Types.Bool <join 0>
+                   = case a2 of wild4 { Data.ByteString.Internal.PS dt11 dt12 dt13 dt14 ->
+                     case b2 of wild5 { Data.ByteString.Internal.PS dt15 dt16 dt17 dt18 ->
+                     case GHC.Classes.neInt
+                            (GHC.Types.I# dt14)
+                            (GHC.Types.I# dt18) of wild6 {
+                       GHC.Types.False
+                       -> case GHC.Prim.eqAddr# dt11 dt15 of lwild {
+                            DEFAULT
+                            -> case Data.ByteString.Internal.compareBytes
+                                      wild4
+                                      wild5 of wild7 {
+                                 DEFAULT -> GHC.Types.True GHC.Types.EQ -> GHC.Types.False }
+                            1#
+                            -> case GHC.Classes.eqInt
+                                      (GHC.Types.I# dt13)
+                                      (GHC.Types.I# dt17) of wild7 {
+                                 GHC.Types.False
+                                 -> case Data.ByteString.Internal.compareBytes
+                                           wild4
+                                           wild5 of wild8 {
+                                      DEFAULT -> GHC.Types.True GHC.Types.EQ -> GHC.Types.False }
+                                 GHC.Types.True -> GHC.Types.False } }
+                       GHC.Types.True -> GHC.Types.True } } }
+                 } in
+                 case GHC.Classes.neInt
+                        (GHC.Types.I# dt3)
+                        (GHC.Types.I# dt7) of wild4 {
+                   GHC.Types.False
+                   -> case GHC.Prim.eqAddr# dt dt4 of lwild {
+                        DEFAULT
+                        -> case Data.ByteString.Internal.compareBytes
+                                  wild2
+                                  wild3 of wild5 {
+                             DEFAULT -> GHC.Types.True GHC.Types.EQ -> $j }
+                        1#
+                        -> case GHC.Classes.eqInt
+                                  (GHC.Types.I# dt2)
+                                  (GHC.Types.I# dt6) of wild5 {
+                             GHC.Types.False
+                             -> case Data.ByteString.Internal.compareBytes
+                                       wild2
+                                       wild3 of wild6 {
+                                  DEFAULT -> GHC.Types.True GHC.Types.EQ -> $j }
+                             GHC.Types.True -> $j } }
+                   GHC.Types.True -> GHC.Types.True } } } } }) -}
+c8d6c572139e3624a697941a6a413044
+  $tc'GffLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9156347948459668574##
+                   10212044202189485237##
+                   Data.GFF.$trModule
+                   Data.GFF.$tc'GffLine2
+                   0#
+                   Data.GFF.$tc'GffLine1) -}
+dbb00d7aa94e1a04bd4321a21511e7a2
+  $tc'GffLine1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dd8cdbd8e453ebb653bfb8a7e9c4801e
+  $tc'GffLine2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tc'GffLine3) -}
+0d5d0299f5cab24b7467dadada925048
+  $tc'GffLine3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GffLine"#) -}
+d5aae66f84793777c332fa8c6c7c22e8
+  $tc'GffNegStrand :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8475341318753379879##
+                   15591513781058307313##
+                   Data.GFF.$trModule
+                   Data.GFF.$tc'GffNegStrand2
+                   0#
+                   Data.GFF.$tc'GffNegStrand1) -}
+25bd06ff226cb438d9b26dcfbee47b32
+  $tc'GffNegStrand1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+7bfa903356232afbbd263b5211b51939
+  $tc'GffNegStrand2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tc'GffNegStrand3) -}
+82414042da1e73fb564f8853cbbd3b06
+  $tc'GffNegStrand3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GffNegStrand"#) -}
+e173d4034d8420e29e507fe7a1b5ecc4
+  $tc'GffPosStrand :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16196630977615899737##
+                   4545135078316485217##
+                   Data.GFF.$trModule
+                   Data.GFF.$tc'GffPosStrand1
+                   0#
+                   Data.GFF.$tc'GffNegStrand1) -}
+bc831af103f61b37b53d4aaedc97d050
+  $tc'GffPosStrand1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tc'GffPosStrand2) -}
+fc9290948ca2b0bdb23c93c6d22ec46f
+  $tc'GffPosStrand2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GffPosStrand"#) -}
+cac9686bfa82be043ac93b5730abd47b
+  $tc'GffUnStranded :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12019828095490827586##
+                   11604174598964165460##
+                   Data.GFF.$trModule
+                   Data.GFF.$tc'GffUnStranded1
+                   0#
+                   Data.GFF.$tc'GffNegStrand1) -}
+c527920457fb31fe4382f1fcfde6d149
+  $tc'GffUnStranded1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tc'GffUnStranded2) -}
+25ce47b9997d7d72304310bfa308f905
+  $tc'GffUnStranded2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GffUnStranded"#) -}
+124c8d68ad62b8cda53b437df6fcc5e8
+  $tc'GffUnknownStrand :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16709036615916521891##
+                   17808766702080597821##
+                   Data.GFF.$trModule
+                   Data.GFF.$tc'GffUnknownStrand1
+                   0#
+                   Data.GFF.$tc'GffNegStrand1) -}
+cfaf97032da874de221cbfc03cdbbd27
+  $tc'GffUnknownStrand1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tc'GffUnknownStrand2) -}
+99caec2e40c3c8d2f73d6a27bb37a334
+  $tc'GffUnknownStrand2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'GffUnknownStrand"#) -}
+08abcbcb3b8106e8a9929d90dfa5c57f
+  $tcGffLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6584626466388532136##
+                   3595540958142762677##
+                   Data.GFF.$trModule
+                   Data.GFF.$tcGffLine1
+                   0#
+                   GHC.Types.krep$*) -}
+37259ae66156f032ddeb2413d4f35736
+  $tcGffLine1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tcGffLine2) -}
+815d73c16885bdd8d2ce0cd0eb573c84
+  $tcGffLine2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GffLine"#) -}
+e1337f056debe1fe20534c7768b9f015
+  $tcGffStrand :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8095769323313842931##
+                   2401505970012046826##
+                   Data.GFF.$trModule
+                   Data.GFF.$tcGffStrand1
+                   0#
+                   GHC.Types.krep$*) -}
+0b5e221aa03354b4a0348db06a7b8777
+  $tcGffStrand1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$tcGffStrand2) -}
+b4189eefb27de66c58ad3f4798a51413
+  $tcGffStrand2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GffStrand"#) -}
+7403392c9fd0325b777945b1846b6720
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.GFF.$trModule2
+                   Data.GFF.$trModule1) -}
+73c911ce83c6f63779cdbdd284f513a1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$fEnumGffStrand9) -}
+7025ac22b08fdd5f3c586d0c6b37859f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.GFF.$fEnumGffStrand11) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $w$cshowsPrec :: Data.GFF.GffStrand -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Data.GFF.GffStrand) ->
+                 case w of wild {
+                   Data.GFF.GffPosStrand
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "GffPosStrand"#)
+                   Data.GFF.GffNegStrand
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "GffNegStrand"#)
+                   Data.GFF.GffUnknownStrand
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "GffUnknownStrand"#)
+                   Data.GFF.GffUnStranded
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "GffUnStranded"#) }) -}
+81195a9fb05ef50792659320b0a4d2fb
+  $w$ctoEnum :: GHC.Prim.Int# -> Data.GFF.GffStrand
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   $j :: Data.GFF.GffStrand <join 0> {- Strictness: x -}
+                   = GHC.Err.error
+                       @ 'GHC.Types.LiftedRep
+                       @ Data.GFF.GffStrand
+                       Data.GFF.$fEnumGffStrand1
+                         `cast`
+                       (Sym (GHC.Classes.N:IP[0]
+                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                       (GHC.CString.unpackAppendCString#
+                          "toEnum{GffStrand}: tag ("#
+                          (case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww
+                                  (GHC.CString.unpackAppendCString#
+                                     ") is outside of enumeration's range (0,"#
+                                     (case GHC.Show.$wshowSignedInt
+                                             0#
+                                             3#
+                                             (GHC.CString.unpackCString#
+                                                ")"#) of ww4 { (#,#) ww5 ww6 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww5
+                                        ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                 } in
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> $j
+                   1#
+                   -> case GHC.Prim.<=# ww 3# of lwild1 {
+                        DEFAULT -> $j
+                        1# -> GHC.Prim.tagToEnum# @ Data.GFF.GffStrand ww } }) -}
+aca6ab2b13d19b0602d78828cac151ca
+  $wreadGffLine ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Either.Either NGLess.NGError.NGError Data.GFF.GffLine
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,U>, Inline: [2] -}
+92f00a6e862ebbdf7a331491620f9b62
+  data GffLine
+    = GffLine {gffSeqId :: !Data.ByteString.Internal.ByteString,
+               gffSource :: !Data.ByteString.Internal.ByteString,
+               gffType :: !Data.ByteString.Internal.ByteString,
+               gffStart :: {-# UNPACK #-}GHC.Types.Int,
+               gffEnd :: {-# UNPACK #-}GHC.Types.Int,
+               gffScore :: !(GHC.Maybe.Maybe GHC.Types.Float),
+               gffStrand :: !Data.GFF.GffStrand,
+               gffPhase :: {-# UNPACK #-}GHC.Types.Int,
+               gffAttrs :: ![(Data.ByteString.Internal.ByteString,
+                              Data.ByteString.Internal.ByteString)]}
+81195a9fb05ef50792659320b0a4d2fb
+  data GffStrand
+    = GffPosStrand | GffNegStrand | GffUnknownStrand | GffUnStranded
+92f00a6e862ebbdf7a331491620f9b62
+  gffAttrs ::
+    Data.GFF.GffLine
+    -> [(Data.ByteString.Internal.ByteString,
+         Data.ByteString.Internal.ByteString)]
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLS),1*U(A,A,A,A,A,A,A,A,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 ds6 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffEnd :: Data.GFF.GffLine -> GHC.Types.Int
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLL),1*U(A,A,A,A,U,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 GHC.Types.I# dt1 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffPhase :: Data.GFF.GffLine -> GHC.Types.Int
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSL),1*U(A,A,A,A,A,A,A,U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 GHC.Types.I# dt2 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffScore :: Data.GFF.GffLine -> GHC.Maybe.Maybe GHC.Types.Float
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLL),1*U(A,A,A,A,A,U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 ds4 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffSeqId :: Data.GFF.GffLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),1*U(U(U,U,U,U),A,A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 ds1 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffSource ::
+    Data.GFF.GffLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLL),1*U(A,U(U,U,U,U),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 ds2 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffStart :: Data.GFF.GffLine -> GHC.Types.Int
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLL),1*U(A,A,A,U,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 GHC.Types.I# dt }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffStrand :: Data.GFF.GffLine -> Data.GFF.GffStrand
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLL),1*U(A,A,A,A,A,A,U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 ds5 }) -}
+92f00a6e862ebbdf7a331491620f9b62
+  gffType :: Data.GFF.GffLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.GFF.GffLine
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLL),1*U(A,A,U(U,U,U,U),A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.GFF.GffLine) ->
+                 case ds of wild { Data.GFF.GffLine ds1 ds2 ds3 dt dt1 ds4 ds5 dt2 ds6 ->
+                 ds3 }) -}
+5a3d5c7f240eb4affa7c4ac4e8c23b61
+  readGffLine ::
+    Data.ByteString.Internal.ByteString
+    -> Data.Either.Either NGLess.NGError.NGError Data.GFF.GffLine
+  {- Arity: 1, Strictness: <S(SLSS),1*U(U,U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.ByteString.Internal.ByteString) ->
+                 case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Data.GFF.$wreadGffLine ww1 ww2 ww3 ww4 }) -}
+instance GHC.Enum.Enum [Data.GFF.GffStrand]
+  = Data.GFF.$fEnumGffStrand
+instance GHC.Classes.Eq [Data.GFF.GffLine] = Data.GFF.$fEqGffLine
+instance GHC.Classes.Eq [Data.GFF.GffStrand]
+  = Data.GFF.$fEqGffStrand
+instance Control.DeepSeq.NFData [Data.GFF.GffLine]
+  = Data.GFF.$fNFDataGffLine
+instance Control.DeepSeq.NFData [Data.GFF.GffStrand]
+  = Data.GFF.$fNFDataGffStrand
+instance GHC.Show.Show [Data.GFF.GffLine] = Data.GFF.$fShowGffLine
+instance GHC.Show.Show [Data.GFF.GffStrand]
+  = Data.GFF.$fShowGffStrand
+"SPEC/Data.GFF $fEq(,) @ ByteString @ ByteString" [orphan] forall (v1 :: GHC.Classes.Eq
+                                                                           Data.ByteString.Internal.ByteString)
+                                                                  (v :: GHC.Classes.Eq
+                                                                          Data.ByteString.Internal.ByteString)
+  GHC.Classes.$fEq(,) @ Data.ByteString.Internal.ByteString
+                      @ Data.ByteString.Internal.ByteString
+                      v
+                      v1
+  = Data.GFF.$s$fEq(,)
+"SPEC/Data.GFF $fEq(,)_$c/= @ ByteString @ ByteString" [orphan] forall ($dEq1 :: GHC.Classes.Eq
+                                                                                   Data.ByteString.Internal.ByteString)
+                                                                       ($dEq :: GHC.Classes.Eq
+                                                                                  Data.ByteString.Internal.ByteString)
+  GHC.Classes.$fEq(,)_$c/= @ Data.ByteString.Internal.ByteString
+                           @ Data.ByteString.Internal.ByteString
+                           $dEq
+                           $dEq1
+  = Data.GFF.$s$fEq(,)_$s$fEq(,)_$c/=
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

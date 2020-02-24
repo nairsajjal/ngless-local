@@ -1,0 +1,66 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:34.070421182 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.Debug 8065
+  interface hash: 4ea8e2063a548f28896ab03aec34ccb4
+  ABI hash: 79bd731f499f1decc37498fbe3ba391f
+  export-list hash: 8871b7e3074b505ec4f08d85fb3fddfa
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8c5b40462c7e0eb1a03172e2955ee20e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.Debug.tracex
+  Debug.Trace.trace
+module dependencies:
+package dependencies: base-4.12.0.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Debug.Trace 60f75ad789dcddb29321db1cb21ccd4c
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+1f113988ed8363df07984467e377ed95
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.Debug.$trModule3
+                   Utils.Debug.$trModule1) -}
+c6c37628334cb04825c8751fa7222454
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Debug.$trModule2) -}
+72e522f7653955aec088136599fc3282
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.Debug"#) -}
+f94b7b01ad565e0673e005f7844f7a7d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Debug.$trModule4) -}
+69847fb3a549e10a2ba145950b4129da
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+38959870ae657f6e0e72eb66385a82df
+  tracex :: GHC.Show.Show a => a -> a
+  {- Arity: 2, Strictness: <L,1*U(A,1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: a) ->
+                 Debug.Trace.trace @ a (GHC.Show.show @ a $dShow x) x) -}
+Warnings tracex "Using tracex [remove before committing]"
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

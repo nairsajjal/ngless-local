@@ -1,0 +1,983 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:51.403263101 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.LockFile 8065
+  interface hash: f1c103d019b6fb87ddc8c3345b2c8ae5
+  ABI hash: 773af50f4e27251bc75ff4a12d55914b
+  export-list hash: 1b4d56278fbcc510ef86d7b3b0367e3c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: cdf876ab8b4f6672c5618f64b8c8ee53
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.LockFile.acquireLock
+  Utils.LockFile.fileAge
+  Utils.LockFile.removeFileIfExists
+  Utils.LockFile.withLockFile
+  Utils.LockFile.LockParameters{Utils.LockFile.LockParameters lockFname maxAge mtimeUpdate whenExistsStrategy}
+  Utils.LockFile.WhenExistsStrategy{Utils.LockFile.IfLockedNothing Utils.LockFile.IfLockedRetry Utils.LockFile.IfLockedThrow nrLockRetries timeBetweenRetries}
+module dependencies: CmdArgs Configuration Data.FastQ
+                     NGLess.NGError NGLess.NGLEnvironment Output Utils.Conduit
+                     Utils.Vector
+package dependencies: JuicyPixels-3.3.4 StateVar-1.2
+                      active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0 ansi-terminal-0.9.1
+                      ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2 attoparsec-0.13.2.3
+                      base-4.12.0.0 base-compat-0.10.5 base-orphans-0.8.1
+                      base64-bytestring-1.0.0.2 bifunctors-5.5.6 binary-0.8.6.0
+                      blaze-builder-0.4.1.0 bytes-0.15.5 bytestring-0.10.8.2
+                      bzlib-conduit-0.3.0.2 call-stack-0.1.0 cereal-0.5.8.1
+                      cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5 comonad-5.0.6
+                      conduit-1.3.1.2 conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 configurator-0.3.0.0 containers-0.6.0.1
+                      contravariant-1.5.2 data-default-class-0.1.2.0 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 exceptions-0.10.4 extra-1.6.18
+                      filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5
+                      ghc-prim-0.5.3 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      optparse-applicative-0.14.3.0 parsec-3.1.14.0 parsers-0.12.10
+                      pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0 profunctors-5.3
+                      random-1.1 reflection-2.1.5 resourcet-1.2.2 safeio-0.0.5.0
+                      scientific-0.3.6.2 semigroupoids-5.3.4 split-0.2.3.3 stm-2.5.0.0
+                      stm-chans-3.0.0.4 stm-conduit-4.0.1 streaming-commons-0.2.1.1
+                      svg-builder-0.1.1 tagged-0.8.6 template-haskell-2.14.0.0
+                      text-1.2.3.1 th-abstraction-0.3.1.0 time-1.8.0.2
+                      time-compat-1.9.2.2 transformers-0.5.6.2 transformers-base-0.4.5.2
+                      transformers-compat-0.6.5 unix-2.7.2.2 unix-compat-0.5.2
+                      unliftio-0.2.12 unliftio-core-0.1.2.0 unordered-containers-0.2.10.0
+                      uuid-types-1.0.3 vector-0.12.0.3 vector-algorithms-0.8.0.3
+                      zlib-0.6.2.1 zstd-0.1.1.2
+orphans: attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGError 9741b2ef5fc8e673ccaf43057baf92e8
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  throwSystemError fd7c6796a005f4e332b2d16e13db3f7f
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  DebugOutput 66928311a72e96e4202c735d87d527fd
+  InfoOutput c7754f0807be19d61fb420c2d9984424
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  async-2.2.2:Control.Concurrent.Async 539dde74c83d07130d3155c90555c63d
+import  -/  base-4.12.0.0:Control.Concurrent 945d3c1c41ed03e6117e3861cad65d9f
+import  -/  base-4.12.0.0:Control.Exception 041da5b6267cf6b639ff5716d5b299a9
+import  -/  base-4.12.0.0:Control.Exception.Base 28f76dc5daa23d33c2b03285506ae9fc
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Bits 64fdef6c05b11e33e007318d457467e9
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Foreign.C 0f5fb29b01f683e7f673c9722e80e2ea
+import  -/  base-4.12.0.0:Foreign.C.Error 3d1a23875207bdb660f3feaf03ac8bde
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Conc.IO 26d42f44a7711efbf2dd2f5b965a3d45
+import  -/  base-4.12.0.0:GHC.Exception.Type 98b0fca1a406b013cbf2a34ff23be207
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Exception 77722984940ee6ccf9e2f7dab10b83a4
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.IO.Handle.FD 57dd508e0260edfe7dfb9592eb9a6e63
+import  -/  base-4.12.0.0:GHC.IO.Handle.Text 182a34cefe4f282196178eec37b94471
+import  -/  base-4.12.0.0:GHC.IO.Handle.Types 8909e00409cd23d4e66395a7e93f216d
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  base-4.12.0.0:System.IO.Error 4554cd72d03d7e89c9020f2d00a768a1
+import  -/  base-4.12.0.0:System.Posix.Internals bd782c32a9c5e6a1b61046d4eae44ffe
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  hostname-1.0:Network.HostName 32e7fdecb8a5d361159d718bc56badd7
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource.Internal 501d62f3c9254d0531a3c1329c03910f
+import  -/  time-1.8.0.2:Data.Time d7959afbfc5f95bc89346f8b5ebf8491
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.NominalDiffTime 684fbd4a258a1ec8e3cfc2816ede9e1d
+import  -/  time-1.8.0.2:Data.Time.Clock.Internal.UTCDiff f6bc3730941faaf98f86667b3419d6a2
+import  -/  time-1.8.0.2:Data.Time.Clock.POSIX b218aa2e53cf1d64758fb39969540701
+import  -/  time-1.8.0.2:Data.Time.Format 99541c5c71daee5f246a504498171b3d
+import  -/  time-1.8.0.2:Data.Time.Format.Locale e657d007b358490dc51d0b13762925ef
+import  -/  time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime a45fd49e6e822fefd8fc894573c40e7c
+import  -/  unix-2.7.2.2:System.Posix.Files 4964480523a26dfeb9c75fd7d0d8d434
+import  -/  unix-2.7.2.2:System.Posix.Process 350816cd827599240db63062d00e246a
+import  -/  unix-2.7.2.2:System.Posix.Process.Common 41747b4a45fefdedddd009a2cc7f5fe3
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+e67f21cbfdfced696ccc5d612034dd8c
+  $fEqLockParameters :: GHC.Classes.Eq Utils.LockFile.LockParameters
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.LockFile.LockParameters
+                  Utils.LockFile.$fEqLockParameters_$c==
+                  Utils.LockFile.$fEqLockParameters_$c/= -}
+e67f21cbfdfced696ccc5d612034dd8c
+  $fEqLockParameters_$c/= ::
+    Utils.LockFile.LockParameters
+    -> Utils.LockFile.LockParameters -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U,1*U,1*U,1*U)><S(SLLL),1*U(1*U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Utils.LockFile.LockParameters)
+                   (y :: Utils.LockFile.LockParameters) ->
+                 case Utils.LockFile.$fEqLockParameters_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  $fEqLockParameters_$c== ::
+    Utils.LockFile.LockParameters
+    -> Utils.LockFile.LockParameters -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U,1*U,1*U,1*U)><S(SLLL),1*U(1*U,1*U,1*U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Utils.LockFile.LockParameters)
+                   (w1 :: Utils.LockFile.LockParameters) ->
+                 case w of ww { Utils.LockFile.LockParameters ww1 ww2 ww3 ww4 ->
+                 case w1 of ww5 { Utils.LockFile.LockParameters ww6 ww7 ww8 ww9 ->
+                 Utils.LockFile.$w$c== ww1 ww2 ww3 ww4 ww6 ww7 ww8 ww9 } }) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fEqLockParameters_$c==1 ::
+    Utils.LockFile.WhenExistsStrategy
+    -> Utils.LockFile.WhenExistsStrategy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Utils.LockFile.WhenExistsStrategy)
+                   (ds1 :: Utils.LockFile.WhenExistsStrategy) ->
+                 case ds of wild {
+                   Utils.LockFile.IfLockedNothing
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Utils.LockFile.IfLockedNothing -> GHC.Types.True }
+                   Utils.LockFile.IfLockedThrow a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Utils.LockFile.IfLockedThrow b1
+                        -> NGLess.NGError.$fEqNGError_$c== a1 b1 }
+                   Utils.LockFile.IfLockedRetry dt a2
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Utils.LockFile.IfLockedRetry dt1 b2
+                        -> case GHC.Prim.==# dt dt1 of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case GHC.Integer.Type.eqInteger#
+                                       a2
+                                         `cast`
+                                       (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0] ; Data.Fixed.N:Fixed[0]
+                                                                                                            <Data.Fixed.E12>_P)
+                                       b2
+                                         `cast`
+                                       (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0] ; Data.Fixed.N:Fixed[0]
+                                                                                                            <Data.Fixed.E12>_P) of wild2 { DEFAULT ->
+                                GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 } } } }) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fEqWhenExistsStrategy ::
+    GHC.Classes.Eq Utils.LockFile.WhenExistsStrategy
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.LockFile.WhenExistsStrategy
+                  Utils.LockFile.$fEqLockParameters_$c==1
+                  Utils.LockFile.$fEqWhenExistsStrategy_$c/= -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fEqWhenExistsStrategy_$c/= ::
+    Utils.LockFile.WhenExistsStrategy
+    -> Utils.LockFile.WhenExistsStrategy -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Utils.LockFile.WhenExistsStrategy)
+                   (y :: Utils.LockFile.WhenExistsStrategy) ->
+                 case Utils.LockFile.$fEqLockParameters_$c==1 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  $fShowLockParameters :: GHC.Show.Show Utils.LockFile.LockParameters
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.LockFile.LockParameters
+                  Utils.LockFile.$fShowLockParameters_$cshowsPrec
+                  Utils.LockFile.$fShowLockParameters_$cshow
+                  Utils.LockFile.$fShowLockParameters_$cshowList -}
+e67f21cbfdfced696ccc5d612034dd8c
+  $fShowLockParameters_$cshow ::
+    Utils.LockFile.LockParameters -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U,1*U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Utils.LockFile.LockParameters) ->
+                 Utils.LockFile.$fShowLockParameters_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  $fShowLockParameters_$cshowList ::
+    [Utils.LockFile.LockParameters] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Utils.LockFile.LockParameters])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Utils.LockFile.LockParameters
+                   (Utils.LockFile.$fShowLockParameters_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  $fShowLockParameters_$cshowsPrec ::
+    GHC.Types.Int -> Utils.LockFile.LockParameters -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U,U,1*U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Utils.LockFile.LockParameters) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Utils.LockFile.LockParameters ww3 ww4 ww5 ww6 ->
+                 Utils.LockFile.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 } }) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fShowWhenExistsStrategy ::
+    GHC.Show.Show Utils.LockFile.WhenExistsStrategy
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Utils.LockFile.WhenExistsStrategy
+                  Utils.LockFile.$fShowWhenExistsStrategy_$cshowsPrec
+                  Utils.LockFile.$fShowWhenExistsStrategy_$cshow
+                  Utils.LockFile.$fShowWhenExistsStrategy_$cshowList -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fShowWhenExistsStrategy_$cshow ::
+    Utils.LockFile.WhenExistsStrategy -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Utils.LockFile.WhenExistsStrategy) ->
+                 Utils.LockFile.$fShowWhenExistsStrategy_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fShowWhenExistsStrategy_$cshowList ::
+    [Utils.LockFile.WhenExistsStrategy] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Utils.LockFile.WhenExistsStrategy])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Utils.LockFile.WhenExistsStrategy
+                   (Utils.LockFile.$fShowWhenExistsStrategy_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $fShowWhenExistsStrategy_$cshowsPrec ::
+    GHC.Types.Int
+    -> Utils.LockFile.WhenExistsStrategy -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+04f208cb2facf7c60a1b657f93e6ce7e
+  $tc'IfLockedNothing :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12041808360782370510##
+                   12542310077387074851##
+                   Utils.LockFile.$trModule
+                   Utils.LockFile.$tc'IfLockedNothing2
+                   0#
+                   Utils.LockFile.$tc'IfLockedNothing1) -}
+c7ebf510b7d89e328f6019bc913f09c6
+  $tc'IfLockedNothing1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d7dc60795faf320de5a89e05b8759426
+  $tc'IfLockedNothing2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Utils.LockFile.$tc'IfLockedNothing3) -}
+71fe80f5b3842ab197453ce90ed297a3
+  $tc'IfLockedNothing3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IfLockedNothing"#) -}
+dfa66d08e464517c2fb16cb3b0892535
+  $tc'IfLockedRetry :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1647963041972352138##
+                   377306296480240812##
+                   Utils.LockFile.$trModule
+                   Utils.LockFile.$tc'IfLockedRetry2
+                   0#
+                   Utils.LockFile.$tc'IfLockedRetry1) -}
+9d6ea19efd656e39c0353729caf23aa4
+  $tc'IfLockedRetry1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6f65121ef9793254f1ca0628047da397
+  $tc'IfLockedRetry2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.LockFile.$tc'IfLockedRetry3) -}
+a29cb8fd75c6f7340e6f0a63e0231660
+  $tc'IfLockedRetry3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IfLockedRetry"#) -}
+21bbd65cb09f7dfb84d17010236212d1
+  $tc'IfLockedThrow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3991698532914397670##
+                   6680398457703308852##
+                   Utils.LockFile.$trModule
+                   Utils.LockFile.$tc'IfLockedThrow2
+                   0#
+                   Utils.LockFile.$tc'IfLockedThrow1) -}
+7e1328f3369fffda33524e04db0dda25
+  $tc'IfLockedThrow1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+8ff8bc952d21912f1a81d37f993f84bd
+  $tc'IfLockedThrow2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.LockFile.$tc'IfLockedThrow3) -}
+b932bc5bf2570469829fbf22df0d1a35
+  $tc'IfLockedThrow3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IfLockedThrow"#) -}
+c43fae04ad64acf125f9253fe0923214
+  $tc'LockParameters :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9644269990816648692##
+                   3705220373561060328##
+                   Utils.LockFile.$trModule
+                   Utils.LockFile.$tc'LockParameters2
+                   0#
+                   Utils.LockFile.$tc'LockParameters1) -}
+73bf97b9d77f78176779eb8654e005ce
+  $tc'LockParameters1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+960d84b6d0d079590f6a65a97cbfd4cd
+  $tc'LockParameters2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Utils.LockFile.$tc'LockParameters3) -}
+14b64a2fed05c10def4c036aa38d3af7
+  $tc'LockParameters3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'LockParameters"#) -}
+b1a2d28724262b71f7faed41fa391978
+  $tcLockParameters :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17787102220928011973##
+                   3166724565902760272##
+                   Utils.LockFile.$trModule
+                   Utils.LockFile.$tcLockParameters1
+                   0#
+                   GHC.Types.krep$*) -}
+31f8f8ae99b7b7907a8480beeefa9a02
+  $tcLockParameters1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.LockFile.$tcLockParameters2) -}
+343ca3849d5530cfbb25ae0508cdd7bd
+  $tcLockParameters2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LockParameters"#) -}
+236bc3835160acb4e2cf5cf56002a661
+  $tcWhenExistsStrategy :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14098017825783081962##
+                   10882948720180724480##
+                   Utils.LockFile.$trModule
+                   Utils.LockFile.$tcWhenExistsStrategy1
+                   0#
+                   GHC.Types.krep$*) -}
+ff5be8dbd0044300b43d4ca0ef7ede2e
+  $tcWhenExistsStrategy1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Utils.LockFile.$tcWhenExistsStrategy2) -}
+b8f7f09015d67328f301c7826220bbee
+  $tcWhenExistsStrategy2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("WhenExistsStrategy"#) -}
+b0c4bd79023fbebc5814e51f0c5b71fb
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.LockFile.$trModule3
+                   Utils.LockFile.$trModule1) -}
+aecc2dc59c16f5b3a53572618ccc5504
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.LockFile.$trModule2) -}
+ab37994b93a53fddca6426a34522c985
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.LockFile"#) -}
+61b7c657deadacc7543452298bb39b67
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.LockFile.$trModule4) -}
+13a3fb1a1ed1aa9539df909c488ff2e3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+3e523834f60cac532d8caf784beff586
+  $w$c== ::
+    GHC.IO.FilePath
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+    -> Utils.LockFile.WhenExistsStrategy
+    -> GHC.Types.Bool
+    -> GHC.IO.FilePath
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+    -> Utils.LockFile.WhenExistsStrategy
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><L,1*U><L,1*U><S,1*U><L,1*U><L,1*U><L,1*U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.IO.FilePath)
+                   (ww1 :: Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime)
+                   (ww2 :: Utils.LockFile.WhenExistsStrategy)
+                   (ww3 :: GHC.Types.Bool)
+                   (ww4 :: GHC.IO.FilePath)
+                   (ww5 :: Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime)
+                   (ww6 :: Utils.LockFile.WhenExistsStrategy)
+                   (ww7 :: GHC.Types.Bool) ->
+                 case GHC.Base.eqString ww ww4 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Integer.Type.eqInteger#
+                             ww1
+                               `cast`
+                             (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0] ; Data.Fixed.N:Fixed[0]
+                                                                                                  <Data.Fixed.E12>_P)
+                             ww5
+                               `cast`
+                             (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0] ; Data.Fixed.N:Fixed[0]
+                                                                                                  <Data.Fixed.E12>_P) of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case Utils.LockFile.$fEqLockParameters_$c==1 ww2 ww6 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> GHC.Classes.$fEqBool_$c== ww3 ww7 } } }) -}
+0fa3554d9b6c2e76edcbb591d39d447e
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.IO.FilePath
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+    -> Utils.LockFile.WhenExistsStrategy
+    -> GHC.Types.Bool
+    -> GHC.Show.ShowS
+  {- Arity: 5, Strictness: <S,U><L,U><L,U><L,1*U><L,U>,
+     Inline: [2] -}
+0e528b35692115b4c28c2f7f31af4e17
+  $wacquireLock ::
+    GHC.IO.FilePath
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+    -> Utils.LockFile.WhenExistsStrategy
+    -> GHC.Types.Bool
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe Control.Monad.Trans.Resource.Internal.ReleaseKey #)
+  {- Arity: 6, Strictness: <L,U><L,U><L,1*U><L,1*U><L,U(U)><S,U>,
+     Inline: [2] -}
+ff2dfeb33e425d365d68bb261b5df08e
+  $wnrLockRetries ::
+    Utils.LockFile.WhenExistsStrategy -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Utils.LockFile.WhenExistsStrategy) ->
+                 case w of wild {
+                   DEFAULT
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Int
+                             "nrLockRetries"#
+                      ret_ty GHC.Prim.Int#
+                      of {}
+                   Utils.LockFile.IfLockedRetry dt ds -> dt }) -}
+a2022c523db582c353480afa0daae686
+  $wwithLockFile ::
+    GHC.IO.FilePath
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+    -> Utils.LockFile.WhenExistsStrategy
+    -> GHC.Types.Bool
+    -> NGLess.NGError.NGLessIO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,1*U><L,1*U><L,1*C1(C1(U(U,U)))><L,U(U)><S,U>,
+     Inline: [2],
+     Unfolding: (\ @ a
+                   (ww :: GHC.IO.FilePath)
+                   (ww1 :: Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime)
+                   (ww2 :: Utils.LockFile.WhenExistsStrategy)
+                   (ww3 :: GHC.Types.Bool)
+                   (w :: NGLess.NGError.NGLessIO a)
+                   (w1 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Utils.LockFile.$wacquireLock
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        w1
+                        w2 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ a
+                        (NGLess.NGError.$fExceptionNGError_$ctoException
+                           (NGLess.NGError.NGError
+                              NGLess.NGError.SystemError
+                              (GHC.CString.unpackCString#
+                                 "Could not acquire required lock file."#)))
+                        ipv
+                   GHC.Maybe.Just rk
+                   -> case (w `cast`
+                            (NGLess.NGError.N:NGLessIO[0] <a>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                      <GHC.Types.IO>_R <a>_N)
+                              w1)
+                             `cast`
+                           (GHC.Types.N:IO[0] <a>_R)
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case rk of ww4 { Control.Monad.Trans.Resource.Internal.ReleaseKey ww5 ww6 ->
+                      case Control.Monad.Trans.Resource.$wrelease'
+                             @ ()
+                             ww5
+                             (GHC.Types.I# ww6)
+                             Control.Monad.Trans.Resource.release1
+                               `cast`
+                             (<GHC.Maybe.Maybe (GHC.Types.IO ())>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      (# ipv4, ipv3 #) } } } } }) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  data LockParameters
+    = LockParameters {lockFname :: GHC.IO.FilePath,
+                      maxAge :: Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime,
+                      whenExistsStrategy :: Utils.LockFile.WhenExistsStrategy,
+                      mtimeUpdate :: GHC.Types.Bool}
+ff2dfeb33e425d365d68bb261b5df08e
+  data WhenExistsStrategy
+    = IfLockedNothing
+    | IfLockedThrow NGLess.NGError.NGError
+    | IfLockedRetry {nrLockRetries :: {-# UNPACK #-}GHC.Types.Int,
+                     timeBetweenRetries :: !Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime}
+aa9591ad7b6b67f6cca7715c1134a4f3
+  acquireLock ::
+    Utils.LockFile.LockParameters
+    -> NGLess.NGError.NGLessIO
+         (GHC.Maybe.Maybe Control.Monad.Trans.Resource.Internal.ReleaseKey)
+  {- Arity: 3, Strictness: <S,1*U(U,U,1*U,1*U)><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.LockFile.acquireLock1
+                  `cast`
+                (<Utils.LockFile.LockParameters>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <GHC.Maybe.Maybe
+                                        Control.Monad.Trans.Resource.Internal.ReleaseKey>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                                          <GHC.Types.IO>_R
+                                                                                                          <GHC.Maybe.Maybe
+                                                                                                             Control.Monad.Trans.Resource.Internal.ReleaseKey>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <GHC.Maybe.Maybe
+                                                                                                                                                                                                          Control.Monad.Trans.Resource.Internal.ReleaseKey>_N)) -}
+b752e98a3e2248f48020d53db3be448d
+  acquireLock1 ::
+    Utils.LockFile.LockParameters
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe Control.Monad.Trans.Resource.Internal.ReleaseKey #)
+  {- Arity: 3, Strictness: <S,1*U(U,U,1*U,1*U)><L,U(U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Utils.LockFile.LockParameters)
+                   (w1 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { Utils.LockFile.LockParameters ww1 ww2 ww3 ww4 ->
+                 Utils.LockFile.$wacquireLock ww1 ww2 ww3 ww4 w1 w2 }) -}
+1bbec59ede8fd109486af3306fb4a6b7
+  fileAge ::
+    GHC.IO.FilePath
+    -> GHC.Types.IO
+         (GHC.Maybe.Maybe
+            Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime)
+  {- Arity: 2, Strictness: <L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.LockFile.fileAge1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Maybe.Maybe
+                                  Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime>_R)) -}
+dea540d956793215f4236b60534fe811
+  fileAge1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Maybe.Maybe
+            Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime #)
+  {- Arity: 2, Strictness: <L,1*U><S,U>,
+     Unfolding: (\ (fname :: GHC.IO.FilePath)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ (GHC.Maybe.Maybe
+                        Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime)
+                   @ GHC.Exception.Type.SomeException
+                   (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case System.Directory.getModificationTime1
+                           fname
+                           s of ds1 { (#,#) ipv ipv1 ->
+                    case Data.Time.Clock.Internal.CTimespec.$wclockGetTime
+                           0#
+                           ipv of ds { (#,#) ipv2 ipv3 ->
+                    (# ipv2,
+                       GHC.Maybe.Just
+                         @ Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+                         (case ipv3 of wild { Data.Time.Clock.Internal.CTimespec.MkCTimespec ds2 ds3 ->
+                          case ds2
+                                 `cast`
+                               (Foreign.C.Types.N:CTime[0]) of dt { GHC.Int.I64# dt1 ->
+                          case ds3
+                                 `cast`
+                               (Foreign.C.Types.N:CLong[0]) of wild1 { GHC.Int.I64# x# ->
+                          case Data.Time.Clock.System.$wsystemToUTCTime
+                                 dt1
+                                 (GHC.Prim.narrow32Word#
+                                    (GHC.Prim.int2Word# x#)) of ww3 { (#,#) ww4 ww5 ->
+                          case ipv1 of ww1 { Data.Time.Clock.Internal.UTCTime.UTCTime ww2 ww6 ->
+                          (Data.Time.Clock.Internal.UTCDiff.$wdiffUTCTime ww4 ww5 ww2 ww6)
+                            `cast`
+                          (Sym (Data.Fixed.N:Fixed[0]
+                                    <Data.Fixed.E12>_P) ; Sym (Data.Time.Clock.Internal.NominalDiffTime.N:NominalDiffTime[0])) } } } } }) #) } })
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ (GHC.Maybe.Maybe
+                                Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime)
+                           wild
+                           eta
+                      GHC.Types.True
+                      -> case e3
+                                `cast`
+                              (UnsafeCo representational e2 GHC.IO.Exception.IOException) of wild2 { GHC.IO.Exception.IOError ds1 ds2 ds3 ds4 ds5 ds6 ->
+                         case ds2 of wild3 { DEFAULT ->
+                         (# eta,
+                            GHC.Maybe.Nothing
+                              @ Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime #) } } } })
+                   eta2) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  lockFname :: Utils.LockFile.LockParameters -> GHC.IO.FilePath
+  RecSel Left Utils.LockFile.LockParameters
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.LockFile.LockParameters) ->
+                 case ds of wild { Utils.LockFile.LockParameters ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  maxAge ::
+    Utils.LockFile.LockParameters
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+  RecSel Left Utils.LockFile.LockParameters
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.LockFile.LockParameters) ->
+                 case ds of wild { Utils.LockFile.LockParameters ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  mtimeUpdate :: Utils.LockFile.LockParameters -> GHC.Types.Bool
+  RecSel Left Utils.LockFile.LockParameters
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.LockFile.LockParameters) ->
+                 case ds of wild { Utils.LockFile.LockParameters ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  nrLockRetries :: Utils.LockFile.WhenExistsStrategy -> GHC.Types.Int
+  RecSel Left Utils.LockFile.WhenExistsStrategy
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Utils.LockFile.WhenExistsStrategy) ->
+                 case Utils.LockFile.$wnrLockRetries w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+92b7543a0e928c94816df66531afce97
+  removeFileIfExists :: GHC.IO.FilePath -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.LockFile.removeFileIfExists1
+                  `cast`
+                (<GHC.IO.FilePath>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+673263aa2ff0c623a48a6325a100fd17
+  removeFileIfExists1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (fp :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ ()
+                   @ GHC.Exception.Type.SomeException
+                   (System.Posix.Files.removeLink1 fp)
+                   (\ (e1 :: GHC.Exception.Type.SomeException)[OneShot]
+                      (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case e1 of wild { GHC.Exception.Type.SomeException e2 $dException1 e3 ->
+                    case Data.Typeable.Internal.sameTypeRep
+                           @ *
+                           @ *
+                           @ e2
+                           @ GHC.IO.Exception.IOException
+                           (GHC.Exception.Type.$p1Exception @ e2 $dException1)
+                             `cast`
+                           (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                           GHC.IO.Exception.$fExceptionIOException4 of wild1 {
+                      GHC.Types.False
+                      -> GHC.Prim.raiseIO#
+                           @ GHC.Exception.Type.SomeException
+                           @ ()
+                           wild
+                           eta1
+                      GHC.Types.True
+                      -> case e3
+                                `cast`
+                              (UnsafeCo representational e2 GHC.IO.Exception.IOException) of wild2 { GHC.IO.Exception.IOError ds1 ds2 ds3 ds4 ds5 ds6 ->
+                         case ds2 of wild3 {
+                           DEFAULT
+                           -> GHC.Prim.raiseIO#
+                                @ GHC.Exception.Type.SomeException
+                                @ ()
+                                (GHC.IO.Exception.$fExceptionIOException_$ctoException wild2)
+                                eta1
+                           GHC.IO.Exception.NoSuchThing -> (# eta1, GHC.Tuple.() #) } } } })
+                   eta) -}
+ff2dfeb33e425d365d68bb261b5df08e
+  timeBetweenRetries ::
+    Utils.LockFile.WhenExistsStrategy
+    -> Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+  RecSel Left Utils.LockFile.WhenExistsStrategy
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Utils.LockFile.WhenExistsStrategy) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.Time.Clock.Internal.NominalDiffTime.NominalDiffTime
+                        "timeBetweenRetries"#
+                   Utils.LockFile.IfLockedRetry dt ds1 -> ds1 }) -}
+e67f21cbfdfced696ccc5d612034dd8c
+  whenExistsStrategy ::
+    Utils.LockFile.LockParameters -> Utils.LockFile.WhenExistsStrategy
+  RecSel Left Utils.LockFile.LockParameters
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.LockFile.LockParameters) ->
+                 case ds of wild { Utils.LockFile.LockParameters ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+e5de88b696a8f22285940a6e4cc6e123
+  withLockFile ::
+    Utils.LockFile.LockParameters
+    -> NGLess.NGError.NGLessIO a -> NGLess.NGError.NGLessIO a
+  {- Arity: 4,
+     Strictness: <S,1*U(U,U,1*U,1*U)><L,1*C1(C1(U(U,U)))><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Utils.LockFile.withLockFile1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Utils.LockFile.LockParameters>_R
+                 ->_R <NGLess.NGError.NGLessIO a>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <a>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                         <GHC.Types.IO>_R
+                                                         <a>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <a>_N)) -}
+6a1cf2abc5f0f15cde07c1cd36243394
+  withLockFile1 ::
+    Utils.LockFile.LockParameters
+    -> NGLess.NGError.NGLessIO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4,
+     Strictness: <S,1*U(U,U,1*U,1*U)><L,1*C1(C1(U(U,U)))><L,U(U)><S,U>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   (w :: Utils.LockFile.LockParameters)
+                   (w1 :: NGLess.NGError.NGLessIO a)
+                   (w2 :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { Utils.LockFile.LockParameters ww1 ww2 ww3 ww4 ->
+                 Utils.LockFile.$wwithLockFile @ a ww1 ww2 ww3 ww4 w1 w2 w3 }) -}
+instance GHC.Classes.Eq [Utils.LockFile.LockParameters]
+  = Utils.LockFile.$fEqLockParameters
+instance GHC.Classes.Eq [Utils.LockFile.WhenExistsStrategy]
+  = Utils.LockFile.$fEqWhenExistsStrategy
+instance GHC.Show.Show [Utils.LockFile.LockParameters]
+  = Utils.LockFile.$fShowLockParameters
+instance GHC.Show.Show [Utils.LockFile.WhenExistsStrategy]
+  = Utils.LockFile.$fShowWhenExistsStrategy
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

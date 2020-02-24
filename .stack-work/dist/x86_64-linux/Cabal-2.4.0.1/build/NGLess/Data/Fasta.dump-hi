@@ -1,0 +1,703 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:33.906364548 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Data.Fasta 8065
+  interface hash: beb5bdcc15da46f5b3c772ef9cb648d8
+  ABI hash: f03f0a1b425415387a21462123a258b7
+  export-list hash: 74b0608c84b835126f8f5252ed73316c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3fd6e77c92487a302f4b0b2b3716e889
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Fasta.faConduit
+  Data.Fasta.faWriteC
+  Data.Fasta.faseqLength
+  Data.Fasta.FastaSeq{Data.Fasta.FastaSeq seqdata seqheader}
+module dependencies: NGLess.NGError Utils.Conduit
+package dependencies: array-0.5.3.0 base-4.12.0.0
+                      bytestring-0.10.8.2 conduit-1.3.1.2 containers-0.6.0.1
+                      deepseq-1.4.4.0 exceptions-0.10.4 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0 mtl-2.2.2 primitive-0.6.4.0 resourcet-1.2.2
+                      stm-2.5.0.0 template-haskell-2.14.0.0 transformers-0.5.6.2
+                      unliftio-core-0.1.2.0 vector-0.12.0.3
+orphans: vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         vector-0.12.0.3:Data.Vector
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGError 9741b2ef5fc8e673ccaf43057baf92e8
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine ac33b1a48ce77fc02979f39021c406e3
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  linesC 74def1591ec8f05f38349accac761045
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Word 6b968b6c7df442cfcad986e497aee095
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+b6b63abdbd036ca59255a661789aa379
+  $fEqFastaSeq :: GHC.Classes.Eq Data.Fasta.FastaSeq
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Fasta.FastaSeq
+                  Data.Fasta.$fEqFastaSeq_$c==
+                  Data.Fasta.$fEqFastaSeq_$c/= -}
+b6b63abdbd036ca59255a661789aa379
+  $fEqFastaSeq_$c/= ::
+    Data.Fasta.FastaSeq -> Data.Fasta.FastaSeq -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)S),1*U(U(U,U,U,U),U(U,U,U,U))><S(S(LLLS)S),1*U(U(U,U,U,U),U(U,U,U,U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.Fasta.FastaSeq) (y :: Data.Fasta.FastaSeq) ->
+                 case Data.Fasta.$fEqFastaSeq_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+b6b63abdbd036ca59255a661789aa379
+  $fEqFastaSeq_$c== ::
+    Data.Fasta.FastaSeq -> Data.Fasta.FastaSeq -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)S),1*U(U(U,U,U,U),U(U,U,U,U))><S(S(LLLS)S),1*U(U(U,U,U,U),U(U,U,U,U))>,
+     Unfolding: (\ (ds :: Data.Fasta.FastaSeq)
+                   (ds1 :: Data.Fasta.FastaSeq) ->
+                 case ds of wild { Data.Fasta.FastaSeq a1 a2 ->
+                 case ds1 of wild1 { Data.Fasta.FastaSeq b1 b2 ->
+                 case a1 of wild2 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case b1 of wild3 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                 case GHC.Prim./=# dt3 dt7 of lwild {
+                   DEFAULT
+                   -> let {
+                        $j :: GHC.Types.Bool <join 0>
+                        = case a2 of wild4 { Data.ByteString.Internal.PS dt11 dt12 dt13 dt14 ->
+                          case b2 of wild5 { Data.ByteString.Internal.PS dt15 dt16 dt17 dt18 ->
+                          case GHC.Prim./=# dt14 dt18 of lwild1 {
+                            DEFAULT
+                            -> case GHC.Prim.eqAddr# dt11 dt15 of lwild2 {
+                                 DEFAULT
+                                 -> case Data.ByteString.Internal.$wcompareBytes
+                                           dt11
+                                           dt12
+                                           dt13
+                                           dt14
+                                           dt15
+                                           dt16
+                                           dt17
+                                           dt18 of wild6 {
+                                      DEFAULT -> GHC.Types.False GHC.Types.EQ -> GHC.Types.True }
+                                 1#
+                                 -> case GHC.Prim.==# dt13 dt17 of lwild3 {
+                                      DEFAULT
+                                      -> case Data.ByteString.Internal.$wcompareBytes
+                                                dt11
+                                                dt12
+                                                dt13
+                                                dt14
+                                                dt15
+                                                dt16
+                                                dt17
+                                                dt18 of wild6 {
+                                           DEFAULT -> GHC.Types.False
+                                           GHC.Types.EQ -> GHC.Types.True }
+                                      1# -> GHC.Types.True } }
+                            1# -> GHC.Types.False } } }
+                      } in
+                      case GHC.Prim.eqAddr# dt dt4 of lwild1 {
+                        DEFAULT
+                        -> case Data.ByteString.Internal.$wcompareBytes
+                                  dt
+                                  dt1
+                                  dt2
+                                  dt3
+                                  dt4
+                                  dt5
+                                  dt6
+                                  dt7 of wild4 {
+                             DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j }
+                        1#
+                        -> case GHC.Prim.==# dt2 dt6 of lwild2 {
+                             DEFAULT
+                             -> case Data.ByteString.Internal.$wcompareBytes
+                                       dt
+                                       dt1
+                                       dt2
+                                       dt3
+                                       dt4
+                                       dt5
+                                       dt6
+                                       dt7 of wild4 {
+                                  DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j }
+                             1# -> $j } }
+                   1# -> GHC.Types.False } } } } }) -}
+b6b63abdbd036ca59255a661789aa379
+  $fNFDataFastaSeq :: Control.DeepSeq.NFData Data.Fasta.FastaSeq
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Data.Fasta.$fNFDataFastaSeq_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Data.Fasta.FastaSeq>_N)) -}
+b6b63abdbd036ca59255a661789aa379
+  $fNFDataFastaSeq_$crnf :: Data.Fasta.FastaSeq -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Fasta.FastaSeq) ->
+                 case ds of ds1 { Data.Fasta.FastaSeq ipv ipv1 -> GHC.Tuple.() }) -}
+b6b63abdbd036ca59255a661789aa379
+  $fShowFastaSeq :: GHC.Show.Show Data.Fasta.FastaSeq
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Fasta.FastaSeq
+                  Data.Fasta.$fShowFastaSeq_$cshowsPrec
+                  Data.Fasta.$fShowFastaSeq_$cshow
+                  Data.Fasta.$fShowFastaSeq_$cshowList -}
+b6b63abdbd036ca59255a661789aa379
+  $fShowFastaSeq_$cshow :: Data.Fasta.FastaSeq -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S(S(SLSS)S(SLSS)),1*U(U(U,U,U,U),U(U,U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.Fasta.FastaSeq) ->
+                 Data.Fasta.$fShowFastaSeq_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b6b63abdbd036ca59255a661789aa379
+  $fShowFastaSeq_$cshowList ::
+    [Data.Fasta.FastaSeq] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.Fasta.FastaSeq]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.Fasta.FastaSeq
+                   (Data.Fasta.$fShowFastaSeq_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+b6b63abdbd036ca59255a661789aa379
+  $fShowFastaSeq_$cshowsPrec ::
+    GHC.Types.Int -> Data.Fasta.FastaSeq -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(S(SLSS)S(SLSS)),1*U(U(U,U,U,U),U(U,U,U,U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.Fasta.FastaSeq) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Data.Fasta.FastaSeq ww3 ww4 ->
+                 case ww3 of ww5 { Data.ByteString.Internal.PS ww6 ww7 ww8 ww9 ->
+                 case ww4 of ww10 { Data.ByteString.Internal.PS ww11 ww12 ww13 ww14 ->
+                 Data.Fasta.$w$cshowsPrec
+                   ww1
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww11
+                   ww12
+                   ww13
+                   ww14 } } } }) -}
+62d6919b76242b1bc307800e4c2c96f5
+  $tc'FastaSeq :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10084178457055299764##
+                   4972198899596776057##
+                   Data.Fasta.$trModule
+                   Data.Fasta.$tc'FastaSeq2
+                   0#
+                   Data.Fasta.$tc'FastaSeq1) -}
+feec763470cd4b65344ebe8cc8971eff
+  $tc'FastaSeq1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+83ad214c0c89c03aedd8a095219eddec
+  $tc'FastaSeq2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Fasta.$tc'FastaSeq3) -}
+bf4628b9552fd9b564eb1c0fbf80696d
+  $tc'FastaSeq3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FastaSeq"#) -}
+1b7f7cac9183f8e79a66f0b58bbd1eb4
+  $tcFastaSeq :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14715339355380806824##
+                   15070169571773658555##
+                   Data.Fasta.$trModule
+                   Data.Fasta.$tcFastaSeq1
+                   0#
+                   GHC.Types.krep$*) -}
+386942b50d8f59653665ba600bf7c429
+  $tcFastaSeq1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Fasta.$tcFastaSeq2) -}
+b175d42a120d58ffb3161ef7e97dffd4
+  $tcFastaSeq2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FastaSeq"#) -}
+d8500cc386450e48ddf7ed2e2b9746ce
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Fasta.$trModule3
+                   Data.Fasta.$trModule1) -}
+28e396fbad26c0cb3bf96a89c838c43d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Fasta.$trModule2) -}
+70705b2b74477adb9a165c2cd85b744c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Fasta"#) -}
+d9b73f43f2d846f4a2dec692fd9e92b4
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Fasta.$trModule4) -}
+c1b1a85d5617b38c521e47be954943b3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+0c0698e95223e4888d6100518af7a099
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Show.ShowS
+  {- Arity: 9,
+     Strictness: <S,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Addr#)
+                   (ww6 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww7 :: GHC.Prim.Int#)
+                   (ww8 :: GHC.Prim.Int#) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "FastaSeq {"#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   f2 :: GHC.Prim.Addr# = "seqheader = "#
+                 } in
+                 let {
+                   f3 :: [GHC.Types.Char] = GHC.CString.unpackCString# f2
+                 } in
+                 let {
+                   f4 :: GHC.Prim.Addr# = "seqdata = "#
+                 } in
+                 let {
+                   f5 :: [GHC.Types.Char] = GHC.CString.unpackCString# f4
+                 } in
+                 let {
+                   g :: GHC.Prim.Addr# = "}"#
+                 } in
+                 let {
+                   g1 :: [GHC.Types.Char] = GHC.CString.unpackCString# g
+                 } in
+                 let {
+                   g2 :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       f3
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.$fShow(,)3
+                          (GHC.Show.showLitString
+                             (Data.ByteString.Internal.$wunpackAppendCharsLazy
+                                ww1
+                                ww2
+                                ww3
+                                ww4
+                                (GHC.Types.[] @ GHC.Types.Char))
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   GHC.Show.showCommaSpace1
+                                   (GHC.Base.++
+                                      @ GHC.Types.Char
+                                      f5
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)3
+                                         (GHC.Show.showLitString
+                                            (Data.ByteString.Internal.$wunpackAppendCharsLazy
+                                               ww5
+                                               ww6
+                                               ww7
+                                               ww8
+                                               (GHC.Types.[] @ GHC.Types.Char))
+                                            (GHC.Types.:
+                                               @ GHC.Types.Char
+                                               GHC.Show.$fShow(,)3
+                                               (GHC.Base.++ @ GHC.Types.Char g1 x)))))))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char f1 (g2 x)
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           f1
+                           (g2 (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }) -}
+b259282f397675169ea04636c49bdf81
+  $wfaWriteC ::
+    (()
+     -> Data.Conduit.Internal.Pipe.Pipe
+          Data.Fasta.FastaSeq
+          Data.Fasta.FastaSeq
+          Data.ByteString.Internal.ByteString
+          ()
+          m
+          b)
+    -> Data.Conduit.Internal.Pipe.Pipe
+         Data.Fasta.FastaSeq
+         Data.Fasta.FastaSeq
+         Data.ByteString.Internal.ByteString
+         ()
+         m
+         b
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [2],
+     Unfolding: (\ @ m :: * -> *
+                   @ b
+                   (w :: ()
+                         -> Data.Conduit.Internal.Pipe.Pipe
+                              Data.Fasta.FastaSeq
+                              Data.Fasta.FastaSeq
+                              Data.ByteString.Internal.ByteString
+                              ()
+                              m
+                              b) ->
+                 letrec {
+                   go1 :: Data.Fasta.FastaSeq
+                          -> Data.Conduit.Internal.Pipe.Pipe
+                               Data.Fasta.FastaSeq
+                               Data.Fasta.FastaSeq
+                               Data.ByteString.Internal.ByteString
+                               ()
+                               m
+                               b
+                     {- Arity: 1, Strictness: <S(SS),1*U(U,U)>, Inline: [2],
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ (w1 :: Data.Fasta.FastaSeq) ->
+                                    case w1 of ww { Data.Fasta.FastaSeq ww1 ww2 ->
+                                    $wgo1 ww1 ww2 }) -}
+                   = \ (w1 :: Data.Fasta.FastaSeq) ->
+                     case w1 of ww { Data.Fasta.FastaSeq ww1 ww2 -> $wgo1 ww1 ww2 }
+                   go :: Data.Conduit.Internal.Pipe.Pipe
+                           Data.Fasta.FastaSeq
+                           Data.Fasta.FastaSeq
+                           Data.ByteString.Internal.ByteString
+                           ()
+                           m
+                           b
+                   = Data.Conduit.Internal.Pipe.NeedInput
+                       @ Data.Fasta.FastaSeq
+                       @ Data.Fasta.FastaSeq
+                       @ Data.ByteString.Internal.ByteString
+                       @ ()
+                       @ m
+                       @ b
+                       go1
+                       w
+                   $wgo1 :: Data.ByteString.Internal.ByteString
+                            -> Data.ByteString.Internal.ByteString
+                            -> Data.Conduit.Internal.Pipe.Pipe
+                                 Data.Fasta.FastaSeq
+                                 Data.Fasta.FastaSeq
+                                 Data.ByteString.Internal.ByteString
+                                 ()
+                                 m
+                                 b
+                     {- Arity: 2, Strictness: <L,U><L,U>, Inline: [2] -}
+                   = \ (ww :: Data.ByteString.Internal.ByteString)
+                       (ww1 :: Data.ByteString.Internal.ByteString) ->
+                     Data.Conduit.Internal.Pipe.HaveOutput
+                       @ Data.Fasta.FastaSeq
+                       @ Data.Fasta.FastaSeq
+                       @ Data.ByteString.Internal.ByteString
+                       @ ()
+                       @ m
+                       @ b
+                       (Data.Conduit.Internal.Pipe.HaveOutput
+                          @ Data.Fasta.FastaSeq
+                          @ Data.Fasta.FastaSeq
+                          @ Data.ByteString.Internal.ByteString
+                          @ ()
+                          @ m
+                          @ b
+                          (Data.Conduit.Internal.Pipe.HaveOutput
+                             @ Data.Fasta.FastaSeq
+                             @ Data.Fasta.FastaSeq
+                             @ Data.ByteString.Internal.ByteString
+                             @ ()
+                             @ m
+                             @ b
+                             (Data.Conduit.Internal.Pipe.HaveOutput
+                                @ Data.Fasta.FastaSeq
+                                @ Data.Fasta.FastaSeq
+                                @ Data.ByteString.Internal.ByteString
+                                @ ()
+                                @ m
+                                @ b
+                                (Data.Conduit.Internal.Pipe.HaveOutput
+                                   @ Data.Fasta.FastaSeq
+                                   @ Data.Fasta.FastaSeq
+                                   @ Data.ByteString.Internal.ByteString
+                                   @ ()
+                                   @ m
+                                   @ b
+                                   go
+                                   (case GHC.Prim.newMutVar#
+                                           @ GHC.ForeignPtr.Finalizers
+                                           @ GHC.Prim.RealWorld
+                                           GHC.ForeignPtr.NoFinalizers
+                                           GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                                    let {
+                                      addr# :: GHC.Prim.Addr# = "\n"#
+                                    } in
+                                    case {__pkg_ccall bytestring-0.10.8.2 GHC.Prim.Addr#
+                                                                          -> GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Word# #)}
+                                           addr#
+                                           ipv of wild { (#,#) ds ds2 ->
+                                    Data.ByteString.Internal.PS
+                                      addr#
+                                      (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                                      0#
+                                      (GHC.Prim.word2Int# ds2) } }))
+                                ww1)
+                             (case GHC.Prim.newMutVar#
+                                     @ GHC.ForeignPtr.Finalizers
+                                     @ GHC.Prim.RealWorld
+                                     GHC.ForeignPtr.NoFinalizers
+                                     GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                              let {
+                                addr# :: GHC.Prim.Addr# = "\n"#
+                              } in
+                              case {__pkg_ccall bytestring-0.10.8.2 GHC.Prim.Addr#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld,
+                                                                          GHC.Prim.Word# #)}
+                                     addr#
+                                     ipv of wild { (#,#) ds ds2 ->
+                              Data.ByteString.Internal.PS
+                                addr#
+                                (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                                0#
+                                (GHC.Prim.word2Int# ds2) } }))
+                          ww)
+                       (case GHC.Prim.newMutVar#
+                               @ GHC.ForeignPtr.Finalizers
+                               @ GHC.Prim.RealWorld
+                               GHC.ForeignPtr.NoFinalizers
+                               GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                        let {
+                          addr# :: GHC.Prim.Addr# = ">"#
+                        } in
+                        case {__pkg_ccall bytestring-0.10.8.2 GHC.Prim.Addr#
+                                                              -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                              -> (# GHC.Prim.State#
+                                                                      GHC.Prim.RealWorld,
+                                                                    GHC.Prim.Word# #)}
+                               addr#
+                               ipv of wild { (#,#) ds ds2 ->
+                        Data.ByteString.Internal.PS
+                          addr#
+                          (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                          0#
+                          (GHC.Prim.word2Int# ds2) } })
+                 } in
+                 go) -}
+b6b63abdbd036ca59255a661789aa379
+  data FastaSeq
+    = FastaSeq {seqheader :: !Data.ByteString.Internal.ByteString,
+                seqdata :: !Data.ByteString.Internal.ByteString}
+8a42ad043739228d1e7c31e4600dde24
+  faConduit ::
+    (Control.Monad.IO.Class.MonadIO m,
+     Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m) =>
+    Data.Conduit.Internal.Conduit.ConduitT
+      Data.ByteString.Internal.ByteString Data.Fasta.FastaSeq m ()
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(A,C(C1(U)),A,C(U),A),A)><L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Fasta.faConduit1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <Control.Monad.IO.Class.MonadIO m>_R
+                 ->_R <Control.Monad.Error.Class.MonadError
+                         NGLess.NGError.NGError m>_R
+                 ->_R Sym (Data.Conduit.Internal.Conduit.N:ConduitT[0]
+                               <Data.ByteString.Internal.ByteString>_N
+                               <Data.Fasta.FastaSeq>_N
+                               <m>_N
+                               <()>_R)) -}
+f1a9bea7dfcb082c7f9fdc9fde6c10f9
+  faConduit1 ::
+    (Control.Monad.IO.Class.MonadIO m,
+     Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m) =>
+    (()
+     -> Data.Conduit.Internal.Pipe.Pipe
+          Data.ByteString.Internal.ByteString
+          Data.ByteString.Internal.ByteString
+          Data.Fasta.FastaSeq
+          ()
+          m
+          b)
+    -> Data.Conduit.Internal.Pipe.Pipe
+         Data.ByteString.Internal.ByteString
+         Data.ByteString.Internal.ByteString
+         Data.Fasta.FastaSeq
+         ()
+         m
+         b
+  {- Arity: 3,
+     Strictness: <L,1*U(1*U(A,C(C1(U)),A,C(U),A),A)><L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,C(U)> -}
+87cb3a3cb7a7813e8f93b53b10aa832e
+  faWriteC ::
+    GHC.Base.Monad m =>
+    Data.Conduit.Internal.Conduit.ConduitT
+      Data.Fasta.FastaSeq Data.ByteString.Internal.ByteString m ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Fasta.faWriteC1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R Sym (Data.Conduit.Internal.Conduit.N:ConduitT[0]
+                               <Data.Fasta.FastaSeq>_N
+                               <Data.ByteString.Internal.ByteString>_N
+                               <m>_N
+                               <()>_R)) -}
+0d7d0c1da32674d6d155e338da562424
+  faWriteC1 ::
+    GHC.Base.Monad m =>
+    (()
+     -> Data.Conduit.Internal.Pipe.Pipe
+          Data.Fasta.FastaSeq
+          Data.Fasta.FastaSeq
+          Data.ByteString.Internal.ByteString
+          ()
+          m
+          b)
+    -> Data.Conduit.Internal.Pipe.Pipe
+         Data.Fasta.FastaSeq
+         Data.Fasta.FastaSeq
+         Data.ByteString.Internal.ByteString
+         ()
+         m
+         b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ m :: * -> *
+                   (w :: GHC.Base.Monad m)
+                   @ b
+                   (w1 :: ()
+                          -> Data.Conduit.Internal.Pipe.Pipe
+                               Data.Fasta.FastaSeq
+                               Data.Fasta.FastaSeq
+                               Data.ByteString.Internal.ByteString
+                               ()
+                               m
+                               b) ->
+                 Data.Fasta.$wfaWriteC @ m @ b w1) -}
+35dd98717771d69be69214d162b95494
+  faseqLength :: Data.Fasta.FastaSeq -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LLLS)),1*U(A,U(A,A,A,U))>m, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Fasta.FastaSeq) ->
+                 case x of wild { Data.Fasta.FastaSeq ds ds1 ->
+                 case ds1 of wild1 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 GHC.Types.I# dt3 } }) -}
+b6b63abdbd036ca59255a661789aa379
+  seqdata ::
+    Data.Fasta.FastaSeq -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Fasta.FastaSeq
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,U(U,U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Fasta.FastaSeq) ->
+                 case ds of wild { Data.Fasta.FastaSeq ds1 ds2 -> ds2 }) -}
+b6b63abdbd036ca59255a661789aa379
+  seqheader ::
+    Data.Fasta.FastaSeq -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Fasta.FastaSeq
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(U(U,U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Fasta.FastaSeq) ->
+                 case ds of wild { Data.Fasta.FastaSeq ds1 ds2 -> ds1 }) -}
+instance GHC.Classes.Eq [Data.Fasta.FastaSeq]
+  = Data.Fasta.$fEqFastaSeq
+instance Control.DeepSeq.NFData [Data.Fasta.FastaSeq]
+  = Data.Fasta.$fNFDataFastaSeq
+instance GHC.Show.Show [Data.Fasta.FastaSeq]
+  = Data.Fasta.$fShowFastaSeq
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

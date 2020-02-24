@@ -1,0 +1,2554 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:16:00.223813712 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Interpret 8065
+  interface hash: fba069d18442ef40d50de5ff39ab3f9d
+  ABI hash: 78cc39b47131b17de28b314ec388d844
+  export-list hash: ae3eec30e5f082424e54c3a6ee78741a
+  orphan hash: 8570c3c2a85b542e8f9d5bb43aa56648
+  flag hash: 50ba487d23aeb79026c6de06b700ddf6
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpret.interpret
+module dependencies: CmdArgs Configuration Data.FastQ Data.Fasta
+                     Data.GFF Data.Sam Dependencies.Embedded Dependencies.Versions
+                     FileManagement FileOrStream Interpretation.Count
+                     Interpretation.Count.RefSeqInfoVector Interpretation.CountFile
+                     Interpretation.FastQ Interpretation.Map Interpretation.Select
+                     Interpretation.Substrim Interpretation.Unique Interpretation.Write
+                     Language Modules NGLess NGLess.NGError NGLess.NGLEnvironment Output
+                     Paths_NGLess ReferenceDatabases StandardModules.Mappers.Bwa
+                     StandardModules.Mappers.Minimap2 StandardModules.Mappers.Soap
+                     Utils.Conduit Utils.FindModules Utils.IntGroups Utils.LockFile
+                     Utils.Network Utils.Process Utils.ProgressBar Utils.Samtools
+                     Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: IntervalMap-0.6.1.1 JuicyPixels-3.3.4
+                      MissingH-1.4.1.0 StateVar-1.2 active-0.2.0.14 adjunctions-4.4
+                      aeson-1.4.6.0 ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 asn1-encoding-0.9.6 asn1-parse-0.9.5 asn1-types-0.3.3
+                      async-2.2.2 attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 basement-0.0.11
+                      bifunctors-5.5.6 binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bytestring-lexing-0.5.0.2 bzlib-conduit-0.3.0.2
+                      call-stack-0.1.0 case-insensitive-1.2.0.11 cereal-0.5.8.1
+                      cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5 comonad-5.0.6
+                      conduit-1.3.1.2 conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 configurator-0.3.0.0 connection-0.3.1
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      cookie-0.4.5 cryptonite-0.25 data-default-0.7.1.1
+                      data-default-class-0.1.2.0 data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 double-conversion-2.0.2.0 dual-tree-0.2.2.1
+                      edit-distance-0.2.2.1 either-5.0.1.1 errors-2.3.0 exceptions-0.10.4
+                      extra-1.6.18 file-embed-0.0.11.1 filemanip-0.3.6.3 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hashtables-1.2.3.4 hostname-1.0
+                      hourglass-0.2.12 http-client-0.6.4 http-client-tls-0.3.5.3
+                      http-conduit-2.3.7.3 http-types-0.12.3 inline-c-0.7.0.1
+                      inline-c-cpp-0.3.0.3 integer-gmp-1.0.2.0 integer-logarithms-1.0.3
+                      intervals-0.8.1 kan-extensions-5.2 lens-4.17.1 linear-1.20.9
+                      lzma-0.0.0.3 lzma-conduit-1.2.1 memory-0.14.18 monad-loops-0.4.3
+                      mono-traversable-1.0.15.1 monoid-extras-0.5.1 mtl-2.2.2
+                      network-2.8.0.1 network-uri-2.6.1.0 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pem-0.2.4 pqueue-1.4.1.2
+                      pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0 profunctors-5.3
+                      random-1.1 reflection-2.1.5 regex-1.0.2.0 regex-base-0.93.2
+                      regex-compat-0.95.1 regex-pcre-builtin-0.94.5.8.8.35
+                      regex-posix-0.95.2 regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3
+                      resourcet-1.2.2 safe-0.3.18 safe-exceptions-0.1.7.0 safeio-0.0.5.0
+                      scientific-0.3.6.2 semigroupoids-5.3.4 socks-0.6.1 split-0.2.3.3
+                      stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 tar-conduit-0.3.2
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.3.1.0
+                      time-1.8.0.2 time-compat-1.9.2.2 time-locale-compat-0.1.1.5
+                      tls-1.4.1 transformers-0.5.6.2 transformers-base-0.4.5.2
+                      transformers-compat-0.6.5 typed-process-0.2.6.0 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 x509-1.7.5
+                      x509-store-1.6.7 x509-system-1.6.6 x509-validation-1.6.11
+                      zlib-0.6.2.1 zstd-0.1.1.2
+orphans: pqueue-1.4.1.2:Data.PQueue.Prio.Min
+         MissingH-1.4.1.0:System.IO.HVFS
+         http-client-0.6.4:Network.HTTP.Client.Request
+         network-2.8.0.1:Network.Socket basement-0.0.11:Basement.UArray.Base
+         basement-0.0.11:Basement.Block
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy vector-0.12.0.3:Data.Vector.Unboxed
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         basement-0.0.11:Basement.Block.Base
+                         basement-0.0.11:Basement.Bounded basement-0.0.11:Basement.Monad
+                         basement-0.0.11:Basement.MutableBuilder
+                         basement-0.0.11:Basement.Nat basement-0.0.11:Basement.NonEmpty
+                         basement-0.0.11:Basement.Numerical.Subtractive
+                         basement-0.0.11:Basement.PrimType basement-0.0.11:Basement.String
+                         basement-0.0.11:Basement.String.Encoding.ASCII7
+                         basement-0.0.11:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.11:Basement.String.Encoding.UTF16
+                         basement-0.0.11:Basement.String.Encoding.UTF32
+                         basement-0.0.11:Basement.Types.OffsetSize
+                         basement-0.0.11:Basement.UArray.Base
+                         basement-0.0.11:Basement.UTF8.Base
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         http-client-0.6.4:Network.HTTP.Client
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         network-uri-2.6.1.0:Network.URI
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Data.FastQ 683044f508718e436592cbb72ea87fc2
+  exports: 7f3c9451f8064311c68af66858502794
+  FQStatistics 11aa39266698c671bdb4006bd7133475
+  FastQFilePath 3b49cd403d588d2f95c29b96eb9e4162
+  FastQFilePath fdd414d88cf948fd1c738d4e396e4d35
+  ReadSet c16a307192e6c5c3c5475f335c533ab2
+  SangerEncoding 022f7b59ea97b642c080649edf58958c
+  ShortRead 22bd7330b29b52b3752e35cd5ee36bcb
+  fqDecodeVector 32ab7703626d580f88faf29a2c297079
+  fqEncode 81a3da95a8903e1a2301f91aaff49d37
+  fqStatsC 7638e196b163821a0859ba72658d10e1
+  fqpathEncoding fdd414d88cf948fd1c738d4e396e4d35
+  nSeq 11aa39266698c671bdb4006bd7133475
+  srLength 2f8e844b37e49b164efc7d7fb84b36ca
+  srSlice b08403e8fd1059c88ab4a3b466a7e859
+import  -/  Data.Sam 3fcb5a09f87798583b9f6366498e011d
+  exports: cca2af82b8ff0df9f542f45f0746f94b
+  SamHeader f85f7ae0f9d834d6080b61027ca92b45
+  SamLine 0d6b1e41e587b53ef700f890907df42e
+  SamLine 01f7dabca6fb8c4cde05c4a9c121515e
+  encodeSamLine 357aff79e10a2b23bad0dcc9dad7b943
+  hasSequence 692cc50529c12c5ac60653316ce04a30
+  isSamHeaderString 65a4dceed70d7bae59d35b345f0a2c64
+  readSamGroupsC' b9cbb2fcefdf8f9b139055b3a12a1c95
+  samCigar 01f7dabca6fb8c4cde05c4a9c121515e
+  samLength f344e908e530c2511cd252a2768a65c4
+  samQual 01f7dabca6fb8c4cde05c4a9c121515e
+  samSeq 01f7dabca6fb8c4cde05c4a9c121515e
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  makeNGLTempFile f8997243f49d682cc3f193c23e0f01b5
+  openNGLTempFile 2b9c3d55dae96aea37a5265a4ee4d09e
+  removeIfTemporary e68c66f295edf35288835c734f7a9cd2
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  File d8a44142e424df6efefa301d68916382
+  Stream da98a64c2e5c090a480f8a7d92d65fd7
+  asSamStream 6f64757c58491603efc4aa3bd9b5887a
+  origin 9424940a190ccc5a218c6b79ae75b257
+import  -/  Interpretation.Count 10ca3f7d1cd8593474b7f5a2e4888d0c
+  exports: 60a2a8e76a2304095a366196542a3362
+  executeCount 29a4e0baabd52961e1025f27c603df02
+  executeCountCheck 13e62ddcbd45e951b9ed95bd9edd303c
+import  -/  Interpretation.CountFile 93a2b9e70b5111601990032f4df18293
+  exports: e5312b8f61247b60ca64dda370622cc4
+  executeCountFile 03aab4227b128bf60634700c18576340
+import  -/  Interpretation.FastQ dbbf0398304c43a8cd356eee3fc4dbb4
+  exports: 98d488bab45322c52b93af6c51bc1569
+  executeFastq 666a5517128f7e5c02f10ca3acba9459
+  executeGroup ac918612539f54cb2279851c7f0fd37d
+  executePaired a3bc788e6c5d49b01a7811290599b44c
+  executeShortReadsMethod 825e3c6c2454891efc8ac0cb1032f1fe
+import  -/  Interpretation.Map 43709d166b34f752ef0ce0d53c37f992
+  exports: 990bb5c71d52c6db8d69b312de7e13db
+  executeMap 83012dcaf6878776377813a17b799d79
+  executeMapStats 5ca51a4058cfd36d9e09e6912e864192
+  executeMergeSams e03650c2c27c8f0816c1f85ab5806392
+import  -/  Interpretation.Select 2d8cfa29f259915e32e087916b86fb50
+  exports: e52e850b16da37ffa1f14b7d72ea18db
+  executeMappedReadMethod 342b28f124e76ab307ea7fa0c4b79c1c
+  executeSelect d289ff69a705fc004643db2497958efb
+  fixCigar f3fedeefb984bdd9397aab574a89da44
+  splitSamlines3 10676a9d18378b13be9fcbcefa1c09e0
+import  -/  Interpretation.Substrim c8e7b64822d50135776c268c2ae9d61f
+  exports: 33c645242cbbb9c79446eadc464f17d8
+  Endstrim3 ca24a7bc1fcdc6e57b154d41816f07c1
+  Endstrim5 9bb546acf428b5a2d295aef4be8b1822
+  EndstrimBoth ea0d19f18b10e2577ef4e6287ea6a5ae
+  endstrim 8ff7ce302ef6e275edb12c41bf587d96
+  smoothtrim a4df9364acc2ee952eb406557edac3d8
+  substrim bd54f620f4479f65d5759907c6636f16
+import  -/  Interpretation.Unique 42cb81dc779fa85ffd9d6c59223fab7a
+  exports: d314fe73074171e6c5b678aceda25610
+  executeUnique 55728d5a2cfac5365666496c94053c82
+import  -/  Interpretation.Write be1fc63f3dbba3a45a95f66caf9ac74e
+  exports: 2a75b1e02cffaa1b2f8217c03d9c1bec
+  executeWrite e3b1f974dea8f6db9774ff989b21279b
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  Assignment 4c0195db0fce84d2e9e704269e836114
+  BOp 082be4a718fd86899f5b7f01bed2cf9a
+  BOpAdd 883c3d29b2fcbc87259c89a43b4c0da3
+  BOpEQ e7cd3bb0cd4f65a11a1242f3891d1dd2
+  BOpGT 6c4ebb5e00c07ea1a168bdb25331e25d
+  BOpGTE 66d8a5dbec68bc11f3d8ac356d4fd75e
+  BOpLT efffe19041efe96e15c29e1b76d8babe
+  BOpLTE 757abdb965c9346d42ce17c336a0c9aa
+  BOpMul bac8d40d3aa02908bc5417974decf60e
+  BOpNEQ cdce5886e235a3de3dcf71fc80c8349f
+  BOpPathAppend 993bf55f405744f7a1bdc78b6026b1fc
+  BinaryOp 96aebef7d64d3dee5736581d4fd6e787
+  Block b24cb7195615293a75c1fd31f7a228f2
+  Block adc8def6a4b7257bb12aef607cf99238
+  BuiltinConstant df58b1abf5535a0feb227c294c839942
+  Condition 5ee65797fc128c25b56f8d9e376f1857
+  ConstBool e8c69dda06d722ad76d6ee5b57016100
+  ConstDouble 142b08f1af0256b592f97ccf5fd10c52
+  ConstInt 8a960333f4a81e1ab77c58419b086b64
+  ConstStr 1facc51f598e05827c5695d189d62844
+  ConstSymbol a46ef274d615207b4535b4c02ac882bf
+  Continue 6677476ef496f2cb77a1ffee0eaf1832
+  Discard f62cf359094cb85b59e3d728c5b82948
+  Expression adc8def6a4b7257bb12aef607cf99238
+  FuncName a3f44134039f1915698a791072d2c89e
+  FuncName 441672d7eb62c1c87f9948f9c78adad7
+  FunctionCall 23e51bd4b17fae101afcee641d2d9aa8
+  Index adc8def6a4b7257bb12aef607cf99238
+  IndexExpression 1b396d3ca8c8b8b8954b5ee9745fd162
+  IndexOne f52ed1b667b98a95d0a7a81716ddc6ac
+  IndexTwo 3e1dd14fe87dffa8c8b07b12dd664278
+  LenThresholdDiscard fd3da8aa7b002fe2c64616e448888400
+  ListExpression f5bec8e812d8b6e40f97bd422cace1cd
+  Lookup 9af0655858caf9a44c41b1765edc7910
+  MethodCall 009cfcd1ea42375ebf8583c67b0f9ceb
+  MethodName a5ecd529fe2b52118416127e8ed16401
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOBool 2a62e05620187a04f1c1263076dd368f
+  NGOCounts 2f11e851e821c66c37fbdbe68821316f
+  NGODouble 9d80de0d6037d8b3cead7effb5b97bbb
+  NGOExpression 7e7413dc8347085d45aee465882cf973
+  NGOFilename ef1dda6bd9bf8fe577c5213be3960679
+  NGOInteger 395b0ce4eb20fbcf334f84acb2d7ff1d
+  NGOList 488dd32aa90ff5894de15c18619c34df
+  NGOMappedRead ec27cce9b92a84f1caf17fb469c214d1
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOReadSet c3ec807d5d7afc041d47d76cd179ed0b
+  NGOSequenceSet b77909d117eb56ae11031775bd38e7ce
+  NGOShortRead a90390eaa1ea53f098575746452f0974
+  NGOString 155e4815cffdc2c6617b34a2d52b7659
+  NGOSymbol 8912a0dc0eeb07d7a07e311be194dbf1
+  NGOVoid 3470f22180b45ca3e315b9326994ee3f
+  Optimized f5901d6f38fa97c9d12fea16c9f226ff
+  Sequence 629f5460e2af1b50496e5ea307340818
+  SubstrimReassign 043be440a5735a40f05ee2b71df3f294
+  UOp 72ea05232a2f0c6e38ace4b9bd98df0d
+  UOpLen 4e5294a23d580f449388441e0a81293a
+  UOpMinus 2419d9dd30d69f546f66aaac135a2324
+  UOpNot f1ca7c78563a1a142a90cc650fd11173
+  UnaryOp 7ddfad96d4b058dc5f939d4cf881cf4f
+  Variable 9b44f8caef4ce199ec53dca15d83da61
+  Variable 6ea856e2345fb0911676ec309bc5b12f
+  modName d7f124fd1704f8a7309c0e06610b0f29
+  nglSamFile ea18243860934472078c5e2ccd0edf40
+import  -/  Modules d7b04bae20d952778746efecd6f653cd
+  exports: e612fb66accb36645cea5fb0c9541754
+  Module 5ea81178a37f2cc1f71e0dfed7af0657
+  funcAllowsAutoComprehension ea8a515503aace5f77e7178c87cb63b2
+  funcName ea8a515503aace5f77e7178c87cb63b2
+  modConstants 5ea81178a37f2cc1f71e0dfed7af0657
+  modFunctions 5ea81178a37f2cc1f71e0dfed7af0657
+  modInfo 5ea81178a37f2cc1f71e0dfed7af0657
+  runFunction 5ea81178a37f2cc1f71e0dfed7af0657
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+  boolOrTypeError 981539a3d822d712d304e04228931909
+  lookupBoolOrScriptErrorDef ffe642effd69bd9a48ab477563baaa98
+  lookupIntegerOrScriptErrorDef 34ade76886baf18c528fabb1196f99bb
+  lookupStringOrScriptErrorDef 091ee7c11152f594797c474536503c77
+  lookupSymbolOrScriptErrorDef a240a0fb0565b0f33a8458942701be2b
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGError a376f3cfcfb76b5fb7a76f3cdc4bd9d1
+  NGError 9741b2ef5fc8e673ccaf43057baf92e8
+  NGLess 416e5726ee4c4987c25367d545064990
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  ScriptError c205d88d5f88b94555f919a61381cf40
+  runNGLess a41ed825730df1edb93a7b2b931843fe
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  NGLVersion c4336e12104b9327e88a42025f58523f
+  nglEnvironment 56dd9663bd034f7047cca99f322e3b64
+  ngleLno d80a43c5bae03fd7eefc640474197c79
+  ngleTemporaryFilesCreated d80a43c5bae03fd7eefc640474197c79
+  ngleVersion d80a43c5bae03fd7eefc640474197c79
+  updateNglEnvironment 3c9480db8a054505942b2c2a455873f8
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  DebugOutput 66928311a72e96e4202c735d87d527fd
+  InfoOutput c7754f0807be19d61fb420c2d9984424
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  outputFQStatistics 0506faa0ba2e57b0f6d3af4441ce0868
+  outputListLno e992d3c80a311d9fdf828c472b95b98f
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  linesVC 5f60b94589835a466cc14354f9554195
+  unwrapByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  zipSource2 a84e4cc79e323606f59b4cf7fca05d5b
+import  -/  Utils.Suggestion 559e2395dd1103e80283d24b7e6fd048
+  exports: cc5fd4d32efb666b1cbe2686b5c39e5e
+  checkFileReadable 52f01d1c4143e5add7e4ffda18354434
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+  allSame 40cad5086287ca763e1d068d1ee83fb8
+  fmapMaybeM e3eabcea0ea26c7883f4bc280e31f2a9
+import  -/  async-2.2.2:Control.Concurrent.Async 539dde74c83d07130d3155c90555c63d
+import  -/  base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Conc a58be285a0644f0fcf5703314b511833
+import  -/  base-4.12.0.0:GHC.Conc.Sync 275e94c5ede09d3593e4c106b892e4f5
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder.Internal 8258443d95d94e3caaed55a182aaa9c6
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Utils d2a921b831bbb50309f9f422b2ce43e3
+import  -/  conduit-extra-1.3.4:Data.Conduit.Binary c81ebc9541e9b8e064aeb9f939263ed9
+import  -/  containers-0.6.0.1:Data.Map.Internal fbf8d1bed47de2b3b48e26c406ee4050
+import  -/  containers-0.6.0.1:Data.Map.Strict cdbeca9dfcd61c917272d3c2b8a5e4c8
+import  -/  containers-0.6.0.1:Data.Map.Strict.Internal b2139318e1c1e3d44818931d9d007d9f
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  errors-2.3.0:Control.Error 10aa1520c30e6d4e074c4d9fbf0cd44a
+import  -/  errors-2.3.0:Control.Error.Util 51c7a01d0b759ba60a147d445df06bed
+import  -/  extra-1.6.18:Control.Monad.Extra 142829a227ff93cd2299d6da6c4e4ba9
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  mtl-2.2.2:Control.Monad.Reader d5c3a33f1c95bb71f4ae02f87a7048ff
+import  -/  mtl-2.2.2:Control.Monad.Reader.Class 57cf6a03579b61bbf9b331632b55e65e
+import  -/  mtl-2.2.2:Control.Monad.State 753def63fe8e937dc636f11e5230745a
+import  -/  mtl-2.2.2:Control.Monad.State.Class 243c828469104fb94563be0ea268f418
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource.Internal 501d62f3c9254d0531a3c1329c03910f
+import  -/  safe-0.3.18:Safe 4ea008c442a0a1593e22d85b133b8d50
+import  -/  stm-2.5.0.0:Control.Concurrent.STM f2a42b794a338e1ded209e15d4f9b779
+import  -/  stm-chans-3.0.0.4:Control.Concurrent.STM.TBMQueue f1eda03b672cc86846dcba48c42e94e9
+import  -/  stm-conduit-4.0.1:Data.Conduit.TQueue a1128de175446a17d89b094f810351bc
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.IO 81ae0de6a6963f8f1398925d38fbfbc0
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.Class ce71df227db199c1d525fc0992381112
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.Reader 047d9523dd0b97f3c42ee03eae49a228
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.State.Lazy 0c22827dedcb94d04bf072c00f8e95c2
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+f0017d5c326cc488597f4a7cf181e519
+  $fEqBlockResult :: GHC.Classes.Eq Interpret.BlockResult
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpret.BlockResult
+                  Interpret.$fEqBlockResult_$c==
+                  Interpret.$fEqBlockResult_$c/= -}
+f0017d5c326cc488597f4a7cf181e519
+  $fEqBlockResult_$c/= ::
+    Interpret.BlockResult -> Interpret.BlockResult -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SL),1*U(U,1*U(U(U,U,U),1*U))><S(SL),1*U(U,1*U(U(U,U,U),1*U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpret.BlockResult) (y :: Interpret.BlockResult) ->
+                 case Interpret.$fEqBlockResult_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+f0017d5c326cc488597f4a7cf181e519
+  $fEqBlockResult_$c== ::
+    Interpret.BlockResult -> Interpret.BlockResult -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SL),1*U(U,1*U(U(U,U,U),1*U))><S(SL),1*U(U,1*U(U(U,U,U),1*U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Interpret.BlockResult) (w1 :: Interpret.BlockResult) ->
+                 case w of ww { Interpret.BlockResult ww1 ww2 ->
+                 case w1 of ww3 { Interpret.BlockResult ww4 ww5 ->
+                 case ww1 of wild {
+                   Interpret.BlockOk
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpret.BlockOk -> Interpret.$fEqBlockResult_$c==1 ww2 ww5 }
+                   Interpret.BlockDiscarded
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpret.BlockDiscarded
+                        -> Interpret.$fEqBlockResult_$c==1 ww2 ww5 }
+                   Interpret.BlockContinued
+                   -> case ww4 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpret.BlockContinued
+                        -> Interpret.$fEqBlockResult_$c==1 ww2 ww5 } } } }) -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fEqBlockResult_$c==1 ::
+    Interpret.BlockVariables
+    -> Interpret.BlockVariables -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(S(SSS)L),1*U(U(U,U,U),1*U)><S(S(SSS)L),1*U(U(U,U,U),1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Interpret.BlockVariables)
+                   (w1 :: Interpret.BlockVariables) ->
+                 case w of ww { Interpret.BlockVariables1 ww1 ww2 ->
+                 case ww1 of ww3 { Data.Text.Internal.Text ww4 ww5 ww6 ->
+                 case w1 of ww7 { Interpret.BlockVariables1 ww8 ww9 ->
+                 case ww8 of ww10 { Data.Text.Internal.Text ww11 ww12 ww13 ->
+                 Interpret.$w$c== ww4 ww5 ww6 ww2 ww11 ww12 ww13 ww9 } } } }) -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fEqBlockStatus :: GHC.Classes.Eq Interpret.BlockStatus
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpret.BlockStatus
+                  Interpret.$fEqBlockStatus_$c==
+                  Interpret.$fEqBlockStatus_$c/= -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fEqBlockStatus_$c/= ::
+    Interpret.BlockStatus -> Interpret.BlockStatus -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpret.BlockStatus) (y :: Interpret.BlockStatus) ->
+                 case x of wild {
+                   Interpret.BlockOk
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True Interpret.BlockOk -> GHC.Types.False }
+                   Interpret.BlockDiscarded
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpret.BlockDiscarded -> GHC.Types.False }
+                   Interpret.BlockContinued
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpret.BlockContinued -> GHC.Types.False } }) -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fEqBlockStatus_$c== ::
+    Interpret.BlockStatus -> Interpret.BlockStatus -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpret.BlockStatus) (ds1 :: Interpret.BlockStatus) ->
+                 case ds of wild {
+                   Interpret.BlockOk
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Interpret.BlockOk -> GHC.Types.True }
+                   Interpret.BlockDiscarded
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpret.BlockDiscarded -> GHC.Types.True }
+                   Interpret.BlockContinued
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpret.BlockContinued -> GHC.Types.True } }) -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fEqBlockVariables :: GHC.Classes.Eq Interpret.BlockVariables
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpret.BlockVariables
+                  Interpret.$fEqBlockResult_$c==1
+                  Interpret.$fEqBlockVariables_$c/= -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fEqBlockVariables_$c/= ::
+    Interpret.BlockVariables
+    -> Interpret.BlockVariables -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(S(LLS)L),1*U(U(U,U,U),1*U)><S(S(LLS)L),1*U(U(U,U,U),1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpret.BlockVariables)
+                   (y :: Interpret.BlockVariables) ->
+                 case Interpret.$fEqBlockResult_$c==1 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+b34546679c8ef677902932dce749f434
+  $fNFDataPreprocessPairOutput ::
+    Control.DeepSeq.NFData Interpret.PreprocessPairOutput
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Interpret.$fNFDataPreprocessPairOutput_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Interpret.PreprocessPairOutput>_N)) -}
+b34546679c8ef677902932dce749f434
+  $fNFDataPreprocessPairOutput_$crnf ::
+    Interpret.PreprocessPairOutput -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpret.PreprocessPairOutput) ->
+                 case ds of wild { DEFAULT -> GHC.Tuple.() }) -}
+f0017d5c326cc488597f4a7cf181e519
+  $fShowBlockResult :: GHC.Show.Show Interpret.BlockResult
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpret.BlockResult
+                  Interpret.$fShowBlockResult_$cshowsPrec
+                  Interpret.$fShowBlockResult_$cshow
+                  Interpret.$fShowBlockResult_$cshowList -}
+f0017d5c326cc488597f4a7cf181e519
+  $fShowBlockResult_$cshow ::
+    Interpret.BlockResult -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SL),1*U(U,1*U(U(U,U,U),1*U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Interpret.BlockResult) ->
+                 Interpret.$fShowBlockResult_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+f0017d5c326cc488597f4a7cf181e519
+  $fShowBlockResult_$cshowList ::
+    [Interpret.BlockResult] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpret.BlockResult]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpret.BlockResult
+                   (Interpret.$fShowBlockResult_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+f0017d5c326cc488597f4a7cf181e519
+  $fShowBlockResult_$cshowsPrec ::
+    GHC.Types.Int -> Interpret.BlockResult -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(SL),1*U(U,1*U(U(U,U,U),1*U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Interpret.BlockResult) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Interpret.BlockResult ww3 ww4 ->
+                 Interpret.$w$cshowsPrec ww1 ww3 ww4 } }) -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fShowBlockStatus :: GHC.Show.Show Interpret.BlockStatus
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpret.BlockStatus
+                  Interpret.$fShowBlockStatus_$cshowsPrec
+                  Interpret.$fShowBlockStatus_$cshow
+                  Interpret.$fShowBlockStatus_$cshowList -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fShowBlockStatus_$cshow ::
+    Interpret.BlockStatus -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Interpret.BlockStatus) ->
+                 case x of wild {
+                   Interpret.BlockOk -> GHC.CString.unpackCString# "BlockOk"#
+                   Interpret.BlockDiscarded
+                   -> GHC.CString.unpackCString# "BlockDiscarded"#
+                   Interpret.BlockContinued
+                   -> GHC.CString.unpackCString# "BlockContinued"# }) -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fShowBlockStatus_$cshowList ::
+    [Interpret.BlockStatus] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpret.BlockStatus]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpret.BlockStatus
+                   (Interpret.$fShowBlockStatus_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ed4f38f0273290063407d69c5f92c1e3
+  $fShowBlockStatus_$cshowsPrec ::
+    GHC.Types.Int -> Interpret.BlockStatus -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Interpret.BlockStatus) ->
+                 Interpret.$w$cshowsPrec1 w1) -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fShowBlockVariables :: GHC.Show.Show Interpret.BlockVariables
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpret.BlockVariables
+                  Interpret.$fShowBlockVariables_$cshowsPrec
+                  Interpret.$fShowBlockVariables_$cshow
+                  Interpret.$fShowBlockVariables_$cshowList -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fShowBlockVariables_$cshow ::
+    Interpret.BlockVariables -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(S(SSS)L),1*U(U(U,U,U),1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Interpret.BlockVariables) ->
+                 Interpret.$fShowBlockVariables_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fShowBlockVariables_$cshowList ::
+    [Interpret.BlockVariables] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpret.BlockVariables]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpret.BlockVariables
+                   (Interpret.$fShowBlockVariables_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+9c8cfe8db783f12cd94d08fbc1f3976d
+  $fShowBlockVariables_$cshowsPrec ::
+    GHC.Types.Int -> Interpret.BlockVariables -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(S(SSS)L),1*U(U(U,U,U),1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Interpret.BlockVariables) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Interpret.BlockVariables1 ww3 ww4 ->
+                 case ww3 of ww5 { Data.Text.Internal.Text ww6 ww7 ww8 ->
+                 Interpret.$w$cshowsPrec2 ww1 ww6 ww7 ww8 ww4 } } }) -}
+a91a68ba9d3c5c18b47779795e3287de
+  $s$fApplicativeReaderT ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError))
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ r.
+                  @ (Control.Monad.Trans.Reader.ReaderT
+                       r (Data.Either.Either NGLess.NGError.NGError))
+                  (Interpret.$s$fApplicativeReaderT_$s$fFunctorReaderT @ r)
+                  (\ @ a (x :: a) ->
+                   let {
+                     m1 :: Data.Either.Either NGLess.NGError.NGError a
+                     = Data.Either.Right @ NGLess.NGError.NGError @ a x
+                   } in
+                   (\ (ds :: r) -> m1)
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)))
+                  (Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c<*> @ r)
+                  (Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$cliftA2
+                     @ r)
+                  (Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c*> @ r)
+                  (Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c<*
+                     @ r) -}
+01e2b63caed15f7452fe122481539948
+  $s$fApplicativeReaderT_$s$fApplicativeReaderT_$c*> ::
+    Control.Monad.Trans.Reader.ReaderT
+      r (Data.Either.Either NGLess.NGError.NGError) a
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(U)><L,U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (u :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (v :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) b)
+                   (r1 :: r) ->
+                 case u `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                        r1 of wild {
+                   Data.Either.Left x
+                   -> Data.Either.Left @ NGLess.NGError.NGError @ b x
+                   Data.Either.Right y
+                   -> v `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)
+                        r1 })
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Reader.ReaderT
+                    r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT
+                         r (Data.Either.Either NGLess.NGError.NGError) b>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)) -}
+cb130ec86faf4b1fac9ba4d77a0f8103
+  $s$fApplicativeReaderT_$s$fApplicativeReaderT_$c<* ::
+    Control.Monad.Trans.Reader.ReaderT
+      r (Data.Either.Either NGLess.NGError.NGError) a
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(U)><L,U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (u :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (v :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) b)
+                   (r1 :: r) ->
+                 case u `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                        r1 of wild {
+                   Data.Either.Left x1
+                   -> Data.Either.Left @ NGLess.NGError.NGError @ a x1
+                   Data.Either.Right y
+                   -> case v `cast`
+                           (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)
+                             r1 of wild1 {
+                        Data.Either.Left x1
+                        -> Data.Either.Left @ NGLess.NGError.NGError @ a x1
+                        Data.Either.Right y1
+                        -> Data.Either.Right @ NGLess.NGError.NGError @ a y } })
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Reader.ReaderT
+                    r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT
+                         r (Data.Either.Either NGLess.NGError.NGError) b>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)) -}
+79c1f78d30a69e7b60b59e459d4345d7
+  $s$fApplicativeReaderT_$s$fApplicativeReaderT_$c<*> ::
+    Control.Monad.Trans.Reader.ReaderT
+      r (Data.Either.Either NGLess.NGError.NGError) (a -> b)
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) a
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(U)><L,U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (f :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) (a -> b))
+                   (v :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (r1 :: r) ->
+                 case f `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a -> b>_N)
+                        r1 of wild {
+                   Data.Either.Left e1
+                   -> Data.Either.Left @ NGLess.NGError.NGError @ b e1
+                   Data.Either.Right f1
+                   -> case v `cast`
+                           (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                             r1 of wild1 {
+                        Data.Either.Left x
+                        -> Data.Either.Left @ NGLess.NGError.NGError @ b x
+                        Data.Either.Right y
+                        -> Data.Either.Right @ NGLess.NGError.NGError @ b (f1 y) } })
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Reader.ReaderT
+                    r (Data.Either.Either NGLess.NGError.NGError) (a -> b)>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT
+                         r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)) -}
+58b564aa67e4a48de5499a69a68ca037
+  $s$fApplicativeReaderT_$s$fApplicativeReaderT_$cliftA2 ::
+    (a -> b -> c)
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) a
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) c
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(C1(U))><C(S),1*C1(U)><L,1*C1(U)><L,U>,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   @ c
+                   (f :: a -> b -> c)
+                   (x :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (y :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) b)
+                   (r1 :: r) ->
+                 case x `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                        r1 of wild {
+                   Data.Either.Left x1
+                   -> Data.Either.Left @ NGLess.NGError.NGError @ c x1
+                   Data.Either.Right y1
+                   -> case y `cast`
+                           (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)
+                             r1 of wild1 {
+                        Data.Either.Left x1
+                        -> Data.Either.Left @ NGLess.NGError.NGError @ c x1
+                        Data.Either.Right y2
+                        -> Data.Either.Right @ NGLess.NGError.NGError @ c (f y1 y2) } })
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                 <a -> b -> c>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT
+                         r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT
+                         r (Data.Either.Either NGLess.NGError.NGError) b>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <c>_N)) -}
+a266c765659a8bcee7c5db51ae0c551a
+  $s$fApplicativeReaderT_$s$fFunctorReaderT ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError))
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ r.
+                  @ (Control.Monad.Trans.Reader.ReaderT
+                       r (Data.Either.Either NGLess.NGError.NGError))
+                  (Interpret.$s$fApplicativeReaderT_$s$fFunctorReaderT_$cfmap @ r)
+                  (Interpret.$s$fApplicativeReaderT_$s$fFunctorReaderT_$c<$ @ r) -}
+8c56f791be67bf3924225e6eeddc10d5
+  $s$fApplicativeReaderT_$s$fFunctorReaderT_$c<$ ::
+    a
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (x :: a)
+                   (v :: Control.Monad.Trans.Reader.ReaderT
+                           r (Data.Either.Either NGLess.NGError.NGError) b)
+                   (x1 :: r) ->
+                 case v `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)
+                        x1 of wild {
+                   Data.Either.Left x2
+                   -> Data.Either.Left @ NGLess.NGError.NGError @ a x2
+                   Data.Either.Right y
+                   -> Data.Either.Right @ NGLess.NGError.NGError @ a x })
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <a>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT
+                         r (Data.Either.Either NGLess.NGError.NGError) b>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)) -}
+54655e061b1e0e731440b894447c1def
+  $s$fApplicativeReaderT_$s$fFunctorReaderT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) a
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(S),1*C1(U)><L,U>, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ r @ a @ b (f :: a -> b) ->
+                 Control.Monad.Trans.Reader.mapReaderT
+                   @ (Data.Either.Either NGLess.NGError.NGError)
+                   @ a
+                   @ (Data.Either.Either NGLess.NGError.NGError)
+                   @ b
+                   @ r
+                   (Data.Either.$fApplicativeEither_$cfmap
+                      @ NGLess.NGError.NGError
+                      @ a
+                      @ b
+                      f)) -}
+ff7632a283f7f40b56e6f8fb53e4269d
+  $s$fApplicativeStateT ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+                  (Interpret.$s$fApplicativeStateT_$s$fFunctorStateT @ s)
+                  (Interpret.$s$fApplicativeStateT_$s$fApplicativeStateT_$cpure @ s)
+                  (Interpret.$s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> @ s)
+                  (Control.Monad.Trans.State.Lazy.$fApplicativeStateT2
+                     @ NGLess.NGError.NGLessIO
+                     @ s
+                     NGLess.NGError.$fFunctorNGLessIO
+                     NGLess.NGError.$fMonadNGLessIO)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Control.Monad.Trans.State.Lazy.StateT
+                           s NGLess.NGError.NGLessIO a>_R
+                   ->_R <Control.Monad.Trans.State.Lazy.StateT
+                           s NGLess.NGError.NGLessIO b>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <s>_N <NGLess.NGError.NGLessIO>_R <c>_N))
+                  (Interpret.$s$fApplicativeStateT_$s$fApplicativeStateT_$c*> @ s)
+                  (\ @ a @ b ->
+                   Control.Monad.Trans.State.Lazy.$fApplicativeStateT2
+                     @ NGLess.NGError.NGLessIO
+                     @ s
+                     NGLess.NGError.$fFunctorNGLessIO
+                     NGLess.NGError.$fMonadNGLessIO
+                     @ a
+                     @ b
+                     @ a
+                     (GHC.Base.const @ a @ b))
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Trans.State.Lazy.StateT
+                      s NGLess.NGError.NGLessIO a>_R
+                   ->_R <Control.Monad.Trans.State.Lazy.StateT
+                           s NGLess.NGError.NGLessIO b>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)) -}
+56ea37a2abf66ddc3e58c2fd6ff2cd97
+  $s$fApplicativeStateT_$s$fApplicativeStateT_$c*> ::
+    Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO b
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C(C1(U(U,1*U(A,1*U)))))><L,C(C1(C1(U)))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s NGLess.NGError.NGLessIO a)
+                   (k :: Control.Monad.Trans.State.Lazy.StateT
+                           s NGLess.NGError.NGLessIO b)
+                   (s1 :: s) ->
+                 let {
+                   ds :: NGLess.NGError.NGLessIO (a, s)
+                   = m1
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)
+                       s1
+                 } in
+                 (\ (r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case (ds
+                          `cast`
+                        (NGLess.NGError.N:NGLessIO[0] <(a,
+                                                        s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                    <GHC.Types.IO>_R <(a, s)>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <(a, s)>_R)
+                         s2 of ds1 { (#,#) ipv ipv1 ->
+                  ((k `cast`
+                    (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                         <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)
+                      (case ipv1 of wild { (,) a1 s' -> s' }))
+                     `cast`
+                   (NGLess.NGError.N:NGLessIO[0] <(b,
+                                                   s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                               <GHC.Types.IO>_R <(b, s)>_N)
+                     r)
+                    `cast`
+                  (GHC.Types.N:IO[0] <(b, s)>_R)
+                    ipv })
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(b,
+                                   s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                       <GHC.Types.IO>_R
+                                                       <(b,
+                                                         s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(b,
+                                                                                                       s)>_N)))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    s NGLess.NGError.NGLessIO a>_R
+                 ->_R <Control.Monad.Trans.State.Lazy.StateT
+                         s NGLess.NGError.NGLessIO b>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)) -}
+13a9e6fefe3058dc17f92c8019eafe76
+  $s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> ::
+    Control.Monad.Trans.State.Lazy.StateT
+      s NGLess.NGError.NGLessIO (a -> b)
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C(C1(U(U,U(1*C1(U),1*U)))))><L,C(C1(C1(U(U,U(1*U,1*U)))))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (ds :: Control.Monad.Trans.State.Lazy.StateT
+                            s NGLess.NGError.NGLessIO (a -> b))
+                   (ds1 :: Control.Monad.Trans.State.Lazy.StateT
+                             s NGLess.NGError.NGLessIO a)
+                   (s1 :: s) ->
+                 let {
+                   ds2 :: NGLess.NGError.NGLessIO (a -> b, s)
+                   = ds
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <NGLess.NGError.NGLessIO>_R <a -> b>_N)
+                       s1
+                 } in
+                 (\ (r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case (ds2
+                          `cast`
+                        (NGLess.NGError.N:NGLessIO[0] <(a -> b,
+                                                        s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                    <GHC.Types.IO>_R
+                                                                    <(a -> b, s)>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <(a -> b, s)>_R)
+                         s2 of ds3 { (#,#) ipv ipv1 ->
+                  case ((ds1
+                           `cast`
+                         (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                              <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)
+                           (case ipv1 of wild { (,) f s' -> s' }))
+                          `cast`
+                        (NGLess.NGError.N:NGLessIO[0] <(a,
+                                                        s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                    <GHC.Types.IO>_R <(a, s)>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <(a, s)>_R)
+                         ipv of ds4 { (#,#) ipv2 ipv3 ->
+                  (# ipv2,
+                     (case ipv1 of wild { (,) f s' ->
+                      f (case ipv3 of wild1 { (,) x s'' -> x }) },
+                      case ipv3 of wild { (,) x s'' -> s'' }) #) } })
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(b,
+                                   s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                       <GHC.Types.IO>_R
+                                                       <(b,
+                                                         s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(b,
+                                                                                                       s)>_N)))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    s NGLess.NGError.NGLessIO (a -> b)>_R
+                 ->_R <Control.Monad.Trans.State.Lazy.StateT
+                         s NGLess.NGError.NGLessIO a>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)) -}
+12c583a855d81f7270bd9173c125c592
+  $s$fApplicativeStateT_$s$fApplicativeStateT_$cpure ::
+    a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO a
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,A><S,U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ s @ a (a1 :: a) (s1 :: s) ->
+                 let {
+                   eta :: (a, s) = (a1, s1)
+                 } in
+                 (\ (eta1 :: GHC.IORef.IORef
+                               Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  (# eta2, eta #))
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(a,
+                                   s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                       <GHC.Types.IO>_R
+                                                       <(a,
+                                                         s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(a,
+                                                                                                       s)>_N)))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)) -}
+d5425e6708381a824e82058d0f1f5b00
+  $s$fApplicativeStateT_$s$fFunctorStateT ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+                  (Control.Monad.Trans.State.Lazy.$fFunctorStateT_$cfmap
+                     @ NGLess.NGError.NGLessIO
+                     @ s
+                     NGLess.NGError.$fFunctorNGLessIO)
+                  (\ @ a
+                     @ b
+                     (x :: a)
+                     (eta :: Control.Monad.Trans.State.Lazy.StateT
+                               s NGLess.NGError.NGLessIO b)
+                     (eta1 :: s) ->
+                   let {
+                     ds :: NGLess.NGError.NGLessIO (b, s)
+                     = eta
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                            <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)
+                         eta1
+                   } in
+                   (\ (r :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                      (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    case (ds
+                            `cast`
+                          (NGLess.NGError.N:NGLessIO[0] <(b,
+                                                          s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                      <GHC.Types.IO>_R <(b, s)>_N)
+                            r)
+                           `cast`
+                         (GHC.Types.N:IO[0] <(b, s)>_R)
+                           s1 of ds1 { (#,#) ipv ipv1 ->
+                    (# ipv, (x, case ipv1 of wild { (,) a1 s' -> s' }) #) })
+                     `cast`
+                   ((<GHC.IORef.IORef
+                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <(a,
+                                     s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                         <GHC.Types.IO>_R
+                                                         <(a,
+                                                           s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(a,
+                                                                                                         s)>_N)))
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Control.Monad.Trans.State.Lazy.StateT
+                           s NGLess.NGError.NGLessIO b>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)) -}
+8ac818494c2b25151c52b5aeca3c60c7
+  $s$fMonadErroreReaderT ::
+    Control.Monad.Error.Class.MonadError
+      NGLess.NGError.NGError
+      (Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ r.
+                  @ NGLess.NGError.NGError
+                  @ (Control.Monad.Trans.Reader.ReaderT
+                       r (Data.Either.Either NGLess.NGError.NGError))
+                  (Interpret.$s$fMonadErroreReaderT_$s$fMonadReaderT @ r)
+                  (\ @ a (eta :: NGLess.NGError.NGError) ->
+                   let {
+                     m1 :: Data.Either.Either NGLess.NGError.NGError a
+                     = Data.Either.Left @ NGLess.NGError.NGError @ a eta
+                   } in
+                   (\ (ds :: r) -> m1)
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)))
+                  (\ @ a
+                     (eta :: Control.Monad.Trans.Reader.ReaderT
+                               r (Data.Either.Either NGLess.NGError.NGError) a)
+                     (eta1 :: NGLess.NGError.NGError
+                              -> Control.Monad.Trans.Reader.ReaderT
+                                   r (Data.Either.Either NGLess.NGError.NGError) a)
+                     (eta2 :: r) ->
+                   case eta
+                          `cast`
+                        (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                          eta2 of wild {
+                     Data.Either.Left l
+                     -> (eta1 l)
+                          `cast`
+                        (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                          eta2
+                     Data.Either.Right r1
+                     -> Data.Either.Right @ NGLess.NGError.NGError @ a r1 })
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Trans.Reader.ReaderT
+                      r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                   ->_R <NGLess.NGError.NGError
+                         -> Control.Monad.Trans.Reader.ReaderT
+                              r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                   ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)) -}
+26c7d6afca2459040f80cd2fce0e806c
+  $s$fMonadErroreReaderT1 ::
+    Control.Monad.Trans.Reader.ReaderT
+      r (Data.Either.Either NGLess.NGError.NGError) a
+    -> (NGLess.NGError.NGError
+        -> Control.Monad.Trans.Reader.ReaderT
+             r (Data.Either.Either NGLess.NGError.NGError) a)
+    -> r
+    -> Data.Either.Either NGLess.NGError.NGError a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(C1(U))><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ r
+                   @ a
+                   (eta :: Control.Monad.Trans.Reader.ReaderT
+                             r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (eta1 :: NGLess.NGError.NGError
+                            -> Control.Monad.Trans.Reader.ReaderT
+                                 r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (eta2 :: r) ->
+                 case eta
+                        `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                        eta2 of wild {
+                   Data.Either.Left l
+                   -> (eta1 l)
+                        `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                        eta2
+                   Data.Either.Right r1
+                   -> Data.Either.Right @ NGLess.NGError.NGError @ a r1 }) -}
+6177b64131f22006167c85b3b0a19ceb
+  $s$fMonadErroreReaderT_$s$fMonadReaderT ::
+    GHC.Base.Monad
+      (Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError))
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ r.
+                  @ (Control.Monad.Trans.Reader.ReaderT
+                       r (Data.Either.Either NGLess.NGError.NGError))
+                  (Interpret.$s$fApplicativeReaderT @ r)
+                  (Interpret.$s$fMonadErroreReaderT_$s$fMonadReaderT_$c>>= @ r)
+                  (Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c*> @ r)
+                  (\ @ a (eta :: a) ->
+                   let {
+                     m1 :: Data.Either.Either NGLess.NGError.NGError a
+                     = Data.Either.Right @ NGLess.NGError.NGError @ a eta
+                   } in
+                   (\ (ds :: r) -> m1)
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)))
+                  (Interpret.$s$fMonadErroreReaderT_$s$fMonadReaderT_$cfail @ r) -}
+c9ba4ecd828813f1f8169d86e5cbe7e7
+  $s$fMonadErroreReaderT_$s$fMonadReaderT_$c>>= ::
+    Control.Monad.Trans.Reader.ReaderT
+      r (Data.Either.Either NGLess.NGError.NGError) a
+    -> (a
+        -> Control.Monad.Trans.Reader.ReaderT
+             r (Data.Either.Either NGLess.NGError.NGError) b)
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(C1(U))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Reader.ReaderT
+                            r (Data.Either.Either NGLess.NGError.NGError) a)
+                   (k :: a
+                         -> Control.Monad.Trans.Reader.ReaderT
+                              r (Data.Either.Either NGLess.NGError.NGError) b)
+                   (r1 :: r) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N)
+                        r1 of wild {
+                   Data.Either.Left l
+                   -> Data.Either.Left @ NGLess.NGError.NGError @ b l
+                   Data.Either.Right r2
+                   -> (k r2)
+                        `cast`
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)
+                        r1 })
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Reader.ReaderT
+                    r (Data.Either.Either NGLess.NGError.NGError) a>_R
+                 ->_R <a
+                       -> Control.Monad.Trans.Reader.ReaderT
+                            r (Data.Either.Either NGLess.NGError.NGError) b>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <b>_N)) -}
+916883080829039f9ca0dba7c6f72a06
+  $s$fMonadErroreReaderT_$s$fMonadReaderT_$cfail ::
+    GHC.Base.String
+    -> Control.Monad.Trans.Reader.ReaderT
+         r (Data.Either.Either NGLess.NGError.NGError) a
+  {- Arity: 2, Strictness: <B,U><B,A>x, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ r @ a (msg :: GHC.Base.String) ->
+                 let {
+                   m1 :: Data.Either.Either NGLess.NGError.NGError a
+                     {- Strictness: x -}
+                   = GHC.Err.errorWithoutStackTrace
+                       @ 'GHC.Types.LiftedRep
+                       @ (Data.Either.Either NGLess.NGError.NGError a)
+                       msg
+                 } in
+                 (\ (ds :: r) -> m1)
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <r>_R <Data.Either.Either NGLess.NGError.NGError>_R <a>_N))) -}
+a04cd23920420036c06db7af6ac5a98e
+  $s$fMonadErroreStateT0 ::
+    Control.Monad.Error.Class.MonadError
+      NGLess.NGError.NGError
+      (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ NGLess.NGError.NGError
+                  @ (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+                  (Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT @ s)
+                  (\ @ a
+                     (eta :: NGLess.NGError.NGError)
+                     (s1 :: s)
+                     (r :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                     (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case GHC.Prim.raiseIO#
+                          @ GHC.Exception.Type.SomeException
+                          @ a
+                          (NGLess.NGError.$fExceptionNGError_$ctoException eta)
+                          s2
+                   ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, (a, s) #)
+                   of {})
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <NGLess.NGError.NGError>_R
+                   ->_R (<s>_R
+                         ->_R (<GHC.IORef.IORef
+                                  Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <(a,
+                                               s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                   <GHC.Types.IO>_R
+                                                                   <(a,
+                                                                     s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(a,
+                                                                                                                   s)>_N)) ; Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                                                                      <s>_N
+                                                                                                                                      <NGLess.NGError.NGLessIO>_R
+                                                                                                                                      <a>_N))
+                  (\ @ a
+                     (eta :: Control.Monad.Trans.State.Lazy.StateT
+                               s NGLess.NGError.NGLessIO a)
+                     (eta1 :: NGLess.NGError.NGError
+                              -> Control.Monad.Trans.State.Lazy.StateT
+                                   s NGLess.NGError.NGLessIO a)
+                     (eta2 :: s) ->
+                   case NGLess.NGError.$fMonadErrorNGErrorNGLessIO_$ccatchError
+                   ret_ty (NGLess.NGError.NGLessIO (a, s))
+                   of {})
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Trans.State.Lazy.StateT
+                      s NGLess.NGError.NGLessIO a>_R
+                   ->_R <NGLess.NGError.NGError
+                         -> Control.Monad.Trans.State.Lazy.StateT
+                              s NGLess.NGError.NGLessIO a>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)) -}
+3ad4dfba680f184b846ddc25b66429e5
+  $s$fMonadErroreStateT0_$s$fMonadStateT ::
+    GHC.Base.Monad
+      (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO)
+                  (Interpret.$s$fApplicativeStateT @ s)
+                  (Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT_$c>>= @ s)
+                  (Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT_$c>> @ s)
+                  (\ @ a (eta :: a) (eta1 :: s) ->
+                   let {
+                     eta2 :: (a, s) = (eta, eta1)
+                   } in
+                   (\ (eta3 :: GHC.IORef.IORef
+                                 Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                      (eta4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    (# eta4, eta2 #))
+                     `cast`
+                   ((<GHC.IORef.IORef
+                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <(a,
+                                     s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                         <GHC.Types.IO>_R
+                                                         <(a,
+                                                           s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(a,
+                                                                                                         s)>_N)))
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R
+                   ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                 <s>_N <NGLess.NGError.NGLessIO>_R <a>_N))
+                  (Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT_$cfail @ s) -}
+b2b6e081f3cbb811ec8172a085c787ee
+  $s$fMonadErroreStateT0_$s$fMonadStateT_$c>> ::
+    Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO a
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO b
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C(C1(U(U,1*U(A,1*U)))))><L,C(C1(C1(U)))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s NGLess.NGError.NGLessIO a)
+                   (k :: Control.Monad.Trans.State.Lazy.StateT
+                           s NGLess.NGError.NGLessIO b)
+                   (s1 :: s) ->
+                 let {
+                   ds :: NGLess.NGError.NGLessIO (a, s)
+                   = m1
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)
+                       s1
+                 } in
+                 (\ (r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case (ds
+                          `cast`
+                        (NGLess.NGError.N:NGLessIO[0] <(a,
+                                                        s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                    <GHC.Types.IO>_R <(a, s)>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <(a, s)>_R)
+                         s2 of ds1 { (#,#) ipv ipv1 ->
+                  ((k `cast`
+                    (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                         <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)
+                      (case ipv1 of wild { (,) a1 s' -> s' }))
+                     `cast`
+                   (NGLess.NGError.N:NGLessIO[0] <(b,
+                                                   s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                               <GHC.Types.IO>_R <(b, s)>_N)
+                     r)
+                    `cast`
+                  (GHC.Types.N:IO[0] <(b, s)>_R)
+                    ipv })
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(b,
+                                   s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                       <GHC.Types.IO>_R
+                                                       <(b,
+                                                         s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(b,
+                                                                                                       s)>_N)))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    s NGLess.NGError.NGLessIO a>_R
+                 ->_R <Control.Monad.Trans.State.Lazy.StateT
+                         s NGLess.NGError.NGLessIO b>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)) -}
+857e73cbc28ac78ed9ebedb3ca0ffd13
+  $s$fMonadErroreStateT0_$s$fMonadStateT_$c>>= ::
+    Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO a
+    -> (a
+        -> Control.Monad.Trans.State.Lazy.StateT
+             s NGLess.NGError.NGLessIO b)
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(C(C1(U(U,U(1*U,1*U)))))><L,C(C1(C1(C1(U))))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.State.Lazy.StateT
+                            s NGLess.NGError.NGLessIO a)
+                   (k :: a
+                         -> Control.Monad.Trans.State.Lazy.StateT
+                              s NGLess.NGError.NGLessIO b)
+                   (s1 :: s) ->
+                 let {
+                   ds :: NGLess.NGError.NGLessIO (a, s)
+                   = m1
+                       `cast`
+                     (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                          <s>_N <NGLess.NGError.NGLessIO>_R <a>_N)
+                       s1
+                 } in
+                 (\ (r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case (ds
+                          `cast`
+                        (NGLess.NGError.N:NGLessIO[0] <(a,
+                                                        s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                    <GHC.Types.IO>_R <(a, s)>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0] <(a, s)>_R)
+                         s2 of ds1 { (#,#) ipv ipv1 ->
+                  (((k (case ipv1 of wild { (,) a1 s' -> a1 }))
+                      `cast`
+                    (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                         <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)
+                      (case ipv1 of wild { (,) a1 s' -> s' }))
+                     `cast`
+                   (NGLess.NGError.N:NGLessIO[0] <(b,
+                                                   s)>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                               <GHC.Types.IO>_R <(b, s)>_N)
+                     r)
+                    `cast`
+                  (GHC.Types.N:IO[0] <(b, s)>_R)
+                    ipv })
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <(b,
+                                   s)>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                       <GHC.Types.IO>_R
+                                                       <(b,
+                                                         s)>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <(b,
+                                                                                                       s)>_N)))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Lazy.StateT
+                    s NGLess.NGError.NGLessIO a>_R
+                 ->_R <a
+                       -> Control.Monad.Trans.State.Lazy.StateT
+                            s NGLess.NGError.NGLessIO b>_R
+                 ->_R Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                               <s>_N <NGLess.NGError.NGLessIO>_R <b>_N)) -}
+b7c511d92d7c79ed54c6ff9b5d8eda0f
+  $s$fMonadErroreStateT0_$s$fMonadStateT_$cfail ::
+    GHC.Base.String
+    -> Control.Monad.Trans.State.Lazy.StateT
+         s NGLess.NGError.NGLessIO a
+  {- Arity: 2, Strictness: <B,U><B,A>x, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ @ s @ a (str :: GHC.Base.String) (ds :: s) ->
+                 GHC.Err.errorWithoutStackTrace
+                   @ 'GHC.Types.LiftedRep
+                   @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                        GHC.Types.IO (a, s))
+                   str)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <GHC.Base.String>_R
+                 ->_R (<s>_R
+                       ->_R Sym (NGLess.NGError.N:NGLessIO[0]) <(a,
+                                                                 s)>_N) ; Sym (Control.Monad.Trans.State.Lazy.N:StateT[0]
+                                                                                   <s>_N
+                                                                                   <NGLess.NGError.NGLessIO>_R
+                                                                                   <a>_N)) -}
+9952730f12b42dfe05a5607b1aa4ef05
+  $s$fMonadErroreStateT2 ::
+    Control.Monad.Trans.State.Lazy.StateT s NGLess.NGError.NGLessIO a
+    -> (NGLess.NGError.NGError
+        -> Control.Monad.Trans.State.Lazy.StateT
+             s NGLess.NGError.NGLessIO a)
+    -> s
+    -> NGLess.NGError.NGLessIO (a, s)
+  {- Arity: 3, Strictness: <B,A><B,A><B,A>b,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a
+                   (eta :: Control.Monad.Trans.State.Lazy.StateT
+                             s NGLess.NGError.NGLessIO a)
+                   (eta1 :: NGLess.NGError.NGError
+                            -> Control.Monad.Trans.State.Lazy.StateT
+                                 s NGLess.NGError.NGLessIO a)
+                   (eta2 :: s) ->
+                 case NGLess.NGError.$fMonadErrorNGErrorNGLessIO_$ccatchError
+                 ret_ty (NGLess.NGError.NGLessIO (a, s))
+                 of {}) -}
+a970b251f330573496d877074ecd2470
+  $tc'BlockContinued :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17070538667981790510##
+                   14422640206858264178##
+                   Interpret.$trModule
+                   Interpret.$tc'BlockContinued2
+                   0#
+                   Interpret.$tc'BlockContinued1) -}
+b91c23dd624588ff607a89128945b670
+  $tc'BlockContinued1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d779c2c7a85e8674bcab19bc874beb1d
+  $tc'BlockContinued2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'BlockContinued3) -}
+adbd82fba47dea40828209b8e749c3c7
+  $tc'BlockContinued3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BlockContinued"#) -}
+9ca9a0737b39924ee61780be5237d68b
+  $tc'BlockDiscarded :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15115555888606042094##
+                   7580953283190218867##
+                   Interpret.$trModule
+                   Interpret.$tc'BlockDiscarded1
+                   0#
+                   Interpret.$tc'BlockContinued1) -}
+454b3d3f5ab1dc9127db5c035fb6be68
+  $tc'BlockDiscarded1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'BlockDiscarded2) -}
+7db0a7d140c178c5e552c50b7906c6e3
+  $tc'BlockDiscarded2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BlockDiscarded"#) -}
+be223ceabd02c5ef6621723e41f17017
+  $tc'BlockOk :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15324594074859945738##
+                   14510602735289466956##
+                   Interpret.$trModule
+                   Interpret.$tc'BlockOk1
+                   0#
+                   Interpret.$tc'BlockContinued1) -}
+a97e9384129cc26de0bc0f422d9c02d9
+  $tc'BlockOk1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'BlockOk2) -}
+d99b89d9442ffd35be852d24d8874dcf
+  $tc'BlockOk2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BlockOk"#) -}
+892818847ae7bab4f60e99f7d021bdba
+  $tc'BlockResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10566510561138161216##
+                   3519733602260034639##
+                   Interpret.$trModule
+                   Interpret.$tc'BlockResult2
+                   0#
+                   Interpret.$tc'BlockResult1) -}
+d6d214ace821e87e9ed74d26a8dd97a9
+  $tc'BlockResult1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+72d68504838e58f445297b1011b595ab
+  $tc'BlockResult2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'BlockResult3) -}
+7d4bdddc5b90aba1aad46641e5ce9aa1
+  $tc'BlockResult3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BlockResult"#) -}
+2e86f818dee731c9d2cc72d2d9ef60cd
+  $tc'BlockVariables1 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18097939874739623698##
+                   11956364456183485447##
+                   Interpret.$trModule
+                   Interpret.$tc'BlockVariables3
+                   0#
+                   Interpret.$tc'BlockVariables2) -}
+3313447cf5ee49ee971a6cee1b2be599
+  $tc'BlockVariables2 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+71ec1beec5ea1e41a92ccd4928b4210b
+  $tc'BlockVariables3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'BlockVariables4) -}
+3e306ffad6af95ba76b3c2a96074d413
+  $tc'BlockVariables4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BlockVariables1"#) -}
+b40b2102b47d2467abdd042316affd19
+  $tc'NGLInterpretEnv :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10091721247320185976##
+                   18429991149945220219##
+                   Interpret.$trModule
+                   Interpret.$tc'NGLInterpretEnv2
+                   0#
+                   Interpret.$tc'NGLInterpretEnv1) -}
+d2c2fb0d63c7c019dc01732bce817361
+  $tc'NGLInterpretEnv1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b1f0ef9503d864c79499ce081a26e7ef
+  $tc'NGLInterpretEnv2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'NGLInterpretEnv3) -}
+906dcbb98544884fa400620f9d99d7bc
+  $tc'NGLInterpretEnv3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGLInterpretEnv"#) -}
+53ed7102d47333ba37a8501cad30f476
+  $tc'Paired :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8312314996506614445##
+                   1615025254563867580##
+                   Interpret.$trModule
+                   Interpret.$tc'Paired2
+                   0#
+                   Interpret.$tc'Paired1) -}
+16102f6c28bfc789fe4fce46bb68467e
+  $tc'Paired1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+61fb22cd9d78d658f146149eebce2bfa
+  $tc'Paired2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'Paired3) -}
+345e5588322dfaef620d36b470140e41
+  $tc'Paired3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Paired"#) -}
+5de39fe1da65e3c3909b1d02d57e537a
+  $tc'Single :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14465264746737497327##
+                   10022770346849661168##
+                   Interpret.$trModule
+                   Interpret.$tc'Single2
+                   0#
+                   Interpret.$tc'Single1) -}
+5f79f2eb4217bf503cfdf1fe7e145374
+  $tc'Single1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bc756982054e42b3a426ae354d2c9959
+  $tc'Single2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'Single3) -}
+d4ee2b2528af88eeb3c90ed26faece9c
+  $tc'Single3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Single"#) -}
+cb7e0d5202e426c7737260291509e25e
+  $tc'VariableMapBlock :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4303896219131600287##
+                   4624102413519011303##
+                   Interpret.$trModule
+                   Interpret.$tc'VariableMapBlock2
+                   0#
+                   Interpret.$tc'VariableMapBlock1) -}
+3de3d7dfeaa713c866e540b6fe63bde3
+  $tc'VariableMapBlock1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dd0a11b364775f0d7b282b02f11063a0
+  $tc'VariableMapBlock2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'VariableMapBlock3) -}
+efc00d287ca343f3b43a984f1d8f69e5
+  $tc'VariableMapBlock3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'VariableMapBlock"#) -}
+487358189389b687e10052ad33348e60
+  $tc'VariableMapGlobal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17854964601178543904##
+                   6241257484563753365##
+                   Interpret.$trModule
+                   Interpret.$tc'VariableMapGlobal2
+                   0#
+                   Interpret.$tc'VariableMapGlobal1) -}
+b7711a76214bf077b1c2c5df4dc7bd4e
+  $tc'VariableMapGlobal1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+33f126e2d9d09b992a0679e8203989bc
+  $tc'VariableMapGlobal2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tc'VariableMapGlobal3) -}
+129d4c6e3ff64aa01702850d170c8289
+  $tc'VariableMapGlobal3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'VariableMapGlobal"#) -}
+ea383734f8c2df7e869cc6d871d04003
+  $tcBlockResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16081735118045448719##
+                   16529596801092046487##
+                   Interpret.$trModule
+                   Interpret.$tcBlockResult1
+                   0#
+                   GHC.Types.krep$*) -}
+a858771f984fb76cc2936e222bd902c6
+  $tcBlockResult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tcBlockResult2) -}
+5f8e9a2096a60be1a57997982df50472
+  $tcBlockResult2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BlockResult"#) -}
+023afb0c6bd5c6bd8fcb8e06e487b027
+  $tcBlockStatus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   335624492770957355##
+                   12312766205379398531##
+                   Interpret.$trModule
+                   Interpret.$tcBlockStatus1
+                   0#
+                   GHC.Types.krep$*) -}
+5ff9103e4141734a618f7fb9659f5180
+  $tcBlockStatus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tcBlockStatus2) -}
+ab5f9d7c2bdde5fa67bd6a592d10f26f
+  $tcBlockStatus2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BlockStatus"#) -}
+d84c9db5714625848b8b2fc5df75275e
+  $tcBlockVariables :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13665127160024294765##
+                   9201072791527171685##
+                   Interpret.$trModule
+                   Interpret.$tcBlockVariables1
+                   0#
+                   GHC.Types.krep$*) -}
+835699294c805d733359761c50799130
+  $tcBlockVariables1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tcBlockVariables2) -}
+7f2210ade7c6a085cdbd93fb02850b0b
+  $tcBlockVariables2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BlockVariables"#) -}
+eba2552a315d1443b7a32b1975a5f88c
+  $tcNGLInterpretEnv :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13975533224798747067##
+                   15218638996267012213##
+                   Interpret.$trModule
+                   Interpret.$tcNGLInterpretEnv1
+                   0#
+                   GHC.Types.krep$*) -}
+3b6ca06f711c854127d20345d902310b
+  $tcNGLInterpretEnv1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tcNGLInterpretEnv2) -}
+d4a3b59e61a8e04470b7c4b03dd6ffc1
+  $tcNGLInterpretEnv2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLInterpretEnv"#) -}
+8213327161a6dcc5f960d4e15138dcc9
+  $tcPreprocessPairOutput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   73375153170867163##
+                   13663690857794024711##
+                   Interpret.$trModule
+                   Interpret.$tcPreprocessPairOutput1
+                   0#
+                   GHC.Types.krep$*) -}
+0b1451eff196b2f20cb678cdcdbc437e
+  $tcPreprocessPairOutput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpret.$tcPreprocessPairOutput2) -}
+821a31cbb0957506380f4eabbb8f20e6
+  $tcPreprocessPairOutput2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PreprocessPairOutput"#) -}
+252839ccd14b9ba631ad5efe042b7bd5
+  $tcVariableMap :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10083825521075308489##
+                   12607762388703588940##
+                   Interpret.$trModule
+                   Interpret.$tcVariableMap1
+                   0#
+                   GHC.Types.krep$*) -}
+2dd87bd1401a805a803b948fed896cdc
+  $tcVariableMap1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$tcVariableMap2) -}
+090c9379bacfb8e3eb04da8ded63e961
+  $tcVariableMap2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("VariableMap"#) -}
+1d8d3f1ab863ee91fc5e95c2c257eb65
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpret.$trModule3
+                   Interpret.$trModule1) -}
+9e69f066a468e935a5a969382b26c845
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$trModule2) -}
+4a73f137946985b9210412ef19f98500
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Interpret"#) -}
+ea9f59abfa3d5656213734605d9c9ac2
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpret.$trModule4) -}
+ec70c4e9510acea3af07e2fb27be9e89
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+8d274d8e62307887282899f313905ace
+  $w$c== ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.NGLessObject
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.NGLessObject
+    -> GHC.Types.Bool
+  {- Arity: 8,
+     Strictness: <L,U><L,U><S,U><L,1*U><L,U><L,U><S,U><L,1*U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: Language.NGLessObject)
+                   (ww4 :: GHC.Prim.ByteArray#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Int#)
+                   (ww7 :: Language.NGLessObject) ->
+                 case GHC.Prim.==# ww2 ww6 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             ww
+                             (GHC.Prim.int2Word# ww1)
+                             ww4
+                             (GHC.Prim.int2Word# ww5)
+                             (GHC.Prim.int2Word# ww2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild {
+                        DEFAULT -> GHC.Types.False
+                        0# -> Language.$fEqNGLessObject_$c== ww3 ww7 } } }) -}
+350443f4ad84d344623664f588dea47e
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Interpret.BlockStatus
+    -> Interpret.BlockVariables
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,1*U(U(U,U,U),1*U)>,
+     Inline: [2] -}
+ed4f38f0273290063407d69c5f92c1e3
+  $w$cshowsPrec1 :: Interpret.BlockStatus -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Interpret.BlockStatus) ->
+                 case w of wild {
+                   Interpret.BlockOk
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "BlockOk"#)
+                   Interpret.BlockDiscarded
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "BlockDiscarded"#)
+                   Interpret.BlockContinued
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "BlockContinued"#) }) -}
+bf1cd34d282aad8a4bc180873c9c43de
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.NGLessObject
+    -> GHC.Show.ShowS
+  {- Arity: 5, Strictness: <S,U><L,U><L,U><L,U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.ByteArray#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: Language.NGLessObject) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "BlockVariables1 "#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = Language.$fShowNGLessObject_$cshowsPrec (GHC.Types.I# 11#) ww4
+                 } in
+                 let {
+                   b1 :: Data.Text.Internal.Text = Data.Text.Internal.Text ww1 ww2 ww3
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       f1
+                       (case Data.Text.Show.$w$cshowsPrec
+                               b1
+                               (GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.showSpace1
+                                  (g x)) of ww5 { (#,#) ww6 ww7 ->
+                        GHC.Types.: @ GHC.Types.Char ww6 ww7 })
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)) }) -}
+c661141302307c7030d59b06c912d356
+  $w$sgo8 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map Data.Text.Internal.Text a1
+    -> Data.Map.Internal.Map Data.Text.Internal.Text a1
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><S,1*U><S,1*U>,
+     Inline: [2] -}
+6caec755009844638d553ca89eae8dca
+  $wgo13 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Internal.Map Data.Text.Internal.Text a
+    -> GHC.Maybe.Maybe a
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [2] -}
+f0017d5c326cc488597f4a7cf181e519
+  data BlockResult
+    = BlockResult {blockStatus :: !Interpret.BlockStatus,
+                   blockValues :: Interpret.BlockVariables}
+ed4f38f0273290063407d69c5f92c1e3
+  data BlockStatus = BlockOk | BlockDiscarded | BlockContinued
+9c8cfe8db783f12cd94d08fbc1f3976d
+  data BlockVariables
+    = BlockVariables1 !Data.Text.Internal.Text Language.NGLessObject
+fc2c22928227d08c4f923c42ebe04f07
+  type InterpretationEnvIO =
+    Control.Monad.Trans.State.Lazy.StateT
+      Interpret.NGLInterpretEnv NGLess.NGError.NGLessIO
+    :: * -> *
+f97d511e0cb48edcbc33dabfae1c96ae
+  type InterpretationROEnv =
+    Control.Monad.Trans.Reader.ReaderT
+      Interpret.NGLInterpretEnv NGLess.NGError.NGLess
+    :: * -> *
+b49f3cf5193d27e3ecad8c9b1ddb8ca4
+  data NGLInterpretEnv
+    = NGLInterpretEnv {ieModules :: [Modules.Module],
+                       ieVariableEnv :: Interpret.VariableMap}
+b34546679c8ef677902932dce749f434
+  data PreprocessPairOutput
+    = Paired !Data.FastQ.ShortRead !Data.FastQ.ShortRead
+    | Single !Data.FastQ.ShortRead
+07bf1a7e1328bc8b2ba37fe4449b12fc
+  type SimpleVariableMap =
+    Data.Map.Internal.Map Data.Text.Internal.Text Language.NGLessObject
+71c75e676718ea65c22bc7dfed15987c
+  data VariableMap
+    = VariableMapGlobal Interpret.SimpleVariableMap
+    | VariableMapBlock Interpret.BlockVariables
+                       Interpret.SimpleVariableMap
+f0017d5c326cc488597f4a7cf181e519
+  blockStatus :: Interpret.BlockResult -> Interpret.BlockStatus
+  RecSel Left Interpret.BlockResult
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpret.BlockResult) ->
+                 case ds of wild { Interpret.BlockResult ds1 ds2 -> ds1 }) -}
+f0017d5c326cc488597f4a7cf181e519
+  blockValues :: Interpret.BlockResult -> Interpret.BlockVariables
+  RecSel Left Interpret.BlockResult
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpret.BlockResult) ->
+                 case ds of wild { Interpret.BlockResult ds1 ds2 -> ds2 }) -}
+b49f3cf5193d27e3ecad8c9b1ddb8ca4
+  ieModules :: Interpret.NGLInterpretEnv -> [Modules.Module]
+  RecSel Left Interpret.NGLInterpretEnv
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpret.NGLInterpretEnv) ->
+                 case ds of wild { Interpret.NGLInterpretEnv ds1 ds2 -> ds1 }) -}
+b49f3cf5193d27e3ecad8c9b1ddb8ca4
+  ieVariableEnv :: Interpret.NGLInterpretEnv -> Interpret.VariableMap
+  RecSel Left Interpret.NGLInterpretEnv
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Interpret.NGLInterpretEnv) ->
+                 case ds of wild { Interpret.NGLInterpretEnv ds1 ds2 -> ds2 }) -}
+71e63de05a66309dc6580be42fb7375f
+  interpret ::
+    [Modules.Module]
+    -> [(GHC.Types.Int, Language.Expression)]
+    -> NGLess.NGError.NGLessIO ()
+  {- Arity: 2, Strictness: <L,U><L,1*U> -}
+instance GHC.Classes.Eq [Interpret.BlockResult]
+  = Interpret.$fEqBlockResult
+instance GHC.Classes.Eq [Interpret.BlockStatus]
+  = Interpret.$fEqBlockStatus
+instance GHC.Classes.Eq [Interpret.BlockVariables]
+  = Interpret.$fEqBlockVariables
+instance Control.DeepSeq.NFData [Interpret.PreprocessPairOutput]
+  = Interpret.$fNFDataPreprocessPairOutput
+instance GHC.Show.Show [Interpret.BlockResult]
+  = Interpret.$fShowBlockResult
+instance GHC.Show.Show [Interpret.BlockStatus]
+  = Interpret.$fShowBlockStatus
+instance GHC.Show.Show [Interpret.BlockVariables]
+  = Interpret.$fShowBlockVariables
+"SPEC/Interpret $fApplicativeReaderT @ (Either NGError) _" [orphan] forall @ r
+                                                                           (v :: GHC.Base.Applicative
+                                                                                   (Data.Either.Either
+                                                                                      NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fApplicativeReaderT @ (Data.Either.Either
+                                                       NGLess.NGError.NGError)
+                                                  @ r
+                                                  v
+  = Interpret.$s$fApplicativeReaderT @ r
+"SPEC/Interpret $fApplicativeReaderT_$c*> @ (Either NGError) _" [orphan] forall @ r
+                                                                                ($dApplicative :: GHC.Base.Applicative
+                                                                                                    (Data.Either.Either
+                                                                                                       NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fApplicativeReaderT_$c*> @ (Data.Either.Either
+                                                            NGLess.NGError.NGError)
+                                                       @ r
+                                                       $dApplicative
+  = Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c*> @ r
+"SPEC/Interpret $fApplicativeReaderT_$c<* @ (Either NGError) _" [orphan] forall @ r
+                                                                                ($dApplicative :: GHC.Base.Applicative
+                                                                                                    (Data.Either.Either
+                                                                                                       NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fApplicativeReaderT_$c<* @ (Data.Either.Either
+                                                            NGLess.NGError.NGError)
+                                                       @ r
+                                                       $dApplicative
+  = Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c<* @ r
+"SPEC/Interpret $fApplicativeReaderT_$c<*> @ (Either NGError) _" [orphan] forall @ r
+                                                                                 ($dApplicative :: GHC.Base.Applicative
+                                                                                                     (Data.Either.Either
+                                                                                                        NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fApplicativeReaderT_$c<*> @ (Data.Either.Either
+                                                             NGLess.NGError.NGError)
+                                                        @ r
+                                                        $dApplicative
+  = Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$c<*> @ r
+"SPEC/Interpret $fApplicativeReaderT_$cliftA2 @ (Either NGError) _" [orphan] forall @ r
+                                                                                    ($dApplicative :: GHC.Base.Applicative
+                                                                                                        (Data.Either.Either
+                                                                                                           NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fApplicativeReaderT_$cliftA2 @ (Data.Either.Either
+                                                                NGLess.NGError.NGError)
+                                                           @ r
+                                                           $dApplicative
+  = Interpret.$s$fApplicativeReaderT_$s$fApplicativeReaderT_$cliftA2
+      @ r
+"SPEC/Interpret $fApplicativeStateT @ NGLessIO _" [orphan] forall @ s
+                                                                  (v1 :: GHC.Base.Monad
+                                                                           NGLess.NGError.NGLessIO)
+                                                                  (v :: GHC.Base.Functor
+                                                                          NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT @ NGLess.NGError.NGLessIO
+                                                     @ s
+                                                     v
+                                                     v1
+  = Interpret.$s$fApplicativeStateT @ s
+"SPEC/Interpret $fApplicativeStateT_$c*> @ NGLessIO _" [orphan] forall @ s
+                                                                       ($dMonad :: GHC.Base.Monad
+                                                                                     NGLess.NGError.NGLessIO)
+                                                                       ($dFunctor :: GHC.Base.Functor
+                                                                                       NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$c*> @ NGLess.NGError.NGLessIO
+                                                          @ s
+                                                          $dFunctor
+                                                          $dMonad
+  = Interpret.$s$fApplicativeStateT_$s$fApplicativeStateT_$c*> @ s
+"SPEC/Interpret $fApplicativeStateT_$c<*> @ NGLessIO _" [orphan] forall @ s
+                                                                        ($dMonad :: GHC.Base.Monad
+                                                                                      NGLess.NGError.NGLessIO)
+                                                                        ($dFunctor :: GHC.Base.Functor
+                                                                                        NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$c<*> @ NGLess.NGError.NGLessIO
+                                                           @ s
+                                                           $dFunctor
+                                                           $dMonad
+  = Interpret.$s$fApplicativeStateT_$s$fApplicativeStateT_$c<*> @ s
+"SPEC/Interpret $fApplicativeStateT_$cpure @ NGLessIO _" [orphan] forall @ s
+                                                                         ($dMonad :: GHC.Base.Monad
+                                                                                       NGLess.NGError.NGLessIO)
+                                                                         ($dFunctor :: GHC.Base.Functor
+                                                                                         NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fApplicativeStateT_$cpure @ NGLess.NGError.NGLessIO
+                                                            @ s
+                                                            $dFunctor
+                                                            $dMonad
+  = Interpret.$s$fApplicativeStateT_$s$fApplicativeStateT_$cpure @ s
+"SPEC/Interpret $fFunctorReaderT @ (Either NGError) _" [orphan] forall @ r
+                                                                       (v :: GHC.Base.Functor
+                                                                               (Data.Either.Either
+                                                                                  NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fFunctorReaderT @ (Data.Either.Either
+                                                   NGLess.NGError.NGError)
+                                              @ r
+                                              v
+  = Interpret.$s$fApplicativeReaderT_$s$fFunctorReaderT @ r
+"SPEC/Interpret $fFunctorReaderT_$c<$ @ (Either NGError) _" [orphan] forall @ r
+                                                                            ($dFunctor :: GHC.Base.Functor
+                                                                                            (Data.Either.Either
+                                                                                               NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fFunctorReaderT_$c<$ @ (Data.Either.Either
+                                                        NGLess.NGError.NGError)
+                                                   @ r
+                                                   $dFunctor
+  = Interpret.$s$fApplicativeReaderT_$s$fFunctorReaderT_$c<$ @ r
+"SPEC/Interpret $fFunctorReaderT_$cfmap @ (Either NGError) _" [orphan] forall @ r
+                                                                              ($dFunctor :: GHC.Base.Functor
+                                                                                              (Data.Either.Either
+                                                                                                 NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fFunctorReaderT_$cfmap @ (Data.Either.Either
+                                                          NGLess.NGError.NGError)
+                                                     @ r
+                                                     $dFunctor
+  = Interpret.$s$fApplicativeReaderT_$s$fFunctorReaderT_$cfmap @ r
+"SPEC/Interpret $fFunctorStateT @ NGLessIO _" [orphan] forall @ s
+                                                              (v :: GHC.Base.Functor
+                                                                      NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fFunctorStateT @ NGLess.NGError.NGLessIO
+                                                 @ s
+                                                 v
+  = Interpret.$s$fApplicativeStateT_$s$fFunctorStateT @ s
+"SPEC/Interpret $fMonadErroreReaderT @ NGError @ (Either NGError) _" [orphan] forall @ r
+                                                                                     (v :: Control.Monad.Error.Class.MonadError
+                                                                                             NGLess.NGError.NGError
+                                                                                             (Data.Either.Either
+                                                                                                NGLess.NGError.NGError))
+  Control.Monad.Error.Class.$fMonadErroreReaderT @ NGLess.NGError.NGError
+                                                 @ (Data.Either.Either NGLess.NGError.NGError)
+                                                 @ r
+                                                 v
+  = Interpret.$s$fMonadErroreReaderT @ r
+"SPEC/Interpret $fMonadErroreReaderT1 @ NGError @ (Either NGError) _" [orphan] forall @ r
+                                                                                      ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                                                                                         NGLess.NGError.NGError
+                                                                                                         (Data.Either.Either
+                                                                                                            NGLess.NGError.NGError))
+  Control.Monad.Error.Class.$fMonadErroreReaderT1 @ NGLess.NGError.NGError
+                                                  @ (Data.Either.Either NGLess.NGError.NGError)
+                                                  @ r
+                                                  $dMonadError
+  = Interpret.$s$fMonadErroreReaderT1 @ r
+"SPEC/Interpret $fMonadErroreStateT0 @ NGError @ NGLessIO _" [orphan] forall @ s
+                                                                             (v :: Control.Monad.Error.Class.MonadError
+                                                                                     NGLess.NGError.NGError
+                                                                                     NGLess.NGError.NGLessIO)
+  Control.Monad.Error.Class.$fMonadErroreStateT0 @ NGLess.NGError.NGError
+                                                 @ NGLess.NGError.NGLessIO
+                                                 @ s
+                                                 v
+  = Interpret.$s$fMonadErroreStateT0 @ s
+"SPEC/Interpret $fMonadErroreStateT2 @ NGError @ NGLessIO _" [orphan] forall @ s
+                                                                             ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                                                                                NGLess.NGError.NGError
+                                                                                                NGLess.NGError.NGLessIO)
+  Control.Monad.Error.Class.$fMonadErroreStateT2 @ NGLess.NGError.NGError
+                                                 @ NGLess.NGError.NGLessIO
+                                                 @ s
+                                                 $dMonadError
+  = Interpret.$s$fMonadErroreStateT2 @ s
+"SPEC/Interpret $fMonadReaderT @ (Either NGError) _" [orphan] forall @ r
+                                                                     (v :: GHC.Base.Monad
+                                                                             (Data.Either.Either
+                                                                                NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fMonadReaderT @ (Data.Either.Either
+                                                 NGLess.NGError.NGError)
+                                            @ r
+                                            v
+  = Interpret.$s$fMonadErroreReaderT_$s$fMonadReaderT @ r
+"SPEC/Interpret $fMonadReaderT_$c>>= @ (Either NGError) _" [orphan] forall @ r
+                                                                           ($dMonad :: GHC.Base.Monad
+                                                                                         (Data.Either.Either
+                                                                                            NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fMonadReaderT_$c>>= @ (Data.Either.Either
+                                                       NGLess.NGError.NGError)
+                                                  @ r
+                                                  $dMonad
+  = Interpret.$s$fMonadErroreReaderT_$s$fMonadReaderT_$c>>= @ r
+"SPEC/Interpret $fMonadReaderT_$cfail @ (Either NGError) _" [orphan] forall @ r
+                                                                            ($dMonad :: GHC.Base.Monad
+                                                                                          (Data.Either.Either
+                                                                                             NGLess.NGError.NGError))
+  Control.Monad.Trans.Reader.$fMonadReaderT_$cfail @ (Data.Either.Either
+                                                        NGLess.NGError.NGError)
+                                                   @ r
+                                                   $dMonad
+  = Interpret.$s$fMonadErroreReaderT_$s$fMonadReaderT_$cfail @ r
+"SPEC/Interpret $fMonadStateT @ NGLessIO _" [orphan] forall @ s
+                                                            (v :: GHC.Base.Monad
+                                                                    NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT @ NGLess.NGError.NGLessIO
+                                               @ s
+                                               v
+  = Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT @ s
+"SPEC/Interpret $fMonadStateT_$c>> @ NGLessIO _" [orphan] forall @ s
+                                                                 ($dMonad :: GHC.Base.Monad
+                                                                               NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT_$c>> @ NGLess.NGError.NGLessIO
+                                                    @ s
+                                                    $dMonad
+  = Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT_$c>> @ s
+"SPEC/Interpret $fMonadStateT_$c>>= @ NGLessIO _" [orphan] forall @ s
+                                                                  ($dMonad :: GHC.Base.Monad
+                                                                                NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT_$c>>= @ NGLess.NGError.NGLessIO
+                                                     @ s
+                                                     $dMonad
+  = Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT_$c>>= @ s
+"SPEC/Interpret $fMonadStateT_$cfail @ NGLessIO _" [orphan] forall @ s
+                                                                   ($dMonad :: GHC.Base.Monad
+                                                                                 NGLess.NGError.NGLessIO)
+  Control.Monad.Trans.State.Lazy.$fMonadStateT_$cfail @ NGLess.NGError.NGLessIO
+                                                      @ s
+                                                      $dMonad
+  = Interpret.$s$fMonadErroreStateT0_$s$fMonadStateT_$cfail @ s
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

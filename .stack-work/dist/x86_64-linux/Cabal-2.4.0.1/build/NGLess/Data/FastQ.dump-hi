@@ -1,0 +1,2989 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:42.872059235 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Data.FastQ 8065
+  interface hash: d0f21c1558633b716bf114a474015446
+  ABI hash: 683044f508718e436592cbb72ea87fc2
+  export-list hash: 7f3c9451f8064311c68af66858502794
+  orphan hash: 32928aecb25e84c564b09b91603132c3
+  flag hash: 441576789aa015b196bc5010d866c61a
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Data.FastQ.encodingName
+  Data.FastQ.fqDecodeC
+  Data.FastQ.fqDecodeVector
+  Data.FastQ.fqEncode
+  Data.FastQ.fqEncodeC
+  Data.FastQ.fqStatsC
+  Data.FastQ.gcFraction
+  Data.FastQ.interleaveFQs
+  Data.FastQ.nBasepairs
+  Data.FastQ.nonATCGFrac
+  Data.FastQ.qualityPercentiles
+  Data.FastQ.srLength
+  Data.FastQ.srSlice
+  Data.FastQ.statsFromFastQ
+  Data.FastQ.FQStatistics{Data.FastQ.FQStatistics bpCounts lc nSeq qualCounts seqSize}
+  Data.FastQ.FastQEncoding{Data.FastQ.SangerEncoding Data.FastQ.SolexaEncoding}
+  Data.FastQ.FastQFilePath{Data.FastQ.FastQFilePath fqpathEncoding fqpathFilePath}
+  Data.FastQ.ReadSet{Data.FastQ.ReadSet pairedSamples singleSamples}
+  Data.FastQ.ShortRead{Data.FastQ.ShortRead srHeader srQualities srSequence}
+module dependencies: NGLess.NGError Utils.Conduit Utils.Vector
+package dependencies: ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 async-2.2.2 attoparsec-0.13.2.3 base-4.12.0.0
+                      binary-0.8.6.0 bytestring-0.10.8.2 bzlib-conduit-0.3.0.2
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      conduit-1.3.1.2 conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 containers-0.6.0.1 data-default-class-0.1.2.0
+                      deepseq-1.4.4.0 directory-1.3.3.0 exceptions-0.10.4
+                      filepath-1.4.2.1 ghc-boot-th-8.6.5 ghc-prim-0.5.3 hashable-1.2.7.0
+                      inline-c-0.7.0.1 integer-gmp-1.0.2.0 integer-logarithms-1.0.3
+                      lzma-0.0.0.3 lzma-conduit-1.2.1 monad-loops-0.4.3
+                      mono-traversable-1.0.15.1 mtl-2.2.2 parsec-3.1.14.0 parsers-0.12.10
+                      pretty-1.1.3.6 primitive-0.6.4.0 resourcet-1.2.2 scientific-0.3.6.2
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      time-1.8.0.2 transformers-0.5.6.2 unix-2.7.2.2 unliftio-0.2.12
+                      unliftio-core-0.1.2.0 unordered-containers-0.2.10.0 vector-0.12.0.3
+                      vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian colour-2.3.5:Data.Colour
+         stm-2.5.0.0:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGError 9741b2ef5fc8e673ccaf43057baf92e8
+  NGLess 416e5726ee4c4987c25367d545064990
+  runNGLess a41ed825730df1edb93a7b2b931843fe
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine ac33b1a48ce77fc02979f39021c406e3
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  linesC 74def1591ec8f05f38349accac761045
+  unwrapByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+import  -/  Utils.Vector 5a19fcc9929de2aa222b9c331256d2a5
+  exports: 80988af34b6a3a14d73a505b40412fce
+  unsafeIncrement 15b3d819c922f3e53e161702fd99d287
+import  -/  base-4.12.0.0:Control.Exception 041da5b6267cf6b639ff5716d5b299a9
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Char 74f67fe9150a102afa18766e840f6832
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.IORef e8e1ce7d64831ebb3853a1cd9fb4e228
+import  -/  base-4.12.0.0:Data.Int e78f203d621836c59d5015a8a0e4eaea
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.Monoid 12b87658decc811c5251626260c01aeb
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Void 7d507f34fb7b7291298961d8e654089b
+import  -/  base-4.12.0.0:Data.Word 6b968b6c7df442cfcad986e497aee095
+import  -/  base-4.12.0.0:Foreign.C.String 0a3f80ba7b2aa9e11d55c12720a0f747
+import  -/  base-4.12.0.0:Foreign.C.Types 35a1d321965626990bdd0f18683810e2
+import  -/  base-4.12.0.0:Foreign.Ptr d73fd0b9772a485c35f8296dd7001ea9
+import  -/  base-4.12.0.0:Foreign.Storable 379843bb6beffe814f03155babd3a2a1
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.IORef c4811a8ca9fa1f2f983a2e196af9a59c
+import  -/  base-4.12.0.0:GHC.Int 75a738083d98da9ebef0ff75df759462
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Ptr 68f634dc6eacf2af10dbc7ca1b1e41cb
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:GHC.Unicode 87726eb81a3f9c9b22160a0afd5dc56a
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO.Unsafe e8c0e3a0a9cf9814796832fe86e2e8a6
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Unsafe 776fbb495c4caeeff10435741858143b
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  exceptions-0.10.4:Control.Monad.Catch 85f48efbbcf90183fbe41164b686a061
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  inline-c-0.7.0.1:Language.C.Inline 15cdffd711c89901cb85f27a80d5bc1f
+import  -/  inline-c-0.7.0.1:Language.C.Inline.Context a15a127b8f223e268729c844d02d13f5
+import  -/  inline-c-0.7.0.1:Language.C.Inline.Unsafe c2e7fdfdb71e44c1806d86cf97c74299
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 6d87087aea24143d2650f78480d954a3
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource.Internal 501d62f3c9254d0531a3c1329c03910f
+import  -/  unliftio-core-0.1.2.0:Control.Monad.IO.Unlift f8f4d10cc7b67433826b7a5b824acd4c
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+import  -/  vector-0.12.0.3:Data.Vector.Storable 96d3c1076ef135fbf75fb6a0596d2d3b
+import  -/  vector-0.12.0.3:Data.Vector.Storable.Mutable 69d2b3884a855fd956ec21233a734944
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed 5733715c11577ecd2bc59749298e28f2
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Base 311d017e8e964b88d4827a5ad52e1e15
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Mutable 692d6e5c74ab0fb1d5a9b9ead57292d3
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+e855b69d2b4c4b672e98f4cca1339e27
+  $fBoundedFastQEncoding :: GHC.Enum.Bounded Data.FastQ.FastQEncoding
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQEncoding
+                  Data.FastQ.SangerEncoding
+                  Data.FastQ.SolexaEncoding -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding :: GHC.Enum.Enum Data.FastQ.FastQEncoding
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQEncoding
+                  Data.FastQ.$fEnumFastQEncoding_$csucc
+                  Data.FastQ.$fEnumFastQEncoding_$cpred
+                  Data.FastQ.$fEnumFastQEncoding_$ctoEnum
+                  Data.FastQ.$fEnumFastQEncoding_$cfromEnum
+                  Data.FastQ.$fEnumFastQEncoding_$cenumFrom
+                  Data.FastQ.$fEnumFastQEncoding_$cenumFromThen
+                  Data.FastQ.$fEnumFastQEncoding_$cenumFromTo
+                  Data.FastQ.$fEnumFastQEncoding_$cenumFromThenTo -}
+5324823835f98f362d9670876c4ca45c
+  $fEnumFastQEncoding1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Data.FastQ.$fEnumFastQEncoding12
+                   Data.FastQ.$fEnumFastQEncoding2
+                   GHC.Stack.Types.EmptyCallStack) -}
+f03b97341ca2c8bd5eb56e7b41c31156
+  $fEnumFastQEncoding10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.FastQ.$fEnumFastQEncoding11) -}
+dd2c659e84c7361be591c5b32e3bbd88
+  $fEnumFastQEncoding11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+fc6a5b8435dec69c58aa0868c8f45105
+  $fEnumFastQEncoding12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.FastQ.$fEnumFastQEncoding13) -}
+9492a6df440b863ff10dd1ca50a5f011
+  $fEnumFastQEncoding13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("error"#) -}
+17e5a5d18a71819fd661a896f9d652f4
+  $fEnumFastQEncoding2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Data.FastQ.$fEnumFastQEncoding10
+                   Data.FastQ.$fEnumFastQEncoding8
+                   Data.FastQ.$fEnumFastQEncoding6
+                   Data.FastQ.$fEnumFastQEncoding5
+                   Data.FastQ.$fEnumFastQEncoding4
+                   Data.FastQ.$fEnumFastQEncoding5
+                   Data.FastQ.$fEnumFastQEncoding3) -}
+8774945ec82020ab7c7c19dbefc1aa35
+  $fEnumFastQEncoding3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 81#) -}
+552009a4b3c7146ee150a7d3c813ae50
+  $fEnumFastQEncoding4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 77#) -}
+9baa2b4bd8b19ce748416e87bfb69987
+  $fEnumFastQEncoding5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 89#) -}
+69175a197e9e10930182947bf56b45e5
+  $fEnumFastQEncoding6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.FastQ.$fEnumFastQEncoding7) -}
+2d4b318d2973be721166dcc0cfae04b6
+  $fEnumFastQEncoding7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLess/Data/FastQ.hs"#) -}
+584f2b9861c66a16cab262d0a6017ad5
+  $fEnumFastQEncoding8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Data.FastQ.$fEnumFastQEncoding9) -}
+23326807d3398ca0a597ef98bb341097
+  $fEnumFastQEncoding9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.FastQ"#) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$cenumFrom ::
+    Data.FastQ.FastQEncoding -> [Data.FastQ.FastQEncoding]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Data.FastQ.FastQEncoding) ->
+                 case a of wild {
+                   Data.FastQ.SangerEncoding
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Data.FastQ.FastQEncoding]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Data.FastQ.FastQEncoding
+                            (GHC.Prim.tagToEnum# @ Data.FastQ.FastQEncoding x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               1# -> GHC.Types.[] @ Data.FastQ.FastQEncoding })
+                      } in
+                      go 0#
+                   Data.FastQ.SolexaEncoding
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Data.FastQ.FastQEncoding]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Data.FastQ.FastQEncoding
+                            (GHC.Prim.tagToEnum# @ Data.FastQ.FastQEncoding x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               1# -> GHC.Types.[] @ Data.FastQ.FastQEncoding })
+                      } in
+                      go 1# }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$cenumFromThen ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> [Data.FastQ.FastQEncoding]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$cenumFromThenTo ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding
+    -> [Data.FastQ.FastQEncoding]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$cenumFromTo ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> [Data.FastQ.FastQEncoding]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Data.FastQ.FastQEncoding)
+                   (y :: Data.FastQ.FastQEncoding) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Data.FastQ.FastQEncoding]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Data.FastQ.SangerEncoding
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Data.FastQ.FastQEncoding]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Data.FastQ.FastQEncoding
+                                     (Data.FastQ.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        0# -> GHC.Types.[] @ Data.FastQ.FastQEncoding })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Data.FastQ.FastQEncoding }
+                       Data.FastQ.SolexaEncoding
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Data.FastQ.FastQEncoding]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Data.FastQ.FastQEncoding
+                                     (Data.FastQ.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        1# -> GHC.Types.[] @ Data.FastQ.FastQEncoding })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Data.FastQ.FastQEncoding } }
+                 } in
+                 case x of wild {
+                   Data.FastQ.SangerEncoding -> $j 0#
+                   Data.FastQ.SolexaEncoding -> $j 1# }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$cfromEnum ::
+    Data.FastQ.FastQEncoding -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Data.FastQ.FastQEncoding) ->
+                 case a of wild {
+                   Data.FastQ.SangerEncoding -> GHC.Types.I# 0#
+                   Data.FastQ.SolexaEncoding -> GHC.Types.I# 1# }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$cpred ::
+    Data.FastQ.FastQEncoding -> Data.FastQ.FastQEncoding
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Data.FastQ.FastQEncoding) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Data.FastQ.FastQEncoding
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum#
+                            @ Data.FastQ.FastQEncoding
+                            (GHC.Prim.+# wild -1#)
+                       0#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ Data.FastQ.FastQEncoding
+                            Data.FastQ.$fEnumFastQEncoding1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "pred{FastQEncoding}: tried to take `pred' of first tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   Data.FastQ.SangerEncoding -> $j 0#
+                   Data.FastQ.SolexaEncoding -> $j 1# }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$csucc ::
+    Data.FastQ.FastQEncoding -> Data.FastQ.FastQEncoding
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Data.FastQ.FastQEncoding) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Data.FastQ.FastQEncoding
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum#
+                            @ Data.FastQ.FastQEncoding
+                            (GHC.Prim.+# wild 1#)
+                       1#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ Data.FastQ.FastQEncoding
+                            Data.FastQ.$fEnumFastQEncoding1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "succ{FastQEncoding}: tried to take `succ' of last tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   Data.FastQ.SangerEncoding -> $j 0#
+                   Data.FastQ.SolexaEncoding -> $j 1# }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEnumFastQEncoding_$ctoEnum ::
+    GHC.Types.Int -> Data.FastQ.FastQEncoding
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Data.FastQ.$w$ctoEnum ww1 }) -}
+11aa39266698c671bdb4006bd7133475
+  $fEqFQStatistics :: GHC.Classes.Eq Data.FastQ.FQStatistics
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FQStatistics
+                  Data.FastQ.$fEqFQStatistics_$c==
+                  Data.FastQ.$fEqFQStatistics_$c/= -}
+11aa39266698c671bdb4006bd7133475
+  $fEqFQStatistics_$c/= ::
+    Data.FastQ.FQStatistics
+    -> Data.FastQ.FQStatistics -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S(S)LLLL)LLLL),1*U(1*U(1*U(U),1*U(U),1*U(U),1*U(U),1*U(U)),U,1*U,U,1*U(1*U(U),1*U(U)))><S(S(S(S)LLLL)LLLL),1*U(1*U(1*U(U),1*U(U),1*U(U),1*U(U),1*U(U)),U,1*U,U,1*U(1*U(U),1*U(U)))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.FastQ.FQStatistics) (y :: Data.FastQ.FQStatistics) ->
+                 case Data.FastQ.$fEqFQStatistics_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+11aa39266698c671bdb4006bd7133475
+  $fEqFQStatistics_$c== ::
+    Data.FastQ.FQStatistics
+    -> Data.FastQ.FQStatistics -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S(S)LLLL)LLLL),1*U(1*U(1*U(U),1*U(U),1*U(U),1*U(U),1*U(U)),U,1*U,U,1*U(1*U(U),1*U(U)))><S(S(S(S)LLLL)LLLL),1*U(1*U(1*U(U),1*U(U),1*U(U),1*U(U),1*U(U)),U,1*U,U,1*U(1*U(U),1*U(U)))>,
+     Unfolding: (\ (ds :: Data.FastQ.FQStatistics)
+                   (ds1 :: Data.FastQ.FQStatistics) ->
+                 case ds of wild { Data.FastQ.FQStatistics a1 dt a3 dt1 a5 ->
+                 case ds1 of wild1 { Data.FastQ.FQStatistics b1 dt2 b3 dt3 b5 ->
+                 case a1 of wild2 { (,,,,) a2 a4 a6 a7 a8 ->
+                 case b1 of wild3 { (,,,,) b2 b4 b6 b7 b8 ->
+                 case a2 of wild4 { GHC.Types.I# x ->
+                 case b2 of wild5 { GHC.Types.I# y ->
+                 case GHC.Prim.==# x y of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case a4 of wild6 { GHC.Types.I# x1 ->
+                      case b4 of wild7 { GHC.Types.I# y1 ->
+                      case GHC.Prim.==# x1 y1 of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case a6 of wild8 { GHC.Types.I# x2 ->
+                           case b6 of wild9 { GHC.Types.I# y2 ->
+                           case GHC.Prim.==# x2 y2 of lwild2 {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case a7 of wild10 { GHC.Types.I# x3 ->
+                                case b7 of wild11 { GHC.Types.I# y3 ->
+                                case GHC.Prim.==# x3 y3 of lwild3 {
+                                  DEFAULT -> GHC.Types.False
+                                  1#
+                                  -> case a8 of wild12 { GHC.Types.I# x4 ->
+                                     case b8 of wild13 { GHC.Types.I# y4 ->
+                                     case GHC.Prim.==# x4 y4 of lwild4 {
+                                       DEFAULT -> GHC.Types.False
+                                       1#
+                                       -> case GHC.Prim.==# dt dt2 of lwild5 {
+                                            DEFAULT -> GHC.Types.False
+                                            1#
+                                            -> case GHC.Classes.$fEq[]_$c==
+                                                      @ (Data.Vector.Unboxed.Base.Vector
+                                                           GHC.Types.Int)
+                                                      Data.FastQ.$fEqFQStatistics_$s$fEqVector
+                                                      a3
+                                                      b3 of wild14 {
+                                                 GHC.Types.False -> GHC.Types.False
+                                                 GHC.Types.True
+                                                 -> case GHC.Prim.==# dt1 dt3 of lwild6 {
+                                                      DEFAULT -> GHC.Types.False
+                                                      1#
+                                                      -> case a5 of ww3 { (,) ww4 ww5 ->
+                                                         case b5 of ww6 { (,) ww7 ww8 ->
+                                                         case ww4 of wild15 { GHC.Types.I# x5 ->
+                                                         case ww7 of wild16 { GHC.Types.I# y5 ->
+                                                         case GHC.Prim.==# x5 y5 of lwild7 {
+                                                           DEFAULT -> GHC.Types.False
+                                                           1#
+                                                           -> GHC.Classes.eqInt
+                                                                ww5
+                                                                ww8 } } } } } } } } } } } } } } } } } } } } } } } } } } }) -}
+bc5ca32f7da7afbe943e52b64ba475a7
+  $fEqFQStatistics_$s$fEqVector ::
+    GHC.Classes.Eq (Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                  Data.FastQ.$fEqFQStatistics_$s$fEqVector_$c==
+                  Data.FastQ.$fEqFQStatistics_$s$fEqVector_$c/= -}
+91af424d0360b9bee4d443f20914131f
+  $fEqFQStatistics_$s$fEqVector_$c/= ::
+    Data.Vector.Unboxed.Base.Vector GHC.Types.Int
+    -> Data.Vector.Unboxed.Base.Vector GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LSL),1*U(U,U,U)><S(LSL),1*U(U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (xs :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                   (ys :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int) ->
+                 case (Data.Vector.Fusion.Bundle.Monadic.eqBy
+                         @ Data.Vector.Fusion.Util.Id
+                         @ GHC.Types.Int
+                         @ GHC.Types.Int
+                         @ Data.Vector.Unboxed.Base.Vector
+                         Data.Vector.Fusion.Util.$fMonadId
+                         GHC.Classes.eqInt
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Unboxed.Base.Vector
+                            @ GHC.Types.Int
+                            Data.Vector.Unboxed.Base.$fVectorVectorInt
+                            xs)
+                         (Data.Vector.Generic.stream
+                            @ Data.Vector.Unboxed.Base.Vector
+                            @ GHC.Types.Int
+                            Data.Vector.Unboxed.Base.$fVectorVectorInt
+                            ys))
+                        `cast`
+                      (Data.Vector.Fusion.Util.N:Id[0] <GHC.Types.Bool>_R) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+17dd7e9fed81e469abcdd0ea2f98623d
+  $fEqFQStatistics_$s$fEqVector_$c== ::
+    Data.Vector.Unboxed.Base.Vector GHC.Types.Int
+    -> Data.Vector.Unboxed.Base.Vector GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (xs :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                   (ys :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int) ->
+                 Data.Vector.Fusion.Bundle.Monadic.eqBy
+                   @ Data.Vector.Fusion.Util.Id
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   @ Data.Vector.Unboxed.Base.Vector
+                   Data.Vector.Fusion.Util.$fMonadId
+                   GHC.Classes.eqInt
+                   (Data.Vector.Generic.stream
+                      @ Data.Vector.Unboxed.Base.Vector
+                      @ GHC.Types.Int
+                      Data.Vector.Unboxed.Base.$fVectorVectorInt
+                      xs)
+                   (Data.Vector.Generic.stream
+                      @ Data.Vector.Unboxed.Base.Vector
+                      @ GHC.Types.Int
+                      Data.Vector.Unboxed.Base.$fVectorVectorInt
+                      ys))
+                  `cast`
+                (<Data.Vector.Unboxed.Base.Vector GHC.Types.Int>_R
+                 ->_R <Data.Vector.Unboxed.Base.Vector GHC.Types.Int>_R
+                 ->_R Data.Vector.Fusion.Util.N:Id[0] <GHC.Types.Bool>_R) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEqFastQEncoding :: GHC.Classes.Eq Data.FastQ.FastQEncoding
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQEncoding
+                  Data.FastQ.$fEqFastQEncoding_$c==
+                  Data.FastQ.$fEqFastQEncoding_$c/= -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEqFastQEncoding_$c/= ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.FastQ.FastQEncoding)
+                   (y :: Data.FastQ.FastQEncoding) ->
+                 case x of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case y of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.False
+                        Data.FastQ.SolexaEncoding -> GHC.Types.True }
+                   Data.FastQ.SolexaEncoding
+                   -> case y of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.True
+                        Data.FastQ.SolexaEncoding -> GHC.Types.False } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fEqFastQEncoding_$c== ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Data.FastQ.FastQEncoding)
+                   (ds1 :: Data.FastQ.FastQEncoding) ->
+                 case ds of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case ds1 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.True
+                        Data.FastQ.SolexaEncoding -> GHC.Types.False }
+                   Data.FastQ.SolexaEncoding
+                   -> case ds1 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.False
+                        Data.FastQ.SolexaEncoding -> GHC.Types.True } }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fEqFastQFilePath :: GHC.Classes.Eq Data.FastQ.FastQFilePath
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQFilePath
+                  Data.FastQ.$fEqFastQFilePath_$c==
+                  Data.FastQ.$fEqFastQFilePath_$c/= -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fEqFastQFilePath_$c/= ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.FastQ.FastQFilePath)
+                   (y :: Data.FastQ.FastQFilePath) ->
+                 case Data.FastQ.$fEqFastQFilePath_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fEqFastQFilePath_$c== ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.FastQFilePath)
+                   (w1 :: Data.FastQ.FastQFilePath) ->
+                 case w of ww { Data.FastQ.FastQFilePath ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.FastQFilePath ww4 ww5 ->
+                 case ww1 of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case ww4 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Base.eqString ww2 ww5
+                        Data.FastQ.SolexaEncoding -> GHC.Types.False }
+                   Data.FastQ.SolexaEncoding
+                   -> case ww4 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.False
+                        Data.FastQ.SolexaEncoding -> GHC.Base.eqString ww2 ww5 } } } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fEqReadSet :: GHC.Classes.Eq Data.FastQ.ReadSet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.ReadSet
+                  Data.FastQ.$fEqReadSet_$c==
+                  Data.FastQ.$fEqReadSet_$c/= -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fEqReadSet_$c/= ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.FastQ.ReadSet) (y :: Data.FastQ.ReadSet) ->
+                 case Data.FastQ.$fEqReadSet_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fEqReadSet_$c== ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 Data.FastQ.$w$c== ww1 ww2 ww4 ww5 } }) -}
+dbaead9945aadf05982b18302da5d702
+  $fEqReadSet_$s$fEq(,) ::
+    GHC.Classes.Eq (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fEqFastQFilePath
+                     Data.FastQ.$fEqFastQFilePath)
+                  Data.FastQ.$fEqReadSet_$s$fEq(,)_$c/= -}
+35bfbbbaeb97b9c7559bed488a24fa6d
+  $fEqReadSet_$s$fEq(,)_$c/= ::
+    (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+    -> (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SL)L),1*U(1*U(U,1*U),1*U(U,1*U))><S(S(SL)L),1*U(1*U(U,1*U),1*U(U,1*U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath))
+                   (y :: (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)) ->
+                 case x of wild { (,) a1 a2 ->
+                 case y of wild1 { (,) b1 b2 ->
+                 case Data.FastQ.$fEqFastQFilePath_$c== a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case Data.FastQ.$fEqFastQFilePath_$c== a2 b2 of wild3 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } } } }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fEqShortRead :: GHC.Classes.Eq Data.FastQ.ShortRead
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.ShortRead
+                  Data.FastQ.$fEqShortRead_$c==
+                  Data.FastQ.$fEqShortRead_$c/= -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fEqShortRead_$c/= ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(LLLS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.FastQ.ShortRead) (y :: Data.FastQ.ShortRead) ->
+                 case Data.FastQ.$fEqShortRead_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fEqShortRead_$c== ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(LLLS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: (\ (ds :: Data.FastQ.ShortRead)
+                   (ds1 :: Data.FastQ.ShortRead) ->
+                 case ds of wild { Data.FastQ.ShortRead a1 a2 a3 ->
+                 case ds1 of wild1 { Data.FastQ.ShortRead b1 b2 b3 ->
+                 case a1 of wild2 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case b1 of wild3 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                 case GHC.Prim./=# dt3 dt7 of lwild {
+                   DEFAULT
+                   -> let {
+                        $j :: GHC.Types.Bool <join 0>
+                        = case a2 of wild4 { Data.ByteString.Internal.PS dt11 dt12 dt13 dt14 ->
+                          case b2 of wild5 { Data.ByteString.Internal.PS dt15 dt16 dt17 dt18 ->
+                          case GHC.Prim./=# dt14 dt18 of lwild1 {
+                            DEFAULT
+                            -> let {
+                                 $j1 :: GHC.Types.Bool <join 0>
+                                 = case a3 of wild6 { Data.Vector.Storable.Vector dt19 dt20 dt21 ->
+                                   case b3 of wild7 { Data.Vector.Storable.Vector dt22 dt23 dt24 ->
+                                   letrec {
+                                     $s$weq_loop0 :: GHC.Prim.Int#
+                                                     -> GHC.Prim.Int# -> GHC.Types.Bool
+                                       <join 2> {- Arity: 2, Strictness: <S,U><S,U> -}
+                                     = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.>=# sc1 dt19 of lwild2 {
+                                         DEFAULT
+                                         -> case GHC.Prim.>=# sc dt22 of lwild3 {
+                                              DEFAULT
+                                              -> case GHC.Prim.readInt8OffAddr#
+                                                        @ GHC.Prim.RealWorld
+                                                        dt20
+                                                        sc1
+                                                        GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                                                 case GHC.Prim.touch#
+                                                        @ 'GHC.Types.LiftedRep
+                                                        @ GHC.ForeignPtr.ForeignPtrContents
+                                                        dt21
+                                                        ipv of s' { DEFAULT ->
+                                                 case GHC.Prim.readInt8OffAddr#
+                                                        @ GHC.Prim.RealWorld
+                                                        dt23
+                                                        sc
+                                                        GHC.Prim.realWorld# of ds3 { (#,#) ipv2 ipv3 ->
+                                                 case GHC.Prim.touch#
+                                                        @ 'GHC.Types.LiftedRep
+                                                        @ GHC.ForeignPtr.ForeignPtrContents
+                                                        dt24
+                                                        ipv2 of s'1 { DEFAULT ->
+                                                 case GHC.Prim.==# ipv1 ipv3 of lwild4 {
+                                                   DEFAULT -> GHC.Types.False
+                                                   1#
+                                                   -> $s$weq_loop0
+                                                        (GHC.Prim.+# sc 1#)
+                                                        (GHC.Prim.+# sc1 1#) } } } } }
+                                              1# -> GHC.Types.False }
+                                         1#
+                                         -> case GHC.Prim.>=# sc dt22 of lwild3 {
+                                              DEFAULT -> GHC.Types.False 1# -> GHC.Types.True } }
+                                   } in
+                                   $s$weq_loop0 0# 0# } }
+                               } in
+                               case GHC.Prim.eqAddr# dt11 dt15 of lwild2 {
+                                 DEFAULT
+                                 -> case Data.ByteString.Internal.$wcompareBytes
+                                           dt11
+                                           dt12
+                                           dt13
+                                           dt14
+                                           dt15
+                                           dt16
+                                           dt17
+                                           dt18 of wild6 {
+                                      DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j1 }
+                                 1#
+                                 -> case GHC.Prim.==# dt13 dt17 of lwild3 {
+                                      DEFAULT
+                                      -> case Data.ByteString.Internal.$wcompareBytes
+                                                dt11
+                                                dt12
+                                                dt13
+                                                dt14
+                                                dt15
+                                                dt16
+                                                dt17
+                                                dt18 of wild6 {
+                                           DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j1 }
+                                      1# -> $j1 } }
+                            1# -> GHC.Types.False } } }
+                      } in
+                      case GHC.Prim.eqAddr# dt dt4 of lwild1 {
+                        DEFAULT
+                        -> case Data.ByteString.Internal.$wcompareBytes
+                                  dt
+                                  dt1
+                                  dt2
+                                  dt3
+                                  dt4
+                                  dt5
+                                  dt6
+                                  dt7 of wild4 {
+                             DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j }
+                        1#
+                        -> case GHC.Prim.==# dt2 dt6 of lwild2 {
+                             DEFAULT
+                             -> case Data.ByteString.Internal.$wcompareBytes
+                                       dt
+                                       dt1
+                                       dt2
+                                       dt3
+                                       dt4
+                                       dt5
+                                       dt6
+                                       dt7 of wild4 {
+                                  DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j }
+                             1# -> $j } }
+                   1# -> GHC.Types.False } } } } }) -}
+11aa39266698c671bdb4006bd7133475
+  $fNFDataFQStatistics ::
+    Control.DeepSeq.NFData Data.FastQ.FQStatistics
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(SSSSS)LSLS(SS)),1*U(1*U(1*H,1*H,1*H,1*H,1*H),A,1*U,A,1*U(1*H,1*H))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Data.FastQ.$fNFDataFQStatistics_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Data.FastQ.FQStatistics>_N)) -}
+11aa39266698c671bdb4006bd7133475
+  $fNFDataFQStatistics_$crnf :: Data.FastQ.FQStatistics -> ()
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(SSSSS)LSLS(SS)),1*U(1*U(1*H,1*H,1*H,1*H,1*H),A,1*U,A,1*U(1*H,1*H))>,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.FastQ.FQStatistics) ->
+                 case w of ww { Data.FastQ.FQStatistics ww1 ww2 ww3 ww4 ww5 ->
+                 case ww1 of ww6 { (,,,,) ww7 ww8 ww9 ww10 ww11 ->
+                 case ww7 of ww12 { GHC.Types.I# ipv ->
+                 case ww8 of ww13 { GHC.Types.I# ipv1 ->
+                 case ww9 of ww14 { GHC.Types.I# ipv2 ->
+                 case ww10 of ww15 { GHC.Types.I# ipv3 ->
+                 case ww11 of ww16 { GHC.Types.I# ipv4 ->
+                 case ww5 of ww17 { (,) ww18 ww19 ->
+                 case ww18 of ww20 { GHC.Types.I# ipv5 ->
+                 case ww19 of ww21 { GHC.Types.I# ipv6 ->
+                 letrec {
+                   go :: [Data.Vector.Unboxed.Base.Vector GHC.Types.Int] -> ()
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (ds :: [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]) ->
+                     case ds of wild {
+                       [] -> GHC.Tuple.()
+                       : x xs
+                       -> case x `cast`
+                               (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv7 ipv8 ipv9 ->
+                          go xs } }
+                 } in
+                 go ww3 } } } } } } } } } }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fNFDataShortRead :: Control.DeepSeq.NFData Data.FastQ.ShortRead
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Data.FastQ.$fNFDataShortRead_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Data.FastQ.ShortRead>_N)) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fNFDataShortRead_$crnf :: Data.FastQ.ShortRead -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.ShortRead) ->
+                 case ds of wild { Data.FastQ.ShortRead ds1 ds2 ds3 ->
+                 GHC.Tuple.() }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding :: GHC.Classes.Ord Data.FastQ.FastQEncoding
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQEncoding
+                  Data.FastQ.$fEqFastQEncoding
+                  Data.FastQ.$fOrdFastQEncoding_$ccompare
+                  Data.FastQ.$fOrdFastQEncoding_$c<
+                  Data.FastQ.$fOrdFastQEncoding_$c<=
+                  Data.FastQ.$fOrdFastQEncoding_$c>
+                  Data.FastQ.$fOrdFastQEncoding_$c>=
+                  Data.FastQ.$fOrdFastQEncoding_$cmax
+                  Data.FastQ.$fOrdFastQEncoding_$cmin -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$c< ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.FastQEncoding)
+                   (b :: Data.FastQ.FastQEncoding) ->
+                 case a of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case b of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.False
+                        Data.FastQ.SolexaEncoding -> GHC.Types.True }
+                   Data.FastQ.SolexaEncoding
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$c<= ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.FastQEncoding)
+                   (b :: Data.FastQ.FastQEncoding) ->
+                 case b of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case a of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.True
+                        Data.FastQ.SolexaEncoding -> GHC.Types.False }
+                   Data.FastQ.SolexaEncoding
+                   -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$c> ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Data.FastQ.FastQEncoding)
+                   (b :: Data.FastQ.FastQEncoding) ->
+                 Data.FastQ.$fOrdFastQEncoding_$c< b a) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$c>= ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.FastQEncoding)
+                   (b :: Data.FastQ.FastQEncoding) ->
+                 case a of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case b of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.True
+                        Data.FastQ.SolexaEncoding -> GHC.Types.False }
+                   Data.FastQ.SolexaEncoding
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$ccompare ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.FastQEncoding)
+                   (b :: Data.FastQ.FastQEncoding) ->
+                 case a of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case b of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.EQ
+                        Data.FastQ.SolexaEncoding -> GHC.Types.LT }
+                   Data.FastQ.SolexaEncoding
+                   -> case b of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.GT
+                        Data.FastQ.SolexaEncoding -> GHC.Types.EQ } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$cmax ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> Data.FastQ.FastQEncoding
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.FastQ.FastQEncoding)
+                   (y :: Data.FastQ.FastQEncoding) ->
+                 case y of wild {
+                   Data.FastQ.SangerEncoding -> x
+                   Data.FastQ.SolexaEncoding
+                   -> case x of wild1 { DEFAULT -> Data.FastQ.SolexaEncoding } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fOrdFastQEncoding_$cmin ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.FastQEncoding -> Data.FastQ.FastQEncoding
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.FastQ.FastQEncoding)
+                   (y :: Data.FastQ.FastQEncoding) ->
+                 case y of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case x of wild1 { DEFAULT -> Data.FastQ.SangerEncoding }
+                   Data.FastQ.SolexaEncoding -> x }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath :: GHC.Classes.Ord Data.FastQ.FastQFilePath
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQFilePath
+                  Data.FastQ.$fEqFastQFilePath
+                  Data.FastQ.$fOrdFastQFilePath_$ccompare
+                  Data.FastQ.$fOrdFastQFilePath_$c<
+                  Data.FastQ.$fOrdFastQFilePath_$c<=
+                  Data.FastQ.$fOrdFastQFilePath_$c>
+                  Data.FastQ.$fOrdFastQFilePath_$c>=
+                  Data.FastQ.$fOrdFastQFilePath_$cmax
+                  Data.FastQ.$fOrdFastQFilePath_$cmin -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$c< ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.FastQFilePath)
+                   (w1 :: Data.FastQ.FastQFilePath) ->
+                 case w of ww { Data.FastQ.FastQFilePath ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.FastQFilePath ww4 ww5 ->
+                 case ww1 of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case ww4 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Classes.$fOrd[]_$s$c<1 ww2 ww5
+                        Data.FastQ.SolexaEncoding -> GHC.Types.True }
+                   Data.FastQ.SolexaEncoding
+                   -> case ww4 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.False
+                        Data.FastQ.SolexaEncoding
+                        -> GHC.Classes.$fOrd[]_$s$c<1 ww2 ww5 } } } }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$c<= ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.FastQFilePath)
+                   (b :: Data.FastQ.FastQFilePath) ->
+                 case Data.FastQ.$fOrdFastQFilePath_$c< b a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$c> ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Data.FastQ.FastQFilePath)
+                   (b :: Data.FastQ.FastQFilePath) ->
+                 Data.FastQ.$fOrdFastQFilePath_$c< b a) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$c>= ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.FastQFilePath)
+                   (b :: Data.FastQ.FastQFilePath) ->
+                 case Data.FastQ.$fOrdFastQFilePath_$c< a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$ccompare ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,1*U)><S(SL),1*U(U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.FastQFilePath)
+                   (w1 :: Data.FastQ.FastQFilePath) ->
+                 case w of ww { Data.FastQ.FastQFilePath ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.FastQFilePath ww4 ww5 ->
+                 case ww1 of wild {
+                   Data.FastQ.SangerEncoding
+                   -> case ww4 of wild1 {
+                        Data.FastQ.SangerEncoding
+                        -> GHC.Classes.$fOrd[]_$s$ccompare1 ww2 ww5
+                        Data.FastQ.SolexaEncoding -> GHC.Types.LT }
+                   Data.FastQ.SolexaEncoding
+                   -> case ww4 of wild1 {
+                        Data.FastQ.SangerEncoding -> GHC.Types.GT
+                        Data.FastQ.SolexaEncoding
+                        -> GHC.Classes.$fOrd[]_$s$ccompare1 ww2 ww5 } } } }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$cmax ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> Data.FastQ.FastQFilePath
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.FastQ.FastQFilePath)
+                   (y :: Data.FastQ.FastQFilePath) ->
+                 case Data.FastQ.$fOrdFastQFilePath_$c< y x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fOrdFastQFilePath_$cmin ::
+    Data.FastQ.FastQFilePath
+    -> Data.FastQ.FastQFilePath -> Data.FastQ.FastQFilePath
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.FastQ.FastQFilePath)
+                   (y :: Data.FastQ.FastQFilePath) ->
+                 case Data.FastQ.$fOrdFastQFilePath_$c< y x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet :: GHC.Classes.Ord Data.FastQ.ReadSet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.ReadSet
+                  Data.FastQ.$fEqReadSet
+                  Data.FastQ.$fOrdReadSet_$ccompare
+                  Data.FastQ.$fOrdReadSet_$c<
+                  Data.FastQ.$fOrdReadSet_$c<=
+                  Data.FastQ.$fOrdReadSet_$c>
+                  Data.FastQ.$fOrdReadSet_$c>=
+                  Data.FastQ.$fOrdReadSet_$cmax
+                  Data.FastQ.$fOrdReadSet_$cmin -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$c< ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 Data.FastQ.$w$c< ww1 ww2 ww4 ww5 } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$c<= ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 Data.FastQ.$w$c<= ww1 ww2 ww4 ww5 } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$c> ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Data.FastQ.ReadSet) (b :: Data.FastQ.ReadSet) ->
+                 Data.FastQ.$fOrdReadSet_$c< b a) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$c>= ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 Data.FastQ.$w$c>= ww1 ww2 ww4 ww5 } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$ccompare ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 Data.FastQ.$w$ccompare ww1 ww2 ww4 ww5 } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$cmax ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> Data.FastQ.ReadSet
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+                        ww4
+                        ww1 of wild {
+                   GHC.Types.LT -> Data.FastQ.ReadSet ww1 ww2
+                   GHC.Types.EQ
+                   -> case GHC.Classes.$fOrd[]_$ccompare
+                             @ Data.FastQ.FastQFilePath
+                             Data.FastQ.$fOrdFastQFilePath
+                             ww5
+                             ww2 of wild1 {
+                        DEFAULT -> Data.FastQ.ReadSet ww4 ww5
+                        GHC.Types.LT -> Data.FastQ.ReadSet ww1 ww2 }
+                   GHC.Types.GT -> Data.FastQ.ReadSet ww4 ww5 } } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fOrdReadSet_$cmin ::
+    Data.FastQ.ReadSet -> Data.FastQ.ReadSet -> Data.FastQ.ReadSet
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.ReadSet) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 case w1 of ww3 { Data.FastQ.ReadSet ww4 ww5 ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+                        ww4
+                        ww1 of wild {
+                   GHC.Types.LT -> Data.FastQ.ReadSet ww4 ww5
+                   GHC.Types.EQ
+                   -> case GHC.Classes.$fOrd[]_$ccompare
+                             @ Data.FastQ.FastQFilePath
+                             Data.FastQ.$fOrdFastQFilePath
+                             ww5
+                             ww2 of wild1 {
+                        DEFAULT -> Data.FastQ.ReadSet ww1 ww2
+                        GHC.Types.LT -> Data.FastQ.ReadSet ww4 ww5 }
+                   GHC.Types.GT -> Data.FastQ.ReadSet ww1 ww2 } } }) -}
+8a9226a309824cb70b86a9780451f54d
+  $fOrdReadSet_$s$fOrd(,) ::
+    GHC.Classes.Ord
+      (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                  Data.FastQ.$fEqReadSet_$s$fEq(,)
+                  (GHC.Classes.$fOrd(,)_$ccompare
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath)
+                  (GHC.Classes.$fOrd(,)_$c<
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath)
+                  (GHC.Classes.$fOrd(,)_$c<=
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath)
+                  (\ (a1 :: (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath))
+                     (b1 :: (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)) ->
+                   GHC.Classes.$fOrd(,)_$c<
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     b1
+                     a1)
+                  (GHC.Classes.$fOrd(,)_$c>=
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath)
+                  (GHC.Classes.$fOrd(,)_$cmax
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath)
+                  (GHC.Classes.$fOrd(,)_$cmin
+                     @ Data.FastQ.FastQFilePath
+                     @ Data.FastQ.FastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath
+                     Data.FastQ.$fOrdFastQFilePath) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead :: GHC.Classes.Ord Data.FastQ.ShortRead
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.ShortRead
+                  Data.FastQ.$fEqShortRead
+                  Data.FastQ.$fOrdShortRead_$ccompare
+                  Data.FastQ.$fOrdShortRead_$c<
+                  Data.FastQ.$fOrdShortRead_$c<=
+                  Data.FastQ.$fOrdShortRead_$c>
+                  Data.FastQ.$fOrdShortRead_$c>=
+                  Data.FastQ.$fOrdShortRead_$cmax
+                  Data.FastQ.$fOrdShortRead_$cmin -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$c< ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: (\ (a :: Data.FastQ.ShortRead)
+                   (b :: Data.FastQ.ShortRead) ->
+                 case a of wild { Data.FastQ.ShortRead a1 a2 a3 ->
+                 case b of wild1 { Data.FastQ.ShortRead b1 b2 b3 ->
+                 case a1 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 case b1 of ww5 { Data.ByteString.Internal.PS ww6 ww7 ww8 ww9 ->
+                 case Data.ByteString.Internal.$wcompareBytes
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww6
+                        ww7
+                        ww8
+                        ww9 of wild2 {
+                   GHC.Types.LT -> GHC.Types.True
+                   GHC.Types.EQ
+                   -> case a2 of ww11 { Data.ByteString.Internal.PS ww12 ww13 ww14 ww15 ->
+                      case b2 of ww16 { Data.ByteString.Internal.PS ww17 ww18 ww19 ww20 ->
+                      case Data.ByteString.Internal.$wcompareBytes
+                             ww12
+                             ww13
+                             ww14
+                             ww15
+                             ww17
+                             ww18
+                             ww19
+                             ww20 of wild3 {
+                        GHC.Types.LT -> GHC.Types.True
+                        GHC.Types.EQ
+                        -> case a3 of wild4 { Data.Vector.Storable.Vector dt dt1 dt2 ->
+                           case b3 of wild5 { Data.Vector.Storable.Vector dt4 dt5 dt6 ->
+                           letrec {
+                             $s$wcmp_loop0 :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.Bool
+                               <join 2> {- Arity: 2, Strictness: <S,U><S,U> -}
+                             = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) ->
+                               case GHC.Prim.>=# sc1 dt of lwild {
+                                 DEFAULT
+                                 -> case GHC.Prim.>=# sc dt4 of lwild1 {
+                                      DEFAULT
+                                      -> case GHC.Prim.readInt8OffAddr#
+                                                @ GHC.Prim.RealWorld
+                                                dt1
+                                                sc1
+                                                GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                                         case GHC.Prim.touch#
+                                                @ 'GHC.Types.LiftedRep
+                                                @ GHC.ForeignPtr.ForeignPtrContents
+                                                dt2
+                                                ipv of s' { DEFAULT ->
+                                         case GHC.Prim.readInt8OffAddr#
+                                                @ GHC.Prim.RealWorld
+                                                dt5
+                                                sc
+                                                GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                                         case GHC.Prim.touch#
+                                                @ 'GHC.Types.LiftedRep
+                                                @ GHC.ForeignPtr.ForeignPtrContents
+                                                dt6
+                                                ipv2 of s'1 { DEFAULT ->
+                                         case GHC.Prim.==# ipv1 ipv3 of lwild2 {
+                                           DEFAULT
+                                           -> case GHC.Prim.<=# ipv1 ipv3 of lwild3 {
+                                                DEFAULT -> GHC.Types.False 1# -> GHC.Types.True }
+                                           1#
+                                           -> $s$wcmp_loop0
+                                                (GHC.Prim.+# sc 1#)
+                                                (GHC.Prim.+# sc1 1#) } } } } }
+                                      1# -> GHC.Types.False }
+                                 1#
+                                 -> case GHC.Prim.>=# sc dt4 of lwild1 {
+                                      DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                           } in
+                           $s$wcmp_loop0 0# 0# } }
+                        GHC.Types.GT -> GHC.Types.False } } }
+                   GHC.Types.GT -> GHC.Types.False } } } } }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$c<= ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.ShortRead) (b :: Data.FastQ.ShortRead) ->
+                 case Data.FastQ.$fOrdShortRead_$c< b a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$c> ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Data.FastQ.ShortRead) (b :: Data.FastQ.ShortRead) ->
+                 Data.FastQ.$fOrdShortRead_$c< b a) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$c>= ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.FastQ.ShortRead) (b :: Data.FastQ.ShortRead) ->
+                 case Data.FastQ.$fOrdShortRead_$c< a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$ccompare ::
+    Data.FastQ.ShortRead -> Data.FastQ.ShortRead -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: (\ (a :: Data.FastQ.ShortRead)
+                   (b :: Data.FastQ.ShortRead) ->
+                 case a of wild { Data.FastQ.ShortRead a1 a2 a3 ->
+                 case b of wild1 { Data.FastQ.ShortRead b1 b2 b3 ->
+                 case a1 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 case b1 of ww5 { Data.ByteString.Internal.PS ww6 ww7 ww8 ww9 ->
+                 case Data.ByteString.Internal.$wcompareBytes
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww6
+                        ww7
+                        ww8
+                        ww9 of wild2 {
+                   GHC.Types.LT -> GHC.Types.LT
+                   GHC.Types.EQ
+                   -> case a2 of ww11 { Data.ByteString.Internal.PS ww12 ww13 ww14 ww15 ->
+                      case b2 of ww16 { Data.ByteString.Internal.PS ww17 ww18 ww19 ww20 ->
+                      case Data.ByteString.Internal.$wcompareBytes
+                             ww12
+                             ww13
+                             ww14
+                             ww15
+                             ww17
+                             ww18
+                             ww19
+                             ww20 of wild3 {
+                        GHC.Types.LT -> GHC.Types.LT
+                        GHC.Types.EQ
+                        -> case a3 of wild4 { Data.Vector.Storable.Vector dt dt1 dt2 ->
+                           case b3 of wild5 { Data.Vector.Storable.Vector dt4 dt5 dt6 ->
+                           letrec {
+                             $s$wcmp_loop0 :: GHC.Prim.Int#
+                                              -> GHC.Prim.Int# -> GHC.Types.Ordering
+                               <join 2> {- Arity: 2, Strictness: <S,U><S,U> -}
+                             = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) ->
+                               case GHC.Prim.>=# sc1 dt of lwild {
+                                 DEFAULT
+                                 -> case GHC.Prim.>=# sc dt4 of lwild1 {
+                                      DEFAULT
+                                      -> case GHC.Prim.readInt8OffAddr#
+                                                @ GHC.Prim.RealWorld
+                                                dt1
+                                                sc1
+                                                GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                                         case GHC.Prim.touch#
+                                                @ 'GHC.Types.LiftedRep
+                                                @ GHC.ForeignPtr.ForeignPtrContents
+                                                dt2
+                                                ipv of s' { DEFAULT ->
+                                         case GHC.Prim.readInt8OffAddr#
+                                                @ GHC.Prim.RealWorld
+                                                dt5
+                                                sc
+                                                GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                                         case GHC.Prim.touch#
+                                                @ 'GHC.Types.LiftedRep
+                                                @ GHC.ForeignPtr.ForeignPtrContents
+                                                dt6
+                                                ipv2 of s'1 { DEFAULT ->
+                                         case GHC.Prim.==# ipv1 ipv3 of lwild2 {
+                                           DEFAULT
+                                           -> case GHC.Prim.<=# ipv1 ipv3 of lwild3 {
+                                                DEFAULT -> GHC.Types.GT 1# -> GHC.Types.LT }
+                                           1#
+                                           -> $s$wcmp_loop0
+                                                (GHC.Prim.+# sc 1#)
+                                                (GHC.Prim.+# sc1 1#) } } } } }
+                                      1# -> GHC.Types.GT }
+                                 1#
+                                 -> case GHC.Prim.>=# sc dt4 of lwild1 {
+                                      DEFAULT -> GHC.Types.LT 1# -> GHC.Types.EQ } }
+                           } in
+                           $s$wcmp_loop0 0# 0# } }
+                        GHC.Types.GT -> GHC.Types.GT } } }
+                   GHC.Types.GT -> GHC.Types.GT } } } } }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$cmax ::
+    Data.FastQ.ShortRead
+    -> Data.FastQ.ShortRead -> Data.FastQ.ShortRead
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.FastQ.ShortRead) (y :: Data.FastQ.ShortRead) ->
+                 case Data.FastQ.$fOrdShortRead_$c< y x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fOrdShortRead_$cmin ::
+    Data.FastQ.ShortRead
+    -> Data.FastQ.ShortRead -> Data.FastQ.ShortRead
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SS),U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))><S(S(SLSS)SS),U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.FastQ.ShortRead) (y :: Data.FastQ.ShortRead) ->
+                 case Data.FastQ.$fOrdShortRead_$c< y x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+11aa39266698c671bdb4006bd7133475
+  $fShowFQStatistics :: GHC.Show.Show Data.FastQ.FQStatistics
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FQStatistics
+                  Data.FastQ.$fShowFQStatistics_$cshowsPrec
+                  Data.FastQ.$fShowFQStatistics_$cshow
+                  Data.FastQ.$fShowFQStatistics_$cshowList -}
+11aa39266698c671bdb4006bd7133475
+  $fShowFQStatistics_$cshow ::
+    Data.FastQ.FQStatistics -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S(LSLSL),1*U(U(U(U),U(U),U(U),U(U),U(U)),U,U,U,U(U(U),U(U)))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.FastQ.FQStatistics) ->
+                 Data.FastQ.$fShowFQStatistics_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+11aa39266698c671bdb4006bd7133475
+  $fShowFQStatistics_$cshowList ::
+    [Data.FastQ.FQStatistics] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.FastQ.FQStatistics]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.FastQ.FQStatistics
+                   (Data.FastQ.$fShowFQStatistics_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+11aa39266698c671bdb4006bd7133475
+  $fShowFQStatistics_$cshowsPrec ::
+    GHC.Types.Int -> Data.FastQ.FQStatistics -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(LSLSL),1*U(U(U(U),U(U),U(U),U(U),U(U)),U,U,U,U(U(U),U(U)))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.FastQ.FQStatistics) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Data.FastQ.FQStatistics ww3 ww4 ww5 ww6 ww7 ->
+                 Data.FastQ.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 ww7 } }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fShowFastQEncoding :: GHC.Show.Show Data.FastQ.FastQEncoding
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQEncoding
+                  Data.FastQ.$fShowFastQEncoding_$cshowsPrec
+                  Data.FastQ.$fShowFastQEncoding_$cshow
+                  Data.FastQ.$fShowFastQEncoding_$cshowList -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fShowFastQEncoding_$cshow ::
+    Data.FastQ.FastQEncoding -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Data.FastQ.FastQEncoding) ->
+                 case x of wild {
+                   Data.FastQ.SangerEncoding
+                   -> GHC.CString.unpackCString# "SangerEncoding"#
+                   Data.FastQ.SolexaEncoding
+                   -> GHC.CString.unpackCString# "SolexaEncoding"# }) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fShowFastQEncoding_$cshowList ::
+    [Data.FastQ.FastQEncoding] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.FastQ.FastQEncoding]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.FastQ.FastQEncoding
+                   (Data.FastQ.$fShowFastQEncoding_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $fShowFastQEncoding_$cshowsPrec ::
+    GHC.Types.Int -> Data.FastQ.FastQEncoding -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.FastQ.FastQEncoding) ->
+                 Data.FastQ.$w$cshowsPrec1 w1) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fShowFastQFilePath :: GHC.Show.Show Data.FastQ.FastQFilePath
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.FastQFilePath
+                  Data.FastQ.$fShowFastQFilePath_$cshowsPrec
+                  Data.FastQ.$fShowFastQFilePath_$cshow
+                  Data.FastQ.$fShowFastQFilePath_$cshowList -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fShowFastQFilePath_$cshow ::
+    Data.FastQ.FastQFilePath -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SL),1*U(U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.FastQ.FastQFilePath) ->
+                 Data.FastQ.$fShowFastQFilePath_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fShowFastQFilePath_$cshowList ::
+    [Data.FastQ.FastQFilePath] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.FastQ.FastQFilePath]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.FastQ.FastQFilePath
+                   (Data.FastQ.$fShowFastQFilePath_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  $fShowFastQFilePath_$cshowsPrec ::
+    GHC.Types.Int -> Data.FastQ.FastQFilePath -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(SL),1*U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.FastQ.FastQFilePath) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Data.FastQ.FastQFilePath ww3 ww4 ->
+                 Data.FastQ.$w$cshowsPrec2 ww1 ww3 ww4 } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fShowReadSet :: GHC.Show.Show Data.FastQ.ReadSet
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.ReadSet
+                  Data.FastQ.$fShowReadSet_$cshowsPrec
+                  Data.FastQ.$fShowReadSet_$cshow
+                  Data.FastQ.$fShowReadSet_$cshowList -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fShowReadSet_$cshow :: Data.FastQ.ReadSet -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.FastQ.ReadSet) ->
+                 Data.FastQ.$fShowReadSet_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fShowReadSet_$cshowList :: [Data.FastQ.ReadSet] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.FastQ.ReadSet]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.FastQ.ReadSet
+                   (Data.FastQ.$fShowReadSet_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  $fShowReadSet_$cshowsPrec ::
+    GHC.Types.Int -> Data.FastQ.ReadSet -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.FastQ.ReadSet) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Data.FastQ.ReadSet ww3 ww4 ->
+                 Data.FastQ.$w$cshowsPrec3 ww1 ww3 ww4 } }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fShowShortRead :: GHC.Show.Show Data.FastQ.ShortRead
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.FastQ.ShortRead
+                  Data.FastQ.$fShowShortRead_$cshowsPrec
+                  Data.FastQ.$fShowShortRead_$cshow
+                  Data.FastQ.$fShowShortRead_$cshowList -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fShowShortRead_$cshow :: Data.FastQ.ShortRead -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S(SSS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.FastQ.ShortRead) ->
+                 Data.FastQ.$fShowShortRead_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fShowShortRead_$cshowList ::
+    [Data.FastQ.ShortRead] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.FastQ.ShortRead]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.FastQ.ShortRead
+                   (Data.FastQ.$fShowShortRead_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  $fShowShortRead_$cshowsPrec ::
+    GHC.Types.Int -> Data.FastQ.ShortRead -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(SSS),1*U(U(U,U,U,U),U(U,U,U,U),U(U,U,U))> -}
+04c51ef1e63d9887829fc3b56d8ea3b8
+  $tc'FQStatistics :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5692966212197919845##
+                   9897369503238329480##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tc'FQStatistics2
+                   0#
+                   Data.FastQ.$tc'FQStatistics1) -}
+c2adeff51b8a97bd756876f26f505976
+  $tc'FQStatistics1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+78dcda87755a74c90ea3191b6f2bf61c
+  $tc'FQStatistics2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tc'FQStatistics3) -}
+5ac6276cc709f84a1629a8ae82b84faa
+  $tc'FQStatistics3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FQStatistics"#) -}
+a4d1482e241808ca36f099222f4c003b
+  $tc'FastQFilePath :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5504505966420577092##
+                   11163923363440750987##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tc'FastQFilePath2
+                   0#
+                   Data.FastQ.$tc'FastQFilePath1) -}
+611cedc4f9bc9d1733e0cbda60707676
+  $tc'FastQFilePath1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+68d0f514464d709ffcfe36fcdc760711
+  $tc'FastQFilePath2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tc'FastQFilePath3) -}
+ee7635c5a8c6f737c6ee08775e5d7ead
+  $tc'FastQFilePath3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FastQFilePath"#) -}
+2e7ef57ecab88fa422f7274991bec387
+  $tc'ReadSet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11492822415405585602##
+                   13988926186587972624##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tc'ReadSet2
+                   0#
+                   Data.FastQ.$tc'ReadSet1) -}
+838a527b2d552b81a86ccf575a8d9b94
+  $tc'ReadSet1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+78c89933f380dade707ea5b1cae0e696
+  $tc'ReadSet2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tc'ReadSet3) -}
+6c04171d4916f3b4a434438f72dc491a
+  $tc'ReadSet3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ReadSet"#) -}
+04290336b1fef97de20771961b453555
+  $tc'SangerEncoding :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6897372436285766418##
+                   14420600939262426079##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tc'SangerEncoding2
+                   0#
+                   Data.FastQ.$tc'SangerEncoding1) -}
+2d256cc1e7acb82b1f183abf04a725bb
+  $tc'SangerEncoding1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+df0e8bf57d2b8c81461a5796447cda75
+  $tc'SangerEncoding2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tc'SangerEncoding3) -}
+1e2688c20ba3f17dedf897de46d12d02
+  $tc'SangerEncoding3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SangerEncoding"#) -}
+4d3e2574b45355fe9b72f013a0004239
+  $tc'ShortRead :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   571385431752253841##
+                   4307995109138909127##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tc'ShortRead2
+                   0#
+                   Data.FastQ.$tc'ShortRead1) -}
+9bbc1ba2a631976531ca9388e34fa9d7
+  $tc'ShortRead1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c363a19e563d7abfe20ccaddb16ce865
+  $tc'ShortRead2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tc'ShortRead3) -}
+1cbaca410d9603abdbe27c6304072648
+  $tc'ShortRead3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ShortRead"#) -}
+22e760ea319c2d0a3775399193389da8
+  $tc'SolexaEncoding :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17555089474870102443##
+                   4956536951322591434##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tc'SolexaEncoding1
+                   0#
+                   Data.FastQ.$tc'SangerEncoding1) -}
+6b0043b67d29430f1e30c57c3795cfad
+  $tc'SolexaEncoding1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tc'SolexaEncoding2) -}
+b9f7abf344397678d640a04458fc8a3a
+  $tc'SolexaEncoding2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SolexaEncoding"#) -}
+ed8b9cdf8b434df7cb3d8611568b8531
+  $tcFQStatistics :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9472568355274246423##
+                   7068757766418640589##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tcFQStatistics1
+                   0#
+                   GHC.Types.krep$*) -}
+26a11e594fa5519b1489de2fe8bf448d
+  $tcFQStatistics1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tcFQStatistics2) -}
+438af593fb46aa05c7d8c24081c5be1a
+  $tcFQStatistics2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FQStatistics"#) -}
+a9c4d2f4af30bc25c8fc94a371eab6af
+  $tcFastQEncoding :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10196398378552196736##
+                   5260756743492033227##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tcFastQEncoding1
+                   0#
+                   GHC.Types.krep$*) -}
+79e1e663fb0be7746d4fc7c00fe934cb
+  $tcFastQEncoding1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tcFastQEncoding2) -}
+034de7e44c8983e14ee63eb1dfb35dfd
+  $tcFastQEncoding2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FastQEncoding"#) -}
+c9fe8eefb545c8eb17a6d3e56c424182
+  $tcFastQFilePath :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   550147776532243420##
+                   15301588289219455819##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tcFastQFilePath1
+                   0#
+                   GHC.Types.krep$*) -}
+d8577ccc5379cdecd597ce0183f5fa99
+  $tcFastQFilePath1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tcFastQFilePath2) -}
+e3402e732fd00a81a3a206928d080f87
+  $tcFastQFilePath2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FastQFilePath"#) -}
+44b67d64e85d3c7c382dd776da83ea46
+  $tcReadSet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5719365692758335043##
+                   2547713292381638439##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tcReadSet1
+                   0#
+                   GHC.Types.krep$*) -}
+44b3a3bf853dce4b90dac85daf594bf9
+  $tcReadSet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tcReadSet2) -}
+dae39daa8f04fb89819ecd367a32a0ec
+  $tcReadSet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ReadSet"#) -}
+1b9430ccea1bd25e7d1135903d050c29
+  $tcShortRead :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4177112987631926411##
+                   3674363343029053844##
+                   Data.FastQ.$trModule
+                   Data.FastQ.$tcShortRead1
+                   0#
+                   GHC.Types.krep$*) -}
+c7f69b15b8fc575193ca013839bbfce4
+  $tcShortRead1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$tcShortRead2) -}
+052c6c14db3bd875633a1150bda29513
+  $tcShortRead2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ShortRead"#) -}
+c95160cf257eefb89b3eaa5a68671f8e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.FastQ.$trModule2
+                   Data.FastQ.$trModule1) -}
+466ab68ce90305824bf174b41f2ea149
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$fEnumFastQEncoding9) -}
+8a8db3d72ed55e8a5612840b103d6c22
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.FastQ.$fEnumFastQEncoding11) -}
+0f1ac99f3a85311463857577b9b48535
+  $w$c< ::
+    [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [(Data.FastQ.FastQFilePath,
+                            Data.FastQ.FastQFilePath)])
+                   (ww1 :: [Data.FastQ.FastQFilePath])
+                   (ww2 :: [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)])
+                   (ww3 :: [Data.FastQ.FastQFilePath]) ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+                        ww
+                        ww2 of wild {
+                   GHC.Types.LT -> GHC.Types.True
+                   GHC.Types.EQ
+                   -> case GHC.Classes.$fOrd[]_$ccompare
+                             @ Data.FastQ.FastQFilePath
+                             Data.FastQ.$fOrdFastQFilePath
+                             ww1
+                             ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }
+                   GHC.Types.GT -> GHC.Types.False }) -}
+8a48f9dace10ecb69cf8e9369c2d0b5a
+  $w$c<= ::
+    [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [(Data.FastQ.FastQFilePath,
+                            Data.FastQ.FastQFilePath)])
+                   (ww1 :: [Data.FastQ.FastQFilePath])
+                   (ww2 :: [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)])
+                   (ww3 :: [Data.FastQ.FastQFilePath]) ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+                        ww2
+                        ww of wild {
+                   GHC.Types.LT -> GHC.Types.False
+                   GHC.Types.EQ
+                   -> case GHC.Classes.$fOrd[]_$ccompare
+                             @ Data.FastQ.FastQFilePath
+                             Data.FastQ.$fOrdFastQFilePath
+                             ww3
+                             ww1 of wild1 {
+                        DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }
+                   GHC.Types.GT -> GHC.Types.True }) -}
+59d1328c406e7cebf0f720329a450f26
+  $w$c== ::
+    [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [(Data.FastQ.FastQFilePath,
+                            Data.FastQ.FastQFilePath)])
+                   (ww1 :: [Data.FastQ.FastQFilePath])
+                   (ww2 :: [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)])
+                   (ww3 :: [Data.FastQ.FastQFilePath]) ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fEqReadSet_$s$fEq(,)
+                        ww
+                        ww2 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ Data.FastQ.FastQFilePath
+                        Data.FastQ.$fEqFastQFilePath
+                        ww1
+                        ww3 }) -}
+a105fbe75f66ab9c301bdc4f525c5a3f
+  $w$c>= ::
+    [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [(Data.FastQ.FastQFilePath,
+                            Data.FastQ.FastQFilePath)])
+                   (ww1 :: [Data.FastQ.FastQFilePath])
+                   (ww2 :: [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)])
+                   (ww3 :: [Data.FastQ.FastQFilePath]) ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+                        ww
+                        ww2 of wild {
+                   GHC.Types.LT -> GHC.Types.False
+                   GHC.Types.EQ
+                   -> case GHC.Classes.$fOrd[]_$ccompare
+                             @ Data.FastQ.FastQFilePath
+                             Data.FastQ.$fOrdFastQFilePath
+                             ww1
+                             ww3 of wild1 {
+                        DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }
+                   GHC.Types.GT -> GHC.Types.True }) -}
+77cf2c0ab93e3ac15f36a61cddcace92
+  $w$ccompare ::
+    [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [(Data.FastQ.FastQFilePath,
+                            Data.FastQ.FastQFilePath)])
+                   (ww1 :: [Data.FastQ.FastQFilePath])
+                   (ww2 :: [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)])
+                   (ww3 :: [Data.FastQ.FastQFilePath]) ->
+                 case GHC.Classes.$fOrd[]_$ccompare
+                        @ (Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)
+                        Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+                        ww
+                        ww2 of wild {
+                   GHC.Types.LT -> GHC.Types.LT
+                   GHC.Types.EQ
+                   -> GHC.Classes.$fOrd[]_$ccompare
+                        @ Data.FastQ.FastQFilePath
+                        Data.FastQ.$fOrdFastQFilePath
+                        ww1
+                        ww3
+                   GHC.Types.GT -> GHC.Types.GT }) -}
+9d038ff33d2d440e98945c3101fdb354
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int,
+        GHC.Types.Int)
+    -> GHC.Prim.Int#
+    -> [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+    -> GHC.Prim.Int#
+    -> (GHC.Types.Int, GHC.Types.Int)
+    -> GHC.Show.ShowS
+  {- Arity: 6,
+     Strictness: <S,U><L,U(U(U),U(U),U(U),U(U),U(U))><L,U><L,U><L,U><L,U(U(U),U(U))>,
+     Inline: [2] -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $w$cshowsPrec1 :: Data.FastQ.FastQEncoding -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Data.FastQ.FastQEncoding) ->
+                 case w of wild {
+                   Data.FastQ.SangerEncoding
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SangerEncoding"#)
+                   Data.FastQ.SolexaEncoding
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SolexaEncoding"#) }) -}
+cd0ebde5ccfd7b029b8f80243aa75d06
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> Data.FastQ.FastQEncoding -> GHC.IO.FilePath -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Data.FastQ.FastQEncoding)
+                   (ww2 :: GHC.IO.FilePath) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "FastQFilePath {"#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   f2 :: GHC.Prim.Addr# = "fqpathEncoding = "#
+                 } in
+                 let {
+                   f3 :: [GHC.Types.Char] = GHC.CString.unpackCString# f2
+                 } in
+                 let {
+                   f4 :: GHC.Base.String -> GHC.Base.String
+                   = case ww1 of wild {
+                       Data.FastQ.SangerEncoding
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "SangerEncoding"#)
+                       Data.FastQ.SolexaEncoding
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackCString# "SolexaEncoding"#) }
+                 } in
+                 let {
+                   f5 :: GHC.Prim.Addr# = "fqpathFilePath = "#
+                 } in
+                 let {
+                   f6 :: [GHC.Types.Char] = GHC.CString.unpackCString# f5
+                 } in
+                 let {
+                   g :: GHC.Prim.Addr# = "}"#
+                 } in
+                 let {
+                   g1 :: [GHC.Types.Char] = GHC.CString.unpackCString# g
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       f1
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          f3
+                          (f4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                GHC.Show.showCommaSpace1
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   f6
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.$fShow(,)3
+                                      (GHC.Show.showLitString
+                                         ww2
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)3
+                                            (GHC.Base.++ @ GHC.Types.Char g1 x))))))))
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)) }) -}
+8169019075508ef76344f4410dd83372
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int#
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,U><L,U><L,U>, Inline: [2] -}
+e855b69d2b4c4b672e98f4cca1339e27
+  $w$ctoEnum :: GHC.Prim.Int# -> Data.FastQ.FastQEncoding
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   $j :: Data.FastQ.FastQEncoding <join 0> {- Strictness: x -}
+                   = GHC.Err.error
+                       @ 'GHC.Types.LiftedRep
+                       @ Data.FastQ.FastQEncoding
+                       Data.FastQ.$fEnumFastQEncoding1
+                         `cast`
+                       (Sym (GHC.Classes.N:IP[0]
+                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                       (GHC.CString.unpackAppendCString#
+                          "toEnum{FastQEncoding}: tag ("#
+                          (case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww
+                                  (GHC.CString.unpackAppendCString#
+                                     ") is outside of enumeration's range (0,"#
+                                     (case GHC.Show.$wshowSignedInt
+                                             0#
+                                             1#
+                                             (GHC.CString.unpackCString#
+                                                ")"#) of ww4 { (#,#) ww5 ww6 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww5
+                                        ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                 } in
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> $j
+                   1#
+                   -> case GHC.Prim.<=# ww 1# of lwild1 {
+                        DEFAULT -> $j
+                        1# -> GHC.Prim.tagToEnum# @ Data.FastQ.FastQEncoding ww } }) -}
+14213eb10c88996f16aa54853824c2bf
+  $wfqDecodeVector ::
+    GHC.Types.Int
+    -> Data.FastQ.FastQEncoding
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Utils.Conduit.ByteLine
+    -> NGLess.NGError.NGLess (Data.Vector.Vector Data.FastQ.ShortRead)
+  {- Arity: 5, Strictness: <L,U(U)><L,U><L,U><S,U><L,U>,
+     Inline: [2] -}
+56be1557cfa7526f182f280083aff419
+  $wfqEncode ::
+    Data.FastQ.FastQEncoding
+    -> Data.ByteString.Internal.ByteString
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 6, Strictness: <L,1*U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [2] -}
+46d4cfb77cec3ee052cdeb0ec00cb64d
+  $winterleaveFQs ::
+    (Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m,
+     Control.Monad.Trans.Resource.Internal.MonadResource m,
+     Control.Monad.IO.Unlift.MonadUnliftIO m,
+     Control.Monad.Catch.MonadThrow m) =>
+    [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+    -> [Data.FastQ.FastQFilePath]
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         () Data.ByteString.Internal.ByteString m ()
+  {- Arity: 6,
+     Strictness: <L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U(U(U(A,C(C1(U)),C(C1(U)),C(U),A),C(U)),C(U))><L,U(U(U(A,C(C1(U)),C(C1(U)),C(U),A),C(U)),A,C(U))><L,U(U(A,C(C1(U)),A,C(U),A),C(C1(U)))><L,1*U><L,1*U>,
+     Inline: [2] -}
+e89d54ce980f70d762884d137dda1c9b
+  $wnBasepairs ::
+    [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+    -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [Data.Vector.Unboxed.Base.Vector
+                             GHC.Types.Int]) ->
+                 let {
+                   f :: GHC.Integer.Type.Integer = 0
+                 } in
+                 letrec {
+                   go :: [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+                         -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                     <join 2> {- Arity: 2, Strictness: <S,1*U><S,U> -}
+                   = \ (ds :: [Data.Vector.Unboxed.Base.Vector GHC.Types.Int])
+                       (eta :: GHC.Integer.Type.Integer) ->
+                     case ds of wild {
+                       [] -> eta
+                       : y ys
+                       -> case y `cast`
+                               (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv1 ipv2 ->
+                          let {
+                            exit :: GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                              <join 1> {- Arity: 1, Strictness: <S,U> -}
+                            = \ (w :: GHC.Integer.Type.Integer)[OneShot] ->
+                              go ys (GHC.Integer.Type.plusInteger eta w)
+                          } in
+                          letrec {
+                            $wgo :: GHC.Prim.Int#
+                                    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                              <join 2> {- Arity: 2, Strictness: <S,U><S,U>, Inline: [2] -}
+                            = \ (ww1 :: GHC.Prim.Int#) (w :: GHC.Integer.Type.Integer) ->
+                              case GHC.Prim.>=# ww1 ipv1 of lwild {
+                                DEFAULT
+                                -> case GHC.Prim.indexIntArray#
+                                          ipv2
+                                          (GHC.Prim.+# ipv ww1) of wild2 { DEFAULT ->
+                                   $wgo
+                                     (GHC.Prim.+# ww1 1#)
+                                     (GHC.Integer.Type.plusInteger
+                                        w
+                                        (GHC.Integer.Type.smallInteger wild2)) }
+                                1# -> exit w }
+                          } in
+                          $wgo 0# f } }
+                 } in
+                 go ww f) -}
+0836a0f6600dd432958eebbc3ac41358
+  $wqualityPercentiles ::
+    [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+    -> [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: [Data.Vector.Unboxed.Base.Vector
+                             GHC.Types.Int]) ->
+                 GHC.Base.map
+                   @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                   @ (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+                   (\ (qs :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int) ->
+                    let {
+                      elemTotal :: Data.Vector.Fusion.Util.Id GHC.Types.Int
+                      = case qs
+                               `cast`
+                             (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv1 ipv2 ->
+                        letrec {
+                          $s$wfoldlM'_loop :: GHC.Prim.Int#
+                                              -> GHC.Prim.Int#
+                                              -> Data.Vector.Fusion.Util.Id GHC.Types.Int
+                            <join 2> {- Arity: 2, Strictness: <S,U><S,U>m -}
+                          = \ (sc :: GHC.Prim.Int#) (sc1 :: GHC.Prim.Int#) ->
+                            case GHC.Prim.>=# sc ipv1 of lwild {
+                              DEFAULT
+                              -> case GHC.Prim.indexIntArray#
+                                        ipv2
+                                        (GHC.Prim.+# ipv sc) of wild2 { DEFAULT ->
+                                 $s$wfoldlM'_loop (GHC.Prim.+# sc 1#) (GHC.Prim.+# sc1 wild2) }
+                              1#
+                              -> (GHC.Types.I# sc1)
+                                   `cast`
+                                 (Sym (Data.Vector.Fusion.Util.N:Id[0] <GHC.Types.Int>_R)) }
+                        } in
+                        $s$wfoldlM'_loop 0# 0# }
+                    } in
+                    let {
+                      $wcalcPercentile :: GHC.Prim.Double# -> GHC.Prim.Int#
+                        {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                      = \ (ww1 :: GHC.Prim.Double#) ->
+                        case qs
+                               `cast`
+                             (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv1 ipv2 ->
+                        case elemTotal
+                               `cast`
+                             (Data.Vector.Fusion.Util.N:Id[0]
+                                  <GHC.Types.Int>_R) of wild { GHC.Types.I# i ->
+                        let {
+                          x :: GHC.Prim.Double# = GHC.Prim.*## (GHC.Prim.int2Double# i) ww1
+                        } in
+                        let {
+                          n :: GHC.Prim.Int# = GHC.Prim.double2Int# x
+                        } in
+                        let {
+                          $j :: GHC.Prim.Int# -> GHC.Prim.Int#
+                            <join 1> {- Arity: 1, Strictness: <S,U> -}
+                          = \ (ww2 :: GHC.Prim.Int#)[OneShot] ->
+                            let {
+                              $j1 :: GHC.Prim.Int# <join 0> {- Strictness: b -}
+                              = case GHC.Err.error
+                                       @ 'GHC.Types.LiftedRep
+                                       @ GHC.Types.Int
+                                       Data.FastQ.qualityPercentiles1
+                                         `cast`
+                                       (Sym (GHC.Classes.N:IP[0]
+                                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                       (GHC.CString.unpackCString#
+                                          "ERROR: Logical impossibility in calcPercentile function"#)
+                                ret_ty GHC.Prim.Int#
+                                of {}
+                            } in
+                            letrec {
+                              $s$wfindIndex_loop :: GHC.Prim.Int#
+                                                    -> GHC.Prim.Int#
+                                                    -> GHC.Prim.Int#
+                                                    -> GHC.Prim.Int#
+                                <join 3> {- Arity: 3, Strictness: <S,U><S,U><S,U> -}
+                              = \ (sc :: GHC.Prim.Int#)
+                                  (sc1 :: GHC.Prim.Int#)
+                                  (sc2 :: GHC.Prim.Int#) ->
+                                case GHC.Prim.>=# sc2 ipv1 of lwild {
+                                  DEFAULT
+                                  -> case GHC.Prim.indexIntArray#
+                                            ipv2
+                                            (GHC.Prim.+# ipv sc2) of wild2 { DEFAULT ->
+                                     let {
+                                       x1 :: GHC.Prim.Int# = GHC.Prim.+# sc1 wild2
+                                     } in
+                                     case GHC.Prim.>=# x1 ww2 of lwild1 {
+                                       DEFAULT
+                                       -> $s$wfindIndex_loop
+                                            (GHC.Prim.+# sc 1#)
+                                            x1
+                                            (GHC.Prim.+# sc2 1#)
+                                       1# -> sc } }
+                                  1# -> $j1 }
+                            } in
+                            $s$wfindIndex_loop 0# 0# 0#
+                        } in
+                        case GHC.Prim.<## (GHC.Prim.int2Double# n) x of lwild {
+                          DEFAULT -> $j n 1# -> $j (GHC.Prim.+# n 1#) } } }
+                    } in
+                    (case qs
+                            `cast`
+                          (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv1 ipv2 ->
+                     letrec {
+                       $s$wfoldlM'_loop :: GHC.Prim.Int#
+                                           -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.Int
+                         <join 3> {- Arity: 3, Strictness: <L,U><S,U><S,U>m -}
+                       = \ (sc :: GHC.Prim.Int#)
+                           (sc1 :: GHC.Prim.Int#)
+                           (sc2 :: GHC.Prim.Int#) ->
+                         case GHC.Prim.>=# sc1 ipv1 of lwild {
+                           DEFAULT
+                           -> case GHC.Prim.indexIntArray#
+                                     ipv2
+                                     (GHC.Prim.+# ipv sc1) of wild2 { DEFAULT ->
+                              $s$wfoldlM'_loop
+                                (GHC.Prim.+# sc 1#)
+                                (GHC.Prim.+# sc1 1#)
+                                (GHC.Prim.+# sc2 (GHC.Prim.*# sc wild2)) }
+                           1#
+                           -> case elemTotal
+                                     `cast`
+                                   (Data.Vector.Fusion.Util.N:Id[0]
+                                        <GHC.Types.Int>_R) of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Real.$w$cdiv sc2 ww3 of ww4 { DEFAULT ->
+                              GHC.Types.I# (GHC.Prim.+# ww4 -5#) } } }
+                     } in
+                     $s$wfoldlM'_loop 0# 0# 0# },
+                     case $wcalcPercentile 0.5## of ww1 { DEFAULT ->
+                     GHC.Types.I# (GHC.Prim.+# ww1 -5#) },
+                     case $wcalcPercentile 0.25## of ww1 { DEFAULT ->
+                     GHC.Types.I# (GHC.Prim.+# ww1 -5#) },
+                     case $wcalcPercentile 0.75## of ww1 { DEFAULT ->
+                     GHC.Types.I# (GHC.Prim.+# ww1 -5#) }))
+                   ww) -}
+fd0534b6d91224923dea98fa024cd9f6
+  $wsrSlice ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> (# Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString,
+          Data.Vector.Storable.Vector GHC.Int.Int8 #)
+  {- Arity: 10,
+     Strictness: <S,U><S,U><L,U><L,U><L,U><L,U><S,U><S,U><L,U><L,U>,
+     Inline: [2] -}
+11aa39266698c671bdb4006bd7133475
+  data FQStatistics
+    = FQStatistics {bpCounts :: (GHC.Types.Int, GHC.Types.Int,
+                                 GHC.Types.Int, GHC.Types.Int, GHC.Types.Int),
+                    lc :: {-# UNPACK #-}GHC.Int.Int8,
+                    qualCounts :: [Data.Vector.Unboxed.Base.Vector GHC.Types.Int],
+                    nSeq :: {-# UNPACK #-}GHC.Types.Int,
+                    seqSize :: (GHC.Types.Int, GHC.Types.Int)}
+e855b69d2b4c4b672e98f4cca1339e27
+  data FastQEncoding = SangerEncoding | SolexaEncoding
+fdd414d88cf948fd1c738d4e396e4d35
+  data FastQFilePath
+    = FastQFilePath {fqpathEncoding :: !Data.FastQ.FastQEncoding,
+                     fqpathFilePath :: GHC.IO.FilePath}
+4c8ae3e110e39629ec05639a3c18db8c
+  data ReadSet
+    = ReadSet {pairedSamples :: [(Data.FastQ.FastQFilePath,
+                                  Data.FastQ.FastQFilePath)],
+               singleSamples :: [Data.FastQ.FastQFilePath]}
+22bd7330b29b52b3752e35cd5ee36bcb
+  data ShortRead
+    = ShortRead {srHeader :: !Data.ByteString.Internal.ByteString,
+                 srSequence :: !Data.ByteString.Internal.ByteString,
+                 srQualities :: !(Data.Vector.Storable.Vector GHC.Int.Int8)}
+11aa39266698c671bdb4006bd7133475
+  bpCounts ::
+    Data.FastQ.FQStatistics
+    -> (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int,
+        GHC.Types.Int)
+  RecSel Left Data.FastQ.FQStatistics
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLL),1*U(1*U(U,U,U,U,U),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FQStatistics) ->
+                 case ds of wild { Data.FastQ.FQStatistics ds1 dt ds2 dt1 ds3 ->
+                 ds1 }) -}
+fa36183f7f2b36a3c9cbb9c1862d64bb
+  encodingName :: Data.FastQ.FastQEncoding -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.FastQ.FastQEncoding) ->
+                 case ds of wild {
+                   Data.FastQ.SangerEncoding
+                   -> GHC.CString.unpackCString# "Sanger (33 offset)"#
+                   Data.FastQ.SolexaEncoding
+                   -> GHC.CString.unpackCString# "Solexa (64 offset)"# }) -}
+136c6f67c091d54e16f11fef6b8830c5
+  fqDecodeC ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    Data.FastQ.FastQEncoding
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         Utils.Conduit.ByteLine Data.FastQ.ShortRead m ()
+  {- Arity: 3,
+     Strictness: <L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.FastQ.fqDecodeC1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m>_R
+                 ->_R <Data.FastQ.FastQEncoding>_R
+                 ->_R Sym (Data.Conduit.Internal.Conduit.N:ConduitT[0]
+                               <Utils.Conduit.ByteLine>_N
+                               <Data.FastQ.ShortRead>_N
+                               <m>_N
+                               <()>_R)) -}
+ea4713d2e3f15039e1e42723f54ec6f5
+  fqDecodeC1 ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    Data.FastQ.FastQEncoding
+    -> forall b.
+       (()
+        -> Data.Conduit.Internal.Pipe.Pipe
+             Utils.Conduit.ByteLine
+             Utils.Conduit.ByteLine
+             Data.FastQ.ShortRead
+             ()
+             m
+             b)
+       -> Data.Conduit.Internal.Pipe.Pipe
+            Utils.Conduit.ByteLine
+            Utils.Conduit.ByteLine
+            Data.FastQ.ShortRead
+            ()
+            m
+            b
+  {- Arity: 3,
+     Strictness: <L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U><L,U> -}
+32ab7703626d580f88faf29a2c297079
+  fqDecodeVector ::
+    GHC.Types.Int
+    -> Data.FastQ.FastQEncoding
+    -> Data.Vector.Vector Utils.Conduit.ByteLine
+    -> NGLess.NGError.NGLess (Data.Vector.Vector Data.FastQ.ShortRead)
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S(SSS),1*U(U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Data.FastQ.FastQEncoding)
+                   (w2 :: Data.Vector.Vector Utils.Conduit.ByteLine) ->
+                 case w2 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 Data.FastQ.$wfqDecodeVector w w1 ww1 ww2 ww3 }) -}
+81a3da95a8903e1a2301f91aaff49d37
+  fqEncode ::
+    Data.FastQ.FastQEncoding
+    -> Data.FastQ.ShortRead -> Data.ByteString.Internal.ByteString
+  {- Arity: 2, Strictness: <L,1*U><S(SSS(SSL)),1*U(U,U,U(U,U,U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.FastQ.FastQEncoding) (w1 :: Data.FastQ.ShortRead) ->
+                 case w1 of ww { Data.FastQ.ShortRead ww1 ww2 ww3 ->
+                 case ww3 of ww4 { Data.Vector.Storable.Vector ww5 ww6 ww7 ->
+                 Data.FastQ.$wfqEncode w ww1 ww2 ww5 ww6 ww7 } }) -}
+b8fe88061f31873e88d5fb7b6844cb4d
+  fqEncodeC ::
+    GHC.Base.Monad m =>
+    Data.FastQ.FastQEncoding
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         Data.FastQ.ShortRead Data.ByteString.Internal.ByteString m ()
+  {- Arity: 3, Strictness: <L,A><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.FastQ.fqEncodeC1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R <Data.FastQ.FastQEncoding>_R
+                 ->_R Sym (Data.Conduit.Internal.Conduit.N:ConduitT[0]
+                               <Data.FastQ.ShortRead>_N
+                               <Data.ByteString.Internal.ByteString>_N
+                               <m>_N
+                               <()>_R)) -}
+a82766671e8e5c52c769f533afe269b9
+  fqEncodeC1 ::
+    GHC.Base.Monad m =>
+    Data.FastQ.FastQEncoding
+    -> forall b.
+       (()
+        -> Data.Conduit.Internal.Pipe.Pipe
+             Data.FastQ.ShortRead
+             Data.FastQ.ShortRead
+             Data.ByteString.Internal.ByteString
+             ()
+             m
+             b)
+       -> Data.Conduit.Internal.Pipe.Pipe
+            Data.FastQ.ShortRead
+            Data.FastQ.ShortRead
+            Data.ByteString.Internal.ByteString
+            ()
+            m
+            b
+  {- Arity: 3, Strictness: <L,A><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ m :: * -> *
+                   ($dMonad :: GHC.Base.Monad m)
+                   (enc :: Data.FastQ.FastQEncoding)
+                   @ b
+                   (eta :: ()
+                           -> Data.Conduit.Internal.Pipe.Pipe
+                                Data.FastQ.ShortRead
+                                Data.FastQ.ShortRead
+                                Data.ByteString.Internal.ByteString
+                                ()
+                                m
+                                b) ->
+                 letrec {
+                   go :: Data.Conduit.Internal.Pipe.Pipe
+                           Data.FastQ.ShortRead
+                           Data.FastQ.ShortRead
+                           Data.ByteString.Internal.ByteString
+                           ()
+                           m
+                           b
+                   = Data.Conduit.Internal.Pipe.NeedInput
+                       @ Data.FastQ.ShortRead
+                       @ Data.FastQ.ShortRead
+                       @ Data.ByteString.Internal.ByteString
+                       @ ()
+                       @ m
+                       @ b
+                       go1
+                       eta
+                   go1 :: Data.FastQ.ShortRead
+                          -> Data.Conduit.Internal.Pipe.Pipe
+                               Data.FastQ.ShortRead
+                               Data.FastQ.ShortRead
+                               Data.ByteString.Internal.ByteString
+                               ()
+                               m
+                               b
+                     {- Arity: 1 -}
+                   = \ (i1 :: Data.FastQ.ShortRead) ->
+                     Data.Conduit.Internal.Pipe.HaveOutput
+                       @ Data.FastQ.ShortRead
+                       @ Data.FastQ.ShortRead
+                       @ Data.ByteString.Internal.ByteString
+                       @ ()
+                       @ m
+                       @ b
+                       go
+                       (Data.FastQ.fqEncode enc i1)
+                 } in
+                 go) -}
+7638e196b163821a0859ba72658d10e1
+  fqStatsC ::
+    Control.Monad.IO.Class.MonadIO m =>
+    Data.Conduit.Internal.Conduit.ConduitT
+      Data.FastQ.ShortRead Data.Void.Void m Data.FastQ.FQStatistics
+  {- Arity: 1, Strictness: <L,U(1*U(A,C(C1(U)),A,C(U),A),C(U))> -}
+fdd414d88cf948fd1c738d4e396e4d35
+  fqpathEncoding ::
+    Data.FastQ.FastQFilePath -> Data.FastQ.FastQEncoding
+  RecSel Left Data.FastQ.FastQFilePath
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FastQFilePath) ->
+                 case ds of wild { Data.FastQ.FastQFilePath ds1 ds2 -> ds1 }) -}
+fdd414d88cf948fd1c738d4e396e4d35
+  fqpathFilePath :: Data.FastQ.FastQFilePath -> GHC.IO.FilePath
+  RecSel Left Data.FastQ.FastQFilePath
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FastQFilePath) ->
+                 case ds of wild { Data.FastQ.FastQFilePath ds1 ds2 -> ds2 }) -}
+ff87bfd055db1ddfd8347d1ec0c8f51a
+  gcFraction :: Data.FastQ.FQStatistics -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(S)S(S)S(S)S(S)L)LLLL),1*U(1*U(1*U(U),1*U(U),1*U(U),1*U(U),A),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (res :: Data.FastQ.FQStatistics) ->
+                 case res of wild { Data.FastQ.FQStatistics ds dt ds1 dt1 ds2 ->
+                 case ds of wild1 { (,,,,) bpA bpC bpG bpT ds3 ->
+                 case bpC of wild2 { GHC.Types.I# x ->
+                 case bpG of wild3 { GHC.Types.I# y ->
+                 case bpA of wild4 { GHC.Types.I# x1 ->
+                 case bpT of wild5 { GHC.Types.I# y1 ->
+                 case GHC.Prim./##
+                        (GHC.Prim.int2Double# (GHC.Prim.+# x y))
+                        (GHC.Prim.int2Double#
+                           (GHC.Prim.+#
+                              (GHC.Prim.+# (GHC.Prim.+# x1 x) y)
+                              y1)) of wild6 { DEFAULT ->
+                 GHC.Types.D# wild6 } } } } } } }) -}
+c0fe872fc9bc8f8664ef5f5669491e0a
+  interleaveFQs ::
+    (Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m,
+     Control.Monad.Trans.Resource.Internal.MonadResource m,
+     Control.Monad.IO.Unlift.MonadUnliftIO m,
+     Control.Monad.Catch.MonadThrow m) =>
+    Data.FastQ.ReadSet
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         () Data.ByteString.Internal.ByteString m ()
+  {- Arity: 5,
+     Strictness: <L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U(U(U(A,C(C1(U)),C(C1(U)),C(U),A),C(U)),C(U))><L,U(U(U(A,C(C1(U)),C(C1(U)),C(U),A),C(U)),A,C(U))><L,U(U(A,C(C1(U)),A,C(U),A),C(C1(U)))><S,1*U(1*U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ m :: * -> *
+                   (w :: Control.Monad.Error.Class.MonadError
+                           NGLess.NGError.NGError m)
+                   (w1 :: Control.Monad.Trans.Resource.Internal.MonadResource m)
+                   (w2 :: Control.Monad.IO.Unlift.MonadUnliftIO m)
+                   (w3 :: Control.Monad.Catch.MonadThrow m)
+                   (w4 :: Data.FastQ.ReadSet) ->
+                 case w4 of ww { Data.FastQ.ReadSet ww1 ww2 ->
+                 Data.FastQ.$winterleaveFQs @ m w w1 w2 w3 ww1 ww2 }) -}
+11aa39266698c671bdb4006bd7133475
+  lc :: Data.FastQ.FQStatistics -> GHC.Int.Int8
+  RecSel Left Data.FastQ.FQStatistics
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLLL),1*U(A,U,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FQStatistics) ->
+                 case ds of wild { Data.FastQ.FQStatistics ds1 dt ds2 dt1 ds3 ->
+                 GHC.Int.I8# dt }) -}
+1f9c54bcac3225a1025710f4bfabb601
+  nBasepairs :: Data.FastQ.FQStatistics -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S(LLSLL),1*U(A,A,1*U,A,A)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.FastQ.FQStatistics) ->
+                 case w of ww { Data.FastQ.FQStatistics ww1 ww2 ww3 ww4 ww5 ->
+                 Data.FastQ.$wnBasepairs ww3 }) -}
+11aa39266698c671bdb4006bd7133475
+  nSeq :: Data.FastQ.FQStatistics -> GHC.Types.Int
+  RecSel Left Data.FastQ.FQStatistics
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLSL),1*U(A,A,A,U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FQStatistics) ->
+                 case ds of wild { Data.FastQ.FQStatistics ds1 dt ds2 dt1 ds3 ->
+                 GHC.Types.I# dt1 }) -}
+8c344e9d910c11c7ecc693660278ce93
+  nonATCGFrac :: Data.FastQ.FQStatistics -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S(S)S(S)S(S)S(S)S(S))LLLL),1*U(1*U(1*U(U),1*U(U),1*U(U),1*U(U),1*U(U)),A,A,A,A)>m,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.FastQ.FQStatistics) ->
+                 case w of ww { Data.FastQ.FQStatistics ww1 ww2 ww3 ww4 ww5 ->
+                 case ww1 of ww6 { (,,,,) ww7 ww8 ww9 ww10 ww11 ->
+                 case ww7 of ww12 { GHC.Types.I# ww13 ->
+                 case ww8 of ww14 { GHC.Types.I# ww15 ->
+                 case ww9 of ww16 { GHC.Types.I# ww17 ->
+                 case ww10 of ww18 { GHC.Types.I# ww19 ->
+                 case ww11 of ww20 { GHC.Types.I# ww21 ->
+                 case GHC.Prim./##
+                        (GHC.Prim.int2Double# ww21)
+                        (GHC.Prim.int2Double#
+                           (GHC.Prim.+#
+                              (GHC.Prim.+# (GHC.Prim.+# (GHC.Prim.+# ww13 ww15) ww17) ww19)
+                              ww21)) of ww22 { DEFAULT ->
+                 GHC.Types.D# ww22 } } } } } } } }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  pairedSamples ::
+    Data.FastQ.ReadSet
+    -> [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+  RecSel Left Data.FastQ.ReadSet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.ReadSet) ->
+                 case ds of wild { Data.FastQ.ReadSet ds1 ds2 -> ds1 }) -}
+11aa39266698c671bdb4006bd7133475
+  qualCounts ::
+    Data.FastQ.FQStatistics
+    -> [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+  RecSel Left Data.FastQ.FQStatistics
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSLL),1*U(A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FQStatistics) ->
+                 case ds of wild { Data.FastQ.FQStatistics ds1 dt ds2 dt1 ds3 ->
+                 ds2 }) -}
+fb7fcc2c19fd1a7ea9fa6168361f5f93
+  qualityPercentiles ::
+    Data.FastQ.FQStatistics
+    -> [(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S(LLSLL),1*U(A,A,1*U,A,A)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.FastQ.FQStatistics) ->
+                 case w of ww { Data.FastQ.FQStatistics ww1 ww2 ww3 ww4 ww5 ->
+                 Data.FastQ.$wqualityPercentiles ww3 }) -}
+8510e3e4bb02f0da6bc7d9bdf39056f5
+  qualityPercentiles1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Data.FastQ.$fEnumFastQEncoding12
+                   Data.FastQ.qualityPercentiles2
+                   GHC.Stack.Types.EmptyCallStack) -}
+91a1de417db3664f0d4bbf7d931eb3cf
+  qualityPercentiles2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Data.FastQ.$fEnumFastQEncoding10
+                   Data.FastQ.$fEnumFastQEncoding8
+                   Data.FastQ.$fEnumFastQEncoding6
+                   Data.FastQ.qualityPercentiles5
+                   Data.FastQ.qualityPercentiles4
+                   Data.FastQ.qualityPercentiles5
+                   Data.FastQ.qualityPercentiles3) -}
+1366a276caba45aada4bdc3032b00e84
+  qualityPercentiles3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 105#) -}
+50a94904b7b3ca7bacbe978990bdc222
+  qualityPercentiles4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 42#) -}
+599de263cf3880afb55d8ee2364970a3
+  qualityPercentiles5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 344#) -}
+11aa39266698c671bdb4006bd7133475
+  seqSize ::
+    Data.FastQ.FQStatistics -> (GHC.Types.Int, GHC.Types.Int)
+  RecSel Left Data.FastQ.FQStatistics
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.FQStatistics) ->
+                 case ds of wild { Data.FastQ.FQStatistics ds1 dt ds2 dt1 ds3 ->
+                 ds3 }) -}
+4c8ae3e110e39629ec05639a3c18db8c
+  singleSamples :: Data.FastQ.ReadSet -> [Data.FastQ.FastQFilePath]
+  RecSel Left Data.FastQ.ReadSet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.ReadSet) ->
+                 case ds of wild { Data.FastQ.ReadSet ds1 ds2 -> ds2 }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  srHeader ::
+    Data.FastQ.ShortRead -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.FastQ.ShortRead
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U(U,U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.ShortRead) ->
+                 case ds of wild { Data.FastQ.ShortRead ds1 ds2 ds3 -> ds1 }) -}
+2f8e844b37e49b164efc7d7fb84b36ca
+  srLength :: Data.FastQ.ShortRead -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LLLS)L),1*U(A,U(A,A,A,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.FastQ.ShortRead) ->
+                 case x of wild { Data.FastQ.ShortRead ds ds1 ds2 ->
+                 case ds1 of wild1 { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 GHC.Types.I# dt3 } }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  srQualities ::
+    Data.FastQ.ShortRead -> Data.Vector.Storable.Vector GHC.Int.Int8
+  RecSel Left Data.FastQ.ShortRead
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.ShortRead) ->
+                 case ds of wild { Data.FastQ.ShortRead ds1 ds2 ds3 -> ds3 }) -}
+22bd7330b29b52b3752e35cd5ee36bcb
+  srSequence ::
+    Data.FastQ.ShortRead -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.FastQ.ShortRead
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSL),1*U(A,U(U,U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.FastQ.ShortRead) ->
+                 case ds of wild { Data.FastQ.ShortRead ds1 ds2 ds3 -> ds2 }) -}
+b08403e8fd1059c88ab4a3b466a7e859
+  srSlice ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> Data.FastQ.ShortRead -> Data.FastQ.ShortRead
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S(SS(SLSS)S(SSL)),1*U(U,U(U,U,U,U),U(U,U,U))>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Data.FastQ.ShortRead) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 case w2 of ww4 { Data.FastQ.ShortRead ww5 ww6 ww7 ->
+                 case ww6 of ww8 { Data.ByteString.Internal.PS ww9 ww10 ww11 ww12 ->
+                 case ww7 of ww13 { Data.Vector.Storable.Vector ww14 ww15 ww16 ->
+                 case Data.FastQ.$wsrSlice
+                        ww1
+                        ww3
+                        ww5
+                        ww9
+                        ww10
+                        ww11
+                        ww12
+                        ww14
+                        ww15
+                        ww16 of ww17 { (#,,#) ww18 ww19 ww20 ->
+                 Data.FastQ.ShortRead ww18 ww19 ww20 } } } } } }) -}
+ab9cfdc2d068c82babad57912fa6844f
+  statsFromFastQ ::
+    (Control.Monad.IO.Class.MonadIO m,
+     Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m,
+     Control.Monad.Catch.MonadThrow m,
+     Control.Monad.IO.Unlift.MonadUnliftIO m) =>
+    GHC.IO.FilePath
+    -> Data.FastQ.FastQEncoding -> m Data.FastQ.FQStatistics
+  {- Arity: 4,
+     Strictness: <L,1*U(1*U(U(A,C(U),A,A,A,A),C(C1(U)),A,A,A),A)><L,U(U(U(U(C(C1(U)),A),C(U),C(C1(U)),A,A,A),C(C1(U)),A,A,A),C(U),C(C1(U)))><L,U(U(U(U(C(C1(U)),A),C(U),C(C1(U)),A,A,A),C(C1(U)),A,A,A),C(C(U)))><L,U(U(U(U(U(C(C1(U)),A),C(U),C(C1(U)),A,A,A),C(C1(U)),A,A,A),C(U)),U,C(U))> -}
+instance GHC.Enum.Bounded [Data.FastQ.FastQEncoding]
+  = Data.FastQ.$fBoundedFastQEncoding
+instance GHC.Enum.Enum [Data.FastQ.FastQEncoding]
+  = Data.FastQ.$fEnumFastQEncoding
+instance GHC.Classes.Eq [Data.FastQ.FQStatistics]
+  = Data.FastQ.$fEqFQStatistics
+instance GHC.Classes.Eq [Data.FastQ.FastQEncoding]
+  = Data.FastQ.$fEqFastQEncoding
+instance GHC.Classes.Eq [Data.FastQ.FastQFilePath]
+  = Data.FastQ.$fEqFastQFilePath
+instance GHC.Classes.Eq [Data.FastQ.ReadSet]
+  = Data.FastQ.$fEqReadSet
+instance GHC.Classes.Eq [Data.FastQ.ShortRead]
+  = Data.FastQ.$fEqShortRead
+instance Control.DeepSeq.NFData [Data.FastQ.FQStatistics]
+  = Data.FastQ.$fNFDataFQStatistics
+instance Control.DeepSeq.NFData [Data.FastQ.ShortRead]
+  = Data.FastQ.$fNFDataShortRead
+instance GHC.Classes.Ord [Data.FastQ.FastQEncoding]
+  = Data.FastQ.$fOrdFastQEncoding
+instance GHC.Classes.Ord [Data.FastQ.FastQFilePath]
+  = Data.FastQ.$fOrdFastQFilePath
+instance GHC.Classes.Ord [Data.FastQ.ReadSet]
+  = Data.FastQ.$fOrdReadSet
+instance GHC.Classes.Ord [Data.FastQ.ShortRead]
+  = Data.FastQ.$fOrdShortRead
+instance GHC.Show.Show [Data.FastQ.FQStatistics]
+  = Data.FastQ.$fShowFQStatistics
+instance GHC.Show.Show [Data.FastQ.FastQEncoding]
+  = Data.FastQ.$fShowFastQEncoding
+instance GHC.Show.Show [Data.FastQ.FastQFilePath]
+  = Data.FastQ.$fShowFastQFilePath
+instance GHC.Show.Show [Data.FastQ.ReadSet]
+  = Data.FastQ.$fShowReadSet
+instance GHC.Show.Show [Data.FastQ.ShortRead]
+  = Data.FastQ.$fShowShortRead
+"SPEC/Data.FastQ $fEq(,) @ FastQFilePath @ FastQFilePath" forall (v1 :: GHC.Classes.Eq
+                                                                          Data.FastQ.FastQFilePath)
+                                                                 (v :: GHC.Classes.Eq
+                                                                         Data.FastQ.FastQFilePath)
+  GHC.Classes.$fEq(,) @ Data.FastQ.FastQFilePath
+                      @ Data.FastQ.FastQFilePath
+                      v
+                      v1
+  = Data.FastQ.$fEqReadSet_$s$fEq(,)
+"SPEC/Data.FastQ $fEq(,)_$c/= @ FastQFilePath @ FastQFilePath" forall ($dEq1 :: GHC.Classes.Eq
+                                                                                  Data.FastQ.FastQFilePath)
+                                                                      ($dEq :: GHC.Classes.Eq
+                                                                                 Data.FastQ.FastQFilePath)
+  GHC.Classes.$fEq(,)_$c/= @ Data.FastQ.FastQFilePath
+                           @ Data.FastQ.FastQFilePath
+                           $dEq
+                           $dEq1
+  = Data.FastQ.$fEqReadSet_$s$fEq(,)_$c/=
+"SPEC/Data.FastQ $fEqVector @ Int" [orphan] forall (v1 :: GHC.Classes.Eq
+                                                            GHC.Types.Int)
+                                                   (v :: Data.Vector.Unboxed.Base.Unbox
+                                                           GHC.Types.Int)
+  Data.Vector.Unboxed.$fEqVector @ GHC.Types.Int v v1
+  = Data.FastQ.$fEqFQStatistics_$s$fEqVector
+"SPEC/Data.FastQ $fEqVector_$c/= @ Int" [orphan] forall ($dEq :: GHC.Classes.Eq
+                                                                   GHC.Types.Int)
+                                                        ($dUnbox :: Data.Vector.Unboxed.Base.Unbox
+                                                                      GHC.Types.Int)
+  Data.Vector.Unboxed.$fEqVector_$c/= @ GHC.Types.Int $dUnbox $dEq
+  = Data.FastQ.$fEqFQStatistics_$s$fEqVector_$c/=
+"SPEC/Data.FastQ $fEqVector_$c== @ Int" [orphan] forall ($dEq :: GHC.Classes.Eq
+                                                                   GHC.Types.Int)
+                                                        ($dUnbox :: Data.Vector.Unboxed.Base.Unbox
+                                                                      GHC.Types.Int)
+  Data.Vector.Unboxed.$fEqVector_$c== @ GHC.Types.Int $dUnbox $dEq
+  = Data.FastQ.$fEqFQStatistics_$s$fEqVector_$c==
+"SPEC/Data.FastQ $fOrd(,) @ FastQFilePath @ FastQFilePath" forall (v1 :: GHC.Classes.Ord
+                                                                           Data.FastQ.FastQFilePath)
+                                                                  (v :: GHC.Classes.Ord
+                                                                          Data.FastQ.FastQFilePath)
+  GHC.Classes.$fOrd(,) @ Data.FastQ.FastQFilePath
+                       @ Data.FastQ.FastQFilePath
+                       v
+                       v1
+  = Data.FastQ.$fOrdReadSet_$s$fOrd(,)
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

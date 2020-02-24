@@ -1,0 +1,1293 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:37.913991392 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Data.Sam 8065
+  interface hash: 3e0ca6dcc9d4506a33215d480eea5c26
+  ABI hash: 3fcb5a09f87798583b9f6366498e011d
+  export-list hash: cca2af82b8ff0df9f542f45f0746f94b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3381fda97e36f39b449373f77bfaec60
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Sam.encodeSamLine
+  Data.Sam.hasSequence
+  Data.Sam.isAligned
+  Data.Sam.isFirstInPair
+  Data.Sam.isNegative
+  Data.Sam.isPositive
+  Data.Sam.isSamHeaderString
+  Data.Sam.isSecondInPair
+  Data.Sam.matchIdentity
+  Data.Sam.matchSize
+  Data.Sam.matchSize'
+  Data.Sam.readSamGroupsC'
+  Data.Sam.readSamLine
+  Data.Sam.samIntTag
+  Data.Sam.samLength
+  Data.Sam.samStatsC
+  Data.Sam.samStatsC'
+  Data.Sam.SamGroup
+  Data.Sam.SamLine{Data.Sam.SamHeader Data.Sam.SamLine samCigar samExtra samFlag samMapq samPNext samPos samQName samQual samRName samRNext samSeq samTLen}
+module dependencies: NGLess.NGError Utils.Conduit Utils.Utils
+package dependencies: array-0.5.3.0 async-2.2.2 base-4.12.0.0
+                      binary-0.8.6.0 bytestring-0.10.8.2 bzlib-conduit-0.3.0.2
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 conduit-1.3.1.2
+                      conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 containers-0.6.0.1 data-default-class-0.1.2.0
+                      deepseq-1.4.4.0 directory-1.3.3.0 errors-2.3.0 exceptions-0.10.4
+                      filepath-1.4.2.1 ghc-boot-th-8.6.5 ghc-prim-0.5.3 hashable-1.2.7.0
+                      integer-gmp-1.0.2.0 lzma-0.0.0.3 lzma-conduit-1.2.1
+                      monad-loops-0.4.3 mono-traversable-1.0.15.1 mtl-2.2.2
+                      primitive-0.6.4.0 resourcet-1.2.2 safe-0.3.18 safeio-0.0.5.0
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 template-haskell-2.14.0.0
+                      text-1.2.3.1 time-1.8.0.2 transformers-0.5.6.2 unix-2.7.2.2
+                      unliftio-0.2.12 unliftio-core-0.1.2.0 unordered-containers-0.2.10.0
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy vector-0.12.0.3:Data.Vector.Unboxed
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  DataError b451375c347fcacf369c527855d02cf0
+  NGError a376f3cfcfb76b5fb7a76f3cdc4bd9d1
+  NGError 9741b2ef5fc8e673ccaf43057baf92e8
+  NGLess 416e5726ee4c4987c25367d545064990
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  unwrapByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+  allSame 40cad5086287ca763e1d068d1ee83fb8
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Bits 64fdef6c05b11e33e007318d457467e9
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:Data.Void 7d507f34fb7b7291298961d8e654089b
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder.ASCII 88ae284a2e9b2e5a6cdff2691bc658c7
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder.Internal 8258443d95d94e3caaed55a182aaa9c6
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.Lift 971813ebf88c39cc85e400504b3f9df3
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Utils d2a921b831bbb50309f9f422b2ce43e3
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  errors-2.3.0:Control.Error 10aa1520c30e6d4e074c4d9fbf0cd44a
+import  -/  errors-2.3.0:Control.Error.Util 51c7a01d0b759ba60a147d445df06bed
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  strict-0.3.2:Data.Strict.Tuple 6275b92f93ca2de7da589810fe97c5ed
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+import  -/  vector-0.12.0.3:Data.Vector.Mutable 19d2c8fd8f32780e96cd889699bc033c
+d9dcc2dce8a593454396f900fbcfe091
+  $fApplicativeSimpleParser ::
+    GHC.Base.Applicative Data.Sam.SimpleParser
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Sam.SimpleParser
+                  Data.Sam.$fFunctorSimpleParser
+                  Data.Sam.$fApplicativeSimpleParser5
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R ->_R Sym (Data.Sam.N:SimpleParser[0] <a>_R))
+                  Data.Sam.$fApplicativeSimpleParser4
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Data.Sam.SimpleParser (a -> b)>_R
+                   ->_R <Data.Sam.SimpleParser a>_R
+                   ->_R Sym (Data.Sam.N:SimpleParser[0] <b>_R))
+                  (\ @ a @ b @ c -> Data.Sam.$fApplicativeSimpleParser3 @ c @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Data.Sam.SimpleParser a>_R
+                   ->_R <Data.Sam.SimpleParser b>_R
+                   ->_R Sym (Data.Sam.N:SimpleParser[0] <c>_R))
+                  (\ @ a @ b -> Data.Sam.$fApplicativeSimpleParser2 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Data.Sam.SimpleParser a>_R
+                   ->_R <Data.Sam.SimpleParser b>_R
+                   ->_R Sym (Data.Sam.N:SimpleParser[0] <b>_R))
+                  (\ @ a @ b -> Data.Sam.$fApplicativeSimpleParser1 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Data.Sam.SimpleParser a>_R
+                   ->_R <Data.Sam.SimpleParser b>_R
+                   ->_R Sym (Data.Sam.N:SimpleParser[0] <a>_R)) -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fApplicativeSimpleParser1 ::
+    Data.Sam.SimpleParser a
+    -> Data.Sam.SimpleParser b
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (x :: Data.Sam.SimpleParser a)
+                   (eta :: Data.Sam.SimpleParser b)
+                   (eta1 :: Data.ByteString.Internal.ByteString) ->
+                 case x `cast` (Data.Sam.N:SimpleParser[0] <a>_R) eta1 of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Maybe.Nothing
+                        @ (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+                   GHC.Maybe.Just x1
+                   -> case x1 of wild1 { Data.Strict.Tuple.:!: v rest ->
+                      case eta `cast` (Data.Sam.N:SimpleParser[0] <b>_R) rest of wild2 {
+                        GHC.Maybe.Nothing
+                        -> GHC.Maybe.Nothing
+                             @ (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+                        GHC.Maybe.Just x2
+                        -> case x2 of wild3 { Data.Strict.Tuple.:!: g' rest' ->
+                           GHC.Maybe.Just
+                             @ (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+                             (Data.Strict.Tuple.:!:
+                                @ a
+                                @ Data.ByteString.Internal.ByteString
+                                v
+                                rest') } } } }) -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fApplicativeSimpleParser2 ::
+    Data.Sam.SimpleParser a
+    -> Data.Sam.SimpleParser b
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   (a1 :: Data.Sam.SimpleParser a)
+                   (a2 :: Data.Sam.SimpleParser b)
+                   (eta :: Data.ByteString.Internal.ByteString) ->
+                 case a1 `cast` (Data.Sam.N:SimpleParser[0] <a>_R) eta of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Maybe.Nothing
+                        @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                   GHC.Maybe.Just x
+                   -> case x of wild1 { Data.Strict.Tuple.:!: v rest ->
+                      case a2 `cast` (Data.Sam.N:SimpleParser[0] <b>_R) rest of wild2 {
+                        GHC.Maybe.Nothing
+                        -> GHC.Maybe.Nothing
+                             @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                        GHC.Maybe.Just x1
+                        -> case x1 of wild3 { Data.Strict.Tuple.:!: g' rest' ->
+                           wild2 } } } }) -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fApplicativeSimpleParser3 ::
+    (a -> b -> c)
+    -> Data.Sam.SimpleParser a
+    -> Data.Sam.SimpleParser b
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair c Data.ByteString.Internal.ByteString)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(S),1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: (\ @ c
+                   @ b
+                   @ a
+                   (f1 :: a -> b -> c)
+                   (x :: Data.Sam.SimpleParser a)
+                   (eta :: Data.Sam.SimpleParser b)
+                   (eta1 :: Data.ByteString.Internal.ByteString) ->
+                 case x `cast` (Data.Sam.N:SimpleParser[0] <a>_R) eta1 of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Maybe.Nothing
+                        @ (Data.Strict.Tuple.Pair c Data.ByteString.Internal.ByteString)
+                   GHC.Maybe.Just x1
+                   -> case x1 of wild1 { Data.Strict.Tuple.:!: v rest ->
+                      case f1 v of dt { DEFAULT ->
+                      case eta `cast` (Data.Sam.N:SimpleParser[0] <b>_R) rest of wild2 {
+                        GHC.Maybe.Nothing
+                        -> GHC.Maybe.Nothing
+                             @ (Data.Strict.Tuple.Pair c Data.ByteString.Internal.ByteString)
+                        GHC.Maybe.Just x2
+                        -> case x2 of wild3 { Data.Strict.Tuple.:!: g' rest' ->
+                           case dt g' of dt1 { DEFAULT ->
+                           GHC.Maybe.Just
+                             @ (Data.Strict.Tuple.Pair c Data.ByteString.Internal.ByteString)
+                             (Data.Strict.Tuple.:!:
+                                @ c
+                                @ Data.ByteString.Internal.ByteString
+                                dt1
+                                rest') } } } } } }) -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fApplicativeSimpleParser4 ::
+    Data.Sam.SimpleParser (a -> b)
+    -> Data.Sam.SimpleParser a
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (f :: Data.Sam.SimpleParser (a -> b))
+                   (g :: Data.Sam.SimpleParser a)
+                   (b1 :: Data.ByteString.Internal.ByteString) ->
+                 case f `cast` (Data.Sam.N:SimpleParser[0] <a -> b>_R) b1 of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Maybe.Nothing
+                        @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                   GHC.Maybe.Just x
+                   -> case x of wild1 { Data.Strict.Tuple.:!: f' rest ->
+                      case g `cast` (Data.Sam.N:SimpleParser[0] <a>_R) rest of wild2 {
+                        GHC.Maybe.Nothing
+                        -> GHC.Maybe.Nothing
+                             @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                        GHC.Maybe.Just x1
+                        -> case x1 of wild3 { Data.Strict.Tuple.:!: g' rest' ->
+                           case f' g' of dt { DEFAULT ->
+                           GHC.Maybe.Just
+                             @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                             (Data.Strict.Tuple.:!:
+                                @ b
+                                @ Data.ByteString.Internal.ByteString
+                                dt
+                                rest') } } } } }) -}
+844f7283c00ef5bd2855a31231fc7972
+  $fApplicativeSimpleParser5 ::
+    a
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (v :: a) (b :: Data.ByteString.Internal.ByteString) ->
+                 GHC.Maybe.Just
+                   @ (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+                   (Data.Strict.Tuple.$W:!:
+                      @ a
+                      @ Data.ByteString.Internal.ByteString
+                      v
+                      b)) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fEqSamLine :: GHC.Classes.Eq Data.Sam.SamLine
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Sam.SamLine
+                  Data.Sam.$fEqSamLine_$c==
+                  Data.Sam.$fEqSamLine_$c/= -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fEqSamLine_$c/= ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Data.Sam.SamLine) (y :: Data.Sam.SamLine) ->
+                 case Data.Sam.$fEqSamLine_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fEqSamLine_$c== ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fFunctorSimpleParser :: GHC.Base.Functor Data.Sam.SimpleParser
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Sam.SimpleParser
+                  Data.Sam.$fFunctorSimpleParser2
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R <Data.Sam.SimpleParser a>_R
+                   ->_R Sym (Data.Sam.N:SimpleParser[0] <b>_R))
+                  (\ @ a @ b -> Data.Sam.$fFunctorSimpleParser1 @ b @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Data.Sam.SimpleParser b>_R
+                   ->_R Sym (Data.Sam.N:SimpleParser[0] <a>_R)) -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fFunctorSimpleParser1 ::
+    a
+    -> Data.Sam.SimpleParser b
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b
+                   @ a
+                   (x :: a)
+                   (eta :: Data.Sam.SimpleParser b)
+                   (eta1 :: Data.ByteString.Internal.ByteString) ->
+                 case eta `cast` (Data.Sam.N:SimpleParser[0] <b>_R) eta1 of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Maybe.Nothing
+                        @ (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+                   GHC.Maybe.Just x1
+                   -> case x1 of wild1 { Data.Strict.Tuple.:!: v rest ->
+                      case x of dt { DEFAULT ->
+                      GHC.Maybe.Just
+                        @ (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+                        (Data.Strict.Tuple.:!:
+                           @ a
+                           @ Data.ByteString.Internal.ByteString
+                           dt
+                           rest) } } }) -}
+d9dcc2dce8a593454396f900fbcfe091
+  $fFunctorSimpleParser2 ::
+    (a -> b)
+    -> Data.Sam.SimpleParser a
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   (f :: a -> b)
+                   (p :: Data.Sam.SimpleParser a)
+                   (b1 :: Data.ByteString.Internal.ByteString) ->
+                 case p `cast` (Data.Sam.N:SimpleParser[0] <a>_R) b1 of wild {
+                   GHC.Maybe.Nothing
+                   -> GHC.Maybe.Nothing
+                        @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                   GHC.Maybe.Just x
+                   -> case x of wild1 { Data.Strict.Tuple.:!: v rest ->
+                      case f v of dt { DEFAULT ->
+                      GHC.Maybe.Just
+                        @ (Data.Strict.Tuple.Pair b Data.ByteString.Internal.ByteString)
+                        (Data.Strict.Tuple.:!:
+                           @ b
+                           @ Data.ByteString.Internal.ByteString
+                           dt
+                           rest) } } }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fNFDataSamLine :: Control.DeepSeq.NFData Data.Sam.SamLine
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Data.Sam.$fNFDataSamLine_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Data.Sam.SamLine>_N)) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fNFDataSamLine_$crnf :: Data.Sam.SamLine -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild { DEFAULT -> GHC.Tuple.() }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine :: GHC.Classes.Ord Data.Sam.SamLine
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Sam.SamLine
+                  Data.Sam.$fEqSamLine
+                  Data.Sam.$fOrdSamLine_$ccompare
+                  Data.Sam.$fOrdSamLine_$c<
+                  Data.Sam.$fOrdSamLine_$c<=
+                  Data.Sam.$fOrdSamLine_$c>
+                  Data.Sam.$fOrdSamLine_$c>=
+                  Data.Sam.$fOrdSamLine_$cmax
+                  Data.Sam.$fOrdSamLine_$cmin -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$c< ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$c<= ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.Sam.SamLine) (b :: Data.Sam.SamLine) ->
+                 case Data.Sam.$fOrdSamLine_$c< b a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$c> ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Data.Sam.SamLine) (b :: Data.Sam.SamLine) ->
+                 Data.Sam.$fOrdSamLine_$c< b a) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$c>= ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Data.Sam.SamLine) (b :: Data.Sam.SamLine) ->
+                 case Data.Sam.$fOrdSamLine_$c< a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$ccompare ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$cmax ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> Data.Sam.SamLine
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.Sam.SamLine) (y :: Data.Sam.SamLine) ->
+                 case Data.Sam.$fOrdSamLine_$c< y x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fOrdSamLine_$cmin ::
+    Data.Sam.SamLine -> Data.Sam.SamLine -> Data.Sam.SamLine
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Data.Sam.SamLine) (y :: Data.Sam.SamLine) ->
+                 case Data.Sam.$fOrdSamLine_$c< y x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fShowSamLine :: GHC.Show.Show Data.Sam.SamLine
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Data.Sam.SamLine
+                  Data.Sam.$fShowSamLine_$cshowsPrec
+                  Data.Sam.$fShowSamLine_$cshow
+                  Data.Sam.$fShowSamLine_$cshowList -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fShowSamLine_$cshow :: Data.Sam.SamLine -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 Data.Sam.$fShowSamLine_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fShowSamLine_$cshowList :: [Data.Sam.SamLine] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.Sam.SamLine]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Data.Sam.SamLine
+                   (Data.Sam.$fShowSamLine_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $fShowSamLine_$cshowsPrec ::
+    GHC.Types.Int -> Data.Sam.SamLine -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.Sam.SamLine) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Data.Sam.$w$cshowsPrec ww1 w1 }) -}
+86c2b03686bbffac653e3c9095d1292f
+  $s$fNFDataVector_$crnf ::
+    Data.Vector.Vector [Data.Sam.SamLine] -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSL),1*U(U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w1 :: Data.Vector.Vector [Data.Sam.SamLine]) ->
+                 case w1 of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 letrec {
+                   $wrnfAll :: GHC.Prim.Int# -> ()
+                     <join 1> {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                   = \ (ww4 :: GHC.Prim.Int#) ->
+                     case GHC.Prim.<# ww4 ww2 of lwild {
+                       DEFAULT -> GHC.Tuple.()
+                       1#
+                       -> letrec {
+                            go :: [Data.Sam.SamLine] -> () <join 1> {- Arity: 1 -}
+                            = \ (ds :: [Data.Sam.SamLine]) ->
+                              case ds of wild {
+                                [] -> $wrnfAll (GHC.Prim.+# ww4 1#)
+                                : x xs -> case x of wild1 { DEFAULT -> go xs } }
+                          } in
+                          go
+                            (case GHC.Prim.indexArray#
+                                    @ [Data.Sam.SamLine]
+                                    ww3
+                                    ww4 of ds2 { Unit# ipv ->
+                             ipv }) }
+                 } in
+                 $wrnfAll ww1 }) -}
+1e28853e76163e840ef300ce62843901
+  $tc'SamHeader :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14006581501571974607##
+                   4552676348188617800##
+                   Data.Sam.$trModule
+                   Data.Sam.$tc'SamHeader2
+                   0#
+                   Data.Sam.$tc'SamHeader1) -}
+9a1ee383887c99cb2b750f93e5d6a669
+  $tc'SamHeader1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e064f86dfbb8f767dce185a5a44fb282
+  $tc'SamHeader2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$tc'SamHeader3) -}
+9edf456ea65811c94db5f9a27253fce4
+  $tc'SamHeader3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SamHeader"#) -}
+22bc98df530edd613aa08b67a95e1713
+  $tc'SamLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3475683701449030959##
+                   3029366411984635148##
+                   Data.Sam.$trModule
+                   Data.Sam.$tc'SamLine2
+                   0#
+                   Data.Sam.$tc'SamLine1) -}
+39cad4c4a2704b0e944ec8dd7066a346
+  $tc'SamLine1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+69d4a84034ef40c3e7390dee6e154f69
+  $tc'SamLine2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$tc'SamLine3) -}
+03ccc4f3c683daec156a97a00c72bec1
+  $tc'SamLine3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SamLine"#) -}
+f25ecbfcaaf76ee7121a86045f60fbcc
+  $tc'SimpleParser :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2061779978675704294##
+                   2142241840800856757##
+                   Data.Sam.$trModule
+                   Data.Sam.$tc'SimpleParser2
+                   1#
+                   Data.Sam.$tc'SimpleParser1) -}
+79d9e1a08a6f6c4012f39ad2fae6d06e
+  $tc'SimpleParser1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3d3e5681524e66e3d3260738c48038a0
+  $tc'SimpleParser2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$tc'SimpleParser3) -}
+a0e132f028a702fc0752fb4e036061b1
+  $tc'SimpleParser3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SimpleParser"#) -}
+621e190a9b0173eac18d736cce8e73fb
+  $tcSamLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5523965340758539100##
+                   10470376093606777119##
+                   Data.Sam.$trModule
+                   Data.Sam.$tcSamLine1
+                   0#
+                   GHC.Types.krep$*) -}
+54cf056798003f69cae8a4d4c60b196a
+  $tcSamLine1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$tcSamLine2) -}
+b67f7ee8388e61de1ca06e469e87c0b5
+  $tcSamLine2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SamLine"#) -}
+9b8dc9eddae36c8f05ab01faeb469d15
+  $tcSimpleParser :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4890670062952135003##
+                   11879411495581635023##
+                   Data.Sam.$trModule
+                   Data.Sam.$tcSimpleParser1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+4cf013a95f6867e8cc5e71bc40407b85
+  $tcSimpleParser1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$tcSimpleParser2) -}
+b5e89f92ec782c62a7ebbe5ec3babca3
+  $tcSimpleParser2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SimpleParser"#) -}
+1aba62fe6c4cdcf5d9f21c91ca352bb7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Sam.$trModule3
+                   Data.Sam.$trModule1) -}
+8c817043514e19ea0062cc74a86dab7c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$trModule2) -}
+affe48e29015284ee9fcf1d1f003138f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Data.Sam"#) -}
+ad34c9d4670f7e5e4e817c37bccd73b7
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Data.Sam.$trModule4) -}
+7705f239e4d8844a83dc80c333289ba2
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  $w$cshowsPrec ::
+    GHC.Prim.Int# -> Data.Sam.SamLine -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2] -}
+2c423d06698900986fb440bfe03f146f
+  $w$smatchSize' ::
+    GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Either.Either NGLess.NGError.NGError GHC.Types.Int
+  {- Arity: 6, Strictness: <L,U><L,U><S,U><L,U><S,U><S,U>,
+     Inline: [2] -}
+03331b5d696d8b9e5fa7d19d287cdd56
+  $wmatchSize' ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> m GHC.Types.Int
+  {- Arity: 7,
+     Strictness: <L,U(1*U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U><L,U><S,U><L,U><S,U><S,U>,
+     Inline: [2] -}
+a294d9cea97b30a509f1fa06d02392e0
+  $wreadSamLine ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Either.Either NGLess.NGError.NGError Data.Sam.SamLine
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,U>, Inline: [2] -}
+8c9bb3dd5f71648483a88dbf3d48f4f6
+  type SamGroup = [Data.Sam.SamLine]
+01f7dabca6fb8c4cde05c4a9c121515e
+  data SamLine
+    = SamLine {samQName :: !Data.ByteString.Internal.ByteString,
+               samFlag :: {-# UNPACK #-}GHC.Types.Int,
+               samRName :: {-# UNPACK #-}Data.ByteString.Internal.ByteString,
+               samPos :: {-# UNPACK #-}GHC.Types.Int,
+               samMapq :: {-# UNPACK #-}GHC.Types.Int,
+               samCigar :: {-# UNPACK #-}Data.ByteString.Internal.ByteString,
+               samRNext :: {-# UNPACK #-}Data.ByteString.Internal.ByteString,
+               samPNext :: {-# UNPACK #-}GHC.Types.Int,
+               samTLen :: {-# UNPACK #-}GHC.Types.Int,
+               samSeq :: {-# UNPACK #-}Data.ByteString.Internal.ByteString,
+               samQual :: {-# UNPACK #-}Data.ByteString.Internal.ByteString,
+               samExtra :: {-# UNPACK #-}Data.ByteString.Internal.ByteString}
+    | SamHeader !Data.ByteString.Internal.ByteString
+d9dcc2dce8a593454396f900fbcfe091
+  newtype SimpleParser a
+    = SimpleParser {runSimpleParser :: Data.ByteString.Internal.ByteString
+                                       -> GHC.Maybe.Maybe
+                                            (Data.Strict.Tuple.Pair
+                                               a Data.ByteString.Internal.ByteString)}
+357aff79e10a2b23bad0dcc9dad7b943
+  encodeSamLine ::
+    Data.Sam.SamLine -> Data.ByteString.Builder.Internal.Builder
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+692cc50529c12c5ac60653316ce04a30
+  hasSequence :: Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> case Data.ByteString.Internal.packChars
+                             (GHC.Base.build
+                                @ GHC.Types.Char
+                                (\ @ b ->
+                                 GHC.CString.unpackFoldrCString#
+                                   @ b
+                                   "*"#)) of wild1 { Data.ByteString.Internal.PS dt29 dt30 dt31 dt32 ->
+                      case GHC.Classes.neInt
+                             (GHC.Types.I# dt20)
+                             (GHC.Types.I# dt32) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.eqAddr# dt17 dt29 of lwild {
+                             DEFAULT
+                             -> case Data.ByteString.Internal.compareBytes
+                                       (Data.ByteString.Internal.PS dt17 dt18 dt19 dt20)
+                                       wild1 of wild3 {
+                                  DEFAULT -> GHC.Types.True GHC.Types.EQ -> GHC.Types.False }
+                             1#
+                             -> case GHC.Classes.eqInt
+                                       (GHC.Types.I# dt19)
+                                       (GHC.Types.I# dt31) of wild3 {
+                                  GHC.Types.False
+                                  -> case Data.ByteString.Internal.compareBytes
+                                            (Data.ByteString.Internal.PS dt17 dt18 dt19 dt20)
+                                            wild1 of wild4 {
+                                       DEFAULT -> GHC.Types.True GHC.Types.EQ -> GHC.Types.False }
+                                  GHC.Types.True -> GHC.Types.False } }
+                        GHC.Types.True -> GHC.Types.True } }
+                   Data.Sam.SamHeader ds1 -> GHC.Types.False }) -}
+6a34bf38530a48942c0cae62b809802a
+  isAligned :: Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> case GHC.Classes.neInt
+                             (GHC.Types.I# (GHC.Prim.andI# dt 4#))
+                             (GHC.Types.I# 0#) of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Int
+                             "samFlag"#
+                      ret_ty GHC.Types.Bool
+                      of {} }) -}
+c31b582f5b8f6b102dcc6383bed09e4d
+  isFirstInPair :: Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Classes.neInt
+                        (GHC.Types.I# (GHC.Prim.andI# dt 64#))
+                        (GHC.Types.I# 0#)
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Int
+                             "samFlag"#
+                      ret_ty GHC.Types.Bool
+                      of {} }) -}
+20f4b97a458461ad0b3dfac3fba20b99
+  isNegative :: Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Classes.neInt
+                        (GHC.Types.I# (GHC.Prim.andI# dt 16#))
+                        (GHC.Types.I# 0#)
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Int
+                             "samFlag"#
+                      ret_ty GHC.Types.Bool
+                      of {} }) -}
+f0e9b49f99d7d2a5ad8cae4a8920b637
+  isPositive :: Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> case GHC.Classes.neInt
+                             (GHC.Types.I# (GHC.Prim.andI# dt 16#))
+                             (GHC.Types.I# 0#) of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Int
+                             "samFlag"#
+                      ret_ty GHC.Types.Bool
+                      of {} }) -}
+65a4dceed70d7bae59d35b345f0a2c64
+  isSamHeaderString ::
+    Data.ByteString.Internal.ByteString -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(U,U,U,U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (s :: Data.ByteString.Internal.ByteString) ->
+                 case s of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case GHC.Classes.leInt
+                        (GHC.Types.I# dt3)
+                        (GHC.Types.I# 0#) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Classes.leInt
+                             (GHC.Types.I# dt3)
+                             (GHC.Types.I# 0#) of wild2 {
+                        GHC.Types.False
+                        -> case GHC.Prim.readWord8OffAddr#
+                                  @ GHC.Prim.RealWorld
+                                  (GHC.Prim.plusAddr# dt dt2)
+                                  0#
+                                  GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                           case GHC.Prim.touch#
+                                  @ 'GHC.Types.LiftedRep
+                                  @ GHC.ForeignPtr.ForeignPtrContents
+                                  dt1
+                                  ipv of s' { DEFAULT ->
+                           GHC.Word.eqWord8 (GHC.Word.W8# ipv1) (GHC.Word.W8# 64##) } }
+                        GHC.Types.True
+                        -> case Data.ByteString.errorEmptyList
+                                  @ GHC.Word.Word8
+                                  (GHC.Base.build
+                                     @ GHC.Types.Char
+                                     (\ @ b -> GHC.CString.unpackFoldrCString# @ b "head"#))
+                           ret_ty GHC.Types.Bool
+                           of {} }
+                   GHC.Types.True -> GHC.Types.False } }) -}
+0e7f4e54af3f8167c1db2201974fcdf6
+  isSecondInPair :: Data.Sam.SamLine -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Classes.neInt
+                        (GHC.Types.I# (GHC.Prim.andI# dt 128#))
+                        (GHC.Types.I# 0#)
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.Types.Int
+                             "samFlag"#
+                      ret_ty GHC.Types.Bool
+                      of {} }) -}
+fdb660d24081eb427f0f5df78031a41b
+  matchIdentity ::
+    GHC.Types.Bool
+    -> Data.Sam.SamLine
+    -> Data.Either.Either NGLess.NGError.NGError GHC.Types.Double
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+7c047e83a26b508ddb5e03051224591e
+  matchSize ::
+    GHC.Types.Bool
+    -> Data.Sam.SamLine
+    -> Data.Either.Either NGLess.NGError.NGError GHC.Types.Int
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (includeI :: GHC.Types.Bool) (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.Sam.matchSize_$smatchSize'
+                        includeI
+                        GHC.Types.False
+                        (Data.ByteString.Internal.PS dt7 dt8 dt9 dt10)
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ Data.ByteString.Internal.ByteString
+                             "samCigar"#
+                      ret_ty (Data.Either.Either NGLess.NGError.NGError GHC.Types.Int)
+                      of {} }) -}
+d0140c0e63734b785c8c3ea2098b5263
+  matchSize' ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> Data.ByteString.Internal.ByteString
+    -> m GHC.Types.Int
+  {- Arity: 4,
+     Strictness: <L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U><L,U><S(SLSS),1*U(U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ m :: * -> *
+                   (w :: Control.Monad.Error.Class.MonadError
+                           NGLess.NGError.NGError m)
+                   (w1 :: GHC.Types.Bool)
+                   (w2 :: GHC.Types.Bool)
+                   (w3 :: Data.ByteString.Internal.ByteString) ->
+                 case w3 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Data.Sam.$wmatchSize' @ m w w1 w2 ww1 ww2 ww3 ww4 }) -}
+f45d5974c457a6104e21c88dfddea2d5
+  matchSize_$smatchSize' ::
+    GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> Data.ByteString.Internal.ByteString
+    -> Data.Either.Either NGLess.NGError.NGError GHC.Types.Int
+  {- Arity: 3, Strictness: <L,U><L,U><S(SLSS),1*U(U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Bool)
+                   (w1 :: GHC.Types.Bool)
+                   (w2 :: Data.ByteString.Internal.ByteString) ->
+                 case w2 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Data.Sam.$w$smatchSize' w w1 ww1 ww2 ww3 ww4 }) -}
+b9cbb2fcefdf8f9b139055b3a12a1c95
+  readSamGroupsC' ::
+    (Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m,
+     Control.Monad.IO.Class.MonadIO m) =>
+    GHC.Types.Int
+    -> GHC.Types.Bool
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         (Data.Vector.Vector Utils.Conduit.ByteLine)
+         (Data.Vector.Vector [Data.Sam.SamLine])
+         m
+         ()
+  {- Arity: 2,
+     Strictness: <L,U(U(A,C(C1(U)),A,C(U),A),C(U),A)><L,U(U(A,C(C1(U)),A,C(U),A),C(U))> -}
+d3c3c13b36bc4ce1dde3f5f872b9d4d0
+  readSamLine ::
+    Data.ByteString.Internal.ByteString
+    -> Data.Either.Either NGLess.NGError.NGError Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S(SLSS),1*U(U,U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.ByteString.Internal.ByteString) ->
+                 case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Data.Sam.$wreadSamLine ww1 ww2 ww3 ww4 }) -}
+d9dcc2dce8a593454396f900fbcfe091
+  runSimpleParser ::
+    Data.Sam.SimpleParser a
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe
+         (Data.Strict.Tuple.Pair a Data.ByteString.Internal.ByteString)
+  RecSel Left Data.Sam.SimpleParser
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Sam.runSimpleParser1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Sam.SimpleParser a>_R
+                 ->_R Data.Sam.N:SimpleParser[0] <a>_R) -}
+d9dcc2dce8a593454396f900fbcfe091
+  runSimpleParser1 ::
+    Data.Sam.SimpleParser a -> Data.Sam.SimpleParser a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (ds :: Data.Sam.SimpleParser a) -> ds) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samCigar :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.ByteString.Internal.PS dt7 dt8 dt9 dt10
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samCigar"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samExtra :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.ByteString.Internal.PS dt25 dt26 dt27 dt28
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samExtra"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samFlag :: Data.Sam.SamLine -> GHC.Types.Int
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Types.I# dt
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Int
+                        "samFlag"# }) -}
+0b825daed5be8a8e94b7a068005953d6
+  samIntTag ::
+    Data.Sam.SamLine
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Maybe.Maybe GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U><L,1*U(U,U,U,U)> -}
+f344e908e530c2511cd252a2768a65c4
+  samLength :: Data.Sam.SamLine -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Data.Sam.SamLine) ->
+                 case x of wild {
+                   Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Types.I# dt20
+                   Data.Sam.SamHeader ipv
+                   -> case Control.Exception.Base.recSelError
+                             @ 'GHC.Types.LiftedRep
+                             @ Data.ByteString.Internal.ByteString
+                             "samSeq"#
+                      ret_ty GHC.Types.Int
+                      of {} }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samMapq :: Data.Sam.SamLine -> GHC.Types.Int
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Types.I# dt6
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Int
+                        "samMapq"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samPNext :: Data.Sam.SamLine -> GHC.Types.Int
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Types.I# dt15
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Int
+                        "samPNext"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samPos :: Data.Sam.SamLine -> GHC.Types.Int
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Types.I# dt5
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Int
+                        "samPos"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samQName :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> ds1
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samQName"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samQual :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.ByteString.Internal.PS dt21 dt22 dt23 dt24
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samQual"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samRName :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.ByteString.Internal.PS dt1 dt2 dt3 dt4
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samRName"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samRNext :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.ByteString.Internal.PS dt11 dt12 dt13 dt14
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samRNext"# }) -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samSeq :: Data.Sam.SamLine -> Data.ByteString.Internal.ByteString
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> Data.ByteString.Internal.PS dt17 dt18 dt19 dt20
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.ByteString.Internal.ByteString
+                        "samSeq"# }) -}
+9e16e59dcf03a561e5265b7350211a41
+  samStatsC ::
+    Control.Monad.IO.Class.MonadIO m =>
+    Data.Conduit.Internal.Conduit.ConduitT
+      (Data.Vector.Vector Utils.Conduit.ByteLine)
+      Data.Void.Void
+      m
+      (NGLess.NGError.NGLess
+         (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int))
+  {- Arity: 1,
+     Strictness: <L,U(U(U(U(C(C(U)),A),A,A,A,A,A),C(C1(U)),A,C(U),C(U)),C(U))> -}
+b4ae00d42cd4a80793fc8de4dbdbf021
+  samStatsC' ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    Data.Conduit.Internal.Conduit.ConduitT
+      (Data.Vector.Vector Data.Sam.SamGroup)
+      Data.Void.Void
+      m
+      (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 2,
+     Strictness: <L,1*U(1*U(A,C(C1(U)),A,C(U),A),A,A)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Data.Sam.samStatsC'1
+                  `cast`
+                (forall (m :: <* -> *>_N).
+                 <Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m>_R
+                 ->_R Sym (Data.Conduit.Internal.Conduit.N:ConduitT[0]
+                               <Data.Vector.Vector Data.Sam.SamGroup>_N
+                               <Data.Void.Void>_N
+                               <m>_N
+                               <(GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)>_R)) -}
+b357c7656c9debd0e2dbd696a2773f1a
+  samStatsC'1 ::
+    Control.Monad.Error.Class.MonadError NGLess.NGError.NGError m =>
+    ((GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+     -> Data.Conduit.Internal.Pipe.Pipe
+          (Data.Vector.Vector Data.Sam.SamGroup)
+          (Data.Vector.Vector Data.Sam.SamGroup)
+          Data.Void.Void
+          ()
+          m
+          b)
+    -> Data.Conduit.Internal.Pipe.Pipe
+         (Data.Vector.Vector Data.Sam.SamGroup)
+         (Data.Vector.Vector Data.Sam.SamGroup)
+         Data.Void.Void
+         ()
+         m
+         b
+  {- Arity: 2,
+     Strictness: <L,1*U(1*U(A,C(C1(U)),A,C(U),A),A,A)><L,C(U)> -}
+01f7dabca6fb8c4cde05c4a9c121515e
+  samTLen :: Data.Sam.SamLine -> GHC.Types.Int
+  RecSel Left Data.Sam.SamLine
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Sam.SamLine) ->
+                 case ds of wild {
+                   Data.Sam.SamLine ds1 dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                   -> GHC.Types.I# dt16
+                   Data.Sam.SamHeader ipv
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Int
+                        "samTLen"# }) -}
+instance GHC.Base.Applicative [Data.Sam.SimpleParser]
+  = Data.Sam.$fApplicativeSimpleParser
+instance GHC.Classes.Eq [Data.Sam.SamLine] = Data.Sam.$fEqSamLine
+instance GHC.Base.Functor [Data.Sam.SimpleParser]
+  = Data.Sam.$fFunctorSimpleParser
+instance Control.DeepSeq.NFData [Data.Sam.SamLine]
+  = Data.Sam.$fNFDataSamLine
+instance GHC.Classes.Ord [Data.Sam.SamLine] = Data.Sam.$fOrdSamLine
+instance GHC.Show.Show [Data.Sam.SamLine] = Data.Sam.$fShowSamLine
+"SPEC matchSize' @ (Either NGError)" forall ($dMonadError :: Control.Monad.Error.Class.MonadError
+                                                               NGLess.NGError.NGError
+                                                               (Data.Either.Either
+                                                                  NGLess.NGError.NGError))
+  Data.Sam.matchSize' @ (Data.Either.Either NGLess.NGError.NGError)
+                      $dMonadError
+  = Data.Sam.matchSize_$smatchSize'
+"SPEC/Data.Sam $fNFDataVector_$crnf @ [SamLine]" [2] forall (w :: Control.DeepSeq.NFData
+                                                                    [Data.Sam.SamLine])
+  Data.Vector.$fNFDataVector_$crnf @ [Data.Sam.SamLine] w
+  = Data.Sam.$s$fNFDataVector_$crnf
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

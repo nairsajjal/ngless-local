@@ -1,0 +1,2404 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:17.970405815 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:BuiltinFunctions 8065
+  interface hash: 0f96f788e8931cdee78fd1d6f668c67f
+  ABI hash: c2568683b34fc338dfcf729a27429f2c
+  export-list hash: 4fabbbd5eb29dc18c7c546be1dc1f0af
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1eeb64675462c8857e1c8221480d5248
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BuiltinFunctions.builtinFunctions
+  BuiltinFunctions.builtinMethods
+  BuiltinFunctions.findFunction
+  BuiltinFunctions.MethodInfo{BuiltinFunctions.MethodInfo methodArgType methodChecks methodIsPure methodKwargsInfo methodName methodReturnType methodSelfType}
+  Language.MethodName{Language.MethodName unwrapMethodName}
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language Modules
+                     NGLess NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.FindModules Utils.LockFile Utils.Samtools
+                     Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      process-1.6.5.0 profunctors-5.3 random-1.1 reflection-2.1.5
+                      regex-1.0.2.0 regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  FuncName a3f44134039f1915698a791072d2c89e
+  FuncName 441672d7eb62c1c87f9948f9c78adad7
+  MethodName 3a7b3929a7abcd9627c07af2ab496db6
+  MethodName a5ecd529fe2b52118416127e8ed16401
+  NGLAny 8437f26e446282e6da2a289f9f8bd196
+  NGLBool d87c76a16baf27d54edaa264a8e0a36f
+  NGLCounts 4a13ff56c74b4fd70ca59b8c56b9ad30
+  NGLDouble 1a7366660f17cce24085c4c0b2726965
+  NGLInteger ff895dfec66c31f5a28f7e2aa66762ba
+  NGLMappedRead 3ae9ece88adcb030fe453d32e5e9c33c
+  NGLMappedReadSet 96c5e0f9293435d5998da7c890b67b50
+  NGLRead 000e74505ec873a9563fdff8d87d55cd
+  NGLReadSet 9d5f98c897d571785f336b174e593308
+  NGLString 82acf143f89407c474dc0cb0d76162c8
+  NGLSymbol 0e75578ac16f82d10d02c421525d1405
+  NGLType d78124de7a35dac4710fa19fa17820a5
+  NGLVoid 270592e6e6b718e69ed7d1f1dcc78ccb
+  NGList 34711d46e6b19ecce76e817cff7e315c
+  unwrapMethodName a5ecd529fe2b52118416127e8ed16401
+import  -/  Modules d7b04bae20d952778746efecd6f653cd
+  exports: e612fb66accb36645cea5fb0c9541754
+  ArgCheckFileReadable cd7fc1b3a1f58dc68dacf1989a228470
+  ArgCheckFileWritable 9f90833a7a0a74b35c853db084f576ec
+  ArgCheckMinVersion 3ec1f3ef23ead7d4b07e23fac89d964a
+  ArgCheckSymbol f4ae803ce57672c73318286649d365f2
+  ArgDeprecated c3530da64a215955449c4ba24ac97ddb
+  ArgInformation 28345a1149daf0524a3666c0df728692
+  ArgInformation ac86c28a801be7ef411fb2dc303275ef
+  Function d2362c47d7c9710332b2e11a4c2d8df3
+  Function ea8a515503aace5f77e7178c87cb63b2
+  FunctionCheck ca664b640a26a091d6fcd77a022e7e98
+  FunctionCheckMinNGLessVersion 1f7b1826ec020f4f08eeeddef73d57bf
+  FunctionCheckReturnAssigned f2d40038e175a3f8e76947b49e6af006
+  Module 5ea81178a37f2cc1f71e0dfed7af0657
+  funcName ea8a515503aace5f77e7178c87cb63b2
+  modFunctions 5ea81178a37f2cc1f71e0dfed7af0657
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+6a165580203f95c3bbb3c6e1a7401605
+  $fEqMethodInfo :: GHC.Classes.Eq BuiltinFunctions.MethodInfo
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ BuiltinFunctions.MethodInfo
+                  BuiltinFunctions.$fEqMethodInfo_$c==
+                  BuiltinFunctions.$fEqMethodInfo_$c/= -}
+6a165580203f95c3bbb3c6e1a7401605
+  $fEqMethodInfo_$c/= ::
+    BuiltinFunctions.MethodInfo
+    -> BuiltinFunctions.MethodInfo -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)LLLLLL),1*U(1*U(U,U,U),1*U,1*U,1*U,1*U,1*U,1*U)><S(S(LLS)LLLLLL),1*U(1*U(U,U,U),U,1*U,U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: BuiltinFunctions.MethodInfo)
+                   (y :: BuiltinFunctions.MethodInfo) ->
+                 case BuiltinFunctions.$fEqMethodInfo_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  $fEqMethodInfo_$c== ::
+    BuiltinFunctions.MethodInfo
+    -> BuiltinFunctions.MethodInfo -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLS)LLLLLL),1*U(1*U(U,U,U),1*U,1*U,1*U,1*U,1*U,1*U)><S(S(LLS)LLLLLL),1*U(1*U(U,U,U),U,1*U,U,1*U,1*U,1*U)>,
+     Unfolding: (\ (ds :: BuiltinFunctions.MethodInfo)
+                   (ds1 :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo a1 a2 a3 a4 a5 a6 a7 ->
+                 case ds1 of wild1 { BuiltinFunctions.MethodInfo b1 b2 b3 b4 b5 b6 b7 ->
+                 case a1
+                        `cast`
+                      (Language.N:MethodName[0]) of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b1
+                        `cast`
+                      (Language.N:MethodName[0]) of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt2 dt5 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             dt
+                             (GHC.Prim.int2Word# dt1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# dt2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> case Language.$fEqNGLType_$c== a2 b2 of wild6 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> let {
+                                  $j :: GHC.Types.Bool <join 0>
+                                  = case Language.$fEqNGLType_$c== a4 b4 of wild7 {
+                                      GHC.Types.False -> GHC.Types.False
+                                      GHC.Types.True
+                                      -> case GHC.Classes.$fEq[]_$c==
+                                                @ Modules.ArgInformation
+                                                Modules.$fEqArgInformation
+                                                a5
+                                                b5 of wild8 {
+                                           GHC.Types.False -> GHC.Types.False
+                                           GHC.Types.True
+                                           -> case a6 of wild9 {
+                                                GHC.Types.False
+                                                -> case b6 of wild10 {
+                                                     GHC.Types.False
+                                                     -> GHC.Classes.$fEq[]_$c==
+                                                          @ Modules.FunctionCheck
+                                                          Modules.$fEqFunctionCheck
+                                                          a7
+                                                          b7
+                                                     GHC.Types.True -> GHC.Types.False }
+                                                GHC.Types.True
+                                                -> case b6 of wild10 {
+                                                     GHC.Types.False -> GHC.Types.False
+                                                     GHC.Types.True
+                                                     -> GHC.Classes.$fEq[]_$c==
+                                                          @ Modules.FunctionCheck
+                                                          Modules.$fEqFunctionCheck
+                                                          a7
+                                                          b7 } } } }
+                                } in
+                                case a3 of wild7 {
+                                  GHC.Maybe.Nothing
+                                  -> case b3 of wild8 {
+                                       GHC.Maybe.Nothing -> $j
+                                       GHC.Maybe.Just ipv -> GHC.Types.False }
+                                  GHC.Maybe.Just a11
+                                  -> case b3 of wild8 {
+                                       GHC.Maybe.Nothing -> GHC.Types.False
+                                       GHC.Maybe.Just b11
+                                       -> case Language.$fEqNGLType_$c== a11 b11 of wild9 {
+                                            GHC.Types.False -> GHC.Types.False
+                                            GHC.Types.True -> $j } } } } } } } } } } }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  $fShowMethodInfo :: GHC.Show.Show BuiltinFunctions.MethodInfo
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ BuiltinFunctions.MethodInfo
+                  BuiltinFunctions.$fShowMethodInfo_$cshowsPrec
+                  BuiltinFunctions.$fShowMethodInfo_$cshow
+                  BuiltinFunctions.$fShowMethodInfo_$cshowList -}
+6a165580203f95c3bbb3c6e1a7401605
+  $fShowMethodInfo_$cshow ::
+    BuiltinFunctions.MethodInfo -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U(U,U,U),1*U,1*U,1*U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: BuiltinFunctions.MethodInfo) ->
+                 BuiltinFunctions.$fShowMethodInfo_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6a165580203f95c3bbb3c6e1a7401605
+  $fShowMethodInfo_$cshowList ::
+    [BuiltinFunctions.MethodInfo] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [BuiltinFunctions.MethodInfo]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ BuiltinFunctions.MethodInfo
+                   (BuiltinFunctions.$fShowMethodInfo_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+6a165580203f95c3bbb3c6e1a7401605
+  $fShowMethodInfo_$cshowsPrec ::
+    GHC.Types.Int -> BuiltinFunctions.MethodInfo -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(U(U,U,U),1*U,1*U,1*U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: BuiltinFunctions.MethodInfo) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { BuiltinFunctions.MethodInfo ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 BuiltinFunctions.$w$cshowsPrec
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9 } }) -}
+304d171ed327cfb19ce6803098a2902b
+  $tc'MethodInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16857351543714636062##
+                   4033307757501301344##
+                   BuiltinFunctions.$trModule
+                   BuiltinFunctions.$tc'MethodInfo2
+                   0#
+                   BuiltinFunctions.$tc'MethodInfo1) -}
+bfc697b2570ea18f59af8816662eca3b
+  $tc'MethodInfo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0fff404b7593a0ea90ea78e066d51000
+  $tc'MethodInfo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinFunctions.$tc'MethodInfo3) -}
+482f446bf5c9f979552277c3a9fd7f5e
+  $tc'MethodInfo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MethodInfo"#) -}
+4cfebe8207a5b84b2fcb0d7f18e81057
+  $tcMethodInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14763723710046678039##
+                   16090744600270116392##
+                   BuiltinFunctions.$trModule
+                   BuiltinFunctions.$tcMethodInfo1
+                   0#
+                   GHC.Types.krep$*) -}
+96b0ce6da296fec49af13c2e39783207
+  $tcMethodInfo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinFunctions.$tcMethodInfo2) -}
+4566fee7743fa3fc2379f74faae56881
+  $tcMethodInfo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MethodInfo"#) -}
+96b16943a5a3677d64459aea825cf21e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   BuiltinFunctions.$trModule3
+                   BuiltinFunctions.$trModule1) -}
+2246f0207c3108eb486dbd9e072b4e7f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinFunctions.$trModule2) -}
+a63c49a1b64f66d2075ab22b22827af9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BuiltinFunctions"#) -}
+57cab6b5245893c39b0d5843ff78e2d8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinFunctions.$trModule4) -}
+b9e835063e3ff36a406da2fe8b54d908
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+cd511a41a8d9df9614ad033024e22e47
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.MethodName
+    -> Language.NGLType
+    -> GHC.Maybe.Maybe Language.NGLType
+    -> Language.NGLType
+    -> [Modules.ArgInformation]
+    -> GHC.Types.Bool
+    -> [Modules.FunctionCheck]
+    -> GHC.Show.ShowS
+  {- Arity: 8,
+     Strictness: <S,U><L,U(U,U,U)><L,1*U><L,1*U><L,1*U><L,U><L,U><L,U>,
+     Inline: [2] -}
+6a165580203f95c3bbb3c6e1a7401605
+  data MethodInfo
+    = MethodInfo {methodName :: Language.MethodName,
+                  methodSelfType :: Language.NGLType,
+                  methodArgType :: GHC.Maybe.Maybe Language.NGLType,
+                  methodReturnType :: Language.NGLType,
+                  methodKwargsInfo :: [Modules.ArgInformation],
+                  methodIsPure :: GHC.Types.Bool,
+                  methodChecks :: [Modules.FunctionCheck]}
+2f2fb5223c27d93ea23b1bc9ccb9088c
+  builtinFunctions :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions157
+                   BuiltinFunctions.builtinFunctions1) -}
+8290ba534d2beafb920990cea14a6952
+  builtinFunctions1 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions148
+                   BuiltinFunctions.builtinFunctions2) -}
+66b6bbffda71073a642a50c28c07ea89
+  builtinFunctions10 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions90
+                   BuiltinFunctions.builtinFunctions11) -}
+4ba2bfece6730386a905132c6949b75b
+  builtinFunctions100 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "block_size_megabases"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+cc97888fdfa859941b8ae23c98810729
+  builtinFunctions101 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "mapper"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+d56a41d80cfba5c75ab888915a9f9dc6
+  builtinFunctions102 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "mode_all"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+1bd18a3ae243f071daf00bbba65aab06
+  builtinFunctions103 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "fafile"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   BuiltinFunctions.builtinFunctions42 }) -}
+5a9e18a4810cb90f1421bedde373a1e8
+  builtinFunctions104 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "reference"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+1be4254015d328847239d3202a4269da
+  builtinFunctions105 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLReadSet) -}
+8c6b7c8c3d64b1398133764f6844aba7
+  builtinFunctions106 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "map"#) -}
+4a5d596d47e7b2ac19067b28c65a61cd
+  builtinFunctions107 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions118
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions117
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLRead
+                   BuiltinFunctions.builtinFunctions113
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions108) -}
+af1fd89342bc214ea0ef1f833c078286
+  builtinFunctions108 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   Modules.FunctionCheckReturnAssigned
+                   BuiltinFunctions.builtinFunctions109) -}
+c7dd92e62cb03d098cf83de766fbcec3
+  builtinFunctions109 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   BuiltinFunctions.builtinFunctions110
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+efdf4aa6a219cde63254de86623502fe
+  builtinFunctions11 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions78
+                   BuiltinFunctions.builtinFunctions12) -}
+7259afbf42518a49e06c7034746aeebd
+  builtinFunctions110 :: Modules.FunctionCheck
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Modules.FunctionCheckMinNGLessVersion
+                   BuiltinFunctions.builtinFunctions111) -}
+87a23f2848752bbb1069f5e2e18d1abf
+  builtinFunctions111 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((BuiltinFunctions.builtinFunctions36,
+                  BuiltinFunctions.builtinFunctions112)) -}
+a0e1428679219b2178769994ebdbaecb
+  builtinFunctions112 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+92ec6a32ede4b0434ff4ea4ed4babed1
+  builtinFunctions113 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions116
+                   BuiltinFunctions.builtinFunctions114) -}
+2dbdcf85872f5aab2dd7d2da8632d1de
+  builtinFunctions114 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions115
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+62f3fc36c901fbbba6a2dda84bb1f064
+  builtinFunctions115 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "window"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.True
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+4eb7f8f2ce24cd51da9eabe00ddd7c2f
+  builtinFunctions116 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "min_quality"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.True
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+10a1c0cfc13f423b714ed652bcf252ec
+  builtinFunctions117 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just @ Language.NGLType Language.NGLRead) -}
+e3664c6433b4f6754744ca7fd9262feb
+  builtinFunctions118 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "smoothtrim"#) -}
+1a85cb2b9e86c5c8a29060fe12013e6c
+  builtinFunctions119 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions123
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions117
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLRead
+                   BuiltinFunctions.builtinFunctions120
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+b3829e4c44539a2c86ef43b4dafe394a
+  builtinFunctions12 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions76
+                   BuiltinFunctions.builtinFunctions13) -}
+0d6a5c9898e019917dc128d5c9a43d5d
+  builtinFunctions120 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions116
+                   BuiltinFunctions.builtinFunctions121) -}
+dc62e63d2c7844fc71f2ddcf9329b8b1
+  builtinFunctions121 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions122
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+4305869c9be42fd62e4bc9c9b7acd1f7
+  builtinFunctions122 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "from_ends"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "both"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "3"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "5"#)
+                                  (GHC.Types.[] @ Data.Text.Internal.Text)))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+8d2d1103db71506328fd40d478ab0dd5
+  builtinFunctions123 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "endstrim"#) -}
+ef48ec270eff6b8ad12639fc2ba35675
+  builtinFunctions124 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions126
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions117
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLRead
+                   BuiltinFunctions.builtinFunctions125
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+2b7896c2086aa2b1dc30dfdb3f966e2a
+  builtinFunctions125 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions116
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+6a37a71eec9da714d67eae179486ca44
+  builtinFunctions126 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "substrim"#) -}
+1c8c99c9795739e76a57f3c1b6adab8d
+  builtinFunctions127 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions132
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions105
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLReadSet
+                   BuiltinFunctions.builtinFunctions128
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+22693c511b95dd4674c251c29f995888
+  builtinFunctions128 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions131
+                   BuiltinFunctions.builtinFunctions129) -}
+d0b0599555c507ec209b91153fc4ab76
+  builtinFunctions129 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions130
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+a19a3d611d2cc6d0be0354b0ff82d2f3
+  builtinFunctions13 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions45
+                   BuiltinFunctions.builtinFunctions14) -}
+e2c5533bf7732f2382bfe187bca9b443
+  builtinFunctions130 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "__qc_input"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+e78e5c6f15c5da95167bc2b16b3311de
+  builtinFunctions131 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "keep_singles"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+1adf7d30ff4ff735ce1dc85448ae04dd
+  builtinFunctions132 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "preprocess"#) -}
+ec87d95a9b6edb468e15d57f0806d338
+  builtinFunctions133 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions87
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions105
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLReadSet
+                   BuiltinFunctions.builtinFunctions134
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+5b4a79435afb530858c1c8a8d451144f
+  builtinFunctions134 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions135
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+3dbfe535dc41657c97dd5abe4098b280
+  builtinFunctions135 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "max_copies"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+594c2d1e9ee3b31f84d7052cf7d507b8
+  builtinFunctions136 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions141
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions43
+                   BuiltinFunctions.builtinFunctions42
+                   Language.NGLMappedReadSet
+                   BuiltinFunctions.builtinFunctions137
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+e5f466dab20666156a863140dca1184a
+  builtinFunctions137 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions140
+                   BuiltinFunctions.builtinFunctions138) -}
+142322877dd7da33af6142714ffefc98
+  builtinFunctions138 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions139
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+acf6f16ccfbb5dcc71e22a77eca28663
+  builtinFunctions139 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "headers"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckMinVersion (GHC.Types.I# 0#, GHC.Types.I# 7#))
+                      BuiltinFunctions.builtinFunctions42) }) -}
+5560a6c839b5de6ccec51189c460f048
+  builtinFunctions14 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions40
+                   BuiltinFunctions.builtinFunctions15) -}
+a47126606726500a66131b172b959761
+  builtinFunctions140 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "name"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+be3cc6258b547d86c413c81414566355
+  builtinFunctions141 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "samfile"#) -}
+ea9ab7b91f73f0635f95959fa1af2baa
+  builtinFunctions142 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions147
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions145
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLReadSet
+                   BuiltinFunctions.builtinFunctions143
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+4a0682c7b45cd4f108560862c5e0ab71
+  builtinFunctions143 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions144
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+fb965166c5242957b9560ed8da0a4e5d
+  builtinFunctions144 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "name"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.True
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+ed66c68a8facd47311048b857d583e8c
+  builtinFunctions145 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   BuiltinFunctions.builtinFunctions146) -}
+c143aee45ee78f0ab7b06b41191a026e
+  builtinFunctions146 :: Language.NGLType
+  {- HasNoCafRefs, Strictness: m15,
+     Unfolding: (Language.NGList Language.NGLReadSet) -}
+69c86f8bfc7b40290d49209309c59907
+  builtinFunctions147 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "group"#) -}
+8b613b26b07e70ae750dcc4e74a62faa
+  builtinFunctions148 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions85
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions43
+                   BuiltinFunctions.builtinFunctions42
+                   Language.NGLReadSet
+                   BuiltinFunctions.builtinFunctions149
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+bfda46811740a3a5073be28fe8e06d2d
+  builtinFunctions149 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions156
+                   BuiltinFunctions.builtinFunctions150) -}
+4398cba3a790ed29df1dd06ad03f1670
+  builtinFunctions15 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions25
+                   BuiltinFunctions.builtinFunctions16) -}
+5f4d82c9f881f055149613f1fd4a71dc
+  builtinFunctions150 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions155
+                   BuiltinFunctions.builtinFunctions151) -}
+5c7acb5787acece4404ab94624f3d14c
+  builtinFunctions151 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions154
+                   BuiltinFunctions.builtinFunctions152) -}
+6baa7de47b749ee63360621ad28f3783
+  builtinFunctions152 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions153
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+c99ab0b619f9d57fddb21236d8da7d85
+  builtinFunctions153 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "__perform_qc"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+caa8a40aa43e8301085eb9ed20683d4f
+  builtinFunctions154 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "encoding"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "auto"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "33"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "64"#)
+                                  (GHC.Types.:
+                                     @ Data.Text.Internal.Text
+                                     (Data.Text.Show.unpackCString# "sanger"#)
+                                     (GHC.Types.:
+                                        @ Data.Text.Internal.Text
+                                        (Data.Text.Show.unpackCString# "solexa"#)
+                                        (GHC.Types.[] @ Data.Text.Internal.Text)))))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+c5e5f2a250c180a70c017bd6bc17722c
+  builtinFunctions155 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "singles"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+316bfcda4070bc6f30706f4e09b4d7d3
+  builtinFunctions156 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "second"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.True
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+31e5898a1bacc4b94cd8d984f28e4bc9
+  builtinFunctions157 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions161
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions43
+                   BuiltinFunctions.builtinFunctions42
+                   Language.NGLReadSet
+                   BuiltinFunctions.builtinFunctions158
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+c55857ec8fb7e8b796b3bcb30b424763
+  builtinFunctions158 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions154
+                   BuiltinFunctions.builtinFunctions159) -}
+23e56c7947a8caf3638c97a692f36393
+  builtinFunctions159 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions160
+                   BuiltinFunctions.builtinFunctions152) -}
+8c455905eede82e941a183e8011ea7f2
+  builtinFunctions16 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions22
+                   BuiltinFunctions.builtinFunctions17) -}
+e0968ede47350ce7f3134af61ee95e80
+  builtinFunctions160 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "interleaved"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckMinVersion (GHC.Types.I# 1#, GHC.Types.I# 1#))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+5e2feff4a816830a67570cd8e5ac88be
+  builtinFunctions161 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "fastq"#) -}
+12f49c6a1fffc06a0e51a87ed2430d93
+  builtinFunctions17 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions18
+                   (GHC.Types.[] @ Modules.Function)) -}
+7eeca1b442b20b5eeee3928d5494f93b
+  builtinFunctions18 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions21
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions19
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLMappedReadSet
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+56cf1b34c56a713e71e9c7699c81449d
+  builtinFunctions19 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   BuiltinFunctions.builtinFunctions20) -}
+316053319a278a88c8b1eb8eb919e480
+  builtinFunctions2 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions142
+                   BuiltinFunctions.builtinFunctions3) -}
+951b28e82ecedec35658dbdb275f3088
+  builtinFunctions20 :: Language.NGLType
+  {- HasNoCafRefs, Strictness: m15,
+     Unfolding: (Language.NGList Language.NGLString) -}
+63cdebd480b6d73f02bf5f240aab6822
+  builtinFunctions21 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "__merge_samfiles"#) -}
+33d1b5cfa7769634a76abf7938544b55
+  builtinFunctions22 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions24
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions23
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLVoid
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+04166c8649e9a2ba9c4fbafe9706f286
+  builtinFunctions23 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just @ Language.NGLType Language.NGLAny) -}
+882e3b605a89068c107c529161c258c0
+  builtinFunctions24 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "print"#) -}
+6cc4a6b7ce9fe03345f8e3381cf25102
+  builtinFunctions25 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions39
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions23
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLVoid
+                   BuiltinFunctions.builtinFunctions26
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+20119b0562ad04bc5a6a5fb87b7ac2db
+  builtinFunctions26 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions38
+                   BuiltinFunctions.builtinFunctions27) -}
+daab72f097258d92687cb6c3bc35f5b9
+  builtinFunctions27 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions37
+                   BuiltinFunctions.builtinFunctions28) -}
+97666664a93a5f69fbe07f748f9181b9
+  builtinFunctions28 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions35
+                   BuiltinFunctions.builtinFunctions29) -}
+d472a5f20e9c0bc24715c19c8fcda0be
+  builtinFunctions29 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions34
+                   BuiltinFunctions.builtinFunctions30) -}
+9c9aaa510cfd91b4d8cbd30cfcc1d0da
+  builtinFunctions3 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions136
+                   BuiltinFunctions.builtinFunctions4) -}
+65171620e8e57ce07fba191964b7648a
+  builtinFunctions30 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions33
+                   BuiltinFunctions.builtinFunctions31) -}
+c71bc9dada622b99ca61ae8e9d9f12e6
+  builtinFunctions31 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions32
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+f1aefefdc5fd287163f676c110a83834
+  builtinFunctions32 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "auto_comments"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   (Language.NGList Language.NGLSymbol)
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "date"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "script"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "hash"#)
+                                  (GHC.Types.[] @ Data.Text.Internal.Text)))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+d36d4054fb156160962db3eba5a91701
+  builtinFunctions33 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "comment"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+5fdfff5bf9db7c0215a96520760da173
+  builtinFunctions34 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "verbose"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+107fc017fb258ba427727ea9ef832725
+  builtinFunctions35 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "format_flags"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckMinVersion
+                         (BuiltinFunctions.builtinFunctions36, GHC.Types.I# 7#))
+                      (GHC.Types.:
+                         @ Modules.ArgCheck
+                         (Modules.ArgCheckSymbol
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "interleaved"#)
+                               (GHC.Types.[] @ Data.Text.Internal.Text)))
+                         (GHC.Types.[] @ Modules.ArgCheck))) }) -}
+5527ce1d039fce0528e5389c9396bfb2
+  builtinFunctions36 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+0452bca7fe25d886875556b6ca22b899
+  builtinFunctions37 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "format"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "tsv"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "csv"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "bam"#)
+                                  (GHC.Types.:
+                                     @ Data.Text.Internal.Text
+                                     (Data.Text.Show.unpackCString# "sam"#)
+                                     (GHC.Types.[] @ Data.Text.Internal.Text))))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+da0d31951a61539cb9a0b7fac9305dcc
+  builtinFunctions38 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "ofile"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.True
+                   Language.NGLString
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      Modules.ArgCheckFileWritable
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+255134523efed7eebce30a03a60c970a
+  builtinFunctions39 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "write"#) -}
+1fdbeb14d6a3a982b454886d5e3854cc
+  builtinFunctions4 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions133
+                   BuiltinFunctions.builtinFunctions5) -}
+1738a432876ba92257eb5d36eddc994b
+  builtinFunctions40 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions44
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions43
+                   BuiltinFunctions.builtinFunctions42
+                   Language.NGLCounts
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+4712cbb9095bd05cd2f7a604ccbe4bd7
+  builtinFunctions41 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   Modules.FunctionCheckReturnAssigned
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+0686f4621957fcd13a9962a84ac5e407
+  builtinFunctions42 :: [Modules.ArgCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgCheck
+                   Modules.ArgCheckFileReadable
+                   (GHC.Types.[] @ Modules.ArgCheck)) -}
+28a9b082023cd1a3253d4acef5edc15c
+  builtinFunctions43 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLString) -}
+df857b3c732138442f38f4b7bdf165de
+  builtinFunctions44 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "countfile"#) -}
+23b39f03edae02538439ccf13bc9f3eb
+  builtinFunctions45 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions75
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions74
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLCounts
+                   BuiltinFunctions.builtinFunctions46
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+a96450322783311cbcce400daea2fcc7
+  builtinFunctions46 :: [Modules.ArgInformation]
+  {- Unfolding: (GHC.Base.++_$s++
+                   @ Modules.ArgInformation
+                   (GHC.Types.:
+                      @ Modules.ArgInformation
+                      (case Data.Text.Show.unpackCString#
+                              "original_lno"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                       Modules.ArgInformation
+                         dt
+                         GHC.Types.False
+                         Language.NGLInteger
+                         (GHC.Types.[] @ Modules.ArgCheck) })
+                      (GHC.Types.[] @ Modules.ArgInformation))
+                   BuiltinFunctions.builtinFunctions73
+                   BuiltinFunctions.builtinFunctions47) -}
+c7459b0772a95c35adb233fd8d47c4a8
+  builtinFunctions47 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions72
+                   BuiltinFunctions.builtinFunctions48) -}
+4c937a78dd66d5c4670536c37eb1f9fd
+  builtinFunctions48 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions71
+                   BuiltinFunctions.builtinFunctions49) -}
+6474cdbc104c1f7ea8bc5e09d13b39fa
+  builtinFunctions49 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions70
+                   BuiltinFunctions.builtinFunctions50) -}
+2df93d128390f2822ea4d5b4df1f952a
+  builtinFunctions5 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions127
+                   BuiltinFunctions.builtinFunctions6) -}
+6e69ef28a149d9036e4165e2131a09ee
+  builtinFunctions50 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions69
+                   BuiltinFunctions.builtinFunctions51) -}
+2b74c73a6f2099a97b0e248a2e6e6080
+  builtinFunctions51 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions68
+                   BuiltinFunctions.builtinFunctions52) -}
+f52f233750ad6fe4b46f9c66f90b5b88
+  builtinFunctions52 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions67
+                   BuiltinFunctions.builtinFunctions53) -}
+b0237275d691226148b1dc294e2c9e58
+  builtinFunctions53 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions66
+                   BuiltinFunctions.builtinFunctions54) -}
+a5f2f6fbddf385824073a5ae7233fbb6
+  builtinFunctions54 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions65
+                   BuiltinFunctions.builtinFunctions55) -}
+d9ebe876094912fa1afcf1cc75bf1682
+  builtinFunctions55 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions64
+                   BuiltinFunctions.builtinFunctions56) -}
+89d74ecfc69e52bec25f40506b89ae8b
+  builtinFunctions56 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions63
+                   BuiltinFunctions.builtinFunctions57) -}
+eb95fbc3db31bf74d32c65509dce785c
+  builtinFunctions57 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions62
+                   BuiltinFunctions.builtinFunctions58) -}
+0975a31c8204a069b21e33226c906db5
+  builtinFunctions58 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions61
+                   BuiltinFunctions.builtinFunctions59) -}
+7e62915c811aa1bc541633237352754d
+  builtinFunctions59 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions60
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+c9a36622593868184b5f81ded7354348
+  builtinFunctions6 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions124
+                   BuiltinFunctions.builtinFunctions7) -}
+1a7b2481e43d12ca2d485c1db528ab12
+  builtinFunctions60 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "reference"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckMinVersion (GHC.Types.I# 0#, GHC.Types.I# 8#))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+9bd7023a38933b3f97f89948c44d7d6f
+  builtinFunctions61 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "normalization"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "raw"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "normed"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "scaled"#)
+                                  (GHC.Types.:
+                                     @ Data.Text.Internal.Text
+                                     (Data.Text.Show.unpackCString# "fpkm"#)
+                                     (GHC.Types.[] @ Data.Text.Internal.Text))))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+ed9d5e61acb49b4f2a83c5f4cfb06734
+  builtinFunctions62 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "include_minus1"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+9ede1133954a519c0d6960a3ddc9726f
+  builtinFunctions63 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "discard_zeros"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+dcf09db435d7c53dff06a4b9c26afe41
+  builtinFunctions64 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "norm"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+45dc162b13cb56a41e66ef96bd3f0d77
+  builtinFunctions65 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "strand"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgDeprecated
+                         (GHC.Types.I# 1#, GHC.Types.I# 1#)
+                         (Data.Text.Show.unpackCString# "Use `sense` argument instead"#))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+e70771fe593d33cd3dee0538536dfd42
+  builtinFunctions66 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "sense"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "both"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               dt
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "antisense"#)
+                                  (GHC.Types.[] @ Data.Text.Internal.Text)))))
+                      (GHC.Types.:
+                         @ Modules.ArgCheck
+                         (Modules.ArgCheckMinVersion (GHC.Types.I# 1#, GHC.Types.I# 1#))
+                         (GHC.Types.[] @ Modules.ArgCheck))) }) -}
+af026582b2b2cdbdd2ca5a6778ea80f2
+  builtinFunctions67 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "functional_map"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      Modules.ArgCheckFileReadable
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+6f9bd2196e8c9d5397fdef3a5e1b69ff
+  builtinFunctions68 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "gff_file"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      Modules.ArgCheckFileReadable
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+eccf6070b242728c93c8cd8f13d4ce0f
+  builtinFunctions69 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "mode"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "union"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "intersection_strict"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "intersection_non_empty"#)
+                                  (GHC.Types.[] @ Data.Text.Internal.Text)))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+9526b00c18bf025de123c136dc190fa1
+  builtinFunctions7 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions119
+                   BuiltinFunctions.builtinFunctions8) -}
+351d2896720ca55e8076211bc56e2886
+  builtinFunctions70 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "multiple"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "all1"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "dist1"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  (Data.Text.Show.unpackCString# "1overN"#)
+                                  (GHC.Types.:
+                                     @ Data.Text.Internal.Text
+                                     (Data.Text.Show.unpackCString# "unique_only"#)
+                                     (GHC.Types.[] @ Data.Text.Internal.Text))))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+41ed377f1f0092fb900ee025b3688bcc
+  builtinFunctions71 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "min"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+b9b47ef311a83627fc7a23d93e22e23b
+  builtinFunctions72 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "subfeatures"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   (Language.NGList Language.NGLString)
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+107279c2f714da417bed79376a956071
+  builtinFunctions73 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "features"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   (Language.NGList Language.NGLString)
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+1ecfb3128e856d9182dde59443543afa
+  builtinFunctions74 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLMappedReadSet) -}
+44740867c0c0c2e87ef5393407551410
+  builtinFunctions75 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "__check_count"#) -}
+e7f10f0be984f491ca9e2e7f715ae3ee
+  builtinFunctions76 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions77
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions74
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLCounts
+                   BuiltinFunctions.countArgs
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+0df1ad502336a6663498825ac7a09dd5
+  builtinFunctions77 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "count"#) -}
+608a4be462a18125070e342ea3a49a5d
+  builtinFunctions78 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions89
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions74
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLMappedReadSet
+                   BuiltinFunctions.builtinFunctions79
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+328b11aaacfd7ccaa928e73432d632ae
+  builtinFunctions79 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions88
+                   BuiltinFunctions.builtinFunctions80) -}
+95b83ff177fd842f22049aa191873f72
+  builtinFunctions8 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions107
+                   BuiltinFunctions.builtinFunctions9) -}
+62a84b996a71e89ff7f0b552c06bf1c9
+  builtinFunctions80 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions86
+                   BuiltinFunctions.builtinFunctions81) -}
+9483a03ff9e8aaf4fba6b21dab9172eb
+  builtinFunctions81 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions84
+                   BuiltinFunctions.builtinFunctions82) -}
+261cfe58b437fc211ced4f6ac222217b
+  builtinFunctions82 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions83
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+a1c74fd5a0353fc554b6cac597b9d27d
+  builtinFunctions83 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "__oname"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLString
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+7ef5724a1d6e275a73052e8a8511d167
+  builtinFunctions84 :: Modules.ArgInformation
+  {- Unfolding: (case BuiltinFunctions.builtinFunctions85 of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+a7f4722f87a4af81cb051a810b1f7a00
+  builtinFunctions85 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "paired"#) -}
+94b1c99156bfcd51d6a2c94da9f669c8
+  builtinFunctions86 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "drop_if"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   (Language.NGList Language.NGLSymbol)
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "mapped"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "unmapped"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  BuiltinFunctions.builtinFunctions87
+                                  (GHC.Types.[] @ Data.Text.Internal.Text)))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+139a3ca10823b33be257bbb2551d5eeb
+  builtinFunctions87 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "unique"#) -}
+2cb1f60663e28ef73b3ede37cdfea119
+  builtinFunctions88 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "keep_if"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   (Language.NGList Language.NGLSymbol)
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "mapped"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "unmapped"#)
+                               (GHC.Types.:
+                                  @ Data.Text.Internal.Text
+                                  BuiltinFunctions.builtinFunctions87
+                                  (GHC.Types.[] @ Data.Text.Internal.Text)))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+87406e5bfc9befe22a0ce4a7b559ef49
+  builtinFunctions89 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "select"#) -}
+ef6e700ed867d82ddbae4b58d79d34a2
+  builtinFunctions9 :: [Modules.Function]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.Function
+                   BuiltinFunctions.builtinFunctions92
+                   BuiltinFunctions.builtinFunctions10) -}
+2d6d811d81a5a0bb3a56d199477de41a
+  builtinFunctions90 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions91
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions74
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLCounts
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+bc05d04ee5fc3ac9a8cb7507ecc432db
+  builtinFunctions91 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "mapstats"#) -}
+19a928f421ede823ee2417191745702c
+  builtinFunctions92 :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinFunctions.builtinFunctions106
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinFunctions.builtinFunctions105
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLMappedReadSet
+                   BuiltinFunctions.builtinFunctions93
+                   GHC.Types.False
+                   BuiltinFunctions.builtinFunctions41) -}
+c65ca30f683358585e1990a76dcf72a8
+  builtinFunctions93 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions104
+                   BuiltinFunctions.builtinFunctions94) -}
+e0260bad1ed1f423e5ff462a6f56e511
+  builtinFunctions94 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions103
+                   BuiltinFunctions.builtinFunctions95) -}
+6189dcaaa7c23155d45fbaeab8674a47
+  builtinFunctions95 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions102
+                   BuiltinFunctions.builtinFunctions96) -}
+7a90cf24fe2d1d3205008b3fcd31edc7
+  builtinFunctions96 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions101
+                   BuiltinFunctions.builtinFunctions97) -}
+9e573a112974a0210a732637403e3431
+  builtinFunctions97 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions100
+                   BuiltinFunctions.builtinFunctions98) -}
+b7b315e009a4490d25e887acfd07ddbc
+  builtinFunctions98 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions99
+                   BuiltinFunctions.builtinFunctions82) -}
+f60db10b66c1b0d0ffd600da80241bae
+  builtinFunctions99 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "__extra_args"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   (Language.NGList Language.NGLString)
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckMinVersion (GHC.Types.I# 1#, GHC.Types.I# 1#))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+a5f8559d86c1c28119eba2ae1c7253ca
+  builtinMethods :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods43
+                   BuiltinFunctions.builtinMethods1) -}
+363c0a6d04c8b546419a09478d7ae0d9
+  builtinMethods1 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods31
+                   BuiltinFunctions.builtinMethods2) -}
+f089be52bd3bb5478e0569bfa1bba2de
+  builtinMethods10 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   BuiltinFunctions.builtinMethods11
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+8c6a7aaf2d681c4865a13e914b091fbc
+  builtinMethods11 :: Modules.FunctionCheck
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Modules.FunctionCheckMinNGLessVersion
+                   BuiltinFunctions.builtinMethods12) -}
+ba0534b7f0879cca8d97dcec45c22c8a
+  builtinMethods12 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((BuiltinFunctions.builtinFunctions36,
+                  BuiltinFunctions.builtinMethods13)) -}
+7479b6e8c30a9efd041666b0cbc938ec
+  builtinMethods13 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 8#) -}
+237c8298dd8a8f8f39c3e6e23ee4ea5e
+  builtinMethods14 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "n_to_zero_quality"#) -}
+49472c0725e6d54605563a967c46a612
+  builtinMethods15 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods17
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLRead
+                   BuiltinFunctions.builtinMethods16
+                   Language.NGLDouble
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+213d002f6f6ecd4a6ca6478a8b115fd5
+  builtinMethods16 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLInteger) -}
+ce654112978f15d2df3c9bb14d31f93f
+  builtinMethods17 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "fraction_at_least"#) -}
+bd75c2d46cc6eb6cb0a98da62db54699
+  builtinMethods18 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods19
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLRead
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   Language.NGLDouble
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+77260459ad47b8a1efe5faff4e167dd7
+  builtinMethods19 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "avg_quality"#) -}
+4acab1ce3f136d09e1404c2cfcc60d8f
+  builtinMethods2 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods29
+                   BuiltinFunctions.builtinMethods3) -}
+441da99bf55c713f3d6b1f7682f78f18
+  builtinMethods20 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods25
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLMappedRead
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   Language.NGLMappedRead
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   BuiltinFunctions.builtinMethods21) -}
+497cc56f98c6244cb7950d31a7ee1fa7
+  builtinMethods21 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   BuiltinFunctions.builtinMethods22
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+89c8000bcf26e23aae5f8bb7840b9b40
+  builtinMethods22 :: Modules.FunctionCheck
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Modules.FunctionCheckMinNGLessVersion
+                   BuiltinFunctions.builtinMethods23) -}
+82b6af8ad1b45dc314c6995586b76e6d
+  builtinMethods23 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((BuiltinFunctions.builtinFunctions36,
+                  BuiltinFunctions.builtinMethods24)) -}
+7e2792cc619d4b7a874a135edf02f6bc
+  builtinMethods24 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 9#) -}
+1b8748708631758aa5006d60c527e711
+  builtinMethods25 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "allbest"#) -}
+a72893c4969e03ae62af767ec0e9bfb2
+  builtinMethods26 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinFunctions87
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLMappedRead
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   Language.NGLMappedRead
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+28b9e0a986b74998c3d477fd4434c51f
+  builtinMethods27 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods28
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLMappedRead
+                   BuiltinFunctions.builtinFunctions43
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+474b27cd9c0a4185225bea0fbd505635
+  builtinMethods28 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "some_match"#) -}
+5e72b00fa37487b33c5ee6f5d6125fe9
+  builtinMethods29 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods30
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLMappedRead
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   Language.NGLMappedRead
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+eea3fb9ebdb72b5a25488e6fdead32e0
+  builtinMethods3 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods27
+                   BuiltinFunctions.builtinMethods4) -}
+a7aa9abaa8baec85ef26a99febe4013a
+  builtinMethods30 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "pe_filter"#) -}
+183e9a9bcb33b49142c115379964bdd5
+  builtinMethods31 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods42
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLMappedRead
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   Language.NGLMappedRead
+                   BuiltinFunctions.builtinMethods32
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+95b693c49fe5d80a9fb8e1d9dd69fef0
+  builtinMethods32 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinMethods41
+                   BuiltinFunctions.builtinMethods33) -}
+a2d5bd2b741df8533fdcaf2cf0d8807a
+  builtinMethods33 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinMethods40
+                   BuiltinFunctions.builtinMethods34) -}
+228a21f842fcf22cdfdc078c65865197
+  builtinMethods34 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinMethods39
+                   BuiltinFunctions.builtinMethods35) -}
+3847a34f9a108ee15ad568ba41534926
+  builtinMethods35 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinMethods38
+                   BuiltinFunctions.builtinMethods36) -}
+3bcd466cd0c29dc749da456c23d207dc
+  builtinMethods36 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinMethods37
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+daf1e665b9fb313eb43fdcb1465d6076
+  builtinMethods37 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "reverse"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLBool
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+9d4022ccd2f64ec20a0395ee39f379ca
+  builtinMethods38 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "action"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "drop"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "unmatch"#)
+                               (GHC.Types.[] @ Data.Text.Internal.Text))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+b15d6db3fb8472ff3768e64e06412208
+  builtinMethods39 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "max_trim"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLInteger
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckMinVersion
+                         (BuiltinFunctions.builtinFunctions36, GHC.Types.I# 7#))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+0721390906003a215aaf285e606e61c9
+  builtinMethods4 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods26
+                   BuiltinFunctions.builtinMethods5) -}
+4f52de510058e5f04884651827591d2e
+  builtinMethods40 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "min_match_size"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+0b93f924cd419fe3a1c158392cf3f9af
+  builtinMethods41 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "min_identity_pc"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLInteger
+                   (GHC.Types.[] @ Modules.ArgCheck) }) -}
+b30e5a0329725542d13d21f3ba6d472b
+  builtinMethods42 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "filter"#) -}
+eedef882dbe4c57ed6a00b118a20bb5d
+  builtinMethods43 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods47
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLMappedRead
+                   BuiltinFunctions.builtinMethods46
+                   Language.NGLBool
+                   BuiltinFunctions.builtinMethods44
+                   GHC.Types.True
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+b49745a9faba3cfb8afe4c63458bcb3a
+  builtinMethods44 :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinMethods45
+                   (GHC.Types.[] @ Modules.ArgInformation)) -}
+827dcd8f8eefd9ef435b4d17d6bb5f58
+  builtinMethods45 :: Modules.ArgInformation
+  {- Unfolding: (case Data.Text.Show.unpackCString#
+                        "__0"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                 Modules.ArgInformation
+                   dt
+                   GHC.Types.False
+                   Language.NGLSymbol
+                   (GHC.Types.:
+                      @ Modules.ArgCheck
+                      (Modules.ArgCheckSymbol
+                         (GHC.Types.:
+                            @ Data.Text.Internal.Text
+                            (Data.Text.Show.unpackCString# "mapped"#)
+                            (GHC.Types.:
+                               @ Data.Text.Internal.Text
+                               (Data.Text.Show.unpackCString# "unmapped"#)
+                               (GHC.Types.[] @ Data.Text.Internal.Text))))
+                      (GHC.Types.[] @ Modules.ArgCheck)) }) -}
+0db589ea8d2cb28523510420f4e3cdcb
+  builtinMethods46 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLSymbol) -}
+3a88095acbe73e0e3ee132a4ee1fd318
+  builtinMethods47 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "flag"#) -}
+030189ceddd76387b386f07893e460a6
+  builtinMethods5 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods20
+                   BuiltinFunctions.builtinMethods6) -}
+eee807a25b6f77d2ac84a6feb3f4a3a5
+  builtinMethods6 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods18
+                   BuiltinFunctions.builtinMethods7) -}
+ee8acd1419f9aa0a814877cdab078474
+  builtinMethods7 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods15
+                   BuiltinFunctions.builtinMethods8) -}
+c682724f9587b55a46229c5748c54e66
+  builtinMethods8 :: [BuiltinFunctions.MethodInfo]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods9
+                   (GHC.Types.[] @ BuiltinFunctions.MethodInfo)) -}
+19953abb5e5bd490a573b8e492f4f56c
+  builtinMethods9 :: BuiltinFunctions.MethodInfo
+  {- Strictness: m,
+     Unfolding: (BuiltinFunctions.MethodInfo
+                   BuiltinFunctions.builtinMethods14
+                     `cast`
+                   (Sym (Language.N:MethodName[0]))
+                   Language.NGLRead
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   Language.NGLRead
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   BuiltinFunctions.builtinMethods10) -}
+277accc7bc1a8c3bcbdbfe6e502f6e83
+  countArgs :: [Modules.ArgInformation]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.ArgInformation
+                   BuiltinFunctions.builtinFunctions73
+                   BuiltinFunctions.builtinFunctions47) -}
+6b2ebb5b13ac6d0b81860d0bf3a98228
+  findFunction ::
+    [Modules.Module]
+    -> Language.FuncName -> GHC.Maybe.Maybe Modules.Function
+  {- Arity: 2, Strictness: <L,U><S(LLS),U(U,U,U)> -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodArgType ::
+    BuiltinFunctions.MethodInfo -> GHC.Maybe.Maybe Language.NGLType
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds3 }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodChecks ::
+    BuiltinFunctions.MethodInfo -> [Modules.FunctionCheck]
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLS),1*U(A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds7 }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodIsPure :: BuiltinFunctions.MethodInfo -> GHC.Types.Bool
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSL),1*U(A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds6 }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodKwargsInfo ::
+    BuiltinFunctions.MethodInfo -> [Modules.ArgInformation]
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLL),1*U(A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds5 }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodName :: BuiltinFunctions.MethodInfo -> Language.MethodName
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLL),1*U(1*U(U,U,U),A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds1 }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodReturnType :: BuiltinFunctions.MethodInfo -> Language.NGLType
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLL),1*U(A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds4 }) -}
+6a165580203f95c3bbb3c6e1a7401605
+  methodSelfType :: BuiltinFunctions.MethodInfo -> Language.NGLType
+  RecSel Left BuiltinFunctions.MethodInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLL),1*U(A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: BuiltinFunctions.MethodInfo) ->
+                 case ds of wild { BuiltinFunctions.MethodInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds2 }) -}
+instance GHC.Classes.Eq [BuiltinFunctions.MethodInfo]
+  = BuiltinFunctions.$fEqMethodInfo
+instance GHC.Show.Show [BuiltinFunctions.MethodInfo]
+  = BuiltinFunctions.$fShowMethodInfo
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

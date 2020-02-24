@@ -1,0 +1,423 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:01.266568493 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Parse 8065
+  interface hash: 80890c227f7a209ac2ffbdb7321a8f1f
+  ABI hash: 44725e36e6a949a0ea76c14d12f4b2f6
+  export-list hash: b6f4613a0af1dfd58a920fc5c56e7165
+  orphan hash: 6ffdf3e774009cdd70b787a15d4d9eca
+  flag hash: ef31503632da6f4bb33f03c17187d882
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Parse.parsengless
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess Tokens
+                     Utils.Conduit Utils.LockFile Utils.Samtools Utils.Utils
+                     Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0 diagrams-core-1.4.2
+                      diagrams-lib-1.4.3 diagrams-solve-0.1.1 diagrams-svg-1.4.3
+                      directory-1.3.3.0 distributive-0.6.1 dlist-0.8.0.7
+                      dual-tree-0.2.2.1 errors-2.3.0 exceptions-0.10.4 extra-1.6.18
+                      file-embed-0.0.11.1 filepath-1.4.2.1 fingertree-0.1.4.2 free-5.1.3
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 gitrev-1.3.1 hashable-1.2.7.0
+                      hostname-1.0 inline-c-0.7.0.1 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.3 intervals-0.8.1 kan-extensions-5.2
+                      lens-4.17.1 linear-1.20.9 lzma-0.0.0.3 lzma-conduit-1.2.1
+                      monad-loops-0.4.3 mono-traversable-1.0.15.1 monoid-extras-0.5.1
+                      mtl-2.2.2 newtype-generics-0.5.4 old-locale-1.0.0.7
+                      old-time-1.1.0.3 optparse-applicative-0.14.3.0 parsec-3.1.14.0
+                      parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0 process-1.6.5.0
+                      profunctors-5.3 random-1.1 reflection-2.1.5 regex-1.0.2.0
+                      regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  Assignment 4c0195db0fce84d2e9e704269e836114
+  BinaryOp 96aebef7d64d3dee5736581d4fd6e787
+  Block b24cb7195615293a75c1fd31f7a228f2
+  Condition 5ee65797fc128c25b56f8d9e376f1857
+  ConstStr 1facc51f598e05827c5695d189d62844
+  Continue 6677476ef496f2cb77a1ffee0eaf1832
+  Discard f62cf359094cb85b59e3d728c5b82948
+  Expression adc8def6a4b7257bb12aef607cf99238
+  FuncName a3f44134039f1915698a791072d2c89e
+  FunctionCall 23e51bd4b17fae101afcee641d2d9aa8
+  Header 8cf973723c5aa6873311b104c4d82099
+  IndexExpression 1b396d3ca8c8b8b8954b5ee9745fd162
+  IndexOne f52ed1b667b98a95d0a7a81716ddc6ac
+  IndexTwo 3e1dd14fe87dffa8c8b07b12dd664278
+  ListExpression f5bec8e812d8b6e40f97bd422cace1cd
+  LocalModInfo 191b8e963efa01dbec2e1ccee2d19329
+  Lookup 9af0655858caf9a44c41b1765edc7910
+  MethodCall 009cfcd1ea42375ebf8583c67b0f9ceb
+  MethodName 3a7b3929a7abcd9627c07af2ab496db6
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  Script 0fc401e1e5fe34e2879ec0a07ef86944
+  Script 76fe0974e0c66dd0b2f466e0c453166d
+  Sequence 629f5460e2af1b50496e5ea307340818
+  UOpLen 4e5294a23d580f449388441e0a81293a
+  UOpMinus 2419d9dd30d69f546f66aaac135a2324
+  UOpNot f1ca7c78563a1a142a90cc650fd11173
+  UnaryOp 7ddfad96d4b058dc5f939d4cf881cf4f
+  Variable 9b44f8caef4ce199ec53dca15d83da61
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGLess 416e5726ee4c4987c25367d545064990
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+import  -/  Tokens 1e58ca25affc855bc66d58c418f9a343
+  exports: 7ede13df7182b1b995635de29175c11b
+  TBop 9af09e9ed5a9faf56328d292b2e44c05
+  TExpr bb3472e0029704b2b03b5863548ac937
+  TIndent a461f37be17e784a70c23d70b1d52ce9
+  TNewLine 1e27303842495cc78c96da9129672c02
+  TOperator 5848a9fea6ba1fa0e51962a0f788a548
+  TReserved 6c7db9761a5dbe73bf299d85348a83da
+  TWord 81021fd0cbea82686a4a01318ab571e7
+  Token 75f9c6258f6936e797d314f23c548cda
+  tokenize ffab48c7903cf0bdeb07f04b439b5bb9
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  mtl-2.2.2:Control.Monad.Identity e802522ee1a00db34dedef519823c0df
+import  -/  parsec-3.1.14.0:Text.Parsec.Combinator 9f0dfaf3c33cd24f50f8b77c45207f44
+import  -/  parsec-3.1.14.0:Text.Parsec.Error 633b2a3b75fa87075813a08a6da90cd6
+import  -/  parsec-3.1.14.0:Text.Parsec.Pos 7a42c582e9cb3ad44b1eb1fc1086ee98
+import  -/  parsec-3.1.14.0:Text.Parsec.Prim 6664c73a6cce2d8784e815400ed57096
+import  -/  parsec-3.1.14.0:Text.Parsec.String 88af7ae0f827ae77dd77454377dd923e
+import  -/  parsec-3.1.14.0:Text.ParserCombinators.Parsec.Prim 71f1566a59035eff2a538da6b586da7d
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+01c5a80e904a893c3c352c8e3cb8776c
+  $s$fShow(,) ::
+    GHC.Show.Show (Text.Parsec.Pos.SourcePos, Tokens.Token)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Text.Parsec.Pos.SourcePos, Tokens.Token)
+                  (GHC.Show.$fShow(,)_$cshowsPrec
+                     @ Text.Parsec.Pos.SourcePos
+                     @ Tokens.Token
+                     Text.Parsec.Pos.$fShowSourcePos
+                     Tokens.$fShowToken)
+                  (\ (x2 :: (Text.Parsec.Pos.SourcePos, Tokens.Token)) ->
+                   GHC.Show.$fShow(,)_$cshowsPrec
+                     @ Text.Parsec.Pos.SourcePos
+                     @ Tokens.Token
+                     Text.Parsec.Pos.$fShowSourcePos
+                     Tokens.$fShowToken
+                     GHC.Show.$fShow(,)1
+                     x2
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [(Text.Parsec.Pos.SourcePos, Tokens.Token)])
+                     (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (Text.Parsec.Pos.SourcePos, Tokens.Token)
+                     (GHC.Show.$fShow(,)_$cshowsPrec
+                        @ Text.Parsec.Pos.SourcePos
+                        @ Tokens.Token
+                        Text.Parsec.Pos.$fShowSourcePos
+                        Tokens.$fShowToken
+                        GHC.Show.$fShow(,)1)
+                     ls
+                     s) -}
+157aecaca2c47b9b0e5938a786cef003
+  $s$fShow(,)_$cshowList ::
+    [(Text.Parsec.Pos.SourcePos, Tokens.Token)] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [(Text.Parsec.Pos.SourcePos, Tokens.Token)])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Text.Parsec.Pos.SourcePos, Tokens.Token)
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ Text.Parsec.Pos.SourcePos
+                      @ Tokens.Token
+                      Text.Parsec.Pos.$fShowSourcePos
+                      Tokens.$fShowToken
+                      GHC.Show.$fShow(,)1)
+                   ls
+                   s) -}
+fac6386a9f2d136071d68489dc0f7c74
+  $s$fStream[]mtok_$s$fStream[]mtok_$cuncons ::
+    [tok]
+    -> Data.Functor.Identity.Identity (GHC.Maybe.Maybe (tok, [tok]))
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ tok (ds :: [tok]) ->
+                 case ds of wild {
+                   []
+                   -> (GHC.Maybe.Nothing @ (tok, [tok]))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Maybe.Maybe (tok, [tok])>_R))
+                   : t ts
+                   -> (GHC.Maybe.Just @ (tok, [tok]) (t, ts))
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <GHC.Maybe.Maybe (tok, [tok])>_R)) }) -}
+d40a39968223bc0ef1b9f604a0796ab8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Parse.$trModule3 Parse.$trModule1) -}
+abf6a7bcb024d1bc37b3011947b13ed9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Parse.$trModule2) -}
+7987579b7c7595999ed62e0282617fd1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Parse"#) -}
+bc3ecb9f7644175e3ec9dabe753677d4
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Parse.$trModule4) -}
+40a3d6ff51cee7674eeab9708316f0d2
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+f8e61e7cd1dfe3b1cc8778c7c99d42b3
+  type Parser =
+    Text.Parsec.String.GenParser
+      (Text.Parsec.Pos.SourcePos, Tokens.Token) ()
+    :: * -> *
+7614c9402bd11ff6045507d81ddd3c25
+  parsengless ::
+    GHC.Base.String
+    -> GHC.Types.Bool
+    -> Data.Text.Internal.Text
+    -> NGLess.NGError.NGLess Language.Script
+  {- Arity: 3, Strictness: <L,U><L,1*U><L,U(U,U,U)> -}
+"SPEC/Parse $fShow(,) @ SourcePos @ Token" [orphan] forall (v1 :: GHC.Show.Show
+                                                                    Tokens.Token)
+                                                           (v :: GHC.Show.Show
+                                                                   Text.Parsec.Pos.SourcePos)
+  GHC.Show.$fShow(,) @ Text.Parsec.Pos.SourcePos @ Tokens.Token v v1
+  = Parse.$s$fShow(,)
+"SPEC/Parse $fShow(,)_$cshowList @ SourcePos @ Token" [orphan] forall ($dShow1 :: GHC.Show.Show
+                                                                                    Tokens.Token)
+                                                                      ($dShow :: GHC.Show.Show
+                                                                                   Text.Parsec.Pos.SourcePos)
+  GHC.Show.$fShow(,)_$cshowList @ Text.Parsec.Pos.SourcePos
+                                @ Tokens.Token
+                                $dShow
+                                $dShow1
+  = Parse.$s$fShow(,)_$cshowList
+"SPEC/Parse $fStream[]mtok_$cuncons @ Identity _" [orphan] forall @ tok
+                                                                  ($dMonad :: GHC.Base.Monad
+                                                                                Data.Functor.Identity.Identity)
+  Text.Parsec.Prim.$fStream[]mtok_$cuncons @ Data.Functor.Identity.Identity
+                                           @ tok
+                                           $dMonad
+  = Parse.$s$fStream[]mtok_$s$fStream[]mtok_$cuncons @ tok
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

@@ -1,0 +1,364 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:28.358388921 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Dependencies.Embedded 8065
+  interface hash: 375a7acdc365bc912fc4843b1d762d54
+  ABI hash: 95ea6366f8a7cda5a3b7261282735bb9
+  export-list hash: a2cf22bb00af99c8a3de0eab313006f2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0dd3e2524193db66c144385238511734
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Dependencies.Embedded.bwaData
+  Dependencies.Embedded.megahitData
+  Dependencies.Embedded.minimap2Data
+  Dependencies.Embedded.prodigalData
+  Dependencies.Embedded.samtoolsData
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 containers-0.6.0.1 convertible-1.1.1.0
+                      deepseq-1.4.4.0 ghc-prim-0.5.3 integer-gmp-1.0.2.0 mtl-2.2.2
+                      old-locale-1.0.0.7 old-time-1.1.0.3 text-1.2.3.1 time-1.8.0.2
+                      transformers-0.5.6.2
+orphans: convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+import  -/  base-4.12.0.0:Foreign.C.String 0a3f80ba7b2aa9e11d55c12720a0f747
+import  -/  base-4.12.0.0:Foreign.C.Types 35a1d321965626990bdd0f18683810e2
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Unsafe 776fbb495c4caeeff10435741858143b
+import  -/  convertible-1.1.1.0:Data.Convertible 923da950f8480d959e498627f8b7fcc0
+import  -/  convertible-1.1.1.0:Data.Convertible.Base c334af313483d4f13b5f2a30a031fbd4
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+3601ea56141696fea905f7f3ddf7f751
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Dependencies.Embedded.$trModule3
+                   Dependencies.Embedded.$trModule1) -}
+601e67c0fa602e89c75e6ac6aa2935ab
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Dependencies.Embedded.$trModule2) -}
+ee9b9c6625232b7ba778d2da2fa49e4d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Dependencies.Embedded"#) -}
+53d5761cf199d2b00326b6db5ce87597
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Dependencies.Embedded.$trModule4) -}
+4718efac07a49b0804477cfbc8d48491
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+84c8ec7412d860269429b56ac46fffc1
+  bwaData :: GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Dependencies.Embedded.bwaData1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <Data.ByteString.Internal.ByteString>_R)) -}
+5f25ab044a1f385d5d9223e9c433317d
+  bwaData1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Addr# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case Data.Convertible.Instances.C.$fConvertibleCUIntInt_$csafeConvert
+                        Dependencies.Embedded.c_get_bwa_len of wild1 {
+                   Data.Either.Left e
+                   -> case e of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      case Data.Convertible.Base.$wlvl @ GHC.Types.Int ww1 ww2 ww3 ww4
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.ByteString.Internal.ByteString #)
+                      of {} }
+                   Data.Either.Right r
+                   -> case r of dt { GHC.Types.I# dt1 ->
+                      (# ipv,
+                         Data.ByteString.Internal.PS
+                           ds1
+                           (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                           0#
+                           dt1 #) } } } }) -}
+2e9d120cb0e68a332cdf3001060f066e
+  c_get_bwa_len :: Foreign.C.Types.CUInt
+  {- Unfolding: InlineRule (0, False, False)
+                (case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Word# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 (GHC.Word.W32# (GHC.Prim.narrow32Word# ds1))
+                   `cast`
+                 (Sym (Foreign.C.Types.N:CUInt[0])) }) -}
+ef8f72e0f69d69cca0016c953424af1d
+  c_get_megahit_len :: Foreign.C.Types.CUInt
+  {- Unfolding: InlineRule (0, False, False)
+                (case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Word# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 (GHC.Word.W32# (GHC.Prim.narrow32Word# ds1))
+                   `cast`
+                 (Sym (Foreign.C.Types.N:CUInt[0])) }) -}
+67ecba4498752a6e7045269ee86e1294
+  c_get_minimap2_len :: Foreign.C.Types.CUInt
+  {- Unfolding: InlineRule (0, False, False)
+                (case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Word# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 (GHC.Word.W32# (GHC.Prim.narrow32Word# ds1))
+                   `cast`
+                 (Sym (Foreign.C.Types.N:CUInt[0])) }) -}
+2753d83e26a628c21dbcc14613c2a6e7
+  c_get_prodigal_len :: Foreign.C.Types.CUInt
+  {- Unfolding: InlineRule (0, False, False)
+                (case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Word# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 (GHC.Word.W32# (GHC.Prim.narrow32Word# ds1))
+                   `cast`
+                 (Sym (Foreign.C.Types.N:CUInt[0])) }) -}
+3c62d7193ec40d12ca176c1d22b63649
+  c_get_samtools_len :: Foreign.C.Types.CUInt
+  {- Unfolding: InlineRule (0, False, False)
+                (case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Word# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 (GHC.Word.W32# (GHC.Prim.narrow32Word# ds1))
+                   `cast`
+                 (Sym (Foreign.C.Types.N:CUInt[0])) }) -}
+99d184fd313598d8a08d32bad1992bea
+  megahitData :: GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Dependencies.Embedded.megahitData1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <Data.ByteString.Internal.ByteString>_R)) -}
+8ff1530cdea3a87f3bec792bcfb72cd7
+  megahitData1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Addr# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case Data.Convertible.Instances.C.$fConvertibleCUIntInt_$csafeConvert
+                        Dependencies.Embedded.c_get_megahit_len of wild1 {
+                   Data.Either.Left e
+                   -> case e of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      case Data.Convertible.Base.$wlvl @ GHC.Types.Int ww1 ww2 ww3 ww4
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.ByteString.Internal.ByteString #)
+                      of {} }
+                   Data.Either.Right r
+                   -> case r of dt { GHC.Types.I# dt1 ->
+                      (# ipv,
+                         Data.ByteString.Internal.PS
+                           ds1
+                           (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                           0#
+                           dt1 #) } } } }) -}
+769e6b36fc8d332eefa01e5d2fae5253
+  minimap2Data :: GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Dependencies.Embedded.minimap2Data1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <Data.ByteString.Internal.ByteString>_R)) -}
+47f194d2349ca1b49ab14b2b42283a55
+  minimap2Data1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Addr# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case Data.Convertible.Instances.C.$fConvertibleCUIntInt_$csafeConvert
+                        Dependencies.Embedded.c_get_minimap2_len of wild1 {
+                   Data.Either.Left e
+                   -> case e of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      case Data.Convertible.Base.$wlvl @ GHC.Types.Int ww1 ww2 ww3 ww4
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.ByteString.Internal.ByteString #)
+                      of {} }
+                   Data.Either.Right r
+                   -> case r of dt { GHC.Types.I# dt1 ->
+                      (# ipv,
+                         Data.ByteString.Internal.PS
+                           ds1
+                           (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                           0#
+                           dt1 #) } } } }) -}
+7866e526a9853d32992a2410f9462a4f
+  prodigalData :: GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Dependencies.Embedded.prodigalData1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <Data.ByteString.Internal.ByteString>_R)) -}
+b4fa56680b0ed4ff4375bda75f898fa0
+  prodigalData1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Addr# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case Data.Convertible.Instances.C.$fConvertibleCUIntInt_$csafeConvert
+                        Dependencies.Embedded.c_get_prodigal_len of wild1 {
+                   Data.Either.Left e
+                   -> case e of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      case Data.Convertible.Base.$wlvl @ GHC.Types.Int ww1 ww2 ww3 ww4
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.ByteString.Internal.ByteString #)
+                      of {} }
+                   Data.Either.Right r
+                   -> case r of dt { GHC.Types.I# dt1 ->
+                      (# ipv,
+                         Data.ByteString.Internal.PS
+                           ds1
+                           (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                           0#
+                           dt1 #) } } } }) -}
+3a8a7392a1cc500ddf90c112e8d885e8
+  samtoolsData :: GHC.Types.IO Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Dependencies.Embedded.samtoolsData1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0]
+                          <Data.ByteString.Internal.ByteString>_R)) -}
+54f781f42a7c0ea2268e8dab8c4d935b
+  samtoolsData1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case {__pkg_ccall_GC NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5 GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                          -> (# GHC.Prim.State#
+                                                                                  GHC.Prim.RealWorld,
+                                                                                GHC.Prim.Addr# #)}
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case Data.Convertible.Instances.C.$fConvertibleCUIntInt_$csafeConvert
+                        Dependencies.Embedded.c_get_samtools_len of wild1 {
+                   Data.Either.Left e
+                   -> case e of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      case Data.Convertible.Base.$wlvl @ GHC.Types.Int ww1 ww2 ww3 ww4
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.ByteString.Internal.ByteString #)
+                      of {} }
+                   Data.Either.Right r
+                   -> case r of dt { GHC.Types.I# dt1 ->
+                      (# ipv,
+                         Data.ByteString.Internal.PS
+                           ds1
+                           (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                           0#
+                           dt1 #) } } } }) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

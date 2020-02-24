@@ -1,0 +1,1039 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:36.420120256 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Interpretation.Select 8065
+  interface hash: b2f8af4eb36dcaf1383173322d921cbd
+  ABI hash: 2d8cfa29f259915e32e087916b86fb50
+  export-list hash: e52e850b16da37ffa1f14b7d72ea18db
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bc456c52513370d944cd4b4b25c66497
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpretation.Select.executeMappedReadMethod
+  Interpretation.Select.executeSelect
+  Interpretation.Select.fixCigar
+  Interpretation.Select.splitSamlines3
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language NGLess
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.LockFile Utils.Samtools Utils.Suggestion
+                     Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0 diagrams-core-1.4.2
+                      diagrams-lib-1.4.3 diagrams-solve-0.1.1 diagrams-svg-1.4.3
+                      directory-1.3.3.0 distributive-0.6.1 dlist-0.8.0.7
+                      dual-tree-0.2.2.1 edit-distance-0.2.2.1 either-5.0.1.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      process-1.6.5.0 profunctors-5.3 random-1.1 reflection-2.1.5
+                      regex-1.0.2.0 regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Data.Sam 3fcb5a09f87798583b9f6366498e011d
+  exports: cca2af82b8ff0df9f542f45f0746f94b
+  SamGroup 8c9bb3dd5f71648483a88dbf3d48f4f6
+  SamHeader f85f7ae0f9d834d6080b61027ca92b45
+  SamLine 0d6b1e41e587b53ef700f890907df42e
+  SamLine 01f7dabca6fb8c4cde05c4a9c121515e
+  encodeSamLine 357aff79e10a2b23bad0dcc9dad7b943
+  hasSequence 692cc50529c12c5ac60653316ce04a30
+  isAligned 6a34bf38530a48942c0cae62b809802a
+  isFirstInPair c31b582f5b8f6b102dcc6383bed09e4d
+  isNegative 20f4b97a458461ad0b3dfac3fba20b99
+  isPositive f0e9b49f99d7d2a5ad8cae4a8920b637
+  isSecondInPair 0e7f4e54af3f8167c1db2201974fcdf6
+  matchIdentity fdb660d24081eb427f0f5df78031a41b
+  matchSize 7c047e83a26b508ddb5e03051224591e
+  matchSize' d0140c0e63734b785c8c3ea2098b5263
+  readSamLine d3c3c13b36bc4ce1dde3f5f872b9d4d0
+  samCigar 01f7dabca6fb8c4cde05c4a9c121515e
+  samFlag 01f7dabca6fb8c4cde05c4a9c121515e
+  samIntTag 0b825daed5be8a8e94b7a068005953d6
+  samQName 01f7dabca6fb8c4cde05c4a9c121515e
+  samQual 01f7dabca6fb8c4cde05c4a9c121515e
+  samRName 01f7dabca6fb8c4cde05c4a9c121515e
+  samSeq 01f7dabca6fb8c4cde05c4a9c121515e
+  samStatsC' b4ae00d42cd4a80793fc8de4dbdbf021
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  takeBaseNameNoExtensions 567a8509f5a872125a8f2f0f09ef04c7
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  Stream da98a64c2e5c090a480f8a7d92d65fd7
+  asSamStream 6f64757c58491603efc4aa3bd9b5887a
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  MethodName 3a7b3929a7abcd9627c07af2ab496db6
+  MethodName a5ecd529fe2b52118416127e8ed16401
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOBool 2a62e05620187a04f1c1263076dd368f
+  NGOMappedRead ec27cce9b92a84f1caf17fb469c214d1
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOString 155e4815cffdc2c6617b34a2d52b7659
+  NGOSymbol 8912a0dc0eeb07d7a07e311be194dbf1
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+  lookupBoolOrScriptErrorDef ffe642effd69bd9a48ab477563baaa98
+  lookupIntegerOrScriptErrorDef 34ade76886baf18c528fabb1196f99bb
+  lookupSymbolListOrScriptErrorDef ec7682bf5e03b2b49cfc9bbbafe986fc
+  lookupSymbolOrScriptErrorDef a240a0fb0565b0f33a8458942701be2b
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLess 416e5726ee4c4987c25367d545064990
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  runNGLess a41ed825730df1edb93a7b2b931843fe
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  NGLVersion c4336e12104b9327e88a42025f58523f
+  nglEnvironment 56dd9663bd034f7047cca99f322e3b64
+  ngleLno d80a43c5bae03fd7eefc640474197c79
+  ngleVersion d80a43c5bae03fd7eefc640474197c79
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  MappingInfo 1a016fdfa433de3ddaf29867aec18c0c
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+  outputMappedSetStatistics b998324afb361c0b2858ccd75ff7eaf9
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine ac33b1a48ce77fc02979f39021c406e3
+import  -/  base-4.12.0.0:Data.Bits 64fdef6c05b11e33e007318d457467e9
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.Ratio ca7795f81c201f83d6159a8388bb75b9
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder.Internal 8258443d95d94e3caaed55a182aaa9c6
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  either-5.0.1.1:Data.Either.Combinators b54519e5947e01a3ed8ef97ef2b7f833
+import  -/  extra-1.6.18:Data.Either.Extra 920fe2238cf7636a7b2c0d73517f7e8f
+import  -/  extra-1.6.18:Data.Tuple.Extra 73a6490f2003c7d13eea561644a2a878
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Encoding 7ce1a7bbcff1af07caf6c914233ce5e8
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+a6120ff3dd281f9ab59f99f898c7c237
+  $fEqFilterAction ::
+    GHC.Classes.Eq Interpretation.Select.FilterAction
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Select.FilterAction
+                  Interpretation.Select.$fEqFilterAction_$c==
+                  Interpretation.Select.$fEqFilterAction_$c/= -}
+a6120ff3dd281f9ab59f99f898c7c237
+  $fEqFilterAction_$c/= ::
+    Interpretation.Select.FilterAction
+    -> Interpretation.Select.FilterAction -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Select.FilterAction)
+                   (y :: Interpretation.Select.FilterAction) ->
+                 case x of wild {
+                   Interpretation.Select.FADrop
+                   -> case y of wild1 {
+                        Interpretation.Select.FADrop -> GHC.Types.False
+                        Interpretation.Select.FAUnmatch -> GHC.Types.True }
+                   Interpretation.Select.FAUnmatch
+                   -> case y of wild1 {
+                        Interpretation.Select.FADrop -> GHC.Types.True
+                        Interpretation.Select.FAUnmatch -> GHC.Types.False } }) -}
+a6120ff3dd281f9ab59f99f898c7c237
+  $fEqFilterAction_$c== ::
+    Interpretation.Select.FilterAction
+    -> Interpretation.Select.FilterAction -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Select.FilterAction)
+                   (ds1 :: Interpretation.Select.FilterAction) ->
+                 case ds of wild {
+                   Interpretation.Select.FADrop
+                   -> case ds1 of wild1 {
+                        Interpretation.Select.FADrop -> GHC.Types.True
+                        Interpretation.Select.FAUnmatch -> GHC.Types.False }
+                   Interpretation.Select.FAUnmatch
+                   -> case ds1 of wild1 {
+                        Interpretation.Select.FADrop -> GHC.Types.False
+                        Interpretation.Select.FAUnmatch -> GHC.Types.True } }) -}
+90e1a15f77ba24968595486195ee4d47
+  $fEqMatchCondition ::
+    GHC.Classes.Eq Interpretation.Select.MatchCondition
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Select.MatchCondition
+                  Interpretation.Select.$fEqMatchCondition_$c==
+                  Interpretation.Select.$fEqMatchCondition_$c/= -}
+90e1a15f77ba24968595486195ee4d47
+  $fEqMatchCondition_$c/= ::
+    Interpretation.Select.MatchCondition
+    -> Interpretation.Select.MatchCondition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Select.MatchCondition)
+                   (y :: Interpretation.Select.MatchCondition) ->
+                 case Interpretation.Select.$fEqMatchCondition_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+90e1a15f77ba24968595486195ee4d47
+  $fEqMatchCondition_$c== ::
+    Interpretation.Select.MatchCondition
+    -> Interpretation.Select.MatchCondition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Interpretation.Select.MatchCondition)
+                   (ds1 :: Interpretation.Select.MatchCondition) ->
+                 case ds of wild {
+                   Interpretation.Select.KeepIf a1
+                   -> case ds1 of wild1 {
+                        Interpretation.Select.KeepIf b1
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ Interpretation.Select.SelectCondition
+                             Interpretation.Select.$fEqSelectCondition
+                             a1
+                             b1
+                        Interpretation.Select.DropIf ipv -> GHC.Types.False }
+                   Interpretation.Select.DropIf a1
+                   -> case ds1 of wild1 {
+                        Interpretation.Select.KeepIf ipv -> GHC.Types.False
+                        Interpretation.Select.DropIf b1
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ Interpretation.Select.SelectCondition
+                             Interpretation.Select.$fEqSelectCondition
+                             a1
+                             b1 } }) -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fEqSelectCondition ::
+    GHC.Classes.Eq Interpretation.Select.SelectCondition
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Select.SelectCondition
+                  Interpretation.Select.$fEqSelectCondition_$c==
+                  Interpretation.Select.$fEqSelectCondition_$c/= -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fEqSelectCondition_$c/= ::
+    Interpretation.Select.SelectCondition
+    -> Interpretation.Select.SelectCondition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Select.SelectCondition)
+                   (y :: Interpretation.Select.SelectCondition) ->
+                 case x of wild {
+                   Interpretation.Select.SelectMapped
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Select.SelectMapped -> GHC.Types.False }
+                   Interpretation.Select.SelectUnmapped
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Select.SelectUnmapped -> GHC.Types.False }
+                   Interpretation.Select.SelectUnique
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Select.SelectUnique -> GHC.Types.False } }) -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fEqSelectCondition_$c== ::
+    Interpretation.Select.SelectCondition
+    -> Interpretation.Select.SelectCondition -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Select.SelectCondition)
+                   (ds1 :: Interpretation.Select.SelectCondition) ->
+                 case ds of wild {
+                   Interpretation.Select.SelectMapped
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Select.SelectMapped -> GHC.Types.True }
+                   Interpretation.Select.SelectUnmapped
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Select.SelectUnmapped -> GHC.Types.True }
+                   Interpretation.Select.SelectUnique
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Select.SelectUnique -> GHC.Types.True } }) -}
+90e1a15f77ba24968595486195ee4d47
+  $fShowMatchCondition ::
+    GHC.Show.Show Interpretation.Select.MatchCondition
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Select.MatchCondition
+                  Interpretation.Select.$fShowMatchCondition_$cshowsPrec
+                  Interpretation.Select.$fShowMatchCondition_$cshow
+                  Interpretation.Select.$fShowMatchCondition_$cshowList -}
+90e1a15f77ba24968595486195ee4d47
+  $fShowMatchCondition_$cshow ::
+    Interpretation.Select.MatchCondition -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Interpretation.Select.MatchCondition) ->
+                 Interpretation.Select.$fShowMatchCondition_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+90e1a15f77ba24968595486195ee4d47
+  $fShowMatchCondition_$cshowList ::
+    [Interpretation.Select.MatchCondition] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpretation.Select.MatchCondition])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpretation.Select.MatchCondition
+                   (Interpretation.Select.$fShowMatchCondition_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+90e1a15f77ba24968595486195ee4d47
+  $fShowMatchCondition_$cshowsPrec ::
+    GHC.Types.Int
+    -> Interpretation.Select.MatchCondition -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Interpretation.Select.MatchCondition) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Interpretation.Select.$w$cshowsPrec ww1 w1 }) -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fShowSelectCondition ::
+    GHC.Show.Show Interpretation.Select.SelectCondition
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Select.SelectCondition
+                  Interpretation.Select.$fShowSelectCondition_$cshowsPrec
+                  Interpretation.Select.$fShowSelectCondition_$cshow
+                  Interpretation.Select.$fShowSelectCondition_$cshowList -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fShowSelectCondition_$cshow ::
+    Interpretation.Select.SelectCondition -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Interpretation.Select.SelectCondition) ->
+                 case x of wild {
+                   Interpretation.Select.SelectMapped
+                   -> GHC.CString.unpackCString# "SelectMapped"#
+                   Interpretation.Select.SelectUnmapped
+                   -> GHC.CString.unpackCString# "SelectUnmapped"#
+                   Interpretation.Select.SelectUnique
+                   -> GHC.CString.unpackCString# "SelectUnique"# }) -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fShowSelectCondition_$cshowList ::
+    [Interpretation.Select.SelectCondition] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpretation.Select.SelectCondition])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpretation.Select.SelectCondition
+                   (Interpretation.Select.$fShowSelectCondition_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $fShowSelectCondition_$cshowsPrec ::
+    GHC.Types.Int
+    -> Interpretation.Select.SelectCondition -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Interpretation.Select.SelectCondition) ->
+                 Interpretation.Select.$w$cshowsPrec1 w1) -}
+225ec6c7b0df645474f39a9178649fcd
+  $tc'DropIf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18126377371836665811##
+                   12024904114730307685##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'DropIf2
+                   0#
+                   Interpretation.Select.$tc'DropIf1) -}
+99d0db838c0ee6f52c8b71fde364b092
+  $tc'DropIf1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3c9eee58bd318f6d1ec0ee811885b356
+  $tc'DropIf2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Select.$tc'DropIf3) -}
+d3e34dbade389e8d86ba1606cf1c9bfe
+  $tc'DropIf3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DropIf"#) -}
+bda099fe18e2aaf3b0f1259ed92d6c2d
+  $tc'FADrop :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2575427677302448408##
+                   10922762592451475328##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'FADrop2
+                   0#
+                   Interpretation.Select.$tc'FADrop1) -}
+075294c2f8d51a366f87202d41625bf5
+  $tc'FADrop1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+1509b04713d4a6afc1e1e3be47277476
+  $tc'FADrop2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Select.$tc'FADrop3) -}
+d7811c38196ba9e221a9374406672f52
+  $tc'FADrop3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FADrop"#) -}
+bbd4a36df88f6ae57831968f5a4f40f1
+  $tc'FAUnmatch :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15165207740325147414##
+                   6906404071110827700##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'FAUnmatch1
+                   0#
+                   Interpretation.Select.$tc'FADrop1) -}
+f9b4204ae7824780e1a10b3c4d43662f
+  $tc'FAUnmatch1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tc'FAUnmatch2) -}
+d8c1ed1d43f642c3235149afcbca8659
+  $tc'FAUnmatch2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FAUnmatch"#) -}
+be9f30b55a6ba9f76537fff50dd3fcb4
+  $tc'KeepIf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15383770051871940891##
+                   8062778272913416621##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'KeepIf1
+                   0#
+                   Interpretation.Select.$tc'DropIf1) -}
+0c0fd5135578cb230d0e5ca137ba8810
+  $tc'KeepIf1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Select.$tc'KeepIf2) -}
+d348edb7145f2be9fbd0cb0c121a626d
+  $tc'KeepIf2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'KeepIf"#) -}
+851a29c76626b6b966d7d60a05808038
+  $tc'SelectGroupOptions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1448914940728087355##
+                   321851779126247794##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'SelectGroupOptions2
+                   0#
+                   Interpretation.Select.$tc'SelectGroupOptions1) -}
+b4c06fbd2fbbf850153d391df50ba16d
+  $tc'SelectGroupOptions1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dc3520a777faf11a78168684ecf88b86
+  $tc'SelectGroupOptions2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tc'SelectGroupOptions3) -}
+bd8ca6e550eb7db69ac1e8e7588d841c
+  $tc'SelectGroupOptions3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SelectGroupOptions"#) -}
+8ac1555a47417c07245aa0d89416bb79
+  $tc'SelectMapped :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2958239218025095671##
+                   11933824079095844240##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'SelectMapped2
+                   0#
+                   Interpretation.Select.$tc'SelectMapped1) -}
+89d906d2482224756684288804eacb59
+  $tc'SelectMapped1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+3a8a6fe1bba2eb7492537f07ed238e77
+  $tc'SelectMapped2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tc'SelectMapped3) -}
+f86ab81024278a6012a2311c5fd28a5c
+  $tc'SelectMapped3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SelectMapped"#) -}
+7d7e8514f1797ce792e3b82cd88d8d3a
+  $tc'SelectUnique :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18227467260599417727##
+                   17891330689918179454##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'SelectUnique1
+                   0#
+                   Interpretation.Select.$tc'SelectMapped1) -}
+69e7f1279aa4dd7c270cee1e5449dac1
+  $tc'SelectUnique1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tc'SelectUnique2) -}
+033e61c05279e28312b2634f19ae8f25
+  $tc'SelectUnique2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SelectUnique"#) -}
+f1a0223798c2501d3ab537423029e194
+  $tc'SelectUnmapped :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2764892105470243562##
+                   17299239360430330572##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tc'SelectUnmapped1
+                   0#
+                   Interpretation.Select.$tc'SelectMapped1) -}
+37d581ea101fdf48b43675dab6c1de11
+  $tc'SelectUnmapped1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tc'SelectUnmapped2) -}
+52ba21eb578eae10295b4d295763ee5f
+  $tc'SelectUnmapped2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SelectUnmapped"#) -}
+dd25857bf8839e2310e7cbee3e388093
+  $tcFilterAction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4505955431517729867##
+                   1756270481254409068##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tcFilterAction1
+                   0#
+                   GHC.Types.krep$*) -}
+82060b377a9ca6833ea715682ae6b60f
+  $tcFilterAction1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tcFilterAction2) -}
+08cd04f48ff11f8b60c57b58163fd5b1
+  $tcFilterAction2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FilterAction"#) -}
+b7565b52aca665efc1b051cd7fa11766
+  $tcMatchCondition :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3926169975873572866##
+                   1684608307020143262##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tcMatchCondition1
+                   0#
+                   GHC.Types.krep$*) -}
+cf9c6cab7e5dd84076f7091906f5a4d5
+  $tcMatchCondition1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tcMatchCondition2) -}
+880fac9045602f32cecb38da7f9d0eae
+  $tcMatchCondition2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MatchCondition"#) -}
+18cb8c40548aac732266a92e1fa86a27
+  $tcSelectCondition :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4570371665185786511##
+                   14437687063931201395##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tcSelectCondition1
+                   0#
+                   GHC.Types.krep$*) -}
+23b0aff892acf3431eb2f8be3f2ecd5b
+  $tcSelectCondition1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tcSelectCondition2) -}
+294785e1d1331aa079bb34023e55c711
+  $tcSelectCondition2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SelectCondition"#) -}
+712eb8efd40e73eddcd56e20f7b6e56e
+  $tcSelectGroupOptions :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1446504949766302010##
+                   14701676755825599408##
+                   Interpretation.Select.$trModule
+                   Interpretation.Select.$tcSelectGroupOptions1
+                   0#
+                   GHC.Types.krep$*) -}
+4f8fa2cc1f3c3ce72bee7e499dbd5f7e
+  $tcSelectGroupOptions1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Select.$tcSelectGroupOptions2) -}
+93bcbea5fb2442a92b982490b5b1a3f4
+  $tcSelectGroupOptions2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SelectGroupOptions"#) -}
+22089abc5b2d99feaf621b42d381a7e6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpretation.Select.$trModule3
+                   Interpretation.Select.$trModule1) -}
+c099efb0360439f4977ffdd97b49b2e9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Select.$trModule2) -}
+69239373b8926a2d66ad913db3ef4dc4
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Interpretation.Select"#) -}
+30ecec9afc3e8dfc335df568609c0e51
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Select.$trModule4) -}
+367cd691581c2dc35923d8ad9fa21c0a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+90e1a15f77ba24968595486195ee4d47
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Interpretation.Select.MatchCondition -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,1*U>, Inline: [2] -}
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  $w$cshowsPrec1 ::
+    Interpretation.Select.SelectCondition -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Interpretation.Select.SelectCondition) ->
+                 case w of wild {
+                   Interpretation.Select.SelectMapped
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SelectMapped"#)
+                   Interpretation.Select.SelectUnmapped
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SelectUnmapped"#)
+                   Interpretation.Select.SelectUnique
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SelectUnique"#) }) -}
+21040296718a8f07e6c8230cd781b1d1
+  $w$sminimum ::
+    [GHC.Real.Ratio GHC.Types.Int]
+    -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: [GHC.Real.Ratio GHC.Types.Int]) ->
+                 case w of wild {
+                   []
+                   -> case GHC.List.errorEmptyList
+                             @ (GHC.Real.Ratio GHC.Types.Int)
+                             (GHC.CString.unpackCString# "minimum"#)
+                      ret_ty (# GHC.Types.Int, GHC.Types.Int #)
+                      of {}
+                   : ipv ipv1
+                   -> case ipv of ww { GHC.Real.:% ww1 ww2 ->
+                      letrec {
+                        $s$wgo :: GHC.Prim.Int#
+                                  -> GHC.Prim.Int#
+                                  -> [GHC.Real.Ratio GHC.Types.Int]
+                                  -> (# GHC.Types.Int, GHC.Types.Int #)
+                          <join 3> {- Arity: 3, Strictness: <L,U><L,U><S,1*U> -}
+                        = \ (sc :: GHC.Prim.Int#)
+                            (sc1 :: GHC.Prim.Int#)
+                            (sc2 :: [GHC.Real.Ratio GHC.Types.Int]) ->
+                          case sc2 of wild1 {
+                            [] -> (# GHC.Types.I# sc1, GHC.Types.I# sc #)
+                            : y ys
+                            -> case y of ww26 { GHC.Real.:% ww27 ww28 ->
+                               case ww28 of wild2 { GHC.Types.I# y1 ->
+                               case ww27 of wild3 { GHC.Types.I# x ->
+                               case GHC.Prim.<=#
+                                      (GHC.Prim.*# sc1 y1)
+                                      (GHC.Prim.*# x sc) of lwild {
+                                 DEFAULT -> $s$wgo y1 x ys 1# -> $s$wgo sc sc1 ys } } } } }
+                      } in
+                      case ipv1 of wild1 {
+                        [] -> (# ww1, ww2 #)
+                        : y ys
+                        -> case y of ww26 { GHC.Real.:% ww27 ww28 ->
+                           case ww1 of wild2 { GHC.Types.I# x ->
+                           case ww28 of wild3 { GHC.Types.I# y1 ->
+                           case ww27 of wild4 { GHC.Types.I# x1 ->
+                           case ww2 of wild5 { GHC.Types.I# y2 ->
+                           case GHC.Prim.<=# (GHC.Prim.*# x y1) (GHC.Prim.*# x1 y2) of lwild {
+                             DEFAULT -> $s$wgo y1 x1 ys
+                             1# -> $s$wgo y2 x ys } } } } } } } } }) -}
+1c9271d6861e05dfc1646179bbf295f7
+  $wexecuteMappedReadMethod ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> [Data.Sam.SamLine]
+    -> GHC.Maybe.Maybe Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLess Language.NGLessObject
+  {- Arity: 6, Strictness: <L,U><L,U><S,U><L,U><L,U><L,U>,
+     Inline: [2] -}
+5e6db17ed46af265d93ef73d1e123321
+  $wfixCigar ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> Data.Either.Either
+         NGLess.NGError.NGError Data.ByteString.Internal.ByteString
+  {- Arity: 5, Strictness: <S,U><L,U><S,U><S,U><L,1*U(U)>,
+     Inline: [2] -}
+d413859869fa546c6b0da282cdf8324c
+  $wsplitSamlines3 ::
+    [Data.Sam.SamLine]
+    -> (# [Data.Sam.SamLine], [Data.Sam.SamLine], [Data.Sam.SamLine] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: [Data.Sam.SamLine]) ->
+                 letrec {
+                   $wgo :: [Data.Sam.SamLine]
+                           -> [Data.Sam.SamLine]
+                           -> [Data.Sam.SamLine]
+                           -> [Data.Sam.SamLine]
+                           -> (# [Data.Sam.SamLine], [Data.Sam.SamLine], [Data.Sam.SamLine] #)
+                     <join 4> {- Arity: 4, Strictness: <S,1*U><L,U><L,U><L,U>,
+                                 Inline: [2] -}
+                   = \ (w1 :: [Data.Sam.SamLine])
+                       (ww :: [Data.Sam.SamLine])
+                       (ww1 :: [Data.Sam.SamLine])
+                       (ww2 :: [Data.Sam.SamLine]) ->
+                     case w1 of wild {
+                       []
+                       -> (# GHC.List.reverse @ Data.Sam.SamLine ww,
+                             GHC.List.reverse @ Data.Sam.SamLine ww1,
+                             GHC.List.reverse @ Data.Sam.SamLine ww2 #)
+                       : y ys
+                       -> case y of wild1 {
+                            Data.Sam.SamLine ds dt dt1 dt2 dt3 dt4 dt5 dt6 dt7 dt8 dt9 dt10 dt11 dt12 dt13 dt14 dt15 dt16 dt17 dt18 dt19 dt20 dt21 dt22 dt23 dt24 dt25 dt26 dt27 dt28
+                            -> case GHC.Prim.andI# dt 64# of wild2 {
+                                 DEFAULT
+                                 -> $wgo ys (GHC.Types.: @ Data.Sam.SamLine wild1 ww) ww1 ww2
+                                 0#
+                                 -> case GHC.Prim.andI# dt 128# of wild3 {
+                                      DEFAULT
+                                      -> $wgo ys ww (GHC.Types.: @ Data.Sam.SamLine wild1 ww1) ww2
+                                      0#
+                                      -> $wgo
+                                           ys
+                                           ww
+                                           ww1
+                                           (GHC.Types.: @ Data.Sam.SamLine wild1 ww2) } }
+                            Data.Sam.SamHeader ipv
+                            -> case Control.Exception.Base.recSelError
+                                      @ 'GHC.Types.LiftedRep
+                                      @ GHC.Types.Int
+                                      "samFlag"#
+                               ret_ty (# [Data.Sam.SamLine], [Data.Sam.SamLine],
+                                         [Data.Sam.SamLine] #)
+                               of {} } }
+                 } in
+                 $wgo
+                   w
+                   (GHC.Types.[] @ Data.Sam.SamLine)
+                   (GHC.Types.[] @ Data.Sam.SamLine)
+                   (GHC.Types.[] @ Data.Sam.SamLine)) -}
+a6120ff3dd281f9ab59f99f898c7c237
+  data FilterAction = FADrop | FAUnmatch
+90e1a15f77ba24968595486195ee4d47
+  data MatchCondition
+    = KeepIf [Interpretation.Select.SelectCondition]
+    | DropIf [Interpretation.Select.SelectCondition]
+d9da9ae7c7cdee09b1d09bc01a2d0a9a
+  data SelectCondition = SelectMapped | SelectUnmapped | SelectUnique
+5a3cb40e9620b84b10c3b5cbf13d8161
+  data SelectGroupOptions
+    = SelectGroupOptions {-# UNPACK #-}GHC.Types.Double
+                         {-# UNPACK #-}GHC.Types.Int
+                         {-# UNPACK #-}GHC.Types.Int
+                         !GHC.Types.Bool
+                         !Interpretation.Select.FilterAction
+342b28f124e76ab307ea7fa0c4b79c1c
+  executeMappedReadMethod ::
+    Language.MethodName
+    -> [Data.Sam.SamLine]
+    -> GHC.Maybe.Maybe Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLess Language.NGLessObject
+  {- Arity: 4, Strictness: <S(SSS),1*U(U,U,U)><L,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Language.MethodName)
+                   (w1 :: [Data.Sam.SamLine])
+                   (w2 :: GHC.Maybe.Maybe Language.NGLessObject)
+                   (w3 :: NGLess.KwArgsValues) ->
+                 case w `cast`
+                      (Language.N:MethodName[0]) of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Interpretation.Select.$wexecuteMappedReadMethod
+                   ww1
+                   ww2
+                   ww3
+                   w1
+                   w2
+                   w3 }) -}
+d289ff69a705fc004643db2497958efb
+  executeSelect ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+f3fedeefb984bdd9397aab574a89da44
+  fixCigar ::
+    Data.ByteString.Internal.ByteString
+    -> GHC.Types.Int
+    -> NGLess.NGError.NGLess Data.ByteString.Internal.ByteString
+  {- Arity: 2, Strictness: <S(SLSS),1*U(U,U,U,U)><L,1*U(U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.ByteString.Internal.ByteString)
+                   (w1 :: GHC.Types.Int) ->
+                 case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Interpretation.Select.$wfixCigar ww1 ww2 ww3 ww4 w1 }) -}
+10676a9d18378b13be9fcbcefa1c09e0
+  splitSamlines3 ::
+    [Data.Sam.SamLine]
+    -> ([Data.Sam.SamLine], [Data.Sam.SamLine], [Data.Sam.SamLine])
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Data.Sam.SamLine]) ->
+                 case Interpretation.Select.$wsplitSamlines3
+                        w of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+instance GHC.Classes.Eq [Interpretation.Select.FilterAction]
+  = Interpretation.Select.$fEqFilterAction
+instance GHC.Classes.Eq [Interpretation.Select.MatchCondition]
+  = Interpretation.Select.$fEqMatchCondition
+instance GHC.Classes.Eq [Interpretation.Select.SelectCondition]
+  = Interpretation.Select.$fEqSelectCondition
+instance GHC.Show.Show [Interpretation.Select.MatchCondition]
+  = Interpretation.Select.$fShowMatchCondition
+instance GHC.Show.Show [Interpretation.Select.SelectCondition]
+  = Interpretation.Select.$fShowSelectCondition
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

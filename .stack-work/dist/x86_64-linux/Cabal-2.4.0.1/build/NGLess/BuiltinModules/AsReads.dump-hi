@@ -1,0 +1,788 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:16:10.94992231 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:BuiltinModules.AsReads 8065
+  interface hash: 57847cc6d701d6a08a84c6e7317f907c
+  ABI hash: b79770aca7d2d44ea8e4cd9512676007
+  export-list hash: 0afb94247635d3aca3070ec393d62832
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ca4e3e906e7a46a9d04518997df8e52e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BuiltinModules.AsReads.loadModule
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream
+                     Interpretation.FastQ Language Modules NGLess NGLess.NGError
+                     NGLess.NGLEnvironment Output Paths_NGLess Utils.Conduit
+                     Utils.FindModules Utils.LockFile Utils.Samtools Utils.Suggestion
+                     Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      process-1.6.5.0 profunctors-5.3 random-1.1 reflection-2.1.5
+                      regex-1.0.2.0 regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Data.FastQ 683044f508718e436592cbb72ea87fc2
+  exports: 7f3c9451f8064311c68af66858502794
+  FastQFilePath 3b49cd403d588d2f95c29b96eb9e4162
+  ReadSet c16a307192e6c5c3c5475f335c533ab2
+  ReadSet 4c8ae3e110e39629ec05639a3c18db8c
+  SangerEncoding 022f7b59ea97b642c080649edf58958c
+import  -/  Data.Sam 3fcb5a09f87798583b9f6366498e011d
+  exports: cca2af82b8ff0df9f542f45f0746f94b
+  SamHeader f85f7ae0f9d834d6080b61027ca92b45
+  SamLine 0d6b1e41e587b53ef700f890907df42e
+  SamLine 01f7dabca6fb8c4cde05c4a9c121515e
+  hasSequence 692cc50529c12c5ac60653316ce04a30
+  isFirstInPair c31b582f5b8f6b102dcc6383bed09e4d
+  isSecondInPair 0e7f4e54af3f8167c1db2201974fcdf6
+  readSamGroupsC' b9cbb2fcefdf8f9b139055b3a12a1c95
+  samQName 01f7dabca6fb8c4cde05c4a9c121515e
+  samQual 01f7dabca6fb8c4cde05c4a9c121515e
+  samSeq 01f7dabca6fb8c4cde05c4a9c121515e
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  openNGLTempFile' b65a9959be03ebf7f801f543d0082718
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  asSamStream 6f64757c58491603efc4aa3bd9b5887a
+import  -/  Interpretation.FastQ dbbf0398304c43a8cd356eee3fc4dbb4
+  exports: 98d488bab45322c52b93af6c51bc1569
+  encodingFor 2e8ee78224d46e3686f9434893ff4477
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  FuncName a3f44134039f1915698a791072d2c89e
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  NGLMappedReadSet 96c5e0f9293435d5998da7c890b67b50
+  NGLReadSet 9d5f98c897d571785f336b174e593308
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOReadSet c3ec807d5d7afc041d47d76cd179ed0b
+import  -/  Modules d7b04bae20d952778746efecd6f653cd
+  exports: e612fb66accb36645cea5fb0c9541754
+  Function d2362c47d7c9710332b2e11a4c2d8df3
+  FunctionCheckMinNGLessVersion 1f7b1826ec020f4f08eeeddef73d57bf
+  FunctionCheckReturnAssigned f2d40038e175a3f8e76947b49e6af006
+  Module 5ea81178a37f2cc1f71e0dfed7af0657
+  funcAllowsAutoComprehension ea8a515503aace5f77e7178c87cb63b2
+  funcArgChecks ea8a515503aace5f77e7178c87cb63b2
+  funcArgType ea8a515503aace5f77e7178c87cb63b2
+  funcChecks ea8a515503aace5f77e7178c87cb63b2
+  funcKwArgs ea8a515503aace5f77e7178c87cb63b2
+  funcName ea8a515503aace5f77e7178c87cb63b2
+  funcRetType ea8a515503aace5f77e7178c87cb63b2
+  modFunctions 5ea81178a37f2cc1f71e0dfed7af0657
+  modInfo 5ea81178a37f2cc1f71e0dfed7af0657
+  runFunction 5ea81178a37f2cc1f71e0dfed7af0657
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+import  -/  base-4.12.0.0:Control.Concurrent 945d3c1c41ed03e6117e3861cad65d9f
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.IORef e8e1ce7d64831ebb3853a1cd9fb4e228
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Conc.Sync 275e94c5ede09d3593e4c106b892e4f5
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.IORef c4811a8ca9fa1f2f983a2e196af9a59c
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  data-default-0.7.1.1:Data.Default 28ff829d0df079ea9196504813a6384a
+import  -/  data-default-class-0.1.2.0:Data.Default.Class 5d2b5ee799bd958772a020a8cf8dab3e
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+b142b521e33f8f81bdf07e07b9301113
+  $fEqFQResult :: GHC.Classes.Eq BuiltinModules.AsReads.FQResult
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ BuiltinModules.AsReads.FQResult
+                  BuiltinModules.AsReads.$fEqFQResult_$c==
+                  BuiltinModules.AsReads.$fEqFQResult_$c/= -}
+b142b521e33f8f81bdf07e07b9301113
+  $fEqFQResult_$c/= ::
+    BuiltinModules.AsReads.FQResult
+    -> BuiltinModules.AsReads.FQResult -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: BuiltinModules.AsReads.FQResult)
+                   (y :: BuiltinModules.AsReads.FQResult) ->
+                 case BuiltinModules.AsReads.$fEqFQResult_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+b142b521e33f8f81bdf07e07b9301113
+  $fEqFQResult_$c== ::
+    BuiltinModules.AsReads.FQResult
+    -> BuiltinModules.AsReads.FQResult -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+e54fbbd93885239b389c0f6a3a6a8f6b
+  $tc'NoResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15098470602012970026##
+                   17201030297380281531##
+                   BuiltinModules.AsReads.$trModule
+                   BuiltinModules.AsReads.$tc'NoResult2
+                   0#
+                   BuiltinModules.AsReads.$tc'NoResult1) -}
+385cbec5e03eed775fb57e3594b0aaab
+  $tc'NoResult1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+516304ffae51d9f9cfe67b4c6f9eae57
+  $tc'NoResult2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   BuiltinModules.AsReads.$tc'NoResult3) -}
+a60b0a919b4cddbd4bc410587339920f
+  $tc'NoResult3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoResult"#) -}
+007e52483a5b332617555bf8cfd9a40f
+  $tc'Paired :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17545634301581658816##
+                   18247640578450606330##
+                   BuiltinModules.AsReads.$trModule
+                   BuiltinModules.AsReads.$tc'Paired2
+                   0#
+                   BuiltinModules.AsReads.$tc'Paired1) -}
+62afb415bdab2cef9813ab462237b875
+  $tc'Paired1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+50c0c1b853b088ea66fe90d81483356e
+  $tc'Paired2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   BuiltinModules.AsReads.$tc'Paired3) -}
+2202551014e1797556c337b35d9c8f50
+  $tc'Paired3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Paired"#) -}
+36c2621a46384c48897d16633c58b9d2
+  $tc'Single :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6472877349679613394##
+                   10969048940309042001##
+                   BuiltinModules.AsReads.$trModule
+                   BuiltinModules.AsReads.$tc'Single2
+                   0#
+                   BuiltinModules.AsReads.$tc'Single1) -}
+45eb53001cbdc54e63a599b31e7c6a15
+  $tc'Single1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0e0b54bf62cecf643fd99d0c7bbe84de
+  $tc'Single2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   BuiltinModules.AsReads.$tc'Single3) -}
+2d67c6f3c15934358dd08ac5c166c885
+  $tc'Single3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Single"#) -}
+742d2acb40ad6094f6e150f898c1a44c
+  $tcFQResult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5548047746898717902##
+                   10727713906941408560##
+                   BuiltinModules.AsReads.$trModule
+                   BuiltinModules.AsReads.$tcFQResult1
+                   0#
+                   GHC.Types.krep$*) -}
+53601f1b24557a0581ac0982a277312f
+  $tcFQResult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   BuiltinModules.AsReads.$tcFQResult2) -}
+a3849fcea0dc74516da5190d5507318f
+  $tcFQResult2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FQResult"#) -}
+94c14eff7153379ec3da65aa8a70fa81
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   BuiltinModules.AsReads.$trModule3
+                   BuiltinModules.AsReads.$trModule1) -}
+edc993daff66ef6f7306ae5d385b0fa7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinModules.AsReads.$trModule2) -}
+b300f2f4f5fff1b43e61ca0e5b2962fa
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BuiltinModules.AsReads"#) -}
+f9f0d72e6cf7276fa8288380534d9f84
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinModules.AsReads.$trModule4) -}
+2c0e684dba3e3efbff51cd81e50cb31e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+134428e7dc94a5ccbaf5413adca9018e
+  $wexecuteReads ::
+    Language.NGLessObject
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+68846f9c593edcbb6cad5b35c458e8d1
+  $wloadModule ::
+    GHC.Prim.Void# -> NGLess.NGError.NGLessIO Modules.Module
+  {- Arity: 1, Strictness: <L,A>, Inline: [2],
+     Unfolding: (\ (void :: GHC.Prim.Void#) ->
+                 let {
+                   eta :: Modules.Module
+                   = case Modules.$fDefaultModule_$cdef of wild { Modules.Module ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                     case Data.Text.Show.unpackCString#
+                            "builtin.as_reads"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                     case Data.Text.Show.unpackCString#
+                            "0.0"# of dt1 { Data.Text.Internal.Text ipv3 ipv4 ipv5 ->
+                     Modules.Module
+                       (Language.ModInfo dt dt1)
+                       ds1
+                       ds2
+                       ds3
+                       ds4
+                       (GHC.Types.:
+                          @ Modules.Function
+                          BuiltinModules.AsReads.as_reads_Function
+                          (GHC.Types.:
+                             @ Modules.Function
+                             BuiltinModules.AsReads.discard_singles_Function
+                             (GHC.Types.[] @ Modules.Function)))
+                       ds6
+                       (\ (ds8 :: Data.Text.Internal.Text) ->
+                        case ds8 of wild1 { Data.Text.Internal.Text dt2 dt3 dt4 ->
+                        case BuiltinModules.AsReads.loadModule13 of wild2 { Data.Text.Internal.Text dt5 dt6 dt7 ->
+                        let {
+                          $j :: Language.NGLessObject
+                                -> NGLess.KwArgsValues
+                                -> NGLess.NGError.NGLessIO Language.NGLessObject
+                            <join 0>
+                          = case BuiltinModules.AsReads.loadModule12 of wild3 { Data.Text.Internal.Text dt8 dt9 dt10 ->
+                            let {
+                              $j1 :: Language.NGLessObject
+                                     -> NGLess.KwArgsValues
+                                     -> NGLess.NGError.NGLessIO Language.NGLessObject
+                                <join 0> {- Strictness: x -}
+                              = GHC.Err.error
+                                  @ 'GHC.Types.LiftedRep
+                                  @ (Language.NGLessObject
+                                     -> NGLess.KwArgsValues
+                                     -> NGLess.NGError.NGLessIO Language.NGLessObject)
+                                  BuiltinModules.AsReads.loadModule1
+                                    `cast`
+                                  (Sym (GHC.Classes.N:IP[0]
+                                            <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                  (GHC.CString.unpackCString# "NOT POSSIBLE"#)
+                            } in
+                            case GHC.Prim.==# dt4 dt10 of lwild {
+                              DEFAULT -> $j1
+                              1#
+                              -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                                -> GHC.Prim.Word#
+                                                                -> GHC.Prim.ByteArray#
+                                                                -> GHC.Prim.Word#
+                                                                -> GHC.Prim.Word#
+                                                                -> GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld
+                                                                -> (# GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld,
+                                                                      GHC.Prim.Int# #)}
+                                        dt2
+                                        (GHC.Prim.int2Word# dt3)
+                                        dt8
+                                        (GHC.Prim.int2Word# dt9)
+                                        (GHC.Prim.int2Word# dt4)
+                                        GHC.Prim.realWorld# of wild5 { (#,#) ds9 ds10 ->
+                                 case GHC.Prim.narrow32Int# ds10 of wild4 {
+                                   DEFAULT -> $j1
+                                   0# -> BuiltinModules.AsReads.executeDiscardSingles } } } }
+                        } in
+                        case GHC.Prim.==# dt4 dt7 of lwild {
+                          DEFAULT -> $j
+                          1#
+                          -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                            -> GHC.Prim.Word#
+                                                            -> GHC.Prim.ByteArray#
+                                                            -> GHC.Prim.Word#
+                                                            -> GHC.Prim.Word#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Int# #)}
+                                    dt2
+                                    (GHC.Prim.int2Word# dt3)
+                                    dt5
+                                    (GHC.Prim.int2Word# dt6)
+                                    (GHC.Prim.int2Word# dt4)
+                                    GHC.Prim.realWorld# of wild5 { (#,#) ds9 ds10 ->
+                             case GHC.Prim.narrow32Int# ds10 of wild3 {
+                               DEFAULT -> $j
+                               0# -> BuiltinModules.AsReads.executeReads } } } } }) } } }
+                 } in
+                 (\ (eta1 :: GHC.IORef.IORef
+                               Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  (# eta2, eta #))
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Modules.Module>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <Modules.Module>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Modules.Module>_N))) -}
+b142b521e33f8f81bdf07e07b9301113
+  data FQResult
+    = NoResult
+    | Single !Data.ByteString.Internal.ByteString
+    | Paired !Data.ByteString.Internal.ByteString
+             !Data.ByteString.Internal.ByteString
+4b9d8e65b6e210428f4daccdc2b8e853
+  as_reads_Function :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinModules.AsReads.loadModule13
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinModules.AsReads.loadModule20
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLReadSet
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   BuiltinModules.AsReads.loadModule15) -}
+5f5babec6c046a11ab4d8cf490ee5fc3
+  discard_singles_Function :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinModules.AsReads.loadModule12
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   BuiltinModules.AsReads.loadModule19
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLReadSet
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.True
+                   BuiltinModules.AsReads.loadModule14) -}
+c2a72cf37f1a72516459600d163ef0cd
+  executeDiscardSingles ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <S,U><L,1*U>,
+     Unfolding: (\ (ds :: Language.NGLessObject)
+                   (ds1 :: [(Data.Text.Internal.Text, Language.NGLessObject)]) ->
+                 let {
+                   fail :: GHC.Prim.Void#
+                           -> NGLess.NGError.NGLessIO Language.NGLessObject
+                     <join 1> {- Arity: 1, Strictness: <L,A> -}
+                   = \ (ds2 :: GHC.Prim.Void#)[OneShot] ->
+                     let {
+                       x :: NGLess.NGError.NGError
+                       = case GHC.CString.unpackAppendCString#
+                                "executeDiscardSingles called with argument: "#
+                                (Language.$fShowNGLessObject_$cshowsPrec
+                                   (GHC.Types.I# 0#)
+                                   ds
+                                   (GHC.Types.[] @ GHC.Types.Char)) of dt { DEFAULT ->
+                         NGLess.NGError.NGError NGLess.NGError.ShouldNotOccur dt }
+                     } in
+                     (\ (eta :: GHC.IORef.IORef
+                                  Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                        (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                      GHC.Prim.raiseIO#
+                        @ GHC.Exception.Type.SomeException
+                        @ Language.NGLessObject
+                        (NGLess.NGError.$fExceptionNGError_$ctoException x)
+                        eta1)
+                       `cast`
+                     ((<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                             <GHC.Types.IO>_R
+                                                                             <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N))
+                 } in
+                 case ds of wild {
+                   DEFAULT -> fail GHC.Prim.void#
+                   Language.NGOReadSet meta ds2
+                   -> case ds2 of wild1 { Data.FastQ.ReadSet paired ds3 ->
+                      case ds1 of wild2 {
+                        []
+                        -> let {
+                             eta :: Data.FastQ.ReadSet
+                             = Data.FastQ.ReadSet
+                                 paired
+                                 (GHC.Types.[] @ Data.FastQ.FastQFilePath)
+                           } in
+                           let {
+                             eta1 :: Language.NGLessObject = Language.NGOReadSet meta eta
+                           } in
+                           (\ (eta2 :: GHC.IORef.IORef
+                                         Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                              (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                            (# eta3, eta1 #))
+                             `cast`
+                           ((<GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                             ->_R Sym (GHC.Types.N:IO[0]
+                                           <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                   <GHC.Types.IO>_R
+                                                                                   <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N))
+                        : ipv ipv1 -> fail GHC.Prim.void# } } }) -}
+a58de1419befcc66f9b7e6144196ef2f
+  executeReads ::
+    Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 2, Strictness: <S,1*U><L,A>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: Language.NGLessObject) (w1 :: NGLess.KwArgsValues) ->
+                 BuiltinModules.AsReads.$wexecuteReads w) -}
+36f5ea7bae936cd7c424864e26926a80
+  loadModule ::
+    Data.Text.Internal.Text -> NGLess.NGError.NGLessIO Modules.Module
+  {- Arity: 1, Strictness: <L,A>, Inline: [2],
+     Unfolding: InlineRule (1, True, True)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 BuiltinModules.AsReads.$wloadModule GHC.Prim.void#) -}
+54b2db2de5ee4255afa323f9b95e9913
+  loadModule1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   BuiltinModules.AsReads.loadModule10
+                   BuiltinModules.AsReads.loadModule2
+                   GHC.Stack.Types.EmptyCallStack) -}
+4767f3a9e62075dc5adfdc6c21bf631e
+  loadModule10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   BuiltinModules.AsReads.loadModule11) -}
+819eec562989032984d03c4576b2ac4f
+  loadModule11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("error"#) -}
+8d7ce741b844193be1d255d3fe1f2904
+  loadModule12 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "discard_singles"#) -}
+8c479cc6384b734159449d58f8256d20
+  loadModule13 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "as_reads"#) -}
+fe94c4c0abdd501e6e50f8396d1f3300
+  loadModule14 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   BuiltinModules.AsReads.loadModule16
+                   BuiltinModules.AsReads.loadModule15) -}
+291655f6e5a171af93ac3e4c4564e196
+  loadModule15 :: [Modules.FunctionCheck]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Modules.FunctionCheck
+                   Modules.FunctionCheckReturnAssigned
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+fdc881f4077817e8e47442e895146792
+  loadModule16 :: Modules.FunctionCheck
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Modules.FunctionCheckMinNGLessVersion
+                   BuiltinModules.AsReads.loadModule17) -}
+6277ce0f912f056aada27d556d6b6ff1
+  loadModule17 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((BuiltinModules.AsReads.loadModule18,
+                  BuiltinModules.AsReads.loadModule18)) -}
+324265b7dd4f9f9ba130b361f3c1a015
+  loadModule18 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+d493adc0f903a9eb0206f4780fe8dcfb
+  loadModule19 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLReadSet) -}
+79c1ee6b6c6e4407e66b0740042b79f3
+  loadModule2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   BuiltinModules.AsReads.loadModule9
+                   BuiltinModules.AsReads.loadModule8
+                   BuiltinModules.AsReads.loadModule6
+                   BuiltinModules.AsReads.loadModule5
+                   BuiltinModules.AsReads.loadModule4
+                   BuiltinModules.AsReads.loadModule5
+                   BuiltinModules.AsReads.loadModule3) -}
+ca5e2929ea25c2e0ae7cb9dac3d61308
+  loadModule20 :: GHC.Maybe.Maybe Language.NGLType
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ Language.NGLType
+                   Language.NGLMappedReadSet) -}
+539b541501645643f1dd27e1710d1096
+  loadModule3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 50#) -}
+26a23740c82d3957bec81dd1f9586a32
+  loadModule4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 30#) -}
+a08f7388a5938be5eaed9478cb47d509
+  loadModule5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 153#) -}
+7e39ef378f71c05b7443dceeb18ef42f
+  loadModule6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   BuiltinModules.AsReads.loadModule7) -}
+7d1dd490f8e324b138e64d309620691d
+  loadModule7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess/BuiltinModules/AsReads.hs"#) -}
+55e0ea9e6315992ea5fe93032b662ef5
+  loadModule8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   BuiltinModules.AsReads.$trModule2) -}
+8ec2403b32bdf53b0566589788f5d075
+  loadModule9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   BuiltinModules.AsReads.$trModule4) -}
+instance GHC.Classes.Eq [BuiltinModules.AsReads.FQResult]
+  = BuiltinModules.AsReads.$fEqFQResult
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

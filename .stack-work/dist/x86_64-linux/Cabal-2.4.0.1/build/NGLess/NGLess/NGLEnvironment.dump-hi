@@ -1,0 +1,939 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:32.24759375 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGLEnvironment 8065
+  interface hash: 85494849085ad7e9cca244a5a2958337
+  ABI hash: 4ab4e397a1ac25f8e152520a0a756399
+  export-list hash: 140b883e1db9882b0aa097954c9eea1d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6f99022d2bf90aafa5601a09424cf0a1
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  NGLess.NGLEnvironment.nglConfiguration
+  NGLess.NGLEnvironment.nglEnvironment
+  NGLess.NGLEnvironment.setQuiet
+  NGLess.NGLEnvironment.setupTestEnvironment
+  NGLess.NGLEnvironment.updateNglEnvironment
+  NGLess.NGLEnvironment.updateNglEnvironment'
+  NGLess.NGLEnvironment.NGLEnvironment{NGLess.NGLEnvironment.NGLEnvironment ngleConfiguration ngleLno ngleMappersActive ngleScriptText ngleTemporaryFilesCreated ngleVersion}
+  NGLess.NGLEnvironment.NGLVersion{NGLess.NGLEnvironment.NGLVersion}
+module dependencies: CmdArgs Configuration NGLess.NGError
+package dependencies: ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 attoparsec-0.13.2.3 base-4.12.0.0 binary-0.8.6.0
+                      bytestring-0.10.8.2 colour-2.3.5 configurator-0.3.0.0
+                      containers-0.6.0.1 deepseq-1.4.4.0 directory-1.3.3.0
+                      exceptions-0.10.4 filepath-1.4.2.1 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      hashable-1.2.7.0 integer-gmp-1.0.2.0 integer-logarithms-1.0.3
+                      mtl-2.2.2 optparse-applicative-0.14.3.0 primitive-0.6.4.0
+                      process-1.6.5.0 resourcet-1.2.2 scientific-0.3.6.2 stm-2.5.0.0
+                      template-haskell-2.14.0.0 text-1.2.3.1 time-1.8.0.2
+                      transformers-0.5.6.2 unix-2.7.2.2 unix-compat-0.5.2
+                      unliftio-core-0.1.2.0 unordered-containers-0.2.10.0
+orphans: stm-2.5.0.0:Control.Monad.STM
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         configurator-0.3.0.0:Data.Configurator.Instances
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+import  -/  CmdArgs eb1bc9aa30723b0d6340ab204ddf34f6
+  exports: 6efb1ddd7ec496d3ab4280357ebeda0a
+  Quiet a44d056ef7d1abb5797e10c5b1d7f9d8
+import  -/  Configuration 9a82cb30f48ec6255155f5c7391fb6c7
+  exports: 9fc785b50aa90792bcf0bc8c48c96a09
+  NGLessConfiguration b4545dc36df17a7adccb3e6be807ab85
+  guessConfiguration aace6713503e4348ad82cccc251d27ec
+  nConfKeepTemporaryFiles b4545dc36df17a7adccb3e6be807ab85
+  nConfPrintHeader b4545dc36df17a7adccb3e6be807ab85
+  nConfTemporaryDirectory b4545dc36df17a7adccb3e6be807ab85
+  nConfVerbosity b4545dc36df17a7adccb3e6be807ab85
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  exports: 500bdef9411bf7c9c4e288fc5b605d1e
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.IORef e8e1ce7d64831ebb3853a1cd9fb4e228
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.IORef c4811a8ca9fa1f2f983a2e196af9a59c
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO.Unsafe e8c0e3a0a9cf9814796832fe86e2e8a6
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+d80a43c5bae03fd7eefc640474197c79
+  $fEqNGLEnvironment ::
+    GHC.Classes.Eq NGLess.NGLEnvironment.NGLEnvironment
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGLEnvironment.NGLEnvironment
+                  NGLess.NGLEnvironment.$fEqNGLEnvironment_$c==
+                  NGLess.NGLEnvironment.$fEqNGLEnvironment_$c/= -}
+d80a43c5bae03fd7eefc640474197c79
+  $fEqNGLEnvironment_$c/= ::
+    NGLess.NGLEnvironment.NGLEnvironment
+    -> NGLess.NGLEnvironment.NGLEnvironment -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SL)SSLLL),1*U(U(U,U),U,U(U,U,U),1*U,1*U,1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U))><S(S(SL)SSLLL),1*U(U(U,U),U,U(U,U,U),1*U,1*U,1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLEnvironment)
+                   (y :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case NGLess.NGLEnvironment.$fEqNGLEnvironment_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+d80a43c5bae03fd7eefc640474197c79
+  $fEqNGLEnvironment_$c== ::
+    NGLess.NGLEnvironment.NGLEnvironment
+    -> NGLess.NGLEnvironment.NGLEnvironment -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SL)SSLLL),1*U(U(U,U),U,U(U,U,U),1*U,1*U,1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U))><S(S(SL)SSLLL),1*U(U(U,U),U,U(U,U,U),1*U,1*U,1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U,1*U))>,
+     Unfolding: (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment)
+                   (ds1 :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment a1 a2 a3 a4 a5 a6 ->
+                 case ds1 of wild1 { NGLess.NGLEnvironment.NGLEnvironment b1 b2 b3 b4 b5 b6 ->
+                 case a1 of wild2 { NGLess.NGLEnvironment.NGLVersion dt dt1 ->
+                 case b1 of wild3 { NGLess.NGLEnvironment.NGLVersion dt2 dt3 ->
+                 case GHC.Prim.==# dt dt2 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case GHC.Prim.==# dt1 dt3 of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> let {
+                             $j :: GHC.Types.Bool <join 0>
+                             = case a3 of wild4 { Data.Text.Internal.Text dt4 dt5 dt6 ->
+                               case b3 of wild5 { Data.Text.Internal.Text dt7 dt8 dt9 ->
+                               case GHC.Prim.==# dt6 dt9 of lwild2 {
+                                 DEFAULT -> GHC.Types.False
+                                 1#
+                                 -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                                   -> GHC.Prim.Word#
+                                                                   -> GHC.Prim.ByteArray#
+                                                                   -> GHC.Prim.Word#
+                                                                   -> GHC.Prim.Word#
+                                                                   -> GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld
+                                                                   -> (# GHC.Prim.State#
+                                                                           GHC.Prim.RealWorld,
+                                                                         GHC.Prim.Int# #)}
+                                           dt4
+                                           (GHC.Prim.int2Word# dt5)
+                                           dt7
+                                           (GHC.Prim.int2Word# dt8)
+                                           (GHC.Prim.int2Word# dt6)
+                                           GHC.Prim.realWorld# of wild6 { (#,#) ds2 ds3 ->
+                                    case GHC.Prim.narrow32Int# ds3 of wild7 {
+                                      DEFAULT -> GHC.Types.False
+                                      0#
+                                      -> case GHC.Classes.$fEq[]_$c==
+                                                @ Data.Text.Internal.Text
+                                                Data.Text.$fEqText
+                                                a4
+                                                b4 of wild8 {
+                                           GHC.Types.False -> GHC.Types.False
+                                           GHC.Types.True
+                                           -> case GHC.Classes.$fEq[]_$s$c==1 a5 b5 of wild9 {
+                                                GHC.Types.False -> GHC.Types.False
+                                                GHC.Types.True
+                                                -> Configuration.$fEqNGLessConfiguration_$c==
+                                                     a6
+                                                     b6 } } } } } } }
+                           } in
+                           case a2 of wild4 {
+                             GHC.Maybe.Nothing
+                             -> case b2 of wild5 {
+                                  GHC.Maybe.Nothing -> $j GHC.Maybe.Just ipv -> GHC.Types.False }
+                             GHC.Maybe.Just a7
+                             -> case b2 of wild5 {
+                                  GHC.Maybe.Nothing -> GHC.Types.False
+                                  GHC.Maybe.Just b7
+                                  -> case a7 of wild6 { GHC.Types.I# x ->
+                                     case b7 of wild7 { GHC.Types.I# y ->
+                                     case GHC.Prim.==# x y of lwild2 {
+                                       DEFAULT -> GHC.Types.False 1# -> $j } } } } } } } } } } }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fEqNGLVersion :: GHC.Classes.Eq NGLess.NGLEnvironment.NGLVersion
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGLEnvironment.NGLVersion
+                  NGLess.NGLEnvironment.$fEqNGLVersion_$c==
+                  NGLess.NGLEnvironment.$fEqNGLVersion_$c/= -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fEqNGLVersion_$c/= ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case x of wild { NGLess.NGLEnvironment.NGLVersion dt dt1 ->
+                 case y of wild1 { NGLess.NGLEnvironment.NGLVersion dt2 dt3 ->
+                 case GHC.Prim.==# dt dt2 of lwild {
+                   DEFAULT -> GHC.Types.True
+                   1#
+                   -> case GHC.Prim.==# dt1 dt3 of lwild1 {
+                        DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } } }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fEqNGLVersion_$c== ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLVersion)
+                   (ds1 :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLVersion dt dt1 ->
+                 case ds1 of wild1 { NGLess.NGLEnvironment.NGLVersion dt2 dt3 ->
+                 case GHC.Prim.==# dt dt2 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# dt1 dt3) } } }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion :: GHC.Classes.Ord NGLess.NGLEnvironment.NGLVersion
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGLEnvironment.NGLVersion
+                  NGLess.NGLEnvironment.$fEqNGLVersion
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$c<
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$c<=
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$c>
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$c>=
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$cmax
+                  NGLess.NGLEnvironment.$fOrdNGLVersion_$cmin -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$c< ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$c<= ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$c> ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$c>= ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$ccompare ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS),1*U(U,U)><S(SS),1*U(U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: NGLess.NGLEnvironment.NGLVersion)
+                   (w1 :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case w of ww { NGLess.NGLEnvironment.NGLVersion ww1 ww2 ->
+                 case w1 of ww3 { NGLess.NGLEnvironment.NGLVersion ww4 ww5 ->
+                 NGLess.NGLEnvironment.$w$ccompare ww1 ww2 ww4 ww5 } }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$cmax ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fOrdNGLVersion_$cmin ::
+    NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion
+    -> NGLess.NGLEnvironment.NGLVersion
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(U,U)><S(SL),1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion)
+                   (y :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case NGLess.NGLEnvironment.$fOrdNGLVersion_$ccompare x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+d80a43c5bae03fd7eefc640474197c79
+  $fShowNGLEnvironment ::
+    GHC.Show.Show NGLess.NGLEnvironment.NGLEnvironment
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGLEnvironment.NGLEnvironment
+                  NGLess.NGLEnvironment.$fShowNGLEnvironment_$cshowsPrec
+                  NGLess.NGLEnvironment.$fShowNGLEnvironment_$cshow
+                  NGLess.NGLEnvironment.$fShowNGLEnvironment_$cshowList -}
+d80a43c5bae03fd7eefc640474197c79
+  $fShowNGLEnvironment_$cshow ::
+    NGLess.NGLEnvironment.NGLEnvironment -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S(S(SS)SS(SSS)LLL),1*U(U(U,U),U,U(U,U,U),U,U,1*U(U,U,U,U,U,U,U,U,U,U,1*U,U,U,U,1*U,U,1*U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 NGLess.NGLEnvironment.$fShowNGLEnvironment_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+d80a43c5bae03fd7eefc640474197c79
+  $fShowNGLEnvironment_$cshowList ::
+    [NGLess.NGLEnvironment.NGLEnvironment] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [NGLess.NGLEnvironment.NGLEnvironment])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ NGLess.NGLEnvironment.NGLEnvironment
+                   (NGLess.NGLEnvironment.$fShowNGLEnvironment_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+d80a43c5bae03fd7eefc640474197c79
+  $fShowNGLEnvironment_$cshowsPrec ::
+    GHC.Types.Int
+    -> NGLess.NGLEnvironment.NGLEnvironment -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(S(SS)SS(SSS)LLL),1*U(U(U,U),U,U(U,U,U),U,U,1*U(U,U,U,U,U,U,U,U,U,U,1*U,U,U,U,1*U,U,1*U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { NGLess.NGLEnvironment.NGLEnvironment ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww3 of ww9 { NGLess.NGLEnvironment.NGLVersion ww10 ww11 ->
+                 case ww5 of ww12 { Data.Text.Internal.Text ww13 ww14 ww15 ->
+                 NGLess.NGLEnvironment.$w$cshowsPrec
+                   ww1
+                   ww10
+                   ww11
+                   ww4
+                   ww13
+                   ww14
+                   ww15
+                   ww6
+                   ww7
+                   ww8 } } } }) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fShowNGLVersion :: GHC.Show.Show NGLess.NGLEnvironment.NGLVersion
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ NGLess.NGLEnvironment.NGLVersion
+                  NGLess.NGLEnvironment.$fShowNGLVersion_$cshowsPrec
+                  NGLess.NGLEnvironment.$fShowNGLVersion_$cshow
+                  NGLess.NGLEnvironment.$fShowNGLVersion_$cshowList -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fShowNGLVersion_$cshow ::
+    NGLess.NGLEnvironment.NGLVersion -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SS),1*U(U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: NGLess.NGLEnvironment.NGLVersion) ->
+                 NGLess.NGLEnvironment.$fShowNGLVersion_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fShowNGLVersion_$cshowList ::
+    [NGLess.NGLEnvironment.NGLVersion] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [NGLess.NGLEnvironment.NGLVersion])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ NGLess.NGLEnvironment.NGLVersion
+                   (NGLess.NGLEnvironment.$fShowNGLVersion_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+0a7189d0d809b96dffd18090bef6b97d
+  $fShowNGLVersion_$cshowsPrec ::
+    GHC.Types.Int -> NGLess.NGLEnvironment.NGLVersion -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(SS),1*U(U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: NGLess.NGLEnvironment.NGLVersion) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { NGLess.NGLEnvironment.NGLVersion ww3 ww4 ->
+                 NGLess.NGLEnvironment.$w$cshowsPrec1 ww1 ww3 ww4 } }) -}
+e90432a9979664f86a43fbefdf72f8db
+  $tc'NGLEnvironment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14017468670031571565##
+                   8441212504698779149##
+                   NGLess.NGLEnvironment.$trModule
+                   NGLess.NGLEnvironment.$tc'NGLEnvironment2
+                   0#
+                   NGLess.NGLEnvironment.$tc'NGLEnvironment1) -}
+b97f7b9f77fd6597f1054fef6b3d688e
+  $tc'NGLEnvironment1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ee0d9900ba3e4c32834ab4d0bc883332
+  $tc'NGLEnvironment2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   NGLess.NGLEnvironment.$tc'NGLEnvironment3) -}
+c13cfa15b615bc07ee39127b806d49ab
+  $tc'NGLEnvironment3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGLEnvironment"#) -}
+883a0f4eac01b21edab9ae3039a53e94
+  $tc'NGLVersion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10231120056231823577##
+                   8364747574136336170##
+                   NGLess.NGLEnvironment.$trModule
+                   NGLess.NGLEnvironment.$tc'NGLVersion2
+                   0#
+                   NGLess.NGLEnvironment.$tc'NGLVersion1) -}
+ed77aeedf788d6a133ebff9c131a306b
+  $tc'NGLVersion1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+979125d2bb0a84476ea2111372d4830e
+  $tc'NGLVersion2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   NGLess.NGLEnvironment.$tc'NGLVersion3) -}
+981aecd857d14e64583302ff0914af3f
+  $tc'NGLVersion3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGLVersion"#) -}
+efca04a84e7f0c646d98cdf8daa7f72d
+  $tcNGLEnvironment :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15033501808721507767##
+                   10928098737396928900##
+                   NGLess.NGLEnvironment.$trModule
+                   NGLess.NGLEnvironment.$tcNGLEnvironment1
+                   0#
+                   GHC.Types.krep$*) -}
+6c1661d77b83f0c37c00c7e329eb9b73
+  $tcNGLEnvironment1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   NGLess.NGLEnvironment.$tcNGLEnvironment2) -}
+0c8532ab5e8f64d5288af7d1f817f5af
+  $tcNGLEnvironment2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLEnvironment"#) -}
+839d8304a840e60979f19b74875d8073
+  $tcNGLVersion :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16712426666484791709##
+                   2595045240470363101##
+                   NGLess.NGLEnvironment.$trModule
+                   NGLess.NGLEnvironment.$tcNGLVersion1
+                   0#
+                   GHC.Types.krep$*) -}
+1d9860ce804b461486a903b24ec48ebe
+  $tcNGLVersion1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   NGLess.NGLEnvironment.$tcNGLVersion2) -}
+88040ef7c85371f78c0c7b02c98f6ad3
+  $tcNGLVersion2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLVersion"#) -}
+d1b2e87bba6824cb0a5f477234ec8e0d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   NGLess.NGLEnvironment.$trModule3
+                   NGLess.NGLEnvironment.$trModule1) -}
+825a9ac3e9da4981095d1f035c0a0db8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGLEnvironment.$trModule2) -}
+298443c290567bab3230170fc55ad6b6
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLess.NGLEnvironment"#) -}
+22cddb72df276e9def25d32c64a6a709
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS NGLess.NGLEnvironment.$trModule4) -}
+ce82ff8a86b37e8a74428f238c9cfdda
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+fbc74a7c03093e1b5675a1d38a1e8ceb
+  $w$ccompare ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,U><L,U><S,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.==# ww ww2 of lwild {
+                   DEFAULT -> GHC.Classes.compareInt# ww ww2
+                   1# -> GHC.Classes.compareInt# ww1 ww3 }) -}
+ddfeec3941480404ac8cf7d3513b439c
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Maybe.Maybe GHC.Types.Int
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> [Data.Text.Internal.Text]
+    -> [GHC.IO.FilePath]
+    -> Configuration.NGLessConfiguration
+    -> GHC.Show.ShowS
+  {- Arity: 10,
+     Strictness: <S,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U><L,U><L,1*U(U,U,U,U,U,U,U,U,U,U,1*U,U,U,U,1*U,U,1*U)>,
+     Inline: [2] -}
+fbcdf70b2df44ae7acf79dc4bf8a116e
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#) ->
+                 let {
+                   f :: GHC.Prim.Addr# = "NGLVersion "#
+                 } in
+                 let {
+                   f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String) ->
+                     case GHC.Show.$wshowSignedInt
+                            11#
+                            ww1
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.showSpace1
+                               (case GHC.Show.$wshowSignedInt 11# ww2 x of ww4 { (#,#) ww5 ww6 ->
+                                GHC.Types.: @ GHC.Types.Char ww5 ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                     GHC.Types.: @ GHC.Types.Char ww5 ww6 }
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char f1 (g x)
+                   1#
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           f1
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }) -}
+d80a43c5bae03fd7eefc640474197c79
+  data NGLEnvironment
+    = NGLEnvironment {ngleVersion :: !NGLess.NGLEnvironment.NGLVersion,
+                      ngleLno :: !(GHC.Maybe.Maybe GHC.Types.Int),
+                      ngleScriptText :: !Data.Text.Internal.Text,
+                      ngleMappersActive :: [Data.Text.Internal.Text],
+                      ngleTemporaryFilesCreated :: [GHC.IO.FilePath],
+                      ngleConfiguration :: Configuration.NGLessConfiguration}
+0a7189d0d809b96dffd18090bef6b97d
+  data NGLVersion
+    = NGLVersion {-# UNPACK #-}GHC.Types.Int
+                 {-# UNPACK #-}GHC.Types.Int
+539294010c83651951422c2571efcf9e
+  nglConfiguration ::
+    NGLess.NGError.NGLessIO Configuration.NGLessConfiguration
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGLEnvironment.nglConfiguration1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <Configuration.NGLessConfiguration>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                    <GHC.Types.IO>_R
+                                                                                    <Configuration.NGLessConfiguration>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Configuration.NGLessConfiguration>_N)) -}
+73df111170facc2c4dd1d4f9c066028a
+  nglConfiguration1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Configuration.NGLessConfiguration #)
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case NGLess.NGLEnvironment.ngle
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <NGLess.NGLEnvironment.NGLEnvironment>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    case ipv1 of wild1 { NGLess.NGLEnvironment.NGLEnvironment ds ds2 ds3 ds4 ds5 ds6 ->
+                    ds6 } #) } }) -}
+56dd9663bd034f7047cca99f322e3b64
+  nglEnvironment ::
+    NGLess.NGError.NGLessIO NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGLEnvironment.nglEnvironment1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <NGLess.NGLEnvironment.NGLEnvironment>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                       <GHC.Types.IO>_R
+                                                                                       <NGLess.NGLEnvironment.NGLEnvironment>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <NGLess.NGLEnvironment.NGLEnvironment>_N)) -}
+f3721608e7d0ac6167a5f99e16e13d2b
+  nglEnvironment1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          NGLess.NGLEnvironment.NGLEnvironment #)
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.STRef.readSTRef1
+                   @ GHC.Prim.RealWorld
+                   @ NGLess.NGLEnvironment.NGLEnvironment
+                   NGLess.NGLEnvironment.ngle
+                     `cast`
+                   (GHC.IORef.N:IORef[0] <NGLess.NGLEnvironment.NGLEnvironment>_N)
+                   eta) -}
+086bbc18e593180890ed3ab51a075aa2
+  ngle :: GHC.IORef.IORef NGLess.NGLEnvironment.NGLEnvironment
+  {- Inline: -}
+d80a43c5bae03fd7eefc640474197c79
+  ngleConfiguration ::
+    NGLess.NGLEnvironment.NGLEnvironment
+    -> Configuration.NGLessConfiguration
+  RecSel Left NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLS),1*U(A,A,A,A,A,1*U(U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds6 }) -}
+d80a43c5bae03fd7eefc640474197c79
+  ngleLno ::
+    NGLess.NGLEnvironment.NGLEnvironment
+    -> GHC.Maybe.Maybe GHC.Types.Int
+  RecSel Left NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds2 }) -}
+d80a43c5bae03fd7eefc640474197c79
+  ngleMappersActive ::
+    NGLess.NGLEnvironment.NGLEnvironment -> [Data.Text.Internal.Text]
+  RecSel Left NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLL),1*U(A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds4 }) -}
+d80a43c5bae03fd7eefc640474197c79
+  ngleScriptText ::
+    NGLess.NGLEnvironment.NGLEnvironment -> Data.Text.Internal.Text
+  RecSel Left NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLL),1*U(A,A,U(U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds3 }) -}
+d80a43c5bae03fd7eefc640474197c79
+  ngleTemporaryFilesCreated ::
+    NGLess.NGLEnvironment.NGLEnvironment -> [GHC.IO.FilePath]
+  RecSel Left NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSL),1*U(A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds5 }) -}
+d80a43c5bae03fd7eefc640474197c79
+  ngleVersion ::
+    NGLess.NGLEnvironment.NGLEnvironment
+    -> NGLess.NGLEnvironment.NGLVersion
+  RecSel Left NGLess.NGLEnvironment.NGLEnvironment
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(U(U,U),A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: NGLess.NGLEnvironment.NGLEnvironment) ->
+                 case ds of wild { NGLess.NGLEnvironment.NGLEnvironment ds1 ds2 ds3 ds4 ds5 ds6 ->
+                 ds1 }) -}
+51cdbe82c01555fcf5882f1159eddfeb
+  setQuiet :: NGLess.NGError.NGLessIO ()
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGLEnvironment.setQuiet1
+                  `cast`
+                ((<GHC.IORef.IORef
+                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                  ->_R Sym (GHC.Types.N:IO[0]
+                                <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                     <GHC.Types.IO>_R
+                                                     <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+c09cee3fd384d0bb38d964bc913572fe
+  setQuiet1 ::
+    GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case NGLess.NGLEnvironment.ngle
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <NGLess.NGLEnvironment.NGLEnvironment>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild1 { NGLess.NGLEnvironment.NGLEnvironment ds ds2 ds3 ds4 ds5 ds6 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        (NGLess.NGLEnvironment.NGLEnvironment
+                           ds
+                           ds2
+                           ds3
+                           ds4
+                           ds5
+                           (case ds6 of wild2 { Configuration.NGLessConfiguration ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ->
+                            Configuration.NGLessConfiguration
+                              ds7
+                              ds8
+                              ds9
+                              ds10
+                              ds11
+                              ds12
+                              ds13
+                              ds14
+                              ds15
+                              ds16
+                              ds17
+                              GHC.Types.False
+                              ds19
+                              ds20
+                              CmdArgs.Quiet
+                              ds22
+                              ds23 }))
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } } } }) -}
+0a910a7b20e2dfbde14435d663d704ed
+  setupTestEnvironment :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGLEnvironment.setupTestEnvironment1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+011776ee2b6453397f1d4947ac3f3c2b
+  setupTestEnvironment1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Configuration.guessConfiguration1 s of ds1 { (#,#) ipv ipv1 ->
+                 case NGLess.NGLEnvironment.ngle
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <NGLess.NGLEnvironment.NGLEnvironment>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild1 { NGLess.NGLEnvironment.NGLEnvironment ds ds3 ds4 ds5 ds6 ds7 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ NGLess.NGLEnvironment.NGLEnvironment
+                        var#
+                        (NGLess.NGLEnvironment.NGLEnvironment
+                           ds
+                           ds3
+                           ds4
+                           ds5
+                           ds6
+                           (case ipv1 of wild2 { Configuration.NGLessConfiguration ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ->
+                            Configuration.NGLessConfiguration
+                              ds8
+                              ds9
+                              ds10
+                              ds11
+                              (GHC.CString.unpackCString# "testing_tmp_dir"#)
+                              GHC.Types.True
+                              ds14
+                              ds15
+                              ds16
+                              ds17
+                              ds18
+                              ds19
+                              ds20
+                              ds21
+                              CmdArgs.Quiet
+                              ds23
+                              ds24 }))
+                        ipv2 of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } } } } }) -}
+3c9480db8a054505942b2c2a455873f8
+  updateNglEnvironment ::
+    (NGLess.NGLEnvironment.NGLEnvironment
+     -> NGLess.NGLEnvironment.NGLEnvironment)
+    -> NGLess.NGError.NGLessIO ()
+  {- Arity: 3, Strictness: <C(S),1*C1(U)><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGLEnvironment.updateNglEnvironment1
+                  `cast`
+                (<NGLess.NGLEnvironment.NGLEnvironment
+                  -> NGLess.NGLEnvironment.NGLEnvironment>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R
+                                                          <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+f6477f09ace17ea32d1478fc92f6b916
+  updateNglEnvironment' ::
+    (NGLess.NGLEnvironment.NGLEnvironment
+     -> NGLess.NGLEnvironment.NGLEnvironment)
+    -> GHC.Types.IO ()
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                NGLess.NGLEnvironment.updateNglEnvironment'1
+                  `cast`
+                (<NGLess.NGLEnvironment.NGLEnvironment
+                  -> NGLess.NGLEnvironment.NGLEnvironment>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+b2acf83fa4b7b862fe5c4713dad46ef8
+  updateNglEnvironment'1 ::
+    (NGLess.NGLEnvironment.NGLEnvironment
+     -> NGLess.NGLEnvironment.NGLEnvironment)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2,
+     Unfolding: (Data.IORef.modifyIORef'1
+                   @ NGLess.NGLEnvironment.NGLEnvironment
+                   NGLess.NGLEnvironment.ngle) -}
+d00dde0d300793e1be08dffbe55f362c
+  updateNglEnvironment1 ::
+    (NGLess.NGLEnvironment.NGLEnvironment
+     -> NGLess.NGLEnvironment.NGLEnvironment)
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <C(S),1*C1(U)><L,A><S,U>,
+     Unfolding: InlineRule (3, True, True)
+                (\ (x :: NGLess.NGLEnvironment.NGLEnvironment
+                         -> NGLess.NGLEnvironment.NGLEnvironment)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Data.IORef.modifyIORef'1
+                   @ NGLess.NGLEnvironment.NGLEnvironment
+                   NGLess.NGLEnvironment.ngle
+                   x
+                   eta1) -}
+instance GHC.Classes.Eq [NGLess.NGLEnvironment.NGLEnvironment]
+  = NGLess.NGLEnvironment.$fEqNGLEnvironment
+instance GHC.Classes.Eq [NGLess.NGLEnvironment.NGLVersion]
+  = NGLess.NGLEnvironment.$fEqNGLVersion
+instance GHC.Classes.Ord [NGLess.NGLEnvironment.NGLVersion]
+  = NGLess.NGLEnvironment.$fOrdNGLVersion
+instance GHC.Show.Show [NGLess.NGLEnvironment.NGLEnvironment]
+  = NGLess.NGLEnvironment.$fShowNGLEnvironment
+instance GHC.Show.Show [NGLess.NGLEnvironment.NGLVersion]
+  = NGLess.NGLEnvironment.$fShowNGLVersion
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

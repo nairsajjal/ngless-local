@@ -1,0 +1,2722 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:16:07.482731926 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:ExternalModules 8065
+  interface hash: 531542a10e3a178fef1247130b4f352d
+  ABI hash: 651853c2193411f615f0f2fd2b8c251b
+  export-list hash: 0fd57b92eba6bc6bad3e70fdeba050df
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b61898c6f662df8db0349e500b89f0fa
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ExternalModules.loadModule
+module dependencies: CmdArgs Configuration Data.FastQ
+                     Data.FastQ.Utils Data.Sam Dependencies.Embedded FileManagement
+                     FileOrStream Language Modules NGLess NGLess.NGError
+                     NGLess.NGLEnvironment Output Paths_NGLess Utils.Conduit
+                     Utils.FindModules Utils.LockFile Utils.Network Utils.ProgressBar
+                     Utils.Samtools Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0
+                      asn1-encoding-0.9.6 asn1-parse-0.9.5 asn1-types-0.3.3 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 basement-0.0.11
+                      bifunctors-5.5.6 binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      case-insensitive-1.2.0.11 cereal-0.5.8.1 cereal-conduit-0.8.0
+                      charset-0.3.7.1 colour-2.3.5 comonad-5.0.6 conduit-1.3.1.2
+                      conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 configurator-0.3.0.0 connection-0.3.1
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      cookie-0.4.5 cryptonite-0.25 data-default-0.7.1.1
+                      data-default-class-0.1.2.0 data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 hourglass-0.2.12
+                      http-client-0.6.4 http-client-tls-0.3.5.3 http-conduit-2.3.7.3
+                      http-types-0.12.3 inline-c-0.7.0.1 integer-gmp-1.0.2.0
+                      integer-logarithms-1.0.3 intervals-0.8.1 kan-extensions-5.2
+                      lens-4.17.1 libyaml-0.1.1.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 memory-0.14.18 monad-loops-0.4.3
+                      mono-traversable-1.0.15.1 monoid-extras-0.5.1 mtl-2.2.2
+                      network-2.8.0.1 network-uri-2.6.1.0 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pem-0.2.4 pretty-1.1.3.6
+                      primitive-0.6.4.0 process-1.6.5.0 profunctors-5.3 random-1.1
+                      reflection-2.1.5 regex-1.0.2.0 regex-base-0.93.2
+                      regex-compat-0.95.1 regex-pcre-builtin-0.94.5.8.8.35
+                      regex-posix-0.95.2 regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3
+                      resourcet-1.2.2 safe-0.3.18 safe-exceptions-0.1.7.0 safeio-0.0.5.0
+                      scientific-0.3.6.2 semigroupoids-5.3.4 socks-0.6.1 split-0.2.3.3
+                      stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 tar-conduit-0.3.2
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.3.1.0
+                      time-1.8.0.2 time-compat-1.9.2.2 time-locale-compat-0.1.1.5
+                      tls-1.4.1 transformers-0.5.6.2 transformers-base-0.4.5.2
+                      transformers-compat-0.6.5 unix-2.7.2.2 unix-compat-0.5.2
+                      unliftio-0.2.12 unliftio-core-0.1.2.0 unordered-containers-0.2.10.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.3
+                      vector-algorithms-0.8.0.3 x509-1.7.5 x509-store-1.6.7
+                      x509-system-1.6.6 x509-validation-1.6.11 yaml-0.11.2.0 zlib-0.6.2.1
+                      zstd-0.1.1.2
+orphans: http-client-0.6.4:Network.HTTP.Client.Request
+         network-2.8.0.1:Network.Socket basement-0.0.11:Basement.UArray.Base
+         basement-0.0.11:Basement.Block
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         basement-0.0.11:Basement.Block.Base
+                         basement-0.0.11:Basement.Bounded basement-0.0.11:Basement.Monad
+                         basement-0.0.11:Basement.MutableBuilder
+                         basement-0.0.11:Basement.Nat basement-0.0.11:Basement.NonEmpty
+                         basement-0.0.11:Basement.Numerical.Subtractive
+                         basement-0.0.11:Basement.PrimType basement-0.0.11:Basement.String
+                         basement-0.0.11:Basement.String.Encoding.ASCII7
+                         basement-0.0.11:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.11:Basement.String.Encoding.UTF16
+                         basement-0.0.11:Basement.String.Encoding.UTF32
+                         basement-0.0.11:Basement.Types.OffsetSize
+                         basement-0.0.11:Basement.UArray.Base
+                         basement-0.0.11:Basement.UTF8.Base
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         http-client-0.6.4:Network.HTTP.Client
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         network-uri-2.6.1.0:Network.URI
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  MissingH-1.4.1.0:Data.List.Utils a5d3124a702dde141b1748ec65eff7c8
+import  -/  Configuration 9a82cb30f48ec6255155f5c7391fb6c7
+  exports: 9fc785b50aa90792bcf0bc8c48c96a09
+  nConfDownloadBaseURL b4545dc36df17a7adccb3e6be807ab85
+  nConfGlobalDataDirectory b4545dc36df17a7adccb3e6be807ab85
+  nConfTemporaryDirectory b4545dc36df17a7adccb3e6be807ab85
+  nConfUserDataDirectory b4545dc36df17a7adccb3e6be807ab85
+import  -/  Data.FastQ 683044f508718e436592cbb72ea87fc2
+  exports: 7f3c9451f8064311c68af66858502794
+  ReadSet c16a307192e6c5c3c5475f335c533ab2
+  fqpathFilePath fdd414d88cf948fd1c738d4e396e4d35
+import  -/  Data.FastQ.Utils 63f39d8dc4fe311da3cc20007c934d34
+  exports: 10e46d0db7c008c6afb5e20c04eb49db
+  concatenateFQs e232b641676e20e8df352b8a6a31ded4
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  BZ2Compression cdd1401120b1740afb404e40cd663bf0
+  GzipCompression f74a6f19013ec6af18092d4d7f417e72
+  NoCompression 942c226f2c26b8b5c2fb291215eefa65
+  expandPath e7d1d8d7c110d7299883fabd335485b5
+  inferCompression 28ae7bcd282005d2c18ed97510c9d25a
+  makeNGLTempFile f8997243f49d682cc3f193c23e0f01b5
+  openNGLTempFile 2b9c3d55dae96aea37a5265a4ee4d09e
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  File d8a44142e424df6efefa301d68916382
+  asFile 181f8e9ea69adf8f2201de21fd57b56e
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  FuncName a3f44134039f1915698a791072d2c89e
+  LocalModInfo 191b8e963efa01dbec2e1ccee2d19329
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  ModInfo d7f124fd1704f8a7309c0e06610b0f29
+  NGLBool d87c76a16baf27d54edaa264a8e0a36f
+  NGLCounts 4a13ff56c74b4fd70ca59b8c56b9ad30
+  NGLInteger ff895dfec66c31f5a28f7e2aa66762ba
+  NGLMappedReadSet 96c5e0f9293435d5998da7c890b67b50
+  NGLReadSet 9d5f98c897d571785f336b174e593308
+  NGLString 82acf143f89407c474dc0cb0d76162c8
+  NGLSymbol 0e75578ac16f82d10d02c421525d1405
+  NGLType d78124de7a35dac4710fa19fa17820a5
+  NGLVoid 270592e6e6b718e69ed7d1f1dcc78ccb
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOBool 2a62e05620187a04f1c1263076dd368f
+  NGOCounts 2f11e851e821c66c37fbdbe68821316f
+  NGOInteger 395b0ce4eb20fbcf334f84acb2d7ff1d
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOReadSet c3ec807d5d7afc041d47d76cd179ed0b
+  NGOString 155e4815cffdc2c6617b34a2d52b7659
+  NGOSymbol 8912a0dc0eeb07d7a07e311be194dbf1
+  NGOVoid 3470f22180b45ca3e315b9326994ee3f
+  modName d7f124fd1704f8a7309c0e06610b0f29
+  modVersion d7f124fd1704f8a7309c0e06610b0f29
+import  -/  Modules d7b04bae20d952778746efecd6f653cd
+  exports: e612fb66accb36645cea5fb0c9541754
+  ArgCheckSymbol f4ae803ce57672c73318286649d365f2
+  ArgInformation 28345a1149daf0524a3666c0df728692
+  ArgInformation ac86c28a801be7ef411fb2dc303275ef
+  ExternalReference 733b0c2f530d99e7b42629181cf1f347
+  ExternalReference 7a41f30803a01ec657fe6cc2348bb18d
+  Function d2362c47d7c9710332b2e11a4c2d8df3
+  Module 5ea81178a37f2cc1f71e0dfed7af0657
+  argChecks ac86c28a801be7ef411fb2dc303275ef
+  argName ac86c28a801be7ef411fb2dc303275ef
+  argRequired ac86c28a801be7ef411fb2dc303275ef
+  argType ac86c28a801be7ef411fb2dc303275ef
+  erefName 7a41f30803a01ec657fe6cc2348bb18d
+  faFile 7a41f30803a01ec657fe6cc2348bb18d
+  geneMapFile 7a41f30803a01ec657fe6cc2348bb18d
+  gtfFile 7a41f30803a01ec657fe6cc2348bb18d
+  knownModules a144d72d8d4ef606e4d95aac2f01e214
+  modCitations 5ea81178a37f2cc1f71e0dfed7af0657
+  modFunctions 5ea81178a37f2cc1f71e0dfed7af0657
+  modInfo 5ea81178a37f2cc1f71e0dfed7af0657
+  modPath 5ea81178a37f2cc1f71e0dfed7af0657
+  modReferences 5ea81178a37f2cc1f71e0dfed7af0657
+  runFunction 5ea81178a37f2cc1f71e0dfed7af0657
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+  boolOrTypeError 981539a3d822d712d304e04228931909
+  integerOrTypeError 32c119de659f9dc90950c5b28ad48799
+  stringOrTypeError 5b029483db59fc3cf043cd5fbc4379a1
+  symbolOrTypeError ff6d0f8608f5840479e5de890e15f7b6
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+  throwSystemError fd7c6796a005f4e332b2d16e13db3f7f
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  nglConfiguration 539294010c83651951422c2571efcf9e
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  DebugOutput 66928311a72e96e4202c735d87d527fd
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  Utils.Network 2b28bd0fd5010e8f0da240b5dc6c7258
+  exports: 92ae69693ee9f7c0924cdd1f4964927c
+  downloadExpandTar a97e691c9a9921091683f0a8205473cd
+  isUrl 023c232e1046ff43a4ac6b98f5d7d66b
+import  -/  Utils.Samtools 738e9dc1149c2786f534e6cdcb86d6e5
+  exports: 6b372d50d21c8eee4cc732fcfb5c3b7f
+  convertBamToSam a4165d1254b7ad9e1b4fbfc6eff02b56
+  convertSamToBam 25a0f3b5f0fb77c08815389e25981c59
+import  -/  Utils.Suggestion 559e2395dd1103e80283d24b7e6fd048
+  exports: cc5fd4d32efb666b1cbe2686b5c39e5e
+  suggestionMessage b2d3103f67fb55a2ce0dbda236c2c9b9
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+  uniq ba993310bf5265579655b8098370a058
+import  -/  aeson-1.4.6.0:Data.Aeson ce3c7d2cd8d8c223f7b849dd159257fc
+import  -/  aeson-1.4.6.0:Data.Aeson.Types.FromJSON 0023f1949cd17736c516e676c103650c
+import  -/  aeson-1.4.6.0:Data.Aeson.Types.Internal 135c5529ac1dd8a681627079bcf6a760
+import  -/  base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.List 17d0c71c557e42abe196f130788fd997
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.OldList e931cf456dc87f11ee6e6fb153bca23e
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Conc a58be285a0644f0fcf5703314b511833
+import  -/  base-4.12.0.0:GHC.Conc.Sync 275e94c5ede09d3593e4c106b892e4f5
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Exception 77722984940ee6ccf9e2f7dab10b83a4
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.Environment c54e0d0308e729fdace6bc37aa74bb52
+import  -/  base-4.12.0.0:System.Environment.ExecutablePath c16a3542acf0a63526a1fc24ae590920
+import  -/  base-4.12.0.0:System.Exit 3c945ec7c596067c067092c41083c3d0
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  data-default-0.7.1.1:Data.Default 28ff829d0df079ea9196504813a6384a
+import  -/  data-default-class-0.1.2.0:Data.Default.Class 5d2b5ee799bd958772a020a8cf8dab3e
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  extra-1.6.18:Control.Monad.Extra 142829a227ff93cd2299d6da6c4e4ba9
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  process-1.6.5.0:System.Process 2e810cee2a417b14ed03c6fbb00362a9
+import  -/  process-1.6.5.0:System.Process.Common 591d2122f4d3563b7d36d0a9d795691d
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  yaml-0.11.2.0:Data.Yaml 1497bbcea107e000a3797e999615407c
+f37205836d6f4a9e770c202f0fadc61b
+  $fEqCommand :: GHC.Classes.Eq ExternalModules.Command
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.Command
+                  ExternalModules.$fEqCommand_$c==
+                  ExternalModules.$fEqCommand_$c/= -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fEqCommandArgument ::
+    GHC.Classes.Eq ExternalModules.CommandArgument
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandArgument
+                  ExternalModules.$fEqCommandArgument_$c==
+                  ExternalModules.$fEqCommandArgument_$c/= -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fEqCommandArgument_$c/= ::
+    ExternalModules.CommandArgument
+    -> ExternalModules.CommandArgument -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(S(S(LLS)SSL)LL),1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U)><S(S(S(LLS)SSL)LL),1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.CommandArgument)
+                   (y :: ExternalModules.CommandArgument) ->
+                 case ExternalModules.$fEqCommandArgument_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fEqCommandArgument_$c== ::
+    ExternalModules.CommandArgument
+    -> ExternalModules.CommandArgument -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(S(S(LLS)SSL)LL),1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U)><S(S(S(LLS)SSL)LL),1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U)>,
+     Unfolding: (\ (ds :: ExternalModules.CommandArgument)
+                   (ds1 :: ExternalModules.CommandArgument) ->
+                 case ds of wild { ExternalModules.CommandArgument a1 a2 a3 ->
+                 case ds1 of wild1 { ExternalModules.CommandArgument b1 b2 b3 ->
+                 case Modules.$fEqArgInformation_$c== a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> let {
+                        $j :: GHC.Types.Bool <join 0>
+                        = case a3 of wild3 {
+                            GHC.Maybe.Nothing
+                            -> case b3 of wild4 {
+                                 GHC.Maybe.Nothing -> GHC.Types.True
+                                 GHC.Maybe.Just ipv -> GHC.Types.False }
+                            GHC.Maybe.Just a4
+                            -> case b3 of wild4 {
+                                 GHC.Maybe.Nothing -> GHC.Types.False
+                                 GHC.Maybe.Just b4
+                                 -> ExternalModules.$fEqCommandArgument_$c==1 a4 b4 } }
+                      } in
+                      case a2 of wild3 {
+                        GHC.Maybe.Nothing
+                        -> case b2 of wild4 {
+                             GHC.Maybe.Nothing -> $j GHC.Maybe.Just ipv -> GHC.Types.False }
+                        GHC.Maybe.Just a4
+                        -> case b2 of wild4 {
+                             GHC.Maybe.Nothing -> GHC.Types.False
+                             GHC.Maybe.Just b4
+                             -> case Language.$fEqNGLessObject_$c== a4 b4 of wild5 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True -> $j } } } } } }) -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fEqCommandArgument_$c==1 ::
+    ExternalModules.CommandExtra
+    -> ExternalModules.CommandExtra -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ExternalModules.CommandExtra)
+                   (ds1 :: ExternalModules.CommandExtra) ->
+                 case ds of wild {
+                   ExternalModules.FlagInfo a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.FlagInfo b1
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ Data.Text.Internal.Text
+                             Data.Text.$fEqText
+                             a1
+                             b1 }
+                   ExternalModules.FileInfo a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.FileInfo b1
+                        -> ExternalModules.$fEqCommandArgument_$c==2 a1 b1 }
+                   ExternalModules.ExpandSearchPath a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.ExpandSearchPath b1
+                        -> GHC.Classes.$fEqBool_$c== a1 b1 } }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fEqCommandArgument_$c==2 ::
+    ExternalModules.FileType
+    -> ExternalModules.FileType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSSS),1*U(U,U,U,U)><S(SSSS),1*U(U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ExternalModules.FileType)
+                   (w1 :: ExternalModules.FileType) ->
+                 case w of ww { ExternalModules.FileType ww1 ww2 ww3 ww4 ->
+                 case w1 of ww5 { ExternalModules.FileType ww6 ww7 ww8 ww9 ->
+                 let {
+                   $j :: GHC.Types.Bool <join 0>
+                   = let {
+                       $j1 :: GHC.Types.Bool <join 0>
+                       = case ww3 of wild {
+                           GHC.Types.False
+                           -> case ww8 of wild1 {
+                                GHC.Types.False
+                                -> case ww4 of wild2 {
+                                     GHC.Types.False
+                                     -> case ww9 of wild3 {
+                                          GHC.Types.False -> GHC.Types.True
+                                          GHC.Types.True -> GHC.Types.False }
+                                     GHC.Types.True -> ww9 }
+                                GHC.Types.True -> GHC.Types.False }
+                           GHC.Types.True
+                           -> case ww8 of wild1 {
+                                GHC.Types.False -> GHC.Types.False
+                                GHC.Types.True
+                                -> case ww4 of wild2 {
+                                     GHC.Types.False
+                                     -> case ww9 of wild3 {
+                                          GHC.Types.False -> GHC.Types.True
+                                          GHC.Types.True -> GHC.Types.False }
+                                     GHC.Types.True -> ww9 } } }
+                     } in
+                     case ww2 of wild {
+                       GHC.Types.False
+                       -> case ww7 of wild1 {
+                            GHC.Types.False -> $j1 GHC.Types.True -> GHC.Types.False }
+                       GHC.Types.True
+                       -> case ww7 of wild1 {
+                            GHC.Types.False -> GHC.Types.False GHC.Types.True -> $j1 } }
+                 } in
+                 case ww1 of wild {
+                   ExternalModules.FastqFileSingle
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False ExternalModules.FastqFileSingle -> $j }
+                   ExternalModules.FastqFilePair
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False ExternalModules.FastqFilePair -> $j }
+                   ExternalModules.FastqFileTriplet
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False ExternalModules.FastqFileTriplet -> $j }
+                   ExternalModules.SamFile
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False ExternalModules.SamFile -> $j }
+                   ExternalModules.BamFile
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False ExternalModules.BamFile -> $j }
+                   ExternalModules.SamOrBamFile
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False ExternalModules.SamOrBamFile -> $j }
+                   ExternalModules.TSVFile
+                   -> case ww6 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.TSVFile -> $j } } } }) -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fEqCommandExtra :: GHC.Classes.Eq ExternalModules.CommandExtra
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandExtra
+                  ExternalModules.$fEqCommandArgument_$c==1
+                  ExternalModules.$fEqCommandExtra_$c/= -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fEqCommandExtra_$c/= ::
+    ExternalModules.CommandExtra
+    -> ExternalModules.CommandExtra -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.CommandExtra)
+                   (y :: ExternalModules.CommandExtra) ->
+                 case ExternalModules.$fEqCommandArgument_$c==1 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fEqCommandReturn :: GHC.Classes.Eq ExternalModules.CommandReturn
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandReturn
+                  ExternalModules.$fEqCommand_$c==1
+                  ExternalModules.$fEqCommandReturn_$c/= -}
+ab8839cee03d69ec772f83a3c6198410
+  $fEqCommandReturn_$c/= ::
+    ExternalModules.CommandReturn
+    -> ExternalModules.CommandReturn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSL),1*U(U,U(U,U,U),1*U)><S(SSL),1*U(U,U(U,U,U),1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.CommandReturn)
+                   (y :: ExternalModules.CommandReturn) ->
+                 case ExternalModules.$fEqCommand_$c==1 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fEqCommand_$c/= ::
+    ExternalModules.Command
+    -> ExternalModules.Command -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(S(LLS)LLLL),1*U(1*U(U,U,U),1*U,1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U),1*U,1*U(U,U(U,U,U),1*U))><S(S(LLS)LLLL),1*U(1*U(U,U,U),1*U,1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U),1*U,1*U(U,U(U,U,U),1*U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.Command) (y :: ExternalModules.Command) ->
+                 case ExternalModules.$fEqCommand_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fEqCommand_$c== ::
+    ExternalModules.Command
+    -> ExternalModules.Command -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(S(LLS)LLLL),1*U(1*U(U,U,U),1*U,1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U),1*U,1*U(U,U(U,U,U),1*U))><S(S(LLS)LLLL),1*U(1*U(U,U,U),1*U,1*U(1*U(U(U,U,U),U,U,1*U),1*U,1*U),1*U,1*U(U,U(U,U,U),1*U))>,
+     Unfolding: (\ (ds :: ExternalModules.Command)
+                   (ds1 :: ExternalModules.Command) ->
+                 case ds of wild { ExternalModules.Command a1 a2 a3 a4 a5 ->
+                 case ds1 of wild1 { ExternalModules.Command b1 b2 b3 b4 b5 ->
+                 case a1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                 case b1 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt2 dt5 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             dt
+                             (GHC.Prim.int2Word# dt1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# dt2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False
+                        0#
+                        -> case GHC.Base.eqString a2 b2 of wild6 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case ExternalModules.$fEqCommandArgument_$c== a3 b3 of wild7 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> case GHC.Classes.$fEq[]_$c==
+                                            @ ExternalModules.CommandArgument
+                                            ExternalModules.$fEqCommandArgument
+                                            a4
+                                            b4 of wild8 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> ExternalModules.$fEqCommand_$c==1
+                                            a5
+                                            b5 } } } } } } } } } }) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fEqCommand_$c==1 ::
+    ExternalModules.CommandReturn
+    -> ExternalModules.CommandReturn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SS(SSS)L),1*U(U,U(U,U,U),1*U)><S(SS(SSS)L),1*U(U,U(U,U,U),1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ExternalModules.CommandReturn)
+                   (w1 :: ExternalModules.CommandReturn) ->
+                 case w of ww { ExternalModules.CommandReturn ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                 case w1 of ww8 { ExternalModules.CommandReturn ww9 ww10 ww11 ->
+                 case ww10 of ww12 { Data.Text.Internal.Text ww13 ww14 ww15 ->
+                 ExternalModules.$w$c==
+                   ww1
+                   ww5
+                   ww6
+                   ww7
+                   ww3
+                   ww9
+                   ww13
+                   ww14
+                   ww15
+                   ww11 } } } }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fEqExternalModule :: GHC.Classes.Eq ExternalModules.ExternalModule
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.ExternalModule
+                  ExternalModules.$fEqExternalModule_$c==
+                  ExternalModules.$fEqExternalModule_$c/= -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fEqExternalModule_$c/= ::
+    ExternalModules.ExternalModule
+    -> ExternalModules.ExternalModule -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U)><S(SLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.ExternalModule)
+                   (y :: ExternalModules.ExternalModule) ->
+                 case ExternalModules.$fEqExternalModule_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fEqExternalModule_$c== ::
+    ExternalModules.ExternalModule
+    -> ExternalModules.ExternalModule -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U)><S(SLLLLLL),1*U(1*U,1*U,1*U,1*U,1*U,1*U,1*U)>,
+     Unfolding: (\ (ds :: ExternalModules.ExternalModule)
+                   (ds1 :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule a1 a2 a3 a4 a5 a6 a7 ->
+                 case ds1 of wild1 { ExternalModules.ExternalModule b1 b2 b3 b4 b5 b6 b7 ->
+                 case Language.$fEqModInfo_$c== a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Base.eqString a2 b2 of wild3 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> let {
+                             $j :: GHC.Types.Bool <join 0>
+                             = case GHC.Classes.$fEq[]_$s$c==1 a4 b4 of wild4 {
+                                 GHC.Types.False -> GHC.Types.False
+                                 GHC.Types.True
+                                 -> case GHC.Classes.$fEq[]_$c==
+                                           @ ExternalModules.Command
+                                           ExternalModules.$fEqCommand
+                                           a5
+                                           b5 of wild5 {
+                                      GHC.Types.False -> GHC.Types.False
+                                      GHC.Types.True
+                                      -> case GHC.Classes.$fEq[]_$c==
+                                                @ Modules.ExternalReference
+                                                Modules.$fEqExternalReference
+                                                a6
+                                                b6 of wild6 {
+                                           GHC.Types.False -> GHC.Types.False
+                                           GHC.Types.True
+                                           -> GHC.Classes.$fEq[]_$c==
+                                                @ Data.Text.Internal.Text
+                                                Data.Text.$fEqText
+                                                a7
+                                                b7 } } }
+                           } in
+                           case a3 of wild4 {
+                             GHC.Maybe.Nothing
+                             -> case b3 of wild5 {
+                                  GHC.Maybe.Nothing -> $j GHC.Maybe.Just ipv -> GHC.Types.False }
+                             GHC.Maybe.Just a11
+                             -> case b3 of wild5 {
+                                  GHC.Maybe.Nothing -> GHC.Types.False
+                                  GHC.Maybe.Just b11
+                                  -> case GHC.Base.eqString a11 b11 of wild6 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True -> $j } } } } } } }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fEqFileType :: GHC.Classes.Eq ExternalModules.FileType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.FileType
+                  ExternalModules.$fEqCommandArgument_$c==2
+                  ExternalModules.$fEqFileType_$c/= -}
+c6836fc90b50f5f970325e12b4db7805
+  $fEqFileTypeBase :: GHC.Classes.Eq ExternalModules.FileTypeBase
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.FileTypeBase
+                  ExternalModules.$fEqFileTypeBase_$c==
+                  ExternalModules.$fEqFileTypeBase_$c/= -}
+c6836fc90b50f5f970325e12b4db7805
+  $fEqFileTypeBase_$c/= ::
+    ExternalModules.FileTypeBase
+    -> ExternalModules.FileTypeBase -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.FileTypeBase)
+                   (y :: ExternalModules.FileTypeBase) ->
+                 case x of wild {
+                   ExternalModules.FastqFileSingle
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.FastqFileSingle -> GHC.Types.False }
+                   ExternalModules.FastqFilePair
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.FastqFilePair -> GHC.Types.False }
+                   ExternalModules.FastqFileTriplet
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.FastqFileTriplet -> GHC.Types.False }
+                   ExternalModules.SamFile
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.SamFile -> GHC.Types.False }
+                   ExternalModules.BamFile
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.BamFile -> GHC.Types.False }
+                   ExternalModules.SamOrBamFile
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.SamOrBamFile -> GHC.Types.False }
+                   ExternalModules.TSVFile
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ExternalModules.TSVFile -> GHC.Types.False } }) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fEqFileTypeBase_$c== ::
+    ExternalModules.FileTypeBase
+    -> ExternalModules.FileTypeBase -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ExternalModules.FileTypeBase)
+                   (ds1 :: ExternalModules.FileTypeBase) ->
+                 case ds of wild {
+                   ExternalModules.FastqFileSingle
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.FastqFileSingle -> GHC.Types.True }
+                   ExternalModules.FastqFilePair
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.FastqFilePair -> GHC.Types.True }
+                   ExternalModules.FastqFileTriplet
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.FastqFileTriplet -> GHC.Types.True }
+                   ExternalModules.SamFile
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.SamFile -> GHC.Types.True }
+                   ExternalModules.BamFile
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.BamFile -> GHC.Types.True }
+                   ExternalModules.SamOrBamFile
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.SamOrBamFile -> GHC.Types.True }
+                   ExternalModules.TSVFile
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ExternalModules.TSVFile -> GHC.Types.True } }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fEqFileType_$c/= ::
+    ExternalModules.FileType
+    -> ExternalModules.FileType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSSS),1*U(U,U,U,U)><S(SSSS),1*U(U,U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ExternalModules.FileType)
+                   (y :: ExternalModules.FileType) ->
+                 case ExternalModules.$fEqCommandArgument_$c==2 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fFromJSONCommand ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.Command
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.Command
+                  ExternalModules.$fFromJSONCommand_$cparseJSON
+                  ExternalModules.$fFromJSONCommand_$cparseJSONList -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fFromJSONCommand1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.Command]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList ww1 ww2 ww3 }) -}
+7b9a43c8b166b5218f625072f979ed13
+  $fFromJSONCommand2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONCommand3) -}
+6a9d0a04914c3252c9d62aa277eec673
+  $fFromJSONCommand3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("[]"#) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fFromJSONCommand4 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.Command
+  {- Arity: 1, Strictness: <L,U> -}
+5a27ddf0bd84c4b34e22bf88f161448c
+  $fFromJSONCommand5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONCommand6) -}
+6bbbde958c333ecc368890adea9776b8
+  $fFromJSONCommand6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("function"#) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fFromJSONCommandArgument ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.CommandArgument
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandArgument
+                  ExternalModules.$fFromJSONCommandArgument_$cparseJSON
+                  ExternalModules.$fFromJSONCommandArgument_$cparseJSONList -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fFromJSONCommandArgument1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser
+         [ExternalModules.CommandArgument]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList1 ww1 ww2 ww3 }) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fFromJSONCommandArgument2 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.CommandArgument
+  {- Arity: 1, Strictness: <L,U> -}
+d80befd8e9c24f7a2fa38bc3697dc5b9
+  $fFromJSONCommandArgument3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONCommandArgument4) -}
+77fab2a6fc31bba99b1ffc30c0ea8b96
+  $fFromJSONCommandArgument4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("command argument"#) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fFromJSONCommandArgument_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.CommandArgument
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ ExternalModules.CommandArgument
+                   ExternalModules.$fFromJSONCommandArgument3
+                   ExternalModules.$fFromJSONCommandArgument2) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fFromJSONCommandArgument_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [ExternalModules.CommandArgument]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.CommandArgument]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONCommandArgument1) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fFromJSONCommandReturn ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.CommandReturn
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandReturn
+                  ExternalModules.$fFromJSONCommandReturn_$cparseJSON
+                  ExternalModules.$fFromJSONCommandReturn_$cparseJSONList -}
+ab8839cee03d69ec772f83a3c6198410
+  $fFromJSONCommandReturn1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.CommandReturn]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList2 ww1 ww2 ww3 }) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fFromJSONCommandReturn2 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.CommandReturn
+  {- Arity: 1, Strictness: <L,U> -}
+4626ca30015dfc899db68fcbe0d0695f
+  $fFromJSONCommandReturn3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONCommandReturn4) -}
+aa87844a2fd2d974d56e823ebaa83883
+  $fFromJSONCommandReturn4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("hidden argument"#) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fFromJSONCommandReturn_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.CommandReturn
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ ExternalModules.CommandReturn
+                   ExternalModules.$fFromJSONCommandReturn3
+                   ExternalModules.$fFromJSONCommandReturn2) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fFromJSONCommandReturn_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.CommandReturn]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.CommandReturn]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONCommandReturn1) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fFromJSONCommand_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.Command
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ ExternalModules.Command
+                   ExternalModules.$fFromJSONCommand5
+                   ExternalModules.$fFromJSONCommand4) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fFromJSONCommand_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.Command]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.Command]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONCommand1) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fFromJSONExternalModule ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.ExternalModule
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.ExternalModule
+                  ExternalModules.$fFromJSONExternalModule_$cparseJSON
+                  ExternalModules.$fFromJSONExternalModule_$cparseJSONList -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fFromJSONExternalModule1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser
+         [ExternalModules.ExternalModule]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList3 ww1 ww2 ww3 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fFromJSONExternalModule2 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.ExternalModule
+  {- Arity: 1, Strictness: <L,U> -}
+e1c1c70ca0a99d23e14d1ae9801d57e3
+  $fFromJSONExternalModule3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONExternalModule4) -}
+099c5a7644de703ec08d893c512e9ef3
+  $fFromJSONExternalModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("module"#) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fFromJSONExternalModule_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.ExternalModule
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ ExternalModules.ExternalModule
+                   ExternalModules.$fFromJSONExternalModule3
+                   ExternalModules.$fFromJSONExternalModule2) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fFromJSONExternalModule_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [ExternalModules.ExternalModule]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.ExternalModule]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONExternalModule1) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fFromJSONFileType ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.FileType
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.FileType
+                  ExternalModules.$fFromJSONFileType_$cparseJSON
+                  ExternalModules.$fFromJSONFileType_$cparseJSONList -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fFromJSONFileType1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.FileType]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList4 ww1 ww2 ww3 }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fFromJSONFileType2 ::
+    Data.Aeson.Types.Internal.Object
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.FileType
+  {- Arity: 1, Strictness: <L,U> -}
+af7d84bd535645f1710c196b234f0b92
+  $fFromJSONFileType3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONFileType4) -}
+1e579b5bfd7f82e87c33473c1dcd9349
+  $fFromJSONFileType4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("filetype"#) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fFromJSONFileTypeBase ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.FileTypeBase
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.FileTypeBase
+                  ExternalModules.$fFromJSONFileTypeBase_$cparseJSON
+                  ExternalModules.$fFromJSONFileTypeBase_$cparseJSONList -}
+c6836fc90b50f5f970325e12b4db7805
+  $fFromJSONFileTypeBase1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.FileTypeBase]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList5 ww1 ww2 ww3 }) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fFromJSONFileTypeBase2 ::
+    Data.Text.Internal.Text
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.FileTypeBase
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSON ww1 ww2 ww3 }) -}
+37b0b79448e25919d9ab9a2503a9dcbc
+  $fFromJSONFileTypeBase3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONFileTypeBase4) -}
+fb9a1209e110d56bc44abed358b70254
+  $fFromJSONFileTypeBase4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("filetypebase"#) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fFromJSONFileTypeBase_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.FileTypeBase
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withText
+                   @ ExternalModules.FileTypeBase
+                   ExternalModules.$fFromJSONFileTypeBase3
+                   ExternalModules.$fFromJSONFileTypeBase2) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fFromJSONFileTypeBase_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.FileTypeBase]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.FileTypeBase]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONFileTypeBase1) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fFromJSONFileType_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.FileType
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withObject
+                   @ ExternalModules.FileType
+                   ExternalModules.$fFromJSONFileType3
+                   ExternalModules.$fFromJSONFileType2) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fFromJSONFileType_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.FileType]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.FileType]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONFileType1) -}
+c2427eee9e849daf7acdd0a22227ee17
+  $fFromJSONReadNGLType ::
+    Data.Aeson.Types.FromJSON.FromJSON ExternalModules.ReadNGLType
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.ReadNGLType
+                  ExternalModules.$fFromJSONReadNGLType_$cparseJSON
+                  ExternalModules.$fFromJSONReadNGLType_$cparseJSONList -}
+c2427eee9e849daf7acdd0a22227ee17
+  $fFromJSONReadNGLType1 ::
+    Data.Aeson.Types.Internal.Array
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.ReadNGLType]
+  {- Arity: 1, Strictness: <S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Aeson.Types.Internal.Array) ->
+                 case w of ww { Data.Vector.Vector ww1 ww2 ww3 ->
+                 ExternalModules.$w$cparseJSONList6 ww1 ww2 ww3 }) -}
+c2427eee9e849daf7acdd0a22227ee17
+  $fFromJSONReadNGLType2 ::
+    Data.Text.Internal.Text
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.ReadNGLType
+  {- Arity: 1, Strictness: <L,1*U(U,U,U)> -}
+9480c3119603b6125611e8ce8ec3ae3b
+  $fFromJSONReadNGLType3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ExternalModules.$fFromJSONReadNGLType4) -}
+7b6aea464912e937e1b5076978b79292
+  $fFromJSONReadNGLType4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ngltype"#) -}
+c2427eee9e849daf7acdd0a22227ee17
+  $fFromJSONReadNGLType_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.ReadNGLType
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withText
+                   @ ExternalModules.ReadNGLType
+                   ExternalModules.$fFromJSONReadNGLType3
+                   ExternalModules.$fFromJSONReadNGLType2) -}
+c2427eee9e849daf7acdd0a22227ee17
+  $fFromJSONReadNGLType_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.ReadNGLType]
+  {- Arity: 1,
+     Unfolding: (Data.Aeson.Types.FromJSON.withArray
+                   @ [ExternalModules.ReadNGLType]
+                   ExternalModules.$fFromJSONCommand2
+                   ExternalModules.$fFromJSONReadNGLType1) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fShowCommand :: GHC.Show.Show ExternalModules.Command
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.Command
+                  ExternalModules.$fShowCommand_$cshowsPrec
+                  ExternalModules.$fShowCommand_$cshow
+                  ExternalModules.$fShowCommand_$cshowList -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fShowCommandArgument ::
+    GHC.Show.Show ExternalModules.CommandArgument
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandArgument
+                  ExternalModules.$fShowCommandArgument_$cshowsPrec
+                  ExternalModules.$fShowCommandArgument_$cshow
+                  ExternalModules.$fShowCommandArgument_$cshowList -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fShowCommandArgument_$cshow ::
+    ExternalModules.CommandArgument -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U(U,U,U),U,U,U),1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ExternalModules.CommandArgument) ->
+                 ExternalModules.$fShowCommandArgument_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fShowCommandArgument_$cshowList ::
+    [ExternalModules.CommandArgument] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.CommandArgument])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.CommandArgument
+                   (ExternalModules.$fShowCommandArgument_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $fShowCommandArgument_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.CommandArgument -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U(U(U,U,U),U,U,U),1*U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.CommandArgument) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { ExternalModules.CommandArgument ww3 ww4 ww5 ->
+                 ExternalModules.$w$cshowsPrec1 ww1 ww3 ww4 ww5 } }) -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fShowCommandExtra :: GHC.Show.Show ExternalModules.CommandExtra
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandExtra
+                  ExternalModules.$fShowCommandExtra_$cshowsPrec
+                  ExternalModules.$fShowCommandExtra_$cshow
+                  ExternalModules.$fShowCommandExtra_$cshowList -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fShowCommandExtra_$cshow ::
+    ExternalModules.CommandExtra -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ExternalModules.CommandExtra) ->
+                 ExternalModules.$fShowCommandExtra_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fShowCommandExtra_$cshowList ::
+    [ExternalModules.CommandExtra] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.CommandExtra]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.CommandExtra
+                   (ExternalModules.$fShowCommandExtra_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $fShowCommandExtra_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.CommandExtra -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.CommandExtra) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ExternalModules.$w$cshowsPrec2 ww1 w1 }) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fShowCommandReturn :: GHC.Show.Show ExternalModules.CommandReturn
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.CommandReturn
+                  ExternalModules.$fShowCommandReturn_$cshowsPrec
+                  ExternalModules.$fShowCommandReturn_$cshow
+                  ExternalModules.$fShowCommandReturn_$cshowList -}
+ab8839cee03d69ec772f83a3c6198410
+  $fShowCommandReturn_$cshow ::
+    ExternalModules.CommandReturn -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SS(SSS)L),1*U(U,U(U,U,U),U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ExternalModules.CommandReturn) ->
+                 ExternalModules.$fShowCommandReturn_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fShowCommandReturn_$cshowList ::
+    [ExternalModules.CommandReturn] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.CommandReturn])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.CommandReturn
+                   (ExternalModules.$fShowCommandReturn_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+ab8839cee03d69ec772f83a3c6198410
+  $fShowCommandReturn_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.CommandReturn -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(SS(SSS)L),1*U(U,U(U,U,U),U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.CommandReturn) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { ExternalModules.CommandReturn ww3 ww4 ww5 ->
+                 case ww4 of ww6 { Data.Text.Internal.Text ww7 ww8 ww9 ->
+                 ExternalModules.$w$cshowsPrec4 ww1 ww3 ww7 ww8 ww9 ww5 } } }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fShowCommand_$cshow :: ExternalModules.Command -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(U(U,U,U),U,1*U(1*U(U(U,U,U),U,U,U),1*U,1*U),U,1*U(U,U(U,U,U),U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ExternalModules.Command) ->
+                 ExternalModules.$fShowCommand_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fShowCommand_$cshowList ::
+    [ExternalModules.Command] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.Command]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.Command
+                   (ExternalModules.$fShowCommand_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+f37205836d6f4a9e770c202f0fadc61b
+  $fShowCommand_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.Command -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S,1*U(U(U,U,U),U,1*U(1*U(U(U,U,U),U,U,U),1*U,1*U),U,1*U(U,U(U,U,U),U))>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.Command) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { ExternalModules.Command ww3 ww4 ww5 ww6 ww7 ->
+                 ExternalModules.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 ww7 } }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fShowExternalModule ::
+    GHC.Show.Show ExternalModules.ExternalModule
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.ExternalModule
+                  ExternalModules.$fShowExternalModule_$cshowsPrec
+                  ExternalModules.$fShowExternalModule_$cshow
+                  ExternalModules.$fShowExternalModule_$cshowList -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fShowExternalModule_$cshow ::
+    ExternalModules.ExternalModule -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ExternalModules.ExternalModule) ->
+                 ExternalModules.$fShowExternalModule_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fShowExternalModule_$cshowList ::
+    [ExternalModules.ExternalModule] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.ExternalModule])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.ExternalModule
+                   (ExternalModules.$fShowExternalModule_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+66c519aed405c4feb5c4309b6e0ce273
+  $fShowExternalModule_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.ExternalModule -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U,U,1*U,U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.ExternalModule) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { ExternalModules.ExternalModule ww3 ww4 ww5 ww6 ww7 ww8 ww9 ->
+                 ExternalModules.$w$cshowsPrec5
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9 } }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fShowFileType :: GHC.Show.Show ExternalModules.FileType
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.FileType
+                  ExternalModules.$fShowFileType_$cshowsPrec
+                  ExternalModules.$fShowFileType_$cshow
+                  ExternalModules.$fShowFileType_$cshowList -}
+c6836fc90b50f5f970325e12b4db7805
+  $fShowFileTypeBase :: GHC.Show.Show ExternalModules.FileTypeBase
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ExternalModules.FileTypeBase
+                  ExternalModules.$fShowFileTypeBase_$cshowsPrec
+                  ExternalModules.$fShowFileTypeBase_$cshow
+                  ExternalModules.$fShowFileTypeBase_$cshowList -}
+c6836fc90b50f5f970325e12b4db7805
+  $fShowFileTypeBase_$cshow ::
+    ExternalModules.FileTypeBase -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: ExternalModules.FileTypeBase) ->
+                 case x of wild {
+                   ExternalModules.FastqFileSingle
+                   -> GHC.CString.unpackCString# "FastqFileSingle"#
+                   ExternalModules.FastqFilePair
+                   -> GHC.CString.unpackCString# "FastqFilePair"#
+                   ExternalModules.FastqFileTriplet
+                   -> GHC.CString.unpackCString# "FastqFileTriplet"#
+                   ExternalModules.SamFile -> GHC.CString.unpackCString# "SamFile"#
+                   ExternalModules.BamFile -> GHC.CString.unpackCString# "BamFile"#
+                   ExternalModules.SamOrBamFile
+                   -> GHC.CString.unpackCString# "SamOrBamFile"#
+                   ExternalModules.TSVFile
+                   -> GHC.CString.unpackCString# "TSVFile"# }) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fShowFileTypeBase_$cshowList ::
+    [ExternalModules.FileTypeBase] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.FileTypeBase]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.FileTypeBase
+                   (ExternalModules.$fShowFileTypeBase_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+c6836fc90b50f5f970325e12b4db7805
+  $fShowFileTypeBase_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.FileTypeBase -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.FileTypeBase) ->
+                 ExternalModules.$w$cshowsPrec6 w1) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fShowFileType_$cshow ::
+    ExternalModules.FileType -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SSSS),1*U(U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ExternalModules.FileType) ->
+                 ExternalModules.$fShowFileType_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fShowFileType_$cshowList ::
+    [ExternalModules.FileType] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ExternalModules.FileType]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ExternalModules.FileType
+                   (ExternalModules.$fShowFileType_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+0e124933d6847a6ad1c14c514ea3135b
+  $fShowFileType_$cshowsPrec ::
+    GHC.Types.Int -> ExternalModules.FileType -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(SSSS),1*U(U,U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: ExternalModules.FileType) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { ExternalModules.FileType ww3 ww4 ww5 ww6 ->
+                 ExternalModules.$w$cshowsPrec3 ww1 ww3 ww4 ww5 ww6 } }) -}
+dec873d0539886b1a1ab5cf92d93f160
+  $s$fEq(,) ::
+    GHC.Classes.Eq (Language.NGLType, ExternalModules.FileTypeBase)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Language.NGLType, ExternalModules.FileTypeBase)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ Language.NGLType
+                     @ ExternalModules.FileTypeBase
+                     Language.$fEqNGLType
+                     ExternalModules.$fEqFileTypeBase)
+                  ExternalModules.$s$fEq(,)_$s$fEq(,)_$c/= -}
+dfd6883419e5f931d5dd993707f4f735
+  $s$fEq(,)_$s$fEq(,)_$c/= ::
+    (Language.NGLType, ExternalModules.FileTypeBase)
+    -> (Language.NGLType, ExternalModules.FileTypeBase)
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: (Language.NGLType, ExternalModules.FileTypeBase))
+                   (y :: (Language.NGLType, ExternalModules.FileTypeBase)) ->
+                 case x of wild { (,) a1 a2 ->
+                 case y of wild1 { (,) b1 b2 ->
+                 case Language.$fEqNGLType_$c== a1 b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case a2 of wild4 {
+                        ExternalModules.FastqFileSingle
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.FastqFileSingle -> GHC.Types.False }
+                        ExternalModules.FastqFilePair
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.FastqFilePair -> GHC.Types.False }
+                        ExternalModules.FastqFileTriplet
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.FastqFileTriplet -> GHC.Types.False }
+                        ExternalModules.SamFile
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.SamFile -> GHC.Types.False }
+                        ExternalModules.BamFile
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.BamFile -> GHC.Types.False }
+                        ExternalModules.SamOrBamFile
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.SamOrBamFile -> GHC.Types.False }
+                        ExternalModules.TSVFile
+                        -> case b2 of wild5 {
+                             DEFAULT -> GHC.Types.True
+                             ExternalModules.TSVFile -> GHC.Types.False } } } } }) -}
+0e88da5103dd5b9a102aeb12290bc77a
+  $tc'BamFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17329271214051552889##
+                   3426134560882590318##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'BamFile2
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+cb08f54a9b4ecc5160a62313930e3c2d
+  $tc'BamFile1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+eda7b225844c0d345329d1caa2096895
+  $tc'BamFile2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'BamFile3) -}
+5cc600182f80121e5673d37421731476
+  $tc'BamFile3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'BamFile"#) -}
+d5a530de66c99d7b2c38e69af95f8f13
+  $tc'Command :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1186569531942574177##
+                   10644765251026972702##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'Command2
+                   0#
+                   ExternalModules.$tc'Command1) -}
+d17f439575ce43b944e0a8d09a1000df
+  $tc'Command1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+9794e2c6fa088121c76ae3369a367615
+  $tc'Command2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'Command3) -}
+70abbb6775b1b3e187fa5c80f5fddb1f
+  $tc'Command3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Command"#) -}
+f26c428860713ca7881bcc0b3228471c
+  $tc'CommandArgument :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8162013167170666927##
+                   5614486001027522646##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'CommandArgument2
+                   0#
+                   ExternalModules.$tc'CommandArgument1) -}
+284c3e41fb98c493478ca90259812a25
+  $tc'CommandArgument1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e5da72600a20af5f5ff0ad995ed63a11
+  $tc'CommandArgument2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'CommandArgument3) -}
+8d9a55324892ec7cbb30340000c7f911
+  $tc'CommandArgument3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CommandArgument"#) -}
+9a201c2a81152314f93c120cbf0b43f2
+  $tc'CommandReturn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8026161804268681016##
+                   1361403813101409999##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'CommandReturn2
+                   0#
+                   ExternalModules.$tc'CommandReturn1) -}
+7fd732559ae3684a5c40f1efa2232b13
+  $tc'CommandReturn1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3e5a85d74651ede140ded6e6d7c21d93
+  $tc'CommandReturn2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'CommandReturn3) -}
+27e6edc7eba250151f0f93b821b825b3
+  $tc'CommandReturn3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CommandReturn"#) -}
+98122c08ea074793a3f7c13946ac2a51
+  $tc'ExpandSearchPath :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8281134446383165170##
+                   10805739096433099526##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'ExpandSearchPath2
+                   0#
+                   ExternalModules.$tc'ExpandSearchPath1) -}
+974fcf84eb73b2aca02477ed4b818bc2
+  $tc'ExpandSearchPath1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fb6c4c827f5f17be1fede457fa965edf
+  $tc'ExpandSearchPath2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'ExpandSearchPath3) -}
+814462dcd3730a7284b07cecfdb6b65b
+  $tc'ExpandSearchPath3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ExpandSearchPath"#) -}
+dbf3d10c11b90dc478dc8a14ccd7f2ef
+  $tc'ExternalModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11635333080967879528##
+                   1345908960841977060##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'ExternalModule2
+                   0#
+                   ExternalModules.$tc'ExternalModule1) -}
+47ae468b9e438e64ecb405429a644ca4
+  $tc'ExternalModule1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b63fab4e38dc7180e5b0f9cb9af07396
+  $tc'ExternalModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'ExternalModule3) -}
+1b399a9ca39997e424a9c586afd04d15
+  $tc'ExternalModule3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ExternalModule"#) -}
+f1246a3dc993f70e2db3a54d288e6a00
+  $tc'FastqFilePair :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12952561532384249908##
+                   14769738452348193621##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'FastqFilePair1
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+b72b5dbeff0c2a52a56477b625057246
+  $tc'FastqFilePair1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'FastqFilePair2) -}
+7d3138739d25ecaf7d73bbb1e0531423
+  $tc'FastqFilePair2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FastqFilePair"#) -}
+f64545102c48e0a2a2cbd0085fa64c22
+  $tc'FastqFileSingle :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8228828743277263901##
+                   11794852716586592788##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'FastqFileSingle1
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+9f1d671bc4f4f2e1ffa026e6f6c7eb94
+  $tc'FastqFileSingle1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'FastqFileSingle2) -}
+a1453c5dd2786d1f5826123c8c68e2de
+  $tc'FastqFileSingle2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FastqFileSingle"#) -}
+52806481b248eef12f5f80042c318f1f
+  $tc'FastqFileTriplet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12577814814069086397##
+                   3078066255797788516##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'FastqFileTriplet1
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+1e6443319fd94f95f22c703b6f3bcac0
+  $tc'FastqFileTriplet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tc'FastqFileTriplet2) -}
+3b11fe6f2a6f15a5aebd4c408a13ebe5
+  $tc'FastqFileTriplet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FastqFileTriplet"#) -}
+4504b7247947ff33cbe244271fbc8167
+  $tc'FileInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2218224399249757203##
+                   13700195554279589669##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'FileInfo2
+                   0#
+                   ExternalModules.$tc'FileInfo1) -}
+8629bac9735b29b7322268e20494f0ed
+  $tc'FileInfo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a902832e5c4c1e12202a9a3397122866
+  $tc'FileInfo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'FileInfo3) -}
+53d4d1c7cf552f4e702989d479545abc
+  $tc'FileInfo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FileInfo"#) -}
+d09fe7256276b68a4f69b6f8277d4885
+  $tc'FileType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9074334400635786935##
+                   13323183135330168464##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'FileType2
+                   0#
+                   ExternalModules.$tc'FileType1) -}
+e20de06db9f7a2a64df54d703d6adf72
+  $tc'FileType1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2e95373901759ae6a281a524b2e50977
+  $tc'FileType2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'FileType3) -}
+b7a79b9837235de29a3f161b88229513
+  $tc'FileType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FileType"#) -}
+2963ec433e07a4b003422740ec5900a9
+  $tc'FlagInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3195497923797872032##
+                   10020241392573751802##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'FlagInfo2
+                   0#
+                   ExternalModules.$tc'FlagInfo1) -}
+355b2d399b80fcd7167b681a5f8b6a40
+  $tc'FlagInfo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6df540519b157afe82c1af61b1dbc89b
+  $tc'FlagInfo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'FlagInfo3) -}
+4e59dfcc713243f2490364f51df98ca9
+  $tc'FlagInfo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FlagInfo"#) -}
+06fce725d940803fa6859c9ee21a15f8
+  $tc'ReadNGLType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12616918431158721084##
+                   9418324910398432509##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'ReadNGLType2
+                   0#
+                   ExternalModules.$tc'ReadNGLType1) -}
+1ae2f616d8d917e04eb49aec56ca200d
+  $tc'ReadNGLType1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+714e2006434627fc20081808cf1231b2
+  $tc'ReadNGLType2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'ReadNGLType3) -}
+2211f20f328350c10e9312b46dc05ef3
+  $tc'ReadNGLType3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ReadNGLType"#) -}
+936ae7bf66a15fbdf7ec53b49f938191
+  $tc'SamFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10976118509801843595##
+                   11924933692892225009##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'SamFile1
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+08d6c172d13afc453cfc587482fd32e1
+  $tc'SamFile1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'SamFile2) -}
+0e9b2c5ef8c4ca813274537af8ed5065
+  $tc'SamFile2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SamFile"#) -}
+b5d1f2daafc4e74b6164b6896fec1be3
+  $tc'SamOrBamFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9368139370849776063##
+                   6780706138298285084##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'SamOrBamFile1
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+84918e86c47e3154e793987387537f3b
+  $tc'SamOrBamFile1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'SamOrBamFile2) -}
+6138085b1bf8425e615fa24cc1e5652c
+  $tc'SamOrBamFile2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SamOrBamFile"#) -}
+45cff3999d35132a17aa5aaa0986516b
+  $tc'TSVFile :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7641022121369065299##
+                   16812136582984837495##
+                   ExternalModules.$trModule
+                   ExternalModules.$tc'TSVFile1
+                   0#
+                   ExternalModules.$tc'BamFile1) -}
+f45c1ae8c5f8759093c340f8989e0689
+  $tc'TSVFile1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tc'TSVFile2) -}
+5eaa31292cbdc4ec73ea9e698ba4d2ba
+  $tc'TSVFile2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TSVFile"#) -}
+8f0e8a0a5ca8c16a8eee5ef89ae8ded9
+  $tcCommand :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10066936550889769407##
+                   4659334746549050442##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcCommand1
+                   0#
+                   GHC.Types.krep$*) -}
+0394d2532106dbdf818094f60401f64a
+  $tcCommand1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tcCommand2) -}
+39ef4152426b40a5488163bff52c3265
+  $tcCommand2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Command"#) -}
+9ee0247eccf3622078ff1d77b12e0896
+  $tcCommandArgument :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4668245204114168869##
+                   524254601281029011##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcCommandArgument1
+                   0#
+                   GHC.Types.krep$*) -}
+dd35ebb58e4b7f7979b4aa4745aa7075
+  $tcCommandArgument1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tcCommandArgument2) -}
+da20ff9e734d030c41998ea97e6867ab
+  $tcCommandArgument2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CommandArgument"#) -}
+dcc304b38cccab82c6cf1b3fea558aa5
+  $tcCommandExtra :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   865675510730430131##
+                   15295560029657536382##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcCommandExtra1
+                   0#
+                   GHC.Types.krep$*) -}
+fcc12acef8cdb88a6200b6b93280efeb
+  $tcCommandExtra1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tcCommandExtra2) -}
+ccf84eeb60933e62ba826c546fdbd1b7
+  $tcCommandExtra2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CommandExtra"#) -}
+3caa62e3217086e3199ff53f7592395a
+  $tcCommandReturn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17363395428406682477##
+                   9888870354684591854##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcCommandReturn1
+                   0#
+                   GHC.Types.krep$*) -}
+f56a5565be2949a59ce14fa48d55bb3f
+  $tcCommandReturn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tcCommandReturn2) -}
+1fe3b383b337e7e3c8d625c1edf27e8b
+  $tcCommandReturn2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CommandReturn"#) -}
+ed384802e290a8b4b8975960f763a722
+  $tcExternalModule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13819126707468271404##
+                   14523833988417967492##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcExternalModule1
+                   0#
+                   GHC.Types.krep$*) -}
+498c23ea9f580665ec9280b85cb0f1c6
+  $tcExternalModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   ExternalModules.$tcExternalModule2) -}
+876e645b903feb771000bef1e898f0e0
+  $tcExternalModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ExternalModule"#) -}
+1cce1c3bfc6af1c7b6ddfb7409c89a2f
+  $tcFileType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9020764639415246553##
+                   10638301742175592052##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcFileType1
+                   0#
+                   GHC.Types.krep$*) -}
+9dc6e73b3e5bbe2cd62545261a18fdfc
+  $tcFileType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tcFileType2) -}
+c641974d140b7587f8b872b27d019d62
+  $tcFileType2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FileType"#) -}
+9eaac71e5f8ec5f9a19cef6cd7400c35
+  $tcFileTypeBase :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10138750978599148766##
+                   15320831274858861419##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcFileTypeBase1
+                   0#
+                   GHC.Types.krep$*) -}
+8ee2463187d3b0ea472ab45509701dfd
+  $tcFileTypeBase1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tcFileTypeBase2) -}
+e9bb19eb3b43699f40246b32a8c7aca6
+  $tcFileTypeBase2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FileTypeBase"#) -}
+2098c6698014bda7e354575e9bd10977
+  $tcReadNGLType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10989704770325466030##
+                   4055953113428919538##
+                   ExternalModules.$trModule
+                   ExternalModules.$tcReadNGLType1
+                   0#
+                   GHC.Types.krep$*) -}
+ce2b9119b655d4673197cf8805fc1845
+  $tcReadNGLType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$tcReadNGLType2) -}
+e03abbd8b77356ad6a1beddc1e5d4c2d
+  $tcReadNGLType2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ReadNGLType"#) -}
+9d73e549e3f95fbb2b57e072f1e76733
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ExternalModules.$trModule3
+                   ExternalModules.$trModule1) -}
+e6ce4bd21114dfec193015270099d1d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$trModule2) -}
+aa82c16270f55097b91ba89763241320
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ExternalModules"#) -}
+3987d685cef813dd9fc5a5e040a42a8d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ExternalModules.$trModule4) -}
+36e9c0dc9b1d1f80de37d32c6979f078
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+f70f0fc1fa61fe17d67bf30aa724dd80
+  $w$c== ::
+    Language.NGLType
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.IO.FilePath
+    -> Language.NGLType
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.IO.FilePath
+    -> GHC.Types.Bool
+  {- Arity: 10, HasNoCafRefs,
+     Strictness: <S,1*U><L,U><L,U><L,U><L,1*U><S,U><L,U><L,U><L,U><L,1*U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: Language.NGLType)
+                   (ww1 :: GHC.Prim.ByteArray#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.IO.FilePath)
+                   (ww5 :: Language.NGLType)
+                   (ww6 :: GHC.Prim.ByteArray#)
+                   (ww7 :: GHC.Prim.Int#)
+                   (ww8 :: GHC.Prim.Int#)
+                   (ww9 :: GHC.IO.FilePath) ->
+                 case Language.$fEqNGLType_$c== ww ww5 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Prim.==# ww3 ww8 of lwild {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.ByteArray#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Prim.Int# #)}
+                                  ww1
+                                  (GHC.Prim.int2Word# ww2)
+                                  ww6
+                                  (GHC.Prim.int2Word# ww7)
+                                  (GHC.Prim.int2Word# ww3)
+                                  GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                           case GHC.Prim.narrow32Int# ds3 of wild1 {
+                             DEFAULT -> GHC.Types.False
+                             0# -> GHC.Base.eqString ww4 ww9 } } } }) -}
+c6836fc90b50f5f970325e12b4db7805
+  $w$cparseJSON ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Aeson.Types.Internal.Parser ExternalModules.FileTypeBase
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>, Inline: [2] -}
+f37205836d6f4a9e770c202f0fadc61b
+  $w$cparseJSONList ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.Command]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+a66c2cef363b07a47fb1b3d127e8b630
+  $w$cparseJSONList1 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [ExternalModules.CommandArgument]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+ab8839cee03d69ec772f83a3c6198410
+  $w$cparseJSONList2 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.CommandReturn]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+66c519aed405c4feb5c4309b6e0ce273
+  $w$cparseJSONList3 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser
+         [ExternalModules.ExternalModule]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+0e124933d6847a6ad1c14c514ea3135b
+  $w$cparseJSONList4 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.FileType]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+c6836fc90b50f5f970325e12b4db7805
+  $w$cparseJSONList5 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.FileTypeBase]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+c2427eee9e849daf7acdd0a22227ee17
+  $w$cparseJSONList6 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [ExternalModules.ReadNGLType]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [2] -}
+5796c639800d4adcd54f0f7f4406b582
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+    -> GHC.IO.FilePath
+    -> ExternalModules.CommandArgument
+    -> [ExternalModules.CommandArgument]
+    -> ExternalModules.CommandReturn
+    -> GHC.Show.ShowS
+  {- Arity: 6,
+     Strictness: <S,U><L,U(U,U,U)><L,U><L,1*U(1*U(U(U,U,U),U,U,U),1*U,1*U)><L,U><L,1*U(U,U(U,U,U),U)>,
+     Inline: [2] -}
+dba14610961bfd39243bf0c2be0466cb
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Modules.ArgInformation
+    -> GHC.Maybe.Maybe Language.NGLessObject
+    -> GHC.Maybe.Maybe ExternalModules.CommandExtra
+    -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <S,U><L,1*U(U(U,U,U),U,U,U)><L,1*U><L,1*U>,
+     Inline: [2] -}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int# -> ExternalModules.CommandExtra -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: ExternalModules.CommandExtra) ->
+                 case w of wild {
+                   ExternalModules.FlagInfo b1
+                   -> let {
+                        f :: GHC.Prim.Addr# = "FlagInfo "#
+                      } in
+                      let {
+                        f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                      } in
+                      let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Base.String) ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            f1
+                            (case b1 of wild1 {
+                               [] -> GHC.CString.unpackAppendCString# GHC.Show.showList__4 x
+                               : x1 xs
+                               -> GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.showList__3
+                                    (case Data.Text.Show.$w$cshowsPrec
+                                            x1
+                                            (let {
+                                               lvl43 :: [GHC.Types.Char]
+                                               = GHC.Types.: @ GHC.Types.Char GHC.Show.showList__2 x
+                                             } in
+                                             letrec {
+                                               showl :: [Data.Text.Internal.Text] -> GHC.Base.String
+                                                 {- Arity: 1, Strictness: <S,1*U> -}
+                                               = \ (ds2 :: [Data.Text.Internal.Text]) ->
+                                                 case ds2 of wild2 {
+                                                   [] -> lvl43
+                                                   : y ys
+                                                   -> GHC.Types.:
+                                                        @ GHC.Types.Char
+                                                        GHC.Show.showList__1
+                                                        (case Data.Text.Show.$w$cshowsPrec
+                                                                y
+                                                                (showl ys) of ww1 { (#,#) ww2 ww3 ->
+                                                         GHC.Types.: @ GHC.Types.Char ww2 ww3 }) }
+                                             } in
+                                             showl xs) of ww1 { (#,#) ww2 ww3 ->
+                                     GHC.Types.: @ GHC.Types.Char ww2 ww3 }) })
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT -> p
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)) }
+                   ExternalModules.FileInfo b1
+                   -> let {
+                        f :: GHC.Prim.Addr# = "FileInfo "#
+                      } in
+                      let {
+                        f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                      } in
+                      let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = case b1 of ww1 { ExternalModules.FileType ww2 ww3 ww4 ww5 ->
+                          ExternalModules.$w$cshowsPrec3 11# ww2 ww3 ww4 ww5 }
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char f1 (g x)
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                f1
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }
+                   ExternalModules.ExpandSearchPath b1
+                   -> let {
+                        f :: GHC.Prim.Addr# = "ExpandSearchPath "#
+                      } in
+                      let {
+                        f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                      } in
+                      let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                        = \ (x :: GHC.Base.String) ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            f1
+                            (case b1 of wild1 {
+                               GHC.Types.False
+                               -> GHC.Base.++ @ GHC.Types.Char GHC.Show.$fShowBool4 x
+                               GHC.Types.True
+                               -> GHC.Base.++ @ GHC.Types.Char GHC.Show.$fShowBool2 x })
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT -> p
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x)) } }) -}
+297fa4cd687b9cec2183b660bd9883e2
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int#
+    -> ExternalModules.FileTypeBase
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Show.ShowS
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,U><L,U><L,U>,
+     Inline: [2] -}
+acf2836f9b34b9403b0101132de18d0b
+  $w$cshowsPrec4 ::
+    GHC.Prim.Int#
+    -> Language.NGLType
+    -> GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.IO.FilePath
+    -> GHC.Show.ShowS
+  {- Arity: 6, Strictness: <S,U><L,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [2] -}
+40383db156e65c6fcce3dc71f27e4e97
+  $w$cshowsPrec5 ::
+    GHC.Prim.Int#
+    -> Language.ModInfo
+    -> GHC.IO.FilePath
+    -> GHC.Maybe.Maybe GHC.IO.FilePath
+    -> [GHC.Base.String]
+    -> [ExternalModules.Command]
+    -> [Modules.ExternalReference]
+    -> [Data.Text.Internal.Text]
+    -> GHC.Show.ShowS
+  {- Arity: 8,
+     Strictness: <S,U><L,1*U><L,U><L,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [2] -}
+c6836fc90b50f5f970325e12b4db7805
+  $w$cshowsPrec6 :: ExternalModules.FileTypeBase -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: ExternalModules.FileTypeBase) ->
+                 case w of wild {
+                   ExternalModules.FastqFileSingle
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "FastqFileSingle"#)
+                   ExternalModules.FastqFilePair
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "FastqFilePair"#)
+                   ExternalModules.FastqFileTriplet
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "FastqFileTriplet"#)
+                   ExternalModules.SamFile
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SamFile"#)
+                   ExternalModules.BamFile
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "BamFile"#)
+                   ExternalModules.SamOrBamFile
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "SamOrBamFile"#)
+                   ExternalModules.TSVFile
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "TSVFile"#) }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  data Command
+    = Command {nglName :: Data.Text.Internal.Text,
+               arg0 :: GHC.IO.FilePath,
+               arg1 :: ExternalModules.CommandArgument,
+               additional :: [ExternalModules.CommandArgument],
+               ret :: ExternalModules.CommandReturn}
+a66c2cef363b07a47fb1b3d127e8b630
+  data CommandArgument
+    = CommandArgument {cargInfo :: Modules.ArgInformation,
+                       cargDef :: GHC.Maybe.Maybe Language.NGLessObject,
+                       cargPayload :: GHC.Maybe.Maybe ExternalModules.CommandExtra}
+b5f7e6967ea7bf81d9c5185b8b60511e
+  data CommandExtra
+    = FlagInfo [Data.Text.Internal.Text]
+    | FileInfo ExternalModules.FileType
+    | ExpandSearchPath GHC.Types.Bool
+ab8839cee03d69ec772f83a3c6198410
+  data CommandReturn
+    = CommandReturn {commandReturnType :: !Language.NGLType,
+                     _commandReturnName :: !Data.Text.Internal.Text,
+                     _commandReturnExt :: GHC.IO.FilePath}
+66c519aed405c4feb5c4309b6e0ce273
+  data ExternalModule
+    = ExternalModule {emInfo :: Language.ModInfo,
+                      modulePath :: GHC.IO.FilePath,
+                      initCmd :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                      initArgs :: [GHC.Base.String],
+                      emFunctions :: [ExternalModules.Command],
+                      references :: [Modules.ExternalReference],
+                      emCitations :: [Data.Text.Internal.Text]}
+0e124933d6847a6ad1c14c514ea3135b
+  data FileType
+    = FileType {_fileTypeBase :: !ExternalModules.FileTypeBase,
+                _canGzip :: !GHC.Types.Bool,
+                _canBzip2 :: !GHC.Types.Bool,
+                _canStream :: !GHC.Types.Bool}
+c6836fc90b50f5f970325e12b4db7805
+  data FileTypeBase
+    = FastqFileSingle
+    | FastqFilePair
+    | FastqFileTriplet
+    | SamFile
+    | BamFile
+    | SamOrBamFile
+    | TSVFile
+c2427eee9e849daf7acdd0a22227ee17
+  newtype ReadNGLType
+    = ReadNGLType {unwrapReadNGLType :: Language.NGLType}
+0e124933d6847a6ad1c14c514ea3135b
+  _canBzip2 :: ExternalModules.FileType -> GHC.Types.Bool
+  RecSel Left ExternalModules.FileType
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.FileType) ->
+                 case ds of wild { ExternalModules.FileType ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  _canGzip :: ExternalModules.FileType -> GHC.Types.Bool
+  RecSel Left ExternalModules.FileType
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.FileType) ->
+                 case ds of wild { ExternalModules.FileType ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  _canStream :: ExternalModules.FileType -> GHC.Types.Bool
+  RecSel Left ExternalModules.FileType
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.FileType) ->
+                 case ds of wild { ExternalModules.FileType ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+ab8839cee03d69ec772f83a3c6198410
+  _commandReturnExt ::
+    ExternalModules.CommandReturn -> GHC.IO.FilePath
+  RecSel Left ExternalModules.CommandReturn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.CommandReturn) ->
+                 case ds of wild { ExternalModules.CommandReturn ds1 ds2 ds3 ->
+                 ds3 }) -}
+ab8839cee03d69ec772f83a3c6198410
+  _commandReturnName ::
+    ExternalModules.CommandReturn -> Data.Text.Internal.Text
+  RecSel Left ExternalModules.CommandReturn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.CommandReturn) ->
+                 case ds of wild { ExternalModules.CommandReturn ds1 ds2 ds3 ->
+                 ds2 }) -}
+0e124933d6847a6ad1c14c514ea3135b
+  _fileTypeBase ::
+    ExternalModules.FileType -> ExternalModules.FileTypeBase
+  RecSel Left ExternalModules.FileType
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.FileType) ->
+                 case ds of wild { ExternalModules.FileType ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  additional ::
+    ExternalModules.Command -> [ExternalModules.CommandArgument]
+  RecSel Left ExternalModules.Command
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLSL),1*U(A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.Command) ->
+                 case ds of wild { ExternalModules.Command ds1 ds2 ds3 ds4 ds5 ->
+                 ds4 }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  arg0 :: ExternalModules.Command -> GHC.IO.FilePath
+  RecSel Left ExternalModules.Command
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLLL),1*U(A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.Command) ->
+                 case ds of wild { ExternalModules.Command ds1 ds2 ds3 ds4 ds5 ->
+                 ds2 }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  arg1 :: ExternalModules.Command -> ExternalModules.CommandArgument
+  RecSel Left ExternalModules.Command
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLL),1*U(A,A,1*U(U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.Command) ->
+                 case ds of wild { ExternalModules.Command ds1 ds2 ds3 ds4 ds5 ->
+                 ds3 }) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  cargDef ::
+    ExternalModules.CommandArgument
+    -> GHC.Maybe.Maybe Language.NGLessObject
+  RecSel Left ExternalModules.CommandArgument
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.CommandArgument) ->
+                 case ds of wild { ExternalModules.CommandArgument ds1 ds2 ds3 ->
+                 ds2 }) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  cargInfo ::
+    ExternalModules.CommandArgument -> Modules.ArgInformation
+  RecSel Left ExternalModules.CommandArgument
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U,U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.CommandArgument) ->
+                 case ds of wild { ExternalModules.CommandArgument ds1 ds2 ds3 ->
+                 ds1 }) -}
+a66c2cef363b07a47fb1b3d127e8b630
+  cargPayload ::
+    ExternalModules.CommandArgument
+    -> GHC.Maybe.Maybe ExternalModules.CommandExtra
+  RecSel Left ExternalModules.CommandArgument
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.CommandArgument) ->
+                 case ds of wild { ExternalModules.CommandArgument ds1 ds2 ds3 ->
+                 ds3 }) -}
+ab8839cee03d69ec772f83a3c6198410
+  commandReturnType ::
+    ExternalModules.CommandReturn -> Language.NGLType
+  RecSel Left ExternalModules.CommandReturn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.CommandReturn) ->
+                 case ds of wild { ExternalModules.CommandReturn ds1 ds2 ds3 ->
+                 ds1 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  emCitations ::
+    ExternalModules.ExternalModule -> [Data.Text.Internal.Text]
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLS),1*U(A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds7 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  emFunctions ::
+    ExternalModules.ExternalModule -> [ExternalModules.Command]
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLL),1*U(A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds5 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  emInfo :: ExternalModules.ExternalModule -> Language.ModInfo
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLL),1*U(1*U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds1 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  initArgs :: ExternalModules.ExternalModule -> [GHC.Base.String]
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLL),1*U(A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds4 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  initCmd ::
+    ExternalModules.ExternalModule -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds3 }) -}
+150fb46365a4e2cd8ea61ec2e498a38d
+  loadModule ::
+    Language.ModInfo -> NGLess.NGError.NGLessIO Modules.Module
+  {- Arity: 1, Strictness: <S,U> -}
+66c519aed405c4feb5c4309b6e0ce273
+  modulePath :: ExternalModules.ExternalModule -> GHC.IO.FilePath
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLL),1*U(A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds2 }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  nglName :: ExternalModules.Command -> Data.Text.Internal.Text
+  RecSel Left ExternalModules.Command
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLL),1*U(1*U(U,U,U),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.Command) ->
+                 case ds of wild { ExternalModules.Command ds1 ds2 ds3 ds4 ds5 ->
+                 ds1 }) -}
+66c519aed405c4feb5c4309b6e0ce273
+  references ::
+    ExternalModules.ExternalModule -> [Modules.ExternalReference]
+  RecSel Left ExternalModules.ExternalModule
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSL),1*U(A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.ExternalModule) ->
+                 case ds of wild { ExternalModules.ExternalModule ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 ds6 }) -}
+f37205836d6f4a9e770c202f0fadc61b
+  ret :: ExternalModules.Command -> ExternalModules.CommandReturn
+  RecSel Left ExternalModules.Command
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ExternalModules.Command) ->
+                 case ds of wild { ExternalModules.Command ds1 ds2 ds3 ds4 ds5 ->
+                 ds5 }) -}
+c2427eee9e849daf7acdd0a22227ee17
+  unwrapReadNGLType ::
+    ExternalModules.ReadNGLType -> Language.NGLType
+  RecSel Left ExternalModules.ReadNGLType
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                ExternalModules.unwrapReadNGLType1
+                  `cast`
+                (<ExternalModules.ReadNGLType>_R
+                 ->_R ExternalModules.N:ReadNGLType[0]) -}
+c2427eee9e849daf7acdd0a22227ee17
+  unwrapReadNGLType1 ::
+    ExternalModules.ReadNGLType -> ExternalModules.ReadNGLType
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: ExternalModules.ReadNGLType) -> ds) -}
+instance GHC.Classes.Eq [ExternalModules.Command]
+  = ExternalModules.$fEqCommand
+instance GHC.Classes.Eq [ExternalModules.CommandArgument]
+  = ExternalModules.$fEqCommandArgument
+instance GHC.Classes.Eq [ExternalModules.CommandExtra]
+  = ExternalModules.$fEqCommandExtra
+instance GHC.Classes.Eq [ExternalModules.CommandReturn]
+  = ExternalModules.$fEqCommandReturn
+instance GHC.Classes.Eq [ExternalModules.ExternalModule]
+  = ExternalModules.$fEqExternalModule
+instance GHC.Classes.Eq [ExternalModules.FileType]
+  = ExternalModules.$fEqFileType
+instance GHC.Classes.Eq [ExternalModules.FileTypeBase]
+  = ExternalModules.$fEqFileTypeBase
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.Command]
+  = ExternalModules.$fFromJSONCommand
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.CommandArgument]
+  = ExternalModules.$fFromJSONCommandArgument
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.CommandReturn]
+  = ExternalModules.$fFromJSONCommandReturn
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.ExternalModule]
+  = ExternalModules.$fFromJSONExternalModule
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.FileType]
+  = ExternalModules.$fFromJSONFileType
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.FileTypeBase]
+  = ExternalModules.$fFromJSONFileTypeBase
+instance Data.Aeson.Types.FromJSON.FromJSON [ExternalModules.ReadNGLType]
+  = ExternalModules.$fFromJSONReadNGLType
+instance GHC.Show.Show [ExternalModules.Command]
+  = ExternalModules.$fShowCommand
+instance GHC.Show.Show [ExternalModules.CommandArgument]
+  = ExternalModules.$fShowCommandArgument
+instance GHC.Show.Show [ExternalModules.CommandExtra]
+  = ExternalModules.$fShowCommandExtra
+instance GHC.Show.Show [ExternalModules.CommandReturn]
+  = ExternalModules.$fShowCommandReturn
+instance GHC.Show.Show [ExternalModules.ExternalModule]
+  = ExternalModules.$fShowExternalModule
+instance GHC.Show.Show [ExternalModules.FileType]
+  = ExternalModules.$fShowFileType
+instance GHC.Show.Show [ExternalModules.FileTypeBase]
+  = ExternalModules.$fShowFileTypeBase
+"SPEC/ExternalModules $fEq(,) @ NGLType @ FileTypeBase" forall (v1 :: GHC.Classes.Eq
+                                                                        ExternalModules.FileTypeBase)
+                                                               (v :: GHC.Classes.Eq
+                                                                       Language.NGLType)
+  GHC.Classes.$fEq(,) @ Language.NGLType
+                      @ ExternalModules.FileTypeBase
+                      v
+                      v1
+  = ExternalModules.$s$fEq(,)
+"SPEC/ExternalModules $fEq(,)_$c/= @ NGLType @ FileTypeBase" forall ($dEq1 :: GHC.Classes.Eq
+                                                                                ExternalModules.FileTypeBase)
+                                                                    ($dEq :: GHC.Classes.Eq
+                                                                               Language.NGLType)
+  GHC.Classes.$fEq(,)_$c/= @ Language.NGLType
+                           @ ExternalModules.FileTypeBase
+                           $dEq
+                           $dEq1
+  = ExternalModules.$s$fEq(,)_$s$fEq(,)_$c/=
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

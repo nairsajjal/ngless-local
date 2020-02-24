@@ -1,0 +1,1111 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:52.446625411 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Interpretation.Substrim 8065
+  interface hash: 55cc054bee5aa115cec8ae26ca941601
+  ABI hash: c8e7b64822d50135776c268c2ae9d61f
+  export-list hash: 33c645242cbbb9c79446eadc464f17d8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 75ef9c69b1b2d89098f3a3397e34030c
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpretation.Substrim.endstrim
+  Interpretation.Substrim.endstrimPos
+  Interpretation.Substrim.smoothtrim
+  Interpretation.Substrim.smoothtrimPos
+  Interpretation.Substrim.substrim
+  Interpretation.Substrim.subtrimPos
+  Interpretation.Substrim.EndstrimEnds{Interpretation.Substrim.Endstrim3 Interpretation.Substrim.Endstrim5 Interpretation.Substrim.EndstrimBoth}
+module dependencies: Data.FastQ NGLess.NGError Utils.Conduit
+                     Utils.Vector
+package dependencies: ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 async-2.2.2 attoparsec-0.13.2.3 base-4.12.0.0
+                      binary-0.8.6.0 bytestring-0.10.8.2 bzlib-conduit-0.3.0.2
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      conduit-1.3.1.2 conduit-algorithms-0.0.11.0 conduit-extra-1.3.4
+                      conduit-zstd-0.0.1.1 containers-0.6.0.1 data-default-class-0.1.2.0
+                      deepseq-1.4.4.0 directory-1.3.3.0 exceptions-0.10.4
+                      filepath-1.4.2.1 ghc-boot-th-8.6.5 ghc-prim-0.5.3 hashable-1.2.7.0
+                      inline-c-0.7.0.1 integer-gmp-1.0.2.0 integer-logarithms-1.0.3
+                      lzma-0.0.0.3 lzma-conduit-1.2.1 monad-loops-0.4.3
+                      mono-traversable-1.0.15.1 mtl-2.2.2 parsec-3.1.14.0 parsers-0.12.10
+                      pretty-1.1.3.6 primitive-0.6.4.0 resourcet-1.2.2 scientific-0.3.6.2
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      time-1.8.0.2 transformers-0.5.6.2 unix-2.7.2.2 unliftio-0.2.12
+                      unliftio-core-0.1.2.0 unordered-containers-0.2.10.0 vector-0.12.0.3
+                      vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian colour-2.3.5:Data.Colour
+         stm-2.5.0.0:Control.Monad.STM
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Data.FastQ 683044f508718e436592cbb72ea87fc2
+  exports: 7f3c9451f8064311c68af66858502794
+  ShortRead 22f73d8f1e5cbadca703f79979fa5a28
+  ShortRead 22bd7330b29b52b3752e35cd5ee36bcb
+  srSlice b08403e8fd1059c88ab4a3b466a7e859
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Int e78f203d621836c59d5015a8a0e4eaea
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.Int 75a738083d98da9ebef0ff75df759462
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  vector-0.12.0.3:Data.Vector.Storable 96d3c1076ef135fbf75fb6a0596d2d3b
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds ::
+    GHC.Enum.Enum Interpretation.Substrim.EndstrimEnds
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Substrim.EndstrimEnds
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$csucc
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$cpred
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$ctoEnum
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$cfromEnum
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$cenumFrom
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$cenumFromThen
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$cenumFromTo
+                  Interpretation.Substrim.$fEnumEndstrimEnds_$cenumFromThenTo -}
+ce7d40169309cb40e6e66d81a03e8ad9
+  $fEnumEndstrimEnds1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Interpretation.Substrim.$fEnumEndstrimEnds12
+                   Interpretation.Substrim.$fEnumEndstrimEnds2
+                   GHC.Stack.Types.EmptyCallStack) -}
+b69acc15820155b05fb9d51aec9c226a
+  $fEnumEndstrimEnds10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Interpretation.Substrim.$fEnumEndstrimEnds11) -}
+ef9d06ccb3ddcac9e9a70e2a0102750b
+  $fEnumEndstrimEnds11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+365765e58fea2b5d7974493f1e0cfea8
+  $fEnumEndstrimEnds12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Interpretation.Substrim.$fEnumEndstrimEnds13) -}
+7a14f5726980885312cb7ef70ddea033
+  $fEnumEndstrimEnds13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("error"#) -}
+2a7aea7b527faf501422252c99243ed0
+  $fEnumEndstrimEnds2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Interpretation.Substrim.$fEnumEndstrimEnds10
+                   Interpretation.Substrim.$fEnumEndstrimEnds8
+                   Interpretation.Substrim.$fEnumEndstrimEnds6
+                   Interpretation.Substrim.$fEnumEndstrimEnds5
+                   Interpretation.Substrim.$fEnumEndstrimEnds4
+                   Interpretation.Substrim.$fEnumEndstrimEnds5
+                   Interpretation.Substrim.$fEnumEndstrimEnds3) -}
+b24a5c003ff46ffbdecfc5c7c627a5c3
+  $fEnumEndstrimEnds3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 25#) -}
+7e31eef5ff09cdff39940373285efad5
+  $fEnumEndstrimEnds4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 21#) -}
+6cffac866b33645ce306c471524554fd
+  $fEnumEndstrimEnds5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 24#) -}
+ec9a70e7b4e5df49f593ea16bc5a2e6a
+  $fEnumEndstrimEnds6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Interpretation.Substrim.$fEnumEndstrimEnds7) -}
+575fd7ed40e8df39cdf9bc8acb041533
+  $fEnumEndstrimEnds7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess/Interpretation/Substrim.hs"#) -}
+93bb8096b67bddde2dcc1ca7f9283c91
+  $fEnumEndstrimEnds8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Interpretation.Substrim.$fEnumEndstrimEnds9) -}
+93df076d87bfafe3e570c29b2560cafc
+  $fEnumEndstrimEnds9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Interpretation.Substrim"#) -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$cenumFrom ::
+    Interpretation.Substrim.EndstrimEnds
+    -> [Interpretation.Substrim.EndstrimEnds]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Interpretation.Substrim.EndstrimEnds) ->
+                 case a of wild {
+                   Interpretation.Substrim.EndstrimBoth
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Interpretation.Substrim.EndstrimEnds
+                            (GHC.Prim.tagToEnum# @ Interpretation.Substrim.EndstrimEnds x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               2# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds })
+                      } in
+                      go 0#
+                   Interpretation.Substrim.Endstrim3
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Interpretation.Substrim.EndstrimEnds
+                            (GHC.Prim.tagToEnum# @ Interpretation.Substrim.EndstrimEnds x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               2# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds })
+                      } in
+                      go 1#
+                   Interpretation.Substrim.Endstrim5
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Interpretation.Substrim.EndstrimEnds
+                            (GHC.Prim.tagToEnum# @ Interpretation.Substrim.EndstrimEnds x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               2# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds })
+                      } in
+                      go 2# }) -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$cenumFromThen ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds
+    -> [Interpretation.Substrim.EndstrimEnds]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$cenumFromThenTo ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds
+    -> [Interpretation.Substrim.EndstrimEnds]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$cenumFromTo ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds
+    -> [Interpretation.Substrim.EndstrimEnds]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Interpretation.Substrim.EndstrimEnds)
+                   (y :: Interpretation.Substrim.EndstrimEnds) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Interpretation.Substrim.EndstrimBoth
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Interpretation.Substrim.EndstrimEnds
+                                     (Interpretation.Substrim.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        0# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds }
+                       Interpretation.Substrim.Endstrim3
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Interpretation.Substrim.EndstrimEnds
+                                     (Interpretation.Substrim.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        1# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds }
+                       Interpretation.Substrim.Endstrim5
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [Interpretation.Substrim.EndstrimEnds]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ Interpretation.Substrim.EndstrimEnds
+                                     (Interpretation.Substrim.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        2# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ Interpretation.Substrim.EndstrimEnds } }
+                 } in
+                 case x of wild {
+                   Interpretation.Substrim.EndstrimBoth -> $j 0#
+                   Interpretation.Substrim.Endstrim3 -> $j 1#
+                   Interpretation.Substrim.Endstrim5 -> $j 2# }) -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$cfromEnum ::
+    Interpretation.Substrim.EndstrimEnds -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Interpretation.Substrim.EndstrimEnds) ->
+                 case a of wild {
+                   Interpretation.Substrim.EndstrimBoth -> GHC.Types.I# 0#
+                   Interpretation.Substrim.Endstrim3 -> GHC.Types.I# 1#
+                   Interpretation.Substrim.Endstrim5 -> GHC.Types.I# 2# }) -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$cpred ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Interpretation.Substrim.EndstrimEnds) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Interpretation.Substrim.EndstrimEnds
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum#
+                            @ Interpretation.Substrim.EndstrimEnds
+                            (GHC.Prim.+# wild -1#)
+                       0#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ Interpretation.Substrim.EndstrimEnds
+                            Interpretation.Substrim.$fEnumEndstrimEnds1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "pred{EndstrimEnds}: tried to take `pred' of first tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   Interpretation.Substrim.EndstrimBoth -> $j 0#
+                   Interpretation.Substrim.Endstrim3 -> $j 1#
+                   Interpretation.Substrim.Endstrim5 -> $j 2# }) -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$csucc ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Interpretation.Substrim.EndstrimEnds) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Interpretation.Substrim.EndstrimEnds
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum#
+                            @ Interpretation.Substrim.EndstrimEnds
+                            (GHC.Prim.+# wild 1#)
+                       2#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ Interpretation.Substrim.EndstrimEnds
+                            Interpretation.Substrim.$fEnumEndstrimEnds1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "succ{EndstrimEnds}: tried to take `succ' of last tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   Interpretation.Substrim.EndstrimBoth -> $j 0#
+                   Interpretation.Substrim.Endstrim3 -> $j 1#
+                   Interpretation.Substrim.Endstrim5 -> $j 2# }) -}
+1512a880902655feeaee878906e590ce
+  $fEnumEndstrimEnds_$ctoEnum ::
+    GHC.Types.Int -> Interpretation.Substrim.EndstrimEnds
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Interpretation.Substrim.$w$ctoEnum ww1 }) -}
+1512a880902655feeaee878906e590ce
+  $fEqEndstrimEnds ::
+    GHC.Classes.Eq Interpretation.Substrim.EndstrimEnds
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Substrim.EndstrimEnds
+                  Interpretation.Substrim.$fEqEndstrimEnds_$c==
+                  Interpretation.Substrim.$fEqEndstrimEnds_$c/= -}
+1512a880902655feeaee878906e590ce
+  $fEqEndstrimEnds_$c/= ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Interpretation.Substrim.EndstrimEnds)
+                   (y :: Interpretation.Substrim.EndstrimEnds) ->
+                 case x of wild {
+                   Interpretation.Substrim.EndstrimBoth
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Substrim.EndstrimBoth -> GHC.Types.False }
+                   Interpretation.Substrim.Endstrim3
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Substrim.Endstrim3 -> GHC.Types.False }
+                   Interpretation.Substrim.Endstrim5
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Interpretation.Substrim.Endstrim5 -> GHC.Types.False } }) -}
+1512a880902655feeaee878906e590ce
+  $fEqEndstrimEnds_$c== ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Interpretation.Substrim.EndstrimEnds -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Interpretation.Substrim.EndstrimEnds)
+                   (ds1 :: Interpretation.Substrim.EndstrimEnds) ->
+                 case ds of wild {
+                   Interpretation.Substrim.EndstrimBoth
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Substrim.EndstrimBoth -> GHC.Types.True }
+                   Interpretation.Substrim.Endstrim3
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Substrim.Endstrim3 -> GHC.Types.True }
+                   Interpretation.Substrim.Endstrim5
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Interpretation.Substrim.Endstrim5 -> GHC.Types.True } }) -}
+1512a880902655feeaee878906e590ce
+  $fShowEndstrimEnds ::
+    GHC.Show.Show Interpretation.Substrim.EndstrimEnds
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Interpretation.Substrim.EndstrimEnds
+                  Interpretation.Substrim.$fShowEndstrimEnds_$cshowsPrec
+                  Interpretation.Substrim.$fShowEndstrimEnds_$cshow
+                  Interpretation.Substrim.$fShowEndstrimEnds_$cshowList -}
+1512a880902655feeaee878906e590ce
+  $fShowEndstrimEnds_$cshow ::
+    Interpretation.Substrim.EndstrimEnds -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Interpretation.Substrim.EndstrimEnds) ->
+                 case x of wild {
+                   Interpretation.Substrim.EndstrimBoth
+                   -> GHC.CString.unpackCString# "EndstrimBoth"#
+                   Interpretation.Substrim.Endstrim3
+                   -> GHC.CString.unpackCString# "Endstrim3"#
+                   Interpretation.Substrim.Endstrim5
+                   -> GHC.CString.unpackCString# "Endstrim5"# }) -}
+1512a880902655feeaee878906e590ce
+  $fShowEndstrimEnds_$cshowList ::
+    [Interpretation.Substrim.EndstrimEnds] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Interpretation.Substrim.EndstrimEnds])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Interpretation.Substrim.EndstrimEnds
+                   (Interpretation.Substrim.$fShowEndstrimEnds_$cshowsPrec
+                      (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+1512a880902655feeaee878906e590ce
+  $fShowEndstrimEnds_$cshowsPrec ::
+    GHC.Types.Int
+    -> Interpretation.Substrim.EndstrimEnds -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Interpretation.Substrim.EndstrimEnds) ->
+                 Interpretation.Substrim.$w$cshowsPrec w1) -}
+9eaeeec91f8bb408ad9f73169189f44f
+  $tc'Endstrim1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+2050cba6c621d54dfa55f77aa110345e
+  $tc'Endstrim2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Substrim.$tc'Endstrim4) -}
+7801ec1e61956d5158c453033f9c6113
+  $tc'Endstrim3 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13848034836257137897##
+                   17630624977179408941##
+                   Interpretation.Substrim.$trModule
+                   Interpretation.Substrim.$tc'Endstrim2
+                   0#
+                   Interpretation.Substrim.$tc'Endstrim1) -}
+7efbe76563ca65c1f2a56cb234d09133
+  $tc'Endstrim4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Endstrim3"#) -}
+7e7373c1ad476c78ffef7aa57b426a20
+  $tc'Endstrim5 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6012146963086188864##
+                   10176049763831873016##
+                   Interpretation.Substrim.$trModule
+                   Interpretation.Substrim.$tc'Endstrim6
+                   0#
+                   Interpretation.Substrim.$tc'Endstrim1) -}
+87bc35f37b8b130852b3e529348f855e
+  $tc'Endstrim6 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Substrim.$tc'Endstrim7) -}
+a799314b5228aa96d00dc8a54a300ab3
+  $tc'Endstrim7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Endstrim5"#) -}
+47943c8c66f271ff58def114d960ef9a
+  $tc'EndstrimBoth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11228875813707760888##
+                   2595490673005792679##
+                   Interpretation.Substrim.$trModule
+                   Interpretation.Substrim.$tc'EndstrimBoth1
+                   0#
+                   Interpretation.Substrim.$tc'Endstrim1) -}
+8c08e892b67baf170042fea4cbcc4e8e
+  $tc'EndstrimBoth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Substrim.$tc'EndstrimBoth2) -}
+a3eb6b54c116e64e49f02a365fba1c30
+  $tc'EndstrimBoth2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EndstrimBoth"#) -}
+cf2725475d12c1ff943cdd0e8c0d207d
+  $tc'S1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d06051d112f6fc98e427274322069ee6
+  $tc'S2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Substrim.$tc'S3) -}
+b81b9eb55a612542d41127d77297c8a5
+  $tc'S3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'S4"#) -}
+959f6eed973858049818901cd8c95845
+  $tc'S4 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14194332917470139693##
+                   15490163828335655981##
+                   Interpretation.Substrim.$trModule
+                   Interpretation.Substrim.$tc'S2
+                   0#
+                   Interpretation.Substrim.$tc'S1) -}
+2db1715c19e706e980b47ca1ece0fb67
+  $tcEndstrimEnds :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14743869419856503424##
+                   5024601703688424678##
+                   Interpretation.Substrim.$trModule
+                   Interpretation.Substrim.$tcEndstrimEnds1
+                   0#
+                   GHC.Types.krep$*) -}
+6b3ee9a1f06d3b24e8d35da388dba272
+  $tcEndstrimEnds1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Substrim.$tcEndstrimEnds2) -}
+d3e5f49d4b5180e77180354fe9146363
+  $tcEndstrimEnds2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("EndstrimEnds"#) -}
+c976bc8786e940b7f1e24b2a694e3ac9
+  $tcS1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpretation.Substrim.$tcS2) -}
+4ce6cacdb8d612ea54a74355bbf16627
+  $tcS2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("S4"#) -}
+3f7577ec0c24af01008f2a735738b5bb
+  $tcS4 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3981726662413976162##
+                   14300609949467034714##
+                   Interpretation.Substrim.$trModule
+                   Interpretation.Substrim.$tcS1
+                   0#
+                   GHC.Types.krep$*) -}
+b134132d5543d0ec5296646bb9756bde
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpretation.Substrim.$trModule2
+                   Interpretation.Substrim.$trModule1) -}
+07bf5868ee461cc731e93c155d520216
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Substrim.$fEnumEndstrimEnds9) -}
+fbe08f86b58b107cc92175bd8718cf70
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Interpretation.Substrim.$fEnumEndstrimEnds11) -}
+1512a880902655feeaee878906e590ce
+  $w$cshowsPrec ::
+    Interpretation.Substrim.EndstrimEnds -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Interpretation.Substrim.EndstrimEnds) ->
+                 case w of wild {
+                   Interpretation.Substrim.EndstrimBoth
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "EndstrimBoth"#)
+                   Interpretation.Substrim.Endstrim3
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "Endstrim3"#)
+                   Interpretation.Substrim.Endstrim5
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "Endstrim5"#) }) -}
+1512a880902655feeaee878906e590ce
+  $w$ctoEnum :: GHC.Prim.Int# -> Interpretation.Substrim.EndstrimEnds
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   $j :: Interpretation.Substrim.EndstrimEnds
+                     <join 0> {- Strictness: x -}
+                   = GHC.Err.error
+                       @ 'GHC.Types.LiftedRep
+                       @ Interpretation.Substrim.EndstrimEnds
+                       Interpretation.Substrim.$fEnumEndstrimEnds1
+                         `cast`
+                       (Sym (GHC.Classes.N:IP[0]
+                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                       (GHC.CString.unpackAppendCString#
+                          "toEnum{EndstrimEnds}: tag ("#
+                          (case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww
+                                  (GHC.CString.unpackAppendCString#
+                                     ") is outside of enumeration's range (0,"#
+                                     (case GHC.Show.$wshowSignedInt
+                                             0#
+                                             2#
+                                             (GHC.CString.unpackCString#
+                                                ")"#) of ww4 { (#,#) ww5 ww6 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww5
+                                        ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                 } in
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> $j
+                   1#
+                   -> case GHC.Prim.<=# ww 2# of lwild1 {
+                        DEFAULT -> $j
+                        1#
+                        -> GHC.Prim.tagToEnum#
+                             @ Interpretation.Substrim.EndstrimEnds
+                             ww } }) -}
+82ce23309aae91d7bdfb661040fb0bfe
+  $wendstrim ::
+    Interpretation.Substrim.EndstrimEnds
+    -> GHC.Types.Int
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> (# Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString,
+          Data.Vector.Storable.Vector GHC.Int.Int8 #)
+  {- Arity: 10,
+     Strictness: <L,U><L,1*U(U)><L,U><S,U><L,U><S,U><S,U><S,U><S,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (w :: Interpretation.Substrim.EndstrimEnds)
+                   (w1 :: GHC.Types.Int)
+                   (ww :: Data.ByteString.Internal.ByteString)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Addr#)
+                   (ww7 :: GHC.ForeignPtr.ForeignPtrContents) ->
+                 case Interpretation.Substrim.$wendstrimPos
+                        w
+                        (Data.Vector.Storable.Vector @ GHC.Int.Int8 ww5 ww6 ww7)
+                        (GHC.Int.$fEnumInt8_$ctoEnum w1) of ww8 { (#,#) ww9 ww10 ->
+                 case ww9 of ww11 { GHC.Types.I# ww12 ->
+                 case ww10 of ww13 { GHC.Types.I# ww14 ->
+                 Data.FastQ.$wsrSlice
+                   ww12
+                   ww14
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } } }) -}
+9d6f5bf6f3d877305478f23ac9771683
+  $wendstrimPos ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Data.Vector.Storable.Vector GHC.Int.Int8
+    -> GHC.Int.Int8
+    -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 3, Strictness: <L,U><L,U(U,U,U)><L,U(U)>, Inline: [2] -}
+65eb0d65ef971325f7fb3b5cb939c57f
+  $wsmoothtrim ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> (# Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString,
+          Data.Vector.Storable.Vector GHC.Int.Int8 #)
+  {- Arity: 10,
+     Strictness: <L,U(U)><L,1*U(U)><L,U><S,U><L,U><S,U><S,U><S,U><S,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (ww :: Data.ByteString.Internal.ByteString)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Addr#)
+                   (ww7 :: GHC.ForeignPtr.ForeignPtrContents) ->
+                 case Interpretation.Substrim.$wsmoothtrimPos
+                        w
+                        ww5
+                        ww6
+                        ww7
+                        (GHC.Int.$fEnumInt8_$ctoEnum w1) of ww8 { (#,#) ww9 ww10 ->
+                 case ww9 of ww11 { GHC.Types.I# ww12 ->
+                 case ww10 of ww13 { GHC.Types.I# ww14 ->
+                 Data.FastQ.$wsrSlice
+                   ww12
+                   ww14
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } } }) -}
+70a1995dde33989ae2eed916e86af020
+  $wsmoothtrimPos ::
+    GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Int.Int8
+    -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 5, Strictness: <L,U(U)><S,1*U><L,U><L,U><L,1*U(U)>,
+     Inline: [2] -}
+74119ca6b4b94a16725ec0aefa64f44d
+  $wsubstrim ::
+    GHC.Types.Int
+    -> Data.ByteString.Internal.ByteString
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> (# Data.ByteString.Internal.ByteString,
+          Data.ByteString.Internal.ByteString,
+          Data.Vector.Storable.Vector GHC.Int.Int8 #)
+  {- Arity: 9,
+     Strictness: <L,1*U(U)><L,U><S,U><L,U><S,U><S,U><S,U><S,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Types.Int)
+                   (ww :: Data.ByteString.Internal.ByteString)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Addr#)
+                   (ww7 :: GHC.ForeignPtr.ForeignPtrContents) ->
+                 case Interpretation.Substrim.$wsubtrimPos
+                        ww5
+                        ww6
+                        ww7
+                        (case w of ww8 { GHC.Types.I# ww9 ->
+                         case GHC.Int.$w$ctoEnum2 ww9 of ww10 { DEFAULT ->
+                         GHC.Int.I8# ww10 } }) of ww8 { (#,#) ww9 ww10 ->
+                 case ww9 of ww11 { GHC.Types.I# ww12 ->
+                 case ww10 of ww13 { GHC.Types.I# ww14 ->
+                 Data.FastQ.$wsrSlice
+                   ww12
+                   ww14
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } } }) -}
+945dcf223b062623c03e89099f36dfb1
+  $wsubtrimPos ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Int.Int8
+    -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,U><L,U><L,U><L,1*U(U)>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Addr#)
+                   (ww2 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (w :: GHC.Int.Int8) ->
+                 case GHC.Prim.>=# 0# ww of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.readInt8OffAddr#
+                             @ GHC.Prim.RealWorld
+                             ww1
+                             0#
+                             GHC.Prim.realWorld# of ds2 { (#,#) ipv ipv1 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.LiftedRep
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww2
+                             ipv of s' { DEFAULT ->
+                      case w of wild1 { GHC.Int.I8# y ->
+                      case GHC.Prim.<# ipv1 y of lwild1 {
+                        DEFAULT
+                        -> letrec {
+                             $s$wfoldlM'_loop :: GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> (# GHC.Types.Int, GHC.Types.Int #)
+                               <join 5> {- Arity: 5, Strictness: <S,U><L,U><L,U><L,U><L,U> -}
+                             = \ (sc :: GHC.Prim.Int#)
+                                 (sc1 :: GHC.Prim.Int#)
+                                 (sc2 :: GHC.Prim.Int#)
+                                 (sc3 :: GHC.Prim.Int#)
+                                 (sc4 :: GHC.Prim.Int#) ->
+                               case GHC.Prim.>=# sc ww of lwild2 {
+                                 DEFAULT
+                                 -> case GHC.Prim.readInt8OffAddr#
+                                           @ GHC.Prim.RealWorld
+                                           ww1
+                                           sc
+                                           GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                                    case GHC.Prim.touch#
+                                           @ 'GHC.Types.LiftedRep
+                                           @ GHC.ForeignPtr.ForeignPtrContents
+                                           ww2
+                                           ipv2 of s'1 { DEFAULT ->
+                                    case GHC.Prim.<# ipv3 y of lwild3 {
+                                      DEFAULT
+                                      -> case GHC.Prim.># (GHC.Prim.+# sc1 1#) sc3 of lwild4 {
+                                           DEFAULT
+                                           -> $s$wfoldlM'_loop
+                                                (GHC.Prim.+# sc 1#)
+                                                (GHC.Prim.+# sc1 1#)
+                                                sc2
+                                                sc3
+                                                sc4
+                                           1#
+                                           -> $s$wfoldlM'_loop
+                                                (GHC.Prim.+# sc 1#)
+                                                (GHC.Prim.+# sc1 1#)
+                                                sc2
+                                                (GHC.Prim.+# sc1 1#)
+                                                sc2 }
+                                      1#
+                                      -> $s$wfoldlM'_loop
+                                           (GHC.Prim.+# sc 1#)
+                                           0#
+                                           (GHC.Prim.+# (GHC.Prim.+# sc1 sc2) 1#)
+                                           sc3
+                                           sc4 } } }
+                                 1# -> (# GHC.Types.I# sc4, GHC.Types.I# sc3 #) }
+                           } in
+                           $s$wfoldlM'_loop 1# 1# 0# 1# 0#
+                        1#
+                        -> letrec {
+                             $s$wfoldlM'_loop :: GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> GHC.Prim.Int#
+                                                 -> (# GHC.Types.Int, GHC.Types.Int #)
+                               <join 5> {- Arity: 5, Strictness: <S,U><L,U><L,U><L,U><L,U> -}
+                             = \ (sc :: GHC.Prim.Int#)
+                                 (sc1 :: GHC.Prim.Int#)
+                                 (sc2 :: GHC.Prim.Int#)
+                                 (sc3 :: GHC.Prim.Int#)
+                                 (sc4 :: GHC.Prim.Int#) ->
+                               case GHC.Prim.>=# sc ww of lwild2 {
+                                 DEFAULT
+                                 -> case GHC.Prim.readInt8OffAddr#
+                                           @ GHC.Prim.RealWorld
+                                           ww1
+                                           sc
+                                           GHC.Prim.realWorld# of ds1 { (#,#) ipv2 ipv3 ->
+                                    case GHC.Prim.touch#
+                                           @ 'GHC.Types.LiftedRep
+                                           @ GHC.ForeignPtr.ForeignPtrContents
+                                           ww2
+                                           ipv2 of s'1 { DEFAULT ->
+                                    case GHC.Prim.<# ipv3 y of lwild3 {
+                                      DEFAULT
+                                      -> case GHC.Prim.># (GHC.Prim.+# sc1 1#) sc3 of lwild4 {
+                                           DEFAULT
+                                           -> $s$wfoldlM'_loop
+                                                (GHC.Prim.+# sc 1#)
+                                                (GHC.Prim.+# sc1 1#)
+                                                sc2
+                                                sc3
+                                                sc4
+                                           1#
+                                           -> $s$wfoldlM'_loop
+                                                (GHC.Prim.+# sc 1#)
+                                                (GHC.Prim.+# sc1 1#)
+                                                sc2
+                                                (GHC.Prim.+# sc1 1#)
+                                                sc2 }
+                                      1#
+                                      -> $s$wfoldlM'_loop
+                                           (GHC.Prim.+# sc 1#)
+                                           0#
+                                           (GHC.Prim.+# (GHC.Prim.+# sc1 sc2) 1#)
+                                           sc3
+                                           sc4 } } }
+                                 1# -> (# GHC.Types.I# sc4, GHC.Types.I# sc3 #) }
+                           } in
+                           $s$wfoldlM'_loop 1# 0# 1# 0# 0# } } } }
+                   1# -> (# GHC.Types.I# 0#, GHC.Types.I# 0# #) }) -}
+1512a880902655feeaee878906e590ce
+  data EndstrimEnds = EndstrimBoth | Endstrim3 | Endstrim5
+d73a5d939fee90d0ce930ef44a0b3259
+  data S4
+    = S4 {-# UNPACK #-}GHC.Types.Int
+         {-# UNPACK #-}GHC.Types.Int
+         {-# UNPACK #-}GHC.Types.Int
+         {-# UNPACK #-}GHC.Types.Int
+8ff7ce302ef6e275edb12c41bf587d96
+  endstrim ::
+    Interpretation.Substrim.EndstrimEnds
+    -> GHC.Types.Int -> Data.FastQ.ShortRead -> Data.FastQ.ShortRead
+  {- Arity: 3,
+     Strictness: <L,U><L,1*U(U)><S(SS(SLSS)S(SSL)),1*U(U,U(U,U,U,U),U(U,U,U))>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Interpretation.Substrim.EndstrimEnds)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Data.FastQ.ShortRead) ->
+                 case w2 of ww { Data.FastQ.ShortRead ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Data.ByteString.Internal.PS ww5 ww6 ww7 ww8 ->
+                 case ww3 of ww9 { Data.Vector.Storable.Vector ww10 ww11 ww12 ->
+                 case Interpretation.Substrim.$wendstrim
+                        w
+                        w1
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        ww8
+                        ww10
+                        ww11
+                        ww12 of ww13 { (#,,#) ww14 ww15 ww16 ->
+                 Data.FastQ.ShortRead ww14 ww15 ww16 } } } }) -}
+bd584d002987e2e20e63bbfbd7684f79
+  endstrimPos ::
+    Interpretation.Substrim.EndstrimEnds
+    -> Data.Vector.Storable.Vector GHC.Int.Int8
+    -> GHC.Int.Int8
+    -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 3, Strictness: <L,U><L,U(U,U,U)><L,U(U)>m, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Interpretation.Substrim.EndstrimEnds)
+                   (w1 :: Data.Vector.Storable.Vector GHC.Int.Int8)
+                   (w2 :: GHC.Int.Int8) ->
+                 case Interpretation.Substrim.$wendstrimPos
+                        w
+                        w1
+                        w2 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+a4df9364acc2ee952eb406557edac3d8
+  smoothtrim ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> Data.FastQ.ShortRead -> Data.FastQ.ShortRead
+  {- Arity: 3,
+     Strictness: <L,U(U)><L,1*U(U)><S(SS(SLSS)S(SSL)),1*U(U,U(U,U,U,U),U(U,U,U))>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: Data.FastQ.ShortRead) ->
+                 case w2 of ww { Data.FastQ.ShortRead ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Data.ByteString.Internal.PS ww5 ww6 ww7 ww8 ->
+                 case ww3 of ww9 { Data.Vector.Storable.Vector ww10 ww11 ww12 ->
+                 case Interpretation.Substrim.$wsmoothtrim
+                        w
+                        w1
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        ww8
+                        ww10
+                        ww11
+                        ww12 of ww13 { (#,,#) ww14 ww15 ww16 ->
+                 Data.FastQ.ShortRead ww14 ww15 ww16 } } } }) -}
+b009e539ea6eea9fc1ef2b808925ea02
+  smoothtrimPos ::
+    GHC.Types.Int
+    -> Data.Vector.Storable.Vector GHC.Int.Int8
+    -> GHC.Int.Int8
+    -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 3, Strictness: <L,U(U)><S(SSL),1*U(1*U,U,U)><L,1*U(U)>m,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Data.Vector.Storable.Vector GHC.Int.Int8)
+                   (w2 :: GHC.Int.Int8) ->
+                 case w1 of ww { Data.Vector.Storable.Vector ww1 ww2 ww3 ->
+                 case Interpretation.Substrim.$wsmoothtrimPos
+                        w
+                        ww1
+                        ww2
+                        ww3
+                        w2 of ww4 { (#,#) ww5 ww6 ->
+                 (ww5, ww6) } }) -}
+bd54f620f4479f65d5759907c6636f16
+  substrim ::
+    GHC.Types.Int -> Data.FastQ.ShortRead -> Data.FastQ.ShortRead
+  {- Arity: 2,
+     Strictness: <L,1*U(U)><S(SS(SLSS)S(SSL)),1*U(U,U(U,U,U,U),U(U,U,U))>m,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Data.FastQ.ShortRead) ->
+                 case w1 of ww { Data.FastQ.ShortRead ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Data.ByteString.Internal.PS ww5 ww6 ww7 ww8 ->
+                 case ww3 of ww9 { Data.Vector.Storable.Vector ww10 ww11 ww12 ->
+                 case Interpretation.Substrim.$wsubstrim
+                        w
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        ww8
+                        ww10
+                        ww11
+                        ww12 of ww13 { (#,,#) ww14 ww15 ww16 ->
+                 Data.FastQ.ShortRead ww14 ww15 ww16 } } } }) -}
+46a9cfbce8e102a3089762d9c6e7765f
+  subtrimPos ::
+    Data.Vector.Storable.Vector GHC.Int.Int8
+    -> GHC.Int.Int8 -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSL),1*U(U,U,U)><L,1*U(U)>m, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Data.Vector.Storable.Vector GHC.Int.Int8)
+                   (w1 :: GHC.Int.Int8) ->
+                 case w of ww { Data.Vector.Storable.Vector ww1 ww2 ww3 ->
+                 case Interpretation.Substrim.$wsubtrimPos
+                        ww1
+                        ww2
+                        ww3
+                        w1 of ww4 { (#,#) ww5 ww6 ->
+                 (ww5, ww6) } }) -}
+instance GHC.Enum.Enum [Interpretation.Substrim.EndstrimEnds]
+  = Interpretation.Substrim.$fEnumEndstrimEnds
+instance GHC.Classes.Eq [Interpretation.Substrim.EndstrimEnds]
+  = Interpretation.Substrim.$fEqEndstrimEnds
+instance GHC.Show.Show [Interpretation.Substrim.EndstrimEnds]
+  = Interpretation.Substrim.$fShowEndstrimEnds
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

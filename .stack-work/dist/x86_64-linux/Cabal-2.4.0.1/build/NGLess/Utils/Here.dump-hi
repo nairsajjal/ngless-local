@@ -1,0 +1,156 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:34.240866175 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.Here 8065
+  interface hash: 43f7c512dd78ff261da4f6ef7144ab04
+  ABI hash: 1e55923792ebc6958ae6b0a7f40f7295
+  export-list hash: 0b424ce4d11d2b54df4db564b42cd5cb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8c5b40462c7e0eb1a03172e2955ee20e
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.Here.here
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0* deepseq-1.4.4.0
+                      ghc-boot-th-8.6.5 ghc-prim-0.5.3 integer-gmp-1.0.2.0 pretty-1.1.3.6
+                      template-haskell-2.14.0.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  template-haskell-2.14.0.0:Language.Haskell.TH 65179fa9ee2cdf5538d25f579a2dccbf
+import  -/  template-haskell-2.14.0.0:Language.Haskell.TH.Lib.Internal 5e27a3b1015ea34b4fe22fc33b09fd59
+import  -/  template-haskell-2.14.0.0:Language.Haskell.TH.Quote 7d7efcfb2faec40426762b7689a4e9ec
+a3f30b46db2bc320ce8843adc2871614
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.Here.$trModule3
+                   Utils.Here.$trModule1) -}
+657bb466a7783fb566e5d223d2008ef0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Here.$trModule2) -}
+520f5f609c2cc4d34955aacc95688acb
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.Here"#) -}
+665efc68c26ff454d51f26a2c38d5d42
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.Here.$trModule4) -}
+f0069192d5cc88b49aaf77a771535ecc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+2f7afb5aaca6823586fe3874bd6cff1d
+  $where ::
+    GHC.Prim.Void#
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 1, Strictness: <B,A>x, Inline: [2] -}
+b1c5ee89efcdb2bebbe9e923eee6ba3f
+  $where1 ::
+    GHC.Prim.Void#
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Type
+  {- Arity: 1, Strictness: <B,A>x, Inline: [2] -}
+a22a62b2a0c1efc032117221e188eb0b
+  $where2 ::
+    GHC.Prim.Void#
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Pat
+  {- Arity: 1, Strictness: <B,A>x, Inline: [2] -}
+d734efacb868d642184201a2bd44cb2a
+  $where3 ::
+    [GHC.Types.Char]
+    -> forall (m :: * -> *).
+       (forall a. a -> m a) -> m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><C(S),1*C1(U)>,
+     Inline: [2],
+     Unfolding: (\ (w :: [GHC.Types.Char])
+                   @ m :: * -> *
+                   (ww :: forall a. a -> m a) ->
+                 ww
+                   @ Language.Haskell.TH.Syntax.Exp
+                   (Language.Haskell.TH.Syntax.LitE
+                      (Language.Haskell.TH.Syntax.StringL
+                         (case w of wild {
+                            [] -> GHC.Types.[] @ GHC.Types.Char
+                            : ds rest
+                            -> case ds of wild1 { GHC.Types.C# ds1 ->
+                               case ds1 of ds2 { DEFAULT -> wild '\n'# -> rest } } })))) -}
+61095cebdc326c48ce3c84062a096d04
+  here :: Language.Haskell.TH.Quote.QuasiQuoter
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Quote.QuasiQuoter
+                   Utils.Here.here4
+                     `cast`
+                   (<[GHC.Types.Char]>_R
+                    ->_R Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                  <Language.Haskell.TH.Syntax.Exp>_N))
+                   Utils.Here.here3
+                   Utils.Here.here2
+                   Utils.Here.here1) -}
+d717017b2e8185f300959097828394a3
+  here1 ::
+    GHC.Base.String
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 1, Strictness: <B,A>x, Inline: [2],
+     Unfolding: InlineRule (1, True, True)
+                (\ (w :: GHC.Base.String) -> Utils.Here.$where GHC.Prim.void#) -}
+735b9d6672646c7ee9d7fcff221216a3
+  here2 ::
+    GHC.Base.String
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Type
+  {- Arity: 1, Strictness: <B,A>x, Inline: [2],
+     Unfolding: InlineRule (1, True, True)
+                (\ (w :: GHC.Base.String) -> Utils.Here.$where1 GHC.Prim.void#) -}
+6dfb89adffd674e5fb395f0b0d196acc
+  here3 ::
+    GHC.Base.String
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Pat
+  {- Arity: 1, Strictness: <B,A>x, Inline: [2],
+     Unfolding: InlineRule (1, True, True)
+                (\ (w :: GHC.Base.String) -> Utils.Here.$where2 GHC.Prim.void#) -}
+b28de4be1cf02cf8383227f4311b41b6
+  here4 ::
+    [GHC.Types.Char]
+    -> forall (m :: * -> *).
+       Language.Haskell.TH.Syntax.Quasi m =>
+       m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><S(S(S(S(LC(S)LLLL)LLLL)L)LLLLLLLLLLLLLLLLLLLLLLLL),1*U(1*U(1*U(1*U(A,1*C1(U),A,A,A,A),A,A,A,A),A),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: [GHC.Types.Char])
+                   @ m :: * -> *
+                   (w1 :: Language.Haskell.TH.Syntax.Quasi m) ->
+                 case w1 of ww { Language.Haskell.TH.Syntax.C:Quasi ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ww25 ->
+                 case ww1 of ww26 { Control.Monad.IO.Class.C:MonadIO ww27 ww28 ->
+                 case ww27 of ww29 { GHC.Base.C:Monad ww30 ww31 ww32 ww33 ww34 ->
+                 case ww30 of ww35 { GHC.Base.C:Applicative ww36 ww37 ww38 ww39 ww40 ww41 ->
+                 Utils.Here.$where3 w @ m ww37 } } } }) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

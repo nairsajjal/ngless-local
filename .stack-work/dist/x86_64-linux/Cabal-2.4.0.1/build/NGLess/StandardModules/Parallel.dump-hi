@@ -1,0 +1,1357 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:33.523580531 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:StandardModules.Parallel 8065
+  interface hash: a3366b44793e4f95a258fb0eeb44181e
+  ABI hash: 867d7298e8bc4cda9b41b5ebb483a8aa
+  export-list hash: 2561f01b0aa665904efd2e2b4d2fe10d
+  orphan hash: 6ab80dce091ca2e1fd20d174f9ecf620
+  flag hash: 52d55e8d838c86f96cd1679c222b4f8b
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  StandardModules.Parallel.loadModule
+  StandardModules.Parallel.pasteCounts
+module dependencies: BuiltinFunctions CmdArgs Configuration
+                     Data.FastQ Data.Sam Dependencies.Embedded FileManagement
+                     FileOrStream Hooks Interpretation.Write Language Modules NGLess
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess Transform
+                     Utils.Conduit Utils.FindModules Utils.LockFile Utils.Samtools
+                     Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      atomic-write-0.2.0.7 attoparsec-0.13.2.3 base-4.12.0.0
+                      base-compat-0.10.5 base-orphans-0.8.1 base64-bytestring-1.0.0.2
+                      bifunctors-5.5.6 binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pqueue-1.4.1.2 pretty-1.1.3.6
+                      primitive-0.6.4.0 process-1.6.5.0 profunctors-5.3 random-1.1
+                      reflection-2.1.5 regex-1.0.2.0 regex-base-0.93.2
+                      regex-compat-0.95.1 regex-pcre-builtin-0.94.5.8.8.35
+                      regex-posix-0.95.2 regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3
+                      resourcet-1.2.2 safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2
+                      semigroupoids-5.3.4 split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4
+                      stm-conduit-4.0.1 streaming-commons-0.2.1.1 strict-0.3.2
+                      svg-builder-0.1.1 tagged-0.8.6 tar-0.5.1.1
+                      template-haskell-2.14.0.0 text-1.2.3.1 th-abstraction-0.3.1.0
+                      time-1.8.0.2 time-compat-1.9.2.2 time-locale-compat-0.1.1.5
+                      transformers-0.5.6.2 transformers-base-0.4.5.2
+                      transformers-compat-0.6.5 unix-2.7.2.2 unix-compat-0.5.2
+                      unliftio-0.2.12 unliftio-core-0.1.2.0 unordered-containers-0.2.10.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vector-0.12.0.3
+                      vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: pqueue-1.4.1.2:Data.PQueue.Prio.Min
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy text-1.2.3.1:Data.Text
+         binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  MissingH-1.4.1.0:Data.Hash.MD5 0d16de4f61eb14f1b7b0b3475b4d085b
+import  -/  Configuration 9a82cb30f48ec6255155f5c7391fb6c7
+  exports: 9fc785b50aa90792bcf0bc8c48c96a09
+  nConfReportDirectory b4545dc36df17a7adccb3e6be807ab85
+  nConfSubsample b4545dc36df17a7adccb3e6be807ab85
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  makeNGLTempFile f8997243f49d682cc3f193c23e0f01b5
+  openNGLTempFile 2b9c3d55dae96aea37a5265a4ee4d09e
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  asStream 553d086343c35a73a4bd221b1dbb9899
+import  -/  Hooks 8a39f54c4eaf7642cd4fc12b553e72b0
+  exports: 24bf17a697127c14a078a48a76f9bae1
+  FinishOkHook 52b0c5737c00e0974ca8896d01b51e30
+  registerFailHook b4ac53175ee60361396134993379b3ba
+  registerHook ef6e7ca4bf91f013b48a72013e2316ce
+import  -/  Interpretation.Write be1fc63f3dbba3a45a95f66caf9ac74e
+  exports: 2a75b1e02cffaa1b2f8217c03d9c1bec
+  moveOrCopyCompress 43ab2861b2a7b087bdf349661d6e17a7
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  ConstStr 1facc51f598e05827c5695d189d62844
+  Expression adc8def6a4b7257bb12aef607cf99238
+  FuncName a3f44134039f1915698a791072d2c89e
+  FunctionCall 23e51bd4b17fae101afcee641d2d9aa8
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  NGLBool d87c76a16baf27d54edaa264a8e0a36f
+  NGLCounts 4a13ff56c74b4fd70ca59b8c56b9ad30
+  NGLString 82acf143f89407c474dc0cb0d76162c8
+  NGLSymbol 0e75578ac16f82d10d02c421525d1405
+  NGLVoid 270592e6e6b718e69ed7d1f1dcc78ccb
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGList 34711d46e6b19ecce76e817cff7e315c
+  NGOCounts 2f11e851e821c66c37fbdbe68821316f
+  NGOList 488dd32aa90ff5894de15c18619c34df
+  NGOString 155e4815cffdc2c6617b34a2d52b7659
+  NGOVoid 3470f22180b45ca3e315b9326994ee3f
+  Variable 9b44f8caef4ce199ec53dca15d83da61
+import  -/  Modules d7b04bae20d952778746efecd6f653cd
+  exports: e612fb66accb36645cea5fb0c9541754
+  ArgCheckFileWritable 9f90833a7a0a74b35c853db084f576ec
+  ArgCheckSymbol f4ae803ce57672c73318286649d365f2
+  ArgInformation 28345a1149daf0524a3666c0df728692
+  Function d2362c47d7c9710332b2e11a4c2d8df3
+  Module 5ea81178a37f2cc1f71e0dfed7af0657
+  funcAllowsAutoComprehension ea8a515503aace5f77e7178c87cb63b2
+  funcArgChecks ea8a515503aace5f77e7178c87cb63b2
+  funcArgType ea8a515503aace5f77e7178c87cb63b2
+  funcChecks ea8a515503aace5f77e7178c87cb63b2
+  funcKwArgs ea8a515503aace5f77e7178c87cb63b2
+  funcName ea8a515503aace5f77e7178c87cb63b2
+  funcRetType ea8a515503aace5f77e7178c87cb63b2
+  modFunctions 5ea81178a37f2cc1f71e0dfed7af0657
+  modInfo 5ea81178a37f2cc1f71e0dfed7af0657
+  modTransform 5ea81178a37f2cc1f71e0dfed7af0657
+  runFunction 5ea81178a37f2cc1f71e0dfed7af0657
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  decodeSymbolOrError 1fa33d0017c91baa13be4377853a0728
+  lookupBoolOrScriptErrorDef ffe642effd69bd9a48ab477563baaa98
+  lookupStringListOrScriptError d7017754ce1f74bd5934f2d4b33604e2
+  lookupStringOrScriptError bc5829862d5b7f2576b249b0034f31cf
+  stringOrTypeError 5b029483db59fc3cf043cd5fbc4379a1
+  symbolOrTypeError ff6d0f8608f5840479e5de890e15f7b6
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLess 416e5726ee4c4987c25367d545064990
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+  throwDataError c062fbeafb6afe5ad95562e1e7cbc6a7
+  throwGenericError 5fdddf54553b39a6f2f62e1658de6acb
+  throwScriptError 96adea1584aa4db243e08c54da5ff3c3
+  throwShouldNotOccur 6b0f4fcf8b2bcdc53931daab853fb839
+import  -/  NGLess.NGLEnvironment 4ab4e397a1ac25f8e152520a0a756399
+  exports: 140b883e1db9882b0aa097954c9eea1d
+  nglConfiguration 539294010c83651951422c2571efcf9e
+  nglEnvironment 56dd9663bd034f7047cca99f322e3b64
+  ngleConfiguration d80a43c5bae03fd7eefc640474197c79
+  ngleLno d80a43c5bae03fd7eefc640474197c79
+  ngleScriptText d80a43c5bae03fd7eefc640474197c79
+  updateNglEnvironment 3c9480db8a054505942b2c2a455873f8
+import  -/  Output 65dbbbf5895e64168b49be3b8326af6d
+  exports: a41ff3401bfa3e00d33ddbc94a1eeb35
+  AutoDate 077f058f2d71c1270180c379c4f6eda6
+  AutoResultHash d71b7ccea9160f2d4df1dfa5bd5022dc
+  AutoScript d4fd8b4058635e7fadb2568c962d3bf3
+  InfoOutput c7754f0807be19d61fb420c2d9984424
+  TraceOutput eda030b46a813215b38990f8f484bfe9
+  WarningOutput bb4505448b44871ee533a71ef46281ca
+  buildComment fb5b5336ed2bdfa2b553ba6be2c1d75f
+  commentC 9b2e0f944de84ea76a04099daba7ccae
+  outputListLno e992d3c80a311d9fdf828c472b95b98f
+  outputListLno' 1a98fdc3c349e65a0f427ea401025c97
+import  -/  Transform b78ecedc7dc4ecf65d548a878f537150
+  exports: e591b5b6dd1c9f48dc19bd6bf02c0e6f
+  pureTransform 18372d25e205bda6cbfcfec9cb360f8d
+import  -/  Utils.Conduit 3529d55b10a7cbdf7250fd156212ef77
+  exports: 899923d44363d2db775d0cbeb374b958
+  ByteLine ac33b1a48ce77fc02979f39021c406e3
+  ByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+  byteLineSinkHandle 6f2a8561ae48069a20b7650aa09b45fc
+  linesC 74def1591ec8f05f38349accac761045
+  unwrapByteLine 981aa5298d35f0c0dbe1b9a7c5c38f9d
+import  -/  Utils.LockFile 773af50f4e27251bc75ff4a12d55914b
+  exports: 1b4d56278fbcc510ef86d7b3b0367e3c
+  IfLockedNothing 6db9480ec4a1f2010316e933d79efde5
+  LockParameters b2a10fc8a87de550817767f11b73deee
+  acquireLock aa9591ad7b6b67f6cca7715c1134a4f3
+  lockFname e67f21cbfdfced696ccc5d612034dd8c
+  maxAge e67f21cbfdfced696ccc5d612034dd8c
+  mtimeUpdate e67f21cbfdfced696ccc5d612034dd8c
+  whenExistsStrategy e67f21cbfdfced696ccc5d612034dd8c
+import  -/  Utils.Utils 5a5b516d92cb4d06150e4c1e7f1bff1d
+  exports: c13ae65e393f7bcdefbb619c4fc6a77b
+  allSame 40cad5086287ca763e1d068d1ee83fb8
+  fmapMaybeM e3eabcea0ea26c7883f4bc280e31f2a9
+  moveOrCopy f2756b201e4878d9b4dadba434aad3e1
+import  -/  async-2.2.2:Control.Concurrent.Async 539dde74c83d07130d3155c90555c63d
+import  -/  atomic-write-0.2.0.7:System.AtomicWrite.Writer.Text c9d3ef322412651606bdfcf35fcae53e
+import  -/  base-4.12.0.0:Control.Exception 041da5b6267cf6b639ff5716d5b299a9
+import  -/  base-4.12.0.0:Control.Exception.Base 28f76dc5daa23d33c2b03285506ae9fc
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Control.Monad.ST 426f2484862f450cc46cc6b5d19def5d
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.IORef e8e1ce7d64831ebb3853a1cd9fb4e228
+import  -/  base-4.12.0.0:Data.Maybe 9b76a39e833465c3c5b3c078b431417f
+import  -/  base-4.12.0.0:Data.Traversable d2c09bff1e4f0c871306c3ff8aa4dc36
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Conc a58be285a0644f0fcf5703314b511833
+import  -/  base-4.12.0.0:GHC.Conc.Sync 275e94c5ede09d3593e4c106b892e4f5
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.IO.Handle fe51659cf05ea3ecd36fe5e2d515d89a
+import  -/  base-4.12.0.0:GHC.IO.Handle.Text 182a34cefe4f282196178eec37b94471
+import  -/  base-4.12.0.0:GHC.IO.IOMode 8012a3f94976206c971b9384804b372a
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.IORef c4811a8ca9fa1f2f983a2e196af9a59c
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Real af2b985dd29515c375fb78b2c9298d42
+import  -/  base-4.12.0.0:GHC.ST 8761d3f79849f7dde72ab648a4243d63
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO dd4f3cfe73b94b7cae46a4ca98a3f09f
+import  -/  base-4.12.0.0:System.IO.Unsafe e8c0e3a0a9cf9814796832fe86e2e8a6
+import  -/  bytestring-0.10.8.2:Data.ByteString fd8cecf441c361eb2e989315be3b33ab
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder 6f8db2a06f5101ee328beacd18b0a633
+import  -/  bytestring-0.10.8.2:Data.ByteString.Builder.Internal 8258443d95d94e3caaed55a182aaa9c6
+import  -/  bytestring-0.10.8.2:Data.ByteString.Char8 c4fe0102babc102f36c4516d04d0159e
+import  -/  bytestring-0.10.8.2:Data.ByteString.Internal f8067c0775041a7adb8f53745475ed88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy 17bbfcb66adfeb54389d1792c4493dec
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy.Internal 2323410d496b66c6a46f7c8b483c1856
+import  -/  conduit-1.3.1.2:Data.Conduit a386d3988254720545738ed91850d867
+import  -/  conduit-1.3.1.2:Data.Conduit.Combinators 347317c879e3debf6cbfb4f316e8bcb4
+import  -/  conduit-1.3.1.2:Data.Conduit.Internal.Conduit 4cfa2d636f9204a4aa47382da9b0ff36
+import  -/  conduit-1.3.1.2:Data.Conduit.List de08038b39705aaad9564275ec6efc45
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms 2e676a7ffbcf04b8cfb1c53c4596a9f1
+import  -/  conduit-algorithms-0.0.11.0:Data.Conduit.Algorithms.Async c705e379633faccd5884d6a9e46c803e
+import  -/  conduit-extra-1.3.4:Data.Conduit.Binary c81ebc9541e9b8e064aeb9f939263ed9
+import  -/  data-default-0.7.1.1:Data.Default 28ff829d0df079ea9196504813a6384a
+import  -/  data-default-class-0.1.2.0:Data.Default.Class 5d2b5ee799bd958772a020a8cf8dab3e
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  directory-1.3.3.0:System.Directory 79b5722ff1e84b2378a22f8587a77df6
+import  -/  extra-1.6.18:Control.Monad.Extra 142829a227ff93cd2299d6da6c4e4ba9
+import  -/  extra-1.6.18:Data.List.Extra 8b9367d4e874d350f4d4eeec6f678aec
+import  -/  filepath-1.4.2.1:System.FilePath 15c54060cebd29621bfc77f7f6fce3ff
+import  -/  filepath-1.4.2.1:System.FilePath.Posix 807571ae31e154c61d0c6bb61ff8b097
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  mtl-2.2.2:Control.Monad.Error.Class 05ce857e0a8037d899cd3dba2eda1f68
+import  -/  mtl-2.2.2:Control.Monad.Except 5ca04d82f027e75c6a16c1ed916c1305
+import  -/  mtl-2.2.2:Control.Monad.State.Lazy 7d371b0031c45953f2f91cf2f08d9b31
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource 4caff92d040d1a01bd287dd8bb1ca934
+import  -/  resourcet-1.2.2:Control.Monad.Trans.Resource.Internal 501d62f3c9254d0531a3c1329c03910f
+import  -/  stm-chans-3.0.0.4:Control.Concurrent.STM.TBMQueue f1eda03b672cc86846dcba48c42e94e9
+import  -/  stm-conduit-4.0.1:Data.Conduit.TQueue a1128de175446a17d89b094f810351bc
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.IO 81ae0de6a6963f8f1398925d38fbfbc0
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+import  -/  time-1.8.0.2:Data.Time d7959afbfc5f95bc89346f8b5ebf8491
+import  -/  time-1.8.0.2:Data.Time.Format 99541c5c71daee5f246a504498171b3d
+import  -/  time-1.8.0.2:Data.Time.Format.Locale e657d007b358490dc51d0b13762925ef
+import  -/  time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime a45fd49e6e822fefd8fc894573c40e7c
+import  -/  transformers-0.5.6.2:Control.Monad.Trans.Class ce71df227db199c1d525fc0992381112
+import  -/  unix-2.7.2.2:System.Posix.IO d4bdc7b2411795f6c4b7a0c27ab51bf9
+import  -/  unix-2.7.2.2:System.Posix.IO.Common e7f32999048b694bd3ee5a65d5949020
+import  -/  unix-2.7.2.2:System.Posix.Unistd 6bbd83b0922e7d2ea3a3953d028bd89c
+import  -/  vector-0.12.0.3:Data.Vector c2b750be0d99dbce28ebfe75464ea17e
+import  -/  vector-0.12.0.3:Data.Vector.Mutable 19d2c8fd8f32780e96cd889699bc033c
+addDependentFile "/home/sajjal/.stack/programs/x86_64-linux/ghc-8.6.5/lib/ghc-8.6.5/include/ghcversion.h" 43db44f9bb88490c2fa995e5f5ec33f2
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/autogen/cabal_macros.h" e3731cb12b83b9e47defd67255252b42
+addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
+47b5136719080b1c83e48ec63728e270
+  $fEqSparseCountData ::
+    GHC.Classes.Eq StandardModules.Parallel.SparseCountData
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ StandardModules.Parallel.SparseCountData
+                  StandardModules.Parallel.$fEqSparseCountData_$c==
+                  StandardModules.Parallel.$fEqSparseCountData_$c/= -}
+47b5136719080b1c83e48ec63728e270
+  $fEqSparseCountData_$c/= ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)LS),1*U(U(U,U,U,U),U,U(U,U,U,U))><S(S(LLLS)LS),1*U(U(U,U,U,U),U,U(U,U,U,U))>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fEqSparseCountData_$c==
+                        x
+                        y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+47b5136719080b1c83e48ec63728e270
+  $fEqSparseCountData_$c== ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(LLLS)LS),1*U(U(U,U,U,U),U,U(U,U,U,U))><S(S(LLLS)LS),1*U(U(U,U,U,U),U,U(U,U,U,U))>,
+     Unfolding: (\ (ds6 :: StandardModules.Parallel.SparseCountData)
+                   (ds7 :: StandardModules.Parallel.SparseCountData) ->
+                 case ds6 of wild { StandardModules.Parallel.SparseCountData a1 dt a3 ->
+                 case ds7 of wild1 { StandardModules.Parallel.SparseCountData b1 dt1 b3 ->
+                 case a1 of wild2 { Data.ByteString.Internal.PS dt2 dt3 dt4 dt5 ->
+                 case b1 of wild3 { Data.ByteString.Internal.PS dt6 dt7 dt8 dt9 ->
+                 case GHC.Prim./=# dt5 dt9 of lwild {
+                   DEFAULT
+                   -> let {
+                        $j :: GHC.Types.Bool <join 0>
+                        = case GHC.Prim.==# dt dt1 of lwild1 {
+                            DEFAULT -> GHC.Types.False
+                            1#
+                            -> case a3 of wild4 { Data.ByteString.Internal.PS dt10 dt11 dt12 dt13 ->
+                               case b3 of wild5 { Data.ByteString.Internal.PS dt14 dt15 dt16 dt17 ->
+                               case GHC.Prim./=# dt13 dt17 of lwild2 {
+                                 DEFAULT
+                                 -> case GHC.Prim.eqAddr# dt10 dt14 of lwild3 {
+                                      DEFAULT
+                                      -> case Data.ByteString.Internal.$wcompareBytes
+                                                dt10
+                                                dt11
+                                                dt12
+                                                dt13
+                                                dt14
+                                                dt15
+                                                dt16
+                                                dt17 of wild6 {
+                                           DEFAULT -> GHC.Types.False
+                                           GHC.Types.EQ -> GHC.Types.True }
+                                      1#
+                                      -> case GHC.Prim.==# dt12 dt16 of lwild4 {
+                                           DEFAULT
+                                           -> case Data.ByteString.Internal.$wcompareBytes
+                                                     dt10
+                                                     dt11
+                                                     dt12
+                                                     dt13
+                                                     dt14
+                                                     dt15
+                                                     dt16
+                                                     dt17 of wild6 {
+                                                DEFAULT -> GHC.Types.False
+                                                GHC.Types.EQ -> GHC.Types.True }
+                                           1# -> GHC.Types.True } }
+                                 1# -> GHC.Types.False } } } }
+                      } in
+                      case GHC.Prim.eqAddr# dt2 dt6 of lwild1 {
+                        DEFAULT
+                        -> case Data.ByteString.Internal.$wcompareBytes
+                                  dt2
+                                  dt3
+                                  dt4
+                                  dt5
+                                  dt6
+                                  dt7
+                                  dt8
+                                  dt9 of wild4 {
+                             DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j }
+                        1#
+                        -> case GHC.Prim.==# dt4 dt8 of lwild2 {
+                             DEFAULT
+                             -> case Data.ByteString.Internal.$wcompareBytes
+                                       dt2
+                                       dt3
+                                       dt4
+                                       dt5
+                                       dt6
+                                       dt7
+                                       dt8
+                                       dt9 of wild4 {
+                                  DEFAULT -> GHC.Types.False GHC.Types.EQ -> $j }
+                             1# -> $j } }
+                   1# -> GHC.Types.False } } } } }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData ::
+    GHC.Classes.Ord StandardModules.Parallel.SparseCountData
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ StandardModules.Parallel.SparseCountData
+                  StandardModules.Parallel.$fEqSparseCountData
+                  StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                  StandardModules.Parallel.$fOrdSparseCountData_$c<
+                  StandardModules.Parallel.$fOrdSparseCountData_$c<=
+                  StandardModules.Parallel.$fOrdSparseCountData_$c>
+                  StandardModules.Parallel.$fOrdSparseCountData_$c>=
+                  StandardModules.Parallel.$fOrdSparseCountData_$cmax
+                  StandardModules.Parallel.$fOrdSparseCountData_$cmin -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$c< ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)><S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$c<= ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)><S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$c> ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)><S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$c>= ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)><S(S(SLSS)LL),1*U(U(U,U,U,U),U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$ccompare ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)SL),1*U(U(U,U,U,U),U,A)><S(S(SLSS)SL),1*U(U(U,U,U,U),U,A)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: StandardModules.Parallel.SparseCountData)
+                   (w1 :: StandardModules.Parallel.SparseCountData) ->
+                 case w of ww { StandardModules.Parallel.SparseCountData ww1 ww2 ww3 ->
+                 case ww1 of ww4 { Data.ByteString.Internal.PS ww5 ww6 ww7 ww8 ->
+                 case w1 of ww9 { StandardModules.Parallel.SparseCountData ww10 ww11 ww12 ->
+                 case ww10 of ww13 { Data.ByteString.Internal.PS ww14 ww15 ww16 ww17 ->
+                 StandardModules.Parallel.$w$ccompare
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww2
+                   ww14
+                   ww15
+                   ww16
+                   ww17
+                   ww11 } } } }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$cmax ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)LS),1*U(U(U,U,U,U),U,U)><S(S(SLSS)LS),1*U(U(U,U,U,U),U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+47b5136719080b1c83e48ec63728e270
+  $fOrdSparseCountData_$cmin ::
+    StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData
+    -> StandardModules.Parallel.SparseCountData
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(SLSS)LS),1*U(U(U,U,U,U),U,U)><S(S(SLSS)LS),1*U(U(U,U,U,U),U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: StandardModules.Parallel.SparseCountData)
+                   (y :: StandardModules.Parallel.SparseCountData) ->
+                 case StandardModules.Parallel.$fOrdSparseCountData_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+3c5ee3fe191e5ba36990f3bd4795da35
+  $s$fApplicativeResourceT ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  StandardModules.Parallel.$s$fApplicativeResourceT_$s$fFunctorResourceT
+                  (\ @ a (eta :: a) ->
+                   let {
+                     x :: GHC.Prim.State# GHC.Prim.RealWorld
+                          -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                       {- Arity: 1 -}
+                     = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, eta #)
+                   } in
+                   (\ (ds6 :: GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                    x)
+                     `cast`
+                   ((<GHC.IORef.IORef
+                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <a>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                      <GHC.Types.IO>_R <a>_N)))
+                  (\ @ a
+                     @ b
+                     (ds6 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO (a -> b))
+                     (ds7 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO a)
+                     (r :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds6
+                           `cast`
+                         (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                              <GHC.Types.IO>_R <a -> b>_N)
+                           r)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a -> b>_R)
+                          s of ds8 { (#,#) ipv ipv1 ->
+                   case (ds7
+                           `cast`
+                         (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                              <GHC.Types.IO>_R <a>_N)
+                           r)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          ipv of ds9 { (#,#) ipv2 ipv3 ->
+                   (# ipv2, ipv1 ipv3 #) } })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                      GHC.Types.IO (a -> b)>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO a>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R <b>_N))
+                  (Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT2
+                     @ GHC.Types.IO
+                     GHC.Base.$fApplicativeIO)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO a>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO b>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R <c>_N))
+                  (Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT3
+                     @ GHC.Types.IO
+                     GHC.Base.$fApplicativeIO)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO b>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R <b>_N))
+                  (\ @ a @ b ->
+                   Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT2
+                     @ GHC.Types.IO
+                     GHC.Base.$fApplicativeIO
+                     @ a
+                     @ b
+                     @ a
+                     (GHC.Base.const @ a @ b))
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO b>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R <a>_N)) -}
+5aadc9d758a75431a92e55180f21491a
+  $s$fApplicativeResourceT_$cpure ::
+    a -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (eta :: a) ->
+                 let {
+                   x :: GHC.Prim.State# GHC.Prim.RealWorld
+                        -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                     {- Arity: 1 -}
+                   = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, eta #)
+                 } in
+                 (\ (ds6 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                  x)
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <a>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                    <GHC.Types.IO>_R <a>_N))) -}
+ab351f6d2a4daba15c9f505ea6a10fe0
+  $s$fApplicativeResourceT_$s$fFunctorResourceT ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  (\ @ a
+                     @ b
+                     (f :: a -> b)
+                     (ds6 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO a)
+                     (r :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds6
+                           `cast`
+                         (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                              <GHC.Types.IO>_R <a>_N)
+                           r)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds7 { (#,#) ipv ipv1 ->
+                   (# ipv, f ipv1 #) })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO a>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R <b>_N))
+                  (\ @ a
+                     @ b
+                     (x :: a)
+                     (eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO b)
+                     (eta1 :: GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (eta
+                           `cast`
+                         (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                              <GHC.Types.IO>_R <b>_N)
+                           eta1)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                          s of ds6 { (#,#) ipv ipv1 ->
+                   (# ipv, x #) })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO b>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <a>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R <a>_N)) -}
+108cd13db73901aed302df6b9b7c5a20
+  $s$fMonadIOResourceT ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  StandardModules.Parallel.$s$fMonadIOResourceT_$s$fMonadResourceT
+                  (\ @ a
+                     (eta :: GHC.Types.IO a)
+                     (ds6 :: GHC.IORef.IORef
+                               Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                   eta)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Types.IO a>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R <a>_N)) -}
+e7955db28d9c9132654f1dbc6eeb5891
+  $s$fMonadIOResourceT_$s$fMonadResourceT ::
+    GHC.Base.Monad
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  StandardModules.Parallel.$s$fApplicativeResourceT
+                  (\ @ a
+                     @ b
+                     (ds6 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO a)
+                     (f :: a
+                           -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b)
+                     (r :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case (ds6
+                           `cast`
+                         (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                              <GHC.Types.IO>_R <a>_N)
+                           r)
+                          `cast`
+                        (GHC.Types.N:IO[0] <a>_R)
+                          s of ds7 { (#,#) ipv ipv1 ->
+                   ((f ipv1)
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                         <GHC.Types.IO>_R <b>_N)
+                      r)
+                     `cast`
+                   (GHC.Types.N:IO[0] <b>_R)
+                     ipv })
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                   ->_R <a
+                         -> Control.Monad.Trans.Resource.Internal.ResourceT
+                              GHC.Types.IO b>_R
+                   ->_R (<GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <b>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R <b>_N))
+                  StandardModules.Parallel.$s$fMonadIOResourceT_$s$fMonadResourceT_$c>>
+                  (\ @ a (eta :: a) ->
+                   let {
+                     x :: GHC.Prim.State# GHC.Prim.RealWorld
+                          -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                       {- Arity: 1 -}
+                     = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld) -> (# s, eta #)
+                   } in
+                   (\ (ds6 :: GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                    x)
+                     `cast`
+                   ((<GHC.IORef.IORef
+                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <a>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                      <GHC.Types.IO>_R <a>_N)))
+                  (\ @ a ->
+                   GHC.Err.errorWithoutStackTrace
+                     @ 'GHC.Types.LiftedRep
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                          GHC.Types.IO a)) -}
+6eeab4b4c05c94b98c20330dcdd64396
+  $s$fMonadIOResourceT_$s$fMonadResourceT_$c>> ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a)
+                   (k :: Control.Monad.Trans.Resource.Internal.ResourceT
+                           GHC.Types.IO b)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (m1
+                         `cast`
+                       (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R <a>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        s of ds6 { (#,#) ipv ipv1 ->
+                 (k `cast`
+                  (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                       <GHC.Types.IO>_R <b>_N)
+                    r)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv })
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                 ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                         GHC.Types.IO b>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                        <GHC.Types.IO>_R <b>_N)) -}
+74f7b786978d0c9bcdfb5a9aa62ce493
+  $s$fMonadResourceResourceT ::
+    Control.Monad.Trans.Resource.Internal.MonadResource
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  StandardModules.Parallel.$s$fMonadIOResourceT
+                  (\ @ a
+                     (eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO a)
+                     (eta1 :: GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                   eta
+                     `cast`
+                   (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                        <GHC.Types.IO>_R <a>_N)
+                     eta1)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a>_R
+                   ->_R Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                 <GHC.Types.IO>_R <a>_N)) -}
+2a9857e1af20f4faf2e9550dd4bf5a85
+  $s$fMonadResourceResourceT1 ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   (eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                             GHC.Types.IO a)
+                   (eta1 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                 eta
+                   `cast`
+                 (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                      <GHC.Types.IO>_R <a>_N)
+                   eta1) -}
+5645eb5b1daf269b67c5c8c8c00a0927
+  $s$fMonadThrowResourceT ::
+    Control.Monad.Catch.MonadThrow
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  StandardModules.Parallel.$s$fMonadIOResourceT_$s$fMonadResourceT
+                  (\ @ e @ a (eta :: GHC.Exception.Type.Exception e) (x :: e) ->
+                   let {
+                     x1 :: GHC.Prim.State# GHC.Prim.RealWorld
+                           -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                       {- Arity: 1, Strictness: <L,U>x -}
+                     = GHC.IO.throwIO1 @ e @ a eta x
+                   } in
+                   (\ (ds6 :: GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                    x1)
+                     `cast`
+                   ((<GHC.IORef.IORef
+                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <a>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                      <GHC.Types.IO>_R <a>_N))) -}
+f8e31ca8d6bd31655ccda73c29736724
+  $s$fMonadThrowResourceT_$cthrowM ::
+    GHC.Exception.Type.Exception e =>
+    e -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <B,1*U(A,A,1*C1(U),A,A)><B,U><B,A><B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ e @ a (eta :: GHC.Exception.Type.Exception e) (x :: e) ->
+                 let {
+                   x1 :: GHC.Prim.State# GHC.Prim.RealWorld
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+                     {- Arity: 1, Strictness: <L,U>x -}
+                   = GHC.IO.throwIO1 @ e @ a eta x
+                 } in
+                 (\ (ds6 :: GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap) ->
+                  x1)
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <a>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                    <GHC.Types.IO>_R <a>_N))) -}
+569c2aa573b1549a500ca51b9b2785a3
+  $s$fMonadUnliftIOResourceT ::
+    Control.Monad.IO.Unlift.MonadUnliftIO
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  StandardModules.Parallel.$s$fMonadIOResourceT
+                  (Control.Monad.Trans.Resource.Internal.$fMonadUnliftIOResourceT1
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Unlift.$fMonadUnliftIOIO)
+                    `cast`
+                  (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                            <GHC.Types.IO>_R
+                            <Control.Monad.IO.Unlift.UnliftIO
+                               (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_N))
+                  StandardModules.Parallel.$s$fMonadUnliftIOResourceT_$s$fMonadUnliftIOResourceT_$cwithRunInIO -}
+a264ba0b4fa82d83db576b41be40320a
+  $s$fMonadUnliftIOResourceT_$s$fMonadUnliftIOResourceT_$cwithRunInIO ::
+    ((forall a.
+      Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+      -> GHC.Types.IO a)
+     -> GHC.Types.IO b)
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ b
+                   (ds6 :: (forall a.
+                            Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+                            -> GHC.Types.IO a)
+                           -> GHC.Types.IO b)
+                   (r :: GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (Control.Monad.Trans.Resource.Internal.$fMonadUnliftIOResourceT1
+                         @ GHC.Types.IO
+                         Control.Monad.IO.Unlift.$fMonadUnliftIOIO
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Control.Monad.IO.Unlift.UnliftIO
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R)
+                        s of ds7 { (#,#) ipv ipv1 ->
+                 (ds6
+                    ipv1
+                      `cast`
+                    (Control.Monad.IO.Unlift.N:UnliftIO[0]
+                         <Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO>_R))
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv })
+                  `cast`
+                (forall (b :: <*>_N).
+                 <(forall a.
+                   Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+                   -> GHC.Types.IO a)
+                  -> GHC.Types.IO b>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <b>_R)) ; Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                        <GHC.Types.IO>_R <b>_N)) -}
+9e6a3d7340d39940e59bd9f8743799a1
+  $ssinkVectorNC ::
+    GHC.Types.Int
+    -> Data.Conduit.Internal.Conduit.ConduitT
+         Data.ByteString.Internal.ByteString
+         o
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+         (Data.Vector.Vector Data.ByteString.Internal.ByteString)
+  {- Arity: 1, Strictness: <L,U(U)> -}
+43639269fc1e7ca8c37749d7548af93d
+  $tc'SparseCountData :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11185619884386993723##
+                   8793900555749391051##
+                   StandardModules.Parallel.$trModule
+                   StandardModules.Parallel.$tc'SparseCountData2
+                   0#
+                   StandardModules.Parallel.$tc'SparseCountData1) -}
+763883ead0f5e3fbfd85adc258b7b3b5
+  $tc'SparseCountData1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3bd6a8539a50c960c5beef506af21098
+  $tc'SparseCountData2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   StandardModules.Parallel.$tc'SparseCountData3) -}
+3246ee81ff72096a1c50bf0689210b7e
+  $tc'SparseCountData3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SparseCountData"#) -}
+d77391e9cd6516beb8736d80122d7034
+  $tcSparseCountData :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5305351867222101313##
+                   7607811196001288062##
+                   StandardModules.Parallel.$trModule
+                   StandardModules.Parallel.$tcSparseCountData1
+                   0#
+                   GHC.Types.krep$*) -}
+6a00a05cbe1c5a5cb8ceb10da1a4d535
+  $tcSparseCountData1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   StandardModules.Parallel.$tcSparseCountData2) -}
+339e31c3cde7ba10dae32602c3b43ca1
+  $tcSparseCountData2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SparseCountData"#) -}
+e2d12e53ddb004768d81448ddc131a66
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   StandardModules.Parallel.$trModule3
+                   StandardModules.Parallel.$trModule1) -}
+384502f3fc17617fd92aff165524e3b9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   StandardModules.Parallel.$trModule2) -}
+a741a94b0cea52a5691f92d84961b18d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("StandardModules.Parallel"#) -}
+9cb7049c85c5c11fa2fe95f73ff69068
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   StandardModules.Parallel.$trModule4) -}
+c2622a1d535ac08a973bd4f25ba39a3e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+8a957e0b8fe61fe1d873df69ceeb73ac
+  $w$ccompare ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Ordering
+  {- Arity: 10, HasNoCafRefs,
+     Strictness: <S,U><L,U><S,U><S,U><L,U><S,U><L,U><S,U><S,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Addr#)
+                   (ww6 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww7 :: GHC.Prim.Int#)
+                   (ww8 :: GHC.Prim.Int#)
+                   (ww9 :: GHC.Prim.Int#) ->
+                 case Data.ByteString.Internal.$wcompareBytes
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww5
+                        ww6
+                        ww7
+                        ww8 of wild {
+                   GHC.Types.LT -> GHC.Types.LT
+                   GHC.Types.EQ -> GHC.Classes.compareInt# ww4 ww9
+                   GHC.Types.GT -> GHC.Types.GT }) -}
+47b5136719080b1c83e48ec63728e270
+  data SparseCountData
+    = SparseCountData {spdHeader :: !Data.ByteString.Internal.ByteString,
+                       _spdIndex :: {-# UNPACK #-}GHC.Types.Int,
+                       _spdPayload :: !Data.ByteString.Internal.ByteString}
+47b5136719080b1c83e48ec63728e270
+  _spdIndex ::
+    StandardModules.Parallel.SparseCountData -> GHC.Types.Int
+  RecSel Left StandardModules.Parallel.SparseCountData
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds6 :: StandardModules.Parallel.SparseCountData) ->
+                 case ds6 of wild { StandardModules.Parallel.SparseCountData ds7 dt ds8 ->
+                 GHC.Types.I# dt }) -}
+47b5136719080b1c83e48ec63728e270
+  _spdPayload ::
+    StandardModules.Parallel.SparseCountData
+    -> Data.ByteString.Internal.ByteString
+  RecSel Left StandardModules.Parallel.SparseCountData
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS),1*U(A,A,U(U,U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds6 :: StandardModules.Parallel.SparseCountData) ->
+                 case ds6 of wild { StandardModules.Parallel.SparseCountData ds7 dt ds8 ->
+                 ds8 }) -}
+6b4aad5cd50e0f24ee9c4b6e51319fa2
+  loadModule ::
+    Data.Text.Internal.Text -> NGLess.NGError.NGLessIO Modules.Module
+  {- Arity: 1, Strictness: <L,U(U,U,U)> -}
+8de03e2a0ace8965c51e81d4e4e6c562
+  pasteCounts ::
+    [Data.Text.Internal.Text]
+    -> GHC.Types.Bool
+    -> [Data.Text.Internal.Text]
+    -> [GHC.IO.FilePath]
+    -> NGLess.NGError.NGLessIO GHC.IO.FilePath
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,U> -}
+47b5136719080b1c83e48ec63728e270
+  spdHeader ::
+    StandardModules.Parallel.SparseCountData
+    -> Data.ByteString.Internal.ByteString
+  RecSel Left StandardModules.Parallel.SparseCountData
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U(U,U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds6 :: StandardModules.Parallel.SparseCountData) ->
+                 case ds6 of wild { StandardModules.Parallel.SparseCountData ds7 dt ds8 ->
+                 ds7 }) -}
+instance GHC.Classes.Eq [StandardModules.Parallel.SparseCountData]
+  = StandardModules.Parallel.$fEqSparseCountData
+instance GHC.Classes.Ord [StandardModules.Parallel.SparseCountData]
+  = StandardModules.Parallel.$fOrdSparseCountData
+"SPEC/StandardModules.Parallel $fApplicativeResourceT @ IO" [orphan] forall (v :: GHC.Base.Applicative
+                                                                                    GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT @ GHC.Types.IO
+                                                               v
+  = StandardModules.Parallel.$s$fApplicativeResourceT
+"SPEC/StandardModules.Parallel $fApplicativeResourceT_$cpure @ IO" [orphan] forall ($dApplicative :: GHC.Base.Applicative
+                                                                                                       GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT_$cpure @ GHC.Types.IO
+                                                                      $dApplicative
+  = StandardModules.Parallel.$s$fApplicativeResourceT_$cpure
+"SPEC/StandardModules.Parallel $fFunctorResourceT @ IO" [orphan] forall (v :: GHC.Base.Functor
+                                                                                GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fFunctorResourceT @ GHC.Types.IO
+                                                           v
+  = StandardModules.Parallel.$s$fApplicativeResourceT_$s$fFunctorResourceT
+"SPEC/StandardModules.Parallel $fMonadIOResourceT @ IO" [orphan] forall (v :: Control.Monad.IO.Class.MonadIO
+                                                                                GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadIOResourceT @ GHC.Types.IO
+                                                           v
+  = StandardModules.Parallel.$s$fMonadIOResourceT
+"SPEC/StandardModules.Parallel $fMonadResourceResourceT @ IO" [orphan] forall (v :: Control.Monad.IO.Class.MonadIO
+                                                                                      GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadResourceResourceT @ GHC.Types.IO
+                                                                 v
+  = StandardModules.Parallel.$s$fMonadResourceResourceT
+"SPEC/StandardModules.Parallel $fMonadResourceResourceT1 @ IO" [orphan] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                               GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadResourceResourceT1 @ GHC.Types.IO
+                                                                  $dMonadIO
+  = StandardModules.Parallel.$s$fMonadResourceResourceT1
+"SPEC/StandardModules.Parallel $fMonadResourceT @ IO" [orphan] forall (v :: GHC.Base.Monad
+                                                                              GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadResourceT @ GHC.Types.IO
+                                                         v
+  = StandardModules.Parallel.$s$fMonadIOResourceT_$s$fMonadResourceT
+"SPEC/StandardModules.Parallel $fMonadResourceT_$c>> @ IO" [orphan] forall ($dMonad :: GHC.Base.Monad
+                                                                                         GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadResourceT_$c>> @ GHC.Types.IO
+                                                              $dMonad
+  = StandardModules.Parallel.$s$fMonadIOResourceT_$s$fMonadResourceT_$c>>
+"SPEC/StandardModules.Parallel $fMonadThrowResourceT @ IO" [orphan] forall (v :: Control.Monad.Catch.MonadThrow
+                                                                                   GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadThrowResourceT @ GHC.Types.IO
+                                                              v
+  = StandardModules.Parallel.$s$fMonadThrowResourceT
+"SPEC/StandardModules.Parallel $fMonadThrowResourceT_$cthrowM @ IO" [orphan] forall ($dMonadThrow :: Control.Monad.Catch.MonadThrow
+                                                                                                       GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadThrowResourceT_$cthrowM @ GHC.Types.IO
+                                                                       $dMonadThrow
+  = StandardModules.Parallel.$s$fMonadThrowResourceT_$cthrowM
+"SPEC/StandardModules.Parallel $fMonadUnliftIOResourceT @ IO" [orphan] forall (v :: Control.Monad.IO.Unlift.MonadUnliftIO
+                                                                                      GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadUnliftIOResourceT @ GHC.Types.IO
+                                                                 v
+  = StandardModules.Parallel.$s$fMonadUnliftIOResourceT
+"SPEC/StandardModules.Parallel $fMonadUnliftIOResourceT_$cwithRunInIO @ IO" [orphan] forall ($dMonadUnliftIO :: Control.Monad.IO.Unlift.MonadUnliftIO
+                                                                                                                  GHC.Types.IO)
+  Control.Monad.Trans.Resource.Internal.$fMonadUnliftIOResourceT_$cwithRunInIO @ GHC.Types.IO
+                                                                               $dMonadUnliftIO
+  = StandardModules.Parallel.$s$fMonadUnliftIOResourceT_$s$fMonadUnliftIOResourceT_$cwithRunInIO
+"SPEC/StandardModules.Parallel sinkVectorNC @ Vector @ ByteString @ (ResourceT
+                                                                      IO) _" [orphan] forall @ o
+                                                                                                                                                                            ($dPrimMonad :: Control.Monad.Primitive.PrimMonad
+                                                                                                                                                                                              (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                                                                                                                 GHC.Types.IO))
+                                                                                                                                                                            ($dVector :: Data.Vector.Generic.Base.Vector
+                                                                                                                                                                                           Data.Vector.Vector
+                                                                                                                                                                                           Data.ByteString.Internal.ByteString)
+  Data.Conduit.Combinators.sinkVectorNC @ Data.Vector.Vector
+                                        @ Data.ByteString.Internal.ByteString
+                                        @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                                             GHC.Types.IO)
+                                        @ o
+                                        $dVector
+                                        $dPrimMonad
+  = StandardModules.Parallel.$ssinkVectorNC @ o
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

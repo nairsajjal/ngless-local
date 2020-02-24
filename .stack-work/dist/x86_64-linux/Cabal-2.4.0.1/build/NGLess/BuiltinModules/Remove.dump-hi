@@ -1,0 +1,611 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:16:09.325877889 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:BuiltinModules.Remove 8065
+  interface hash: 301ec779d317c9070141e62d68aaeb5a
+  ABI hash: 5df3de483ff48d22fb2341ba5d00ac64
+  export-list hash: 0c36efa807c679c729bb42c73a2593db
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 91b230a5ad567f234f205ab21cb3f611
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BuiltinModules.Remove.loadModule
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language Modules
+                     NGLess NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.FindModules Utils.LockFile Utils.Samtools
+                     Utils.Suggestion Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-0.7.1.1 data-default-class-0.1.2.0
+                      data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.4.0
+                      diagrams-core-1.4.2 diagrams-lib-1.4.3 diagrams-solve-0.1.1
+                      diagrams-svg-1.4.3 directory-1.3.3.0 distributive-0.6.1
+                      dlist-0.8.0.7 dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      process-1.6.5.0 profunctors-5.3 random-1.1 reflection-2.1.5
+                      regex-1.0.2.0 regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  Data.FastQ 683044f508718e436592cbb72ea87fc2
+  exports: 7f3c9451f8064311c68af66858502794
+  ReadSet c16a307192e6c5c3c5475f335c533ab2
+  fqpathFilePath fdd414d88cf948fd1c738d4e396e4d35
+import  -/  FileManagement fb22fc32ebd4079eedfab3004822d35c
+  exports: 0035e3f895add6fcbe2da0a7224ccae1
+  removeIfTemporary e68c66f295edf35288835c734f7a9cd2
+import  -/  FileOrStream 308bd6c9c43caa616b94f9fab478aee4
+  exports: 0709a3ba970257fa0efa5dc4a795e2c1
+  File d8a44142e424df6efefa301d68916382
+import  -/  Language 93f0f50a5c7ee77231d71d6a98e7a8ca
+  exports: 6aa5d24204c11e6b2a36767cd645b21f
+  FuncName a3f44134039f1915698a791072d2c89e
+  ModInfo 63210cbfba266a791c2008ebea8dc2c6
+  NGLVoid 270592e6e6b718e69ed7d1f1dcc78ccb
+  NGLessObject ea18243860934472078c5e2ccd0edf40
+  NGOCounts 2f11e851e821c66c37fbdbe68821316f
+  NGOMappedReadSet 919ef9db420f74c1cd3b0e0a5a7b4ad9
+  NGOReadSet c3ec807d5d7afc041d47d76cd179ed0b
+  NGOVoid 3470f22180b45ca3e315b9326994ee3f
+import  -/  Modules d7b04bae20d952778746efecd6f653cd
+  exports: e612fb66accb36645cea5fb0c9541754
+  Function d2362c47d7c9710332b2e11a4c2d8df3
+  Module 5ea81178a37f2cc1f71e0dfed7af0657
+  funcAllowsAutoComprehension ea8a515503aace5f77e7178c87cb63b2
+  funcArgChecks ea8a515503aace5f77e7178c87cb63b2
+  funcArgType ea8a515503aace5f77e7178c87cb63b2
+  funcChecks ea8a515503aace5f77e7178c87cb63b2
+  funcKwArgs ea8a515503aace5f77e7178c87cb63b2
+  funcName ea8a515503aace5f77e7178c87cb63b2
+  funcRetType ea8a515503aace5f77e7178c87cb63b2
+  modFunctions 5ea81178a37f2cc1f71e0dfed7af0657
+  modInfo 5ea81178a37f2cc1f71e0dfed7af0657
+  runFunction 5ea81178a37f2cc1f71e0dfed7af0657
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+  KwArgsValues 830496506778855ea845b2c49d2ab17b
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Tuple c719fc29608fe81c10bee9a1bf1e05ff
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  data-default-0.7.1.1:Data.Default 28ff829d0df079ea9196504813a6384a
+import  -/  data-default-class-0.1.2.0:Data.Default.Class 5d2b5ee799bd958772a020a8cf8dab3e
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+6239f5d6a28effd818955e88ad52f0a1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   BuiltinModules.Remove.$trModule3
+                   BuiltinModules.Remove.$trModule1) -}
+3b9b91df0c564b0d25f05da6623fd8b5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinModules.Remove.$trModule2) -}
+ddbdc59aef67ad413299e0796ccccd18
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BuiltinModules.Remove"#) -}
+19309e583517519e59e507b105da6fae
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BuiltinModules.Remove.$trModule4) -}
+e09d9f42bc379bfa32bac6927175fef9
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+3d9a89feaa745345db2602c097d415df
+  $wexecuteRemove ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 5, Strictness: <L,U><L,U><S,U><L,U><L,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.ByteArray#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (w :: Language.NGLessObject)
+                   (w1 :: NGLess.KwArgsValues) ->
+                 case BuiltinModules.Remove.loadModule1 of wild1 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                 case GHC.Prim.==# ww2 dt5 of lwild {
+                   DEFAULT
+                   -> (\ (eta1 :: GHC.IORef.IORef
+                                    Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                         (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                       (# eta2, Language.NGOVoid #))
+                        `cast`
+                      ((<GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                        ->_R Sym (GHC.Types.N:IO[0]
+                                      <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                              <GHC.Types.IO>_R
+                                                                              <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N))
+                   1#
+                   -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.ByteArray#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.Word#
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           GHC.Prim.Int# #)}
+                             ww
+                             (GHC.Prim.int2Word# ww1)
+                             dt3
+                             (GHC.Prim.int2Word# dt4)
+                             (GHC.Prim.int2Word# ww2)
+                             GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.narrow32Int# ds3 of wild {
+                        DEFAULT
+                        -> (\ (eta1 :: GHC.IORef.IORef
+                                         Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                              (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                            (# eta2, Language.NGOVoid #))
+                             `cast`
+                           ((<GHC.IORef.IORef
+                                Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                             ->_R Sym (GHC.Types.N:IO[0]
+                                           <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                   <GHC.Types.IO>_R
+                                                                                   <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N))
+                        0#
+                        -> case w1 of wild2 {
+                             []
+                             -> (\ (r :: GHC.IORef.IORef
+                                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                 case w of wild3 {
+                                   DEFAULT -> (# s, Language.NGOVoid #)
+                                   Language.NGOReadSet ds ds1
+                                   -> case ds1 of wild4 { Data.FastQ.ReadSet pairs singles ->
+                                      let {
+                                        exit :: GHC.IORef.IORef
+                                                  Control.Monad.Trans.Resource.Internal.ReleaseMap
+                                                -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                      Language.NGLessObject #)
+                                          <join 2> {- Arity: 2, Strictness: <L,U><S,U> -}
+                                        = \ (eta :: GHC.IORef.IORef
+                                                      Control.Monad.Trans.Resource.Internal.ReleaseMap)[OneShot]
+                                            (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                          let {
+                                            exit1 :: GHC.IORef.IORef
+                                                       Control.Monad.Trans.Resource.Internal.ReleaseMap
+                                                     -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                           Language.NGLessObject #)
+                                              <join 2> {- Arity: 2, Strictness: <L,U><S,U> -}
+                                            = \ (eta2 :: GHC.IORef.IORef
+                                                           Control.Monad.Trans.Resource.Internal.ReleaseMap)[OneShot]
+                                                (eta3 :: GHC.Prim.State#
+                                                           GHC.Prim.RealWorld)[OneShot] ->
+                                              letrec {
+                                                go :: [Data.FastQ.FastQFilePath]
+                                                      -> GHC.IORef.IORef
+                                                           Control.Monad.Trans.Resource.Internal.ReleaseMap
+                                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            Language.NGLessObject #)
+                                                  <join 3> {- Arity: 3,
+                                                              Strictness: <S,1*U><L,U><S,U> -}
+                                                = \ (ds5 :: [Data.FastQ.FastQFilePath])
+                                                    (eta4 :: GHC.IORef.IORef
+                                                               Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                                                    (eta5 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                                  case ds5 of wild6 {
+                                                    [] -> (# eta5, Language.NGOVoid #)
+                                                    : y ys
+                                                    -> case ((FileManagement.removeIfTemporary
+                                                                (case y of wild7 { Data.FastQ.FastQFilePath ds6 ds7 ->
+                                                                 ds7 }))
+                                                               `cast`
+                                                             (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                                        <GHC.Types.IO>_R
+                                                                                                        <()>_N)
+                                                               eta4)
+                                                              `cast`
+                                                            (GHC.Types.N:IO[0] <()>_R)
+                                                              eta5 of ds6 { (#,#) ipv ipv1 ->
+                                                       go ys eta4 ipv } }
+                                              } in
+                                              go singles eta2 eta3
+                                          } in
+                                          letrec {
+                                            go :: [(Data.FastQ.FastQFilePath,
+                                                    Data.FastQ.FastQFilePath)]
+                                                  -> GHC.IORef.IORef
+                                                       Control.Monad.Trans.Resource.Internal.ReleaseMap
+                                                  -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                        Language.NGLessObject #)
+                                              <join 3> {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
+                                            = \ (ds5 :: [(Data.FastQ.FastQFilePath,
+                                                          Data.FastQ.FastQFilePath)])
+                                                (eta2 :: GHC.IORef.IORef
+                                                           Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                                                (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                              case ds5 of wild6 {
+                                                [] -> exit1 eta2 eta3
+                                                : y ys
+                                                -> case ((FileManagement.removeIfTemporary
+                                                            (case y of wild7 { (,) ds6 y1 ->
+                                                             case y1 of wild8 { Data.FastQ.FastQFilePath ds7 ds8 ->
+                                                             ds8 } }))
+                                                           `cast`
+                                                         (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                                    <GHC.Types.IO>_R
+                                                                                                    <()>_N)
+                                                           eta2)
+                                                          `cast`
+                                                        (GHC.Types.N:IO[0] <()>_R)
+                                                          eta3 of ds6 { (#,#) ipv ipv1 ->
+                                                   go ys eta2 ipv } }
+                                          } in
+                                          go pairs eta eta1
+                                      } in
+                                      letrec {
+                                        go :: [(Data.FastQ.FastQFilePath, Data.FastQ.FastQFilePath)]
+                                              -> GHC.IORef.IORef
+                                                   Control.Monad.Trans.Resource.Internal.ReleaseMap
+                                              -> GHC.Prim.State# GHC.Prim.RealWorld
+                                              -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                    Language.NGLessObject #)
+                                          <join 3> {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
+                                        = \ (ds5 :: [(Data.FastQ.FastQFilePath,
+                                                      Data.FastQ.FastQFilePath)])
+                                            (eta :: GHC.IORef.IORef
+                                                      Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                                            (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                          case ds5 of wild6 {
+                                            [] -> exit eta eta1
+                                            : y ys
+                                            -> case ((FileManagement.removeIfTemporary
+                                                        (case y of wild7 { (,) x ds6 ->
+                                                         case x of wild8 { Data.FastQ.FastQFilePath ds7 ds8 ->
+                                                         ds8 } }))
+                                                       `cast`
+                                                     (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                                <GHC.Types.IO>_R
+                                                                                                <()>_N)
+                                                       eta)
+                                                      `cast`
+                                                    (GHC.Types.N:IO[0] <()>_R)
+                                                      eta1 of ds6 { (#,#) ipv ipv1 ->
+                                               go ys eta ipv } }
+                                      } in
+                                      go pairs r s }
+                                   Language.NGOMappedReadSet ds ds1 ds5
+                                   -> case ds1 of wild4 {
+                                        FileOrStream.File f
+                                        -> case ((FileManagement.removeIfTemporary f)
+                                                   `cast`
+                                                 (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                            <GHC.Types.IO>_R
+                                                                                            <()>_N)
+                                                   r)
+                                                  `cast`
+                                                (GHC.Types.N:IO[0] <()>_R)
+                                                  s of ds6 { (#,#) ipv ipv1 ->
+                                           (# ipv, Language.NGOVoid #) }
+                                        FileOrStream.Stream ipv ipv1 ipv2
+                                        -> (# s, Language.NGOVoid #) }
+                                   Language.NGOCounts ds
+                                   -> case ds of wild4 {
+                                        FileOrStream.File f
+                                        -> case ((FileManagement.removeIfTemporary f)
+                                                   `cast`
+                                                 (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                            <GHC.Types.IO>_R
+                                                                                            <()>_N)
+                                                   r)
+                                                  `cast`
+                                                (GHC.Types.N:IO[0] <()>_R)
+                                                  s of ds1 { (#,#) ipv ipv1 ->
+                                           (# ipv, Language.NGOVoid #) }
+                                        FileOrStream.Stream ipv ipv1 ipv2
+                                        -> (# s, Language.NGOVoid #) } })
+                                  `cast`
+                                ((<GHC.IORef.IORef
+                                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                        <GHC.Types.IO>_R
+                                                                                        <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N))
+                             : ipv ipv1
+                             -> (\ (eta1 :: GHC.IORef.IORef
+                                              Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                                 (# eta2, Language.NGOVoid #))
+                                  `cast`
+                                ((<GHC.IORef.IORef
+                                     Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                <Language.NGLessObject>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                        <GHC.Types.IO>_R
+                                                                                        <Language.NGLessObject>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Language.NGLessObject>_N)) } } } } }) -}
+8a90234c58ff87db4cb21b1d95b6b59f
+  $wloadModule ::
+    GHC.Prim.Void# -> NGLess.NGError.NGLessIO Modules.Module
+  {- Arity: 1, Strictness: <L,A>, Inline: [2],
+     Unfolding: (\ (void :: GHC.Prim.Void#) ->
+                 let {
+                   eta :: Modules.Module
+                   = case Modules.$fDefaultModule_$cdef of wild { Modules.Module ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                     case Data.Text.Show.unpackCString#
+                            "builtin.remove"# of dt { Data.Text.Internal.Text ipv ipv1 ipv2 ->
+                     case Data.Text.Show.unpackCString#
+                            "0.0"# of dt1 { Data.Text.Internal.Text ipv3 ipv4 ipv5 ->
+                     Modules.Module
+                       (Language.ModInfo dt dt1)
+                       ds1
+                       ds2
+                       ds3
+                       ds4
+                       (GHC.Types.:
+                          @ Modules.Function
+                          BuiltinModules.Remove.removeFunction
+                          (GHC.Types.[] @ Modules.Function))
+                       ds6
+                       BuiltinModules.Remove.executeRemove } } }
+                 } in
+                 (\ (eta1 :: GHC.IORef.IORef
+                               Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                    (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  (# eta2, eta #))
+                   `cast`
+                 ((<GHC.IORef.IORef
+                      Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Modules.Module>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                  <GHC.Types.IO>_R
+                                                                  <Modules.Module>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <Modules.Module>_N))) -}
+47b0bb093c4c8aee3bf7d35479f5595e
+  executeRemove ::
+    Data.Text.Internal.Text
+    -> Language.NGLessObject
+    -> NGLess.KwArgsValues
+    -> NGLess.NGError.NGLessIO Language.NGLessObject
+  {- Arity: 3, Strictness: <S(SSS),1*U(U,U,U)><L,U><L,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Data.Text.Internal.Text)
+                   (w1 :: Language.NGLessObject)
+                   (w2 :: NGLess.KwArgsValues) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 BuiltinModules.Remove.$wexecuteRemove ww1 ww2 ww3 w1 w2 }) -}
+d26d9a0988665334b7fddd67bcb52d38
+  loadModule ::
+    Data.Text.Internal.Text -> NGLess.NGError.NGLessIO Modules.Module
+  {- Arity: 1, Strictness: <L,A>, Inline: [2],
+     Unfolding: InlineRule (1, True, True)
+                (\ (w :: Data.Text.Internal.Text) ->
+                 BuiltinModules.Remove.$wloadModule GHC.Prim.void#) -}
+1407cc299d6f2b9aac7cb7572593a84b
+  loadModule1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "__remove"#) -}
+a7a4eaa38a9789c1267cb738a7a570b4
+  removeFunction :: Modules.Function
+  {- Strictness: m,
+     Unfolding: (Modules.Function
+                   BuiltinModules.Remove.loadModule1
+                     `cast`
+                   (Sym (Language.N:FuncName[0]))
+                   (GHC.Maybe.Nothing @ Language.NGLType)
+                   (GHC.Types.[] @ Modules.ArgCheck)
+                   Language.NGLVoid
+                   (GHC.Types.[] @ Modules.ArgInformation)
+                   GHC.Types.False
+                   (GHC.Types.[] @ Modules.FunctionCheck)) -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

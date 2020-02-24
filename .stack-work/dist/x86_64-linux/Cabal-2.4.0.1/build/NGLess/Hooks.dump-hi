@@ -1,0 +1,872 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:15:06.774275678 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Hooks 8065
+  interface hash: 7bc52b5ad75dd6a9c3fbd03e730a91f9
+  ABI hash: 8a39f54c4eaf7642cd4fc12b553e72b0
+  export-list hash: 24bf17a697127c14a078a48a76f9bae1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: af0c445c587eaa59b2143ec7cebee05f
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Hooks.registerFailHook
+  Hooks.registerHook
+  Hooks.triggerFailHook
+  Hooks.triggerHook
+  Hooks.Hook{Hooks.FinishOkHook}
+module dependencies: CmdArgs Configuration Data.FastQ Data.Sam
+                     Dependencies.Embedded FileManagement FileOrStream Language NGLess
+                     NGLess.NGError NGLess.NGLEnvironment Output Paths_NGLess
+                     Utils.Conduit Utils.LockFile Utils.Samtools Utils.Suggestion
+                     Utils.Utils Utils.Vector Version
+package dependencies: JuicyPixels-3.3.4 MissingH-1.4.1.0
+                      StateVar-1.2 active-0.2.0.14 adjunctions-4.4 aeson-1.4.6.0
+                      ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9 array-0.5.3.0 async-2.2.2
+                      attoparsec-0.13.2.3 base-4.12.0.0 base-compat-0.10.5
+                      base-orphans-0.8.1 base64-bytestring-1.0.0.2 bifunctors-5.5.6
+                      binary-0.8.6.0 blaze-builder-0.4.1.0 bytes-0.15.5
+                      bytestring-0.10.8.2 bzlib-conduit-0.3.0.2 call-stack-0.1.0
+                      cereal-0.5.8.1 cereal-conduit-0.8.0 charset-0.3.7.1 colour-2.3.5
+                      comonad-5.0.6 conduit-1.3.1.2 conduit-algorithms-0.0.11.0
+                      conduit-extra-1.3.4 conduit-zstd-0.0.1.1 configurator-0.3.0.0
+                      containers-0.6.0.1 contravariant-1.5.2 convertible-1.1.1.0
+                      data-default-class-0.1.2.0 deepseq-1.4.4.0 diagrams-core-1.4.2
+                      diagrams-lib-1.4.3 diagrams-solve-0.1.1 diagrams-svg-1.4.3
+                      directory-1.3.3.0 distributive-0.6.1 dlist-0.8.0.7
+                      dual-tree-0.2.2.1 edit-distance-0.2.2.1 errors-2.3.0
+                      exceptions-0.10.4 extra-1.6.18 file-embed-0.0.11.1 filepath-1.4.2.1
+                      fingertree-0.1.4.2 free-5.1.3 ghc-boot-th-8.6.5 ghc-prim-0.5.3
+                      gitrev-1.3.1 hashable-1.2.7.0 hostname-1.0 inline-c-0.7.0.1
+                      integer-gmp-1.0.2.0 integer-logarithms-1.0.3 intervals-0.8.1
+                      kan-extensions-5.2 lens-4.17.1 linear-1.20.9 lzma-0.0.0.3
+                      lzma-conduit-1.2.1 monad-loops-0.4.3 mono-traversable-1.0.15.1
+                      monoid-extras-0.5.1 mtl-2.2.2 newtype-generics-0.5.4
+                      old-locale-1.0.0.7 old-time-1.1.0.3 optparse-applicative-0.14.3.0
+                      parsec-3.1.14.0 parsers-0.12.10 pretty-1.1.3.6 primitive-0.6.4.0
+                      process-1.6.5.0 profunctors-5.3 random-1.1 reflection-2.1.5
+                      regex-1.0.2.0 regex-base-0.93.2 regex-compat-0.95.1
+                      regex-pcre-builtin-0.94.5.8.8.35 regex-posix-0.95.2
+                      regex-tdfa-1.2.3.2 regex-tdfa-text-1.0.0.3 resourcet-1.2.2
+                      safe-0.3.18 safeio-0.0.5.0 scientific-0.3.6.2 semigroupoids-5.3.4
+                      split-0.2.3.3 stm-2.5.0.0 stm-chans-3.0.0.4 stm-conduit-4.0.1
+                      streaming-commons-0.2.1.1 strict-0.3.2 svg-builder-0.1.1
+                      tagged-0.8.6 tar-0.5.1.1 template-haskell-2.14.0.0 text-1.2.3.1
+                      th-abstraction-0.3.1.0 time-1.8.0.2 time-compat-1.9.2.2
+                      time-locale-compat-0.1.1.5 transformers-0.5.6.2
+                      transformers-base-0.4.5.2 transformers-compat-0.6.5 unix-2.7.2.2
+                      unix-compat-0.5.2 unliftio-0.2.12 unliftio-core-0.1.2.0
+                      unordered-containers-0.2.10.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vector-0.12.0.3 vector-algorithms-0.8.0.3 zlib-0.6.2.1 zstd-0.1.1.2
+orphans: conduit-extra-1.3.4:Data.Conduit.Process
+         regex-1.0.2.0:Text.RE.TDFA.String
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text
+         regex-tdfa-text-1.0.0.3:Text.Regex.TDFA.Text.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.String
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.Sequence
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString.Lazy
+         regex-pcre-builtin-0.94.5.8.8.35:Text.Regex.PCRE.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.3.2:Text.Regex.TDFA.String
+         regex-posix-0.95.2:Text.Regex.Posix.String
+         regex-posix-0.95.2:Text.Regex.Posix.Sequence
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString.Lazy
+         regex-posix-0.95.2:Text.Regex.Posix.ByteString
+         regex-base-0.93.2:Text.Regex.Base.Context
+         convertible-1.1.1.0:Data.Convertible.Instances.C
+         convertible-1.1.1.0:Data.Convertible.Instances.Map
+         convertible-1.1.1.0:Data.Convertible.Instances.Text
+         convertible-1.1.1.0:Data.Convertible.Instances.Time
+         convertible-1.1.1.0:Data.Convertible.Instances.Num
+         attoparsec-0.13.2.3:Data.Attoparsec.ByteString.Char8
+         diagrams-lib-1.4.3:Diagrams.Animation.Active
+         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+         diagrams-lib-1.4.3:Diagrams.TwoD.Segment
+         diagrams-lib-1.4.3:Diagrams.Trail
+         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+         diagrams-core-1.4.2:Diagrams.Core.Types
+         monoid-extras-0.5.1:Data.Monoid.MList
+         diagrams-core-1.4.2:Diagrams.Core.Points
+         time-1.8.0.2:Data.Time.Clock.TAI reflection-2.1.5:Data.Reflection
+         linear-1.20.9:Linear.Instances vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         configurator-0.3.0.0:Data.Configurator.Instances
+         attoparsec-0.13.2.3:Data.Attoparsec.Text.Internal
+         colour-2.3.5:Data.Colour hashable-1.2.7.0:Data.Hashable.Generic
+         text-1.2.3.1:Data.Text.Lazy stm-2.5.0.0:Control.Monad.STM
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: JuicyPixels-3.3.4:Codec.Picture.Tga
+                         JuicyPixels-3.3.4:Codec.Picture.Tiff
+                         JuicyPixels-3.3.4:Codec.Picture.Types
+                         NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:NGLess.NGError
+                         active-0.2.0.14:Data.Active adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.4.6.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.3:Data.Attoparsec.Internal.Types
+                         base-4.12.0.0:Control.Applicative base-4.12.0.0:Data.Complex
+                         base-4.12.0.0:Data.Functor.Compose base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         bifunctors-5.5.6:Data.Bifunctor.Biff
+                         bifunctors-5.5.6:Data.Bifunctor.Clown
+                         bifunctors-5.5.6:Data.Bifunctor.Fix
+                         bifunctors-5.5.6:Data.Bifunctor.Flip
+                         bifunctors-5.5.6:Data.Bifunctor.Join
+                         bifunctors-5.5.6:Data.Bifunctor.Joker
+                         bifunctors-5.5.6:Data.Bifunctor.Product
+                         bifunctors-5.5.6:Data.Bifunctor.Sum
+                         bifunctors-5.5.6:Data.Bifunctor.Tannen
+                         bifunctors-5.5.6:Data.Bifunctor.Wrapped bytes-0.15.5:Data.Bytes.Get
+                         bytes-0.15.5:Data.Bytes.Signed bytes-0.15.5:Data.Bytes.VarInt
+                         conduit-1.3.1.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.1.2:Data.Conduit.Internal.Pipe
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         diagrams-core-1.4.2:Diagrams.Core.Envelope
+                         diagrams-core-1.4.2:Diagrams.Core.Measure
+                         diagrams-core-1.4.2:Diagrams.Core.Names
+                         diagrams-core-1.4.2:Diagrams.Core.Points
+                         diagrams-core-1.4.2:Diagrams.Core.Query
+                         diagrams-core-1.4.2:Diagrams.Core.Style
+                         diagrams-core-1.4.2:Diagrams.Core.Trace
+                         diagrams-core-1.4.2:Diagrams.Core.Transform
+                         diagrams-core-1.4.2:Diagrams.Core.Types
+                         diagrams-core-1.4.2:Diagrams.Core.V
+                         diagrams-lib-1.4.3:Diagrams.Angle
+                         diagrams-lib-1.4.3:Diagrams.Animation.Active
+                         diagrams-lib-1.4.3:Diagrams.BoundingBox
+                         diagrams-lib-1.4.3:Diagrams.Coordinates
+                         diagrams-lib-1.4.3:Diagrams.Direction
+                         diagrams-lib-1.4.3:Diagrams.Located
+                         diagrams-lib-1.4.3:Diagrams.Path
+                         diagrams-lib-1.4.3:Diagrams.Segment
+                         diagrams-lib-1.4.3:Diagrams.Size
+                         diagrams-lib-1.4.3:Diagrams.Tangent
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Camera
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Light
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Shapes
+                         diagrams-lib-1.4.3:Diagrams.ThreeD.Types
+                         diagrams-lib-1.4.3:Diagrams.Trail
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Attributes
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Image
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Path
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Segment.Bernstein
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Text
+                         diagrams-lib-1.4.3:Diagrams.TwoD.Types
+                         diagrams-svg-1.4.3:Diagrams.Backend.SVG dlist-0.8.0.7:Data.DList
+                         dual-tree-0.2.2.1:Data.Tree.DUAL.Internal
+                         fingertree-0.1.4.2:Data.FingerTree
+                         free-5.1.3:Control.Comonad.Cofree
+                         free-5.1.3:Control.Comonad.Trans.Cofree
+                         free-5.1.3:Control.Monad.Free free-5.1.3:Control.Monad.Trans.Free
+                         ghc-boot-th-8.6.5:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.6.5:GHC.LanguageExtensions.Type
+                         inline-c-0.7.0.1:Language.C.Inline
+                         inline-c-0.7.0.1:Language.C.Inline.Context
+                         intervals-0.8.1:Numeric.Interval.Kaucher
+                         kan-extensions-5.2:Data.Functor.Day
+                         kan-extensions-5.2:Data.Functor.Yoneda lens-4.17.1:Control.Lens.At
+                         lens-4.17.1:Control.Lens.Internal.Indexed
+                         lens-4.17.1:Control.Lens.Reified lens-4.17.1:Control.Lens.Tuple
+                         lens-4.17.1:Control.Lens.Wrapped lens-4.17.1:Control.Lens.Zoom
+                         linear-1.20.9:Linear.Affine linear-1.20.9:Linear.Plucker
+                         linear-1.20.9:Linear.Quaternion linear-1.20.9:Linear.V
+                         linear-1.20.9:Linear.V0 linear-1.20.9:Linear.V1
+                         linear-1.20.9:Linear.V2 linear-1.20.9:Linear.V3
+                         linear-1.20.9:Linear.V4
+                         mono-traversable-1.0.15.1:Data.MonoTraversable
+                         mono-traversable-1.0.15.1:Data.NonNull
+                         mono-traversable-1.0.15.1:Data.Sequences
+                         newtype-generics-0.5.4:Control.Newtype.Generics
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         profunctors-5.3:Data.Profunctor.Composition
+                         profunctors-5.3:Data.Profunctor.Rep
+                         regex-1.0.2.0:Text.RE.ZeInternals.NamedCaptures
+                         resourcet-1.2.2:Control.Monad.Trans.Resource.Internal
+                         stm-conduit-4.0.1:Data.Conduit.Async.Composition
+                         tagged-0.8.6:Data.Tagged
+                         template-haskell-2.14.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.3.1.0:Language.Haskell.TH.Datatype
+                         unliftio-0.2.12:UnliftIO.Internals.Async
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.3:Data.Vector vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Storable
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+                         zlib-0.6.2.1:Codec.Compression.Zlib.Stream
+import  -/  NGLess a5aa819ac1d32c5f90c4109da4ddd56b
+  exports: c338d02d81e70b5020d9e8bfbcb7ea8c
+import  -/  NGLess.NGError 9175c652eec68d1a195f3eb2d7471cb5
+  NGLessIO f1fd902a0de985a61e8d9110730dfc21
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Control.Monad.IO.Class e96805f9d79f75be66a0d44eb83064c1
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:Data.IORef e8e1ce7d64831ebb3853a1cd9fb4e228
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO.Unsafe f9f58d6cf129f44ee29b8f10a48eb26c
+import  -/  base-4.12.0.0:GHC.IORef c4811a8ca9fa1f2f983a2e196af9a59c
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:System.IO.Unsafe e8c0e3a0a9cf9814796832fe86e2e8a6
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+b154051f610720c9ba2f91061cefe228
+  $fBoundedHook :: GHC.Enum.Bounded Hooks.Hook
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Hooks.Hook Hooks.FinishOkHook Hooks.FinishOkHook -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook :: GHC.Enum.Enum Hooks.Hook
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Hooks.Hook
+                  Hooks.$fEnumHook_$csucc
+                  Hooks.$fEnumHook_$cpred
+                  Hooks.$fEnumHook_$ctoEnum
+                  Hooks.$fEnumHook_$cfromEnum
+                  Hooks.$fEnumHook_$cenumFrom
+                  Hooks.$fEnumHook_$cenumFromThen
+                  Hooks.$fEnumHook_$cenumFromTo
+                  Hooks.$fEnumHook_$cenumFromThenTo -}
+273c46bcc650985cb070559ad6a243e7
+  $fEnumHook1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Hooks.$fEnumHook12
+                   Hooks.$fEnumHook2
+                   GHC.Stack.Types.EmptyCallStack) -}
+3d879484cde3a35702d69caf8174af6b
+  $fEnumHook10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Hooks.$fEnumHook11) -}
+d9da01ab8930d6ba83ca2536471ebc22
+  $fEnumHook11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+4cef3a52686ae47936f57a6e32833372
+  $fEnumHook12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Hooks.$fEnumHook13) -}
+9c094ccf511fe09aa9b8fc0639a9e301
+  $fEnumHook13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("error"#) -}
+3074b88083f4e5b88fb00b0f2172e3e5
+  $fEnumHook2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Hooks.$fEnumHook10
+                   Hooks.$fEnumHook8
+                   Hooks.$fEnumHook6
+                   Hooks.$fEnumHook5
+                   Hooks.$fEnumHook4
+                   Hooks.$fEnumHook5
+                   Hooks.$fEnumHook3) -}
+0d3e68e9c86f3842823af98e5c439dff
+  $fEnumHook3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 43#) -}
+d4d42117ffb1e97580b2fe3f03e76682
+  $fEnumHook4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 39#) -}
+07eeb809fe31b51dfde2f759d499a563
+  $fEnumHook5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 22#) -}
+f0a7b7bcb4ac9f02b30321cd7827188c
+  $fEnumHook6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Hooks.$fEnumHook7) -}
+783c1fbb7ffa72b2561284f23abbbadf
+  $fEnumHook7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLess/Hooks.hs"#) -}
+5dcdf743efbf4551fe8157015ebd4450
+  $fEnumHook8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Hooks.$fEnumHook9) -}
+e97be1d0661a197a711836e14cd67282
+  $fEnumHook9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Hooks"#) -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$cenumFrom :: Hooks.Hook -> [Hooks.Hook]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Hooks.Hook) ->
+                 case w of w1 { Hooks.FinishOkHook ->
+                 Hooks.$w$cenumFrom Hooks.FinishOkHook }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$cenumFromThen ::
+    Hooks.Hook -> Hooks.Hook -> [Hooks.Hook]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>m2,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Hooks.Hook) (w1 :: Hooks.Hook) ->
+                 case w of w2 { Hooks.FinishOkHook ->
+                 case w1 of w3 { Hooks.FinishOkHook ->
+                 GHC.Types.:
+                   @ Hooks.Hook
+                   Hooks.FinishOkHook
+                   (letrec {
+                      go_up :: GHC.Prim.Int# -> [Hooks.Hook]
+                        {- Arity: 1, Strictness: <S,U> -}
+                      = \ (x :: GHC.Prim.Int#) ->
+                        case GHC.Prim.># x 0# of lwild1 {
+                          DEFAULT
+                          -> GHC.Types.:
+                               @ Hooks.Hook
+                               (GHC.Prim.tagToEnum# @ Hooks.Hook x)
+                               (go_up x)
+                          1#
+                          -> GHC.Types.:
+                               @ Hooks.Hook
+                               (GHC.Prim.tagToEnum# @ Hooks.Hook x)
+                               (GHC.Types.[] @ Hooks.Hook) }
+                    } in
+                    go_up 0#) } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$cenumFromThenTo ::
+    Hooks.Hook -> Hooks.Hook -> Hooks.Hook -> [Hooks.Hook]
+  {- Arity: 3, Strictness: <S,1*H><S,1*H><S,1*H>m2, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Hooks.Hook) (w1 :: Hooks.Hook) (w2 :: Hooks.Hook) ->
+                 case w of w3 { Hooks.FinishOkHook ->
+                 case w1 of w4 { Hooks.FinishOkHook ->
+                 case w2 of w5 { Hooks.FinishOkHook ->
+                 case Hooks.$w$cenumFromThenTo
+                        Hooks.FinishOkHook
+                        Hooks.FinishOkHook
+                        Hooks.FinishOkHook of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ Hooks.Hook ww1 ww2 } } } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$cenumFromTo :: Hooks.Hook -> Hooks.Hook -> [Hooks.Hook]
+  {- Arity: 2, Strictness: <S,1*H><S,1*H>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Hooks.Hook) (w1 :: Hooks.Hook) ->
+                 case w of w2 { Hooks.FinishOkHook ->
+                 case w1 of w3 { Hooks.FinishOkHook ->
+                 Hooks.$w$cenumFromTo Hooks.FinishOkHook Hooks.FinishOkHook } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$cfromEnum :: Hooks.Hook -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Hooks.Hook) ->
+                 case a of wild { Hooks.FinishOkHook -> GHC.Types.I# 0# }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$cpred :: Hooks.Hook -> Hooks.Hook
+  {- Arity: 1, Strictness: <B,1*H>x -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$csucc :: Hooks.Hook -> Hooks.Hook
+  {- Arity: 1, Strictness: <B,1*H>x -}
+b154051f610720c9ba2f91061cefe228
+  $fEnumHook_$ctoEnum :: GHC.Types.Int -> Hooks.Hook
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Hooks.$w$ctoEnum ww1 }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEqHook :: GHC.Classes.Eq Hooks.Hook
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Hooks.Hook Hooks.$fEqHook_$c== Hooks.$fEqHook_$c/= -}
+b154051f610720c9ba2f91061cefe228
+  $fEqHook_$c/= :: Hooks.Hook -> Hooks.Hook -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Hooks.Hook) (y :: Hooks.Hook) ->
+                 case x of wild { Hooks.FinishOkHook ->
+                 case y of wild1 { Hooks.FinishOkHook -> GHC.Types.False } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fEqHook_$c== :: Hooks.Hook -> Hooks.Hook -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Hooks.Hook) (ds1 :: Hooks.Hook) ->
+                 case ds of wild { Hooks.FinishOkHook ->
+                 case ds1 of wild1 { Hooks.FinishOkHook -> GHC.Types.True } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fOrdHook :: GHC.Classes.Ord Hooks.Hook
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Hooks.Hook
+                  Hooks.$fEqHook
+                  Hooks.$fOrdHook_$ccompare
+                  Hooks.$fOrdHook_$c<
+                  Hooks.$fOrdHook_$c<=
+                  Hooks.$fOrdHook_$c>
+                  Hooks.$fEqHook_$c==
+                  Hooks.$fOrdHook_$cmax
+                  Hooks.$fOrdHook_$cmax -}
+b154051f610720c9ba2f91061cefe228
+  $fOrdHook_$c< :: Hooks.Hook -> Hooks.Hook -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Hooks.Hook) (b :: Hooks.Hook) ->
+                 case a of wild { Hooks.FinishOkHook ->
+                 case b of wild1 { Hooks.FinishOkHook -> GHC.Types.False } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fOrdHook_$c<= :: Hooks.Hook -> Hooks.Hook -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Hooks.Hook) (b :: Hooks.Hook) ->
+                 case b of wild { Hooks.FinishOkHook ->
+                 case a of wild1 { Hooks.FinishOkHook -> GHC.Types.True } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fOrdHook_$c> :: Hooks.Hook -> Hooks.Hook -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Hooks.Hook) (b :: Hooks.Hook) ->
+                 case b of wild { Hooks.FinishOkHook ->
+                 case a of wild1 { Hooks.FinishOkHook -> GHC.Types.False } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fOrdHook_$ccompare ::
+    Hooks.Hook -> Hooks.Hook -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Hooks.Hook) (b :: Hooks.Hook) ->
+                 case a of wild { Hooks.FinishOkHook ->
+                 case b of wild1 { Hooks.FinishOkHook -> GHC.Types.EQ } }) -}
+b154051f610720c9ba2f91061cefe228
+  $fOrdHook_$cmax :: Hooks.Hook -> Hooks.Hook -> Hooks.Hook
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U()><S,1*H>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Hooks.Hook) (y :: Hooks.Hook) ->
+                 case y of wild { Hooks.FinishOkHook -> x }) -}
+b154051f610720c9ba2f91061cefe228
+  $fShowHook :: GHC.Show.Show Hooks.Hook
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Hooks.Hook
+                  Hooks.$fShowHook_$cshowsPrec
+                  Hooks.$fShowHook_$cshow
+                  Hooks.$fShowHook_$cshowList -}
+b154051f610720c9ba2f91061cefe228
+  $fShowHook_$cshow :: Hooks.Hook -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Hooks.Hook) ->
+                 case x of wild { Hooks.FinishOkHook ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b ->
+                    GHC.CString.unpackFoldrCString# @ b "FinishOkHook"#) }) -}
+b154051f610720c9ba2f91061cefe228
+  $fShowHook_$cshowList :: [Hooks.Hook] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Hooks.Hook]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Hooks.Hook
+                   (\ (ds :: Hooks.Hook) ->
+                    case ds of wild { Hooks.FinishOkHook ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (GHC.CString.unpackCString# "FinishOkHook"#) })
+                   ls
+                   s) -}
+b154051f610720c9ba2f91061cefe228
+  $fShowHook_$cshowsPrec ::
+    GHC.Types.Int -> Hooks.Hook -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Types.Int) (ds1 :: Hooks.Hook) ->
+                 case ds1 of wild { Hooks.FinishOkHook ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Base.build
+                      @ GHC.Types.Char
+                      (\ @ b ->
+                       GHC.CString.unpackFoldrCString# @ b "FinishOkHook"#)) }) -}
+79b6be77be698412e9f594129685beea
+  $tc'FinishOkHook :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9849608832520301303##
+                   1039993604339774020##
+                   Hooks.$trModule
+                   Hooks.$tc'FinishOkHook2
+                   0#
+                   Hooks.$tc'FinishOkHook1) -}
+382c40ed4f3e7e1684939feb5a58553f
+  $tc'FinishOkHook1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+22ae9ee498de81ee0a17cc2a946d8c73
+  $tc'FinishOkHook2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Hooks.$tc'FinishOkHook3) -}
+176a796c26a1165386d5bbaf03da1a74
+  $tc'FinishOkHook3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FinishOkHook"#) -}
+5f3deba75ffce886864389f1667d7be9
+  $tcHook :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2614846692340862616##
+                   17356098548037616460##
+                   Hooks.$trModule
+                   Hooks.$tcHook1
+                   0#
+                   GHC.Types.krep$*) -}
+a73085143b43eb78f6aacfaa7aed0ef0
+  $tcHook1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Hooks.$tcHook2) -}
+f27b9f7d38c10e70e455d837c23244d7
+  $tcHook2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Hook"#) -}
+7b9b4ee6a4bcceeb8fba8c2cc7101f2a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Hooks.$trModule2 Hooks.$trModule1) -}
+f7d27d8e438c0680138754f573f47bdd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Hooks.$fEnumHook9) -}
+c276aad09b0d7bcbc4428f0472e23987
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Hooks.$fEnumHook11) -}
+b154051f610720c9ba2f91061cefe228
+  $w$cenumFrom :: Hooks.Hook -> [Hooks.Hook]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>, Inline: [2],
+     Unfolding: (\ (w :: Hooks.Hook) ->
+                 letrec {
+                   go :: GHC.Prim.Int# -> [Hooks.Hook]
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Prim.Int#) ->
+                     GHC.Types.:
+                       @ Hooks.Hook
+                       (GHC.Prim.tagToEnum# @ Hooks.Hook x)
+                       (case x of wild {
+                          DEFAULT -> go (GHC.Prim.+# wild 1#)
+                          0# -> GHC.Types.[] @ Hooks.Hook })
+                 } in
+                 go 0#) -}
+b154051f610720c9ba2f91061cefe228
+  $w$cenumFromThenTo ::
+    Hooks.Hook
+    -> Hooks.Hook -> Hooks.Hook -> (# Hooks.Hook, [Hooks.Hook] #)
+  {- Arity: 3, Strictness: <L,A><L,A><L,A>, Inline: [2],
+     Unfolding: (\ (w :: Hooks.Hook)
+                   (w1 :: Hooks.Hook)
+                   (w2 :: Hooks.Hook) ->
+                 (# Hooks.$w$ctoEnum 0#,
+                    letrec {
+                      go_up :: GHC.Prim.Int# -> [Hooks.Hook]
+                        {- Arity: 1, Strictness: <S,U> -}
+                      = \ (x :: GHC.Prim.Int#) ->
+                        case GHC.Prim.># x 0# of lwild1 {
+                          DEFAULT -> GHC.Types.: @ Hooks.Hook (Hooks.$w$ctoEnum x) (go_up x)
+                          1#
+                          -> GHC.Types.:
+                               @ Hooks.Hook
+                               (Hooks.$w$ctoEnum x)
+                               (GHC.Types.[] @ Hooks.Hook) }
+                    } in
+                    go_up 0# #)) -}
+b154051f610720c9ba2f91061cefe228
+  $w$cenumFromTo :: Hooks.Hook -> Hooks.Hook -> [Hooks.Hook]
+  {- Arity: 2, Strictness: <L,A><L,A>, Inline: [2],
+     Unfolding: (\ (w :: Hooks.Hook) (w1 :: Hooks.Hook) ->
+                 letrec {
+                   go :: GHC.Prim.Int# -> [Hooks.Hook]
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Prim.Int#) ->
+                     GHC.Types.:
+                       @ Hooks.Hook
+                       (Hooks.$w$ctoEnum x)
+                       (case x of wild {
+                          DEFAULT -> go (GHC.Prim.+# wild 1#)
+                          0# -> GHC.Types.[] @ Hooks.Hook })
+                 } in
+                 go 0#) -}
+b154051f610720c9ba2f91061cefe228
+  $w$ctoEnum :: GHC.Prim.Int# -> Hooks.Hook
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   $j :: Hooks.Hook <join 0> {- Strictness: x -}
+                   = GHC.Err.error
+                       @ 'GHC.Types.LiftedRep
+                       @ Hooks.Hook
+                       Hooks.$fEnumHook1
+                         `cast`
+                       (Sym (GHC.Classes.N:IP[0]
+                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                       (GHC.CString.unpackAppendCString#
+                          "toEnum{Hook}: tag ("#
+                          (case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww
+                                  (GHC.CString.unpackAppendCString#
+                                     ") is outside of enumeration's range (0,"#
+                                     (case GHC.Show.$wshowSignedInt
+                                             0#
+                                             0#
+                                             (GHC.CString.unpackCString#
+                                                ")"#) of ww4 { (#,#) ww5 ww6 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww5
+                                        ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                 } in
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> $j
+                   1#
+                   -> case GHC.Prim.<=# ww 0# of lwild1 {
+                        DEFAULT -> $j 1# -> GHC.Prim.tagToEnum# @ Hooks.Hook ww } }) -}
+b154051f610720c9ba2f91061cefe228
+  data Hook = FinishOkHook
+0a45e74df104b72d024580b25edcdba9
+  failHooks :: GHC.IORef.IORef [GHC.Types.IO ()]
+  {- Inline: -}
+653bb1840198a446b9da29a9344588a2
+  nglHooks ::
+    GHC.IORef.IORef [(Hooks.Hook, NGLess.NGError.NGLessIO ())]
+  {- Inline: -}
+b4ac53175ee60361396134993379b3ba
+  registerFailHook :: GHC.Types.IO () -> NGLess.NGError.NGLessIO ()
+  {- Arity: 3, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Hooks.registerFailHook1
+                  `cast`
+                (<GHC.Types.IO ()>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R
+                                                          <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+0dae4e8336938eb2c953a65b5f86f698
+  registerFailHook1 ::
+    GHC.Types.IO ()
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (act :: GHC.Types.IO ())
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Hooks.failHooks
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <[GHC.Types.IO
+                                                ()]>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [GHC.Types.IO ()]
+                        var#
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [GHC.Types.IO ()]
+                        var#
+                        (GHC.Types.: @ (GHC.Types.IO ()) act ipv1)
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } } }) -}
+ef6e7ca4bf91f013b48a72013e2316ce
+  registerHook ::
+    Hooks.Hook
+    -> NGLess.NGError.NGLessIO () -> NGLess.NGError.NGLessIO ()
+  {- Arity: 4, Strictness: <L,U><L,U><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Hooks.registerHook1
+                  `cast`
+                (<Hooks.Hook>_R
+                 ->_R <NGLess.NGError.NGLessIO ()>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R
+                                                          <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+46bdd80146a372873ef7c375786430ce
+  registerHook1 ::
+    Hooks.Hook
+    -> NGLess.NGError.NGLessIO ()
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,U><L,U><L,A><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ (hook :: Hooks.Hook)
+                   (act :: NGLess.NGError.NGLessIO ())
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Hooks.nglHooks
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <[(Hooks.Hook,
+                                               NGLess.NGError.NGLessIO
+                                                 ())]>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [(Hooks.Hook, NGLess.NGError.NGLessIO ())]
+                        var#
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [(Hooks.Hook, NGLess.NGError.NGLessIO ())]
+                        var#
+                        (GHC.Types.:
+                           @ (Hooks.Hook, NGLess.NGError.NGLessIO ())
+                           (hook, act)
+                           ipv1)
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } } }) -}
+ad392c7be0656b5d3ba10fd94ce0ccb2
+  triggerFailHook :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Hooks.triggerFailHook1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+30da187cc202a6abfc03b0dd1988a7b2
+  triggerFailHook1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Hooks.failHooks
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <[GHC.Types.IO
+                                                ()]>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [GHC.Types.IO ()]
+                        var#
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 letrec {
+                   go :: [GHC.Types.IO ()]
+                         -> GHC.Prim.State# GHC.Prim.RealWorld
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                     <join 2> {- Arity: 2 -}
+                   = \ (ds :: [GHC.Types.IO ()])
+                       (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case ds of wild1 {
+                       [] -> (# eta, GHC.Tuple.() #)
+                       : y ys
+                       -> case y `cast` (GHC.Types.N:IO[0] <()>_R)
+                                 eta of ds2 { (#,#) ipv2 ipv3 ->
+                          go ys ipv2 } }
+                 } in
+                 go ipv1 ipv } }) -}
+80d3fce30eefd7777f3ad8be52d199ca
+  triggerHook :: Hooks.Hook -> NGLess.NGError.NGLessIO ()
+  {- Arity: 3, Strictness: <L,1*H><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Hooks.triggerHook1
+                  `cast`
+                (<Hooks.Hook>_R
+                 ->_R (<GHC.IORef.IORef
+                          Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <()>_R)) ; (Sym (Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                          <GHC.Types.IO>_R
+                                                          <()>_N) ; Sym (NGLess.NGError.N:NGLessIO[0]) <()>_N)) -}
+f8dc8d7ff0b836f5ed2f61d2a712bcb6
+  triggerHook1 ::
+    Hooks.Hook
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,1*H><L,U><S,U>,
+     Unfolding: (\ (hook :: Hooks.Hook)
+                   (eta :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Hooks.nglHooks
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <[(Hooks.Hook,
+                                               NGLess.NGError.NGLessIO
+                                                 ())]>_N) of wild { GHC.STRef.STRef var# ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ [(Hooks.Hook, NGLess.NGError.NGLessIO ())]
+                        var#
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild1 {
+                   [] -> (# ipv, GHC.Tuple.() #)
+                   : y ys
+                   -> case y of wild2 { (,) h act ->
+                      case h of wild3 { Hooks.FinishOkHook ->
+                      case hook of wild4 { Hooks.FinishOkHook ->
+                      case (act
+                              `cast`
+                            (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                       <GHC.Types.IO>_R <()>_N)
+                              eta)
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      letrec {
+                        go :: [(Hooks.Hook, NGLess.NGError.NGLessIO ())]
+                              -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+                              -> GHC.Prim.State# GHC.Prim.RealWorld
+                              -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                          <join 3> {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
+                        = \ (ds :: [(Hooks.Hook, NGLess.NGError.NGLessIO ())])
+                            (eta2 :: GHC.IORef.IORef
+                                       Control.Monad.Trans.Resource.Internal.ReleaseMap)
+                            (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case ds of wild5 {
+                            [] -> (# eta3, GHC.Tuple.() #)
+                            : y1 ys1
+                            -> case y1 of wild6 { (,) h1 act1 ->
+                               case h1 of wild7 { Hooks.FinishOkHook ->
+                               case (act1
+                                       `cast`
+                                     (NGLess.NGError.N:NGLessIO[0] <()>_N ; Control.Monad.Trans.Resource.Internal.N:ResourceT[0]
+                                                                                <GHC.Types.IO>_R
+                                                                                <()>_N)
+                                       eta2)
+                                      `cast`
+                                    (GHC.Types.N:IO[0] <()>_R)
+                                      eta3 of ds3 { (#,#) ipv4 ipv5 ->
+                               go ys1 eta2 ipv4 } } } }
+                      } in
+                      go ys eta ipv2 } } } } } } }) -}
+instance GHC.Enum.Bounded [Hooks.Hook] = Hooks.$fBoundedHook
+instance GHC.Enum.Enum [Hooks.Hook] = Hooks.$fEnumHook
+instance GHC.Classes.Eq [Hooks.Hook] = Hooks.$fEqHook
+instance GHC.Classes.Ord [Hooks.Hook] = Hooks.$fOrdHook
+instance GHC.Show.Show [Hooks.Hook] = Hooks.$fShowHook
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

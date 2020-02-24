@@ -1,0 +1,2751 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:26.769849514 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:CmdArgs 8065
+  interface hash: 12a42b7fc72a926abf94b6a8471a41cc
+  ABI hash: eb1bc9aa30723b0d6340ab204ddf34f6
+  export-list hash: 6efb1ddd7ec496d3ab4280357ebeda0a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: dab5cee7481434f86a5e61159433ad18
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CmdArgs.nglessArgs
+  CmdArgs.ColorSetting{CmdArgs.AutoColor CmdArgs.ForceColor CmdArgs.NoColor}
+  CmdArgs.NGLessArgs{CmdArgs.NGLessArgs color mode quiet verbosity}
+  CmdArgs.NGLessInput{CmdArgs.InlineScript CmdArgs.ScriptFilePath}
+  CmdArgs.NGLessMode{CmdArgs.CheckInstallMode CmdArgs.CreateReferencePackMode CmdArgs.DefaultMode CmdArgs.DownloadDemoMode CmdArgs.DownloadFileMode CmdArgs.InstallGenMode CmdArgs.PrintPathMode checkInstallVerbose config_files createReportDirectory debug_mode demoName deprecationCheck experimentalFeatures exportCWL exportJSON extraArgs functional_map_url genome_url gtf_url html_report_directory indexPath input keep_temporary_files localFile nThreads no_header oname origUrl pathDesired print_last refname searchPath strictThreads subsampleMode temporary_directory trace_flag validateOnly}
+  CmdArgs.NThreadsOpts{CmdArgs.NThreads CmdArgs.NThreadsAuto}
+  CmdArgs.Verbosity{CmdArgs.Loud CmdArgs.Normal CmdArgs.Quiet}
+module dependencies:
+package dependencies: ansi-terminal-0.9.1 ansi-wl-pprint-0.6.9
+                      array-0.5.3.0 base-4.12.0.0* binary-0.8.6.0 bytestring-0.10.8.2
+                      colour-2.3.5 configurator-0.3.0.0 containers-0.6.0.1
+                      deepseq-1.4.4.0 ghc-prim-0.5.3 hashable-1.2.7.0 integer-gmp-1.0.2.0
+                      optparse-applicative-0.14.3.0 process-1.6.5.0 text-1.2.3.1*
+                      transformers-0.5.6.2 unix-2.7.2.2 unordered-containers-0.2.10.0
+orphans: colour-2.3.5:Data.Colour
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.6.0:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.1:Data.Text.Show base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.IntMap.Internal
+                         containers-0.6.0.1:Data.IntSet.Internal
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Sequence.Internal
+                         containers-0.6.0.1:Data.Set.Internal containers-0.6.0.1:Data.Tree
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         unordered-containers-0.2.10.0:Data.HashMap.Base
+                         unordered-containers-0.2.10.0:Data.HashSet.Base
+import  -/  base-4.12.0.0:Control.Applicative 2ae514eb141d45774730765c61bb41c0
+import  -/  base-4.12.0.0:Data.Either 423bee738f25e5ee983d072216009be8
+import  -/  base-4.12.0.0:Data.Functor 069b2025a03e32fd228e74a86a58a075
+import  -/  base-4.12.0.0:Data.Monoid 12b87658decc811c5251626260c01aeb
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Enum 87204abed08db8735fc0be5ab48689aa
+import  -/  base-4.12.0.0:GHC.Err ea5e313ef4146b40b5d8b27aa168e736
+import  -/  base-4.12.0.0:GHC.IO 898d4ddbf00eb4732e5f462760aa42ae
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:GHC.Show 838a5d039379d82d9626aae53dfce276
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  base-4.12.0.0:Text.Read 87f80fc2538a174aea915dd98f74fc0a
+import  -/  configurator-0.3.0.0:Data.Configurator.Types 1f3077ac570d6cf31f70a58b07af3e78
+import  -/  configurator-0.3.0.0:Data.Configurator.Types.Internal 7c1a0cbd300d11732cdfbab2b51ce276
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  optparse-applicative-0.14.3.0:Options.Applicative ec74fc70fbec9c12cec0f9e05f7f6111
+import  -/  optparse-applicative-0.14.3.0:Options.Applicative.Builder 8e9a2eeb5b0dba6e38f07dd71d4f6cd2
+import  -/  optparse-applicative-0.14.3.0:Options.Applicative.Builder.Internal 649a3bfd8c426c6bbf432421964b8433
+import  -/  optparse-applicative-0.14.3.0:Options.Applicative.Types 0391bfdcf09f1f8c0db6fa06fd6ddc50
+import  -/  text-1.2.3.1:Data.Text e31b81fb349ec0694c028af9d897c500
+import  -/  text-1.2.3.1:Data.Text.Internal 537e168590e8068f673f691833f78483
+import  -/  text-1.2.3.1:Data.Text.Show b788b7edd0f190b1a7c4f4aba0e35f18
+c652734eb1dce0646e897c1ea85489d8
+  $fConfiguredColorSetting ::
+    Data.Configurator.Types.Internal.Configured CmdArgs.ColorSetting
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.ColorSetting
+                  CmdArgs.$fConfiguredColorSetting_$cconvert
+                  CmdArgs.$fConfiguredColorSetting_$cconvertList -}
+c652734eb1dce0646e897c1ea85489d8
+  $fConfiguredColorSetting_$cconvert ::
+    Data.Configurator.Types.Internal.Value
+    -> GHC.Maybe.Maybe CmdArgs.ColorSetting
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Configurator.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Maybe.Nothing @ CmdArgs.ColorSetting
+                   Data.Configurator.Types.Internal.String ds1
+                   -> case ds1 of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                      case Data.Text.Show.unpackCString#
+                             "auto"# of wild2 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                      let {
+                        $j :: GHC.Maybe.Maybe CmdArgs.ColorSetting <join 0>
+                        = case Data.Text.Show.unpackCString#
+                                 "force"# of wild3 { Data.Text.Internal.Text dt7 dt8 dt9 ->
+                          let {
+                            $j1 :: GHC.Maybe.Maybe CmdArgs.ColorSetting <join 0>
+                            = case Data.Text.Show.unpackCString#
+                                     "none"# of wild4 { Data.Text.Internal.Text dt10 dt11 dt12 ->
+                              case GHC.Prim.==# dt2 dt12 of lwild {
+                                DEFAULT -> GHC.Maybe.Nothing @ CmdArgs.ColorSetting
+                                1#
+                                -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                                  -> GHC.Prim.Word#
+                                                                  -> GHC.Prim.ByteArray#
+                                                                  -> GHC.Prim.Word#
+                                                                  -> GHC.Prim.Word#
+                                                                  -> GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld
+                                                                  -> (# GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld,
+                                                                        GHC.Prim.Int# #)}
+                                          dt
+                                          (GHC.Prim.int2Word# dt1)
+                                          dt10
+                                          (GHC.Prim.int2Word# dt11)
+                                          (GHC.Prim.int2Word# dt2)
+                                          GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                                   case GHC.Prim.narrow32Int# ds3 of wild6 {
+                                     DEFAULT -> GHC.Maybe.Nothing @ CmdArgs.ColorSetting
+                                     0#
+                                     -> GHC.Maybe.Just
+                                          @ CmdArgs.ColorSetting
+                                          CmdArgs.NoColor } } } }
+                          } in
+                          case GHC.Prim.==# dt2 dt9 of lwild {
+                            DEFAULT -> $j1
+                            1#
+                            -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                              -> GHC.Prim.Word#
+                                                              -> GHC.Prim.ByteArray#
+                                                              -> GHC.Prim.Word#
+                                                              -> GHC.Prim.Word#
+                                                              -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                              -> (# GHC.Prim.State#
+                                                                      GHC.Prim.RealWorld,
+                                                                    GHC.Prim.Int# #)}
+                                      dt
+                                      (GHC.Prim.int2Word# dt1)
+                                      dt7
+                                      (GHC.Prim.int2Word# dt8)
+                                      (GHC.Prim.int2Word# dt2)
+                                      GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                               case GHC.Prim.narrow32Int# ds3 of wild4 {
+                                 DEFAULT -> $j1
+                                 0#
+                                 -> GHC.Maybe.Just @ CmdArgs.ColorSetting CmdArgs.ForceColor } } } }
+                      } in
+                      case GHC.Prim.==# dt2 dt5 of lwild {
+                        DEFAULT -> $j
+                        1#
+                        -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.ByteArray#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Prim.Int# #)}
+                                  dt
+                                  (GHC.Prim.int2Word# dt1)
+                                  dt3
+                                  (GHC.Prim.int2Word# dt4)
+                                  (GHC.Prim.int2Word# dt2)
+                                  GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                           case GHC.Prim.narrow32Int# ds3 of wild3 {
+                             DEFAULT -> $j
+                             0#
+                             -> GHC.Maybe.Just
+                                  @ CmdArgs.ColorSetting
+                                  CmdArgs.AutoColor } } } } } }) -}
+c652734eb1dce0646e897c1ea85489d8
+  $fConfiguredColorSetting_$cconvertList ::
+    Data.Configurator.Types.Internal.Value
+    -> GHC.Maybe.Maybe [CmdArgs.ColorSetting]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Configurator.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Maybe.Nothing @ [CmdArgs.ColorSetting]
+                   Data.Configurator.Types.Internal.List xs
+                   -> let {
+                        z :: GHC.Maybe.Maybe [CmdArgs.ColorSetting]
+                        = GHC.Maybe.Just
+                            @ [CmdArgs.ColorSetting]
+                            (GHC.Types.[] @ CmdArgs.ColorSetting)
+                      } in
+                      letrec {
+                        go :: [Data.Configurator.Types.Internal.Value]
+                              -> GHC.Maybe.Maybe [CmdArgs.ColorSetting]
+                          {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds1 :: [Data.Configurator.Types.Internal.Value]) ->
+                          case ds1 of wild1 {
+                            [] -> z
+                            : y ys
+                            -> case CmdArgs.$fConfiguredColorSetting_$cconvert y of wild2 {
+                                 GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ [CmdArgs.ColorSetting]
+                                 GHC.Maybe.Just x1
+                                 -> case go ys of wild3 {
+                                      GHC.Maybe.Nothing
+                                      -> GHC.Maybe.Nothing @ [CmdArgs.ColorSetting]
+                                      GHC.Maybe.Just y1
+                                      -> GHC.Maybe.Just
+                                           @ [CmdArgs.ColorSetting]
+                                           (GHC.Types.: @ CmdArgs.ColorSetting x1 y1) } } }
+                      } in
+                      go xs }) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fConfiguredNThreadsOpts ::
+    Data.Configurator.Types.Internal.Configured CmdArgs.NThreadsOpts
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NThreadsOpts
+                  CmdArgs.$fConfiguredNThreadsOpts_$cconvert
+                  CmdArgs.$fConfiguredNThreadsOpts_$cconvertList -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fConfiguredNThreadsOpts_$cconvert ::
+    Data.Configurator.Types.Internal.Value
+    -> GHC.Maybe.Maybe CmdArgs.NThreadsOpts
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Configurator.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Maybe.Nothing @ CmdArgs.NThreadsOpts
+                   Data.Configurator.Types.Internal.String ds1
+                   -> case ds1 of wild1 { Data.Text.Internal.Text dt dt1 dt2 ->
+                      case Data.Text.Show.unpackCString#
+                             "auto"# of wild2 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                      let {
+                        $j :: GHC.Maybe.Maybe CmdArgs.NThreadsOpts <join 0>
+                        = case Text.Read.readEither8
+                                 @ GHC.Types.Int
+                                 (Text.ParserCombinators.ReadP.run
+                                    @ GHC.Types.Int
+                                    (GHC.Read.$fReadInt_$sreadNumber
+                                       GHC.Read.$fReadInt2
+                                       Text.ParserCombinators.ReadPrec.minPrec
+                                       @ GHC.Types.Int
+                                       (Text.Read.readEither7 @ GHC.Types.Int))
+                                    (let {
+                                       end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                                     } in
+                                     letrec {
+                                       $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
+                                         {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+                                       = \ (ww :: GHC.Prim.Int#) ->
+                                         case GHC.Prim.>=# ww end of lwild {
+                                           DEFAULT
+                                           -> case GHC.Prim.indexWord16Array#
+                                                     dt
+                                                     ww of r# { DEFAULT ->
+                                              case GHC.Prim.geWord# r# 55296## of lwild1 {
+                                                DEFAULT
+                                                -> GHC.Types.:
+                                                     @ GHC.Types.Char
+                                                     (GHC.Types.C#
+                                                        (GHC.Prim.chr# (GHC.Prim.word2Int# r#)))
+                                                     ($wunfold (GHC.Prim.+# ww 1#))
+                                                1#
+                                                -> case GHC.Prim.leWord# r# 56319## of lwild2 {
+                                                     DEFAULT
+                                                     -> GHC.Types.:
+                                                          @ GHC.Types.Char
+                                                          (GHC.Types.C#
+                                                             (GHC.Prim.chr#
+                                                                (GHC.Prim.word2Int# r#)))
+                                                          ($wunfold (GHC.Prim.+# ww 1#))
+                                                     1#
+                                                     -> case GHC.Prim.indexWord16Array#
+                                                               dt
+                                                               (GHC.Prim.+#
+                                                                  ww
+                                                                  1#) of r#1 { DEFAULT ->
+                                                        GHC.Types.:
+                                                          @ GHC.Types.Char
+                                                          (GHC.Types.C#
+                                                             (GHC.Prim.chr#
+                                                                (GHC.Prim.+#
+                                                                   9216#
+                                                                   (GHC.Prim.+#
+                                                                      (GHC.Prim.uncheckedIShiftL#
+                                                                         (GHC.Prim.-#
+                                                                            (GHC.Prim.word2Int# r#)
+                                                                            55296#)
+                                                                         10#)
+                                                                      (GHC.Prim.word2Int# r#1)))))
+                                                          ($wunfold (GHC.Prim.+# ww 2#)) } } } }
+                                           1# -> GHC.Types.[] @ GHC.Types.Char }
+                                     } in
+                                     $wunfold dt1)) of wild3 {
+                            [] -> GHC.Maybe.Nothing @ CmdArgs.NThreadsOpts
+                            : x ds2
+                            -> case ds2 of wild4 {
+                                 [] -> GHC.Maybe.Just @ CmdArgs.NThreadsOpts (CmdArgs.NThreads x)
+                                 : ipv ipv1 -> GHC.Maybe.Nothing @ CmdArgs.NThreadsOpts } }
+                      } in
+                      case GHC.Prim.==# dt2 dt5 of lwild {
+                        DEFAULT -> $j
+                        1#
+                        -> case {__pkg_ccall text-1.2.3.1 GHC.Prim.ByteArray#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.ByteArray#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.Word#
+                                                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Prim.Int# #)}
+                                  dt
+                                  (GHC.Prim.int2Word# dt1)
+                                  dt3
+                                  (GHC.Prim.int2Word# dt4)
+                                  (GHC.Prim.int2Word# dt2)
+                                  GHC.Prim.realWorld# of wild5 { (#,#) ds2 ds3 ->
+                           case GHC.Prim.narrow32Int# ds3 of wild3 {
+                             DEFAULT -> $j
+                             0#
+                             -> GHC.Maybe.Just
+                                  @ CmdArgs.NThreadsOpts
+                                  CmdArgs.NThreadsAuto } } } } } }) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fConfiguredNThreadsOpts_$cconvertList ::
+    Data.Configurator.Types.Internal.Value
+    -> GHC.Maybe.Maybe [CmdArgs.NThreadsOpts]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Configurator.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT -> GHC.Maybe.Nothing @ [CmdArgs.NThreadsOpts]
+                   Data.Configurator.Types.Internal.List xs
+                   -> let {
+                        z :: GHC.Maybe.Maybe [CmdArgs.NThreadsOpts]
+                        = GHC.Maybe.Just
+                            @ [CmdArgs.NThreadsOpts]
+                            (GHC.Types.[] @ CmdArgs.NThreadsOpts)
+                      } in
+                      letrec {
+                        go :: [Data.Configurator.Types.Internal.Value]
+                              -> GHC.Maybe.Maybe [CmdArgs.NThreadsOpts]
+                          {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds1 :: [Data.Configurator.Types.Internal.Value]) ->
+                          case ds1 of wild1 {
+                            [] -> z
+                            : y ys
+                            -> case CmdArgs.$fConfiguredNThreadsOpts_$cconvert y of wild2 {
+                                 GHC.Maybe.Nothing -> GHC.Maybe.Nothing @ [CmdArgs.NThreadsOpts]
+                                 GHC.Maybe.Just x1
+                                 -> case go ys of wild3 {
+                                      GHC.Maybe.Nothing
+                                      -> GHC.Maybe.Nothing @ [CmdArgs.NThreadsOpts]
+                                      GHC.Maybe.Just y1
+                                      -> GHC.Maybe.Just
+                                           @ [CmdArgs.NThreadsOpts]
+                                           (GHC.Types.: @ CmdArgs.NThreadsOpts x1 y1) } } }
+                      } in
+                      go xs }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity :: GHC.Enum.Enum CmdArgs.Verbosity
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.Verbosity
+                  CmdArgs.$fEnumVerbosity_$csucc
+                  CmdArgs.$fEnumVerbosity_$cpred
+                  CmdArgs.$fEnumVerbosity_$ctoEnum
+                  CmdArgs.$fEnumVerbosity_$cfromEnum
+                  CmdArgs.$fEnumVerbosity_$cenumFrom
+                  CmdArgs.$fEnumVerbosity_$cenumFromThen
+                  CmdArgs.$fEnumVerbosity_$cenumFromTo
+                  CmdArgs.$fEnumVerbosity_$cenumFromThenTo -}
+d58343a68e30f7dd4ff9b0359817eb74
+  $fEnumVerbosity1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   CmdArgs.$fEnumVerbosity12
+                   CmdArgs.$fEnumVerbosity2
+                   GHC.Stack.Types.EmptyCallStack) -}
+a327e456c5795602355d5397e80026be
+  $fEnumVerbosity10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   CmdArgs.$fEnumVerbosity11) -}
+b4fb0373f62bc9345d75f44060ffa2ab
+  $fEnumVerbosity11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+6ca601f8c0d54edd554ee5e3cf3a3806
+  $fEnumVerbosity12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   CmdArgs.$fEnumVerbosity13) -}
+41e9309899ee2c7bb631a0f36ef847df
+  $fEnumVerbosity13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("error"#) -}
+9d1ad49cf93ddb81df3374d24a3346ca
+  $fEnumVerbosity2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   CmdArgs.$fEnumVerbosity10
+                   CmdArgs.$fEnumVerbosity8
+                   CmdArgs.$fEnumVerbosity6
+                   CmdArgs.$fEnumVerbosity5
+                   CmdArgs.$fEnumVerbosity4
+                   CmdArgs.$fEnumVerbosity5
+                   CmdArgs.$fEnumVerbosity3) -}
+b1ac24a8539022f99eee069aed5fa2a4
+  $fEnumVerbosity3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 38#) -}
+6f353b91c608717801cf8b33bc801406
+  $fEnumVerbosity4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 34#) -}
+4abf34166095bd989ced8f4a32dff1c9
+  $fEnumVerbosity5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 27#) -}
+ed2d94698cad3232ddac8a534345bc1e
+  $fEnumVerbosity6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   CmdArgs.$fEnumVerbosity7) -}
+ac39d69da282ed06667b1159bcfce776
+  $fEnumVerbosity7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLess/CmdArgs.hs"#) -}
+7086ec3bf2079cd2d99f0e6d3a82b138
+  $fEnumVerbosity8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   CmdArgs.$fEnumVerbosity9) -}
+afcfd1e05a28b612747848daf5e20322
+  $fEnumVerbosity9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("CmdArgs"#) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$cenumFrom ::
+    CmdArgs.Verbosity -> [CmdArgs.Verbosity]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: CmdArgs.Verbosity) ->
+                 case a of wild {
+                   CmdArgs.Quiet
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ CmdArgs.Verbosity
+                            (GHC.Prim.tagToEnum# @ CmdArgs.Verbosity x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               2# -> GHC.Types.[] @ CmdArgs.Verbosity })
+                      } in
+                      go 0#
+                   CmdArgs.Normal
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ CmdArgs.Verbosity
+                            (GHC.Prim.tagToEnum# @ CmdArgs.Verbosity x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               2# -> GHC.Types.[] @ CmdArgs.Verbosity })
+                      } in
+                      go 1#
+                   CmdArgs.Loud
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ CmdArgs.Verbosity
+                            (GHC.Prim.tagToEnum# @ CmdArgs.Verbosity x)
+                            (case x of wild1 {
+                               DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                               2# -> GHC.Types.[] @ CmdArgs.Verbosity })
+                      } in
+                      go 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$cenumFromThen ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> [CmdArgs.Verbosity]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$cenumFromThenTo ::
+    CmdArgs.Verbosity
+    -> CmdArgs.Verbosity -> CmdArgs.Verbosity -> [CmdArgs.Verbosity]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$cenumFromTo ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> [CmdArgs.Verbosity]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: CmdArgs.Verbosity) (y :: CmdArgs.Verbosity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       CmdArgs.Quiet
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ CmdArgs.Verbosity
+                                     (CmdArgs.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        0# -> GHC.Types.[] @ CmdArgs.Verbosity })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ CmdArgs.Verbosity }
+                       CmdArgs.Normal
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ CmdArgs.Verbosity
+                                     (CmdArgs.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        1# -> GHC.Types.[] @ CmdArgs.Verbosity })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ CmdArgs.Verbosity }
+                       CmdArgs.Loud
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT
+                            -> letrec {
+                                 go :: GHC.Prim.Int# -> [CmdArgs.Verbosity]
+                                   {- Arity: 1, Strictness: <L,U> -}
+                                 = \ (x2 :: GHC.Prim.Int#) ->
+                                   GHC.Types.:
+                                     @ CmdArgs.Verbosity
+                                     (CmdArgs.$w$ctoEnum x2)
+                                     (case x2 of wild1 {
+                                        DEFAULT -> go (GHC.Prim.+# wild1 1#)
+                                        2# -> GHC.Types.[] @ CmdArgs.Verbosity })
+                               } in
+                               go x1
+                            1# -> GHC.Types.[] @ CmdArgs.Verbosity } }
+                 } in
+                 case x of wild {
+                   CmdArgs.Quiet -> $j 0#
+                   CmdArgs.Normal -> $j 1#
+                   CmdArgs.Loud -> $j 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$cfromEnum :: CmdArgs.Verbosity -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: CmdArgs.Verbosity) ->
+                 case a of wild {
+                   CmdArgs.Quiet -> GHC.Types.I# 0#
+                   CmdArgs.Normal -> GHC.Types.I# 1#
+                   CmdArgs.Loud -> GHC.Types.I# 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$cpred :: CmdArgs.Verbosity -> CmdArgs.Verbosity
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: CmdArgs.Verbosity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> CmdArgs.Verbosity
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum# @ CmdArgs.Verbosity (GHC.Prim.+# wild -1#)
+                       0#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ CmdArgs.Verbosity
+                            CmdArgs.$fEnumVerbosity1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "pred{Verbosity}: tried to take `pred' of first tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   CmdArgs.Quiet -> $j 0#
+                   CmdArgs.Normal -> $j 1#
+                   CmdArgs.Loud -> $j 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$csucc :: CmdArgs.Verbosity -> CmdArgs.Verbosity
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: CmdArgs.Verbosity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> CmdArgs.Verbosity
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a# of wild {
+                       DEFAULT
+                       -> GHC.Prim.tagToEnum# @ CmdArgs.Verbosity (GHC.Prim.+# wild 1#)
+                       2#
+                       -> GHC.Err.error
+                            @ 'GHC.Types.LiftedRep
+                            @ CmdArgs.Verbosity
+                            CmdArgs.$fEnumVerbosity1
+                              `cast`
+                            (Sym (GHC.Classes.N:IP[0]
+                                      <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                            (GHC.CString.unpackCString#
+                               "succ{Verbosity}: tried to take `succ' of last tag in enumeration"#) }
+                 } in
+                 case a of wild {
+                   CmdArgs.Quiet -> $j 0#
+                   CmdArgs.Normal -> $j 1#
+                   CmdArgs.Loud -> $j 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEnumVerbosity_$ctoEnum :: GHC.Types.Int -> CmdArgs.Verbosity
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> CmdArgs.$w$ctoEnum ww1 }) -}
+c652734eb1dce0646e897c1ea85489d8
+  $fEqColorSetting :: GHC.Classes.Eq CmdArgs.ColorSetting
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.ColorSetting
+                  CmdArgs.$fEqColorSetting_$c==
+                  CmdArgs.$fEqColorSetting_$c/= -}
+c652734eb1dce0646e897c1ea85489d8
+  $fEqColorSetting_$c/= ::
+    CmdArgs.ColorSetting -> CmdArgs.ColorSetting -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: CmdArgs.ColorSetting) (y :: CmdArgs.ColorSetting) ->
+                 case x of wild {
+                   CmdArgs.AutoColor
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True CmdArgs.AutoColor -> GHC.Types.False }
+                   CmdArgs.NoColor
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True CmdArgs.NoColor -> GHC.Types.False }
+                   CmdArgs.ForceColor
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        CmdArgs.ForceColor -> GHC.Types.False } }) -}
+c652734eb1dce0646e897c1ea85489d8
+  $fEqColorSetting_$c== ::
+    CmdArgs.ColorSetting -> CmdArgs.ColorSetting -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: CmdArgs.ColorSetting) (ds1 :: CmdArgs.ColorSetting) ->
+                 case ds of wild {
+                   CmdArgs.AutoColor
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False CmdArgs.AutoColor -> GHC.Types.True }
+                   CmdArgs.NoColor
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False CmdArgs.NoColor -> GHC.Types.True }
+                   CmdArgs.ForceColor
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        CmdArgs.ForceColor -> GHC.Types.True } }) -}
+700f1aa62d3f1a512390613b67f2327d
+  $fEqNGLessArgs :: GHC.Classes.Eq CmdArgs.NGLessArgs
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NGLessArgs
+                  CmdArgs.$fEqNGLessArgs_$c==
+                  CmdArgs.$fEqNGLessArgs_$c/= -}
+700f1aa62d3f1a512390613b67f2327d
+  $fEqNGLessArgs_$c/= ::
+    CmdArgs.NGLessArgs -> CmdArgs.NGLessArgs -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U,1*U,1*U,1*U)><S(SLLL),1*U(1*U,1*U,1*U,1*U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: CmdArgs.NGLessArgs) (y :: CmdArgs.NGLessArgs) ->
+                 case CmdArgs.$fEqNGLessArgs_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+700f1aa62d3f1a512390613b67f2327d
+  $fEqNGLessArgs_$c== ::
+    CmdArgs.NGLessArgs -> CmdArgs.NGLessArgs -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U,1*U,1*U,1*U)><S(SLLL),1*U(1*U,1*U,1*U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: CmdArgs.NGLessArgs) (w1 :: CmdArgs.NGLessArgs) ->
+                 case w of ww { CmdArgs.NGLessArgs ww1 ww2 ww3 ww4 ->
+                 case w1 of ww5 { CmdArgs.NGLessArgs ww6 ww7 ww8 ww9 ->
+                 CmdArgs.$w$c== ww1 ww2 ww3 ww4 ww6 ww7 ww8 ww9 } }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fEqNGLessArgs_$c==1 ::
+    CmdArgs.NGLessMode -> CmdArgs.NGLessMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+68490dd3d60448c9680874fc3611a734
+  $fEqNGLessInput :: GHC.Classes.Eq CmdArgs.NGLessInput
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NGLessInput
+                  CmdArgs.$fEqNGLessInput_$c==
+                  CmdArgs.$fEqNGLessInput_$c/= -}
+68490dd3d60448c9680874fc3611a734
+  $fEqNGLessInput_$c/= ::
+    CmdArgs.NGLessInput -> CmdArgs.NGLessInput -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: CmdArgs.NGLessInput) (y :: CmdArgs.NGLessInput) ->
+                 case x of wild {
+                   CmdArgs.InlineScript a1
+                   -> case y of wild1 {
+                        CmdArgs.InlineScript b1
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        CmdArgs.ScriptFilePath ipv -> GHC.Types.True }
+                   CmdArgs.ScriptFilePath a1
+                   -> case y of wild1 {
+                        CmdArgs.InlineScript ipv -> GHC.Types.True
+                        CmdArgs.ScriptFilePath b1
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+68490dd3d60448c9680874fc3611a734
+  $fEqNGLessInput_$c== ::
+    CmdArgs.NGLessInput -> CmdArgs.NGLessInput -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessInput)
+                   (ds1 :: CmdArgs.NGLessInput) ->
+                 case ds of wild {
+                   CmdArgs.InlineScript a1
+                   -> case ds1 of wild1 {
+                        CmdArgs.InlineScript b1 -> GHC.Base.eqString a1 b1
+                        CmdArgs.ScriptFilePath ipv -> GHC.Types.False }
+                   CmdArgs.ScriptFilePath a1
+                   -> case ds1 of wild1 {
+                        CmdArgs.InlineScript ipv -> GHC.Types.False
+                        CmdArgs.ScriptFilePath b1 -> GHC.Base.eqString a1 b1 } }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fEqNGLessMode :: GHC.Classes.Eq CmdArgs.NGLessMode
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NGLessMode
+                  CmdArgs.$fEqNGLessArgs_$c==1
+                  CmdArgs.$fEqNGLessMode_$c/= -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fEqNGLessMode_$c/= ::
+    CmdArgs.NGLessMode -> CmdArgs.NGLessMode -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: CmdArgs.NGLessMode) (y :: CmdArgs.NGLessMode) ->
+                 case CmdArgs.$fEqNGLessArgs_$c==1 x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fEqNThreadsOpts :: GHC.Classes.Eq CmdArgs.NThreadsOpts
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NThreadsOpts
+                  CmdArgs.$fEqNThreadsOpts_$c==
+                  CmdArgs.$fEqNThreadsOpts_$c/= -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fEqNThreadsOpts_$c/= ::
+    CmdArgs.NThreadsOpts -> CmdArgs.NThreadsOpts -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: CmdArgs.NThreadsOpts) (y :: CmdArgs.NThreadsOpts) ->
+                 case x of wild {
+                   CmdArgs.NThreads a1
+                   -> case y of wild1 {
+                        CmdArgs.NThreads b1
+                        -> case GHC.Classes.eqInt a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        CmdArgs.NThreadsAuto -> GHC.Types.True }
+                   CmdArgs.NThreadsAuto
+                   -> case y of wild1 {
+                        CmdArgs.NThreads ipv -> GHC.Types.True
+                        CmdArgs.NThreadsAuto -> GHC.Types.False } }) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fEqNThreadsOpts_$c== ::
+    CmdArgs.NThreadsOpts -> CmdArgs.NThreadsOpts -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: CmdArgs.NThreadsOpts) (ds1 :: CmdArgs.NThreadsOpts) ->
+                 case ds of wild {
+                   CmdArgs.NThreads a1
+                   -> case ds1 of wild1 {
+                        CmdArgs.NThreads b1 -> GHC.Classes.eqInt a1 b1
+                        CmdArgs.NThreadsAuto -> GHC.Types.False }
+                   CmdArgs.NThreadsAuto
+                   -> case ds1 of wild1 {
+                        CmdArgs.NThreads ipv -> GHC.Types.False
+                        CmdArgs.NThreadsAuto -> GHC.Types.True } }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEqVerbosity :: GHC.Classes.Eq CmdArgs.Verbosity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.Verbosity
+                  CmdArgs.$fEqVerbosity_$c==
+                  CmdArgs.$fEqVerbosity_$c/= -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEqVerbosity_$c/= ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: CmdArgs.Verbosity) (y :: CmdArgs.Verbosity) ->
+                 case x of wild {
+                   CmdArgs.Quiet
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True CmdArgs.Quiet -> GHC.Types.False }
+                   CmdArgs.Normal
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True CmdArgs.Normal -> GHC.Types.False }
+                   CmdArgs.Loud
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True CmdArgs.Loud -> GHC.Types.False } }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fEqVerbosity_$c== ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: CmdArgs.Verbosity) (ds1 :: CmdArgs.Verbosity) ->
+                 case ds of wild {
+                   CmdArgs.Quiet
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False CmdArgs.Quiet -> GHC.Types.True }
+                   CmdArgs.Normal
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False CmdArgs.Normal -> GHC.Types.True }
+                   CmdArgs.Loud
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False CmdArgs.Loud -> GHC.Types.True } }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity :: GHC.Classes.Ord CmdArgs.Verbosity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.Verbosity
+                  CmdArgs.$fEqVerbosity
+                  CmdArgs.$fOrdVerbosity_$ccompare
+                  CmdArgs.$fOrdVerbosity_$c<
+                  CmdArgs.$fOrdVerbosity_$c<=
+                  CmdArgs.$fOrdVerbosity_$c>
+                  CmdArgs.$fOrdVerbosity_$c>=
+                  CmdArgs.$fOrdVerbosity_$cmax
+                  CmdArgs.$fOrdVerbosity_$cmin -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$c< ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: CmdArgs.Verbosity) (b :: CmdArgs.Verbosity) ->
+                 case a of wild {
+                   CmdArgs.Quiet
+                   -> case b of wild1 {
+                        CmdArgs.Quiet -> GHC.Types.False
+                        CmdArgs.Normal -> GHC.Types.True
+                        CmdArgs.Loud -> GHC.Types.True }
+                   CmdArgs.Normal
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False CmdArgs.Loud -> GHC.Types.True }
+                   CmdArgs.Loud
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$c<= ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: CmdArgs.Verbosity) (b :: CmdArgs.Verbosity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a of wild {
+                       CmdArgs.Quiet
+                       -> case GHC.Prim.<# a# 0# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       CmdArgs.Normal
+                       -> case GHC.Prim.<# a# 1# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       CmdArgs.Loud
+                       -> case GHC.Prim.<# a# 2# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                 } in
+                 case b of wild {
+                   CmdArgs.Quiet -> $j 0#
+                   CmdArgs.Normal -> $j 1#
+                   CmdArgs.Loud -> $j 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$c> ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: CmdArgs.Verbosity) (b :: CmdArgs.Verbosity) ->
+                 CmdArgs.$fOrdVerbosity_$c< b a) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$c>= ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: CmdArgs.Verbosity) (b :: CmdArgs.Verbosity) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       CmdArgs.Quiet
+                       -> case GHC.Prim.<# a# 0# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       CmdArgs.Normal
+                       -> case GHC.Prim.<# a# 1# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False }
+                       CmdArgs.Loud
+                       -> case GHC.Prim.<# a# 2# of lwild {
+                            DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                 } in
+                 case a of wild {
+                   CmdArgs.Quiet -> $j 0#
+                   CmdArgs.Normal -> $j 1#
+                   CmdArgs.Loud -> $j 2# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$ccompare ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: CmdArgs.Verbosity) (b :: CmdArgs.Verbosity) ->
+                 case a of wild {
+                   CmdArgs.Quiet
+                   -> case b of wild1 {
+                        CmdArgs.Quiet -> GHC.Types.EQ
+                        CmdArgs.Normal -> GHC.Types.LT
+                        CmdArgs.Loud -> GHC.Types.LT }
+                   CmdArgs.Normal
+                   -> case b of wild1 {
+                        CmdArgs.Quiet -> GHC.Types.GT
+                        CmdArgs.Normal -> GHC.Types.EQ
+                        CmdArgs.Loud -> GHC.Types.LT }
+                   CmdArgs.Loud
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT CmdArgs.Loud -> GHC.Types.EQ } }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$cmax ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> CmdArgs.Verbosity
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: CmdArgs.Verbosity) (y :: CmdArgs.Verbosity) ->
+                 case CmdArgs.$fOrdVerbosity_$c<= x y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fOrdVerbosity_$cmin ::
+    CmdArgs.Verbosity -> CmdArgs.Verbosity -> CmdArgs.Verbosity
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: CmdArgs.Verbosity) (y :: CmdArgs.Verbosity) ->
+                 case CmdArgs.$fOrdVerbosity_$c<= x y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+c652734eb1dce0646e897c1ea85489d8
+  $fShowColorSetting :: GHC.Show.Show CmdArgs.ColorSetting
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.ColorSetting
+                  CmdArgs.$fShowColorSetting_$cshowsPrec
+                  CmdArgs.$fShowColorSetting_$cshow
+                  CmdArgs.$fShowColorSetting_$cshowList -}
+c652734eb1dce0646e897c1ea85489d8
+  $fShowColorSetting_$cshow ::
+    CmdArgs.ColorSetting -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: CmdArgs.ColorSetting) ->
+                 case x of wild {
+                   CmdArgs.AutoColor -> GHC.CString.unpackCString# "AutoColor"#
+                   CmdArgs.NoColor -> GHC.CString.unpackCString# "NoColor"#
+                   CmdArgs.ForceColor
+                   -> GHC.CString.unpackCString# "ForceColor"# }) -}
+c652734eb1dce0646e897c1ea85489d8
+  $fShowColorSetting_$cshowList ::
+    [CmdArgs.ColorSetting] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [CmdArgs.ColorSetting]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ CmdArgs.ColorSetting
+                   (CmdArgs.$fShowColorSetting_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+c652734eb1dce0646e897c1ea85489d8
+  $fShowColorSetting_$cshowsPrec ::
+    GHC.Types.Int -> CmdArgs.ColorSetting -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: CmdArgs.ColorSetting) ->
+                 CmdArgs.$w$cshowsPrec w1) -}
+700f1aa62d3f1a512390613b67f2327d
+  $fShowNGLessArgs :: GHC.Show.Show CmdArgs.NGLessArgs
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NGLessArgs
+                  CmdArgs.$fShowNGLessArgs_$cshowsPrec
+                  CmdArgs.$fShowNGLessArgs_$cshow
+                  CmdArgs.$fShowNGLessArgs_$cshowList -}
+700f1aa62d3f1a512390613b67f2327d
+  $fShowNGLessArgs_$cshow :: CmdArgs.NGLessArgs -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CmdArgs.NGLessArgs) ->
+                 CmdArgs.$fShowNGLessArgs_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+700f1aa62d3f1a512390613b67f2327d
+  $fShowNGLessArgs_$cshowList ::
+    [CmdArgs.NGLessArgs] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [CmdArgs.NGLessArgs]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ CmdArgs.NGLessArgs
+                   (CmdArgs.$fShowNGLessArgs_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+700f1aa62d3f1a512390613b67f2327d
+  $fShowNGLessArgs_$cshowsPrec ::
+    GHC.Types.Int -> CmdArgs.NGLessArgs -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,U,1*U)>,
+     Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: CmdArgs.NGLessArgs) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { CmdArgs.NGLessArgs ww3 ww4 ww5 ww6 ->
+                 CmdArgs.$w$cshowsPrec1 ww1 ww3 ww4 ww5 ww6 } }) -}
+68490dd3d60448c9680874fc3611a734
+  $fShowNGLessInput :: GHC.Show.Show CmdArgs.NGLessInput
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NGLessInput
+                  CmdArgs.$fShowNGLessInput_$cshowsPrec
+                  CmdArgs.$fShowNGLessInput_$cshow
+                  CmdArgs.$fShowNGLessInput_$cshowList -}
+68490dd3d60448c9680874fc3611a734
+  $fShowNGLessInput_$cshow :: CmdArgs.NGLessInput -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CmdArgs.NGLessInput) ->
+                 CmdArgs.$fShowNGLessInput_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+68490dd3d60448c9680874fc3611a734
+  $fShowNGLessInput_$cshowList ::
+    [CmdArgs.NGLessInput] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [CmdArgs.NGLessInput]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ CmdArgs.NGLessInput
+                   (CmdArgs.$fShowNGLessInput_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+68490dd3d60448c9680874fc3611a734
+  $fShowNGLessInput_$cshowsPrec ::
+    GHC.Types.Int -> CmdArgs.NGLessInput -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: CmdArgs.NGLessInput) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 CmdArgs.$w$cshowsPrec2 ww1 w1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fShowNGLessMode :: GHC.Show.Show CmdArgs.NGLessMode
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NGLessMode
+                  CmdArgs.$fShowNGLessMode_$cshowsPrec
+                  CmdArgs.$fShowNGLessMode_$cshow
+                  CmdArgs.$fShowNGLessMode_$cshowList -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fShowNGLessMode_$cshow :: CmdArgs.NGLessMode -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CmdArgs.NGLessMode) ->
+                 CmdArgs.$fShowNGLessMode_$cshowsPrec
+                   (GHC.Types.I# 0#)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fShowNGLessMode_$cshowList ::
+    [CmdArgs.NGLessMode] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [CmdArgs.NGLessMode]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ CmdArgs.NGLessMode
+                   (CmdArgs.$fShowNGLessMode_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $fShowNGLessMode_$cshowsPrec ::
+    GHC.Types.Int -> CmdArgs.NGLessMode -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: CmdArgs.NGLessMode) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 CmdArgs.$w$cshowsPrec3 ww1 w1 }) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fShowNThreadsOpts :: GHC.Show.Show CmdArgs.NThreadsOpts
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.NThreadsOpts
+                  CmdArgs.$fShowNThreadsOpts_$cshowsPrec
+                  CmdArgs.$fShowNThreadsOpts_$cshow
+                  CmdArgs.$fShowNThreadsOpts_$cshowList -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fShowNThreadsOpts_$cshow ::
+    CmdArgs.NThreadsOpts -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: CmdArgs.NThreadsOpts) ->
+                 case x of wild {
+                   CmdArgs.NThreads b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "NThreads "#)
+                        (case b1 of ww2 { GHC.Types.I# ww3 ->
+                         case GHC.Show.$wshowSignedInt
+                                11#
+                                ww3
+                                (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                         GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                   CmdArgs.NThreadsAuto
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "NThreadsAuto"#)
+                        (GHC.Types.[] @ GHC.Types.Char) }) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fShowNThreadsOpts_$cshowList ::
+    [CmdArgs.NThreadsOpts] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [CmdArgs.NThreadsOpts]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ CmdArgs.NThreadsOpts
+                   (CmdArgs.$fShowNThreadsOpts_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+6600885e3c49a105ec3e8126dcf8f843
+  $fShowNThreadsOpts_$cshowsPrec ::
+    GHC.Types.Int -> CmdArgs.NThreadsOpts -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>,
+     Unfolding: (\ (a :: GHC.Types.Int) (ds :: CmdArgs.NThreadsOpts) ->
+                 case ds of wild {
+                   CmdArgs.NThreads b1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        f :: GHC.Prim.Addr# = "NThreads "#
+                      } in
+                      let {
+                        f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                      } in
+                      let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Base.String) ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            f1
+                            (case b1 of ww2 { GHC.Types.I# ww3 ->
+                             case GHC.Show.$wshowSignedInt 11# ww3 x1 of ww4 { (#,#) ww5 ww6 ->
+                             GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                      } in
+                      case GHC.Prim.>=# x 11# of lwild {
+                        DEFAULT -> p
+                        1#
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x1)) } }
+                   CmdArgs.NThreadsAuto
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "NThreadsAuto"#) }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fShowVerbosity :: GHC.Show.Show CmdArgs.Verbosity
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ CmdArgs.Verbosity
+                  CmdArgs.$fShowVerbosity_$cshowsPrec
+                  CmdArgs.$fShowVerbosity_$cshow
+                  CmdArgs.$fShowVerbosity_$cshowList -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fShowVerbosity_$cshow :: CmdArgs.Verbosity -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: CmdArgs.Verbosity) ->
+                 case x of wild {
+                   CmdArgs.Quiet -> GHC.CString.unpackCString# "Quiet"#
+                   CmdArgs.Normal -> GHC.CString.unpackCString# "Normal"#
+                   CmdArgs.Loud -> GHC.CString.unpackCString# "Loud"# }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fShowVerbosity_$cshowList :: [CmdArgs.Verbosity] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [CmdArgs.Verbosity]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ CmdArgs.Verbosity
+                   (CmdArgs.$fShowVerbosity_$cshowsPrec (GHC.Types.I# 0#))
+                   ls
+                   s) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $fShowVerbosity_$cshowsPrec ::
+    GHC.Types.Int -> CmdArgs.Verbosity -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: CmdArgs.Verbosity) ->
+                 CmdArgs.$w$cshowsPrec4 w1) -}
+265d59aafdab64334533808f19d3e291
+  $tc'AutoColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9057922184578156103##
+                   4269538244814348871##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'AutoColor2
+                   0#
+                   CmdArgs.$tc'AutoColor1) -}
+fce760a29a9ee9132eb9859374862b58
+  $tc'AutoColor1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+aa65af909c7a855bea557ef718db6e72
+  $tc'AutoColor2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'AutoColor3) -}
+01cd7fb97ee855140c188f3329e01981
+  $tc'AutoColor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AutoColor"#) -}
+48553e3df728a677a5d97da8e272a622
+  $tc'CheckInstallMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11194637478219132090##
+                   2908070750552734552##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'CheckInstallMode2
+                   0#
+                   CmdArgs.$tc'CheckInstallMode1) -}
+6eb051f321c39858e5f9ccb7a433647f
+  $tc'CheckInstallMode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+845da8d31367d4ea00ad3fb6d52621c0
+  $tc'CheckInstallMode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'CheckInstallMode3) -}
+da10996bf7f526262fc3864a88412d21
+  $tc'CheckInstallMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CheckInstallMode"#) -}
+557b4b43237de3580488ac8b18988c6d
+  $tc'CreateReferencePackMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3769102929522991822##
+                   7019426672577347970##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'CreateReferencePackMode2
+                   0#
+                   CmdArgs.$tc'CreateReferencePackMode1) -}
+5392c5960084f46852a0842c337712b5
+  $tc'CreateReferencePackMode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d9d3e890311dfc7d4817b4483c1715dc
+  $tc'CreateReferencePackMode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   CmdArgs.$tc'CreateReferencePackMode3) -}
+b9f12fead9b8663387ff46f5bff717bc
+  $tc'CreateReferencePackMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'CreateReferencePackMode"#) -}
+ff1157db9bf5b29d9467e069c6e054f2
+  $tc'DefaultMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13382347179161192345##
+                   17006168593699452397##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'DefaultMode2
+                   0#
+                   CmdArgs.$tc'DefaultMode1) -}
+9e00b42349ca62ac8ad4f8751b37339a
+  $tc'DefaultMode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ed99ffd1109378db895058fc37e28d6c
+  $tc'DefaultMode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'DefaultMode3) -}
+22b39fa5b74fea761a69a4ae0aeec3cc
+  $tc'DefaultMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DefaultMode"#) -}
+ca6de5a940a0bb888a42796b472f3fc8
+  $tc'DownloadDemoMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13003337075601052861##
+                   12650557283314931844##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'DownloadDemoMode2
+                   0#
+                   CmdArgs.$tc'DownloadDemoMode1) -}
+3fc59249e4b0b37816f05d3e8a6a0d36
+  $tc'DownloadDemoMode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f1d2a3b1a214d27d661986eb08c00fd7
+  $tc'DownloadDemoMode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'DownloadDemoMode3) -}
+97833b3cddeb6e97e4e0beffdec21f8d
+  $tc'DownloadDemoMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DownloadDemoMode"#) -}
+c3eddb6c74560e3937a5655adccb41ad
+  $tc'DownloadFileMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15989801400593499719##
+                   6918806817253951910##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'DownloadFileMode2
+                   0#
+                   CmdArgs.$tc'DownloadFileMode1) -}
+3b33af793cbd1dd3c47c633fc62a668e
+  $tc'DownloadFileMode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7a224979d6033137e5f577053abbf258
+  $tc'DownloadFileMode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'DownloadFileMode3) -}
+0f3d01978618baaae72b87bcadae9950
+  $tc'DownloadFileMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DownloadFileMode"#) -}
+bfa22ad4436a3e07a9c21d028584a781
+  $tc'ForceColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10428549775404095119##
+                   12855789847524741964##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'ForceColor1
+                   0#
+                   CmdArgs.$tc'AutoColor1) -}
+cff5fbae29d9f6a3749bbc9c8d10ed93
+  $tc'ForceColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'ForceColor2) -}
+93238c189b910e41dc92977c4928a830
+  $tc'ForceColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ForceColor"#) -}
+5c2e525a2509ca6be17479fd88590c12
+  $tc'InlineScript :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13694775797641996765##
+                   5117146902604496817##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'InlineScript2
+                   0#
+                   CmdArgs.$tc'InlineScript1) -}
+4fb1f848b81faa8c415e60b7d3870733
+  $tc'InlineScript1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3a54bcb7f02bcda8ff76571d81863ea4
+  $tc'InlineScript2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'InlineScript3) -}
+3b40632f09d2ed8906c957d1734acbff
+  $tc'InlineScript3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'InlineScript"#) -}
+09bf85f70f5b8d66fa8c02ad808f2f59
+  $tc'InstallGenMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17852346105697806245##
+                   11860483106221710271##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'InstallGenMode2
+                   0#
+                   CmdArgs.$tc'InstallGenMode1) -}
+5486608593330415b22465424eb676b7
+  $tc'InstallGenMode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fd5c2d2b803c1372d5a72e9c8b978b5e
+  $tc'InstallGenMode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'InstallGenMode3) -}
+62130736a725a69c8eb4b48edaa55ec8
+  $tc'InstallGenMode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'InstallGenMode"#) -}
+9c20a8073193fe768e0296392f94f5b0
+  $tc'Loud :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5336357758317544265##
+                   15284152001732661097##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'Loud2
+                   0#
+                   CmdArgs.$tc'Loud1) -}
+63fb8aca0f84e6ef30bc001c78f02161
+  $tc'Loud1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+2d2c59309d06fa120ef933ae138944aa
+  $tc'Loud2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'Loud3) -}
+f1e0f24a1c192f040c1803a750eac151
+  $tc'Loud3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Loud"#) -}
+23496c90f7b5f20bb39ca60e4a0fe414
+  $tc'NGLessArgs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15524039392555318155##
+                   13773900845405314176##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'NGLessArgs2
+                   0#
+                   CmdArgs.$tc'NGLessArgs1) -}
+dd786315d8da2535f9d8402734f8fdba
+  $tc'NGLessArgs1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1f643e45469ca3c45e55ef3f3ebe446b
+  $tc'NGLessArgs2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'NGLessArgs3) -}
+37fd79a60b0846087f2c5ecc13352325
+  $tc'NGLessArgs3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NGLessArgs"#) -}
+48f0e864c226dffba09ac13bd0a16ae6
+  $tc'NThreads :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11775584776345790570##
+                   8584154657371516018##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'NThreads2
+                   0#
+                   CmdArgs.$tc'NThreads1) -}
+95365ceaff8cea747954a203857a3845
+  $tc'NThreads1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c8b1f1854f43930baaafe2a3efbc729b
+  $tc'NThreads2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'NThreads3) -}
+3388fef027cdeccc0d92f22da05257ab
+  $tc'NThreads3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NThreads"#) -}
+a6f7b61f94ada9b644e36cb0dcf8a302
+  $tc'NThreadsAuto :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10698942940958188854##
+                   1894046404370340800##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'NThreadsAuto2
+                   0#
+                   CmdArgs.$tc'NThreadsAuto1) -}
+ebad67ca63bfd86ce319a4ecfdd97ffa
+  $tc'NThreadsAuto1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+ebce3aca7ae85a50ee85121576118738
+  $tc'NThreadsAuto2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'NThreadsAuto3) -}
+88d78f4ecdea84c74f52dedbaec1af41
+  $tc'NThreadsAuto3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NThreadsAuto"#) -}
+dae7ffd6b5b8fd2a5f075e4e5a5f28e4
+  $tc'NoColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9780318094526168223##
+                   12095073962217267761##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'NoColor1
+                   0#
+                   CmdArgs.$tc'AutoColor1) -}
+f7601e2d9e620e3e45fb53c99e07dafb
+  $tc'NoColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'NoColor2) -}
+05def24d04688a8118c8017fb5cddd82
+  $tc'NoColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoColor"#) -}
+cfd438ba50bceda857c9dab85f0ca283
+  $tc'Normal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9310111821059301611##
+                   14219491783298415902##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'Normal1
+                   0#
+                   CmdArgs.$tc'Loud1) -}
+5a11f46a8906c28e7c0856edfe364e23
+  $tc'Normal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'Normal2) -}
+71f67f9a658bd7a52a53166ac426ef75
+  $tc'Normal2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Normal"#) -}
+2e0944f3758440c72016dd3c925577ca
+  $tc'PrintPathMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12310818523702095364##
+                   1604196285751840527##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'PrintPathMode1
+                   0#
+                   CmdArgs.$tc'DownloadDemoMode1) -}
+d602de0e56917227a868501b852e7191
+  $tc'PrintPathMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'PrintPathMode2) -}
+eccabfb2774e5d024b24793ece7c7522
+  $tc'PrintPathMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PrintPathMode"#) -}
+beb655eb9d659de0a34bdc0ebdb00655
+  $tc'Quiet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10350052644115568540##
+                   6185508002344503592##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'Quiet1
+                   0#
+                   CmdArgs.$tc'Loud1) -}
+db905e23763214664485100d52c9a5d9
+  $tc'Quiet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'Quiet2) -}
+71e6575aa9e1e6b0ca72d1e669c5bd0d
+  $tc'Quiet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Quiet"#) -}
+e81ec885f0555086bef86a3ec564795e
+  $tc'ScriptFilePath :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7692374700114093839##
+                   3060729377406411647##
+                   CmdArgs.$trModule
+                   CmdArgs.$tc'ScriptFilePath1
+                   0#
+                   CmdArgs.$tc'InlineScript1) -}
+39e7ceba3102829778bf7437e4a20d95
+  $tc'ScriptFilePath1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tc'ScriptFilePath2) -}
+472ea6595911138fddee65c585d9715b
+  $tc'ScriptFilePath2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ScriptFilePath"#) -}
+8324043c2a2c9aaf8a3ee07478b0cb77
+  $tcColorSetting :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2530171265237700844##
+                   16943673275591197757##
+                   CmdArgs.$trModule
+                   CmdArgs.$tcColorSetting1
+                   0#
+                   GHC.Types.krep$*) -}
+dc3a062f3e3e2623301586fa517e2d56
+  $tcColorSetting1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tcColorSetting2) -}
+5565ba1abe4c6366491c1939f7d18577
+  $tcColorSetting2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ColorSetting"#) -}
+a398fa487f2c93213e49ee85596e7597
+  $tcNGLessArgs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7167777614264290458##
+                   14164299625758011684##
+                   CmdArgs.$trModule
+                   CmdArgs.$tcNGLessArgs1
+                   0#
+                   GHC.Types.krep$*) -}
+d3d6f5e98787f77064dfdf63f78c5f2a
+  $tcNGLessArgs1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tcNGLessArgs2) -}
+2a63718ea7e65f3709be9b09db912c22
+  $tcNGLessArgs2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLessArgs"#) -}
+0351655493d7088d8ee378f19b22bd2b
+  $tcNGLessInput :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3127689583581216432##
+                   5934561148216507503##
+                   CmdArgs.$trModule
+                   CmdArgs.$tcNGLessInput1
+                   0#
+                   GHC.Types.krep$*) -}
+342e35ecd7f4647b6514ca445006669f
+  $tcNGLessInput1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tcNGLessInput2) -}
+aa2463623e8393cb372733bb7c9fe35b
+  $tcNGLessInput2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLessInput"#) -}
+09513bcbd2892b385f0769e16c28f4eb
+  $tcNGLessMode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14632200493779512244##
+                   9646488497569368550##
+                   CmdArgs.$trModule
+                   CmdArgs.$tcNGLessMode1
+                   0#
+                   GHC.Types.krep$*) -}
+92f7de2dda993427ff50fec18ca73230
+  $tcNGLessMode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tcNGLessMode2) -}
+b4ade608e4c1ab8d980625ea3f4914da
+  $tcNGLessMode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NGLessMode"#) -}
+4138b4fd526241ea39fb5293508075cc
+  $tcNThreadsOpts :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10895203194298354354##
+                   15430345963741593469##
+                   CmdArgs.$trModule
+                   CmdArgs.$tcNThreadsOpts1
+                   0#
+                   GHC.Types.krep$*) -}
+6ece2395b1edef4dff4ce3ad373dbf9e
+  $tcNThreadsOpts1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tcNThreadsOpts2) -}
+c7aeec698a939ae26c67e650de1f29fa
+  $tcNThreadsOpts2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NThreadsOpts"#) -}
+fb49ad5abaf31708eacffb838a5d6536
+  $tcVerbosity :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14427084067196739068##
+                   6795427868221252056##
+                   CmdArgs.$trModule
+                   CmdArgs.$tcVerbosity1
+                   0#
+                   GHC.Types.krep$*) -}
+adc9822dfa869ba73cc38e9b73bb62a5
+  $tcVerbosity1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$tcVerbosity2) -}
+74a6f89acd1dfcf92bc610cba22f1fb7
+  $tcVerbosity2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Verbosity"#) -}
+cfa550b75fe15a2e2d9f6190eb2560ca
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CmdArgs.$trModule2
+                   CmdArgs.$trModule1) -}
+b51239ff9faab1d4f5cb8685eabf7518
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$fEnumVerbosity9) -}
+5db4869212612f333ac0872f91176059
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS CmdArgs.$fEnumVerbosity11) -}
+0445c27215e3be7c2462f0544c5c0e62
+  $w$c== ::
+    CmdArgs.NGLessMode
+    -> CmdArgs.Verbosity
+    -> GHC.Types.Bool
+    -> GHC.Maybe.Maybe CmdArgs.ColorSetting
+    -> CmdArgs.NGLessMode
+    -> CmdArgs.Verbosity
+    -> GHC.Types.Bool
+    -> GHC.Maybe.Maybe CmdArgs.ColorSetting
+    -> GHC.Types.Bool
+  {- Arity: 8, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><L,1*U><L,1*U><S,1*U><L,1*U><L,1*U><L,1*U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: CmdArgs.NGLessMode)
+                   (ww1 :: CmdArgs.Verbosity)
+                   (ww2 :: GHC.Types.Bool)
+                   (ww3 :: GHC.Maybe.Maybe CmdArgs.ColorSetting)
+                   (ww4 :: CmdArgs.NGLessMode)
+                   (ww5 :: CmdArgs.Verbosity)
+                   (ww6 :: GHC.Types.Bool)
+                   (ww7 :: GHC.Maybe.Maybe CmdArgs.ColorSetting) ->
+                 case CmdArgs.$fEqNGLessArgs_$c==1 ww ww4 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> let {
+                        $j :: GHC.Types.Bool <join 0>
+                        = let {
+                            $j1 :: GHC.Types.Bool <join 0>
+                            = case ww3 of wild1 {
+                                GHC.Maybe.Nothing
+                                -> case ww7 of wild2 {
+                                     GHC.Maybe.Nothing -> GHC.Types.True
+                                     GHC.Maybe.Just ipv -> GHC.Types.False }
+                                GHC.Maybe.Just a1
+                                -> case ww7 of wild2 {
+                                     GHC.Maybe.Nothing -> GHC.Types.False
+                                     GHC.Maybe.Just b1 -> CmdArgs.$fEqColorSetting_$c== a1 b1 } }
+                          } in
+                          case ww2 of wild1 {
+                            GHC.Types.False
+                            -> case ww6 of wild2 {
+                                 GHC.Types.False -> $j1 GHC.Types.True -> GHC.Types.False }
+                            GHC.Types.True
+                            -> case ww6 of wild2 {
+                                 GHC.Types.False -> GHC.Types.False GHC.Types.True -> $j1 } }
+                      } in
+                      case ww1 of wild1 {
+                        CmdArgs.Quiet
+                        -> case ww5 of wild2 {
+                             DEFAULT -> GHC.Types.False CmdArgs.Quiet -> $j }
+                        CmdArgs.Normal
+                        -> case ww5 of wild2 {
+                             DEFAULT -> GHC.Types.False CmdArgs.Normal -> $j }
+                        CmdArgs.Loud
+                        -> case ww5 of wild2 {
+                             DEFAULT -> GHC.Types.False CmdArgs.Loud -> $j } } }) -}
+c652734eb1dce0646e897c1ea85489d8
+  $w$cshowsPrec :: CmdArgs.ColorSetting -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: CmdArgs.ColorSetting) ->
+                 case w of wild {
+                   CmdArgs.AutoColor
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "AutoColor"#)
+                   CmdArgs.NoColor
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "NoColor"#)
+                   CmdArgs.ForceColor
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "ForceColor"#) }) -}
+55d5a3c2c4082f21f8321946e9f83dc1
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> CmdArgs.NGLessMode
+    -> CmdArgs.Verbosity
+    -> GHC.Types.Bool
+    -> GHC.Maybe.Maybe CmdArgs.ColorSetting
+    -> GHC.Show.ShowS
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,1*U><L,U><L,1*U>,
+     Inline: [2] -}
+68490dd3d60448c9680874fc3611a734
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int# -> CmdArgs.NGLessInput -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (w :: CmdArgs.NGLessInput) ->
+                 case w of wild {
+                   CmdArgs.InlineScript b1
+                   -> let {
+                        f :: GHC.Prim.Addr# = "InlineScript "#
+                      } in
+                      let {
+                        f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             f1
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 x)))
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                f1
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.$fShow(,)3
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)3
+                                         (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))))) }
+                   CmdArgs.ScriptFilePath b1
+                   -> let {
+                        f :: GHC.Prim.Addr# = "ScriptFilePath "#
+                      } in
+                      let {
+                        f1 :: [GHC.Types.Char] = GHC.CString.unpackCString# f
+                      } in
+                      case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             f1
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 x)))
+                        1#
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                f1
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.$fShow(,)3
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)3
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            x))))) } }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int# -> CmdArgs.NGLessMode -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2] -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $w$cshowsPrec4 :: CmdArgs.Verbosity -> GHC.Show.ShowS
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: CmdArgs.Verbosity) ->
+                 case w of wild {
+                   CmdArgs.Quiet
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "Quiet"#)
+                   CmdArgs.Normal
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "Normal"#)
+                   CmdArgs.Loud
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.CString.unpackCString# "Loud"#) }) -}
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  $w$ctoEnum :: GHC.Prim.Int# -> CmdArgs.Verbosity
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   $j :: CmdArgs.Verbosity <join 0> {- Strictness: x -}
+                   = GHC.Err.error
+                       @ 'GHC.Types.LiftedRep
+                       @ CmdArgs.Verbosity
+                       CmdArgs.$fEnumVerbosity1
+                         `cast`
+                       (Sym (GHC.Classes.N:IP[0]
+                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                       (GHC.CString.unpackAppendCString#
+                          "toEnum{Verbosity}: tag ("#
+                          (case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww
+                                  (GHC.CString.unpackAppendCString#
+                                     ") is outside of enumeration's range (0,"#
+                                     (case GHC.Show.$wshowSignedInt
+                                             0#
+                                             2#
+                                             (GHC.CString.unpackCString#
+                                                ")"#) of ww4 { (#,#) ww5 ww6 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww5
+                                        ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                 } in
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> $j
+                   1#
+                   -> case GHC.Prim.<=# ww 2# of lwild1 {
+                        DEFAULT -> $j
+                        1# -> GHC.Prim.tagToEnum# @ CmdArgs.Verbosity ww } }) -}
+c652734eb1dce0646e897c1ea85489d8
+  data ColorSetting = AutoColor | NoColor | ForceColor
+700f1aa62d3f1a512390613b67f2327d
+  data NGLessArgs
+    = NGLessArgs {mode :: CmdArgs.NGLessMode,
+                  verbosity :: CmdArgs.Verbosity,
+                  quiet :: GHC.Types.Bool,
+                  color :: GHC.Maybe.Maybe CmdArgs.ColorSetting}
+68490dd3d60448c9680874fc3611a734
+  data NGLessInput
+    = InlineScript GHC.Base.String | ScriptFilePath GHC.IO.FilePath
+2a41ffb966ad9e805bd2de6e09e13ff9
+  data NGLessMode
+    = DefaultMode {input :: CmdArgs.NGLessInput,
+                   debug_mode :: GHC.Base.String,
+                   validateOnly :: GHC.Types.Bool,
+                   print_last :: GHC.Types.Bool,
+                   trace_flag :: GHC.Maybe.Maybe GHC.Types.Bool,
+                   nThreads :: CmdArgs.NThreadsOpts,
+                   strictThreads :: GHC.Maybe.Maybe GHC.Types.Bool,
+                   createReportDirectory :: GHC.Maybe.Maybe GHC.Types.Bool,
+                   html_report_directory :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                   temporary_directory :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                   keep_temporary_files :: GHC.Maybe.Maybe GHC.Types.Bool,
+                   config_files :: [GHC.IO.FilePath],
+                   no_header :: GHC.Types.Bool,
+                   subsampleMode :: GHC.Types.Bool,
+                   experimentalFeatures :: GHC.Types.Bool,
+                   exportJSON :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                   exportCWL :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                   deprecationCheck :: GHC.Types.Bool,
+                   searchPath :: [GHC.IO.FilePath],
+                   indexPath :: GHC.Maybe.Maybe GHC.IO.FilePath,
+                   extraArgs :: [GHC.Base.String]}
+    | InstallGenMode {refname :: Data.Text.Internal.Text}
+    | CreateReferencePackMode {oname :: GHC.IO.FilePath,
+                               genome_url :: GHC.Base.String,
+                               gtf_url :: GHC.Maybe.Maybe GHC.Base.String,
+                               functional_map_url :: GHC.Maybe.Maybe GHC.Base.String}
+    | DownloadFileMode {origUrl :: GHC.Base.String,
+                        localFile :: GHC.IO.FilePath}
+    | DownloadDemoMode {demoName :: GHC.Base.String}
+    | PrintPathMode {pathDesired :: GHC.Base.String}
+    | CheckInstallMode {checkInstallVerbose :: GHC.Types.Bool}
+6600885e3c49a105ec3e8126dcf8f843
+  data NThreadsOpts = NThreads GHC.Types.Int | NThreadsAuto
+9cd5af9d3ac9c8c9a78dc92bf30d1460
+  data Verbosity = Quiet | Normal | Loud
+2a41ffb966ad9e805bd2de6e09e13ff9
+  checkInstallVerbose :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "checkInstallVerbose"#
+                   CmdArgs.CheckInstallMode ds1 -> ds1 }) -}
+700f1aa62d3f1a512390613b67f2327d
+  color :: CmdArgs.NGLessArgs -> GHC.Maybe.Maybe CmdArgs.ColorSetting
+  RecSel Left CmdArgs.NGLessArgs
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessArgs) ->
+                 case ds of wild { CmdArgs.NGLessArgs ds1 ds2 ds3 ds4 -> ds4 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  config_files :: CmdArgs.NGLessMode -> [GHC.IO.FilePath]
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ [GHC.IO.FilePath]
+                        "config_files"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds12 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  createReportDirectory ::
+    CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.Types.Bool)
+                        "createReportDirectory"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds8 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  debug_mode :: CmdArgs.NGLessMode -> GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Base.String
+                        "debug_mode"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds2 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  demoName :: CmdArgs.NGLessMode -> GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Base.String
+                        "demoName"#
+                   CmdArgs.DownloadDemoMode ds1 -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  deprecationCheck :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "deprecationCheck"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds18 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  experimentalFeatures :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "experimentalFeatures"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds15 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  exportCWL :: CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "exportCWL"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds17 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  exportJSON :: CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "exportJSON"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds16 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  extraArgs :: CmdArgs.NGLessMode -> [GHC.Base.String]
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ [GHC.Base.String]
+                        "extraArgs"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds21 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  functional_map_url ::
+    CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.Base.String)
+                        "functional_map_url"#
+                   CmdArgs.CreateReferencePackMode ds1 ds2 ds3 ds4 -> ds4 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  genome_url :: CmdArgs.NGLessMode -> GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Base.String
+                        "genome_url"#
+                   CmdArgs.CreateReferencePackMode ds1 ds2 ds3 ds4 -> ds2 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  gtf_url :: CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.Base.String)
+                        "gtf_url"#
+                   CmdArgs.CreateReferencePackMode ds1 ds2 ds3 ds4 -> ds3 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  html_report_directory ::
+    CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "html_report_directory"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds9 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  indexPath :: CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "indexPath"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds20 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  input :: CmdArgs.NGLessMode -> CmdArgs.NGLessInput
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ CmdArgs.NGLessInput
+                        "input"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  keep_temporary_files ::
+    CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.Types.Bool)
+                        "keep_temporary_files"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds11 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  localFile :: CmdArgs.NGLessMode -> GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.IO.FilePath
+                        "localFile"#
+                   CmdArgs.DownloadFileMode ds1 ds2 -> ds2 }) -}
+700f1aa62d3f1a512390613b67f2327d
+  mode :: CmdArgs.NGLessArgs -> CmdArgs.NGLessMode
+  RecSel Left CmdArgs.NGLessArgs
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessArgs) ->
+                 case ds of wild { CmdArgs.NGLessArgs ds1 ds2 ds3 ds4 -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  nThreads :: CmdArgs.NGLessMode -> CmdArgs.NThreadsOpts
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ CmdArgs.NThreadsOpts
+                        "nThreads"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds6 }) -}
+f20aeba3fe2efa28178bf5cf9983493b
+  nglessArgs :: Options.Applicative.Types.Parser CmdArgs.NGLessArgs
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ CmdArgs.NGLessArgs
+                   @ (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+                   CmdArgs.nglessArgs5
+                   CmdArgs.nglessArgs1) -}
+29e7fbf3dfa85008c8b2545e6e1a8b11
+  nglessArgs1 ::
+    Options.Applicative.Types.Parser
+      (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+                   CmdArgs.nglessArgs4
+                   CmdArgs.nglessArgs2) -}
+b568a5bced86ce6aeb6df0cb94a9fbfb
+  nglessArgs10 :: Options.Applicative.Types.OptProperties
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Options.Applicative.Types.OptProperties
+                   Options.Applicative.Types.Visible
+                   (GHC.Maybe.Nothing @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc)
+                     `cast`
+                   (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   (GHC.Maybe.Nothing @ GHC.Base.String)
+                   (GHC.Maybe.Nothing
+                      @ (Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                         -> Text.PrettyPrint.ANSI.Leijen.Internal.Doc))) -}
+71643384d61024891396e91002a77161
+  nglessArgs11 :: Options.Applicative.Types.OptReader GHC.Types.Bool
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.FlagReader
+                   @ GHC.Types.Bool
+                   CmdArgs.nglessArgs12
+                   GHC.Types.True) -}
+2ed579c369fec60fe4f419b88c520bd5
+  nglessArgs12 :: [Options.Applicative.Types.OptName]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Options.Applicative.Types.OptName
+                   CmdArgs.nglessArgs16
+                   CmdArgs.nglessArgs13) -}
+8f893b260af049f144860ae0c53b5c45
+  nglessArgs13 :: [Options.Applicative.Types.OptName]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Options.Applicative.Types.OptName
+                   CmdArgs.nglessArgs_n
+                   (GHC.Types.[] @ Options.Applicative.Types.OptName)) -}
+678c6b22565e3ad80638febad2dac4dc
+  nglessArgs14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# CmdArgs.nglessArgs15) -}
+9d8bf4d39ea0e4e131594787865246cb
+  nglessArgs15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("quiet"#) -}
+226eaf19abf38bf69f33deff8d11dabe
+  nglessArgs16 :: Options.Applicative.Types.OptName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Options.Applicative.Types.OptShort 'q'#) -}
+85910f1d97e2cc9454e0c0425269d4f1
+  nglessArgs17 ::
+    Options.Applicative.Types.Parser
+      (GHC.Types.Bool
+       -> GHC.Maybe.Maybe CmdArgs.ColorSetting -> CmdArgs.NGLessArgs)
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Types.Bool
+                      -> GHC.Maybe.Maybe CmdArgs.ColorSetting -> CmdArgs.NGLessArgs)
+                   @ CmdArgs.Verbosity
+                   CmdArgs.nglessArgs32
+                   CmdArgs.nglessArgs18) -}
+2d5c4e9904c3deeacac1fc853d62dbba
+  nglessArgs18 :: Options.Applicative.Types.Parser CmdArgs.Verbosity
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ CmdArgs.Verbosity
+                   CmdArgs.nglessArgs21
+                   CmdArgs.nglessArgs19) -}
+6c108c2421719a78b664abd0e6b93e53
+  nglessArgs19 :: Options.Applicative.Types.Parser CmdArgs.Verbosity
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Options.Applicative.Types.NilP
+                   @ CmdArgs.Verbosity
+                   CmdArgs.nglessArgs20) -}
+efef3315cba20bd1e65dc34fa0d2fbee
+  nglessArgs2 ::
+    Options.Applicative.Types.Parser
+      (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Options.Applicative.Types.NilP
+                   @ (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+                   CmdArgs.nglessArgs3) -}
+c34f0acfa74b9f970ccfbd0d70b3a5e5
+  nglessArgs20 :: GHC.Maybe.Maybe CmdArgs.Verbosity
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just @ CmdArgs.Verbosity CmdArgs.Normal) -}
+ec807b00e6c80d89b7d2b741664642e6
+  nglessArgs21 :: Options.Applicative.Types.Parser CmdArgs.Verbosity
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptP
+                   @ CmdArgs.Verbosity
+                   CmdArgs.nglessArgs22) -}
+26c832fc8b3da866346f82b00edc5920
+  nglessArgs22 :: Options.Applicative.Types.Option CmdArgs.Verbosity
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.Option
+                   @ CmdArgs.Verbosity
+                   CmdArgs.nglessArgs24
+                   CmdArgs.nglessArgs23) -}
+c2e672b16a9fb5fcdb4c2724fde01255
+  nglessArgs23 :: Options.Applicative.Types.OptProperties
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.OptProperties
+                   Options.Applicative.Types.Visible
+                   (GHC.Maybe.Nothing @ Text.PrettyPrint.ANSI.Leijen.Internal.Doc)
+                     `cast`
+                   (Sym (Options.Applicative.Help.Chunk.N:Chunk[0]) <Text.PrettyPrint.ANSI.Leijen.Internal.Doc>_N)
+                   Options.Applicative.Builder.abortOption_var
+                   (GHC.Maybe.Nothing @ GHC.Base.String)
+                   (GHC.Maybe.Nothing
+                      @ (Text.PrettyPrint.ANSI.Leijen.Internal.Doc
+                         -> Text.PrettyPrint.ANSI.Leijen.Internal.Doc))) -}
+0243cbc64c5024d3faec3f6afd764824
+  nglessArgs24 ::
+    Options.Applicative.Types.OptReader CmdArgs.Verbosity
+  {- Strictness: m1,
+     Unfolding: (Options.Applicative.Types.OptReader
+                   @ CmdArgs.Verbosity
+                   CmdArgs.nglessArgs27
+                   CmdArgs.nglessArgs25
+                   Options.Applicative.Types.ExpectsArgError) -}
+ed664e41431363d76bd75f1e11f1074d
+  nglessArgs25 :: Options.Applicative.Types.CReader CmdArgs.Verbosity
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Options.Applicative.Types.CReader
+                   @ CmdArgs.Verbosity
+                   Options.Applicative.Types.$fMonoidCompleter3
+                     `cast`
+                   ((<GHC.Base.String>_R
+                     ->_R Sym (GHC.Types.N:IO[0]
+                                   <[GHC.Base.String]>_R)) ; Sym (Options.Applicative.Types.N:Completer[0]))
+                   CmdArgs.nglessArgs26
+                     `cast`
+                   (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                             <GHC.Base.String>_R
+                             <Control.Monad.Trans.Except.Except
+                                Options.Applicative.Types.ParseError>_R
+                             <CmdArgs.Verbosity>_N) ; Sym (Options.Applicative.Types.N:ReadM[0]) <CmdArgs.Verbosity>_N)) -}
+287495c0897d5c400b8604625339916d
+  nglessArgs26 ::
+    GHC.Base.String
+    -> Control.Monad.Trans.Except.ExceptT
+         Options.Applicative.Types.ParseError
+         Data.Functor.Identity.Identity
+         CmdArgs.Verbosity
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Base.String) ->
+                 case GHC.Base.eqString
+                        eta
+                        (GHC.CString.unpackCString# "full"#) of wild {
+                   GHC.Types.False
+                   -> case GHC.Base.eqString
+                             eta
+                             (GHC.CString.unpackCString# "normal"#) of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Base.eqString
+                                  eta
+                                  (GHC.CString.unpackCString# "quiet"#) of wild2 {
+                             GHC.Types.False
+                             -> (Data.Either.Left
+                                   @ Options.Applicative.Types.ParseError
+                                   @ CmdArgs.Verbosity
+                                   (Options.Applicative.Types.ErrorMsg
+                                      (GHC.CString.unpackAppendCString#
+                                         "Cannot parse '"#
+                                         (GHC.Base.++
+                                            @ GHC.Types.Char
+                                            eta
+                                            (GHC.CString.unpackCString# "' as a verbosity"#)))))
+                                  `cast`
+                                (Sym (Data.Functor.Identity.N:Identity[0]
+                                          <Data.Either.Either
+                                             Options.Applicative.Types.ParseError
+                                             CmdArgs.Verbosity>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                              <Options.Applicative.Types.ParseError>_N
+                                                                              <Data.Functor.Identity.Identity>_R
+                                                                              <CmdArgs.Verbosity>_N))
+                             GHC.Types.True
+                             -> (Data.Either.Right
+                                   @ Options.Applicative.Types.ParseError
+                                   @ CmdArgs.Verbosity
+                                   CmdArgs.Quiet)
+                                  `cast`
+                                (Sym (Data.Functor.Identity.N:Identity[0]
+                                          <Data.Either.Either
+                                             Options.Applicative.Types.ParseError
+                                             CmdArgs.Verbosity>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                              <Options.Applicative.Types.ParseError>_N
+                                                                              <Data.Functor.Identity.Identity>_R
+                                                                              <CmdArgs.Verbosity>_N)) }
+                        GHC.Types.True
+                        -> (Data.Either.Right
+                              @ Options.Applicative.Types.ParseError
+                              @ CmdArgs.Verbosity
+                              CmdArgs.Normal)
+                             `cast`
+                           (Sym (Data.Functor.Identity.N:Identity[0]
+                                     <Data.Either.Either
+                                        Options.Applicative.Types.ParseError
+                                        CmdArgs.Verbosity>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                         <Options.Applicative.Types.ParseError>_N
+                                                                         <Data.Functor.Identity.Identity>_R
+                                                                         <CmdArgs.Verbosity>_N)) }
+                   GHC.Types.True
+                   -> (Data.Either.Right
+                         @ Options.Applicative.Types.ParseError
+                         @ CmdArgs.Verbosity
+                         CmdArgs.Loud)
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Data.Either.Either
+                                   Options.Applicative.Types.ParseError
+                                   CmdArgs.Verbosity>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                    <Options.Applicative.Types.ParseError>_N
+                                                                    <Data.Functor.Identity.Identity>_R
+                                                                    <CmdArgs.Verbosity>_N)) }) -}
+54d3263c1befb34d4ed584fe5e751444
+  nglessArgs27 :: [Options.Applicative.Types.OptName]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Options.Applicative.Types.OptName
+                   CmdArgs.nglessArgs31
+                   CmdArgs.nglessArgs28) -}
+9b849d71c5b4fa26828b6f809a9b0959
+  nglessArgs28 :: [Options.Applicative.Types.OptName]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Options.Applicative.Types.OptName
+                   CmdArgs.nglessArgs_n1
+                   (GHC.Types.[] @ Options.Applicative.Types.OptName)) -}
+662a65f87962966663047c5b75b6a8aa
+  nglessArgs29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# CmdArgs.nglessArgs30) -}
+6b840152a55d05d68e643bb71c517ba5
+  nglessArgs3 ::
+    GHC.Maybe.Maybe (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Maybe.Just
+                   @ (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+                   (GHC.Maybe.Nothing @ CmdArgs.ColorSetting)) -}
+9ccf09bf90fc33551f2263dfc9c34c20
+  nglessArgs30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("verbosity"#) -}
+41108615b098faf9341779b54639f241
+  nglessArgs31 :: Options.Applicative.Types.OptName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Options.Applicative.Types.OptShort 'v'#) -}
+3256f1e5adbe134a655d3dd72f420535
+  nglessArgs32 ::
+    Options.Applicative.Types.Parser
+      (CmdArgs.Verbosity
+       -> GHC.Types.Bool
+       -> GHC.Maybe.Maybe CmdArgs.ColorSetting
+       -> CmdArgs.NGLessArgs)
+66de18349daa8cf7f73798ad5293f1d7
+  nglessArgs4 ::
+    Options.Applicative.Types.Parser
+      (GHC.Maybe.Maybe CmdArgs.ColorSetting)
+b9aa9161498c5468bc72376e46e777c5
+  nglessArgs5 ::
+    Options.Applicative.Types.Parser
+      (GHC.Maybe.Maybe CmdArgs.ColorSetting -> CmdArgs.NGLessArgs)
+  {- Unfolding: (Options.Applicative.Types.MultP
+                   @ (GHC.Maybe.Maybe CmdArgs.ColorSetting -> CmdArgs.NGLessArgs)
+                   @ GHC.Types.Bool
+                   CmdArgs.nglessArgs17
+                   CmdArgs.nglessArgs6) -}
+42f8b24943d6ab90c577201c8c2a5089
+  nglessArgs6 :: Options.Applicative.Types.Parser GHC.Types.Bool
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ GHC.Types.Bool
+                   CmdArgs.nglessArgs7
+                   Options.Applicative.Builder.switch1) -}
+90206e3138d6065c9790820b0a8c0fce
+  nglessArgs7 :: Options.Applicative.Types.Parser GHC.Types.Bool
+  {- Strictness: m4,
+     Unfolding: (Options.Applicative.Types.AltP
+                   @ GHC.Types.Bool
+                   CmdArgs.nglessArgs8
+                   (Options.Applicative.Types.$fAlternativeParser_$cempty
+                      @ GHC.Types.Bool)) -}
+967a2a772e0e1f810e2aa94d6aaef0c8
+  nglessArgs8 :: Options.Applicative.Types.Parser GHC.Types.Bool
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptP
+                   @ GHC.Types.Bool
+                   CmdArgs.nglessArgs9) -}
+e39fae7d07268fada091357bd8a04429
+  nglessArgs9 :: Options.Applicative.Types.Option GHC.Types.Bool
+  {- Strictness: m,
+     Unfolding: (Options.Applicative.Types.Option
+                   @ GHC.Types.Bool
+                   CmdArgs.nglessArgs11
+                   CmdArgs.nglessArgs10) -}
+60ecc01988fdeb3dc6dd739e18d8a616
+  nglessArgs_n :: Options.Applicative.Types.OptName
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptLong
+                   CmdArgs.nglessArgs14) -}
+9f09162c3024b6c3ae6a86d2b3ba798b
+  nglessArgs_n1 :: Options.Applicative.Types.OptName
+  {- Strictness: m2,
+     Unfolding: (Options.Applicative.Types.OptLong
+                   CmdArgs.nglessArgs29) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  no_header :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "no_header"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds13 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  oname :: CmdArgs.NGLessMode -> GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.IO.FilePath
+                        "oname"#
+                   CmdArgs.CreateReferencePackMode ds1 ds2 ds3 ds4 -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  origUrl :: CmdArgs.NGLessMode -> GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Base.String
+                        "origUrl"#
+                   CmdArgs.DownloadFileMode ds1 ds2 -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  pathDesired :: CmdArgs.NGLessMode -> GHC.Base.String
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Base.String
+                        "pathDesired"#
+                   CmdArgs.PrintPathMode ds1 -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  print_last :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "print_last"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds4 }) -}
+700f1aa62d3f1a512390613b67f2327d
+  quiet :: CmdArgs.NGLessArgs -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessArgs
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessArgs) ->
+                 case ds of wild { CmdArgs.NGLessArgs ds1 ds2 ds3 ds4 -> ds3 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  refname :: CmdArgs.NGLessMode -> Data.Text.Internal.Text
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ Data.Text.Internal.Text
+                        "refname"#
+                   CmdArgs.InstallGenMode ds1 -> ds1 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  searchPath :: CmdArgs.NGLessMode -> [GHC.IO.FilePath]
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ [GHC.IO.FilePath]
+                        "searchPath"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds19 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  strictThreads ::
+    CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.Types.Bool)
+                        "strictThreads"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds7 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  subsampleMode :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "subsampleMode"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds14 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  temporary_directory ::
+    CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.IO.FilePath
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.IO.FilePath)
+                        "temporary_directory"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds10 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  trace_flag :: CmdArgs.NGLessMode -> GHC.Maybe.Maybe GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ (GHC.Maybe.Maybe GHC.Types.Bool)
+                        "trace_flag"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds5 }) -}
+2a41ffb966ad9e805bd2de6e09e13ff9
+  validateOnly :: CmdArgs.NGLessMode -> GHC.Types.Bool
+  RecSel Left CmdArgs.NGLessMode
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessMode) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Exception.Base.recSelError
+                        @ 'GHC.Types.LiftedRep
+                        @ GHC.Types.Bool
+                        "validateOnly"#
+                   CmdArgs.DefaultMode ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21
+                   -> ds3 }) -}
+700f1aa62d3f1a512390613b67f2327d
+  verbosity :: CmdArgs.NGLessArgs -> CmdArgs.Verbosity
+  RecSel Left CmdArgs.NGLessArgs
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: CmdArgs.NGLessArgs) ->
+                 case ds of wild { CmdArgs.NGLessArgs ds1 ds2 ds3 ds4 -> ds2 }) -}
+instance [safe] Data.Configurator.Types.Internal.Configured [CmdArgs.ColorSetting]
+  = CmdArgs.$fConfiguredColorSetting
+instance [safe] Data.Configurator.Types.Internal.Configured [CmdArgs.NThreadsOpts]
+  = CmdArgs.$fConfiguredNThreadsOpts
+instance [safe] GHC.Enum.Enum [CmdArgs.Verbosity]
+  = CmdArgs.$fEnumVerbosity
+instance [safe] GHC.Classes.Eq [CmdArgs.ColorSetting]
+  = CmdArgs.$fEqColorSetting
+instance [safe] GHC.Classes.Eq [CmdArgs.NGLessArgs]
+  = CmdArgs.$fEqNGLessArgs
+instance [safe] GHC.Classes.Eq [CmdArgs.NGLessInput]
+  = CmdArgs.$fEqNGLessInput
+instance [safe] GHC.Classes.Eq [CmdArgs.NGLessMode]
+  = CmdArgs.$fEqNGLessMode
+instance [safe] GHC.Classes.Eq [CmdArgs.NThreadsOpts]
+  = CmdArgs.$fEqNThreadsOpts
+instance [safe] GHC.Classes.Eq [CmdArgs.Verbosity]
+  = CmdArgs.$fEqVerbosity
+instance [safe] GHC.Classes.Ord [CmdArgs.Verbosity]
+  = CmdArgs.$fOrdVerbosity
+instance [safe] GHC.Show.Show [CmdArgs.ColorSetting]
+  = CmdArgs.$fShowColorSetting
+instance [safe] GHC.Show.Show [CmdArgs.NGLessArgs]
+  = CmdArgs.$fShowNGLessArgs
+instance [safe] GHC.Show.Show [CmdArgs.NGLessInput]
+  = CmdArgs.$fShowNGLessInput
+instance [safe] GHC.Show.Show [CmdArgs.NGLessMode]
+  = CmdArgs.$fShowNGLessMode
+instance [safe] GHC.Show.Show [CmdArgs.NThreadsOpts]
+  = CmdArgs.$fShowNThreadsOpts
+instance [safe] GHC.Show.Show [CmdArgs.Verbosity]
+  = CmdArgs.$fShowVerbosity
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

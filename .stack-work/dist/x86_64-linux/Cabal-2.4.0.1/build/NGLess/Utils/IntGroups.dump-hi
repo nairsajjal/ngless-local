@@ -1,0 +1,388 @@
+
+==================== FINAL INTERFACE ====================
+2020-02-24 04:14:34.888544287 UTC
+
+interface NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5:Utils.IntGroups 8065
+  interface hash: 1e8c04c43dcad3df59f52d718dbd57dc
+  ABI hash: 8e3a980a77c84e1e1b631a9de7a01563
+  export-list hash: 4ff34ca084a81e7b298012dfbb790d6d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50435a891b17f37474055a165c7f64a5
+  opt_hash: 9851e58a0ec35d0fd39c07cdbeb6257b
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.IntGroups.empty
+  Utils.IntGroups.forM_
+  Utils.IntGroups.fromList
+  Utils.IntGroups.length
+  Utils.IntGroups.null
+  Utils.IntGroups.toList
+  Utils.IntGroups.IntGroups{Utils.IntGroups.IntGroups}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 deepseq-1.4.4.0
+                      ghc-prim-0.5.3 integer-gmp-1.0.2.0 primitive-0.6.4.0
+                      transformers-0.5.6.2 vector-0.12.0.3
+orphans: vector-0.12.0.3:Data.Vector.Unboxed
+         vector-0.12.0.3:Data.Vector.Fusion.Bundle
+         transformers-0.5.6.2:Control.Monad.Trans.Error
+         base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         vector-0.12.0.3:Data.Vector.Primitive
+                         vector-0.12.0.3:Data.Vector.Unboxed
+                         vector-0.12.0.3:Data.Vector.Unboxed.Base
+import  -/  base-4.12.0.0:Control.Monad 07eaec7fd256019b318d048d00f45b1c
+import  -/  base-4.12.0.0:Data.Foldable efb37371da929e7bc88d896298d2d979
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.List 4014a3c8a3b7c31c8325f6bcf1feea4a
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  deepseq-1.4.4.0:Control.DeepSeq d8413831e6c002eeb7734f30c04efbed
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed 5733715c11577ecd2bc59749298e28f2
+import  -/  vector-0.12.0.3:Data.Vector.Unboxed.Base 311d017e8e964b88d4827a5ad52e1e15
+5613b755fafcb122427a6574f65b3005
+  $fNFDataIntGroups ::
+    Control.DeepSeq.NFData Utils.IntGroups.IntGroups
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Utils.IntGroups.$fNFDataIntGroups_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0]
+                          <Utils.IntGroups.IntGroups>_N)) -}
+5613b755fafcb122427a6574f65b3005
+  $fNFDataIntGroups_$crnf :: Utils.IntGroups.IntGroups -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Utils.IntGroups.IntGroups) ->
+                 case ds of wild { Utils.IntGroups.IntGroups ds1 ds2 ->
+                 GHC.Tuple.() }) -}
+374a20ee06d89cc880ed9c308ecc22a1
+  $tc'IntGroups :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3663645845367502503##
+                   5739623759509935931##
+                   Utils.IntGroups.$trModule
+                   Utils.IntGroups.$tc'IntGroups2
+                   0#
+                   Utils.IntGroups.$tc'IntGroups1) -}
+afd18c7e27444c372623ab500507c69c
+  $tc'IntGroups1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+da58013b925f55e7a43da53d503a4609
+  $tc'IntGroups2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.IntGroups.$tc'IntGroups3) -}
+386bab9873cf596a05db02c18a7553e1
+  $tc'IntGroups3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'IntGroups"#) -}
+b52205314e73370f7f9224af5ca979f6
+  $tcIntGroups :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12930594961956320463##
+                   10279755658904316162##
+                   Utils.IntGroups.$trModule
+                   Utils.IntGroups.$tcIntGroups1
+                   0#
+                   GHC.Types.krep$*) -}
+c1b15a11e12b604002b36a65846f18b7
+  $tcIntGroups1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.IntGroups.$tcIntGroups2) -}
+0c11feac1b0125062e42b7f9e011c9f7
+  $tcIntGroups2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("IntGroups"#) -}
+8442a1cff3d1032099be13d305812967
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utils.IntGroups.$trModule3
+                   Utils.IntGroups.$trModule1) -}
+820b86bb48fcf2f210e1a63653c81dce
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.IntGroups.$trModule2) -}
+31468ae1d7f659868be6fc6bb9b24141
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Utils.IntGroups"#) -}
+6e66eed7c58c3b5b57e4b364fbdaff50
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Utils.IntGroups.$trModule4) -}
+3fa5bd0783bf3738cd3302fa0cffc8f9
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("NGLess-1.1.0-965Np14lOUvJ2rS9XGhph5"#) -}
+fdbf1ce49fbc000612b9a2189c2685ec
+  $wfromList ::
+    [[GHC.Types.Int]]
+    -> (# Data.Vector.Unboxed.Base.Vector GHC.Types.Int,
+          Data.Vector.Unboxed.Base.Vector GHC.Types.Int #)
+  {- Arity: 1, Strictness: <S,U>, Inline: [2] -}
+5613b755fafcb122427a6574f65b3005
+  data IntGroups
+    = IntGroups !(Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                !(Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+9a457a193ce7957ea8ffcbdc3606a985
+  empty :: Utils.IntGroups.IntGroups
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             Data.Vector.Unboxed.Base.Vector GHC.Types.Int #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ (Control.Monad.Primitive.PrimState
+                                     (GHC.ST.ST GHC.Prim.RealWorld))
+                                0#
+                                s1
+                                  `cast`
+                                (GHC.Prim.State#
+                                   (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                             <GHC.Prim.RealWorld>_N)))_R of ds1 { (#,#) ipv ipv1 ->
+                         case GHC.Prim.unsafeFreezeByteArray#
+                                @ (Control.Monad.Primitive.PrimState
+                                     (GHC.ST.ST GHC.Prim.RealWorld))
+                                ipv1
+                                ipv of ds2 { (#,#) ipv2 ipv3 ->
+                         (# ipv2
+                              `cast`
+                            (GHC.Prim.State#
+                               (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                    <GHC.Prim.RealWorld>_N))_R,
+                            (Data.Vector.Primitive.Vector @ GHC.Types.Int 0# 0# ipv3)
+                              `cast`
+                            (Sym (Data.Vector.Unboxed.Base.N:R:VectorInt[0]) ; Sym (Data.Vector.Unboxed.Base.D:R:VectorInt0[0])) #) } }) of ds1 { (#,#) ipv1 ipv2 ->
+                 case ipv2
+                        `cast`
+                      (Data.Vector.Unboxed.Base.D:R:VectorInt0[0] ; Data.Vector.Unboxed.Base.N:R:VectorInt[0]) of nt { Data.Vector.Primitive.Vector ipv ipv4 ipv5 ->
+                 Utils.IntGroups.IntGroups
+                   nt
+                     `cast`
+                   (Sym (Data.Vector.Unboxed.Base.N:R:VectorInt[0]) ; Sym (Data.Vector.Unboxed.Base.D:R:VectorInt0[0]))
+                   nt
+                     `cast`
+                   (Sym (Data.Vector.Unboxed.Base.N:R:VectorInt[0]) ; Sym (Data.Vector.Unboxed.Base.D:R:VectorInt0[0])) } }) -}
+e15a1ef9397ebdd9df839c56bbd99fe9
+  forM_ ::
+    GHC.Base.Monad m =>
+    Utils.IntGroups.IntGroups
+    -> (Data.Vector.Unboxed.Base.Vector GHC.Types.Int -> m ()) -> m ()
+  {- Arity: 2,
+     Strictness: <L,U(A,A,C(C1(U)),C(U),A)><L,1*U(U(U,U,U),U(U,1*U,U))>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ m :: * -> *
+                   ($dMonad :: GHC.Base.Monad m)
+                   (vs :: Utils.IntGroups.IntGroups) ->
+                 let {
+                   x :: [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+                   = case vs of wild { Utils.IntGroups.IntGroups values indices ->
+                     letrec {
+                       go :: GHC.Types.Int
+                             -> [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+                         {- Arity: 1 -}
+                       = \ (ix :: GHC.Types.Int) ->
+                         case (Data.Vector.Fusion.Bundle.Monadic.length
+                                 @ Data.Vector.Fusion.Util.Id
+                                 @ Data.Vector.Unboxed.Base.Vector
+                                 @ GHC.Types.Int
+                                 Data.Vector.Fusion.Util.$fMonadId
+                                 (Data.Vector.Fusion.Bundle.Monadic.fromVector
+                                    @ Data.Vector.Fusion.Util.Id
+                                    @ Data.Vector.Unboxed.Base.Vector
+                                    @ GHC.Types.Int
+                                    Data.Vector.Fusion.Util.$fMonadId
+                                    Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                    indices))
+                                `cast`
+                              (Data.Vector.Fusion.Util.N:Id[0]
+                                   <GHC.Types.Int>_R) of wild1 { GHC.Types.I# x1 ->
+                         case GHC.Classes.eqInt
+                                ix
+                                (GHC.Types.I# (GHC.Prim.-# x1 1#)) of wild2 {
+                           GHC.Types.False
+                           -> GHC.Types.:
+                                @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                                (case ix of wild3 { GHC.Types.I# x2 ->
+                                 case Data.Vector.Generic.!
+                                        @ Data.Vector.Unboxed.Base.Vector
+                                        @ GHC.Types.Int
+                                        Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                        indices
+                                        (GHC.Types.I#
+                                           (GHC.Prim.+# x2 1#)) of wild4 { GHC.Types.I# x3 ->
+                                 case Data.Vector.Generic.!
+                                        @ Data.Vector.Unboxed.Base.Vector
+                                        @ GHC.Types.Int
+                                        Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                        indices
+                                        wild3 of wild5 { GHC.Types.I# y ->
+                                 Data.Vector.Generic.slice
+                                   @ Data.Vector.Unboxed.Base.Vector
+                                   @ GHC.Types.Int
+                                   Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                   wild5
+                                   (GHC.Types.I# (GHC.Prim.-# x3 y))
+                                   values } } })
+                                (go
+                                   (case ix of wild3 { GHC.Types.I# x2 ->
+                                    GHC.Types.I# (GHC.Prim.+# x2 1#) }))
+                           GHC.Types.True
+                           -> GHC.Types.[]
+                                @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int) } }
+                     } in
+                     go (GHC.Types.I# 0#) }
+                 } in
+                 \ (y :: Data.Vector.Unboxed.Base.Vector GHC.Types.Int -> m ()) ->
+                 Data.Foldable.mapM_
+                   @ []
+                   @ m
+                   @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                   @ ()
+                   Data.Foldable.$fFoldable[]
+                   $dMonad
+                   y
+                   x) -}
+a63434fb359c9b9a174fc6309fe97369
+  fromList :: [[GHC.Types.Int]] -> Utils.IntGroups.IntGroups
+  {- Arity: 1, Strictness: <S,U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [[GHC.Types.Int]]) ->
+                 case Utils.IntGroups.$wfromList w of ww { (#,#) ww1 ww2 ->
+                 Utils.IntGroups.IntGroups ww1 ww2 }) -}
+2dd55199013fc7b02436d82bef029353
+  length :: Utils.IntGroups.IntGroups -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LSL)),1*U(A,U(A,U,A))>m, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: Utils.IntGroups.IntGroups) ->
+                 case ds of wild { Utils.IntGroups.IntGroups ds1 indices ->
+                 case (Data.Vector.Fusion.Bundle.Monadic.length
+                         @ Data.Vector.Fusion.Util.Id
+                         @ Data.Vector.Unboxed.Base.Vector
+                         @ GHC.Types.Int
+                         Data.Vector.Fusion.Util.$fMonadId
+                         (Data.Vector.Fusion.Bundle.Monadic.fromVector
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Vector.Unboxed.Base.Vector
+                            @ GHC.Types.Int
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Unboxed.Base.$fVectorVectorInt
+                            indices))
+                        `cast`
+                      (Data.Vector.Fusion.Util.N:Id[0]
+                           <GHC.Types.Int>_R) of wild1 { GHC.Types.I# x ->
+                 GHC.Types.I# (GHC.Prim.-# x 1#) } }) -}
+5ec844a0d5532b4af5eebcc85a11e5c8
+  null :: Utils.IntGroups.IntGroups -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(LSL)L),1*U(U(A,1*U,A),A)>, Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: Utils.IntGroups.IntGroups) ->
+                 case ds of wild { Utils.IntGroups.IntGroups values ds1 ->
+                 (Data.Vector.Fusion.Bundle.Monadic.null
+                    @ Data.Vector.Fusion.Util.Id
+                    @ Data.Vector.Unboxed.Base.Vector
+                    @ GHC.Types.Int
+                    Data.Vector.Fusion.Util.$fMonadId
+                    (Data.Vector.Generic.stream
+                       @ Data.Vector.Unboxed.Base.Vector
+                       @ GHC.Types.Int
+                       Data.Vector.Unboxed.Base.$fVectorVectorInt
+                       values))
+                   `cast`
+                 (Data.Vector.Fusion.Util.N:Id[0] <GHC.Types.Bool>_R) }) -}
+c115db2b080cd0273cc423530a20c712
+  toList ::
+    Utils.IntGroups.IntGroups
+    -> [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+  {- Arity: 1, Strictness: <S(SS(LSL)),1*U(U(U,U,U),U(U,1*U,U))>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: Utils.IntGroups.IntGroups) ->
+                 case ds of wild { Utils.IntGroups.IntGroups values indices ->
+                 letrec {
+                   go :: GHC.Types.Int
+                         -> [Data.Vector.Unboxed.Base.Vector GHC.Types.Int]
+                     {- Arity: 1 -}
+                   = \ (ix :: GHC.Types.Int) ->
+                     case (Data.Vector.Fusion.Bundle.Monadic.length
+                             @ Data.Vector.Fusion.Util.Id
+                             @ Data.Vector.Unboxed.Base.Vector
+                             @ GHC.Types.Int
+                             Data.Vector.Fusion.Util.$fMonadId
+                             (Data.Vector.Fusion.Bundle.Monadic.fromVector
+                                @ Data.Vector.Fusion.Util.Id
+                                @ Data.Vector.Unboxed.Base.Vector
+                                @ GHC.Types.Int
+                                Data.Vector.Fusion.Util.$fMonadId
+                                Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                indices))
+                            `cast`
+                          (Data.Vector.Fusion.Util.N:Id[0]
+                               <GHC.Types.Int>_R) of wild1 { GHC.Types.I# x ->
+                     case GHC.Classes.eqInt
+                            ix
+                            (GHC.Types.I# (GHC.Prim.-# x 1#)) of wild2 {
+                       GHC.Types.False
+                       -> GHC.Types.:
+                            @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int)
+                            (case ix of wild3 { GHC.Types.I# x1 ->
+                             case Data.Vector.Generic.!
+                                    @ Data.Vector.Unboxed.Base.Vector
+                                    @ GHC.Types.Int
+                                    Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                    indices
+                                    (GHC.Types.I# (GHC.Prim.+# x1 1#)) of wild4 { GHC.Types.I# x2 ->
+                             case Data.Vector.Generic.!
+                                    @ Data.Vector.Unboxed.Base.Vector
+                                    @ GHC.Types.Int
+                                    Data.Vector.Unboxed.Base.$fVectorVectorInt
+                                    indices
+                                    wild3 of wild5 { GHC.Types.I# y ->
+                             Data.Vector.Generic.slice
+                               @ Data.Vector.Unboxed.Base.Vector
+                               @ GHC.Types.Int
+                               Data.Vector.Unboxed.Base.$fVectorVectorInt
+                               wild5
+                               (GHC.Types.I# (GHC.Prim.-# x2 y))
+                               values } } })
+                            (go
+                               (case ix of wild3 { GHC.Types.I# x1 ->
+                                GHC.Types.I# (GHC.Prim.+# x1 1#) }))
+                       GHC.Types.True
+                       -> GHC.Types.[]
+                            @ (Data.Vector.Unboxed.Base.Vector GHC.Types.Int) } }
+                 } in
+                 go (GHC.Types.I# 0#) }) -}
+instance Control.DeepSeq.NFData [Utils.IntGroups.IntGroups]
+  = Utils.IntGroups.$fNFDataIntGroups
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
